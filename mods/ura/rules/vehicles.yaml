@@ -1074,7 +1074,7 @@ STNK:
 		Weapon: APTusk
 		LocalOffset: 192,0,176
 	DetectCloaked:
-		Range: 6c0	
+		Range: 6c0
 	Turreted:
 		TurnSpeed: 5
 	AttackTurreted:
@@ -1094,8 +1094,6 @@ STNK:
 	GrantConditionOnDamageState@UNCLOAK:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
-	DetectCloaked:
-		Range: 7c0
 	-MustBeDestroyed:
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
