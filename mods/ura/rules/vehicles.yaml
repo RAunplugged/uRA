@@ -282,8 +282,6 @@ V2RL:
 	SelectionDecorations:
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
-	DetectCloaked:
-		Range: 6c0
 	Selectable:
 		DecorationBounds: 44,38,0,-4
 
