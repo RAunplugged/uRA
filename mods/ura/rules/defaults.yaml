@@ -621,7 +621,6 @@
 	GivesBuildableArea:
 		AreaTypes: building
 	RepairableBuilding:
-		RepairStep: 700
 		PlayerExperience: 25
 	EngineerRepairable:
 	AcceptsDeliveredCash:
