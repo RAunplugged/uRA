@@ -1,0 +1,34 @@
+lua error, in relation to:
+
+SuperTankDomeInfiltrated = function()
+
+Fatal Lua Error: [string "BindingSupport.lua"]:30: Unable to convert parameter 0 to Int32
+(rest of message was lost, need to reproduce)
+
+
+
+
+and:
+
+CreateDemitri = function()
+
+lua log:
+
+Fatal Lua Error: [string "BindingSupport.lua"]:30: Unable to convert parameter 0 to Int32
+   ved OpenRA.Scripting.ScriptContext.FatalError(String message)
+   ved OpenRA.Mods.Common.Scripting.TriggerGlobal.<>c__DisplayClass14.<OnEnteredFootprint>b__13(Actor a)
+   ved OpenRA.Mods.Common.Traits.ActorMap.CellTrigger.Tick(ActorMap actorMap)
+   ved OpenRA.Mods.Common.Traits.ActorMap.OpenRA.Traits.ITick.Tick(Actor self)
+   ved OpenRA.World.<Tick>b__b(TraitPair`1 x)
+   ved OpenRA.WorldUtils.DoTimed[T](IEnumerable`1 e, Action`1 a, String text)
+   ved OpenRA.World.Tick()
+   ved OpenRA.Game.InnerLogicTick(OrderManager orderManager)
+   ved OpenRA.Game.LogicTick()
+   ved OpenRA.Game.Loop()
+   ved OpenRA.Game.Run()
+   ved OpenRA.Game.InitializeAndRun(String[] args)
+   ved OpenRA.Program.Main(String[] args)
+
+
+
+Not consistently reproducible. Issue needs more clues.

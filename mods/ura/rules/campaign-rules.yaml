@@ -29,7 +29,28 @@ World:
 		ShortGameCheckboxLocked: True
 		ShortGameCheckboxEnabled: False
 
+^Vehicle:
+	Demolishable:
+
+# Infantry
+
+E1:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+E2:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+E3:
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+
+E4:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+SPY:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
 E7:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	-Crushable:
 
 E7.noautotarget:
@@ -42,5 +63,80 @@ E7.noautotarget:
 	RenderSprites:
 		Image: E7
 
-^Vehicle:
-	Demolishable:
+SHOK:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+Zombie:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+Ant:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+# Vehicles
+
+V2RL:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+1TNK:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+2TNK:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+3TNK:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+4TNK:
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+
+ARTY:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+JEEP:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+APC:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+TTNK:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+FTRK:
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+
+CTNK:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+STNK:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+# Aircraft
+
+HELI:
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+
+HIND:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+MIG:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+YAK:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+# Naval
+
+SS:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+MSUB:
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+
+DD:
+	Inherits@AUTOTARGET: ^AutoTargetAllAssaultMove
+
+CA:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+
+PT:
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
