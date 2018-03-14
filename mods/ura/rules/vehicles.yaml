@@ -471,6 +471,7 @@ JEEP:
 		Cost: 500
 	Tooltip:
 		Name: Ranger
+		RequiresCondition: !loaded
 	Health:
 		HP: 160
 	Armor:
@@ -487,10 +488,6 @@ JEEP:
 	Turreted:
 		TurnSpeed: 10
 		Offset: 0,0,128
-	Armament:
-		Weapon: M60mg
-		MuzzleSequence: muzzle
-		LocalOffset: 128,0,43
 	AttackTurreted:
 	WithMuzzleOverlay:
 	WithSpriteTurret:
@@ -524,11 +521,11 @@ JEEP:
 	GrantCondition@civfallback:
 		RequiresCondition: loaded && !ifv-rifle && !ifv-grenadier && !ifv-rocket && !ifv-flame && !ifv-engineer && !ifv-spy && !ifv-tanya && !ifv-medic && !ifv-mechanic && !ifv-hijacker && !ifv-tesla && !ifv-sniper && !ifv-dog && !ifv-technician
 		Condition: ifv-civilian
-	Tooltip:
-		Name: Ranger
-		RequiresCondition: !loaded
 	RenderDetectionCircle:
 	Armament:
+		Weapon: M60mg
+		MuzzleSequence: muzzle
+		LocalOffset: 128,0,43
 		RequiresCondition: !loaded || ifv-rifle || ifv-civilian || ifv-spy || ifv-hijacker || ifv-dog || ifv-engineer
 	FirepowerMultiplier@generic-ifv-bonus:
 		Modifier: 125
