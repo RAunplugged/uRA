@@ -1828,7 +1828,7 @@ FIX:
 	Reservable:
 	RallyPoint:
 	RepairsUnits:
-		HpPerStep: 1000
+		HpPerStep: 10
 		Interval: 7
 		FinishRepairingNotification: UnitRepaired
 		PlayerExperience: 15
