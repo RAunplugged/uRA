@@ -3,7 +3,7 @@ DOG:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Dog
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 120
 		Prerequisites: ~kenn, ~techlevel.infonly
 		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
