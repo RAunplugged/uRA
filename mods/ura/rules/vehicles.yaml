@@ -415,7 +415,7 @@ MCV:
 	Inherits: ^Vehicle
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 90
+		BuildPaletteOrder: 50
 		Prerequisites: fix, ~techlevel.medium
 		BuildDuration: 2500
 		BuildDurationModifier: 40
@@ -651,7 +651,7 @@ APC:
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 20
 		Prerequisites: ~vehicles.soviet, ~techlevel.low
 		Description: Tough infantry transport.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
@@ -729,7 +729,7 @@ TRUK:
 	Inherits: ^Vehicle
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 90
 		Prerequisites: ~techlevel.low
 		Description: Transports cash to other players.\n  Unarmed
 	Valued:
@@ -877,7 +877,7 @@ FTRK:
 	Inherits@AUTOTARGET: ^AutoTargetAll
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 40
 		Prerequisites: ~vehicles.soviet, ~techlevel.low
 		Description: Mobile unit with mounted Flak cannon.\n  Strong vs Infantry, Light armor, Aircraft\n  Weak vs Tanks
 	Valued:
