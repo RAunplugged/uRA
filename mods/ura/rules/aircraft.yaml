@@ -2,6 +2,7 @@ BADR:
 	Inherits: ^NeutralPlane
 	ParaDrop:
 		DropRange: 5c0
+		ChuteSound: chute1.aud
 	Health:
 		HP: 300
 	Armor:

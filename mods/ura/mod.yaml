@@ -37,7 +37,7 @@ MapFolders:
 	ura|maps/conquests: System
 	ura|maps/minigames: System
 	ura|maps/missions: System
-	~^maps/ra/release-20180307: User
+	~^maps/ra/-encodedCommand: User
 
 Rules:
 	ura|rules/misc.yaml

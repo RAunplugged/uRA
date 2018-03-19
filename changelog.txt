@@ -1,0 +1,57 @@
+temporary placement of changelog,
+
+OpenRA PR list
+
+
+
+GENERAL IMPROVEMENTS
+
+#14861 ignored
+#14929 engine
+#14874 engine
+#14868 engine
+#14899 engine (#14901)
+#14935, #14932, #14917, #14934, #14930 engine
+
+AI IMPROVEMENTS
+
+#14594
+
+RED ALERT
+
+#14815
+#14897
+#14926
+#14941
+#14888 ignored
+
+ENGINE/MODDING
+
+#14831 engine
+#14742
+#14916 engine
+#14777 engine
+#14760 engine
+#14216 engine
+#14890 engine
+#14840 engine
+#14818 engine
+#14791 engine
+#14851 engine (commit/12054506e1399bccadd94727299266fc3133821f)
+#14882 engine
+#14757 engine
+#14685 engine
+#14759 engine
+#14817 engine
+#14738 engine
+#14895, #14896 engine
+#14349 engine + d2k
+#14846 engine + td
+#14839
+#14845 engine + td
+#14892
+
+
+NOT LOGGED
+
+#13934
