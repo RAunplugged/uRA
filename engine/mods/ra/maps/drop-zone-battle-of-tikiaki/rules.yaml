@@ -1,0 +1,79 @@
+World:
+	CrateSpawner:
+		Maximum: 3
+		SpawnInterval: 125
+		CrateActors: unitcrate
+		InitialSpawnDelay: 0
+	-SpawnMPUnits:
+	-MPStartLocations:
+	MapBuildRadius:
+		AllyBuildRadiusCheckboxLocked: True
+		AllyBuildRadiusCheckboxEnabled: False
+		BuildRadiusCheckboxLocked: True
+		BuildRadiusCheckboxEnabled: True
+	MapOptions:
+		TechLevelDropdownLocked: True
+		TechLevel: unrestricted
+
+UNITCRATE:
+	Inherits: ^Crate
+	GiveUnitCrateAction@ttnk:
+		SelectionShares: 4
+		Units: ttnk
+	GiveUnitCrateAction@ftrk:
+		SelectionShares: 6
+		Units: ftrk
+	GiveUnitCrateAction@harv:
+		SelectionShares: 1
+		Units: harv
+	GiveUnitCrateAction@shok:
+		SelectionShares: 1
+		Units: shok
+	GiveUnitCrateAction@dog:
+		SelectionShares: 1
+		Units: dog
+	Crate:
+		TerrainTypes: Clear, Road, Ore, Beach
+
+APC:
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Health:
+		HP: 100000
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	-AttackMove:
+
+HARV:
+	Tooltip:
+		Name: Bomb Truck
+	Health:
+		HP: 10000
+	Explodes:
+		Weapon: CrateNuke
+		EmptyWeapon: CrateNuke
+	AttackSuicides:
+	Buildable:
+		Description: Explodes like a damn nuke!
+
+SHOK:
+	Health:
+		HP: 80000
+
+DOG:
+	Health:
+		HP: 12000
+	Mobile:
+		Speed: 99
+
+Player:
+	Shroud:
+		FogCheckboxLocked: True
+		FogCheckboxEnabled: False
+		ExploredMapCheckboxLocked: True
+		ExploredMapCheckboxEnabled: True
+	PlayerResources:
+		DefaultCashLocked: True
+		DefaultCash: 5000
+	LobbyPrerequisiteCheckbox@GLOBALBOUNTY:
+		Enabled: False
+		Locked: True
