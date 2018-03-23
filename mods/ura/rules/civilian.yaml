@@ -680,7 +680,7 @@ V25:
 			TopLeft: -683, -683
 			BottomRight: 1024, 512
 V39:
-	Inherits: V01
+	Inherits: V25
 	SpawnActorOnDeath:
 		Actor: moneycrate
 	RenderSprites: 
