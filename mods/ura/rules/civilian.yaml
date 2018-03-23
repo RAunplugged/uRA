@@ -142,7 +142,12 @@ V01:
 		Type: Rectangle
 			TopLeft: -768, -597
 			BottomRight: 896, 683
-
+V38:
+	Inherits: V01
+	SpawnActorOnDeath:
+		Actor: moneycrate
+	RenderSprites: 
+            Image: V01
 V02:
 	Inherits: ^CivBuilding
 	Building:
