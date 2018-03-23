@@ -679,7 +679,12 @@ V25:
 		Type: Rectangle
 			TopLeft: -683, -683
 			BottomRight: 1024, 512
-
+V39:
+	Inherits: V01
+	SpawnActorOnDeath:
+		Actor: moneycrate
+	RenderSprites: 
+            Image: V25
 V26:
 	Inherits: ^DesertCivBuilding
 	Inherits@shape: ^2x1Shape
