@@ -1,6 +1,6 @@
 Metadata:
 	Title: Red Alert: Unplugged
-	Version: Master version
+	Version: git-dc46dd1
 
 PackageFormats: Mix
 
@@ -37,7 +37,7 @@ MapFolders:
 	ura|maps/conquests: System
 	ura|maps/minigames: System
 	ura|maps/missions: System
-	~^maps/ra/-encodedCommand: User
+	~^maps/ra/git-dc46dd1: User
 
 Rules:
 	ura|rules/misc.yaml
