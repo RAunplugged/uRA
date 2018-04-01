@@ -8,3 +8,5 @@ development, OpenRA, with the opportunity of promoting features and reach toward
 primarily for its own benefit, as opposed to being a modder friendly developer platform.
 
 For more information, please visit: https://github.com/RAunplugged/uRA/wiki
+
+RA Unplugged on Discord: https://discord.gg/KMWnrcB
