@@ -32,7 +32,7 @@ else
 		{ factory = SovietBarracks2, types = { "dog", "e1", "e2", "e3", "e4", "shok" } },
 		{ factory = SovietBarracks3, types = { "dog", "e1", "e2", "e3", "e4", "shok" } },
 		{ factory = AlliedWarFactory1, types = { "jeep", "1tnk", "2tnk", "arty", "ctnk" } },
-		{ factory = SovietWarFactory1, types = { "3tnk", "4tnk", "v2rl", "ttnk", "apc" } }
+		{ factory = SovietWarFactory1, types = { "3tnk", "4tnk.kv-8", "v2rl", "ttnk", "apc" } }
 	}
 end
 
