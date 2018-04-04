@@ -20,7 +20,7 @@ World:
 		Red: 1.05
 		Green: 0.92
 		Blue: 1.00
-		Ambient: 0.9
+		Ambient: 0.97
 
 ^Palettes:
 	IndexedPlayerPalette:
