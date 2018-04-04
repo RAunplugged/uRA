@@ -135,7 +135,7 @@ MammothTusk:
 		ImpactSounds: kaboom25.aud
 		ValidTargets: Air
 
-#Modified version of MammothTuskAT by FiveAces
+# Modified version of MammothTuskAT by FiveAces
 MammothTuskAT:
 	ReloadDelay: 60
 	Range: 6c0
@@ -309,7 +309,7 @@ TorpTube:
 		Speed: 234
 		Inaccuracy: 0c614
 		HorizontalRateOfTurn: 15
-		RangeLimit: 9c0
+		RangeLimit: 11c0
 		LaunchAngle: 120
 		Image: MISSILE
 		TrailImage: smokey

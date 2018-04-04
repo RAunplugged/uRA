@@ -287,7 +287,7 @@ V2RL:
 	Selectable:
 		DecorationBounds: 44,38,0,-4
 
-#Modified version of the Mammoth KV-8 by FiveAces
+# Modified version of the Mammoth KV-8 by FiveAces
 4TNK.KV-8:
 	Inherits: 4TNK
 	Buildable:
@@ -459,7 +459,7 @@ MCV:
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 
-#Jeep IFV traits using custom yaml code by Grayon Dilach
+# Jeep IFV traits using custom yaml code by Grayon Dilach
 JEEP:
 	Inherits: ^Vehicle
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
@@ -632,8 +632,8 @@ JEEP:
 		Condition: customautotarget
 	AutoTargetPriority@DEFAULT:
 		RequiresCondition: !stance-attackanything && !assault-move && !customautotarget
-	AutoTargetPriority@ATTACKANYTHING:
-		RequiresCondition: stance-attackanything || assault-move && !customautotarget
+	#AutoTargetPriority@ATTACKANYTHING:
+	#	RequiresCondition: stance-attackanything || assault-move && !customautotarget
 	AutoTargetPriority@INCLUDEAIR:
 		ValidTargets: Air
 		InvalidTargets: NoAutoTarget
