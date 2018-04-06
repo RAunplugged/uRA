@@ -529,6 +529,7 @@ JEEP:
 		MuzzleSequence: muzzle
 		LocalOffset: 128,0,43
 		RequiresCondition: !loaded || ifv-rifle || ifv-civilian || ifv-spy || ifv-hijacker || ifv-dog || ifv-engineer
+	# Damage modifier
 	FirepowerMultiplier@generic-ifv-bonus:
 		Modifier: 125
 		RequiresCondition: ifv-rifle
@@ -541,6 +542,7 @@ JEEP:
 	FirepowerMultiplier@generic-ifv-bonus4:
 		Modifier: 75
 		RequiresCondition: ifv-flame
+	# Custom tooltips and armaments
 	Tooltip@default:
 		Name: Ranger
 		RequiresCondition: ifv-engineer || ifv-hijacker
@@ -605,7 +607,6 @@ JEEP:
 	Tooltip@tanya:
 		Name: Sniper Ranger
 		RequiresCondition: ifv-tanya
-
 	Armament@grenadier:
 		Weapon: Grenade
 		LocalOffset: 128,0,43
@@ -627,13 +628,7 @@ JEEP:
 	Tooltip@shock:
 		Name: Shock Ranger
 		RequiresCondition: ifv-tesla
-	GrantCondition@customautotarget:
-		RequiresCondition: ifv-medic || ifv-mechanic || ifv-sniper || ifv-tanya
-		Condition: customautotarget
-	AutoTargetPriority@DEFAULT:
-		RequiresCondition: !stance-attackanything && !assault-move && !customautotarget
-	#AutoTargetPriority@ATTACKANYTHING:
-	#	RequiresCondition: stance-attackanything || assault-move && !customautotarget
+	# Custom target behaviour
 	AutoTargetPriority@INCLUDEAIR:
 		ValidTargets: Air
 		InvalidTargets: NoAutoTarget
