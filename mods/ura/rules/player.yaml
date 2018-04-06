@@ -1,3 +1,10 @@
+^BasePlayer:
+	AlwaysVisible:
+	Shroud:
+
+EditorPlayer:
+	Inherits: ^BasePlayer
+
 Player:
 	AlwaysVisible:
 	TechTree:
