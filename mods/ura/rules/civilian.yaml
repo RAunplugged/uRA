@@ -142,7 +142,12 @@ V01:
 		Type: Rectangle
 			TopLeft: -768, -597
 			BottomRight: 896, 683
-
+V38:
+	Inherits: V01
+	SpawnActorOnDeath:
+		Actor: moneycrate
+	RenderSprites: 
+            Image: V01
 V02:
 	Inherits: ^CivBuilding
 	Building:
@@ -674,7 +679,12 @@ V25:
 		Type: Rectangle
 			TopLeft: -683, -683
 			BottomRight: 1024, 512
-
+V39:
+	Inherits: V25
+	SpawnActorOnDeath:
+		Actor: moneycrate
+	RenderSprites: 
+            Image: V25
 V26:
 	Inherits: ^DesertCivBuilding
 	Inherits@shape: ^2x1Shape
