@@ -622,7 +622,7 @@
 	Huntable:
 	UpdatesPlayerStatistics:
 	GivesBuildableArea:
-		AreaTypes: building
+		AreaTypes: building, fake
 	RepairableBuilding:
 		PlayerExperience: 25
 	EngineerRepairable:
@@ -745,7 +745,10 @@
 
 ^FakeBuilding:
 	Inherits: ^Building
-	-GivesBuildableArea:
+	GivesBuildableArea:
+		AreaTypes: fake
+	RequiresBuildableArea:
+		AreaTypes: fake
 	Health:
 		HP: 100
 	Explodes:
