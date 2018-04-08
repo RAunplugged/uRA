@@ -695,6 +695,8 @@ MNLY:
 		Cost: 800
 	Tooltip:
 		Name: Minelayer
+	Selectable:
+		Priority: 5
 	Health:
 		HP: 150
 	Armor:
