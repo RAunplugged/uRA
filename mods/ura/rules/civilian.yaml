@@ -143,6 +143,15 @@ V01:
 			TopLeft: -768, -597
 			BottomRight: 896, 683
 
+V38:
+	Inherits: V01
+	Tooltip:
+		Name: Church Moneycrate
+	SpawnActorOnDeath:
+		Actor: moneycrate
+	RenderSprites: 
+		Image: V01
+
 V02:
 	Inherits: ^CivBuilding
 	Building:
@@ -675,6 +684,15 @@ V25:
 			TopLeft: -683, -683
 			BottomRight: 1024, 512
 
+V39:
+	Inherits: V25
+	Tooltip:
+		Name: Church Moneycrate
+	SpawnActorOnDeath:
+		Actor: moneycrate
+	RenderSprites: 
+		Image: V25
+
 V26:
 	Inherits: ^DesertCivBuilding
 	Inherits@shape: ^2x1Shape
@@ -739,6 +757,8 @@ V37:
 		Type: Rectangle
 			TopLeft: -512, -597
 			BottomRight: 1536, 597
+
+# V38, V39 found above with their inherited actors.
 
 RICE:
 	Inherits: ^CivField
