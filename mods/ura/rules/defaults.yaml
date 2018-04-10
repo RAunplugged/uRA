@@ -772,7 +772,6 @@
 		TargetTypes: Ground, Structure, C4, DetonateAttack, SpyInfiltrate
 	InfiltrateForDecoration:
 		Types: SpyInfiltrate
-		RequiresSelection: true
 		Image: pips
 		Sequence: tag-fake
 		ReferencePoint: Top
