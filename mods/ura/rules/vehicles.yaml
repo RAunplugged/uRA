@@ -773,9 +773,6 @@ MGG:
 		Type: Heavy
 	Mobile:
 		Speed: 99
-	WithIdleOverlay@SPINNER:
-		Offset: -299,0,171
-		Sequence: spinner
 	RevealsShroud:
 		Range: 7c256
 		RevealGeneratedShroud: False
