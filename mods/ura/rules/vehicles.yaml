@@ -781,8 +781,15 @@ MGG:
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 4c0
+	WithIdleOverlay@SPINNER:
+		Offset: -299,0,171
+		Sequence: spinner
+		PauseOnCondition: !deployed
 	CreatesShroud:
 		Range: 7c256
+		RequiresCondition: deployed
+	GrantConditionOnDeploy:
+		DeployedCondition: deployed
 	RenderShroudCircle:
 	SpawnActorOnDeath:
 		Actor: MGG.Husk
