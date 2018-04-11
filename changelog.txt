@@ -20,7 +20,8 @@ GENERAL IMPROVEMENTS
 #14597 engine only
 #14899 engine only (#14901)
 #15003 engine only
-(#14913, #14928, #14935, #14932, #14917, #14934, #14930 #14931, #14933, #14900, #14943, #14940, #14977, #15036) engine only
+(#14913, #14928, #14935, #14932, #14917, #14934, #14930 #14931, #14933, #14900,
+ #14943, #14940, #14977, #15036) engine only
 
 
 
@@ -50,10 +51,14 @@ ENGINE/MODDING
 #14249 engine only
 #14974 engine only
 #14946 engine only
+#15031 engine only
+#15030 engine only
+#15007 engine only
 #14742
 #14916 engine only
 #14777 engine only
 #14760 engine only
+#15022 engine only
 #14216 engine only
 #14890 engine only
 #14840 engine only
@@ -70,6 +75,7 @@ ENGINE/MODDING
 #14349 engine only
 #14997
 #14846 engine only
+#15028 
 #14839
 #14978 engine only
 #14845 engine only
