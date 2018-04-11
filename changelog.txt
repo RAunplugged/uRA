@@ -7,6 +7,7 @@ OpenRA PR list
 GENERAL IMPROVEMENTS
 
 #14861 ignored
+#14980
 #14929 engine only
 #14976 engine only
 #14874 engine only
@@ -14,11 +15,12 @@ GENERAL IMPROVEMENTS
 #14915 engine only
 #14950
 #14975 engine only
+#15025 engine only
 #14853 + #14947 engine only
 #14597 engine only
 #14899 engine only (#14901)
 #15003 engine only
-(#14928, #14935, #14932, #14917, #14934, #14930 #14931, #14933, #14900, #14943, #14940, #14977) engine only
+(#14913, #14928, #14935, #14932, #14917, #14934, #14930 #14931, #14933, #14900, #14943, #14940, #14977, #15036) engine only
 
 
 
