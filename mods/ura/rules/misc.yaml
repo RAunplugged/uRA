@@ -19,95 +19,102 @@ CRATE:
 	Inherits: ^Crate
 	GiveCashCrateAction:
 		Amount: 1000
-		SelectionShares: 50
+		SelectionShares: 20
 		UseCashTick: true
-	LevelUpCrateAction:
+	GiveCashCrateAction@12000:
+		Amount: 2000
+		SelectionShares: 20
+		UseCashTick: true
+		TimeDelay: 12000
+	GiveCashCrateAction@24000:
+		Amount: 3000
 		SelectionShares: 40
+		UseCashTick: true
+		TimeDelay: 24000
+	LevelUpCrateAction:
+		Levels: 2
+		SelectionShares: 20
+	LevelUpCrateAction@24000:
+		Levels: 4
+		SelectionShares: 40
+		TimeDelay: 24000		
 	ExplodeCrateAction@fire:
 		Weapon: CrateNapalm
 		SelectionShares: 5
 	ExplodeCrateAction@boom:
 		Weapon: CrateExplosion
 		SelectionShares: 5
-	HideMapCrateAction:
-		SelectionShares: 5
-		Effect: hide-map
 	HealUnitsCrateAction:
 		Notification: heal2.aud
-		SelectionShares: 2
-		Effect: heal
-	RevealMapCrateAction:
-		SelectionShares: 1
-		Effect: reveal-map
-	DuplicateUnitCrateAction:
 		SelectionShares: 10
-		MaxAmount: 5
-		MinAmount: 1
-		MaxDuplicateValue: 1500
+		TimeDelay: 12000
+		Effect: heal
 	GiveMcvCrateAction:
 		SelectionShares: 0
-		NoBaseSelectionShares: 100
+		NoBaseSelectionShares: 120
 		Units: mcv
 	GiveUnitCrateAction@jeep:
-		SelectionShares: 6
+		SelectionShares: 5
 		Units: jeep
 		ValidFactions: allies, england, france, germany
 		Prerequisites: techlevel.low
 	GiveUnitCrateAction@1tnk:
-		SelectionShares: 6
+		SelectionShares: 5
 		Units: 1tnk
 		ValidFactions: allies, england, france, germany
 		Prerequisites: techlevel.low
-	GiveUnitCrateAction@apc:
-		SelectionShares: 6
-		Units: apc
-		ValidFactions: soviet, russia, ukraine
-		Prerequisites: techlevel.low
 	GiveUnitCrateAction@ftrk:
-		SelectionShares: 6
+		SelectionShares: 10
 		Units: ftrk
 		ValidFactions: soviet, russia, ukraine
 		Prerequisites: techlevel.low
-	GiveUnitCrateAction@arty:
-		SelectionShares: 5
-		Units: arty
+	GiveUnitCrateAction@mrj:
+		SelectionShares: 15
+		Units: mrj
 		ValidFactions: allies, england, france, germany
-		Prerequisites: techlevel.medium, dome
-	GiveUnitCrateAction@v2rl:
-		SelectionShares: 5
-		Units: v2rl
-		ValidFactions: soviet, russia, ukraine
-		Prerequisites: techlevel.medium, dome
-	GiveUnitCrateAction@2tnk:
-		SelectionShares: 4
-		Units: 2tnk
-		ValidFactions: allies, england, france, germany
-		Prerequisites: techlevel.medium, fix
-	GiveUnitCrateAction@3tnk:
-		SelectionShares: 4
-		Units: 3tnk
-		ValidFactions: soviet, russia, ukraine
-		Prerequisites: techlevel.medium, fix
-	GiveUnitCrateAction@squadlight:
+		TimeDelay: 24000
+	GiveUnitCrateAction@qtnk:
 		SelectionShares: 10
-		Units: e1,e1,e1,e3,e3
-		ValidFactions: allies, england, france, germany, soviet, russia, ukraine
-	GiveUnitCrateAction@squadheavyallies:
-		SelectionShares: 7
-		Units: e1,e1,e1,e1,e3,e3,e3,e6,medi
-		ValidFactions: allies, england, france, germany
-		TimeDelay: 4500
-	GiveUnitCrateAction@squadheavysoviet:
-		SelectionShares: 7
-		Units: e1,e1,e4,e4,e3,e3,e3,e6
+		Units: qtnk
 		ValidFactions: soviet, russia, ukraine
-		TimeDelay: 4500
-	GrantExternalConditionCrateAction@invuln:
+		TimeDelay: 24000
+	GiveUnitCrateAction@stnk:
+		SelectionShares: 15
+		Units: stnk
+		ValidFactions: england
+		TimeDelay: 24000
+	GiveUnitCrateAction@mgg:
+		SelectionShares: 15
+		Units: mgg
+		ValidFactions: france
+		TimeDelay: 18000
+	GiveUnitCrateAction@2tnk.ger:
 		SelectionShares: 5
+		Units: 2tnk.ger
+		ValidFactions: germany
+		TimeDelay: 18000
+	GiveUnitCrateAction@ctnk:
+		SelectionShares: 10
+		Units: ctnk
+		ValidFactions: germany
+		TimeDelay: 24000
+	GiveUnitCrateAction@ttnk:
+		SelectionShares: 15
+		Units: ttnk
+		ValidFactions: russia
+		TimeDelay: 24000
+	GiveUnitCrateAction@4tnk.kv-8:
+		SelectionShares: 15
+		Units: 4tnk.kv-8
+		ValidFactions: ukraine
+		TimeDelay: 24000
+	GrantExternalConditionCrateAction@invuln:
+		SelectionShares: 10
 		Effect: invuln
 		Notification: ironcur9.aud
 		Condition: invulnerability
-		Duration: 600
+		Duration: 750
+		TimeDelay: 12000
 
 MONEYCRATE:
 	Inherits: ^Crate

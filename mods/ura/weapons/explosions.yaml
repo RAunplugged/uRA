@@ -27,8 +27,8 @@ CrateNapalm:
 	Inherits: ^Explosion
 	ValidTargets: Ground, Trees
 	Warhead@1Dam: SpreadDamage
-		Spread: 170
-		Damage: 60
+		Spread: 240
+		Damage: 80
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		ValidTargets: Ground, Trees
 		Versus:
@@ -47,6 +47,7 @@ CrateNapalm:
 CrateExplosion:
 	Inherits: ^Explosion
 	Warhead@1Dam: SpreadDamage
+		Damage: 100
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		AffectsParent: true
 	Warhead@2Eff: CreateEffect
