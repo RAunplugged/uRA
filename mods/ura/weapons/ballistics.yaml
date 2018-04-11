@@ -56,14 +56,14 @@
 			Heavy: 140
 			Light: 90
 
-#90mm.Germany:
-#	Inherits: 90mm
-#	Projectile: Bullet
-#		Speed: 1024
-#	Warhead@1Dam: SpreadDamage
-#		Versus:
-#			Heavy: originally +33% above regular medium
-#			Light: 90
+90mm.Germany:
+	Inherits: 90mm
+	Projectile: Bullet
+		Speed: 1024
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Heavy: 180
+			Light: 90
 
 105mm:
 	Inherits: ^Cannon

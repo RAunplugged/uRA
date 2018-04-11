@@ -635,24 +635,25 @@ DOME:
 	ProvidesPrerequisite@buildingname:
 	ExternalCondition@JAMMED:
 		Condition: jammed
-	#ParatroopersPower@paratroopers: 
-	#	OrderName: AlliedParatroopers
-	#	Prerequisites: dome, ~structures.allies
-	#	Icon: sniperdrop
-	#	ChargeTime: 240
-	#	Description: Sniper Drop
-	#	LongDesc: A Badger drops a 2-man sniper team\nanywhere on the map.
-	#	DropItems: SNIPER, SNIPER
-	#	ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
-	#	SelectTargetSpeechNotification: SelectTarget
-	#	AllowImpassableCells: false
-	#	QuantizedFacings: 8
-	#	CameraActor: camera.paradrop
-	#	DisplayBeacon: true
-	#	BeaconPoster: pinficon
-	#	ArrowSequence: arrow
-	#	ClockSequence: clock
-	#	CircleSequence: circles
+	ParatroopersPower@paratroopers: 
+		OrderName: AlliedParatroopers
+		Prerequisites: ~disabled
+		#Prerequisites: dome, ~structures.allies
+		Icon: sniperdrop
+		ChargeTime: 240
+		Description: Sniper Drop
+		LongDesc: A Badger drops a 2-man sniper team\nanywhere on the map.
+		DropItems: SNIPER, SNIPER
+		ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
+		SelectTargetSpeechNotification: SelectTarget
+		AllowImpassableCells: false
+		QuantizedFacings: 8
+		CameraActor: camera.paradrop
+		DisplayBeacon: true
+		BeaconPoster: pinficon
+		ArrowSequence: arrow
+		ClockSequence: clock
+		CircleSequence: circles
 
 PBOX:
 	Inherits: ^Defense

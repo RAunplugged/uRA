@@ -149,25 +149,26 @@ V2RL:
 	Selectable:
 		DecorationBounds: 28,28
 
-#2TNK.GER:
-#	Inherits: 2TNK
-#	Buildable:
-#		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium
-#	Valued:
-#		Cost: 1050
-#	Health:
-#		HP: 500
-#	Tooltip:
-#		Name: German Medium Tank
-#		Description: German Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
-#	Turreted:
-#		TurnSpeed: 4
-#	Armament:
-#		Weapon: 90mm.Germany
-#	RenderSprites:
-#		Image: 2tnkger
-#	SpawnActorOnDeath:
-#		Actor: 2TNK.GER.Husk
+2TNK.GER:
+	Inherits: 2TNK
+	Buildable:
+		Prerequisites: ~disabled
+		#Prerequisites: fix, ~vehicles.germany, ~techlevel.medium
+	Valued:
+		Cost: 1050
+	Health:
+		HP: 500
+	Tooltip:
+		Name: German Medium Tank
+		Description: German Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
+	Turreted:
+		TurnSpeed: 4
+	Armament:
+		Weapon: 90mm.Germany
+	RenderSprites:
+		Image: 2tnkger
+	SpawnActorOnDeath:
+		Actor: 2TNK.GER.Husk
 
 3TNK:
 	Inherits: ^TrackedVehicle
