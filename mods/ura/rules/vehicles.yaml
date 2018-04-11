@@ -292,7 +292,7 @@ V2RL:
 4TNK.KV-8:
 	Inherits: 4TNK
 	Buildable:
-		BuildPaletteOrder: 200
+		BuildPaletteOrder: 220
 		Prerequisites: fix, stek, ~vehicles.ukraine, ~techlevel.high
 	Tooltip:
 		Name: Mammoth KV-8
