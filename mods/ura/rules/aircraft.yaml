@@ -421,9 +421,9 @@ U2:
 	Armor:
 		Type: Heavy
 	Aircraft:
-		CruiseAltitude: 2560
+		CruiseAltitude: 3840
 		TurnSpeed: 7
-		Speed: 373
+		Speed: 446
 		Repulsable: False
 		MaximumPitch: 56
 	AttackBomber:

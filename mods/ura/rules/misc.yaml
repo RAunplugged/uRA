@@ -156,8 +156,8 @@ CAMERA:
 	Immobile:
 		OccupiesSpace: false
 	RevealsShroud:
-		Range: 10c0
-		Type: CenterPosition
+		Range: 12c256
+		Type: GroundPosition
 	BodyOrientation:
 		QuantizedFacings: 1
 	WithSpriteBody:
@@ -178,7 +178,7 @@ camera.spyplane:
 	EditorOnlyTooltip:
 		Name: (support power proxy camera)
 	DetectCloaked:
-		Range: 12c0
+		Range: 12c256
 		CloakTypes: Cloak, Hijacker
 
 SONAR:
