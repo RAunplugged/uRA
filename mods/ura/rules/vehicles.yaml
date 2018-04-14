@@ -278,7 +278,7 @@ V2RL:
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 	SelfHealing:
-		Step: 100
+		Step: 1
 		Delay: 3
 		HealIfBelow: 50
 		DamageCooldown: 150
@@ -407,7 +407,7 @@ HARV:
 		FullActor: HARV.FullHusk
 		FullnessThreshold: 50
 	SelfHealing:
-		Step: 100
+		Step: 1
 		Delay: 25
 		HealIfBelow: 50
 		DamageCooldown: 500
