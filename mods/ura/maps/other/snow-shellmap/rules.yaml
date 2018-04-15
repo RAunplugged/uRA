@@ -17,10 +17,10 @@ World:
 		Scripts: desert-shellmap.lua
 	-StartGameNotification:
 	GlobalLightingPaletteEffect:
-		Red: 0.97
+		Red: 1.00
 		Green: 1.00
 		Blue: 1.03
-		Ambient: 0.75
+		Ambient: 0.8
 
 ^Palettes:
 	IndexedPlayerPalette:
