@@ -14,32 +14,38 @@ Player:
 		QueuedAudio: Building
 		ReadyAudio: ConstructionComplete
 		SpeedUp: True
+		SpectatorUIOrder: 0
 	ClassicProductionQueue@Defense:
 		Type: Defense
 		LowPowerSlowdown: 3
 		QueuedAudio: Building
 		ReadyAudio: ConstructionComplete
 		SpeedUp: True
+		SpectatorUIOrder: 1
 	ClassicProductionQueue@Vehicle:
 		Type: Vehicle
 		LowPowerSlowdown: 3
 		QueuedAudio: Building
 		SpeedUp: True
+		SpectatorUIOrder: 3
 		BuildTimeSpeedReduction: 100, 75, 60, 50
 	ClassicProductionQueue@Infantry:
 		Type: Infantry
 		LowPowerSlowdown: 3
 		SpeedUp: True
+		SpectatorUIOrder: 2
 	ClassicProductionQueue@Ship:
 		Type: Ship
 		LowPowerSlowdown: 3
 		QueuedAudio: Building
 		SpeedUp: True
+		SpectatorUIOrder: 5
 	ClassicProductionQueue@Aircraft:
 		Type: Aircraft
 		LowPowerSlowdown: 3
 		QueuedAudio: Building
 		SpeedUp: True
+		SpectatorUIOrder: 4
 	PlaceBuilding:
 	SupportPowerManager:
 	ScriptTriggers:
