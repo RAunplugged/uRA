@@ -17,10 +17,10 @@ World:
 		Scripts: desert-shellmap.lua
 	-StartGameNotification:
 	GlobalLightingPaletteEffect:
-		Red: 1.05
-		Green: 0.92
-		Blue: 1.00
-		Ambient: 0.97
+		Red: 0.97
+		Green: 1.00
+		Blue: 1.03
+		Ambient: 0.75
 
 ^Palettes:
 	IndexedPlayerPalette:
@@ -74,6 +74,10 @@ World:
 		Modifier: 0
 	ExternalCondition@UNKILLABLE:
 		Condition: unkillable
+
+^InfiltratableFake:
+	InfiltrateForDecoration:
+		RequiresSelection: true
 
 OILB:
 	CashTrickler:

@@ -1,12 +1,12 @@
 MapFormat: 11
 
-RequiresMod: ra
+RequiresMod: ura
 
-Title: Desert Shellmap
+Title: Snow Shellmap
 
-Author: Scott_NZ
+Author: Scott_NZ, SoScared
 
-Tileset: DESERT
+Tileset: SNOW
 
 MapSize: 128,128
 
@@ -26,6 +26,7 @@ Players:
 		Name: Creeps
 		NonCombatant: True
 		Faction: allies
+		Enemies: Allies, Soviets
 	PlayerReference@Allies:
 		Name: Allies
 		Faction: allies
@@ -38,39 +39,135 @@ Players:
 		Enemies: Allies
 
 Actors:
-	Actor0: rock6
-		Location: 51,30
+	SovietWarFactory1: weap
+		Location: 106,29
+		Owner: Soviets
+	SovietBarracks1: barr
+		Location: 109,48
+		Owner: Soviets
+	SovietBarracks2: barr
+		Location: 102,30
+		Owner: Soviets
+	SovietBarracks3: barr
+		Location: 41,27
+		Owner: Soviets
+	IronCurtain: iron
+		Location: 110,40
+		Owner: Soviets
+	AlliedTechnologyCenter: miss
+		Location: 56,68
 		Owner: Neutral
-	Actor1: rock4
-		Location: 38,30
+	Chronosphere: pdox
+		Location: 78,91
+		Owner: Allies
+	AlliedWarFactory1: weap
+		Location: 75,81
+		Owner: Allies
+	AlliedBarracks1: tent
+		Location: 83,75
+		Owner: Allies
+	AlliedBarracks2: tent
+		Location: 50,66
+		Owner: Allies
+	HeliPad1: hpad
+		Location: 70,76
+		Owner: Allies
+	HeliPad2: hpad
+		Location: 64,78
+		Owner: Allies
+	Entry1: waypoint
+		Location: 1,50
 		Owner: Neutral
-	Actor2: rock5
-		Location: 64,20
+	Entry2: waypoint
+		Location: 1,27
 		Owner: Neutral
-	Actor3: rock1
-		Location: 31,20
+	Entry3: waypoint
+		Location: 10,1
 		Owner: Neutral
-	Actor4: rock4
-		Location: 25,45
+	Entry4: waypoint
+		Location: 84,1
+		Owner: Neutral
+	Entry5: waypoint
+		Location: 126,27
+		Owner: Neutral
+	Entry6: waypoint
+		Location: 46,1
+		Owner: Neutral
+	Entry7: waypoint
+		Location: 1,79
+		Owner: Neutral
+	AttackDest: waypoint
+		Location: 55,69
+		Owner: Neutral
+	LstEntry: waypoint
+		Location: 33,126
+		Owner: Neutral
+	LstUnload: waypoint
+		Location: 60,93
+		Owner: Neutral
+	Chinook1Entry: waypoint
+		Location: 44,126
+		Owner: Neutral
+	Chinook2Entry: waypoint
+		Location: 47,126
+		Owner: Neutral
+	Paradrop1: waypoint
+		Location: 70,50
+		Owner: Neutral
+	Paradrop2: waypoint
+		Location: 39,50
+		Owner: Neutral
+	Paradrop3: waypoint
+		Location: 81,60
+		Owner: Neutral
+	Paradrop4: waypoint
+		Location: 28,64
+		Owner: Neutral
+	Paradrop5: waypoint
+		Location: 63,89
+		Owner: Neutral
+	Paradrop6: waypoint
+		Location: 22,77
+		Owner: Neutral
+	Paradrop7: waypoint
+		Location: 64,69
+		Owner: Neutral
+	Paradrop8: waypoint
+		Location: 80,78
+		Owner: Neutral
+	ChronoshiftLocation: waypoint
+		Location: 80,65
+		Owner: Neutral
+	Mig11: waypoint
+		Location: 94,1
+		Owner: Neutral
+	Mig12: waypoint
+		Location: 68,33
+		Owner: Neutral
+	Mig13: waypoint
+		Location: 41,38
+		Owner: Neutral
+	Mig14: waypoint
+		Location: 1,26
+		Owner: Neutral
+	Mig21: waypoint
+		Location: 96,3
+		Owner: Neutral
+	Mig22: waypoint
+		Location: 70,35
+		Owner: Neutral
+	Mig23: waypoint
+		Location: 41,40
+		Owner: Neutral
+	Mig24: waypoint
+		Location: 1,28
 		Owner: Neutral
 	Actor307: brik
 		Location: 40,74
 		Owner: Allies
-	Actor5: rock6
-		Location: 34,45
-		Owner: Neutral
-	Actor7: t08
-		Location: 46,34
-		Owner: Neutral
-	Actor24: v22
-		Location: 31,52
-		Owner: Neutral
 	Actor78: 2tnk
 		Location: 77,68
 		Owner: Allies
-	Actor23: v23
-		Location: 22,51
-		Owner: Neutral
 	Actor12: oilb
 		Location: 49,42
 		Owner: Neutral
@@ -94,15 +191,6 @@ Actors:
 		Owner: Neutral
 	Actor21: brl3
 		Location: 59,49
-		Owner: Neutral
-	Actor8: v25
-		Location: 26,55
-		Owner: Neutral
-	Actor11: v30
-		Location: 29,49
-		Owner: Neutral
-	Actor22: v29
-		Location: 26,49
 		Owner: Neutral
 	Actor14: oilb
 		Location: 26,37
@@ -161,18 +249,6 @@ Actors:
 	Actor63: tsla
 		Location: 48,32
 		Owner: Soviets
-	Actor56: v23
-		Location: 24,36
-		Owner: Neutral
-	Actor57: v27
-		Location: 25,34
-		Owner: Neutral
-	Actor59: v29
-		Location: 21,28
-		Owner: Neutral
-	Actor58: v21
-		Location: 13,26
-		Owner: Neutral
 	Actor61: powr
 		Location: 36,19
 		Owner: Soviets
@@ -188,9 +264,6 @@ Actors:
 	Actor70: afld
 		Location: 47,24
 		Owner: Soviets
-	Actor81: rock7
-		Location: 53,19
-		Owner: Neutral
 	Actor48: brik
 		Location: 72,63
 		Owner: Allies
@@ -206,18 +279,12 @@ Actors:
 	Actor74: brik
 		Location: 89,70
 		Owner: Allies
-	Actor88: t08
-		Location: 87,47
-		Owner: Neutral
 	Actor65: brik
 		Location: 69,64
 		Owner: Allies
 	Actor303: mrj
 		Location: 61,60
 		Owner: Allies
-	Actor87: tc01
-		Location: 92,50
-		Owner: Neutral
 	Actor306: brik
 		Location: 40,75
 		Owner: Allies
@@ -256,12 +323,6 @@ Actors:
 		Location: 40,90
 		Owner: Allies
 		Facing: 64
-	Actor95: rock6
-		Location: 10,76
-		Owner: Neutral
-	Actor97: rock2
-		Location: 12,75
-		Owner: Neutral
 	Actor73: brik
 		Location: 88,70
 		Owner: Allies
@@ -274,12 +335,6 @@ Actors:
 	Actor175: brik
 		Location: 85,71
 		Owner: Allies
-	Actor37: rock5
-		Location: 35,43
-		Owner: Neutral
-	Actor67: t08
-		Location: 25,44
-		Owner: Neutral
 	Actor109: stek
 		Location: 113,32
 		Owner: Soviets
@@ -341,21 +396,12 @@ Actors:
 	Actor125: tsla
 		Location: 111,44
 		Owner: Soviets
-	Actor127: rock2
-		Location: 103,54
-		Owner: Neutral
-	Actor128: rock6
-		Location: 99,59
-		Owner: Neutral
 	Actor129: hpad
 		Location: 99,28
 		Owner: Soviets
 	Actor130: apwr
 		Location: 119,34
 		Owner: Soviets
-	Actor131: t08
-		Location: 121,43
-		Owner: Neutral
 	Actor132: apwr
 		Location: 116,33
 		Owner: Soviets
@@ -375,9 +421,6 @@ Actors:
 	Actor123: afld
 		Location: 119,49
 		Owner: Soviets
-	Actor138: 4tnk
-		Location: 112,46
-		Owner: Soviets
 	Actor139: 3tnk
 		Location: 89,32
 		Owner: Soviets
@@ -386,9 +429,6 @@ Actors:
 		Location: 92,29
 		Owner: Soviets
 		Facing: 20
-	Actor141: 3tnk
-		Location: 36,23
-		Owner: Soviets
 	Actor142: e1
 		Location: 40,27
 		Owner: Soviets
@@ -401,12 +441,6 @@ Actors:
 	Actor145: e1
 		Location: 102,33
 		Owner: Soviets
-	Actor146: rock2
-		Location: 125,37
-		Owner: Neutral
-	Actor147: rock1
-		Location: 118,54
-		Owner: Neutral
 	Actor167: powr
 		Location: 54,74
 		Owner: Allies
@@ -433,24 +467,15 @@ Actors:
 		Location: 107,50
 		Owner: Soviets
 		Facing: 80
-	Actor174: tc01
-		Location: 98,37
-		Owner: Neutral
 	Actor25: fact
 		Location: 86,84
 		Owner: Allies
 	Actor105: brik
 		Location: 94,70
 		Owner: Allies
-	Actor170: kenn
-		Location: 104,41
-		Owner: Soviets
 	Actor162: e1
 		Location: 82,74
 		Owner: Allies
-	Actor182: rock6
-		Location: 96,45
-		Owner: Neutral
 	Actor298: brik
 		Location: 48,78
 		Owner: Allies
@@ -489,12 +514,6 @@ Actors:
 		Location: 55,92
 		Owner: Allies
 		Facing: 160
-	Actor183: rock2
-		Location: 93,41
-		Owner: Neutral
-	Actor185: 3tnk
-		Location: 105,47
-		Owner: Soviets
 	Actor197: dd
 		Location: 30,88
 		Owner: Allies
@@ -612,9 +631,6 @@ Actors:
 	Actor151: apwr
 		Location: 91,91
 		Owner: Allies
-	Actor31: t08
-		Location: 56,58
-		Owner: Neutral
 	Actor311: brik
 		Location: 41,74
 		Owner: Allies
@@ -673,27 +689,6 @@ Actors:
 	Actor229: fenc
 		Location: 93,97
 		Owner: Allies
-	Actor264: v27
-		Location: 20,49
-		Owner: Neutral
-	Actor265: v20
-		Location: 26,52
-		Owner: Neutral
-	Actor266: v21
-		Location: 32,54
-		Owner: Neutral
-	Actor267: v27
-		Location: 21,48
-		Owner: Neutral
-	Actor268: v24
-		Location: 26,58
-		Owner: Neutral
-	Actor269: v26
-		Location: 21,54
-		Owner: Neutral
-	Actor270: v28
-		Location: 18,49
-		Owner: Neutral
 	Actor271: oilb
 		Location: 18,59
 		Owner: Neutral
@@ -863,18 +858,9 @@ Actors:
 	Actor313: brik
 		Location: 37,70
 		Owner: Allies
-	Actor46: tc01
-		Location: 49,79
-		Owner: Neutral
 	Actor258: brik
 		Location: 76,94
 		Owner: Allies
-	Actor259: rock6
-		Location: 53,81
-		Owner: Neutral
-	Actor260: rock2
-		Location: 46,85
-		Owner: Neutral
 	Actor32: proc
 		Location: 90,72
 		Owner: Allies
@@ -940,9 +926,6 @@ Actors:
 		Owner: Allies
 	Actor212: brik
 		Location: 61,80
-		Owner: Allies
-	Actor361: pbox
-		Location: 71,96
 		Owner: Allies
 	Actor221: fenc
 		Location: 92,97
@@ -1140,129 +1123,336 @@ Actors:
 		Location: 47,70
 		Owner: Allies
 		Facing: 64
-	SovietWarFactory1: weap
-		Location: 106,29
+	Actor361: pbox
+		Owner: Allies
+		Location: 73,97
+		TurretFacing: 92
+	Actor384: 3tnk
 		Owner: Soviets
-	SovietBarracks1: barr
-		Location: 109,48
+		Location: 36,23
+		Facing: 92
+		TurretFacing: 92
+	Actor385: 3tnk
 		Owner: Soviets
-	SovietBarracks2: barr
-		Location: 102,30
+		Location: 105,48
+		Facing: 92
+		TurretFacing: 92
+	Actor386: 4tnk.kv-8
 		Owner: Soviets
-	SovietBarracks3: barr
-		Location: 41,27
+		Location: 112,46
+		Facing: 92
+		TurretFacing: 92
+	Actor387: qtnk
 		Owner: Soviets
-	IronCurtain: iron
-		Location: 110,40
+		Location: 112,36
+		Facing: 92
+	Actor388: fenc
 		Owner: Soviets
-	AlliedTechnologyCenter: miss
-		Location: 56,68
+		Location: 116,51
+	Actor389: fenc
+		Owner: Soviets
+		Location: 116,51
+	Actor390: fenc
+		Owner: Soviets
+		Location: 116,51
+	Actor391: fenc
+		Owner: Soviets
+		Location: 115,51
+	Actor392: fenc
+		Owner: Soviets
+		Location: 115,51
+	Actor393: fenc
+		Owner: Soviets
+		Location: 115,51
+	Actor394: fenc
+		Owner: Soviets
+		Location: 114,51
+	Actor395: fenc
+		Owner: Soviets
+		Location: 113,51
+	Actor396: fenc
+		Owner: Soviets
+		Location: 112,51
+	Actor397: fenc
+		Owner: Soviets
+		Location: 112,51
+	Actor398: fenc
+		Owner: Soviets
+		Location: 112,51
+	Actor399: fenc
+		Owner: Soviets
+		Location: 111,51
+	Actor400: fenc
+		Owner: Soviets
+		Location: 111,51
+	Actor401: fenc
+		Owner: Soviets
+		Location: 110,51
+	Actor402: fenc
+		Owner: Soviets
+		Location: 117,51
+	Actor403: fenc
+		Owner: Soviets
+		Location: 103,43
+	Actor404: fenc
+		Owner: Soviets
+		Location: 103,42
+	Actor405: fenc
+		Owner: Soviets
+		Location: 103,42
+	Actor406: fenc
+		Owner: Soviets
+		Location: 103,42
+	Actor407: fenc
+		Owner: Soviets
+		Location: 103,42
+	Actor408: fenc
+		Owner: Soviets
+		Location: 103,41
+	Actor409: fenc
+		Owner: Soviets
+		Location: 103,41
+	Actor410: fenc
+		Owner: Soviets
+		Location: 103,40
+	Actor411: fenc
+		Owner: Soviets
+		Location: 103,40
+	Actor412: fenc
+		Owner: Soviets
+		Location: 103,40
+	Actor413: fenc
+		Owner: Soviets
+		Location: 103,39
+	Actor414: fenc
+		Owner: Soviets
+		Location: 103,39
+	Actor415: fenc
+		Owner: Soviets
+		Location: 103,39
+	Actor416: fenc
+		Owner: Soviets
+		Location: 103,38
+	Actor417: fenc
+		Owner: Soviets
+		Location: 103,38
+	Actor418: fenc
+		Owner: Soviets
+		Location: 103,38
+	Actor419: fenc
+		Owner: Soviets
+		Location: 103,37
+	Actor420: fenc
+		Owner: Soviets
+		Location: 103,37
+	Actor421: fenc
+		Owner: Soviets
+		Location: 103,37
+	Actor424: fenc
+		Owner: Soviets
+		Location: 102,36
+	Actor425: fenc
+		Owner: Soviets
+		Location: 102,36
+	Actor426: fenc
+		Owner: Soviets
+		Location: 102,37
+	Actor427: fenc
+		Owner: Soviets
+		Location: 102,37
+	Actor422: kenn
+		Owner: Soviets
+		Location: 105,40
+	Actor423: fenc
+		Owner: Soviets
+		Location: 58,26
+	Actor428: fenc
+		Owner: Soviets
+		Location: 59,26
+	Actor429: fenc
+		Owner: Soviets
+		Location: 60,26
+	Actor430: fenc
+		Owner: Soviets
+		Location: 60,25
+	Actor431: fenc
+		Owner: Soviets
+		Location: 61,25
+	Actor433: fenc
+		Owner: Soviets
+		Location: 62,24
+	Actor435: fenc
+		Owner: Soviets
+		Location: 63,23
+	Actor436: fenc
+		Owner: Soviets
+		Location: 63,23
+	Actor437: fenc
+		Owner: Soviets
+		Location: 63,23
+	Actor438: fenc
+		Owner: Soviets
+		Location: 63,22
+	Actor439: fenc
+		Owner: Soviets
+		Location: 63,21
+	Actor432: fenc
+		Owner: Soviets
+		Location: 61,24
+	Actor434: fenc
+		Owner: Soviets
+		Location: 62,23
+	Actor440: fenc
+		Owner: Soviets
+		Location: 64,20
+	Actor441: fenc
+		Owner: Soviets
+		Location: 38,29
+	Actor442: fenc
+		Owner: Soviets
+		Location: 38,30
+	Actor443: fenc
+		Owner: Soviets
+		Location: 39,30
+	Actor444: fenc
+		Owner: Soviets
+		Location: 40,30
+	Actor445: fenc
+		Owner: Soviets
+		Location: 41,30
+	Actor446: fenc
+		Owner: Soviets
+		Location: 41,31
+	Actor447: fenc
+		Owner: Soviets
+		Location: 42,31
+	Actor448: fenc
+		Owner: Soviets
+		Location: 43,31
+	Actor449: hosp
 		Owner: Neutral
-	Chronosphere: pdox
-		Location: 78,91
+		Location: 25,48
+	Actor450: v01
+		Owner: Neutral
+		Location: 24,55
+	Actor452: pt
 		Owner: Allies
-	AlliedWarFactory1: weap
-		Location: 75,81
+		Location: 69,102
+		Facing: 92
+		TurretFacing: 92
+	Actor455: pt
 		Owner: Allies
-	AlliedBarracks1: tent
-		Location: 83,75
-		Owner: Allies
-	AlliedBarracks2: tent
-		Location: 50,66
-		Owner: Allies
-	HeliPad1: hpad
-		Location: 70,76
-		Owner: Allies
-	HeliPad2: hpad
-		Location: 64,78
-		Owner: Allies
-	Entry1: waypoint
-		Location: 1,50
+		Location: 61,98
+		Facing: 92
+		TurretFacing: 92
+	Actor454: v02
 		Owner: Neutral
-	Entry2: waypoint
-		Location: 1,27
+		Location: 21,57
+	Actor457: v04
 		Owner: Neutral
-	Entry3: waypoint
-		Location: 10,1
+		Location: 13,48
+	Actor458: v05
 		Owner: Neutral
-	Entry4: waypoint
-		Location: 84,1
+		Location: 25,61
+	Actor459: v06
 		Owner: Neutral
-	Entry5: waypoint
-		Location: 126,27
+		Location: 22,53
+	Actor464: v07
 		Owner: Neutral
-	Entry6: waypoint
-		Location: 46,1
+		Location: 30,33
+	Actor465: v08
 		Owner: Neutral
-	Entry7: waypoint
-		Location: 1,79
+		Location: 20,49
+	Actor466: v09
 		Owner: Neutral
-	AttackDest: waypoint
-		Location: 55,69
+		Location: 35,52
+	Actor467: tc05
 		Owner: Neutral
-	LstEntry: waypoint
-		Location: 33,126
+		Location: 47,84
+	Actor468: tc05
 		Owner: Neutral
-	LstUnload: waypoint
-		Location: 60,93
+		Location: 100,88
+	Actor469: tc05
 		Owner: Neutral
-	Chinook1Entry: waypoint
-		Location: 44,126
+		Location: 64,27
+	Actor470: tc04
 		Owner: Neutral
-	Chinook2Entry: waypoint
-		Location: 47,126
+		Location: 103,89
+	Actor471: tc04
 		Owner: Neutral
-	Paradrop1: waypoint
-		Location: 70,50
+		Location: 49,83
+	Actor472: tc04
 		Owner: Neutral
-	Paradrop2: waypoint
-		Location: 39,50
+		Location: 54,28
+	Actor473: tc02
 		Owner: Neutral
-	Paradrop3: waypoint
-		Location: 81,60
+		Location: 62,29
+	Actor474: tc02
 		Owner: Neutral
-	Paradrop4: waypoint
-		Location: 28,64
+		Location: 102,93
+	Actor475: tc02
 		Owner: Neutral
-	Paradrop5: waypoint
-		Location: 63,89
+		Location: 8,59
+	Actor476: tc01
 		Owner: Neutral
-	Paradrop6: waypoint
-		Location: 22,77
+		Location: 7,58
+	Actor477: tc01
 		Owner: Neutral
-	Paradrop7: waypoint
-		Location: 64,69
+		Location: 106,92
+	Actor478: tc01
 		Owner: Neutral
-	Paradrop8: waypoint
-		Location: 80,78
+		Location: 66,29
+	Actor479: t15
 		Owner: Neutral
-	ChronoshiftLocation: waypoint
-		Location: 80,65
+		Location: 51,82
+	Actor480: t15
 		Owner: Neutral
-	Mig11: waypoint
-		Location: 94,1
+		Location: 106,90
+	Actor481: t15
 		Owner: Neutral
-	Mig12: waypoint
-		Location: 68,33
+		Location: 57,28
+	Actor482: t16
 		Owner: Neutral
-	Mig13: waypoint
-		Location: 41,38
+		Location: 53,30
+	Actor483: t16
 		Owner: Neutral
-	Mig14: waypoint
-		Location: 1,26
+		Location: 53,82
+	Actor484: t16
 		Owner: Neutral
-	Mig21: waypoint
-		Location: 96,3
+		Location: 106,91
+	Actor485: t16
 		Owner: Neutral
-	Mig22: waypoint
-		Location: 70,35
+		Location: 64,30
+	Actor486: t16
 		Owner: Neutral
-	Mig23: waypoint
-		Location: 41,40
+		Location: 8,56
+	Actor487: t15
 		Owner: Neutral
-	Mig24: waypoint
-		Location: 1,28
+		Location: 4,59
+	Actor488: t15
 		Owner: Neutral
+		Location: 45,84
+	Actor489: t15
+		Owner: Neutral
+		Location: 59,83
+	Actor490: t15
+		Owner: Neutral
+		Location: 100,87
+	Actor491: t14
+		Owner: Neutral
+		Location: 26,52
+	Actor460: t16
+		Owner: Neutral
+		Location: 14,61
+	Actor461: t12
+		Owner: Neutral
+		Location: 18,54
+	Actor462: t12
+		Owner: Neutral
+		Location: 52,29
+	Actor463: t10
+		Owner: Neutral
+		Location: 88,49
 
 Rules: ura|rules/campaign-palettes.yaml, rules.yaml
 
