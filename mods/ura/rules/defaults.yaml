@@ -217,15 +217,7 @@
 	DrawLineToTarget:
 	UpdatesPlayerStatistics:
 	Mobile:
-		Crushes: mine, crate
-		TerrainSpeeds:
-			Clear: 80
-			Rough: 40
-			Road: 100
-			Bridge: 100
-			Ore: 70
-			Gems: 70
-			Beach: 40
+		Locomotor: wheeled
 		TurnSpeed: 5
 	SelectionDecorations:
 	WithSpriteControlGroupDecoration:
@@ -289,15 +281,7 @@
 ^TrackedVehicle:
 	Inherits: ^Vehicle
 	Mobile:
-		Crushes: wall, mine, crate
-		TerrainSpeeds:
-			Clear: 80
-			Rough: 70
-			Road: 100
-			Bridge: 100
-			Ore: 70
-			Gems: 70
-			Beach: 70
+		Locomotor: tracked
 
 ^Infantry:
 	Inherits@1: ^ExistsInWorld
@@ -314,16 +298,7 @@
 		Range: 5c0
 	Mobile:
 		Speed: 56
-		Crushes: mine, crate
-		SharesCell: true
-		TerrainSpeeds:
-			Clear: 90
-			Rough: 80
-			Road: 100
-			Bridge: 100
-			Ore: 80
-			Gems: 80
-			Beach: 80
+		Locomotor: foot
 	SelectionDecorations:
 	WithSpriteControlGroupDecoration:
 	Selectable:
@@ -455,9 +430,7 @@
 	DrawLineToTarget:
 	UpdatesPlayerStatistics:
 	Mobile:
-		Crushes: crate
-		TerrainSpeeds:
-			Water: 100
+		Locomotor: naval
 	SelectionDecorations:
 	WithSpriteControlGroupDecoration:
 	Selectable:
@@ -700,34 +673,6 @@
 		HP: 100
 	EditorTilesetFilter:
 		Categories: Wall
-
-^Gate:
-	Inherits: ^BasicBuilding
-	Valued:
-		Cost: 250
-	Health:
-		HP: 350
-	Armor:
-		Type: Heavy
-	LineBuildNode:
-		Types: concrete, gate
-	-WithSpriteBody:
-	WithGateSpriteBody:
-	Tooltip:
-		Name: Gate
-	Building:
-		BuildSounds: place2.aud
-		TerrainTypes: Clear, Road
-		UndeploySounds: cashturn.aud
-	RequiresBuildableArea:
-		AreaTypes: building
-		Adjacent: 4
-	EditorTilesetFilter:
-		Categories: Wall
-	Gate:
-		OpeningSound: cashturn.aud
-		ClosingSound: cashturn.aud
-		BlocksProjectilesHeight: 0
 
 ^TechBuilding:
 	Inherits: ^BasicBuilding
@@ -993,6 +938,9 @@
 		QuantizedFacings: 1
 	Interactable:
 		Bounds: 96,48
+	ShakeOnDeath:
+		Duration: 15
+		Intensity: 6
 
 ^Rock:
 	Inherits@1: ^SpriteActor
