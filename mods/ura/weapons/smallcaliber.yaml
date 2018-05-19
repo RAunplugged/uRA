@@ -84,7 +84,7 @@ FLAK-23-AG:
 ^LightMG:
 	Inherits: ^HeavyMG
 	Warhead@1Dam: SpreadDamage
-		Damage: 15
+		Damage: 10
 		Versus:
 			None: 150
 			Wood: 10
