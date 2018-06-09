@@ -4,7 +4,7 @@
 	MinRange: 0c512
 	Report: missile6.aud
 	Projectile: Missile
-		Speed: 213
+		Speed: 235
 		Arm: 2
 		Blockable: false
 		ContrailLength: 10
@@ -76,7 +76,7 @@ HellfireAG:
 	Burst: 4
 	BurstDelays: 14
 	Projectile: Missile
-		Speed: 256
+		Speed: 304
 		HorizontalRateOfTurn: 10
 		RangeLimit: 8c512
 	Warhead@1Dam: SpreadDamage
@@ -94,7 +94,7 @@ HellfireAA:
 	Burst: 2
 	BurstDelays: 10
 	Projectile: Missile
-		Speed: 384
+		Speed: 416
 		Inaccuracy: 128
 		HorizontalRateOfTurn: 10
 		RangeLimit: 7c0

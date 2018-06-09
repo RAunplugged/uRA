@@ -34,7 +34,6 @@
 	Range: 5c0
 	Report: cannon2.aud
 	Projectile: Bullet
-		Speed: 853
 		Image: 50CAL
 	Warhead@1Dam: SpreadDamage
 		Damage: 30
@@ -72,7 +71,7 @@
 	BurstDelays: 4
 	Warhead@1Dam: SpreadDamage
 		Versus:
-			Heavy: 125
+			Heavy: 130
 			Light: 90
 
 120mm:
@@ -83,7 +82,7 @@
 	Warhead@1Dam: SpreadDamage
 		Damage: 60
 		Versus:
-			Heavy: 125
+			Heavy: 130
 			Light: 90
 		InvalidTargets: Air
 

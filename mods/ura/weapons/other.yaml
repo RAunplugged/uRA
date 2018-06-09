@@ -237,6 +237,16 @@ MADTankThump:
 			Heavy: 30
 		InvalidTargets: MADTank
 		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
+	Warhead@3Dam: HealthPercentageDamage
+		Spread: 5c0
+		Damage: 1
+		Versus:
+			None: 200
+			Wood: 55
+			Light: 45
+			Heavy: 30
+		InvalidTargets: MADTank
+		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
 		
 MADTankDetonate:
 	InvalidTargets: MADTank, Infantry

@@ -468,7 +468,7 @@ PDOX:
 		InsufficientPowerSpeechNotification: InsufficientPower
 		BeginChargeSpeechNotification: ChronosphereCharging
 		EndChargeSpeechNotification: ChronosphereReady
-		Duration: 500
+		Duration: 400
 		KillCargo: yes
 		DisplayRadarPing: True
 	ChronoshiftPower@advancedchronoshift:
@@ -483,7 +483,7 @@ PDOX:
 		InsufficientPowerSpeechNotification: InsufficientPower
 		BeginChargeSpeechNotification: ChronosphereCharging
 		EndChargeSpeechNotification: ChronosphereReady
-		Duration: 500
+		Duration: 400
 		KillCargo: yes
 		DisplayRadarPing: True
 		Range: 2
@@ -637,8 +637,7 @@ DOME:
 		Condition: jammed
 	ParatroopersPower@paratroopers: 
 		OrderName: AlliedParatroopers
-		Prerequisites: ~disabled
-		#Prerequisites: dome, ~structures.allies
+		Prerequisites: dome, ~structures.england
 		Icon: sniperdrop
 		ChargeTime: 240
 		Description: Sniper Drop

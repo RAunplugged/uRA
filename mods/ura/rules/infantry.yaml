@@ -661,6 +661,10 @@ SNIPER:
 	AttackFrontal:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
+		RequiresCondition: !parachute
+	WithInfantryBody@PARACHUTE:
+		StandSequences: parachute
+		RequiresCondition: parachute
 	Cloak:
 		InitialDelay: 250
 		CloakDelay: 150
