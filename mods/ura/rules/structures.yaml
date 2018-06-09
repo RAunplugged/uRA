@@ -795,7 +795,7 @@ GUN:
 	AttackTurreted:
 	WithMuzzleOverlay:
 	Power:
-		Amount: -40
+		Amount: -30
 	DetectCloaked:
 		Range: 6c0
 	BodyOrientation:

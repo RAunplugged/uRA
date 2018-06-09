@@ -91,6 +91,8 @@ TurretGun:
 	ReloadDelay: 30
 	Range: 8c0
 	Report: turret1.aud
+	Projectile: Bullet
+		Speed: 1024
 	Warhead@1Dam: SpreadDamage
 		Damage: 60
 		Versus:
