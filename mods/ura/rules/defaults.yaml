@@ -151,6 +151,25 @@
 		RequiresCondition: rank-elite
 		ZOffset: 256
 
+^InfantryExperienceHospitalOverrides:
+	WithDecoration@RANK-1:
+		BlinkInterval: 32
+		BlinkPatterns:
+			hospitalheal: On, Off
+	WithDecoration@RANK-2:
+		BlinkInterval: 32
+		BlinkPatterns:
+			hospitalheal: On, Off
+	WithDecoration@RANK-3:
+		BlinkInterval: 32
+		BlinkPatterns:
+			hospitalheal: On, Off
+	WithDecoration@RANK-ELITE:
+		BlinkInterval: 32
+		BlinkPatterns:
+			hospitalheal: On, Off
+
+
 ^IronCurtainable:
 	WithColoredOverlay@IRONCURTAIN:
 		RequiresCondition: invulnerability
@@ -220,6 +239,8 @@
 	Inherits@3: ^SpriteActor
 	Inherits@bounty: ^GlobalBounty
 	Huntable:
+	OwnerLostAction:
+		Action: Kill
 	DrawLineToTarget:
 	UpdatesPlayerStatistics:
 	Mobile:
@@ -295,6 +316,8 @@
 	Inherits@3: ^SpriteActor
 	Inherits@bounty: ^GlobalBounty
 	Huntable:
+	OwnerLostAction:
+		Action: Kill
 	DrawLineToTarget:
 	Health:
 		HP: 25
@@ -433,6 +456,8 @@
 	Inherits@4: ^SpriteActor
 	Inherits@bounty: ^GlobalBounty
 	Huntable:
+	OwnerLostAction:
+		Action: Kill
 	DrawLineToTarget:
 	UpdatesPlayerStatistics:
 	Mobile:
@@ -476,6 +501,8 @@
 	Inherits@4: ^SpriteActor
 	Inherits@bounty: ^GlobalBounty
 	Huntable:
+	OwnerLostAction:
+		Action: Kill
 	DrawLineToTarget:
 	UpdatesPlayerStatistics:
 	AppearsOnRadar:
@@ -525,8 +552,6 @@
 		Categories: Aircraft
 	SpawnActorOnDeath:
 		RequiresCondition: airborne
-		OwnerType: InternalName
-		EffectiveOwnerFromOwner: true
 	Explodes:
 		Weapon: UnitExplode
 		RequiresCondition: !airborne
@@ -599,6 +624,8 @@
 ^Building:
 	Inherits: ^BasicBuilding
 	Huntable:
+	OwnerLostAction:
+		Action: Kill
 	UpdatesPlayerStatistics:
 	GivesBuildableArea:
 		AreaTypes: building, fake
@@ -609,7 +636,7 @@
 	WithMakeAnimation:
 	ExternalCapturable:
 	ExternalCapturableBar:
-	EmitInfantryOnSell:
+	SpawnActorsOnSell:
 		ActorTypes: e1,e1,e1,tecn,tecn
 	MustBeDestroyed:
 		RequiredForShortGame: true
@@ -620,7 +647,7 @@
 
 ^ScienceBuilding:
 	Inherits: ^Building
-	EmitInfantryOnSell:
+	SpawnActorsOnSell:
 		ActorTypes: e1,e1,e1,e1,tecn,tecn,tecn,tecn,tecn,tecn,tecn,tecn,tecn,tecn,e6,e6,e6,e6,e6,chan,chan,chan,chan
 
 ^Defense:
@@ -645,6 +672,8 @@
 	Inherits@2: ^SpriteActor
 	Inherits@shape: ^1x1Shape
 	Interactable:
+	OwnerLostAction:
+		Action: Kill
 	Building:
 		Dimensions: 1,1
 		Footprint: x
@@ -713,7 +742,7 @@
 		Sequence: tag-fake
 		ReferencePoint: Top
 		ZOffset: 256
-	-EmitInfantryOnSell:
+	-SpawnActorsOnSell:
 	-MustBeDestroyed:
 	EditorTilesetFilter:
 		Categories: Fake

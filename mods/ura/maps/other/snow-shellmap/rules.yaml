@@ -79,6 +79,11 @@ World:
 	InfiltrateForDecoration:
 		RequiresSelection: true
 
+^Bridge:
+	DamageMultiplier:
+		Modifier: 0
+
+
 OILB:
 	CashTrickler:
 		ShowTicks: false

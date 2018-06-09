@@ -48,11 +48,11 @@ Background@MAPCHOOSER_PANEL:
 			Y: 77
 			Width: PARENT_RIGHT - 40
 			Height: 471
-#			Children:
-#				ScrollPanel@MAP_LIST:
-#					Width: PARENT_RIGHT
-#					Height: PARENT_BOTTOM
-#					Children:
+			#Children:
+			#	ScrollPanel@MAP_LIST:
+			#		Width: PARENT_RIGHT
+			#		Height: PARENT_BOTTOM
+			#		Children:
 		Container@USER_MAPS_TAB:
 			X: 20
 			Y: 77

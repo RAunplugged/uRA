@@ -186,7 +186,7 @@ SPEN:
 		Produces: Ship, Submarine
 	PrimaryBuilding:
 		PrimaryCondition: primary
-	-EmitInfantryOnSell:
+	-SpawnActorsOnSell:
 	RepairsUnits:
 		HpPerStep: 1000
 		FinishRepairingNotification: UnitRepaired
@@ -298,7 +298,7 @@ SYRD:
 		Produces: Ship, Boat
 	PrimaryBuilding:
 		PrimaryCondition: primary
-	-EmitInfantryOnSell:
+	-SpawnActorsOnSell:
 	RepairsUnits:
 		HpPerStep: 1000
 		FinishRepairingNotification: UnitRepaired
@@ -448,7 +448,7 @@ PDOX:
 		RequiresCondition: !disabled
 	WithBuildingBib:
 		HasMinibib: Yes
-	EmitInfantryOnSell:
+	SpawnActorsOnSell:
 		ActorTypes: e1,e1,e1,e1,e1,e1,e1,e1,e1,tecn,tecn,tecn,tecn,tecn,einstein
 	ProvidesPrerequisite@germany:
 		Factions: germany
@@ -691,7 +691,7 @@ PBOX:
 		MaxWeight: 1
 		PipCount: 1
 		InitialUnits: e1
-	-EmitInfantryOnSell:
+	-SpawnActorsOnSell:
 	AttackGarrisoned:
 		Armaments: garrisoned
 		PortOffsets: 384,0,128, 224,-341,128, -224,-341,128, -384,0,128, -224,341,128, 224,341,128
@@ -746,7 +746,7 @@ HBOX:
 		MaxWeight: 1
 		PipCount: 1
 		InitialUnits: e1
-	-EmitInfantryOnSell:
+	-SpawnActorsOnSell:
 	DetectCloaked:
 		Range: 6c0
 	RenderRangeCircle:
@@ -1103,7 +1103,7 @@ FACT:
 		Name: Construction Yard
 	CustomSellValue:
 		Value: 2500
-	EmitInfantryOnSell:
+	SpawnActorsOnSell:
 		ActorTypes: e1,e1,e1,tecn,tecn,e6
 	BaseBuilding:
 	Transforms:
@@ -1230,7 +1230,7 @@ SILO:
 	StoresResources:
 		PipCount: 5
 		Capacity: 3000
-	-EmitInfantryOnSell:
+	-SpawnActorsOnSell:
 	Power:
 		Amount: -10
 	Explodes:
@@ -1698,7 +1698,7 @@ KENN:
 	PrimaryBuilding:
 		PrimaryCondition: primary
 	ProductionBar:
-	-EmitInfantryOnSell:
+	-SpawnActorsOnSell:
 	Power:
 		Amount: 0
 	ProvidesPrerequisite@buildingname:

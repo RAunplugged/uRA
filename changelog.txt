@@ -9,25 +9,35 @@ OpenRA PR list
 GENERAL IMPROVEMENTS
 
 #14861 ignored
+#15197 engine only
 #14980
 #15089 engine only
+#15185
 #15006
 #14947 engine only + #14853
 #14597 engine only
+#15144
+#15137
+#15179 engine only
+#15176 engine only
 #15057
 #14929 engine only
 #14976 engine only
+#15122 engine only
+#15147
 #14874 engine only
+#14424 engine only
 #14868 engine only
 #14915 engine only
 #14950
 #14975 engine only
 #15025 engine only
+#15152 engine only
 #14899 engine only (#14901)
 #15065 engine only
 #15003 engine only
 (#14913, #14928, #14935, #14932, #14917, #14934, #14930 #14931, #14933, #14900,
- #14943, #14940, #14977, #15036, #15034, #14984, #15098, #15109, #15121) engine only + #15069
+ #14943, #14940, #14977, #15036, #15034, #14984, #15098, #15109, #15121, #15148, #15129, #15149, #15177, #15212, #15182, #15194) engine only + #15069
 
 
 
@@ -40,26 +50,32 @@ AI IMPROVEMENTS
 RED ALERT
 
 #15106
+#15147
 #14815
 #14897
+#15159
 #14926
 #14951
+#14982
 #14941
 #14888 ignored
 #14945
-#15069
+#15180 ignored
+#15069, #15205
+#15206
 #15091 ignored
 
 
 
 ENGINE/MODDING
 
-(#14964, #15005, #15009, #15011, #15095, #15096, #15090) engine only
+(#14964, #15005, #15009, #15011, #15095, #15096, #15090, #15156) engine only + #15125
 #14831 engine only
 (#14859, #15001) engine only
 #14948 engine only
 #14249 engine only
 #15064 engine only
+#14684 engine only
 #15108
 #14974 engine only
 #14946 engine only
@@ -68,9 +84,11 @@ ENGINE/MODDING
 #15007 engine only
 #14286 engine only
 #15103
+#14837 engine only
 #14742
 #15094
 #14916 engine only
+#15111 engine only
 #14777 engine only
 #14760 engine only
 #15022 engine only
@@ -83,6 +101,10 @@ ENGINE/MODDING
 #14851 engine only (commit/12054506e1399bccadd94727299266fc3133821f)
 #14882 engine only
 #15072 engine only
+#15066 engine only
+#15144
+#15128 (ModSDK related)
+#15140
 #14757 engine only
 #14685 engine only + #14889
 #14759 engine only
@@ -90,9 +112,12 @@ ENGINE/MODDING
 #14738 engine only
 (#14895, #14896) engine only
 #15088 engine only
+#15157 engine only
 #14349 engine only
-#14997
+#14997 + #15209 engine only (ModSDK related)
+#15129 engine only
 #14846 engine only
+#15161 engine only + #15171
 #14893 + #15115 engine only
 #15028 
 #14839
@@ -102,6 +127,12 @@ ENGINE/MODDING
 #14892
 #14949 engine only
 #15037 engine only
+
+
+
+DEDICATED
+
+#15152
 
 
 
