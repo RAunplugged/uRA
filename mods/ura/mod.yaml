@@ -38,6 +38,7 @@ MapFolders:
 	ura|maps/conquests: System
 	ura|maps/minigames: System
 	ura|maps/missions: System
+	ura|maps/modded: System
 	ura|maps/other: System
 	~^maps/ra/release-20180307: User
 

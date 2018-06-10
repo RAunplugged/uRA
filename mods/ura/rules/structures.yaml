@@ -635,7 +635,7 @@ DOME:
 	ProvidesPrerequisite@buildingname:
 	ExternalCondition@JAMMED:
 		Condition: jammed
-	ParatroopersPower@paratroopers: 
+	ParatroopersPower@paratroopers:
 		OrderName: AlliedParatroopers
 		Prerequisites: dome, ~structures.england
 		Icon: sniperdrop

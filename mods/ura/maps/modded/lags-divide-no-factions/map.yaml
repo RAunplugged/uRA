@@ -1,0 +1,560 @@
+MapFormat: 11
+RequiresMod: ura
+Title: Lag's Divide (No Factions)
+Author: Lucian
+Tileset: DESERT
+MapSize: 136,88
+Bounds: 1,1,126,78
+Visibility: Lobby
+Categories: Modded
+Players:
+	PlayerReference@Neutral:
+		Name: Neutral
+		OwnsWorld: True
+		NonCombatant: True
+		Faction: allies
+	PlayerReference@Multi0:
+		Name: Multi0
+		Playable: True
+		Faction: Random
+		Enemies: Creeps
+	PlayerReference@Multi1:
+		Name: Multi1
+		Playable: True
+		Faction: Random
+		Enemies: Creeps
+	PlayerReference@Multi2:
+		Name: Multi2
+		Playable: True
+		Faction: Random
+		Enemies: Creeps
+	PlayerReference@Multi3:
+		Name: Multi3
+		Playable: True
+		Faction: Random
+		Enemies: Creeps
+	PlayerReference@Multi4:
+		Name: Multi4
+		Playable: True
+		Faction: Random
+		Enemies: Creeps
+	PlayerReference@Multi5:
+		Name: Multi5
+		Playable: True
+		Faction: Random
+		Enemies: Creeps
+	PlayerReference@Multi6:
+		Name: Multi6
+		Playable: True
+		Faction: Random
+		Enemies: Creeps
+	PlayerReference@Multi7:
+		Name: Multi7
+		Playable: True
+		Faction: Random
+		Enemies: Creeps
+	PlayerReference@Multi8:
+		Name: Multi8
+		Playable: True
+		Faction: Random
+		Enemies: Creeps
+	PlayerReference@Multi9:
+		Name: Multi9
+		Playable: True
+		Faction: Random
+		Enemies: Creeps
+	PlayerReference@Creeps:
+		Name: Creeps
+		NonCombatant: True
+		Faction: allies
+		Enemies: Multi0, Multi1, Multi2, Multi3, Multi4, Multi5, Multi6, Multi7, Multi8, Multi9
+Actors:
+	Actor13: mine
+		Location: 123,43
+		Owner: Neutral
+	Actor16: mine
+		Location: 123,46
+		Owner: Neutral
+	Actor22: mine
+		Location: 123,72
+		Owner: Neutral
+	Actor24: mine
+		Location: 120,75
+		Owner: Neutral
+	Actor99: gmine
+		Owner: Neutral
+		Location: 120,75
+	Actor100: gmine
+		Owner: Neutral
+		Location: 123,72
+	Actor108: gmine
+		Owner: Neutral
+		Location: 123,43
+	Actor109: gmine
+		Owner: Neutral
+		Location: 123,46
+	Actor107: gmine
+		Owner: Neutral
+		Location: 120,75
+	Actor102: mine
+		Owner: Neutral
+		Location: 123,57
+	Actor103: gmine
+		Owner: Neutral
+		Location: 123,57
+	Actor152: mine
+		Owner: Neutral
+		Location: 123,60
+	Actor153: gmine
+		Owner: Neutral
+		Location: 123,60
+	Actor105: mine
+		Owner: Neutral
+		Location: 123,29
+	Actor154: gmine
+		Owner: Neutral
+		Location: 123,29
+	Actor166: mine
+		Owner: Neutral
+		Location: 123,32
+	Actor167: gmine
+		Owner: Neutral
+		Location: 123,32
+	Actor168: gmine
+		Owner: Neutral
+		Location: 109,75
+	Actor97: mine
+		Owner: Neutral
+		Location: 123,15
+	Actor133: gmine
+		Owner: Neutral
+		Location: 123,15
+	Actor134: gmine
+		Owner: Neutral
+		Location: 123,15
+	Actor169: mine
+		Owner: Neutral
+		Location: 123,18
+	Actor170: gmine
+		Owner: Neutral
+		Location: 123,18
+	Actor83: mine
+		Owner: Neutral
+		Location: 4,15
+	Actor84: gmine
+		Owner: Neutral
+		Location: 4,15
+	Actor85: gmine
+		Owner: Neutral
+		Location: 4,15
+	Actor86: mine
+		Owner: Neutral
+		Location: 4,18
+	Actor87: gmine
+		Owner: Neutral
+		Location: 4,18
+	Actor88: mine
+		Owner: Neutral
+		Location: 4,29
+	Actor89: gmine
+		Owner: Neutral
+		Location: 4,29
+	Actor90: mine
+		Owner: Neutral
+		Location: 4,32
+	Actor115: gmine
+		Owner: Neutral
+		Location: 4,32
+	Actor116: mine
+		Owner: Neutral
+		Location: 4,43
+	Actor117: gmine
+		Owner: Neutral
+		Location: 4,43
+	Actor118: mine
+		Owner: Neutral
+		Location: 4,46
+	Actor119: gmine
+		Owner: Neutral
+		Location: 4,46
+	Actor120: mine
+		Owner: Neutral
+		Location: 4,57
+	Actor121: gmine
+		Owner: Neutral
+		Location: 4,57
+	Actor171: mine
+		Owner: Neutral
+		Location: 4,60
+	Actor172: gmine
+		Owner: Neutral
+		Location: 4,60
+	Actor173: mine
+		Owner: Neutral
+		Location: 4,72
+	Actor174: gmine
+		Owner: Neutral
+		Location: 4,72
+	Actor177: gmine
+		Owner: Neutral
+		Location: 95,75
+	Actor178: mine
+		Owner: Neutral
+		Location: 106,75
+	Actor179: gmine
+		Owner: Neutral
+		Location: 106,75
+	Actor180: gmine
+		Owner: Neutral
+		Location: 106,75
+	Actor112: gmine
+		Owner: Neutral
+		Location: 7,75
+	Actor113: mine
+		Owner: Neutral
+		Location: 18,75
+	Actor114: gmine
+		Owner: Neutral
+		Location: 18,75
+	Actor175: gmine
+		Owner: Neutral
+		Location: 18,75
+	Actor111: gmine
+		Owner: Neutral
+		Location: 21,75
+	Actor106: gmine
+		Owner: Neutral
+		Location: 81,75
+	Actor110: mine
+		Owner: Neutral
+		Location: 92,75
+	Actor184: gmine
+		Owner: Neutral
+		Location: 92,75
+	Actor185: gmine
+		Owner: Neutral
+		Location: 92,75
+	Actor186: gmine
+		Owner: Neutral
+		Location: 78,75
+	Actor176: gmine
+		Owner: Neutral
+		Location: 32,75
+	Actor181: gmine
+		Owner: Neutral
+		Location: 35,75
+	Actor182: mine
+		Owner: Neutral
+		Location: 46,75
+	Actor183: gmine
+		Owner: Neutral
+		Location: 46,75
+	Actor187: gmine
+		Owner: Neutral
+		Location: 46,75
+	Actor188: gmine
+		Owner: Neutral
+		Location: 49,75
+	Actor95: oilb
+		Owner: Neutral
+		Location: 54,57
+	Actor96: oilb
+		Owner: Neutral
+		Location: 72,57
+	Actor98: v27
+		Owner: Neutral
+		Location: 59,40
+	Actor93: oilb
+		Owner: Neutral
+		Location: 24,24
+	Actor94: oilb
+		Owner: Neutral
+		Location: 26,24
+	Actor124: oilb
+		Owner: Neutral
+		Location: 28,24
+	Actor125: oilb
+		Owner: Neutral
+		Location: 24,36
+	Actor126: oilb
+		Owner: Neutral
+		Location: 26,36
+	Actor127: oilb
+		Owner: Neutral
+		Location: 28,36
+	Actor128: oilb
+		Owner: Neutral
+		Location: 24,48
+	Actor129: oilb
+		Owner: Neutral
+		Location: 26,48
+	Actor130: oilb
+		Owner: Neutral
+		Location: 28,48
+	Actor131: oilb
+		Owner: Neutral
+		Location: 24,60
+	Actor132: oilb
+		Owner: Neutral
+		Location: 26,60
+	Actor155: oilb
+		Owner: Neutral
+		Location: 28,60
+	Actor91: oilb
+		Owner: Neutral
+		Location: 98,24
+	Actor92: oilb
+		Owner: Neutral
+		Location: 100,24
+	Actor101: oilb
+		Owner: Neutral
+		Location: 102,24
+	Actor104: oilb
+		Owner: Neutral
+		Location: 98,36
+	Actor122: oilb
+		Owner: Neutral
+		Location: 100,36
+	Actor123: oilb
+		Owner: Neutral
+		Location: 102,36
+	Actor139: oilb
+		Owner: Neutral
+		Location: 98,48
+	Actor140: oilb
+		Owner: Neutral
+		Location: 100,48
+	Actor141: oilb
+		Owner: Neutral
+		Location: 102,48
+	Actor142: oilb
+		Owner: Neutral
+		Location: 98,60
+	Actor143: oilb
+		Owner: Neutral
+		Location: 100,60
+	Actor144: oilb
+		Owner: Neutral
+		Location: 102,60
+	Actor148: oilb
+		Owner: Neutral
+		Location: 34,40
+	Actor149: oilb
+		Owner: Neutral
+		Location: 34,42
+	Actor151: oilb
+		Owner: Neutral
+		Location: 34,44
+	Actor136: oilb
+		Owner: Neutral
+		Location: 92,40
+	Actor137: oilb
+		Owner: Neutral
+		Location: 92,42
+	Actor138: oilb
+		Owner: Neutral
+		Location: 92,44
+	Actor135: oilb
+		Owner: Neutral
+		Location: 72,24
+	Actor150: oilb
+		Owner: Neutral
+		Location: 54,24
+	Actor163: gmine
+		Owner: Neutral
+		Location: 58,17
+	Actor164: gmine
+		Owner: Neutral
+		Location: 69,17
+	Actor165: gmine
+		Owner: Neutral
+		Location: 58,65
+	Actor189: gmine
+		Owner: Neutral
+		Location: 69,65
+	Actor145: mpspawn
+		Owner: Neutral
+		Location: 19,21
+	Actor146: mpspawn
+		Owner: Neutral
+		Location: 19,33
+	Actor147: mpspawn
+		Owner: Neutral
+		Location: 19,45
+	Actor156: mpspawn
+		Owner: Neutral
+		Location: 19,57
+	Actor157: mpspawn
+		Owner: Neutral
+		Location: 40,41
+	Actor158: mpspawn
+		Owner: Neutral
+		Location: 108,21
+	Actor159: mpspawn
+		Owner: Neutral
+		Location: 108,33
+	Actor160: mpspawn
+		Owner: Neutral
+		Location: 108,45
+	Actor161: mpspawn
+		Owner: Neutral
+		Location: 108,57
+	Actor162: mpspawn
+		Owner: Neutral
+		Location: 87,41
+Rules:
+	GAP:
+		Buildable:
+			Prerequisites: atek, ~techlevel.unrestricted
+	SPEN:
+		Buildable:
+			Prerequisites: anypower, ~techlevel.low
+	SYRD:
+		Buildable:
+			Prerequisites: anypower, ~techlevel.low
+	IRON:
+		Buildable:
+			Prerequisites: stek, ~techlevel.unrestricted
+	PDOX:
+		Buildable:
+			Prerequisites: atek, ~techlevel.unrestricted
+		ChronoshiftPower@chronoshift:
+			Prerequisites: never
+		ChronoshiftPower@advancedchronoshift:
+			Prerequisites: techlevel.unrestricted
+	TSLA:
+		Buildable:
+			Prerequisites: weap, ~techlevel.medium
+	AGUN:
+		Buildable:
+			Prerequisites: dome, ~techlevel.medium
+	PBOX:
+		Buildable:
+			Prerequisites: tent, ~techlevel.low
+	HBOX:
+		Buildable:
+			Prerequisites: tent, ~techlevel.medium
+	GUN:
+		Buildable:
+			Prerequisites: tent, ~techlevel.medium
+	FTUR:
+		Buildable:
+			Prerequisites: barr, ~techlevel.low
+	SAM:
+		Buildable:
+			Prerequisites: dome, ~techlevel.medium
+	ATEK:
+		Buildable:
+			Prerequisites: weap, dome, ~techlevel.unrestricted
+	HPAD:
+		Buildable:
+			Prerequisites: dome, ~techlevel.medium
+	AFLD:
+		Buildable:
+			Prerequisites: dome, ~techlevel.medium
+		ProvidesPrerequisite@allies:
+			Prerequisite: aircraft.soviet
+		AirstrikePower@parabombs:
+			Prerequisites: aircraft.soviet
+	STEK:
+		Buildable:
+			Prerequisites: weap, dome, ~techlevel.unrestricted
+	DOME:
+		ParatroopersPower@paratroopers:
+			Prerequisites: dome
+	BARR:
+		Buildable:
+			Prerequisites: anypower, ~techlevel.infonly
+	KENN:
+		Buildable:
+			Prerequisites: anypower, ~techlevel.infonly
+	TENT:
+		Buildable:
+			Prerequisites: anypower, ~techlevel.infonly
+	SBAG:
+		Buildable:
+			Prerequisites: fact, ~techlevel.low
+	FENC:
+		Buildable:
+			Prerequisites: fact, ~techlevel.low
+	V2RL:
+		Buildable:
+			Prerequisites: dome, ~techlevel.medium
+	1TNK:
+		Buildable:
+			Prerequisites: ~techlevel.low
+	2TNK:
+		Buildable:
+			Prerequisites: fix, ~techlevel.medium
+	2TNK.GER:
+		Buildable:
+			Prerequisites: fix, ~techlevel.medium
+	3TNK:
+		Buildable:
+			Prerequisites: fix, ~techlevel.medium
+	4TNK:
+		Buildable:
+			Prerequisites: fix, stek, ~techlevel.unrestricted
+	4TNK.KV-8:
+		Buildable:
+			Prerequisites: fix, stek, ~techlevel.unrestricted
+	ARTY:
+		Buildable:
+			Prerequisites: dome, ~techlevel.medium
+	JEEP:
+		Buildable:
+			Prerequisites: ~techlevel.low
+	APC:
+		Buildable:
+			Prerequisites: ~techlevel.low
+	MNLY.AP:
+		Buildable:
+			Prerequisites: fix, ~techlevel.medium
+	MNLY.AT:
+		Buildable:
+			Prerequisites: fix, ~techlevel.medium
+	MGG:
+		Buildable:
+			Prerequisites: atek, ~techlevel.unrestricted
+	MRJ:
+		Buildable:
+			Prerequisites: atek, ~techlevel.unrestricted
+	TTNK:
+		Buildable:
+			Prerequisites: tsla, stek, ~techlevel.unrestricted
+	FTRK:
+		Buildable:
+			Prerequisites: ~techlevel.low
+	DTRK:
+		Buildable:
+			Prerequisites: stek, ~techlevel.unrestricted
+	CTNK:
+		Buildable:
+			Prerequisites: atek, ~techlevel.unrestricted
+	QTNK:
+		Buildable:
+			Prerequisites: fix, stek, ~techlevel.unrestricted
+	STNK:
+		Buildable:
+			Prerequisites: atek, ~techlevel.unrestricted
+	FACF:
+		Buildable:
+			Prerequisites: ~techlevel.medium
+	WEAF:
+		Buildable:
+			Prerequisites: ~techlevel.medium
+	SYRF:
+		Buildable:
+			Prerequisites: ~techlevel.medium
+	DOMF:
+		Buildable:
+			Prerequisites: ~techlevel.medium
+	ATEF:
+		Buildable:
+			Prerequisites: ~techlevel.unrestricted
+	PDOF:
+		Buildable:
+			Prerequisites: ~techlevel.unrestricted
+	MSLF:
+		Buildable:
+			Prerequisites: ~techlevel.unrestricted
