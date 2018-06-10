@@ -959,7 +959,7 @@
 		Footprint: ____ ____
 		Dimensions: 4,2
 	Health:
-		HP: 1000
+		HP: 800
 	Armor:
 		Type: Concrete
 	ScriptTriggers:

@@ -315,6 +315,8 @@ SPY.England:
 		InitialLevels: 1
 	DisguiseTooltip:
 		Name: British Spy
+	Armament:
+		Weapon: SilencedPPK.British
 	RenderSprites:
 		Image: spy
 

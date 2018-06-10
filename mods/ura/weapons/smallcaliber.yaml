@@ -230,7 +230,7 @@ Pistol:
 	Range: 4c0
 	Report: gun27.aud
 	Warhead@1Dam: SpreadDamage
-		Damage: 1
+		Damage: 2
 	Warhead@2Eff: CreateEffect
 		Explosions: piff
 	Warhead@3EffWater: CreateEffect
@@ -268,6 +268,7 @@ M60mg:
 
 SilencedPPK:
 	Inherits: ^SnipeWeapon
+	ReloadDelay: 70
 	Report: silppk.aud
 	Warhead@1Dam: SpreadDamage
 		Spread: 128
@@ -278,6 +279,10 @@ SilencedPPK:
 		Explosions: water_piffs
 		ValidTargets: Water, Underwater
 		InvalidTargets: Ship, Structure, Bridge
+
+SilencedPPK.British:
+	Inherits: SilencedPPK
+	Range: 6c0
 
 Colt45:
 	Inherits: ^SnipeWeapon

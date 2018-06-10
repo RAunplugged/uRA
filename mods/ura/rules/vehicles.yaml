@@ -1047,7 +1047,7 @@ STNK:
 		Locomotor: heavywheeled
 		RequiresCondition: !notmobile
 	RevealsShroud:
-		Range: 7c256
+		Range: 8c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 4c0

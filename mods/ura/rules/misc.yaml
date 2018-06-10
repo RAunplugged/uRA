@@ -171,7 +171,7 @@ camera.paradrop:
 	EditorOnlyTooltip:
 		Name: (support power proxy camera)
 	RevealsShroud:
-		Range: 6c0
+		Range: 8c0
 
 camera.spyplane:
 	Inherits: CAMERA
@@ -193,7 +193,7 @@ FLARE:
 	Immobile:
 		OccupiesSpace: false
 	RevealsShroud:
-		Range: 3c0
+		Range: 4c0
 		Type: CenterPosition
 	RenderSprites:
 		Image: smokland
