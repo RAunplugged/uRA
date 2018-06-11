@@ -280,7 +280,7 @@ SilencedPPK:
 		ValidTargets: Water, Underwater
 		InvalidTargets: Ship, Structure, Bridge
 
-SilencedPPK.British:
+SilencedPPK.England:
 	Inherits: SilencedPPK
 	Range: 6c0
 

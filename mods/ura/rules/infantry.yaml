@@ -25,7 +25,7 @@ DOG:
 	Passenger:
 		Voice: Move
 	RevealsShroud:
-		Range: 7c256
+		Range: 8c0
 	Armament:
 		Weapon: DogJaw
 	AttackLeap:
@@ -310,13 +310,15 @@ SPY.England:
 		Cost: 400
 	Health:
 		HP: 50
+	RevealsShroud:
+		Range: 8c0
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
 		InitialLevels: 1
 	DisguiseTooltip:
 		Name: British Spy
 	Armament:
-		Weapon: SilencedPPK.British
+		Weapon: SilencedPPK.England
 	RenderSprites:
 		Image: spy
 
@@ -353,7 +355,7 @@ E7:
 	Guard:
 		Voice: Move
 	RevealsShroud:
-		Range: 7c256
+		Range: 8c0
 	Demolition:
 		DetonationDelay: 45
 		Voice: Demolish
