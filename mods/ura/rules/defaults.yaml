@@ -40,6 +40,7 @@
 			TopLeft: -1536, -1024
 			BottomRight: 1536, 1024
 
+# Inspired by ZxGanon
 ^GainsExperience:
 	GainsExperience:
 		Conditions:
@@ -76,7 +77,7 @@
 		Modifier: 130
 	SpeedMultiplier@RANK-3:
 		RequiresCondition: rank-veteran == 3
-		Modifier: 120
+		Modifier: 115
 	SpeedMultiplier@RANK-ELITE:
 		RequiresCondition: rank-elite
 		Modifier: 130
@@ -92,29 +93,17 @@
 	ReloadDelayMultiplier@RANK-ELITE:
 		RequiresCondition: rank-elite
 		Modifier: 70
-	InaccuracyMultiplier@RANK-1:
-		RequiresCondition: rank-veteran == 1
-		Modifier: 95
-	InaccuracyMultiplier@RANK-2:
-		RequiresCondition: rank-veteran == 2
-		Modifier: 90
-	InaccuracyMultiplier@RANK-3:
-		RequiresCondition: rank-veteran == 3
-		Modifier: 80
-	InaccuracyMultiplier@RANK-ELITE:
-		RequiresCondition: rank-elite
-		Modifier: 70
 	SelfHealing@RANK-3:
-		Step: 2
-		Delay: 100
+		PercentageStep: 5
+		Delay: 75
 		HealIfBelow: 50
-		DamageCooldown: 125
+		DamageCooldown: 150
 		RequiresCondition: rank-veteran == 3
 	SelfHealing@ELITE:
-		Step: 3
-		Delay: 100
+		PercentageStep: 5
+		Delay: 75
 		HealIfBelow: 100
-		DamageCooldown: 125
+		DamageCooldown: 150
 		RequiresCondition: rank-elite
 	WithDecoration@RANK-1:
 		Image: rank
