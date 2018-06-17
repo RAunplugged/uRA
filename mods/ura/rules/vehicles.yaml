@@ -96,7 +96,7 @@ V2RL:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
-		Prerequisites: fix, ~vehicles.england, ~vehicles.france, ~techlevel.medium
+		Prerequisites: Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium
 		Description: Allied Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Valued:
 		Cost: 850

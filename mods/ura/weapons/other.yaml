@@ -238,7 +238,7 @@ MADTankThump:
 		InvalidTargets: MADTank
 		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
 	Warhead@3Dam: HealthPercentageDamage
-		Spread: 5c0
+		Spread: 6c0
 		Damage: 1
 		Versus:
 			None: 200
