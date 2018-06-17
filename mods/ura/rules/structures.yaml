@@ -636,10 +636,11 @@ DOME:
 	ExternalCondition@JAMMED:
 		Condition: jammed
 	ParatroopersPower@paratroopers:
+		PauseOnCondition: disabled
 		OrderName: AlliedParatroopers
 		Prerequisites: dome, ~structures.england
 		Icon: sniperdrop
-		ChargeTime: 240
+		ChargeInterval: 6000
 		Description: Sniper Drop
 		LongDesc: A Badger drops a 2-man sniper team\nanywhere on the map.
 		DropItems: SNIPER, SNIPER
@@ -653,6 +654,7 @@ DOME:
 		ArrowSequence: arrow
 		ClockSequence: clock
 		CircleSequence: circles
+	SupportPowerChargeBar:
 
 PBOX:
 	Inherits: ^Defense
