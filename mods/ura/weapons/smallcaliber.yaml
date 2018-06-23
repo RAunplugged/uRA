@@ -214,6 +214,14 @@ ChainGun:
 		Versus:
 			None: 120
 
+ChainGunAA:
+	Inherits: ChainGun
+	MinRange: 0c0
+	ValidTargets: Air
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air
+		Damage: 15
+
 ChainGun.Yak:
 	Inherits: ^HeavyMG
 	ReloadDelay: 3
@@ -223,6 +231,13 @@ ChainGun.Yak:
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
 		Damage: 40
+
+ChainGunAA.Yak:
+	Inherits: ChainGun.Yak
+	ValidTargets: Air
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air
+		Damage: 10
 
 Pistol:
 	Inherits: ^LightMG
@@ -254,7 +269,7 @@ M60mg:
 
 ^SnipeWeapon:
 	ReloadDelay: 80
-	Range: 5c0
+	Range: 6c0
 	Report: gun5.aud
 	ValidTargets: Ground, Water, Infantry
 	InvalidTargets: Vehicle, Tank, Ship, Structure, Wall, Husk
@@ -282,7 +297,7 @@ SilencedPPK:
 
 SilencedPPK.England:
 	Inherits: SilencedPPK
-	Range: 6c0
+	Range: 7c0
 
 Colt45:
 	Inherits: ^SnipeWeapon
