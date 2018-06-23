@@ -461,7 +461,7 @@ JEEP:
 		Prerequisites: ~vehicles.allies, ~techlevel.low
 		Description: Fast scout & anti-infantry vehicle.\nCan carry one infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Valued:
-		Cost: 500
+		Cost: 400
 	Tooltip:
 		Name: Ranger
 		RequiresCondition: !loaded
@@ -753,7 +753,7 @@ MGG:
 		BuildDurationModifier: 40
 		Description: Regenerates the shroud nearby, \nobscuring the area.\n  Unarmed
 	Valued:
-		Cost: 1100
+		Cost: 1000
 	Tooltip:
 		Name: Mobile Gap Generator
 	Health:
@@ -785,7 +785,7 @@ MGG:
 MRJ:
 	Inherits: ^Vehicle
 	Valued:
-		Cost: 1100
+		Cost: 1000
 	Tooltip:
 		Name: Mobile Radar Jammer
 	Buildable:
@@ -843,7 +843,7 @@ TTNK:
 	Mobile:
 		Speed: 113
 	RevealsShroud:
-		Range: 8c0
+		Range: 9c256
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 4c0
@@ -967,7 +967,7 @@ CTNK:
 		Speed: 113
 		Locomotor: heavywheeled
 	RevealsShroud:
-		Range: 8c0
+		Range: 9c256
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 4c0
@@ -1010,7 +1010,7 @@ QTNK:
 	Mobile:
 		Speed: 56
 	RevealsShroud:
-		Range: 8c0
+		Range: 9c256
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 4c0
@@ -1047,7 +1047,7 @@ STNK:
 		Locomotor: heavywheeled
 		RequiresCondition: !notmobile
 	RevealsShroud:
-		Range: 8c0
+		Range: 9c256
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 4c0
