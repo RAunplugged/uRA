@@ -528,7 +528,7 @@ JEEP:
 		Modifier: 200
 		RequiresCondition: ifv-medic || ifv-mechanic || ifv-technician
 	FirepowerMultiplier@generic-ifv-bonus3:
-		Modifier: 75
+		Modifier: 60
 		RequiresCondition: ifv-rocket
 	FirepowerMultiplier@generic-ifv-bonus4:
 		Modifier: 60
@@ -542,6 +542,10 @@ JEEP:
 		RequiresCondition: ifv-rifle
 	Armament@rocketAG:
 		Weapon: Dragon
+		LocalOffset: 128,0,43
+		RequiresCondition: ifv-rocket
+	Armament@rocketAA:
+		Weapon: RedEye
 		LocalOffset: 128,0,43
 		RequiresCondition: ifv-rocket
 	Tooltip@rocket:
