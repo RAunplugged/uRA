@@ -983,7 +983,7 @@ CTNK:
 		Range: 1c512
 	AttackFrontal:
 	PortableChrono:
-		ChargeDelay: 300
+		ChargeDelay: 270
 		MaxDistance: 14
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
