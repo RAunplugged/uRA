@@ -43,11 +43,11 @@
 	Warhead@3Eff: CreateEffect
 		ImpactActors: false
 
-Maverick:
+MaverickAG:
 	Inherits: ^AntiGroundMissile
 	ReloadDelay: 30
 	Range: 11c0
-	MinRange: 4c0
+	MinRange: 3c0
 	Report: missile7.aud
 	Burst: 2
 	BurstDelays: 7
@@ -64,6 +64,22 @@ Maverick:
 			Light: 90
 			Concrete: 100
 
+MaverickAA:
+	Inherits: MaverickAG
+	ValidTargets: Air
+	ReloadDelay: 104
+	MinRange: 3c0
+	Projectile: Missile
+		Speed: 304
+	Warhead@1Dam: SpreadDamage
+		Spread: 256
+		Damage: 30
+		Versus:
+			Light: 120
+		ValidTargets: Air
+	Warhead@2Eff: CreateEffect
+		Explosions: med_explosion_air
+
 Dragon:
 	Inherits: ^AntiGroundMissile
 	Projectile: Missile
@@ -74,11 +90,11 @@ HellfireAG:
 	ReloadDelay: 60
 	MinRange: 1c256
 	Burst: 4
-	BurstDelays: 14
+	BurstDelays: 12
 	Projectile: Missile
 		Speed: 304
 		HorizontalRateOfTurn: 10
-		RangeLimit: 8c512
+		RangeLimit: 9c0
 	Warhead@1Dam: SpreadDamage
 		Damage: 60
 		Versus:
@@ -92,18 +108,19 @@ HellfireAA:
 	ReloadDelay: 60
 	MinRange: 1c256
 	Burst: 2
-	BurstDelays: 10
+	BurstDelays: 8
 	Projectile: Missile
-		Speed: 416
+		Speed: 334
 		Inaccuracy: 128
-		HorizontalRateOfTurn: 10
-		RangeLimit: 7c0
+		HorizontalRateOfTurn: 5
+		RangeLimit: 9c256
 	Warhead@1Dam: SpreadDamage
-		Damage: 40
+		Spread: 256
+		Damage: 35
 		ValidTargets: Air
 		Versus:
 			Wood: 75
-			Light: 75
+			Light: 60
 	Warhead@3Eff: CreateEffect
 		Explosions: med_explosion_air
 
