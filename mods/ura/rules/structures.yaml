@@ -1325,7 +1325,7 @@ HPAD:
 	WithRearmAnimation:
 	RepairsUnits:
 		HpPerStep: 1
-		Interval: 12
+		Interval: 10
 		FinishRepairingNotification: UnitRepaired
 		PlayerExperience: 15
 
@@ -1469,7 +1469,7 @@ AFLD:
 	WithRepairAnimation:
 	RepairsUnits:
 		HpPerStep: 1
-		Interval: 15
+		Interval: 12
 		FinishRepairingNotification: UnitRepaired
 		PlayerExperience: 15
 

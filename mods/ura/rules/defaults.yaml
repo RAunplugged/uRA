@@ -495,7 +495,7 @@
 	Selectable:
 		Bounds: 24,24
 	Aircraft:
-		RepairBuildings: afld
+		RepairBuildings: afld, afld.ukraine
 		AirborneCondition: airborne
 	Targetable@GROUND:
 		TargetTypes: Ground, Repair, Vehicle
