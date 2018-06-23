@@ -20,7 +20,7 @@ MSLO:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 7c256
+		Range: 8c0
 		RequiresCondition: !disabled
 		RevealGeneratedShroud: False
 	RevealsShroud@Offline:
@@ -83,14 +83,14 @@ GAP:
 	Armor:
 		Type: Heavy
 	RevealsShroud:
-		Range: 7c256
+		Range: 8c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 5c0
 	WithBuildingBib:
 		HasMinibib: Yes
 	CreatesShroud:
-		Range: 7c256
+		Range: 8c0
 		RequiresCondition: !disabled
 	RenderShroudCircle:
 	Power:
@@ -384,7 +384,7 @@ IRON:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 7c256
+		Range: 8c0
 		RequiresCondition: !disabled
 		RevealGeneratedShroud: False
 	RevealsShroud@Offline:
@@ -437,7 +437,7 @@ PDOX:
 	Armor:
 		Type: Wood
 	RevealsShroud:
-		Range: 7c256
+		Range: 8c0
 		RequiresCondition: !disabled
 		RevealGeneratedShroud: False
 	RevealsShroud@Offline:
@@ -560,7 +560,7 @@ AGUN:
 	Armor:
 		Type: Heavy
 	RevealsShroud:
-		Range: 7c256
+		Range: 8c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 5c0
@@ -676,7 +676,7 @@ PBOX:
 	Armor:
 		Type: Heavy
 	RevealsShroud:
-		Range: 7c256
+		Range: 8c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 5c0
@@ -725,7 +725,7 @@ HBOX:
 	Armor:
 		Type: Heavy
 	RevealsShroud:
-		Range: 7c256
+		Range: 8c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 5c0
@@ -779,7 +779,7 @@ GUN:
 	Armor:
 		Type: Heavy
 	RevealsShroud:
-		Range: 7c256
+		Range: 8c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 5c0
@@ -821,7 +821,7 @@ FTUR:
 	Armor:
 		Type: Heavy
 	RevealsShroud:
-		Range: 7c256
+		Range: 8c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 5c0
@@ -872,7 +872,7 @@ SAM:
 	Armor:
 		Type: Heavy
 	RevealsShroud:
-		Range: 7c256
+		Range: 8c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 5c0
