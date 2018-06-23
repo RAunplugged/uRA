@@ -495,7 +495,7 @@
 	Selectable:
 		Bounds: 24,24
 	Aircraft:
-		RepairBuildings: fix
+		RepairBuildings: afld
 		AirborneCondition: airborne
 	Targetable@GROUND:
 		TargetTypes: Ground, Repair, Vehicle
@@ -549,6 +549,7 @@
 		GenericName: Helicopter
 	Aircraft:
 		CanHover: True
+		RepairBuildings: hpad
 		CruisingCondition: cruising
 		WaitDistanceFromResupplyBase: 4c0
 		TakeOffOnResupply: true

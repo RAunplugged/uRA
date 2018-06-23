@@ -1264,6 +1264,7 @@ HPAD:
 	RevealsShroud:
 		Range: 5c0
 	WithBuildingBib:
+	WithRepairAnimation:
 	Exit@1:
 		SpawnOffset: 0,-256,0
 		ExitCell: 0,0
@@ -1322,6 +1323,11 @@ HPAD:
 		ZOffset: 256
 		RequiresCondition: primary
 	WithRearmAnimation:
+	RepairsUnits:
+		HpPerStep: 1
+		Interval: 12
+		FinishRepairingNotification: UnitRepaired
+		PlayerExperience: 15
 
 AFLD:
 	Inherits: ^Building
@@ -1460,6 +1466,12 @@ AFLD:
 		ZOffset: 256
 		RequiresCondition: primary
 	WithRearmAnimation:
+	WithRepairAnimation:
+	RepairsUnits:
+		HpPerStep: 1
+		Interval: 15
+		FinishRepairingNotification: UnitRepaired
+		PlayerExperience: 15
 
 AFLD.Ukraine:
 	Inherits: AFLD
