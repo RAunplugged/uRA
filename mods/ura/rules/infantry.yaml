@@ -169,7 +169,7 @@ E3:
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded
 	AutoTarget:
-		ScanRadius: 5
+		ScanRadius: 6
 
 E3R1:
 	Inherits: E3
@@ -278,7 +278,7 @@ SPY:
 	AutoTarget:
 		InitialStance: HoldFire
 		InitialStanceAI: HoldFire
-		ScanRadius: 5
+		ScanRadius: 6
 	-WithInfantryBody:
 	WithDisguisingInfantryBody:
 		DefaultAttackSequence: shoot
@@ -312,6 +312,8 @@ SPY.England:
 		HP: 50
 	RevealsShroud:
 		Range: 8c0
+	AutoTarget:
+		ScanRadius: 7
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
 		InitialLevels: 1
@@ -706,7 +708,7 @@ Zombie:
 	Mobile:
 		Speed: 42
 	AutoTarget:
-		ScanRadius: 5
+		ScanRadius: 6
 	AttackFrontal:
 	WithInfantryBody:
 		DefaultAttackSequence: bite
@@ -743,7 +745,7 @@ Ant:
 		SharesCell: no
 	-Crushable:
 	AutoTarget:
-		ScanRadius: 5
+		ScanRadius: 6
 	AttackFrontal:
 	WithInfantryBody:
 		DefaultAttackSequence: bite
