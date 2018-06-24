@@ -507,10 +507,7 @@ Rules:
 	APC:
 		Buildable:
 			Prerequisites: ~techlevel.low
-	MNLY.AP:
-		Buildable:
-			Prerequisites: fix, ~techlevel.medium
-	MNLY.AT:
+	MNLY:
 		Buildable:
 			Prerequisites: fix, ~techlevel.medium
 	MGG:
