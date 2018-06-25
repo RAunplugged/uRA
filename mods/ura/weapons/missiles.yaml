@@ -113,14 +113,13 @@ HellfireAA:
 		Speed: 334
 		Inaccuracy: 128
 		HorizontalRateOfTurn: 5
-		RangeLimit: 9c256
+		RangeLimit: 9c0
 	Warhead@1Dam: SpreadDamage
 		Spread: 256
-		Damage: 35
+		Damage: 30
 		ValidTargets: Air
 		Versus:
-			Wood: 75
-			Light: 60
+			Light: 75
 	Warhead@3Eff: CreateEffect
 		Explosions: med_explosion_air
 
