@@ -73,9 +73,9 @@ MaverickAA:
 		Speed: 304
 	Warhead@1Dam: SpreadDamage
 		Spread: 256
-		Damage: 30
+		Damage: 35
 		Versus:
-			Light: 120
+			Light: 100
 		ValidTargets: Air
 	Warhead@2Eff: CreateEffect
 		Explosions: med_explosion_air

@@ -322,7 +322,7 @@ HELI:
 		LandWhenIdle: false
 		InitialFacing: 224
 		TurnSpeed: 5
-		Speed: 164
+		Speed: 160
 		IdealSeparation: 1c512
 	AutoTarget:
 		InitialStance: HoldFire
