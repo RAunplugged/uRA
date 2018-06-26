@@ -173,6 +173,7 @@ MammothTuskAT:
 		ValidTargets: Tank, Vehicle, Husk
 		Versus:
 			Light: 80
+			Heavy: 110
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Crater
