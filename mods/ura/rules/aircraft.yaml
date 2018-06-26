@@ -129,8 +129,8 @@ MIG:
 		InitialStance: HoldFire
 		InitialStanceAI: HoldFire
 	AmmoPool:
-		Ammo: 4
-		ReloadDelay: 128
+		Ammo: 6
+		ReloadDelay: 85
 		AmmoCondition: ammo
 	ReturnOnIdle:
 	Selectable:

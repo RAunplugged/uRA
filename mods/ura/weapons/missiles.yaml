@@ -57,7 +57,7 @@ MaverickAG:
 		CruiseAltitude: 2c0
 		RangeLimit: 14c410
 	Warhead@1Dam: SpreadDamage
-		Damage: 140
+		Damage: 90
 		Versus:
 			None: 30
 			Wood: 90
@@ -73,7 +73,7 @@ MaverickAA:
 		Speed: 304
 	Warhead@1Dam: SpreadDamage
 		Spread: 256
-		Damage: 35
+		Damage: 25
 		Versus:
 			Light: 100
 		ValidTargets: Air
