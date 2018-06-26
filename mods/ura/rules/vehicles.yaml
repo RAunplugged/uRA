@@ -367,7 +367,7 @@ HARV:
 		Resources: Ore,Gems
 		BaleUnloadDelay: 1
 		SearchFromProcRadius: 30
-		SearchFromOrderRadius: 11
+		SearchFromOrderRadius: 10
 	Health:
 		HP: 600
 	Armor:
