@@ -227,7 +227,7 @@ TRAN:
 		Prerequisites: ~hpad, ~techlevel.medium
 		Description: Fast Infantry Transport Helicopter.\n  Unarmed
 	Valued:
-		Cost: 900
+		Cost: 850
 	Tooltip:
 		Name: Chinook
 	Health:
