@@ -253,7 +253,7 @@ TRAN:
 	Aircraft:
 		InitialFacing: 224
 		TurnSpeed: 5
-		Speed: 128
+		Speed: 136
 		LandableTerrainTypes: Clear,Rough,Road,Ore,Beach,Gems
 		AltitudeVelocity: 0c58
 	WithIdleOverlay@ROTOR1AIR:
