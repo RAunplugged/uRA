@@ -1326,7 +1326,6 @@ HPAD:
 	RepairsUnits:
 		HpPerStep: 1
 		Interval: 10
-		FinishRepairingNotification: UnitRepaired
 		PlayerExperience: 15
 
 AFLD:
@@ -1470,7 +1469,6 @@ AFLD:
 	RepairsUnits:
 		HpPerStep: 1
 		Interval: 12
-		FinishRepairingNotification: UnitRepaired
 		PlayerExperience: 15
 
 AFLD.Ukraine:
