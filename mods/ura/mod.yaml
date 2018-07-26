@@ -1,6 +1,6 @@
 Metadata:
 	Title: Red Alert: Unplugged
-	Version: Master version
+	Version: v0.2 Alpha
 	Website: http://redalertunplugged.com/
 	WebIcon32: WebIcon32: https://www.openra.net/images/icons/ra_32x32.png
 
@@ -40,7 +40,7 @@ MapFolders:
 	ura|maps/missions: System
 	ura|maps/modded: System
 	ura|maps/other: System
-	~^maps/ra/release-20180307: User
+	~^maps/ura/v0.2 Alpha: User
 
 Rules:
 	ura|rules/misc.yaml
