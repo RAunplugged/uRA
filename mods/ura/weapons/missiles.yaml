@@ -136,7 +136,6 @@ MammothTusk:
 	Warhead@1Dam: SpreadDamage
 		Spread: 256
 		Damage: 50
-		ValidTargets: Air, Infantry
 		Versus:
 			None: 100
 			Light: 60
@@ -170,7 +169,6 @@ MammothTuskAT:
 	Warhead@1Dam: SpreadDamage
 		Spread: 256
 		Damage: 25
-		ValidTargets: Tank, Vehicle, Husk
 		Versus:
 			Light: 80
 			Heavy: 110
@@ -207,9 +205,7 @@ Nike:
 		Damage: 50
 		ValidTargets: Air
 		Versus:
-			None: 90
 			Light: 90
-			Heavy: 50
 	Warhead@3Eff: CreateEffect
 		Explosions: med_explosion_air
 		ImpactSounds: kaboom25.aud
@@ -225,9 +221,7 @@ RedEye:
 		Damage: 40
 		ValidTargets: Air
 		Versus:
-			Wood: 75
 			Light: 60
-			Heavy: 25
 
 Stinger:
 	Inherits: ^AntiGroundMissile
@@ -301,7 +295,6 @@ TorpTube:
 		Damage: 180
 		ValidTargets: Water, Underwater, Bridge
 		Versus:
-			None: 30
 			Wood: 75
 			Light: 75
 			Heavy: 100
@@ -327,7 +320,6 @@ TorpTube:
 		Inaccuracy: 0c614
 		HorizontalRateOfTurn: 15
 		RangeLimit: 11c0
-		LaunchAngle: 120
 		Image: MISSILE
 		TrailImage: smokey
 		ContrailLength: 30

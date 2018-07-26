@@ -30,9 +30,11 @@ V2RL:
 	AttackFrontal:
 	WithFacingSpriteBody:
 		RequiresCondition: !reloading
+		Name: loaded
 	WithFacingSpriteBody@EMPTY:
 		RequiresCondition: !reloading
 		Sequence: empty-idle
+		Name: reloading
 	SelectionDecorations:
 	Explodes:
 		Weapon: V2Explode
@@ -393,7 +395,7 @@ HARV:
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 	HarvesterHuskModifier:
-		FullActor: HARV.FullHusk
+		FullHuskActor: HARV.FullHusk
 		FullnessThreshold: 50
 	SelfHealing:
 		Step: 1
@@ -447,6 +449,8 @@ MCV:
 		Actor: MCV.Husk
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
+	TransferTimedExternalConditionOnTransform:
+		Condition: invulnerability
 
 # Jeep IFV traits using custom yaml code by Grayon Dilach
 JEEP:

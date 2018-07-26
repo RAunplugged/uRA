@@ -2,6 +2,8 @@ MSLO:
 	Inherits: ^ScienceBuilding
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
 	Inherits@shape: ^2x1Shape
+	Selectable:
+		Bounds: 48,24
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -108,6 +110,8 @@ GAP:
 
 SPEN:
 	Inherits: ^Building
+	Selectable:
+		Bounds: 72,48
 	InfiltrateForSupportPower:
 		Proxy: powerproxy.sonarpulse
 		Types: SpyInfiltrate
@@ -241,6 +245,8 @@ SPEN:
 
 SYRD:
 	Inherits: ^Building
+	Selectable:
+		Bounds: 72,48
 	InfiltrateForSupportPower:
 		Proxy: powerproxy.sonarpulse
 		Types: SpyInfiltrate
@@ -419,6 +425,8 @@ PDOX:
 	Inherits: ^ScienceBuilding
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
 	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 48,48
 	Buildable:
 		Queue: Defense
 		BuildPaletteOrder: 120
@@ -589,6 +597,8 @@ DOME:
 	Inherits: ^Building
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
 	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 48,48
 	HitShape:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 630,-384,0, 630,384,0, -700,-512,0, -700,512,0
@@ -851,6 +861,8 @@ SAM:
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
 	Inherits@AUTOTARGET: ^AutoTargetAir
 	Inherits@shape: ^2x1Shape
+	Selectable:
+		Bounds: 48,24
 	HitShape:
 		Type: Rectangle
 			TopLeft: -768,-512
@@ -901,6 +913,8 @@ ATEK:
 	Inherits: ^ScienceBuilding
 	Inherits@IDISABLE: ^DisableOnLowPower
 	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 48,48
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 140
@@ -944,6 +958,8 @@ ATEK:
 WEAP:
 	Inherits: ^Building
 	Inherits@shape: ^3x2Shape
+	Selectable:
+		Bounds: 72,48
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 80
@@ -1050,6 +1066,8 @@ WEAP:
 
 FACT:
 	Inherits: ^Building
+	Selectable:
+		Bounds: 72,72
 	Building:
 		Footprint: xxX xxx XxX ===
 		Dimensions: 3,4
@@ -1102,16 +1120,17 @@ FACT:
 		Cost: 2500
 	Tooltip:
 		Name: Construction Yard
-	CustomSellValue:
-		Value: 2500
 	SpawnActorsOnSell:
 		ActorTypes: e1,e1,e1,tecn,tecn,e6
 	BaseBuilding:
 	Transforms:
+		PauseOnCondition: chrono-vortex
 		IntoActor: mcv
 		Offset: 1,1
 		Facing: 96
 		RequiresCondition: factundeploy
+	Sellable:
+		RequiresCondition: !chrono-vortex
 	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
 		Condition: factundeploy
 		Prerequisites: global-factundeploy
@@ -1134,6 +1153,11 @@ FACT:
 		Type: Rectangle
 			TopLeft: -1536, -1536
 			BottomRight: 1536, 1536
+	ConyardChronoReturn:
+		Condition: chrono-vortex
+		Damage: 950
+	TransferTimedExternalConditionOnTransform:
+		Condition: invulnerability
 
 PROC:
 	Inherits: ^Building
@@ -1151,7 +1175,7 @@ PROC:
 		Dimensions: 3,4
 		LocalCenterOffset: 0,-512,0
 	Selectable:
-		Bounds: 72,50,0,12
+		Bounds: 72,50,0,4
 		DecorationBounds: 72,70,0,-2
 	SelectionDecorations:
 	Targetable:
@@ -1174,7 +1198,7 @@ PROC:
 		Capacity: 2000
 	DrawLineToTarget:
 	CustomSellValue:
-		Value: 600
+		Value: 300
 	FreeActor:
 		Actor: HARV
 		SpawnOffset: 1,2
@@ -1208,6 +1232,8 @@ PROC:
 
 SILO:
 	Inherits: ^Building
+	Selectable:
+		Bounds: 24,24
 	Buildable:
 		Queue: Defense
 		BuildPaletteOrder: 35
@@ -1241,6 +1267,8 @@ SILO:
 HPAD:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 48,48
 	HitShape:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 768,-512,0, 768,512,0, -281,-512,0, -630,512,0
@@ -1345,6 +1373,7 @@ AFLD:
 		Name: Airfield
 	Selectable:
 		Class: afld
+		Bounds: 72,48
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
@@ -1483,6 +1512,8 @@ POWR:
 	Inherits: ^Building
 	Inherits@POWER_OUTAGE: ^DisabledByPowerOutage
 	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 48,48
 	HitShape:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 640,-384,0, 640,512,0, -710,-512,0, -710,512,0
@@ -1561,6 +1592,8 @@ APWR:
 STEK:
 	Inherits: ^ScienceBuilding
 	Inherits@shape: ^3x2Shape
+	Selectable:
+		Bounds: 72,48
 	HitShape:
 		TargetableOffsets: 420,-768,0, 420,768,0, -770,-768,0, -770,768,0
 	Buildable:
@@ -1595,6 +1628,8 @@ STEK:
 BARR:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 48,48
 	HitShape:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 490,-470,0, 355,512,0, -355,-512,0, -630,512,0
@@ -1676,6 +1711,8 @@ BARR:
 
 KENN:
 	Inherits: ^Building
+	Selectable:
+		Bounds: 24,24
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 175
@@ -1724,6 +1761,8 @@ KENN:
 TENT:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 48,48
 	HitShape:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, 630,-512,0, 355,512,0, -281,-512,0, -630,512,0
@@ -1873,7 +1912,6 @@ SBAG:
 	Armor:
 		Type: Wood
 	LineBuild:
-		Range: 8
 		NodeTypes: sandbag
 	LineBuildNode:
 		Types: sandbag
@@ -1898,7 +1936,6 @@ FENC:
 	Armor:
 		Type: Wood
 	LineBuild:
-		Range: 8
 		NodeTypes: fence
 	LineBuildNode:
 		Types: fence
@@ -1929,7 +1966,6 @@ BRIK:
 		CrushClasses: heavywall
 	BlocksProjectiles:
 	LineBuild:
-		Range: 8
 		NodeTypes: concrete
 	LineBuildNode:
 		Types: concrete

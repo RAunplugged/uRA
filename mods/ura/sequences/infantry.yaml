@@ -1084,11 +1084,11 @@ c1:
 		Start: 168
 		Length: 12
 	die4:
+		Start: 168
+		Length: 12
+	die5:
 		Start: 180
 		Length: 18
-	die5:
-		Start: 160
-		Length: 8
 	die6: electro
 		Length: *
 		UseTilesetExtension: true
@@ -1134,11 +1134,11 @@ c2:
 		Start: 168
 		Length: 12
 	die4:
+		Start: 168
+		Length: 12
+	die5:
 		Start: 180
 		Length: 18
-	die5:
-		Start: 160
-		Length: 8
 	die6: electro
 		Length: *
 		UseTilesetExtension: true
@@ -1184,11 +1184,11 @@ c3:
 		Start: 168
 		Length: 12
 	die4:
+		Start: 168
+		Length: 12
+	die5:
 		Start: 180
 		Length: 18
-	die5:
-		Start: 160
-		Length: 8
 	die6: electro
 		Length: *
 		UseTilesetExtension: true
@@ -1235,11 +1235,11 @@ einstein:
 		Start: 135
 		Length: 12
 	die4:
-		Start: 147
-		Length: 17
+		Start: 135
+		Length: 12
 	die5:
-		Start: 123
-		Length: 8
+ 		Start: 147
+ 		Length: 17
 	die6: electro
 		Length: *
 		UseTilesetExtension: true
@@ -1281,11 +1281,11 @@ delphi:
 		Start: 135
 		Length: 12
 	die4:
-		Start: 147
-		Length: 17
+		Start: 135
+		Length: 12
 	die5:
-		Start: 123
-		Length: 8
+ 		Start: 147
+ 		Length: 17
 	die6: electro
 		Length: *
 		UseTilesetExtension: true
@@ -1327,11 +1327,11 @@ chan:
 		Start: 135
 		Length: 12
 	die4:
-		Start: 147
-		Length: 17
+		Start: 135
+		Length: 12
 	die5:
-		Start: 123
-		Length: 8
+ 		Start: 147
+ 		Length: 17
 	die6: electro
 		Length: *
 		UseTilesetExtension: true

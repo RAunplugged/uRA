@@ -177,13 +177,6 @@ Hover:
 		Damage: 0
 		ValidTargets: Ground, Water
 
-Crush:
-	Warhead@1Dam: SpreadDamage
-		Damage: 100
-		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
-	Warhead@2Eff: CreateEffect
-		ImpactSounds: squishy2.aud
-
 Demolish:
 	Warhead@1Dam: SpreadDamage
 		DamageTypes: DefaultDeath
@@ -214,6 +207,7 @@ Mandible:
 		Damage: 60
 		Versus:
 			None: 90
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 
 MADTankThump:
 	InvalidTargets: MADTank

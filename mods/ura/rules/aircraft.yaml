@@ -5,8 +5,6 @@ BADR:
 		ChuteSound: chute1.aud
 	Health:
 		HP: 300
-	Armor:
-		Type: Light
 	Aircraft:
 		CruiseAltitude: 2560
 		TurnSpeed: 5
@@ -46,8 +44,6 @@ BADR.Bomber:
 		Weapon: ParaBomb
 	Health:
 		HP: 300
-	Armor:
-		Type: Light
 	Aircraft:
 		CruiseAltitude: 2560
 		TurnSpeed: 5
@@ -98,8 +94,6 @@ MIG:
 		Name: MiG
 	Health:
 		HP: 80
-	Armor:
-		Type: Light
 	RevealsShroud:
 		Range: 15c0
 		Type: GroundPosition
@@ -164,8 +158,6 @@ YAK:
 		Name: Yak
 	Health:
 		HP: 60
-	Armor:
-		Type: Light
 	RevealsShroud:
 		Range: 13c0
 		Type: GroundPosition
@@ -232,8 +224,6 @@ TRAN:
 		Name: Chinook
 	Health:
 		HP: 160
-	Armor:
-		Type: Light
 	Armament@PRIMARY:
 		Weapon: Hover
 	AttackHeli:
@@ -298,8 +288,6 @@ HELI:
 		Name: Longbow
 	Health:
 		HP: 120
-	Armor:
-		Type: Light
 	RevealsShroud:
 		Range: 14c0
 		Type: GroundPosition
@@ -363,8 +351,6 @@ HIND:
 		Name: Hind
 	Health:
 		HP: 100
-	Armor:
-		Type: Light
 	RevealsShroud:
 		Range: 12c0
 		Type: GroundPosition
@@ -422,8 +408,6 @@ U2:
 		HP: 2000
 	Tooltip:
 		Name: Spy Plane
-	Armor:
-		Type: Heavy
 	Aircraft:
 		CruiseAltitude: 3840
 		TurnSpeed: 7

@@ -10,3 +10,5 @@ primarily for its own benefit, as opposed to being a modder friendly developer p
 For more information, please visit: https://github.com/RAunplugged/uRA/wiki
 
 RA Unplugged on Discord: https://discord.gg/KMWnrcB
+
+The OpenRA engine and SDK scripts are made available under the [GPLv3](https://github.com/OpenRA/OpenRA/blob/bleed/COPYING) license, and any executable code developed by a mod and loaded by the engine (i.e. custom mod DLLs, lua scripts) must be released under a compatible license.

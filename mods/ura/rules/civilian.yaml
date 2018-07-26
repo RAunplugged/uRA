@@ -65,6 +65,8 @@ TECN:
 FCOM:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 48,48
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
 	OwnerLostAction:
@@ -112,6 +114,7 @@ HOSP:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
 	Selectable:
 		Priority: 0
+		Bounds: 48,48
 	OwnerLostAction:
 		Action: ChangeOwner
 	Building:
@@ -395,6 +398,7 @@ MISS:
 		TargetableOffsets: 0,0,0, 840,0,0, 840,-1024,0, 420,768,0, -840,0,0, -840,-1024,0, -840,1024,0
 	Selectable:
 		Priority: 0
+		Bounds: 72,48
 	OwnerLostAction:
 		Action: ChangeOwner
 	Building:
@@ -432,6 +436,8 @@ MISS:
 BIO:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
+	Selectable:
+		Bounds: 48,48
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
 	OwnerLostAction:
@@ -471,6 +477,7 @@ OILB:
 		TargetableOffsets: 0,0,0, 630,-300,0, 420,512,0, -420,-512,0, -630,300,0
 	Selectable:
 		Priority: 0
+		Bounds: 48,48
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2

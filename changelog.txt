@@ -1,6 +1,6 @@
 temporary placement of changelog,
 
-OpenRA PR list
+OpenRA PR list PER commit 9c61217
 
 #15035 not logged
 
@@ -8,42 +8,38 @@ OpenRA PR list
 
 GENERAL IMPROVEMENTS
 
-#14861 ignored
-#15197 engine only
+#14947, #15197 engine only + #14853
+#15307 engine only
 #14980
-#15089 engine only
-#15185
-#15006
-#14947 engine only + #14853
-#14597 engine only
+#14861 ignored
+#15216 engine only
+#15222
 #15144
-#15137
+#14597 engine only
+#15137 + #15287 engine only
+#15279
+#15379 engine only
 #15179 engine only
-#15176 engine only
+#14899 engine only (#14901)
 #15057
 #14929 engine only
 #14976 engine only
 #15122 engine only
+#15176 engine only
+#14594
+#15178 engine only
 #15147
 #14874 engine only
-#14424 engine only
 #14868 engine only
 #14915 engine only
-#14950
 #14975 engine only
 #15025 engine only
-#15152 engine only
-#14899 engine only (#14901)
-#15065 engine only
-#15003 engine only
+#15089 engine only
+#15324 engine only
+#15339 engine only
+
 (#14913, #14928, #14935, #14932, #14917, #14934, #14930 #14931, #14933, #14900,
- #14943, #14940, #14977, #15036, #15034, #14984, #15098, #15109, #15121, #15148, #15129, #15149, #15177, #15212, #15182, #15194) engine only + #15069
-
-
-
-AI IMPROVEMENTS
-
-#14594
+ #14943, #14940, #14977, #15036, #15034, #14984, #15098, #15109, #15121, #15148, #15129, #15149, #15182, #15194, #15290, #15375) engine only + #15069, #15198
 
 
 
@@ -52,24 +48,61 @@ RED ALERT
 #15106
 #15147
 #14815
-#14897
 #15159
 #14926
 #14951
 #14982
-#14941
-#14888 ignored
+#15260
+#15253
+#15270
+#14950
 #14945
+#15300
+#14888 ignored
+#14941
+#14897
+#15354
 #15180 ignored
 #15069, #15205
 #15206
-#15091 ignored
+#15091 ignored, #14982, #15302, 
 
 
 
 ENGINE/MODDING
 
-(#14964, #15005, #15009, #15011, #15095, #15096, #15090, #15156) engine only + #15125
+#15204 engine only
+#15094 engine only
+#15288 engine only
+(#14964, #15005, #15009, #15011, #15090, #15095, #15096, #15010, #15128 (ModSDK related), #15156, #15219, #15295) engine only + #15125
+#14851 engine only (commit/12054506e1399bccadd94727299266fc3133821f)
+#15006
+#14916 engine only
+#15111 engine only
+#14777 engine only
+#14760 engine only
+#15022 engine only
+#14216 engine only
+#14890 engine only
+#15306 engine only
+#14862 engine only
+#14840 engine only
+#14818 engine only
+#14791 engine only
+#15072 engine only
+#15066 engine only
+#14757 engine only
+#15144
+#15140
+#15185
+#14882 engine only
+#15007 engine only
+#14837 engine only
+(#14738, #14759, #14817, #14895, #14896, #15043) engine only
+#14988 engine only
+#15317
+#14790
+#15157 engine only
 #14831 engine only
 (#14859, #15001) engine only
 #14948 engine only
@@ -81,45 +114,26 @@ ENGINE/MODDING
 #14946 engine only
 #15031 engine only
 #15030 engine only
-#15007 engine only
 #14286 engine only
 #15103
-#14837 engine only
-#14742
-#15094
-#14916 engine only
-#15111 engine only
-#14777 engine only
-#14760 engine only
-#15022 engine only
-#14216 engine only
-#14890 engine only
-#14862 engine only
-#14840 engine only
-#14818 engine only
-#14791 engine only
-#14851 engine only (commit/12054506e1399bccadd94727299266fc3133821f)
-#14882 engine only
-#15072 engine only
-#15066 engine only
-#15144
-#15128 (ModSDK related)
-#15140
-#14757 engine only
-#14685 engine only + #14889
-#14759 engine only
-#14817 engine only
-#14738 engine only
-(#14895, #14896) engine only
-#15088 engine only
-#15157 engine only
+#14424 engine only
+#15252 engine only
+#15224
+#15065 engine only
+#15145
+#14988 engine only
+#15366 engine only
 #14349 engine only
-#14997 + #15209 engine only (ModSDK related)
-#15129 engine only
+#15140
+#14893 + #15115, #15262 engine only
+#15263
 #14846 engine only
+#14997 + #15209 engine only (ModSDK related)
 #15161 engine only + #15171
-#14893 + #15115 engine only
-#15028 
+#15088 engine only
+#15269
+#15253, #15258
+#15028
 #14839
 #14978 engine only
 #14845 engine only
@@ -127,18 +141,23 @@ ENGINE/MODDING
 #14892
 #14949 engine only
 #15037 engine only
+#15210 engine only
+#14742
+(#14685, #14899(#14901)) engine only 
 
 
 
-DEDICATED
 
-#15152
+DEDICATED SERVER
+
+#15152 engine only
+#15003 engine only
 
 
 
 PACKAGING
 
-#15086 engine only
+#15086, #15291, #15299, #15316, #15374 engine only
 
 
 

@@ -301,6 +301,7 @@
 	Huntable:
 	OwnerLostAction:
 		Action: Kill
+		DeathTypes: DefaultDeath
 	DrawLineToTarget:
 	Health:
 		HP: 25
@@ -413,6 +414,8 @@
 		GenericVisibility: None
 	RevealsShroud:
 		Range: 3c0
+	Passenger:
+		PipType: Gray
 	ProximityCaptor:
 		Types: CivilianInfantry
 	ScaredyCat:
@@ -487,6 +490,8 @@
 	OwnerLostAction:
 		Action: Kill
 	DrawLineToTarget:
+	Armor:
+		Type: Light
 	UpdatesPlayerStatistics:
 	AppearsOnRadar:
 		UseLocation: true
@@ -636,6 +641,8 @@
 
 ^Defense:
 	Inherits: ^Building
+	Selectable:
+		Bounds: 24,24
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, Defense
 	MustBeDestroyed:
@@ -656,6 +663,7 @@
 	Inherits@2: ^SpriteActor
 	Inherits@shape: ^1x1Shape
 	Interactable:
+		Bounds: 24,24
 	OwnerLostAction:
 		Action: Kill
 	Building:
@@ -821,17 +829,17 @@
 	Targetable:
 		TargetTypes: Trees
 	WithDamageOverlay@SmallBurn:
-		DamageType: Incendiary
+		DamageTypes: Incendiary
 		Image: burn-s
 		MinimumDamageState: Light
 		MaximumDamageState: Medium
 	WithDamageOverlay@MediumBurn:
-		DamageType: Incendiary
+		DamageTypes: Incendiary
 		Image: burn-m
 		MinimumDamageState: Medium
 		MaximumDamageState: Heavy
 	WithDamageOverlay@LargeBurn:
-		DamageType: Incendiary
+		DamageTypes: Incendiary
 		Image: burn-l
 		MinimumDamageState: Heavy
 		MaximumDamageState: Dead
@@ -992,6 +1000,7 @@
 ^Crate:
 	Inherits@1: ^SpriteActor
 	Interactable:
+		Bounds: 24,24
 	HiddenUnderFog:
 	Tooltip:
 		Name: Crate
@@ -1026,6 +1035,7 @@
 ^Mine:
 	Inherits: ^SpriteActor
 	Interactable:
+		Bounds: 24,24
 	WithSpriteBody:
 	HiddenUnderFog:
 	Mine:
