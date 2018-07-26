@@ -344,8 +344,6 @@ E7:
 	Mobile:
 		Speed: 71
 		Voice: Move
-		TerrainSpeeds:
-			Water: 63
 	GrantConditionOnTerrain:
 		TerrainTypes: Water
 		Condition: swimming

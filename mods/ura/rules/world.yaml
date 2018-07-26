@@ -20,6 +20,7 @@
 			Ore: 80
 			Gems: 80
 			Beach: 80
+			Water: 80
 	Locomotor@WHEELED:
 		Name: wheeled
 		Crushes: mine, crate

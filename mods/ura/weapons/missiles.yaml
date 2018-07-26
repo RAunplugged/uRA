@@ -259,12 +259,12 @@ APTusk:
 	ReloadDelay: 60
 	Range: 7c0
 	Projectile: Missile
-		Spread: 256
 		Speed: 298
 		TrailImage: smokey
 		HorizontalRateOfTurn: 10
 		RangeLimit: 9c0
 	Warhead@1Dam: SpreadDamage
+		Spread: 256
 		Damage: 30
 		Versus:
 			None: 50
