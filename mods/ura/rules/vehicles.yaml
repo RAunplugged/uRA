@@ -32,7 +32,7 @@ V2RL:
 		RequiresCondition: !reloading
 		Name: loaded
 	WithFacingSpriteBody@EMPTY:
-		RequiresCondition: !reloading
+		RequiresCondition: reloading
 		Sequence: empty-idle
 		Name: reloading
 	SelectionDecorations:
