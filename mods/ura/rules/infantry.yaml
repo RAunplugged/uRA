@@ -418,6 +418,7 @@ MEDI:
 		ForceTargetStances: None
 	AttackFrontal:
 	WithInfantryBody:
+		IdleSequences: idle
 		StandSequences: stand
 		DefaultAttackSequence: heal
 	Voiced:
@@ -459,6 +460,7 @@ MECH:
 		CaptureTypes: husk
 		PlayerExperience: 25
 	WithInfantryBody:
+		IdleSequences: idle
 		DefaultAttackSequence: repair
 		StandSequences: stand
 	Voiced:
@@ -537,7 +539,7 @@ THF:
 	Voiced:
 		VoiceSet: ThiefVoice
 	WithInfantryBody:
-		-IdleSequences:
+		IdleSequences: idle
 		StandSequences: stand
 	Buildable:
 		Description: Steals enemy credits.\n  Unarmed
@@ -567,7 +569,7 @@ HIJACKER:
 		VoiceSet: ThiefVoice
 	-TakeCover:
 	WithInfantryBody:
-		-IdleSequences:
+		IdleSequences: idle
 		StandSequences: stand
 	Crushable:
 		WarnProbability: 95
