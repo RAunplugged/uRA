@@ -1,3 +1,12 @@
+!No more logs after July 29 2018
+
+
+
+Changes after commits per July 31 2018
+(https://github.com/RAunplugged/OpenRA/commits/bleed)
+
+
+
 Temporary placement of changelog, last commit tag 055041c
 
 * Per Next Playtest:
