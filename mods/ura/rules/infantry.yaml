@@ -344,6 +344,7 @@ E7:
 	Mobile:
 		Speed: 71
 		Voice: Move
+		Locomotor: tanyafoot
 	GrantConditionOnTerrain:
 		TerrainTypes: Water
 		Condition: swimming
