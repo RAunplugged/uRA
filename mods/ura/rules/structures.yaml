@@ -1155,7 +1155,7 @@ FACT:
 			BottomRight: 1536, 1536
 	ConyardChronoReturn:
 		Condition: chrono-vortex
-		Damage: 950
+		Damage: 10
 	TransferTimedExternalConditionOnTransform:
 		Condition: invulnerability
 
