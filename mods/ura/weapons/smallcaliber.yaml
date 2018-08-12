@@ -59,7 +59,7 @@ FLAK-23-AG:
 
 ^HeavyMG:
 	ReloadDelay: 30
-	Range: 7c0
+	Range: 6c0
 	Report: gun13.aud
 	Projectile: Bullet
 		Speed: 1c682
