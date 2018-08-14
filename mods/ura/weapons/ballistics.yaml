@@ -11,7 +11,7 @@
 		Damage: 40
 		Versus:
 			None: 30
-			Wood: 90
+			Wood: 80
 			Light: 90
 			Concrete: 50
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
