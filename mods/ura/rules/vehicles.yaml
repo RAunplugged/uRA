@@ -449,8 +449,6 @@ MCV:
 		Actor: MCV.Husk
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
-	TransferTimedExternalConditionOnTransform:
-		Condition: invulnerability
 
 # Jeep IFV traits using custom yaml code by Grayon Dilach
 JEEP:
