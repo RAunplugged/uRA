@@ -1,15 +1,11 @@
 !No more logs after July 29 2018
 
+Latest commit tag: 5d1c37a4c55e1ec4d8ab7d83501e4ca6eb77c985 - 5d1c37a
 
 
-Changes after commits per July 31 2018
+
+Unplugged Engine - commits beyond the OpenRA engine
 (https://github.com/RAunplugged/OpenRA/commits/bleed)
-
-
-
-Temporary placement of changelog, last commit tag 055041c
-
-* Per Next Playtest:
 
 
 

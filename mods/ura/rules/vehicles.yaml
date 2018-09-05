@@ -1010,7 +1010,10 @@ QTNK:
 	Armor:
 		Type: Heavy
 	Mobile:
+		RequiresCondition: !deployed
 		Speed: 56
+	Chronoshiftable:
+		RequiresCondition: !deployed
 	RevealsShroud:
 		Range: 9c256
 		RevealGeneratedShroud: False
@@ -1018,6 +1021,7 @@ QTNK:
 		Range: 4c0
 	SelectionDecorations:
 	MadTank:
+		DeployedCondition: deployed
 		ChargeDelay: 192
 	KillsSelf:
 		RequiresCondition: invulnerability
