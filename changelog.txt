@@ -1,11 +1,34 @@
-!No more logs after July 29 2018
+OpenRAModSDK: https://github.com/OpenRA/OpenRAModSDK/commits/master
+OpenRA Engine: https://github.com/OpenRA/OpenRA/commits/bleed
 
-Latest commit tag: 5d1c37a4c55e1ec4d8ab7d83501e4ca6eb77c985 - 5d1c37a
+uRA mod: https://github.com/RAunplugged/uRA (mod feature changelog WIP)
+Unplugged OpenRA Engine fork: https://github.com/RAunplugged/OpenRA 
 
 
 
-Unplugged Engine - commits beyond the OpenRA engine
-(https://github.com/RAunplugged/OpenRA/commits/bleed)
+Unplugged OpenRA Engine Fork, added commits:
+
+1* Mask OpenRA IRC notifications:
+https://github.com/OpenRA/OpenRA/commit/b53a3645753ecf8823c11e5c818b9d777b7b020e
+2* Spec UI engine changes:
+https://github.com/OpenRA/OpenRA/commit/493603b130d53991c08544015bc87a66a9658bd5
+3* Spec UI mods changes:
+https://github.com/OpenRA/OpenRA/commit/91097078da479c83a004e9604cdf4b5b3f71c1ba
+4* Add FlyCircleOnIdle trait:
+https://github.com/OpenRA/OpenRA/commit/ca5c83a4f73cafb6f760da5c4eddf9c0f3093c83
+5* add MustaphaTR CustomProductionCost and Time traits:
+https://github.com/OpenRA/OpenRA/commit/ca5c83a4f73cafb6f760da5c4eddf9c0f3093c83
+
+
+
+Latest updates:
+
+OpenRAModSDK commit tag: 8c42cfb - 8c42cfb630602d23b0c30ea60a82c2b356277964
+OpenRA Engine commit tag:  5d1c37a - 5d1c37a4c55e1ec4d8ab7d83501e4ca6eb77c985
+
+
+
+! No more mod logs after July 29 2018 (info below outdated).
 
 
 

@@ -1,7 +1,5 @@
 #!/bin/bash
 set -e
-
-command -v curl >/dev/null 2>&1 || { echo >&2 "Windows packaging requires curl."; exit 1; }
 command -v makensis >/dev/null 2>&1 || { echo >&2 "Windows packaging requires makensis."; exit 1; }
 
 require_variables() {
@@ -69,7 +67,7 @@ MOD_VERSION=$(grep 'Version:' mods/${MOD_ID}/mod.yaml | awk '{print $2}')
 
 if [ "${PACKAGING_OVERWRITE_MOD_VERSION}" == "True" ]; then
     make version VERSION="${TAG}"
-else	
+else
 	echo "Mod version ${MOD_VERSION} will remain unchanged.";
 fi
 
@@ -92,6 +90,10 @@ popd > /dev/null
 cp -Lr "${TEMPLATE_ROOT}/mods/"* "${BUILTDIR}/mods"
 cp "mod.ico" "${BUILTDIR}/${MOD_ID}.ico"
 cp "${SRC_DIR}/OpenRA.Game.exe.config" "${BUILTDIR}"
+
+# We need to set the loadFromRemoteSources flag for the launcher, but only for the "portable" zip package.
+# Windows automatically un-trusts executables that are extracted from a downloaded zip file
+cp "${SRC_DIR}/OpenRA.Game.exe.config" "${BUILTDIR}/${PACKAGING_WINDOWS_LAUNCHER_NAME}.exe.config"
 
 echo "Compiling Windows launcher"
 sed "s|DISPLAY_NAME|${PACKAGING_DISPLAY_NAME}|" "${SRC_DIR}/packaging/windows/WindowsLauncher.cs.in" | sed "s|MOD_ID|${MOD_ID}|" | sed "s|FAQ_URL|${PACKAGING_FAQ_URL}|" > "${BUILTDIR}/WindowsLauncher.cs"

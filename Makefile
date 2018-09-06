@@ -34,8 +34,31 @@ HAS_LUAC = $(shell command -v luac 2> /dev/null)
 LUA_FILES = $(shell find mods/*/maps/* -iname '*.lua')
 PROJECT_DIRS = $(shell dirname $$(find . -iname "*.csproj" -not -path "$(ENGINE_DIRECTORY)/*"))
 
+scripts:
+	@awk '/\r$$/ { exit(1); }' mod.config || (printf "Invalid mod.config format: file must be saved using unix-style (CR, not CRLF) line endings.\n"; exit 1)
+	@if [ ! -x "fetch-engine.sh" ] || [ ! -x "launch-dedicated.sh" ] || [ ! -x "launch-game.sh" ] || [ ! -x "utility.sh" ]; then \
+		echo "Required SDK scripts are not executable:"; \
+		if [ ! -x "fetch-engine.sh" ]; then \
+			echo "   fetch-engine.sh"; \
+		fi; \
+		if [ ! -x "launch-dedicated.sh" ]; then \
+			echo "   launch-dedicated.sh"; \
+		fi; \
+		if [ ! -x "launch-game.sh" ]; then \
+			echo "   launch-game.sh"; \
+		fi; \
+		if [ ! -x "utility.sh" ]; then \
+			echo "   utility.sh"; \
+		fi; \
+		echo "Repair their permissions and try again."; \
+		echo "If you are using git you can repair these permissions by running"; \
+		echo "   git update-index --chmod=+x *.sh"; \
+		echo "and commiting the changed files to your repository."; \
+		exit 1; \
+	fi
+
 variables:
-	@if [ -z "$(MOD_ID)" ] || [ -z "$(ENGINE_DIRECTORY)" ];then \
+	@if [ -z "$(MOD_ID)" ] || [ -z "$(ENGINE_DIRECTORY)" ]; then \
 			echo "Required mod.config variables are missing:"; \
 			if [ -z "$(MOD_ID)" ]; then \
 				echo "   MOD_ID"; \
@@ -47,7 +70,7 @@ variables:
 			exit 1; \
 		fi
 
-engine: variables
+engine: variables scripts
 	@./fetch-engine.sh || (printf "Unable to continue without engine files\n"; exit 1)
 	@cd $(ENGINE_DIRECTORY) && make core
 
