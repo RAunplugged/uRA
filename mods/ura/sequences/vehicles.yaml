@@ -101,7 +101,7 @@ hhusk2:
 		Length: 5
 	icon: 2tnkicon
 
-2tnkger:
+2tnk.ger:
 	idle:
 		Facings: 32
 		UseClassicFacingFudge: True

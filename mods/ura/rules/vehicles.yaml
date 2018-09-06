@@ -158,7 +158,7 @@ V2RL:
 	Armament:
 		Weapon: 90mm.Germany
 	RenderSprites:
-		Image: 2tnkger
+		Image: 2tnk.ger
 	SpawnActorOnDeath:
 		Actor: 2TNK.GER.Husk
 
