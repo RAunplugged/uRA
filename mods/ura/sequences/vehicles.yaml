@@ -111,7 +111,7 @@ hhusk2:
 		UseClassicFacingFudge: True
 	muzzle: gunfire2
 		Length: 5
-	icon: 2tnkgericon
+	icon: 2tnk.gericon
 		UseTilesetExtension: false
 
 2tnk.destroyed:
