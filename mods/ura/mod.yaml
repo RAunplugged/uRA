@@ -44,7 +44,11 @@ MapFolders:
 
 Rules:
 	ura|rules/misc.yaml
-	ura|rules/ai.yaml
+	ura|rules/ai/ai.yaml
+	ura|rules/ai/ai-brutal.yaml
+	ura|rules/ai/ai-hard.yaml
+	ura|rules/ai/ai-normal.yaml
+	ura|rules/ai/ai-easy.yaml
 	ura|rules/player.yaml
 	ura|rules/palettes.yaml
 	ura|rules/world.yaml

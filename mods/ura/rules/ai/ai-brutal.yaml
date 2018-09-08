@@ -1,0 +1,409 @@
+POWR.Brutal:
+	Inherits: POWR
+	Valued:
+		Cost: 180
+	Buildable:
+		Prerequisites: ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: powr
+APWR.Brutal:
+	Inherits: APWR
+	Valued:
+		Cost: 300
+	Buildable:
+		Prerequisites: dome.brutal, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: apwr
+SILO.Brutal:
+	Inherits: SILO
+	Valued:
+		Cost: 90
+	Buildable:
+		Prerequisites: proc.brutal, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: silo
+PROC.Brutal:
+	Inherits: PROC
+	Valued:
+		Cost: 840
+	Buildable:
+		Prerequisites: anypower, ~techlevel.infonly, ~structures.ai
+	FreeActor:
+		Actor: HARV.Brutal
+	RenderSprites:
+		Image: proc
+BARR.Brutal:
+	Inherits: BARR
+	Valued:
+		Cost: 300
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks.brutal
+	Buildable:
+		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: barr
+KENN.Brutal:
+	Inherits: KENN
+	Valued:
+		Cost: 60
+	Buildable:
+		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: kenn
+TENT.Brutal:
+	Inherits: TENT
+	Valued:
+		Cost: 300
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks.brutal
+	Buildable:
+		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: tent
+WEAP.Brutal:
+	Inherits: WEAP
+	Valued:
+		Cost: 1200
+	Buildable:
+		Prerequisites: proc.brutal, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: weap
+PBOX.Brutal:
+	Inherits: PBOX
+	Valued:
+		Cost: 360
+	Buildable:
+		Prerequisites: tent.brutal, ~structures.allies, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: pbox
+HBOX.Brutal:
+	Inherits: HBOX
+	Valued:
+		Cost: 480
+	Buildable:
+		Prerequisites: tent.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: hbox
+GUN.Brutal:
+	Inherits: GUN
+	Valued:
+		Cost: 480
+	Buildable:
+		Prerequisites: tent.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: gun
+TSLA.Brutal:
+	Inherits: TSLA
+	Valued:
+		Cost: 720
+	Buildable:
+		Prerequisites: weap.brutal, ~structures.soviet, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: tsla
+GAP.Brutal:
+	Inherits: GAP
+	Valued:
+		Cost: 540
+	Buildable:
+		Prerequisites: dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: gap
+FTUR.Brutal:
+	Inherits: FTUR
+	Valued:
+		Cost: 360
+	Buildable:
+		Prerequisites: barr.brutal, ~structures.soviet, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: ftur
+AGUN.Brutal:
+	Inherits: AGUN
+	Valued:
+		Cost: 480
+	Buildable:
+		Prerequisites: dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: agun
+SAM.Brutal:
+	Inherits: SAM
+	Valued:
+		Cost: 420
+	Buildable:
+		Prerequisites: dome.brutal, ~structures.soviet, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: sam
+ATEK.Brutal:
+	Inherits: ATEK
+	Valued:
+		Cost: 900
+	Buildable:
+		Prerequisites: weap.brutal, dome.brutal, ~structures.allies, ~techlevel.high, ~structures.ai
+	BaseProvider:
+		Range: 16c0
+	RenderSprites:
+		Image: atek
+STEK.Brutal:
+	Inherits: STEK
+	Valued:
+		Cost: 900
+	Buildable:
+		Prerequisites: weap.brutal, dome.brutal, ~structures.soviet, ~techlevel.high, ~structures.ai
+	BaseProvider:
+		Range: 16c0
+	RenderSprites:
+		Image: stek
+FIX.Brutal:
+	Inherits: FIX
+	Valued:
+		Cost: 720
+	Buildable:
+		Prerequisites: weap.brutal, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: fix
+DOME.Brutal:
+	Inherits: DOME
+	Valued:
+		Cost: 960
+	Buildable:
+		Prerequisites: proc.brutal, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: dome
+HPAD.Brutal:
+	Inherits: HPAD
+	Valued:
+		Cost: 300
+	Buildable:
+		Prerequisites: dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: hpad
+AFLD.Brutal:
+	Inherits: AFLD
+	Valued:
+		Cost: 300
+	Buildable:
+		Prerequisites: dome.brutal, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: afld.brutal
+	RenderSprites:
+		Image: afld
+AFLD.Ukraine.Brutal:
+	Inherits: AFLD.Brutal
+	Valued:
+		Cost: 300
+	Buildable:
+		Prerequisites: dome.brutal, ~techlevel.medium, ~structures.ukraine, ~structures.ai
+	RenderSprites:
+		Image: afld
+
+E1.Brutal:
+	Inherits: E1
+	Valued:
+		Cost: 60
+	Buildable:
+		Prerequisites: ~barracks.brutal, ~techlevel.infonly, ~infantry.ai
+	RenderSprites:
+		Image: e1
+E2.Brutal:
+	Inherits: E2
+	Valued:
+		Cost: 96
+	Buildable:
+		Prerequisites: ~barr.brutal, ~techlevel.infonly, ~infantry.ai
+	RenderSprites:
+		Image: e2
+E3.Brutal:
+	Inherits: E3
+	Valued:
+		Cost: 180
+	Buildable:
+		Prerequisites: ~barracks.brutal, ~techlevel.infonly, ~infantry.ai
+	RenderSprites:
+		Image: e3
+E4.Brutal:
+	Inherits: E4
+	Valued:
+		Cost: 180
+	Buildable:
+		Prerequisites: ~barr.brutal, ftur.brutal, ~techlevel.low, ~infantry.ai
+	RenderSprites:
+		Image: e4
+DOG.Brutal:
+	Inherits: DOG
+	Valued:
+		Cost: 120
+	Buildable:
+		Prerequisites: ~kenn.brutal, ~techlevel.infonly, ~infantry.ai
+	RenderSprites:
+		Image: dog
+SHOK.Brutal:
+	Inherits: SHOK
+	Valued:
+		Cost: 180
+	Buildable:
+		Prerequisites: ~barr.brutal, stek.brutal, tsla.brutal, ~infantry.russia, ~techlevel.high, ~infantry.ai
+	RenderSprites:
+		Image: shok
+
+MCV.Brutal:
+	Inherits: MCV
+	Valued:
+		Cost: 1200
+	Buildable:
+		Prerequisites: fix.brutal, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: mcv
+HARV.Brutal:
+	Inherits: HARV
+	Valued:
+		Cost: 660
+	Buildable:
+		Prerequisites: proc.brutal, ~techlevel.infonly, ~vehicles.ai
+	Harvester:
+		SearchFromOrderRadius: 20
+	RenderSprites:
+		Image: harv
+APC.Brutal:
+	Inherits: APC
+	Valued:
+		Cost: 510
+	Buildable:
+		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
+	RenderSprites:
+		Image: apc
+JEEP.Brutal:
+	Inherits: JEEP
+	Valued:
+		Cost: 240
+	Buildable:
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
+	RenderSprites:
+		Image: jeep
+ARTY.Brutal:
+	Inherits: ARTY
+	Valued:
+		Cost: 480
+	Buildable:
+		Prerequisites: dome.brutal, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: arty
+V2RL.Brutal:
+	Inherits: V2RL
+	Valued:
+		Cost: 540
+	Buildable:
+		Prerequisites: dome.brutal, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: v2rl
+FTRK.Brutal:
+	Inherits: FTRK
+	Valued:
+		Cost: 360
+	Buildable:
+		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
+	RenderSprites:
+		Image: ftrk
+1TNK.Brutal:
+	Inherits: 1TNK
+	Valued:
+		Cost: 420
+	Buildable:
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
+	RenderSprites:
+		Image: 1tnk
+2TNK.Brutal:
+	Inherits: 2TNK
+	Valued:
+		Cost: 510
+	Buildable:
+		Prerequisites: fix.brutal, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: 2tnk
+2TNK.GER.Brutal:
+	Inherits: 2TNK.GER
+	Valued:
+		Cost: 630
+	Buildable:
+		Prerequisites: fix.brutal, ~vehicles.germany, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: 2tnk.ger
+3TNK.Brutal:
+	Inherits: 3TNK
+	Valued:
+		Cost: 690
+	Buildable:
+		Prerequisites: fix.brutal, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: 3tnk
+4TNK.Brutal:
+	Inherits: 4TNK
+	Valued:
+		Cost: 1200
+	Buildable:
+		Prerequisites: fix.brutal, stek.brutal, ~vehicles.soviet, ~techlevel.high, ~vehicles.ai
+	RenderSprites:
+		Image: 4tnk
+4TNK.KV-8.Brutal:
+	Inherits: 4TNK.KV-8
+	Valued:
+		Cost: 1200
+	Buildable:
+		Prerequisites: fix.brutal, stek.brutal, ~vehicles.ukraine, ~techlevel.high, ~vehicles.ai
+	RenderSprites:
+		Image: 4tnk.kv-8
+TTNK.Brutal:
+	Inherits: TTNK
+	Valued:
+		Cost: 810
+	Buildable:
+		Prerequisites: tsla.brutal, stek.brutal, ~vehicles.russia, ~techlevel.high, ~vehicles.ai
+	RenderSprites:
+		Image: ttnk
+STNK.Brutal:
+	Inherits: STNK
+	Valued:
+		Cost: 810
+	Buildable:
+		Prerequisites: atek.brutal, ~vehicles.england, ~techlevel.high, ~vehicles.ai
+	RenderSprites:
+		Image: stnk
+
+HELI.Brutal:
+	Inherits: HELI
+	Valued:
+		Cost: 600
+	Buildable:
+		Prerequisites: ~hpad.brutal, atek.brutal, ~techlevel.high, ~aircraft.ai
+	Aircraft:
+		RearmBuildings: hpad.brutal
+	RenderSprites:
+		Image: heli
+HIND.Brutal:
+	Inherits: HIND
+	Valued:
+		Cost: 405
+	Buildable:
+		Prerequisites: ~hpad.brutal, ~techlevel.medium, ~aircraft.ai
+	Aircraft:
+		RearmBuildings: hpad.brutal
+	RenderSprites:
+		Image: hind
+MIG.Brutal:
+	Inherits: MIG
+	Valued:
+		Cost: 600
+	Buildable:
+		Prerequisites: ~afld.brutal, stek.brutal, ~techlevel.high, ~aircraft.ai
+	Aircraft:
+		RearmBuildings: afld.brutal, afld.ukraine.brutal
+	RenderSprites:
+		Image: mig
+YAK.Brutal:
+	Inherits: YAK
+	Valued:
+		Cost: 405
+	Buildable:
+		Prerequisites: ~afld.brutal, ~techlevel.medium, ~aircraft.ai
+	Aircraft:
+		RearmBuildings: afld.brutal, afld.ukraine.brutal
+	RenderSprites:
+		Image: yak

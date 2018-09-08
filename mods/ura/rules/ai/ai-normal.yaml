@@ -1,0 +1,32 @@
+HELI.Normal:
+	Inherits: HELI
+	Valued:
+		Cost: 1000
+	Buildable:
+		Prerequisites: ~hpad, atek, ~techlevel.high, ~aircraft.ai
+	RenderSprites:
+		Image: heli
+HIND.Normal:
+	Inherits: HIND
+	Valued:
+		Cost: 675
+	Buildable:
+		Prerequisites: ~hpad, ~techlevel.medium, ~aircraft.ai
+	RenderSprites:
+		Image: hind
+MIG.Normal:
+	Inherits: MIG
+	Valued:
+		Cost: 1000
+	Buildable:
+		Prerequisites: ~afld, stek, ~techlevel.high, ~aircraft.ai
+	RenderSprites:
+		Image: mig
+YAK.Normal:
+	Inherits: YAK
+	Valued:
+		Cost: 675
+	Buildable:
+		Prerequisites: ~afld, ~techlevel.medium, ~aircraft.ai
+	RenderSprites:
+		Image: yak

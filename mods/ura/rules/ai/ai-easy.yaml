@@ -1,0 +1,409 @@
+POWR.Easy:
+	Inherits: POWR
+	Valued:
+		Cost: 360
+	Buildable:
+		Prerequisites: ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: powr
+APWR.Easy:
+	Inherits: APWR
+	Valued:
+		Cost: 600
+	Buildable:
+		Prerequisites: dome.easy, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: apwr
+SILO.Easy:
+	Inherits: SILO
+	Valued:
+		Cost: 180
+	Buildable:
+		Prerequisites: proc.easy, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: silo
+PROC.Easy:
+	Inherits: PROC
+	Valued:
+		Cost: 1680
+	Buildable:
+		Prerequisites: anypower, ~techlevel.infonly, ~structures.ai
+	FreeActor:
+		Actor: HARV.Easy
+	RenderSprites:
+		Image: proc
+BARR.Easy:
+	Inherits: BARR
+	Valued:
+		Cost: 600
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks.easy
+	Buildable:
+		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: barr
+KENN.Easy:
+	Inherits: KENN
+	Valued:
+		Cost: 120
+	Buildable:
+		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: kenn
+TENT.Easy:
+	Inherits: TENT
+	Valued:
+		Cost: 600
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks.easy
+	Buildable:
+		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: tent
+WEAP.Easy:
+	Inherits: WEAP
+	Valued:
+		Cost: 2400
+	Buildable:
+		Prerequisites: proc.easy, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: weap
+PBOX.Easy:
+	Inherits: PBOX
+	Valued:
+		Cost: 720
+	Buildable:
+		Prerequisites: tent.easy, ~structures.allies, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: pbox
+HBOX.Easy:
+	Inherits: HBOX
+	Valued:
+		Cost: 960
+	Buildable:
+		Prerequisites: tent.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: hbox
+GUN.Easy:
+	Inherits: GUN
+	Valued:
+		Cost: 960
+	Buildable:
+		Prerequisites: tent.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: gun
+TSLA.Easy:
+	Inherits: TSLA
+	Valued:
+		Cost: 1440
+	Buildable:
+		Prerequisites: weap.easy, ~structures.soviet, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: tsla
+GAP.Easy:
+	Inherits: GAP
+	Valued:
+		Cost: 1080
+	Buildable:
+		Prerequisites: dome.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: gap
+FTUR.Easy:
+	Inherits: FTUR
+	Valued:
+		Cost: 720
+	Buildable:
+		Prerequisites: barr.easy, ~structures.soviet, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: ftur
+AGUN.Easy:
+	Inherits: AGUN
+	Valued:
+		Cost: 960
+	Buildable:
+		Prerequisites: dome.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: agun
+SAM.Easy:
+	Inherits: SAM
+	Valued:
+		Cost: 840
+	Buildable:
+		Prerequisites: dome.easy, ~structures.soviet, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: sam
+ATEK.Easy:
+	Inherits: ATEK
+	Valued:
+		Cost: 1800
+	Buildable:
+		Prerequisites: weap.easy, dome.easy, ~structures.allies, ~techlevel.high, ~structures.ai
+	BaseProvider:
+		Range: 16c0
+	RenderSprites:
+		Image: atek
+STEK.Easy:
+	Inherits: STEK
+	Valued:
+		Cost: 1800
+	Buildable:
+		Prerequisites: weap.easy, dome.easy, ~structures.soviet, ~techlevel.high, ~structures.ai
+	BaseProvider:
+		Range: 16c0
+	RenderSprites:
+		Image: stek
+FIX.Easy:
+	Inherits: FIX
+	Valued:
+		Cost: 1440
+	Buildable:
+		Prerequisites: weap.easy, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: fix
+DOME.Easy:
+	Inherits: DOME
+	Valued:
+		Cost: 1920
+	Buildable:
+		Prerequisites: proc.easy, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: dome
+HPAD.Easy:
+	Inherits: HPAD
+	Valued:
+		Cost: 600
+	Buildable:
+		Prerequisites: dome.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: hpad
+AFLD.Easy:
+	Inherits: AFLD
+	Valued:
+		Cost: 600
+	Buildable:
+		Prerequisites: dome.easy, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: afld.easy
+	RenderSprites:
+		Image: afld
+AFLD.Ukraine.Easy:
+	Inherits: AFLD.Easy
+	Valued:
+		Cost: 600
+	Buildable:
+		Prerequisites: dome.easy, ~techlevel.medium, ~structures.ukraine, ~structures.ai
+	RenderSprites:
+		Image: afld
+
+E1.Easy:
+	Inherits: E1
+	Valued:
+		Cost: 120
+	Buildable:
+		Prerequisites: ~barracks.easy, ~techlevel.infonly, ~infantry.ai
+	RenderSprites:
+		Image: e1
+E2.Easy:
+	Inherits: E2
+	Valued:
+		Cost: 192
+	Buildable:
+		Prerequisites: ~barr.easy, ~techlevel.infonly, ~infantry.ai
+	RenderSprites:
+		Image: e2
+E3.Easy:
+	Inherits: E3
+	Valued:
+		Cost: 360
+	Buildable:
+		Prerequisites: ~barracks.easy, ~techlevel.infonly, ~infantry.ai
+	RenderSprites:
+		Image: e3
+E4.Easy:
+	Inherits: E4
+	Valued:
+		Cost: 360
+	Buildable:
+		Prerequisites: ~barr.easy, ftur.easy, ~techlevel.low, ~infantry.ai
+	RenderSprites:
+		Image: e4
+DOG.Easy:
+	Inherits: DOG
+	Valued:
+		Cost: 240
+	Buildable:
+		Prerequisites: ~kenn.easy, ~techlevel.infonly, ~infantry.ai
+	RenderSprites:
+		Image: dog
+SHOK.Easy:
+	Inherits: SHOK
+	Valued:
+		Cost: 360
+	Buildable:
+		Prerequisites: ~barr.easy, stek.easy, tsla.easy, ~infantry.russia, ~techlevel.high, ~infantry.ai
+	RenderSprites:
+		Image: shok
+
+MCV.Easy:
+	Inherits: MCV
+	Valued:
+		Cost: 2400
+	Buildable:
+		Prerequisites: fix.easy, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: mcv
+HARV.Easy:
+	Inherits: HARV
+	Valued:
+		Cost: 1320
+	Buildable:
+		Prerequisites: proc.easy, ~techlevel.infonly, ~vehicles.ai
+	Harvester:
+		SearchFromOrderRadius: 20
+	RenderSprites:
+		Image: harv
+APC.Easy:
+	Inherits: APC
+	Valued:
+		Cost: 960
+	Buildable:
+		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
+	RenderSprites:
+		Image: apc
+JEEP.Easy:
+	Inherits: JEEP
+	Valued:
+		Cost: 480
+	Buildable:
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
+	RenderSprites:
+		Image: jeep
+ARTY.Easy:
+	Inherits: ARTY
+	Valued:
+		Cost: 960
+	Buildable:
+		Prerequisites: dome.easy, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: arty
+V2RL.Easy:
+	Inherits: V2RL
+	Valued:
+		Cost: 1080
+	Buildable:
+		Prerequisites: dome.easy, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: v2rl
+FTRK.Easy:
+	Inherits: FTRK
+	Valued:
+		Cost: 720
+	Buildable:
+		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
+	RenderSprites:
+		Image: ftrk
+1TNK.Easy:
+	Inherits: 1TNK
+	Valued:
+		Cost: 840
+	Buildable:
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
+	RenderSprites:
+		Image: 1tnk
+2TNK.Easy:
+	Inherits: 2TNK
+	Valued:
+		Cost: 1020
+	Buildable:
+		Prerequisites: fix.easy, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: 2tnk
+2TNK.GER.Easy:
+	Inherits: 2TNK.GER
+	Valued:
+		Cost: 1260
+	Buildable:
+		Prerequisites: fix.easy, ~vehicles.germany, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: 2tnk.ger
+3TNK.Easy:
+	Inherits: 3TNK
+	Valued:
+		Cost: 1380
+	Buildable:
+		Prerequisites: fix.easy, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: 3tnk
+4TNK.Easy:
+	Inherits: 4TNK
+	Valued:
+		Cost: 2400
+	Buildable:
+		Prerequisites: fix.easy, stek.easy, ~vehicles.soviet, ~techlevel.high, ~vehicles.ai
+	RenderSprites:
+		Image: 4tnk
+4TNK.KV-8.Easy:
+	Inherits: 4TNK.KV-8
+	Valued:
+		Cost: 2400
+	Buildable:
+		Prerequisites: fix.easy, stek.easy, ~vehicles.ukraine, ~techlevel.high, ~vehicles.ai
+	RenderSprites:
+		Image: 4tnk.kv-8
+TTNK.Easy:
+	Inherits: TTNK
+	Valued:
+		Cost: 1620
+	Buildable:
+		Prerequisites: tsla.easy, stek.easy, ~vehicles.russia, ~techlevel.high, ~vehicles.ai
+	RenderSprites:
+		Image: ttnk
+STNK.Easy:
+	Inherits: STNK
+	Valued:
+		Cost: 1620
+	Buildable:
+		Prerequisites: atek.easy, ~vehicles.england, ~techlevel.high, ~vehicles.ai
+	RenderSprites:
+		Image: stnk
+
+HELI.Easy:
+	Inherits: HELI
+	Valued:
+		Cost: 1200
+	Buildable:
+		Prerequisites: ~hpad.easy, atek.easy, ~techlevel.high, ~aircraft.ai
+	Aircraft:
+		RearmBuildings: hpad.easy
+	RenderSprites:
+		Image: heli
+HIND.Easy:
+	Inherits: HIND
+	Valued:
+		Cost: 810
+	Buildable:
+		Prerequisites: ~hpad.easy, ~techlevel.medium, ~aircraft.ai
+	Aircraft:
+		RearmBuildings: hpad.easy
+	RenderSprites:
+		Image: hind
+MIG.Easy:
+	Inherits: MIG
+	Valued:
+		Cost: 1200
+	Buildable:
+		Prerequisites: ~afld.easy, stek.easy, ~techlevel.high, ~aircraft.ai
+	Aircraft:
+		RearmBuildings: afld.easy, afld.ukraine.easy
+	RenderSprites:
+		Image: mig
+YAK.Easy:
+	Inherits: YAK
+	Valued:
+		Cost: 810
+	Buildable:
+		Prerequisites: ~afld.easy, ~techlevel.medium, ~aircraft.ai
+	Aircraft:
+		RearmBuildings: afld.easy, afld.ukraine.easy
+	RenderSprites:
+		Image: yak
