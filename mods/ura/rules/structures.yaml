@@ -226,7 +226,6 @@ SPEN:
 	ProvidesPrerequisite@buildingname:
 	BotProvidesPrerequisite@ai:
 		Prerequisite: naval.ai
-		RequiresPrerequisite: true
 	EditorTilesetFilter:
 		ExcludeTilesets: INTERIOR
 	WithDecoration@primary:
@@ -349,7 +348,6 @@ SYRD:
 	ProvidesPrerequisite@buildingname:
 	BotProvidesPrerequisite@ai:
 		Prerequisite: naval.ai
-		RequiresPrerequisite: true
 	EditorTilesetFilter:
 		ExcludeTilesets: INTERIOR
 	WithDecoration@primary:
@@ -1053,7 +1051,6 @@ WEAP:
 		Prerequisite: vehicles.ukraine
 	BotProvidesPrerequisite@ai:
 		Prerequisite: vehicles.ai
-		RequiresPrerequisite: true
 	PrimaryBuilding:
 		PrimaryCondition: primary
 	ProductionBar:
@@ -1115,7 +1112,6 @@ FACT:
 		Prerequisite: structures.ukraine
 	BotProvidesPrerequisite@ai:
 		Prerequisite: structures.ai
-		RequiresPrerequisite: true
 	Health:
 		HP: 1500
 	Armor:
@@ -1344,7 +1340,6 @@ HPAD:
 	ProvidesPrerequisite@buildingname:
 	BotProvidesPrerequisite@ai:
 		Prerequisite: aircraft.ai
-		RequiresPrerequisite: true
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	InfiltrateForSupportPower:
@@ -1427,7 +1422,6 @@ AFLD:
 		Prerequisite: aircraft.ukraine
 	BotProvidesPrerequisite@ai:
 		Prerequisite: aircraft.ai
-		RequiresPrerequisite: true
 	AirstrikePower@spyplane:
 		OrderName: SovietSpyPlane
 		Prerequisites: aircraft.soviet
@@ -1705,7 +1699,6 @@ BARR:
 		Prerequisite: infantry.ukraine
 	BotProvidesPrerequisite@ai:
 		Prerequisite: infantry.ai
-		RequiresPrerequisite: true
 	Power:
 		Amount: -20
 	ProvidesPrerequisite@buildingname:
@@ -1847,7 +1840,6 @@ TENT:
 		Prerequisite: infantry.germany
 	BotProvidesPrerequisite@ai:
 		Prerequisite: infantry.ai
-		RequiresPrerequisite: true
 	Power:
 		Amount: -20
 	ProvidesPrerequisite@buildingname:
