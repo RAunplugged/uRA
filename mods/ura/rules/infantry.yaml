@@ -652,7 +652,7 @@ SNIPER:
 	Passenger:
 		PipType: Red
 	RevealsShroud:
-		Range: 8c0
+		Range: 9c256
 	AutoTarget:
 		InitialStance: HoldFire
 		InitialStanceAI: ReturnFire

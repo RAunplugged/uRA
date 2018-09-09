@@ -268,8 +268,8 @@ World:
 		OuterSupportRadius: 5
 	MPStartLocations:
 		SeparateTeamSpawnsCheckboxDisplayOrder: 6
-		SeparateTeamSpawnsCheckboxVisible: false
-		SeparateTeamSpawnsCheckboxEnabled: false
+		SeparateTeamSpawnsCheckboxVisible: true
+		SeparateTeamSpawnsCheckboxEnabled: true
 	SpawnMPUnits:
 		DropdownDisplayOrder: 1
 	PathFinder:
