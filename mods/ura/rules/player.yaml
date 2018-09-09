@@ -68,6 +68,7 @@ Player:
 		Enabled: True
 		DisplayOrder: 8
 		Prerequisites: global-bounty
+		Visible: False
 	LobbyPrerequisiteCheckbox@GLOBALFACTUNDEPLOY:
 		ID: factundeploy
 		Label: Redeployable MCVs
