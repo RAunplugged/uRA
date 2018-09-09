@@ -466,7 +466,7 @@ JEEP:
 		Name: Ranger
 		RequiresCondition: !loaded
 	Health:
-		HP: 160
+		HP: 150
 	Armor:
 		Type: Light
 	Mobile:
@@ -663,7 +663,7 @@ APC:
 	RevealsShroud@GAPGEN:
 		Range: 4c0
 	Armament:
-		Weapon: M60mg
+		Weapon: M60mg.APC
 		LocalOffset: 85,0,171
 		MuzzleSequence: muzzle
 	DetectCloaked:

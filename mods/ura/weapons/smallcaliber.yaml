@@ -265,8 +265,23 @@ M60mg:
 	Inherits: ^LightMG
 	ReloadDelay: 30
 	Range: 5c0
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Wood: 20
+			Light: 25
+			Heavy: 15
 	Report: pillbox1.aud
 	Burst: 5
+
+M60mg.APC:
+	Inherits: M60mg
+	ReloadDelay: 25
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Wood: 15
+			Light: 35
+			Heavy: 15
+			Concrete: 10
 
 ^SnipeWeapon:
 	ReloadDelay: 80
