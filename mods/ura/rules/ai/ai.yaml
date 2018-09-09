@@ -1,6 +1,11 @@
 Player:
 
-	# Easy AI - Turtle Mode
+	# All bots have specific cost/production modifiers related to their difficulty level:
+	# Easy (-20%), Normal, Hard (+20%), Brutal (+40%), Naval and Naval-Hard (+20%). 
+	# All bots are granted +25% Aircraft Cost/Production boost on top of their specific modifier.
+
+	# Easy AI | Turtle Mode | -20% Cost/Production penalty
+
 	HackyAI@EasyAI:
 		Name: Easy AI
 		Type: easy
@@ -160,7 +165,8 @@ Player:
 					TargetMetric: Value
 					CheckRadius: 7c0
 
-	# Normal AI - Vanilla Mode
+	# Normal AI | Vanilla Mode
+
 	HackyAI@NormalAI:
 		Name: Normal AI
 		Type: normal
@@ -325,7 +331,8 @@ Player:
 					TargetMetric: Value
 					CheckRadius: 7c0
 
-	# Hard AI - Rush Mode
+	# Hard AI | Rush Mode | +20% Cost/Production boost
+
 	HackyAI@HardAI:
 		Name: Hard AI
 		Type: hard
@@ -498,7 +505,8 @@ Player:
 					TargetMetric: Value
 					CheckRadius: 7c0
 
-	# Brutal AI - Rush Mode
+	# Brutal AI | Rush Mode | +40% Cost/Production boost
+
 	HackyAI@BrutalAI:
 		Name: Brutal AI
 		Type: brutal
@@ -671,7 +679,8 @@ Player:
 					TargetMetric: Value
 					CheckRadius: 7c0
 
-	# Naval AI - Naval Mode
+	# Naval AI | Naval Mode
+
 	HackyAI@NavalAI:
 		Name: Naval AI
 		Type: naval
@@ -822,7 +831,8 @@ Player:
 					TargetMetric: Value
 					CheckRadius: 7c0
 	
-	# Naval AI (Hard) - Naval Mode
+	# Naval AI (Hard) | Naval Mode | +20% Cost/Production boost
+
 	HackyAI@NavalHardAI:
 		Name: Naval AI (Hard)
 		Type: navalHard

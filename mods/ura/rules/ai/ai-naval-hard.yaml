@@ -1,4 +1,9 @@
+# Naval AI (Hard) | +20% Cost/Production boost
+
+# This bot also consume values from 'ai-hard.yaml'.
+
 # Ships
+
 SPEN.Hard:
 	Inherits: SPEN
 	Valued:

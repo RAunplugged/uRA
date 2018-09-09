@@ -1,4 +1,5 @@
-# Aircraft
+# Aircraft | +25% Cost/Production boost on top of bot specific Cost/Production modifier
+
 HELI.Normal:
 	Inherits: HELI
 	Valued:

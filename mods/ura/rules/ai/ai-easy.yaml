@@ -1,4 +1,7 @@
+# Easy AI | -20% Cost/Production penalty
+
 # Structures
+
 POWR.Easy:
 	Inherits: POWR
 	Valued:
@@ -135,6 +138,7 @@ STEK.Easy:
 		Image: stek
 
 # Defensive structures
+
 PBOX.Easy:
 	Inherits: PBOX
 	Valued:
@@ -209,6 +213,7 @@ MSLO.Easy:
 		Image: mslo
 
 # Infantry
+
 E1.Easy:
 	Inherits: E1
 	Valued:
@@ -259,6 +264,7 @@ SHOK.Easy:
 		Image: shok
 
 # Vehicles
+
 MCV.Easy:
 	Inherits: MCV
 	Valued:
@@ -382,7 +388,8 @@ STNK.Easy:
 	RenderSprites:
 		Image: stnk
 
-# Aircraft
+# Aircraft | +25% Cost/Production boost on top of bot specific Cost/Production modifier
+
 HELI.Easy:
 	Inherits: HELI
 	Valued:
