@@ -370,7 +370,7 @@ STNK.Easy:
 HELI.Easy:
 	Inherits: HELI
 	Valued:
-		Cost: 1200
+		Cost: 1800
 	Buildable:
 		Prerequisites: ~hpad.easy, atek.easy, ~techlevel.high, ~aircraft.ai
 	Aircraft:
@@ -381,7 +381,7 @@ HELI.Easy:
 HIND.Easy:
 	Inherits: HIND
 	Valued:
-		Cost: 810
+		Cost: 1215
 	Buildable:
 		Prerequisites: ~hpad.easy, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
@@ -392,7 +392,7 @@ HIND.Easy:
 MIG.Easy:
 	Inherits: MIG
 	Valued:
-		Cost: 1200
+		Cost: 1800
 	Buildable:
 		Prerequisites: ~afld.easy, stek.easy, ~techlevel.high, ~aircraft.ai
 	Aircraft:
@@ -403,7 +403,7 @@ MIG.Easy:
 YAK.Easy:
 	Inherits: YAK
 	Valued:
-		Cost: 810
+		Cost: 1215
 	Buildable:
 		Prerequisites: ~afld.easy, ~techlevel.medium, ~aircraft.ai
 	Aircraft:

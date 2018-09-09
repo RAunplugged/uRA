@@ -1,0 +1,57 @@
+SPEN.Hard:
+	Inherits: SPEN
+	Valued:
+		Cost: 800
+	Buildable:
+		Prerequisites: anypower, ~structures.soviet, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: spen
+SYRD.Hard:
+	Inherits: SYRD
+	Valued:
+		Cost: 800
+	Buildable:
+		Prerequisites: anypower, ~structures.allies, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: syrd
+
+SS.Hard:
+	Inherits: SS
+	Valued:
+		Cost: 760
+	Buildable:
+		Prerequisites: ~spen.hard, ~techlevel.low, ~naval.ai
+	RenderSprites:
+		Image: ss
+MSUB.Hard:
+	Inherits: MSUB
+	Valued:
+		Cost: 1600
+	Buildable:
+		Prerequisites: ~spen.hard, stek.hard, ~techlevel.high, ~naval.ai
+	RenderSprites:
+		Image: msub
+DD.Hard:
+	Inherits: DD
+	Valued:
+		Cost: 800
+	Buildable:
+		Prerequisites: ~syrd.hard, dome.hard, ~techlevel.medium, ~naval.ai
+	RenderSprites:
+		Image: dd
+CA.Hard:
+	Inherits: CA
+	Buildable:
+		Prerequisites: ~syrd.hard, atek.hard, ~techlevel.high, ~naval.ai
+	Valued:
+		Cost: 1920
+	RenderSprites:
+		Image: ca
+PT.Hard:
+	Inherits: PT
+	Valued:
+		Cost: 400
+	Buildable:
+		Prerequisites: ~syrd.hard, ~techlevel.low, ~naval.ai
+	RenderSprites:
+		Image: pt

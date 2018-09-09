@@ -224,6 +224,9 @@ SPEN:
 		RequiresPrerequisites: structures.ukraine
 		Prerequisite: ships.ukraine
 	ProvidesPrerequisite@buildingname:
+	BotProvidesPrerequisite@ai:
+		Prerequisite: naval.ai
+		RequiresPrerequisite: true
 	EditorTilesetFilter:
 		ExcludeTilesets: INTERIOR
 	WithDecoration@primary:
@@ -344,6 +347,9 @@ SYRD:
 		RequiresPrerequisites: structures.germany
 		Prerequisite: ships.germany
 	ProvidesPrerequisite@buildingname:
+	BotProvidesPrerequisite@ai:
+		Prerequisite: naval.ai
+		RequiresPrerequisite: true
 	EditorTilesetFilter:
 		ExcludeTilesets: INTERIOR
 	WithDecoration@primary:

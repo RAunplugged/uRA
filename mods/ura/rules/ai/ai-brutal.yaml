@@ -166,6 +166,8 @@ DOME.Brutal:
 		Cost: 960
 	Buildable:
 		Prerequisites: proc.brutal, ~techlevel.medium, ~structures.ai
+	ParatroopersPower@paratroopers:
+		Prerequisites: dome.brutal, ~structures.england
 	RenderSprites:
 		Image: dome
 HPAD.Brutal:
@@ -370,7 +372,7 @@ STNK.Brutal:
 HELI.Brutal:
 	Inherits: HELI
 	Valued:
-		Cost: 600
+		Cost: 900
 	Buildable:
 		Prerequisites: ~hpad.brutal, atek.brutal, ~techlevel.high, ~aircraft.ai
 	Aircraft:
@@ -381,7 +383,7 @@ HELI.Brutal:
 HIND.Brutal:
 	Inherits: HIND
 	Valued:
-		Cost: 405
+		Cost: 610
 	Buildable:
 		Prerequisites: ~hpad.brutal, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
@@ -392,7 +394,7 @@ HIND.Brutal:
 MIG.Brutal:
 	Inherits: MIG
 	Valued:
-		Cost: 600
+		Cost: 900
 	Buildable:
 		Prerequisites: ~afld.brutal, stek.brutal, ~techlevel.high, ~aircraft.ai
 	Aircraft:
@@ -403,7 +405,7 @@ MIG.Brutal:
 YAK.Brutal:
 	Inherits: YAK
 	Valued:
-		Cost: 405
+		Cost: 610
 	Buildable:
 		Prerequisites: ~afld.brutal, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
