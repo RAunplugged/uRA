@@ -1,3 +1,4 @@
+# Structures
 POWR.Brutal:
 	Inherits: POWR
 	Valued:
@@ -32,6 +33,16 @@ PROC.Brutal:
 		Actor: HARV.Brutal
 	RenderSprites:
 		Image: proc
+TENT.Brutal:
+	Inherits: TENT
+	Valued:
+		Cost: 300
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks.brutal
+	Buildable:
+		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: tent
 BARR.Brutal:
 	Inherits: BARR
 	Valued:
@@ -50,16 +61,6 @@ KENN.Brutal:
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: kenn
-TENT.Brutal:
-	Inherits: TENT
-	Valued:
-		Cost: 300
-	ProvidesPrerequisite@barracks:
-		Prerequisite: barracks.brutal
-	Buildable:
-		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly, ~structures.ai
-	RenderSprites:
-		Image: tent
 WEAP.Brutal:
 	Inherits: WEAP
 	Valued:
@@ -68,6 +69,72 @@ WEAP.Brutal:
 		Prerequisites: proc.brutal, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
+FIX.Brutal:
+	Inherits: FIX
+	Valued:
+		Cost: 720
+	Buildable:
+		Prerequisites: weap.brutal, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: fix
+DOME.Brutal:
+	Inherits: DOME
+	Valued:
+		Cost: 960
+	Buildable:
+		Prerequisites: proc.brutal, ~techlevel.medium, ~structures.ai
+	ParatroopersPower@paratroopers:
+		Prerequisites: dome.brutal, ~structures.england
+	RenderSprites:
+		Image: dome
+HPAD.Brutal:
+	Inherits: HPAD
+	Valued:
+		Cost: 300
+	Buildable:
+		Prerequisites: dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: hpad
+AFLD.Brutal:
+	Inherits: AFLD
+	Valued:
+		Cost: 300
+	Buildable:
+		Prerequisites: dome.brutal, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: afld.brutal
+	RenderSprites:
+		Image: afld
+AFLD.Ukraine.Brutal:
+	Inherits: AFLD.Brutal
+	Valued:
+		Cost: 300
+	Buildable:
+		Prerequisites: dome.brutal, ~techlevel.medium, ~structures.ukraine, ~structures.ai
+	RenderSprites:
+		Image: afld
+ATEK.Brutal:
+	Inherits: ATEK
+	Valued:
+		Cost: 900
+	Buildable:
+		Prerequisites: weap.brutal, dome.brutal, ~structures.allies, ~techlevel.high, ~structures.ai
+	BaseProvider:
+		Range: 16c0
+	RenderSprites:
+		Image: atek
+STEK.Brutal:
+	Inherits: STEK
+	Valued:
+		Cost: 900
+	Buildable:
+		Prerequisites: weap.brutal, dome.brutal, ~structures.soviet, ~techlevel.high, ~structures.ai
+	BaseProvider:
+		Range: 16c0
+	RenderSprites:
+		Image: stek
+
+# Defensive structures
 PBOX.Brutal:
 	Inherits: PBOX
 	Valued:
@@ -132,71 +199,16 @@ SAM.Brutal:
 		Prerequisites: dome.brutal, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: sam
-ATEK.Brutal:
-	Inherits: ATEK
+MSLO.Brutal:
+	Inherits: MSLO
 	Valued:
-		Cost: 900
+		Cost: 1500
 	Buildable:
-		Prerequisites: weap.brutal, dome.brutal, ~structures.allies, ~techlevel.high, ~structures.ai
-	BaseProvider:
-		Range: 16c0
+		Prerequisites: techcenter, ~techlevel.unrestricted, ~structures.ai
 	RenderSprites:
-		Image: atek
-STEK.Brutal:
-	Inherits: STEK
-	Valued:
-		Cost: 900
-	Buildable:
-		Prerequisites: weap.brutal, dome.brutal, ~structures.soviet, ~techlevel.high, ~structures.ai
-	BaseProvider:
-		Range: 16c0
-	RenderSprites:
-		Image: stek
-FIX.Brutal:
-	Inherits: FIX
-	Valued:
-		Cost: 720
-	Buildable:
-		Prerequisites: weap.brutal, ~techlevel.medium, ~structures.ai
-	RenderSprites:
-		Image: fix
-DOME.Brutal:
-	Inherits: DOME
-	Valued:
-		Cost: 960
-	Buildable:
-		Prerequisites: proc.brutal, ~techlevel.medium, ~structures.ai
-	ParatroopersPower@paratroopers:
-		Prerequisites: dome.brutal, ~structures.england
-	RenderSprites:
-		Image: dome
-HPAD.Brutal:
-	Inherits: HPAD
-	Valued:
-		Cost: 300
-	Buildable:
-		Prerequisites: dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
-	RenderSprites:
-		Image: hpad
-AFLD.Brutal:
-	Inherits: AFLD
-	Valued:
-		Cost: 300
-	Buildable:
-		Prerequisites: dome.brutal, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
-	ProvidesPrerequisite@buildingname:
-		Prerequisite: afld.brutal
-	RenderSprites:
-		Image: afld
-AFLD.Ukraine.Brutal:
-	Inherits: AFLD.Brutal
-	Valued:
-		Cost: 300
-	Buildable:
-		Prerequisites: dome.brutal, ~techlevel.medium, ~structures.ukraine, ~structures.ai
-	RenderSprites:
-		Image: afld
+		Image: mslo
 
+# Infantry
 E1.Brutal:
 	Inherits: E1
 	Valued:
@@ -246,6 +258,7 @@ SHOK.Brutal:
 	RenderSprites:
 		Image: shok
 
+# Vehicles
 MCV.Brutal:
 	Inherits: MCV
 	Valued:
@@ -369,6 +382,7 @@ STNK.Brutal:
 	RenderSprites:
 		Image: stnk
 
+# Aircraft
 HELI.Brutal:
 	Inherits: HELI
 	Valued:

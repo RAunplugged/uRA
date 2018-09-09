@@ -1,3 +1,4 @@
+# Structures
 POWR.Hard:
 	Inherits: POWR
 	Valued:
@@ -32,6 +33,16 @@ PROC.Hard:
 		Actor: HARV.Hard
 	RenderSprites:
 		Image: proc
+TENT.Hard:
+	Inherits: TENT
+	Valued:
+		Cost: 400
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks.hard
+	Buildable:
+		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: tent
 BARR.Hard:
 	Inherits: BARR
 	Valued:
@@ -50,16 +61,6 @@ KENN.Hard:
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: kenn
-TENT.Hard:
-	Inherits: TENT
-	Valued:
-		Cost: 400
-	ProvidesPrerequisite@barracks:
-		Prerequisite: barracks.hard
-	Buildable:
-		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly, ~structures.ai
-	RenderSprites:
-		Image: tent
 WEAP.Hard:
 	Inherits: WEAP
 	Valued:
@@ -68,6 +69,72 @@ WEAP.Hard:
 		Prerequisites: proc.hard, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
+FIX.Hard:
+	Inherits: FIX
+	Valued:
+		Cost: 960
+	Buildable:
+		Prerequisites: weap.hard, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: fix
+DOME.Hard:
+	Inherits: DOME
+	Valued:
+		Cost: 1280
+	Buildable:
+		Prerequisites: proc.hard, ~techlevel.medium, ~structures.ai
+	ParatroopersPower@paratroopers:
+		Prerequisites: dome.hard, ~structures.england
+	RenderSprites:
+		Image: dome
+HPAD.Hard:
+	Inherits: HPAD
+	Valued:
+		Cost: 400
+	Buildable:
+		Prerequisites: dome.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: hpad
+AFLD.Hard:
+	Inherits: AFLD
+	Valued:
+		Cost: 400
+	Buildable:
+		Prerequisites: dome.hard, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: afld.hard
+	RenderSprites:
+		Image: afld
+AFLD.Ukraine.Hard:
+	Inherits: AFLD.Hard
+	Valued:
+		Cost: 400
+	Buildable:
+		Prerequisites: dome.hard, ~techlevel.medium, ~structures.ukraine, ~structures.ai
+	RenderSprites:
+		Image: afld
+ATEK.Hard:
+	Inherits: ATEK
+	Valued:
+		Cost: 1200
+	Buildable:
+		Prerequisites: weap.hard, dome.hard, ~structures.allies, ~techlevel.high, ~structures.ai
+	BaseProvider:
+		Range: 16c0
+	RenderSprites:
+		Image: atek
+STEK.Hard:
+	Inherits: STEK
+	Valued:
+		Cost: 1200
+	Buildable:
+		Prerequisites: weap.hard, dome.hard, ~structures.soviet, ~techlevel.high, ~structures.ai
+	BaseProvider:
+		Range: 16c0
+	RenderSprites:
+		Image: stek
+
+# Defensive structures
 PBOX.Hard:
 	Inherits: PBOX
 	Valued:
@@ -132,69 +199,16 @@ SAM.Hard:
 		Prerequisites: dome.hard, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: sam
-ATEK.Hard:
-	Inherits: ATEK
+MSLO.Hard:
+	Inherits: MSLO
 	Valued:
-		Cost: 1200
+		Cost: 2000
 	Buildable:
-		Prerequisites: weap.hard, dome.hard, ~structures.allies, ~techlevel.high, ~structures.ai
-	BaseProvider:
-		Range: 16c0
+		Prerequisites: techcenter, ~techlevel.unrestricted, ~structures.ai
 	RenderSprites:
-		Image: atek
-STEK.Hard:
-	Inherits: STEK
-	Valued:
-		Cost: 1200
-	Buildable:
-		Prerequisites: weap.hard, dome.hard, ~structures.soviet, ~techlevel.high, ~structures.ai
-	BaseProvider:
-		Range: 16c0
-	RenderSprites:
-		Image: stek
-FIX.Hard:
-	Inherits: FIX
-	Valued:
-		Cost: 960
-	Buildable:
-		Prerequisites: weap.hard, ~techlevel.medium, ~structures.ai
-	RenderSprites:
-		Image: fix
-DOME.Hard:
-	Inherits: DOME
-	Valued:
-		Cost: 1280
-	Buildable:
-		Prerequisites: proc.hard, ~techlevel.medium, ~structures.ai
-	RenderSprites:
-		Image: dome
-HPAD.Hard:
-	Inherits: HPAD
-	Valued:
-		Cost: 400
-	Buildable:
-		Prerequisites: dome.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
-	RenderSprites:
-		Image: hpad
-AFLD.Hard:
-	Inherits: AFLD
-	Valued:
-		Cost: 400
-	Buildable:
-		Prerequisites: dome.hard, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
-	ProvidesPrerequisite@buildingname:
-		Prerequisite: afld.hard
-	RenderSprites:
-		Image: afld
-AFLD.Ukraine.Hard:
-	Inherits: AFLD.Hard
-	Valued:
-		Cost: 400
-	Buildable:
-		Prerequisites: dome.hard, ~techlevel.medium, ~structures.ukraine, ~structures.ai
-	RenderSprites:
-		Image: afld
+		Image: mslo
 
+# Infantry
 E1.Hard:
 	Inherits: E1
 	Valued:
@@ -244,6 +258,7 @@ SHOK.Hard:
 	RenderSprites:
 		Image: shok
 
+# Vehicles
 MCV.Hard:
 	Inherits: MCV
 	Valued:
@@ -367,6 +382,7 @@ STNK.Hard:
 	RenderSprites:
 		Image: stnk
 
+# Aircraft
 HELI.Hard:
 	Inherits: HELI
 	Valued:

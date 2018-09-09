@@ -1,11 +1,23 @@
 Player:
+
+	# Easy AI - Turtle Mode
 	HackyAI@EasyAI:
 		Name: Easy AI
 		Type: easy
-		MinimumExcessPower: 60
+
+		SquadSize: 30
+		SquadSizeRandomBonus: 40
+		MinimumExcessPower: 80
+		MaximumExcessPower: 250
 		ExcessPowerIncrement: 50
 		ExcessPowerIncreaseThreshold: 4
-		MaximumExcessPower: 250
+		StructureProductionResumeDelay: 500
+		CheckForNewBasesDelay: 500
+
+		DangerScanRadius: 14
+		AttackScanRadius: 14
+		ProtectionScanRadius: 10
+
 		BuildingCommonNames:
 			ConstructionYard: fact
 			Refinery: proc.easy
@@ -17,6 +29,28 @@ Player:
 		UnitsCommonNames:
 			Mcv: mcv, mcv.easy
 			ExcludeFromSquads: harv.easy,mcv.easy
+		BuildingFractions:
+			proc.easy: 30%
+			tent.easy: 1%
+			barr.easy: 1%
+			kenn.easy: 0.5%
+			weap.easy: 3%
+			hpad.easy: 2%
+			afld.easy: 2%
+			afld.ukraine.easy: 2%
+			pbox.easy: 10%
+			hbox.easy: 10%
+			gun.easy: 10%
+			ftur.easy: 20%
+			tsla.easy: 10%
+			gap.easy: 7%
+			fix.easy: 0.1%
+			dome.easy: 10%
+			agun.easy: 7%
+			sam.easy: 7%
+			atek.easy: 1%
+			stek.easy: 1%
+			mslo.easy: 1%
 		BuildingLimits:
 			proc.easy: 4
 			barr.easy: 1
@@ -30,58 +64,37 @@ Player:
 			atek.easy: 1
 			stek.easy: 1
 			fix.easy: 1
-		BuildingFractions:
-			proc.easy: 30%
-			tent.easy: 1%
-			barr.easy: 1%
-			kenn.easy: 0.5%
-			weap.easy: 3%
-			hpad.easy: 2%
-			afld.easy: 2%
-			afld.ukraine.easy: 2%
-			pbox.easy: 10%
-			gun.easy: 10%
-			ftur.easy: 10%
-			tsla.easy: 7%
-			gap.easy: 3%
-			fix.easy: 0.1%
-			dome.easy: 10%
-			agun.easy: 5%
-			sam.easy: 5%
-			atek.easy: 1%
-			stek.easy: 1%
-			mslo.easy: 1%
 		UnitsToBuild:
 			e1.easy: 65%
-			e2.easy: 25%
-			e3.easy: 40%
-			e4.easy: 15%
+			e2.easy: 15%
+			e3.easy: 30%
+			e4.easy: 25%
 			dog.easy: 15%
-			shok.easy: 15%
-			harv.easy: 10%
-			apc.easy: 30%
-			jeep.easy: 40%
+			shok.easy: 30%
+			harv.easy: 15%
+			apc.easy: 20%
+			jeep.easy: 20%
 			arty.easy: 15%
-			v2rl.easy: 40%
-			ftrk.easy: 50%
-			1tnk.easy: 70%
-			2tnk.easy: 25%
-			2tnk.ger.easy: 25%
+			v2rl.easy: 30%
+			ftrk.easy: 30%
+			1tnk.easy: 30%
+			2tnk.easy: 50%
+			2tnk.ger.easy: 50%
 			3tnk.easy: 50%
-			4tnk.easy: 20%
-			4tnk.kv-8.easy: 20%
-			ttnk.easy: 20%
-			stnk.easy: 15%
-			heli.easy: 30%
-			hind.easy: 30%
-			mig.easy: 30%
-			yak.easy: 30%
+			4tnk.easy: 25%
+			4tnk.kv-8.easy: 25%
+			ttnk.easy: 25%
+			stnk.easy: 5%
+			heli.easy: 25%
+			hind.easy: 25%
+			mig.easy: 25%
+			yak.easy: 25%
 		UnitLimits:
 			dog.easy: 4
 			harv.easy: 8
-			jeep.easy: 4
+			jeep.easy: 3
 			ftrk.easy: 4
-		SquadSize: 10
+
 		SupportPowerDecisions:
 			spyplane:
 				OrderName: SovietSpyPlane
@@ -100,13 +113,13 @@ Player:
 					Types: Structure
 					Attractiveness: 1
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
 				Consideration@2:
 					Against: Enemy
 					Types: Water
 					Attractiveness: -5
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
 			parasnipers:
 				OrderName: AlliedParatroopers
 				MinimumAttractiveness: 5
@@ -115,13 +128,13 @@ Player:
 					Types: Structure
 					Attractiveness: 1
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
 				Consideration@2:
 					Against: Enemy
 					Types: Water
 					Attractiveness: -5
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
 			parabombs:
 				OrderName: UkraineParabombs
 				MinimumAttractiveness: 1
@@ -146,18 +159,31 @@ Player:
 					Attractiveness: -10
 					TargetMetric: Value
 					CheckRadius: 7c0
+
+	# Normal AI - Vanilla Mode
 	HackyAI@NormalAI:
 		Name: Normal AI
 		Type: normal
-		MinimumExcessPower: 60
+
+		SquadSize: 30
+		SquadSizeRandomBonus: 40
+		MinimumExcessPower: 80
+		MaximumExcessPower: 160
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
-		MaximumExcessPower: 200
 		StructureProductionResumeDelay: 500
-		IdleScanRadius: 12
-		DangerScanRadius: 12
+		CheckForNewBasesDelay: 500
+
+		RushAttackScanRadius: 18
+		ProtectUnitScanRadius: 18	
+		RallyPointScanRadius: 10	
+		DangerScanRadius: 14
+		AttackScanRadius: 14
 		ProtectionScanRadius: 10
+
 		HarvesterEnemyAvoidanceRadius: 10c0
+		MaxResourceCellsToCheck: 4
+
 		BuildingCommonNames:
 			ConstructionYard: fact
 			Refinery: proc
@@ -169,6 +195,28 @@ Player:
 		UnitsCommonNames:
 			Mcv: mcv
 			ExcludeFromSquads: harv
+		BuildingFractions:
+			proc: 20%
+			tent: 3%
+			barr: 3%
+			kenn: 0.5%
+			dome: 3%
+			weap: 6%
+			hpad: 4%
+			afld: 4%
+			afld.ukraine: 4%
+			pbox: 5%
+			hbox: 5%
+			gun: 5%
+			ftur: 10%
+			tsla: 5%
+			gap: 3%
+			fix: 1%
+			agun: 3%
+			sam: 1%
+			atek: 1%
+			stek: 1%
+			mslo: 1%
 		BuildingLimits:
 			proc: 4
 			barr: 2
@@ -176,64 +224,42 @@ Player:
 			dome: 1
 			weap: 1
 			hpad: 3
-			afld: 2
-			afld.ukraine: 2
+			afld: 3
+			afld.ukraine: 3
 			atek: 1
 			stek: 1
 			fix: 1
-		BuildingFractions:
-			proc: 10%
-			tent: 1%
-			barr: 1%
-			kenn: 0.5%
-			dome: 1%
-			weap: 6%
-			hpad: 4%
-			afld: 4%
-			afld.ukraine: 4%
-			pbox: 7%
-			gun: 7%
-			ftur: 10%
-			tsla: 5%
-			gap: 2%
-			fix: 1%
-			agun: 5%
-			sam: 1%
-			atek: 1%
-			stek: 1%
-			mslo: 1%
 		UnitsToBuild:
 			e1: 65%
-			e2: 25%
-			e3: 40%
-			e4: 15%
+			e2: 15%
+			e3: 30%
+			e4: 25%
 			dog: 15%
-			shok: 15%
-			harv: 10%
-			apc: 30%
-			jeep: 40%
+			shok: 30%
+			harv: 15%
+			apc: 20%
+			jeep: 20%
 			arty: 15%
-			v2rl: 40%
-			ftrk: 50%
-			1tnk: 70%
-			2tnk: 25%
-			2tnk.ger: 25%
+			v2rl: 30%
+			ftrk: 30%
+			1tnk: 30%
+			2tnk: 50%
+			2tnk.ger: 50%
 			3tnk: 50%
 			4tnk: 25%
 			4tnk.kv-8: 25%
 			ttnk: 25%
-			stnk: 10%
-			heli.normal: 30%
-			hind.normal: 30%
-			mig.normal: 30%
-			yak.normal: 30%
+			stnk: 5%
+			heli.normal: 25%
+			hind.normal: 25%
+			mig.normal: 25%
+			yak.normal: 25%
 		UnitLimits:
 			dog: 4
 			harv: 8
-			jeep: 4
+			jeep: 3
 			ftrk: 4
-		SquadSize: 30
-		SquadSizeRandomBonus: 40
+
 		SupportPowerDecisions:
 			spyplane:
 				OrderName: SovietSpyPlane
@@ -252,13 +278,28 @@ Player:
 					Types: Structure
 					Attractiveness: 1
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
 				Consideration@2:
 					Against: Enemy
 					Types: Water
 					Attractiveness: -5
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
+			parasnipers:
+				OrderName: AlliedParatroopers
+				MinimumAttractiveness: 5
+				Consideration@1:
+					Against: Ally
+					Types: Structure
+					Attractiveness: 1
+					TargetMetric: None
+					CheckRadius: 30c0
+				Consideration@2:
+					Against: Enemy
+					Types: Water
+					Attractiveness: -5
+					TargetMetric: None
+					CheckRadius: 30c0
 			parabombs:
 				OrderName: UkraineParabombs
 				MinimumAttractiveness: 1
@@ -283,22 +324,36 @@ Player:
 					Attractiveness: -10
 					TargetMetric: Value
 					CheckRadius: 7c0
+
+	# Hard AI - Rush Mode
 	HackyAI@HardAI:
 		Name: Hard AI
 		Type: hard
+
+		SquadSize: 20
+		SquadSizeRandomBonus: 40
 		MinimumExcessPower: 120
+		MaximumExcessPower: 180
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
-		MaximumExcessPower: 160
-		MaximumDefenseRadius: 24
-		MaxBaseRadius: 24
 		StructureProductionResumeDelay: 500
 		CheckForNewBasesDelay: 500
-		RestrictMCVDeploymentFallbackToBase: False
-		IdleScanRadius: 12
-		DangerScanRadius: 12
+		NewProductionCashThreshold: 4000
+		IdleBaseUnitsMaximum: 16
+
+		MaximumDefenseRadius: 24
+		RushAttackScanRadius: 22
+		ProtectUnitScanRadius: 22
+		RallyPointScanRadius: 10
+		MaxBaseRadius: 24
+		DangerScanRadius: 14
+		AttackScanRadius: 14
 		ProtectionScanRadius: 10
+
+		RestrictMCVDeploymentFallbackToBase: False
 		HarvesterEnemyAvoidanceRadius: 10c0
+		MaxResourceCellsToCheck: 4
+
 		BuildingCommonNames:
 			ConstructionYard: fact
 			Refinery: proc.hard
@@ -310,6 +365,28 @@ Player:
 		UnitsCommonNames:
 			Mcv: mcv,mcv.hard
 			ExcludeFromSquads: harv.hard,mcv.hard
+		BuildingFractions:
+			proc.hard: 15%
+			barr.hard: 5%
+			kenn.hard: 0.5%
+			tent.hard: 5%
+			weap.hard: 5%
+			pbox.hard: 5%
+			hbox.hard: 5%
+			gun.hard: 5%
+			tsla.hard: 5%
+			gap.hard: 3%
+			ftur.hard: 10%
+			agun.hard: 3%
+			sam.hard: 3%
+			atek.hard: 1%
+			stek.hard: 1%
+			fix.hard: 1%
+			dome.hard: 5%
+			hpad.hard: 4%
+			afld.hard: 4%
+			afld.ukraine.hard: 4%
+			mslo.hard: 1%
 		BuildingLimits:
 			proc.hard: 4
 			barr.hard: 3
@@ -323,61 +400,39 @@ Player:
 			hpad.hard: 2
 			afld.hard: 2
 			afld.ukraine.hard: 2
-		BuildingFractions:
-			proc.hard: 30%
-			barr.hard: 2%
-			kenn.hard: 0.5%
-			tent.hard: 2%
-			weap.hard: 2%
-			pbox.hard: 4%
-			hbox.hard: 4%
-			gun.hard: 7%
-			tsla.hard: 5%
-			gap.hard: 2%
-			ftur.hard: 10%
-			agun.hard: 5%
-			sam.hard: 5%
-			atek.hard: 1%
-			stek.hard: 1%
-			fix.hard: 0.1%
-			dome.hard: 7%
-			hpad.hard: 4%
-			afld.hard: 4%
-			afld.ukraine.hard: 4%
 		UnitsToBuild:
 			e1.hard: 65%
-			e2.hard: 25%
-			e3.hard: 40%
-			e4.hard: 15%
+			e2.hard: 15%
+			e3.hard: 30%
+			e4.hard: 20%
 			dog.hard: 15%
-			shok.hard: 15%
+			shok.hard: 30%
 			mcv.hard: 0.1%
-			harv.hard: 10%
-			apc.hard: 30%
-			jeep.hard: 40%
+			harv.hard: 15%
+			apc.hard: 20%
+			jeep.hard: 20%
 			arty.hard: 15%
-			v2rl.hard: 40%
-			ftrk.hard: 50%
-			1tnk.hard: 70%
+			v2rl.hard: 30%
+			ftrk.hard: 30%
+			1tnk.hard: 30%
 			2tnk.hard: 50%
 			2tnk.ger.hard: 50%
 			3tnk.hard: 50%
-			4tnk.hard: 20%
-			4tnk.kv-8.hard: 20%
-			ttnk.hard: 20%
+			4tnk.hard: 25%
+			4tnk.kv-8.hard: 25%
+			ttnk.hard: 25%
 			stnk.hard: 5%
-			heli.hard: 30%
-			hind.hard: 30%
-			mig.hard: 30%
-			yak.hard: 30%
+			heli.hard: 25%
+			hind.hard: 25%
+			mig.hard: 25%
+			yak.hard: 25%
 		UnitLimits:
 			dog.hard: 6
 			harv.hard: 8
 			mcv.hard: 1
-			jeep.hard: 4
+			jeep.hard: 3
 			ftrk.hard: 4
-		SquadSize: 20
-		SquadSizeRandomBonus: 30
+
 		SupportPowerDecisions:
 			spyplane:
 				OrderName: SovietSpyPlane
@@ -396,13 +451,28 @@ Player:
 					Types: Structure
 					Attractiveness: 1
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
 				Consideration@2:
 					Against: Enemy
 					Types: Water
 					Attractiveness: -5
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
+			parasnipers:
+				OrderName: AlliedParatroopers
+				MinimumAttractiveness: 5
+				Consideration@1:
+					Against: Ally
+					Types: Structure
+					Attractiveness: 1
+					TargetMetric: None
+					CheckRadius: 30c0
+				Consideration@2:
+					Against: Enemy
+					Types: Water
+					Attractiveness: -5
+					TargetMetric: None
+					CheckRadius: 30c0
 			parabombs:
 				OrderName: UkraineParabombs
 				MinimumAttractiveness: 1
@@ -427,22 +497,36 @@ Player:
 					Attractiveness: -10
 					TargetMetric: Value
 					CheckRadius: 7c0
+
+	# Brutal AI - Rush Mode
 	HackyAI@BrutalAI:
 		Name: Brutal AI
 		Type: brutal
+
+		SquadSize: 20
+		SquadSizeRandomBonus: 30
 		MinimumExcessPower: 120
+		MaximumExcessPower: 180
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
-		MaximumExcessPower: 160
-		MaximumDefenseRadius: 24
-		MaxBaseRadius: 24
 		StructureProductionResumeDelay: 500
 		CheckForNewBasesDelay: 500
-		RestrictMCVDeploymentFallbackToBase: False
-		IdleScanRadius: 12
-		DangerScanRadius: 12
+		NewProductionCashThreshold: 4000
+		IdleBaseUnitsMaximum: 16
+		
+		MaximumDefenseRadius: 24
+		RushAttackScanRadius: 22
+		ProtectUnitScanRadius: 22
+		RallyPointScanRadius: 10
+		MaxBaseRadius: 24
+		DangerScanRadius: 14
+		AttackScanRadius: 14
 		ProtectionScanRadius: 10
+
+		RestrictMCVDeploymentFallbackToBase: False
 		HarvesterEnemyAvoidanceRadius: 10c0
+		MaxResourceCellsToCheck: 4
+
 		BuildingCommonNames:
 			ConstructionYard: fact
 			Refinery: proc.brutal
@@ -454,6 +538,28 @@ Player:
 		UnitsCommonNames:
 			Mcv: mcv,mcv.brutal
 			ExcludeFromSquads: harv.brutal,mcv.brutal
+		BuildingFractions:
+			proc.brutal: 15%
+			barr.brutal: 5%
+			kenn.brutal: 0.5%
+			tent.brutal: 5%
+			weap.brutal: 5%
+			pbox.brutal: 5%
+			hbox.brutal: 5%
+			gun.brutal: 5%
+			tsla.brutal: 5%
+			gap.brutal: 3%
+			ftur.brutal: 10%
+			agun.brutal: 3%
+			sam.brutal: 3%
+			atek.brutal: 1%
+			stek.brutal: 1%
+			fix.brutal: 1%
+			dome.brutal: 5%
+			hpad.brutal: 4%
+			afld.brutal: 4%
+			afld.ukraine.brutal: 4%
+			mslo.brutal: 1%
 		BuildingLimits:
 			proc.brutal: 4
 			barr.brutal: 3
@@ -467,61 +573,39 @@ Player:
 			hpad.brutal: 2
 			afld.brutal: 2
 			afld.ukraine.brutal: 2
-		BuildingFractions:
-			proc.brutal: 30%
-			barr.brutal: 3%
-			kenn.brutal: 0.5%
-			tent.brutal: 3%
-			weap.brutal: 3%
-			pbox.brutal: 4%
-			hbox.brutal: 4%
-			gun.brutal: 7%
-			tsla.brutal: 5%
-			gap.brutal: 2%
-			ftur.brutal: 10%
-			agun.brutal: 5%
-			sam.brutal: 5%
-			atek.brutal: 1%
-			stek.brutal: 1%
-			fix.brutal: 0.1%
-			dome.brutal: 7%
-			hpad.brutal: 4%
-			afld.brutal: 4%
-			afld.ukraine.brutal: 4%
 		UnitsToBuild:
 			e1.brutal: 65%
-			e2.brutal: 25%
-			e3.brutal: 40%
-			e4.brutal: 15%
+			e2.brutal: 15%
+			e3.brutal: 30%
+			e4.brutal: 20%
 			dog.brutal: 15%
-			shok.brutal: 15%
-			mcv.brutal: 0.2%
-			harv.brutal: 10%
-			apc.brutal: 30%
-			jeep.brutal: 40%
+			shok.brutal: 30%
+			mcv.brutal: 0.1%
+			harv.brutal: 15%
+			apc.brutal: 20%
+			jeep.brutal: 20%
 			arty.brutal: 15%
-			v2rl.brutal: 40%
-			ftrk.brutal: 50%
-			1tnk.brutal: 70%
+			v2rl.brutal: 30%
+			ftrk.brutal: 30%
+			1tnk.brutal: 30%
 			2tnk.brutal: 50%
 			2tnk.ger.brutal: 50%
 			3tnk.brutal: 50%
-			4tnk.brutal: 20%
-			4tnk.kv-8.brutal: 20%
-			ttnk.brutal: 20%
+			4tnk.brutal: 25%
+			4tnk.kv-8.brutal: 25%
+			ttnk.brutal: 25%
 			stnk.brutal: 5%
-			heli.brutal: 30%
-			hind.brutal: 30%
-			mig.brutal: 30%
-			yak.brutal: 30%
+			heli.brutal: 25%
+			hind.brutal: 25%
+			mig.brutal: 25%
+			yak.brutal: 25%
 		UnitLimits:
 			dog.brutal: 6
 			harv.brutal: 8
 			mcv.brutal: 1
-			jeep.brutal: 4
+			jeep.brutal: 3
 			ftrk.brutal: 4
-		SquadSize: 20
-		SquadSizeRandomBonus: 30
+
 		SupportPowerDecisions:
 			spyplane:
 				OrderName: SovietSpyPlane
@@ -540,13 +624,13 @@ Player:
 					Types: Structure
 					Attractiveness: 1
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
 				Consideration@2:
 					Against: Enemy
 					Types: Water
 					Attractiveness: -5
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
 			parasnipers:
 				OrderName: AlliedParatroopers
 				MinimumAttractiveness: 5
@@ -555,13 +639,13 @@ Player:
 					Types: Structure
 					Attractiveness: 1
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
 				Consideration@2:
 					Against: Enemy
 					Types: Water
 					Attractiveness: -5
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
 			parabombs:
 				OrderName: UkraineParabombs
 				MinimumAttractiveness: 1
@@ -586,13 +670,32 @@ Player:
 					Attractiveness: -10
 					TargetMetric: Value
 					CheckRadius: 7c0
+
+	# Naval AI - Naval Mode
 	HackyAI@NavalAI:
 		Name: Naval AI
 		Type: naval
+
+		SquadSize: 1
+		SquadSizeRandomBonus: 3
 		MinimumExcessPower: 120
+		MaximumExcessPower: 200
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
-		MaximumExcessPower: 200
+		StructureProductionResumeDelay: 500
+		CheckForNewBasesDelay: 500
+		IdleBaseUnitsMaximum: 16
+
+		MaximumDefenseRadius: 24
+		RushAttackScanRadius: 22
+		ProtectUnitScanRadius: 22
+		MaxBaseRadius: 24
+		DangerScanRadius: 14
+		AttackScanRadius: 14
+		ProtectionScanRadius: 10
+
+		MaxResourceCellsToCheck: 4
+
 		BuildingCommonNames:
 			ConstructionYard: fact
 			Refinery: proc
@@ -606,6 +709,26 @@ Player:
 			Mcv: mcv
 			ExcludeFromSquads: harv
 			NavalUnits: ss,msub,dd,ca,lst,pt
+		BuildingFractions:
+			proc: 30%
+			dome: 1%
+			weap: 1%
+			hpad: 20%
+			afld: 20%
+			afld.ukraine: 20%
+			atek: 1%
+			stek: 1%
+			spen: 20%
+			syrd: 20%
+			fix: 0.1%
+			hbox: 10%
+			gun: 10%
+			gap: 3%
+			ftur: 10%
+			tsla: 10%
+			agun: 5%
+			sam: 5%
+			mslo: 1%
 		BuildingLimits:
 			proc: 4
 			dome: 1
@@ -620,39 +743,20 @@ Player:
 			atek: 1
 			stek: 1
 			fix: 1
-		BuildingFractions:
-			proc: 29%
-			dome: 1%
-			weap: 1%
-			hpad: 20%
-			afld: 20%
-			afld.ukraine: 20%
-			atek: 1%
-			stek: 1%
-			spen: 20%
-			syrd: 20%
-			fix: 0.1%
-			pbox: 12%
-			gun: 12%
-			ftur: 12%
-			tsla: 12%
-			agun: 5%
-			sam: 5%
-			mslo: 1%
 		UnitsToBuild:
 			harv: 1%
 			heli.normal: 20%
 			hind.normal: 20%
 			mig.normal: 20%
 			yak.normal: 20%
-			ss: 10%
+			ss: 15%
 			msub: 30%
 			dd: 30%
 			ca: 20%
 			pt: 10%
 		UnitLimits:
 			harv: 6
-		SquadSize: 1
+
 		SupportPowerDecisions:
 			spyplane:
 				OrderName: SovietSpyPlane
@@ -671,13 +775,28 @@ Player:
 					Types: Structure
 					Attractiveness: 1
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
 				Consideration@2:
 					Against: Enemy
 					Types: Water
 					Attractiveness: -5
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
+			parasnipers:
+				OrderName: AlliedParatroopers
+				MinimumAttractiveness: 5
+				Consideration@1:
+					Against: Ally
+					Types: Structure
+					Attractiveness: 1
+					TargetMetric: None
+					CheckRadius: 30c0
+				Consideration@2:
+					Against: Enemy
+					Types: Water
+					Attractiveness: -5
+					TargetMetric: None
+					CheckRadius: 30c0
 			parabombs:
 				OrderName: UkraineParabombs
 				MinimumAttractiveness: 1
@@ -702,13 +821,32 @@ Player:
 					Attractiveness: -10
 					TargetMetric: Value
 					CheckRadius: 7c0
+	
+	# Naval AI (Hard) - Naval Mode
 	HackyAI@NavalHardAI:
 		Name: Naval AI (Hard)
 		Type: navalHard
+
+		SquadSize: 1
+		SquadSizeRandomBonus: 3
 		MinimumExcessPower: 120
+		MaximumExcessPower: 200
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
-		MaximumExcessPower: 200
+		StructureProductionResumeDelay: 500
+		CheckForNewBasesDelay: 500
+		IdleBaseUnitsMaximum: 16
+
+		MaximumDefenseRadius: 24
+		RushAttackScanRadius: 22
+		ProtectUnitScanRadius: 22
+		MaxBaseRadius: 24
+		DangerScanRadius: 14
+		AttackScanRadius: 14
+		ProtectionScanRadius: 10
+
+		MaxResourceCellsToCheck: 4
+
 		BuildingCommonNames:
 			ConstructionYard: fact
 			Refinery: proc.hard
@@ -722,22 +860,8 @@ Player:
 			Mcv: mcv,mcv.hard
 			ExcludeFromSquads: harv.hard,mcv,mcv.hard
 			NavalUnits: ss.hard,msub.hard,dd.hard,ca.hard,lst.hard,pt.hard
-		BuildingLimits:
-			proc.hard: 4
-			dome.hard: 1
-			barr.hard: 1
-			tent.hard: 1
-			spen.hard: 4
-			syrd.hard: 4
-			hpad.hard: 4
-			afld.hard: 4
-			afld.ukraine.hard: 4
-			weap.hard: 1
-			atek.hard: 1
-			stek.hard: 1
-			fix.hard: 1
 		BuildingFractions:
-			proc.hard: 29%
+			proc.hard: 30%
 			dome.hard: 1%
 			weap.hard: 1%
 			hpad.hard: 20%
@@ -748,27 +872,42 @@ Player:
 			spen.hard: 20%
 			syrd.hard: 20%
 			fix.hard: 0.1%
-			pbox.hard: 12%
-			gun.hard: 12%
-			ftur.hard: 12%
-			tsla.hard: 12%
+			hbox.hard: 10%
+			gun.hard: 10%
+			gap.hard: 3%
+			ftur.hard: 10%
+			tsla.hard: 10%
 			agun.hard: 5%
 			sam.hard: 5%
 			mslo.hard: 1%
+		BuildingLimits:
+			proc.hard: 4
+			dome.hard: 1
+			barr.hard: 1
+			tent.hard: 1
+			spen.hard: 3
+			syrd.hard: 3
+			hpad.hard: 4
+			afld.hard: 4
+			afld.ukraine.hard: 4
+			weap.hard: 1
+			atek.hard: 1
+			stek.hard: 1
+			fix.hard: 1
 		UnitsToBuild:
 			harv.hard: 1%
 			heli.hard: 20%
 			hind.hard: 20%
 			mig.hard: 20%
 			yak.hard: 20%
-			ss.hard: 10%
+			ss.hard: 15%
 			msub.hard: 30%
 			dd.hard: 30%
 			ca.hard: 20%
 			pt.hard: 10%
 		UnitLimits:
 			harv.hard: 6
-		SquadSize: 1
+
 		SupportPowerDecisions:
 			spyplane:
 				OrderName: SovietSpyPlane
@@ -787,13 +926,28 @@ Player:
 					Types: Structure
 					Attractiveness: 1
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
 				Consideration@2:
 					Against: Enemy
 					Types: Water
 					Attractiveness: -5
 					TargetMetric: None
-					CheckRadius: 8c0
+					CheckRadius: 30c0
+			parasnipers:
+				OrderName: AlliedParatroopers
+				MinimumAttractiveness: 5
+				Consideration@1:
+					Against: Ally
+					Types: Structure
+					Attractiveness: 1
+					TargetMetric: None
+					CheckRadius: 30c0
+				Consideration@2:
+					Against: Enemy
+					Types: Water
+					Attractiveness: -5
+					TargetMetric: None
+					CheckRadius: 30c0
 			parabombs:
 				OrderName: UkraineParabombs
 				MinimumAttractiveness: 1

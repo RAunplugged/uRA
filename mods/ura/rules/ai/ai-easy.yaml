@@ -1,3 +1,4 @@
+# Structures
 POWR.Easy:
 	Inherits: POWR
 	Valued:
@@ -32,6 +33,16 @@ PROC.Easy:
 		Actor: HARV.Easy
 	RenderSprites:
 		Image: proc
+TENT.Easy:
+	Inherits: TENT
+	Valued:
+		Cost: 600
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks.easy
+	Buildable:
+		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: tent
 BARR.Easy:
 	Inherits: BARR
 	Valued:
@@ -50,16 +61,6 @@ KENN.Easy:
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: kenn
-TENT.Easy:
-	Inherits: TENT
-	Valued:
-		Cost: 600
-	ProvidesPrerequisite@barracks:
-		Prerequisite: barracks.easy
-	Buildable:
-		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly, ~structures.ai
-	RenderSprites:
-		Image: tent
 WEAP.Easy:
 	Inherits: WEAP
 	Valued:
@@ -68,6 +69,72 @@ WEAP.Easy:
 		Prerequisites: proc.easy, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
+FIX.Easy:
+	Inherits: FIX
+	Valued:
+		Cost: 1440
+	Buildable:
+		Prerequisites: weap.easy, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: fix
+DOME.Easy:
+	Inherits: DOME
+	Valued:
+		Cost: 1920
+	Buildable:
+		Prerequisites: proc.easy, ~techlevel.medium, ~structures.ai
+	ParatroopersPower@paratroopers:
+		Prerequisites: dome.easy, ~structures.england
+	RenderSprites:
+		Image: dome
+HPAD.Easy:
+	Inherits: HPAD
+	Valued:
+		Cost: 600
+	Buildable:
+		Prerequisites: dome.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: hpad
+AFLD.Easy:
+	Inherits: AFLD
+	Valued:
+		Cost: 600
+	Buildable:
+		Prerequisites: dome.easy, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
+	ProvidesPrerequisite@buildingname:
+		Prerequisite: afld.easy
+	RenderSprites:
+		Image: afld
+AFLD.Ukraine.Easy:
+	Inherits: AFLD.Easy
+	Valued:
+		Cost: 600
+	Buildable:
+		Prerequisites: dome.easy, ~techlevel.medium, ~structures.ukraine, ~structures.ai
+	RenderSprites:
+		Image: afld
+ATEK.Easy:
+	Inherits: ATEK
+	Valued:
+		Cost: 1800
+	Buildable:
+		Prerequisites: weap.easy, dome.easy, ~structures.allies, ~techlevel.high, ~structures.ai
+	BaseProvider:
+		Range: 16c0
+	RenderSprites:
+		Image: atek
+STEK.Easy:
+	Inherits: STEK
+	Valued:
+		Cost: 1800
+	Buildable:
+		Prerequisites: weap.easy, dome.easy, ~structures.soviet, ~techlevel.high, ~structures.ai
+	BaseProvider:
+		Range: 16c0
+	RenderSprites:
+		Image: stek
+
+# Defensive structures
 PBOX.Easy:
 	Inherits: PBOX
 	Valued:
@@ -132,69 +199,16 @@ SAM.Easy:
 		Prerequisites: dome.easy, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: sam
-ATEK.Easy:
-	Inherits: ATEK
+MSLO.Easy:
+	Inherits: MSLO
 	Valued:
-		Cost: 1800
+		Cost: 3000
 	Buildable:
-		Prerequisites: weap.easy, dome.easy, ~structures.allies, ~techlevel.high, ~structures.ai
-	BaseProvider:
-		Range: 16c0
+		Prerequisites: techcenter, ~techlevel.unrestricted, ~structures.ai
 	RenderSprites:
-		Image: atek
-STEK.Easy:
-	Inherits: STEK
-	Valued:
-		Cost: 1800
-	Buildable:
-		Prerequisites: weap.easy, dome.easy, ~structures.soviet, ~techlevel.high, ~structures.ai
-	BaseProvider:
-		Range: 16c0
-	RenderSprites:
-		Image: stek
-FIX.Easy:
-	Inherits: FIX
-	Valued:
-		Cost: 1440
-	Buildable:
-		Prerequisites: weap.easy, ~techlevel.medium, ~structures.ai
-	RenderSprites:
-		Image: fix
-DOME.Easy:
-	Inherits: DOME
-	Valued:
-		Cost: 1920
-	Buildable:
-		Prerequisites: proc.easy, ~techlevel.medium, ~structures.ai
-	RenderSprites:
-		Image: dome
-HPAD.Easy:
-	Inherits: HPAD
-	Valued:
-		Cost: 600
-	Buildable:
-		Prerequisites: dome.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
-	RenderSprites:
-		Image: hpad
-AFLD.Easy:
-	Inherits: AFLD
-	Valued:
-		Cost: 600
-	Buildable:
-		Prerequisites: dome.easy, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
-	ProvidesPrerequisite@buildingname:
-		Prerequisite: afld.easy
-	RenderSprites:
-		Image: afld
-AFLD.Ukraine.Easy:
-	Inherits: AFLD.Easy
-	Valued:
-		Cost: 600
-	Buildable:
-		Prerequisites: dome.easy, ~techlevel.medium, ~structures.ukraine, ~structures.ai
-	RenderSprites:
-		Image: afld
+		Image: mslo
 
+# Infantry
 E1.Easy:
 	Inherits: E1
 	Valued:
@@ -244,6 +258,7 @@ SHOK.Easy:
 	RenderSprites:
 		Image: shok
 
+# Vehicles
 MCV.Easy:
 	Inherits: MCV
 	Valued:
@@ -367,6 +382,7 @@ STNK.Easy:
 	RenderSprites:
 		Image: stnk
 
+# Aircraft
 HELI.Easy:
 	Inherits: HELI
 	Valued:
