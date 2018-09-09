@@ -375,6 +375,7 @@ HELI.Brutal:
 		Prerequisites: ~hpad.brutal, atek.brutal, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.brutal
+		RepairBuildings: hpad.brutal
 	RenderSprites:
 		Image: heli
 HIND.Brutal:
@@ -385,6 +386,7 @@ HIND.Brutal:
 		Prerequisites: ~hpad.brutal, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.brutal
+		RepairBuildings: hpad.brutal
 	RenderSprites:
 		Image: hind
 MIG.Brutal:
@@ -395,6 +397,7 @@ MIG.Brutal:
 		Prerequisites: ~afld.brutal, stek.brutal, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.brutal, afld.ukraine.brutal
+		RepairBuildings: afld.brutal, afld.ukraine.brutal
 	RenderSprites:
 		Image: mig
 YAK.Brutal:
@@ -405,5 +408,6 @@ YAK.Brutal:
 		Prerequisites: ~afld.brutal, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.brutal, afld.ukraine.brutal
+		RepairBuildings: afld.brutal, afld.ukraine.brutal
 	RenderSprites:
 		Image: yak

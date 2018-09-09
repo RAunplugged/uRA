@@ -375,6 +375,7 @@ HELI.Hard:
 		Prerequisites: ~hpad.hard, atek.hard, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.hard
+		RepairBuildings: hpad.hard
 	RenderSprites:
 		Image: heli
 HIND.Hard:
@@ -385,6 +386,7 @@ HIND.Hard:
 		Prerequisites: ~hpad.hard, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.hard
+		RepairBuildings: hpad.hard
 	RenderSprites:
 		Image: hind
 MIG.Hard:
@@ -395,6 +397,7 @@ MIG.Hard:
 		Prerequisites: ~afld.hard, stek.hard, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.hard, afld.ukraine.hard
+		RepairBuildings: afld.hard, afld.ukraine.hard
 	RenderSprites:
 		Image: mig
 YAK.Hard:
@@ -405,5 +408,6 @@ YAK.Hard:
 		Prerequisites: ~afld.hard, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.hard, afld.ukraine.hard
+		RepairBuildings: afld.hard, afld.ukraine.hard
 	RenderSprites:
 		Image: yak

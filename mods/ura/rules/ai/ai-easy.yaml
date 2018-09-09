@@ -375,6 +375,7 @@ HELI.Easy:
 		Prerequisites: ~hpad.easy, atek.easy, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.easy
+		RepairBuildings: hpad.easy
 	RenderSprites:
 		Image: heli
 HIND.Easy:
@@ -385,6 +386,7 @@ HIND.Easy:
 		Prerequisites: ~hpad.easy, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.easy
+		RepairBuildings: hpad.easy
 	RenderSprites:
 		Image: hind
 MIG.Easy:
@@ -395,6 +397,7 @@ MIG.Easy:
 		Prerequisites: ~afld.easy, stek.easy, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.easy, afld.ukraine.easy
+		RepairBuildings: afld.easy, afld.ukraine.easy
 	RenderSprites:
 		Image: mig
 YAK.Easy:
@@ -405,5 +408,6 @@ YAK.Easy:
 		Prerequisites: ~afld.easy, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.easy, afld.ukraine.easy
+		RepairBuildings: afld.easy, afld.ukraine.easy
 	RenderSprites:
 		Image: yak
