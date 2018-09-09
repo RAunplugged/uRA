@@ -108,7 +108,7 @@ Player:
 	-HackyAI@BrutalAI:
 	-HackyAI@HardAI:
 	-HackyAI@NormalAI:
-	-HackyAI@Easy:
+	-HackyAI@EasyAI:
 	-HackyAI@NavalAI:
 	-HackyAI@NavalHardAI:
 	DummyAI@LonestarAI:
