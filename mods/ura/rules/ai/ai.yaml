@@ -13,7 +13,7 @@ Player:
 
 		SquadSize: 30
 		SquadSizeRandomBonus: 40
-		MinimumExcessPower: 80
+		MinimumExcessPower: 60
 		MaximumExcessPower: 250
 		ExcessPowerIncrement: 50
 		ExcessPowerIncreaseThreshold: 4
@@ -37,10 +37,10 @@ Player:
 			ExcludeFromSquads: harv.easy,mcv.easy
 		BuildingFractions:
 			proc.easy: 30%
-			tent.easy: 1%
-			barr.easy: 1%
+			tent.easy: 10%
+			barr.easy: 10%
 			kenn.easy: 0.5%
-			weap.easy: 3%
+			weap.easy: 10%
 			hpad.easy: 2%
 			afld.easy: 2%
 			afld.ukraine.easy: 2%
@@ -174,7 +174,7 @@ Player:
 
 		SquadSize: 30
 		SquadSizeRandomBonus: 40
-		MinimumExcessPower: 80
+		MinimumExcessPower: 60
 		MaximumExcessPower: 160
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
@@ -204,11 +204,11 @@ Player:
 			ExcludeFromSquads: harv
 		BuildingFractions:
 			proc: 20%
-			tent: 3%
-			barr: 3%
+			tent: 10%
+			barr: 10%
 			kenn: 0.5%
 			dome: 3%
-			weap: 6%
+			weap: 10%
 			hpad: 4%
 			afld: 4%
 			afld.ukraine: 4%
@@ -340,7 +340,7 @@ Player:
 
 		SquadSize: 20
 		SquadSizeRandomBonus: 40
-		MinimumExcessPower: 120
+		MinimumExcessPower: 90
 		MaximumExcessPower: 180
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
@@ -374,11 +374,11 @@ Player:
 			Mcv: mcv,mcv.hard
 			ExcludeFromSquads: harv.hard,mcv.hard
 		BuildingFractions:
-			proc.hard: 15%
-			barr.hard: 5%
+			proc.hard: 20%
+			barr.hard: 10%
 			kenn.hard: 0.5%
-			tent.hard: 5%
-			weap.hard: 5%
+			tent.hard: 10%
+			weap.hard: 10%
 			pbox.hard: 5%
 			hbox.hard: 5%
 			gun.hard: 5%
@@ -514,7 +514,7 @@ Player:
 
 		SquadSize: 20
 		SquadSizeRandomBonus: 30
-		MinimumExcessPower: 120
+		MinimumExcessPower: 90
 		MaximumExcessPower: 180
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
@@ -548,10 +548,10 @@ Player:
 			Mcv: mcv,mcv.brutal
 			ExcludeFromSquads: harv.brutal,mcv.brutal
 		BuildingFractions:
-			proc.brutal: 15%
-			barr.brutal: 5%
+			proc.brutal: 20%
+			barr.brutal: 10%
 			kenn.brutal: 0.5%
-			tent.brutal: 5%
+			tent.brutal: 10%
 			weap.brutal: 5%
 			pbox.brutal: 5%
 			hbox.brutal: 5%
