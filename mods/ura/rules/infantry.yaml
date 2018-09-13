@@ -127,6 +127,7 @@ E2:
 	Explodes:
 		Weapon: UnitExplodeSmall
 		Chance: 50
+		DamageSource: Killer
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded
 
