@@ -17,7 +17,7 @@ https://github.com/OpenRA/OpenRA/commit/91097078da479c83a004e9604cdf4b5b3f71c1ba
 4* Add FlyCircleOnIdle trait:
 https://github.com/OpenRA/OpenRA/commit/ca5c83a4f73cafb6f760da5c4eddf9c0f3093c83
 5* add MustaphaTR CustomProductionCost and Time traits:
-https://github.com/OpenRA/OpenRA/commit/ca5c83a4f73cafb6f760da5c4eddf9c0f3093c83
+https://github.com/RAunplugged/OpenRA/commit/1a51f48412e08403279f6d97f715b499e07dd0cd
 
 
 
