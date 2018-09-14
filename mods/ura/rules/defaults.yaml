@@ -237,6 +237,7 @@
 		TargetTypes: Ground, Repair, Vehicle
 		RequiresCondition: !parachute
 	Repairable:
+		RepairBuildings: fix, fix.brutal, fix.hard, fix.easy
 	Chronoshiftable:
 	Passenger:
 		CargoType: Vehicle
@@ -497,7 +498,7 @@
 	Selectable:
 		Bounds: 24,24
 	Aircraft:
-		RepairBuildings: afld, afld.ukraine
+		RepairBuildings: afld, afld.ukraine, afld.brutal, afld.ukraine.brutal, afld.hard, afld.ukraine.hard, afld.easy, afld.ukraine.easy
 		AirborneCondition: airborne
 	Targetable@GROUND:
 		TargetTypes: Ground, Repair, Vehicle
@@ -551,7 +552,7 @@
 		GenericName: Helicopter
 	Aircraft:
 		CanHover: True
-		RepairBuildings: hpad
+		RepairBuildings: hpad, hpad.brutal, hpad.hard, hpad.easy
 		CruisingCondition: cruising
 		WaitDistanceFromResupplyBase: 4c0
 		TakeOffOnResupply: true
