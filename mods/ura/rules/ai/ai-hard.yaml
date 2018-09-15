@@ -68,7 +68,7 @@ WEAP.Hard:
 		Cost: 1600
 	Buildable:
 		BuildPaletteOrder: 9019
-		Prerequisites: proc.hard, ~techlevel.low, ~structures.ai
+		Prerequisites: proc.hard, ~barracks.hard, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
 FIX.Hard:
@@ -77,7 +77,7 @@ FIX.Hard:
 		Cost: 960
 	Buildable:
 		BuildPaletteOrder: 9022
-		Prerequisites: weap.hard, ~techlevel.medium, ~structures.ai
+		Prerequisites: weap.hard, ~barracks.hard, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
 DOME.Hard:
@@ -86,7 +86,7 @@ DOME.Hard:
 		Cost: 1280
 	Buildable:
 		BuildPaletteOrder: 9025
-		Prerequisites: proc.hard, ~techlevel.medium, ~structures.ai
+		Prerequisites: proc.hard, ~barracks.hard, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.hard, ~structures.england
 	RenderSprites:
@@ -319,7 +319,7 @@ MCV.Hard:
 		Cost: 1600
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: fix.hard, ~techlevel.medium, ~vehicles.ai
+		Prerequisites: fix.hard, ~weap.brutal.extra, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
 HARV.Hard:
@@ -330,7 +330,7 @@ HARV.Hard:
 		BuildPaletteOrder: 9000
 		Prerequisites: proc.hard, ~techlevel.infonly, ~vehicles.ai
 	Harvester:
-		SearchFromOrderRadius: 20
+		SearchFromOrderRadius: 40
 	RenderSprites:
 		Image: harv
 APC.Hard:
@@ -549,6 +549,71 @@ PT.Hard:
 		Prerequisites: ~syrd.hard, ~techlevel.low, ~naval.ai
 	RenderSprites:
 		Image: pt
+
+# Aditional Hard AI Structures unlocked at late tech.
+
+PROC.Hard.Extra:
+	Inherits: PROC
+	Valued:
+		Cost: 1120
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, ~mslo.hard, ~fix.hard, ~techlevel.infonly, ~structures.ai
+	FreeActor:
+		Actor: HARV.Hard
+	RenderSprites:
+		Image: proc
+PROC.Hard.Extra2:
+	Inherits: PROC
+	Valued:
+		Cost: 1120
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, ~weap.hard.extra2, ~techlevel.infonly, ~structures.ai
+	FreeActor:
+		Actor: HARV.Hard
+	RenderSprites:
+		Image: proc
+WEAP.Hard.Extra:
+	Inherits: WEAP
+	Valued:
+		Cost: 1600
+	Buildable:
+		BuildPaletteOrder: 9019
+		Prerequisites: proc.hard, ~dome.hard, ~weap.hard, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: weap
+WEAP.Hard.Extra2:
+	Inherits: WEAP
+	Valued:
+		Cost: 1600
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: proc.hard, ~proc.hard.extra, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: weap
+TENT.Hard.Extra:
+	Inherits: TENT
+	Valued:
+		Cost: 400
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks.hard
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, ~proc.hard.extra, ~structures.allies, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: tent
+BARR.Hard.Extra:
+	Inherits: BARR
+	Valued:
+		Cost: 400
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks.hard ~mslo.hard,
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, ~proc.hard.extra, ~structures.soviet, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: barr
 
 # Player units available upon capture
 

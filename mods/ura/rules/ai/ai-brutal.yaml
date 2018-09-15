@@ -68,7 +68,7 @@ WEAP.Brutal:
 		Cost: 1200
 	Buildable:
 		BuildPaletteOrder: 9020
-		Prerequisites: proc.brutal, ~techlevel.low, ~structures.ai
+		Prerequisites: proc.brutal, ~barracks.brutal, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
 FIX.Brutal:
@@ -77,7 +77,7 @@ FIX.Brutal:
 		Cost: 720
 	Buildable:
 		BuildPaletteOrder: 9023
-		Prerequisites: weap.brutal, ~techlevel.medium, ~structures.ai
+		Prerequisites: weap.brutal, ~barracks.brutal, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
 DOME.Brutal:
@@ -86,7 +86,7 @@ DOME.Brutal:
 		Cost: 960
 	Buildable:
 		BuildPaletteOrder: 9026
-		Prerequisites: proc.brutal, ~techlevel.medium, ~structures.ai
+		Prerequisites: proc.brutal, ~barracks.brutal, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.brutal, ~structures.england
 	RenderSprites:
@@ -301,7 +301,7 @@ MCV.Brutal:
 		Cost: 1200
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: fix.brutal, ~techlevel.medium, ~vehicles.ai
+		Prerequisites: fix.brutal, ~weap.brutal.extra, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
 HARV.Brutal:
@@ -312,7 +312,7 @@ HARV.Brutal:
 		BuildPaletteOrder: 9000
 		Prerequisites: proc.brutal, ~techlevel.infonly, ~vehicles.ai
 	Harvester:
-		SearchFromOrderRadius: 20
+		SearchFromOrderRadius: 40
 	RenderSprites:
 		Image: harv
 APC.Brutal:
@@ -483,6 +483,71 @@ YAK.Brutal:
 		RepairBuildings: afld.brutal, afld.ukraine.brutal
 	RenderSprites:
 		Image: yak
+
+# Aditional Brutal AI Structures unlocked at later tech.
+
+PROC.Brutal.Extra:
+	Inherits: PROC
+	Valued:
+		Cost: 840
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, ~mslo.brutal, ~fix.brutal, ~techlevel.infonly, ~structures.ai
+	FreeActor:
+		Actor: HARV.Brutal
+	RenderSprites:
+		Image: proc
+PROC.Brutal.Extra2:
+	Inherits: PROC
+	Valued:
+		Cost: 840
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, ~weap.brutal.extra2, ~techlevel.infonly, ~structures.ai
+	FreeActor:
+		Actor: HARV.Brutal
+	RenderSprites:
+		Image: proc
+WEAP.Brutal.Extra:
+	Inherits: WEAP
+	Valued:
+		Cost: 1200
+	Buildable:
+		BuildPaletteOrder: 9020
+		Prerequisites: proc.brutal, ~dome.brutal, ~weap.brutal, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: weap
+WEAP.Brutal.Extra2:
+	Inherits: WEAP
+	Valued:
+		Cost: 1200
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: proc.brutal, ~proc.brutal.extra, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: weap
+TENT.Brutal.Extra:
+	Inherits: TENT
+	Valued:
+		Cost: 300
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks.brutal
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, ~proc.brutal.extra, ~mslo.brutal, ~fix.brutal, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: tent
+BARR.Brutal.Extra:
+	Inherits: BARR
+	Valued:
+		Cost: 300
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks.brutal
+	Buildable:
+		BuildPaletteOrder: 9014
+		Prerequisites: anypower, ~proc.brutal.extra, ~mslo.brutal, fix.brutal, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: barr
 
 # Player units available upon capture
 

@@ -13,7 +13,7 @@ Player:
 
 		SquadSize: 30
 		SquadSizeRandomBonus: 40
-		MinimumExcessPower: 60
+		MinimumExcessPower: 80
 		MaximumExcessPower: 250
 		ExcessPowerIncrement: 50
 		ExcessPowerIncreaseThreshold: 4
@@ -100,6 +100,7 @@ Player:
 			harv.easy: 8
 			jeep.easy: 3
 			ftrk.easy: 4
+			apc.easy: 5
 
 		SupportPowerDecisions:
 			spyplane:
@@ -174,7 +175,7 @@ Player:
 
 		SquadSize: 30
 		SquadSizeRandomBonus: 40
-		MinimumExcessPower: 60
+		MinimumExcessPower: 80
 		MaximumExcessPower: 160
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
@@ -189,7 +190,7 @@ Player:
 		ProtectionScanRadius: 10
 
 		HarvesterEnemyAvoidanceRadius: 10c0
-		MaxResourceCellsToCheck: 4
+		MaxResourceCellsToCheck: 8
 
 		BuildingCommonNames:
 			ConstructionYard: fact
@@ -266,6 +267,7 @@ Player:
 			harv: 8
 			jeep: 3
 			ftrk: 4
+			apc: 5
 
 		SupportPowerDecisions:
 			spyplane:
@@ -360,7 +362,7 @@ Player:
 
 		RestrictMCVDeploymentFallbackToBase: False
 		HarvesterEnemyAvoidanceRadius: 10c0
-		MaxResourceCellsToCheck: 4
+		MaxResourceCellsToCheck: 8
 
 		BuildingCommonNames:
 			ConstructionYard: fact
@@ -375,10 +377,16 @@ Player:
 			ExcludeFromSquads: harv.hard,mcv.hard
 		BuildingFractions:
 			proc.hard: 20%
-			barr.hard: 10%
+			proc.hard.extra: 10%
+			proc.hard.extra2: 10%
 			kenn.hard: 0.5%
-			tent.hard: 10%
+			barr.hard: 20%
+			barr.hard.extra: 10%
+			tent.hard: 20%
+			tent.hard.extra: 10%
 			weap.hard: 10%
+			weap.hard.extra: 10%
+			weap.hard.extra2: 10%
 			pbox.hard: 5%
 			hbox.hard: 5%
 			gun.hard: 5%
@@ -396,12 +404,18 @@ Player:
 			afld.ukraine.hard: 4%
 			mslo.hard: 1%
 		BuildingLimits:
-			proc.hard: 4
-			barr.hard: 3
-			tent.hard: 3
+			proc.hard: 3
+			proc.hard.extra: 1
+			proc.hard.extra2: 2
+			barr.hard: 2
+			barr.hard.extra: 2
+			tent.hard: 2
+			tent.hard.extra: 2
 			kenn.hard: 1
 			dome.hard: 1
-			weap.hard: 2
+			weap.hard: 1
+			weap.hard.extra: 1
+			weap.hard.extra2: 1
 			atek.hard: 1
 			stek.hard: 1
 			fix.hard: 1
@@ -440,6 +454,7 @@ Player:
 			mcv.hard: 1
 			jeep.hard: 3
 			ftrk.hard: 4
+			apc.hard: 5
 
 		SupportPowerDecisions:
 			spyplane:
@@ -534,7 +549,7 @@ Player:
 
 		RestrictMCVDeploymentFallbackToBase: False
 		HarvesterEnemyAvoidanceRadius: 10c0
-		MaxResourceCellsToCheck: 4
+		MaxResourceCellsToCheck: 8
 
 		BuildingCommonNames:
 			ConstructionYard: fact
@@ -549,10 +564,16 @@ Player:
 			ExcludeFromSquads: harv.brutal,mcv.brutal
 		BuildingFractions:
 			proc.brutal: 20%
-			barr.brutal: 10%
+			proc.brutal.extra: 10%
+			proc.brutal.extra2: 10%
 			kenn.brutal: 0.5%
-			tent.brutal: 10%
+			barr.brutal: 20%
+			barr.brutal.extra: 10%
+			tent.brutal: 20%
+			tent.brutal.extra: 10%
 			weap.brutal: 5%
+			weap.brutal.extra: 5%
+			weap.brutal.extra2: 5%
 			pbox.brutal: 5%
 			hbox.brutal: 5%
 			gun.brutal: 5%
@@ -570,12 +591,18 @@ Player:
 			afld.ukraine.brutal: 4%
 			mslo.brutal: 1%
 		BuildingLimits:
-			proc.brutal: 4
+			proc.brutal: 3
+			proc.brutal.extra: 1
+			proc.brutal.extra2: 2
 			barr.brutal: 3
+			barr.brutal.extra: 2
 			tent.brutal: 3
+			tent.brutal.extra: 2
 			kenn.brutal: 1
 			dome.brutal: 1
-			weap.brutal: 2
+			weap.brutal: 1
+			weap.brutal.extra: 1
+			weap.brutal.extra2: 1
 			atek.brutal: 1
 			stek.brutal: 1
 			fix.brutal: 1
@@ -614,6 +641,7 @@ Player:
 			mcv.brutal: 1
 			jeep.brutal: 3
 			ftrk.brutal: 4
+			apc.brutal: 5
 
 		SupportPowerDecisions:
 			spyplane:
@@ -704,7 +732,7 @@ Player:
 		AttackScanRadius: 14
 		ProtectionScanRadius: 10
 
-		MaxResourceCellsToCheck: 4
+		MaxResourceCellsToCheck: 8
 
 		BuildingCommonNames:
 			ConstructionYard: fact
@@ -856,7 +884,7 @@ Player:
 		AttackScanRadius: 14
 		ProtectionScanRadius: 10
 
-		MaxResourceCellsToCheck: 4
+		MaxResourceCellsToCheck: 8
 
 		BuildingCommonNames:
 			ConstructionYard: fact
