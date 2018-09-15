@@ -33,6 +33,10 @@ FireballLauncher:
 		Versus:
 			Light: 50
 
+FireballLauncher.E4:
+	Inherits: FireballLauncher
+	Burst: 1
+
 Flamer:
 	Inherits: ^FireWeapon
 	ReloadDelay: 50
@@ -51,6 +55,23 @@ Flamer:
 			Wood: 100
 	Warhead@3Eff: CreateEffect
 		Explosions: small_napalm
+
+Flamer.Easy:
+	Inherits: Flamer
+	ReloadDelay: 75
+	Range: 5c0
+	Projectile: Bullet
+		Inaccuracy: 3412
+	Warhead@1Dam: SpreadDamage
+		Damage: 6
+
+Flamer.Brutal:
+	Inherits: Flamer
+	ReloadDelay: 30
+	Burst: 20
+	Range: 6c0
+	Projectile: Bullet
+		Inaccuracy: 1706
 
 Napalm:
 	Inherits: ^FireWeapon
@@ -144,6 +165,10 @@ DogJaw:
 		ValidTargets: Infantry
 		InvalidTargets: Ant
 		DamageTypes: DefaultDeath
+
+DogJaw.Brutal:
+	Inherits: DogJaw
+	Range: 5c0
 
 Heal:
 	ReloadDelay: 80

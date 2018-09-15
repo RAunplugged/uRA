@@ -7,6 +7,7 @@ POWR.Easy:
 	Valued:
 		Cost: 360
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: powr
@@ -15,22 +16,16 @@ APWR.Easy:
 	Valued:
 		Cost: 600
 	Buildable:
+		BuildPaletteOrder: 9003
 		Prerequisites: dome.easy, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: apwr
-SILO.Easy:
-	Inherits: SILO
-	Valued:
-		Cost: 180
-	Buildable:
-		Prerequisites: proc.easy, ~techlevel.infonly, ~structures.ai
-	RenderSprites:
-		Image: silo
 PROC.Easy:
 	Inherits: PROC
 	Valued:
 		Cost: 1680
 	Buildable:
+		BuildPaletteOrder: 9006
 		Prerequisites: anypower, ~techlevel.infonly, ~structures.ai
 	FreeActor:
 		Actor: HARV.Easy
@@ -43,6 +38,7 @@ TENT.Easy:
 	ProvidesPrerequisite@barracks:
 		Prerequisite: barracks.easy
 	Buildable:
+		BuildPaletteOrder: 9009
 		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: tent
@@ -53,6 +49,7 @@ BARR.Easy:
 	ProvidesPrerequisite@barracks:
 		Prerequisite: barracks.easy
 	Buildable:
+		BuildPaletteOrder: 9012
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: barr
@@ -61,6 +58,7 @@ KENN.Easy:
 	Valued:
 		Cost: 120
 	Buildable:
+		BuildPaletteOrder: 9015
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: kenn
@@ -69,6 +67,7 @@ WEAP.Easy:
 	Valued:
 		Cost: 2400
 	Buildable:
+		BuildPaletteOrder: 9018
 		Prerequisites: proc.easy, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
@@ -77,6 +76,7 @@ FIX.Easy:
 	Valued:
 		Cost: 1440
 	Buildable:
+		BuildPaletteOrder: 9021
 		Prerequisites: weap.easy, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
@@ -85,6 +85,7 @@ DOME.Easy:
 	Valued:
 		Cost: 1920
 	Buildable:
+		BuildPaletteOrder: 9024
 		Prerequisites: proc.easy, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.easy, ~structures.england
@@ -95,6 +96,7 @@ HPAD.Easy:
 	Valued:
 		Cost: 600
 	Buildable:
+		BuildPaletteOrder: 9027
 		Prerequisites: dome.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: hpad
@@ -103,6 +105,7 @@ AFLD.Easy:
 	Valued:
 		Cost: 600
 	Buildable:
+		BuildPaletteOrder: 9030
 		Prerequisites: dome.easy, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
 	ProvidesPrerequisite@buildingname:
 		Prerequisite: afld.easy
@@ -113,6 +116,7 @@ AFLD.Ukraine.Easy:
 	Valued:
 		Cost: 600
 	Buildable:
+		BuildPaletteOrder: 9033
 		Prerequisites: dome.easy, ~techlevel.medium, ~structures.ukraine, ~structures.ai
 	RenderSprites:
 		Image: afld
@@ -121,6 +125,7 @@ ATEK.Easy:
 	Valued:
 		Cost: 1800
 	Buildable:
+		BuildPaletteOrder: 9036
 		Prerequisites: weap.easy, dome.easy, ~structures.allies, ~techlevel.high, ~structures.ai
 	BaseProvider:
 		Range: 16c0
@@ -131,6 +136,7 @@ STEK.Easy:
 	Valued:
 		Cost: 1800
 	Buildable:
+		BuildPaletteOrder: 9039
 		Prerequisites: weap.easy, dome.easy, ~structures.soviet, ~techlevel.high, ~structures.ai
 	BaseProvider:
 		Range: 16c0
@@ -139,11 +145,21 @@ STEK.Easy:
 
 # Defensive structures
 
+SILO.Easy:
+	Inherits: SILO
+	Valued:
+		Cost: 180
+	Buildable:
+		BuildPaletteOrder: 9000
+		Prerequisites: proc.easy, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: silo
 PBOX.Easy:
 	Inherits: PBOX
 	Valued:
 		Cost: 720
 	Buildable:
+		BuildPaletteOrder: 9003
 		Prerequisites: tent.easy, ~structures.allies, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: pbox
@@ -152,6 +168,7 @@ HBOX.Easy:
 	Valued:
 		Cost: 960
 	Buildable:
+		BuildPaletteOrder: 9006
 		Prerequisites: tent.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: hbox
@@ -160,6 +177,7 @@ GUN.Easy:
 	Valued:
 		Cost: 960
 	Buildable:
+		BuildPaletteOrder: 9009
 		Prerequisites: tent.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gun
@@ -168,6 +186,7 @@ TSLA.Easy:
 	Valued:
 		Cost: 1440
 	Buildable:
+		BuildPaletteOrder: 9012
 		Prerequisites: weap.easy, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: tsla
@@ -176,6 +195,7 @@ GAP.Easy:
 	Valued:
 		Cost: 1080
 	Buildable:
+		BuildPaletteOrder: 9015
 		Prerequisites: dome.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gap
@@ -184,6 +204,7 @@ FTUR.Easy:
 	Valued:
 		Cost: 720
 	Buildable:
+		BuildPaletteOrder: 9018
 		Prerequisites: barr.easy, ~structures.soviet, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: ftur
@@ -192,6 +213,7 @@ AGUN.Easy:
 	Valued:
 		Cost: 960
 	Buildable:
+		BuildPaletteOrder: 9021
 		Prerequisites: dome.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: agun
@@ -200,6 +222,7 @@ SAM.Easy:
 	Valued:
 		Cost: 840
 	Buildable:
+		BuildPaletteOrder: 9024
 		Prerequisites: dome.easy, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: sam
@@ -208,6 +231,7 @@ MSLO.Easy:
 	Valued:
 		Cost: 3000
 	Buildable:
+		BuildPaletteOrder: 9027
 		Prerequisites: techcenter, ~techlevel.unrestricted, ~structures.ai
 	RenderSprites:
 		Image: mslo
@@ -219,6 +243,7 @@ E1.Easy:
 	Valued:
 		Cost: 120
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barracks.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e1
@@ -227,6 +252,7 @@ E2.Easy:
 	Valued:
 		Cost: 192
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barr.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e2
@@ -235,6 +261,7 @@ E3.Easy:
 	Valued:
 		Cost: 360
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barracks.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e3
@@ -243,6 +270,7 @@ E4.Easy:
 	Valued:
 		Cost: 360
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barr.easy, ftur.easy, ~techlevel.low, ~infantry.ai
 	RenderSprites:
 		Image: e4
@@ -251,6 +279,7 @@ DOG.Easy:
 	Valued:
 		Cost: 240
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~kenn.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: dog
@@ -259,6 +288,7 @@ SHOK.Easy:
 	Valued:
 		Cost: 360
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barr.easy, stek.easy, tsla.easy, ~infantry.russia, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: shok
@@ -270,6 +300,7 @@ MCV.Easy:
 	Valued:
 		Cost: 2400
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.easy, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
@@ -278,6 +309,7 @@ HARV.Easy:
 	Valued:
 		Cost: 1320
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: proc.easy, ~techlevel.infonly, ~vehicles.ai
 	Harvester:
 		SearchFromOrderRadius: 20
@@ -288,6 +320,7 @@ APC.Easy:
 	Valued:
 		Cost: 960
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: apc
@@ -296,6 +329,7 @@ JEEP.Easy:
 	Valued:
 		Cost: 480
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: jeep
@@ -304,6 +338,7 @@ ARTY.Easy:
 	Valued:
 		Cost: 960
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: dome.easy, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: arty
@@ -312,6 +347,7 @@ V2RL.Easy:
 	Valued:
 		Cost: 1080
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: dome.easy, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: v2rl
@@ -320,6 +356,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 720
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: ftrk
@@ -328,6 +365,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 840
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: 1tnk
@@ -336,6 +374,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 1020
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.easy, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk
@@ -344,6 +383,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 1260
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.easy, ~vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk.ger
@@ -352,6 +392,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 1380
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.easy, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 3tnk
@@ -360,6 +401,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 2400
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.easy, stek.easy, ~vehicles.soviet, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk
@@ -368,6 +410,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 2400
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.easy, stek.easy, ~vehicles.ukraine, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk.kv-8
@@ -376,6 +419,7 @@ TTNK.Easy:
 	Valued:
 		Cost: 1620
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: tsla.easy, stek.easy, ~vehicles.russia, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: ttnk
@@ -384,6 +428,7 @@ STNK.Easy:
 	Valued:
 		Cost: 1620
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: atek.easy, ~vehicles.england, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: stnk
@@ -395,6 +440,7 @@ HELI.Easy:
 	Valued:
 		Cost: 1800
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~hpad.easy, atek.easy, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.easy
@@ -406,6 +452,7 @@ HIND.Easy:
 	Valued:
 		Cost: 1215
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~hpad.easy, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.easy
@@ -417,6 +464,7 @@ MIG.Easy:
 	Valued:
 		Cost: 1800
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~afld.easy, stek.easy, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.easy, afld.ukraine.easy
@@ -428,9 +476,72 @@ YAK.Easy:
 	Valued:
 		Cost: 1215
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~afld.easy, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.easy, afld.ukraine.easy
 		RepairBuildings: afld.easy, afld.ukraine.easy
 	RenderSprites:
 		Image: yak
+
+# Player units available upon capture
+
+# Infantry
+
+E2.Easy.Player:
+	Inherits: E2
+	Valued:
+		Cost: 100
+	Tooltip:
+		Name: Barely Grenadier
+	Health:
+		HP: 4
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.easy
+		Description: Weakling armed with grenades.\nKeep your distance.
+	RenderSprites:
+		Image: e2
+E4.Easy.Player:
+	Inherits: E4
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Drunk Flamethrower
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.easy, ftur.easy
+		Description: Infantryman under influence.\nFire hazard
+	Armament@PRIMARY:
+		Weapon: Flamer.Easy
+	Armament@GARRISONED:
+		Weapon: Flamer.Easy
+	Explodes:
+		Chance: 100
+	RenderSprites:
+		Image: e4
+DOG.Easy.Player:
+	Inherits: DOG
+	Valued:
+		Cost: 100
+	Tooltip:
+		Name: Old Dog
+		GenericName: Old Dog
+	Mobile:
+		Speed: 33
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~kenn.easy
+		Description: Slow anti-infantry unit.\nKeep it safe at home. 
+	RenderSprites:
+		Image: dog
+# SPY.Easy.Player:
+# E7.Easy.Player:
+# MEDI.Easy.Player:
+# MECH.Easy.Player:
+# HIJACKER.Easy.Player:
+# SHOK.Easy.Player:
+
+# Vehicles
+
+# Aircraft

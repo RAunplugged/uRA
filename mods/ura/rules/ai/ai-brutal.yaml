@@ -7,6 +7,7 @@ POWR.Brutal:
 	Valued:
 		Cost: 180
 	Buildable:
+		BuildPaletteOrder: 9002
 		Prerequisites: ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: powr
@@ -15,22 +16,16 @@ APWR.Brutal:
 	Valued:
 		Cost: 300
 	Buildable:
+		BuildPaletteOrder: 9005
 		Prerequisites: dome.brutal, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: apwr
-SILO.Brutal:
-	Inherits: SILO
-	Valued:
-		Cost: 90
-	Buildable:
-		Prerequisites: proc.brutal, ~techlevel.infonly, ~structures.ai
-	RenderSprites:
-		Image: silo
 PROC.Brutal:
 	Inherits: PROC
 	Valued:
 		Cost: 840
 	Buildable:
+		BuildPaletteOrder: 9008
 		Prerequisites: anypower, ~techlevel.infonly, ~structures.ai
 	FreeActor:
 		Actor: HARV.Brutal
@@ -43,6 +38,7 @@ TENT.Brutal:
 	ProvidesPrerequisite@barracks:
 		Prerequisite: barracks.brutal
 	Buildable:
+		BuildPaletteOrder: 9011
 		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: tent
@@ -53,6 +49,7 @@ BARR.Brutal:
 	ProvidesPrerequisite@barracks:
 		Prerequisite: barracks.brutal
 	Buildable:
+		BuildPaletteOrder: 9014
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: barr
@@ -61,6 +58,7 @@ KENN.Brutal:
 	Valued:
 		Cost: 60
 	Buildable:
+		BuildPaletteOrder: 9017
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: kenn
@@ -69,6 +67,7 @@ WEAP.Brutal:
 	Valued:
 		Cost: 1200
 	Buildable:
+		BuildPaletteOrder: 9020
 		Prerequisites: proc.brutal, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
@@ -77,6 +76,7 @@ FIX.Brutal:
 	Valued:
 		Cost: 720
 	Buildable:
+		BuildPaletteOrder: 9023
 		Prerequisites: weap.brutal, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
@@ -85,6 +85,7 @@ DOME.Brutal:
 	Valued:
 		Cost: 960
 	Buildable:
+		BuildPaletteOrder: 9026
 		Prerequisites: proc.brutal, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.brutal, ~structures.england
@@ -95,6 +96,7 @@ HPAD.Brutal:
 	Valued:
 		Cost: 300
 	Buildable:
+		BuildPaletteOrder: 9029
 		Prerequisites: dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: hpad
@@ -103,6 +105,7 @@ AFLD.Brutal:
 	Valued:
 		Cost: 300
 	Buildable:
+		BuildPaletteOrder: 9032
 		Prerequisites: dome.brutal, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
 	ProvidesPrerequisite@buildingname:
 		Prerequisite: afld.brutal
@@ -113,6 +116,7 @@ AFLD.Ukraine.Brutal:
 	Valued:
 		Cost: 300
 	Buildable:
+		BuildPaletteOrder: 9035
 		Prerequisites: dome.brutal, ~techlevel.medium, ~structures.ukraine, ~structures.ai
 	RenderSprites:
 		Image: afld
@@ -121,6 +125,7 @@ ATEK.Brutal:
 	Valued:
 		Cost: 900
 	Buildable:
+		BuildPaletteOrder: 9038
 		Prerequisites: weap.brutal, dome.brutal, ~structures.allies, ~techlevel.high, ~structures.ai
 	BaseProvider:
 		Range: 16c0
@@ -131,6 +136,7 @@ STEK.Brutal:
 	Valued:
 		Cost: 900
 	Buildable:
+		BuildPaletteOrder: 9041
 		Prerequisites: weap.brutal, dome.brutal, ~structures.soviet, ~techlevel.high, ~structures.ai
 	BaseProvider:
 		Range: 16c0
@@ -139,11 +145,21 @@ STEK.Brutal:
 
 # Defensive structures
 
+SILO.Brutal:
+	Inherits: SILO
+	Valued:
+		Cost: 90
+	Buildable:
+		BuildPaletteOrder: 9002
+		Prerequisites: proc.brutal, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: silo
 PBOX.Brutal:
 	Inherits: PBOX
 	Valued:
 		Cost: 360
 	Buildable:
+		BuildPaletteOrder: 9005
 		Prerequisites: tent.brutal, ~structures.allies, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: pbox
@@ -152,6 +168,7 @@ HBOX.Brutal:
 	Valued:
 		Cost: 480
 	Buildable:
+		BuildPaletteOrder: 9008
 		Prerequisites: tent.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: hbox
@@ -160,6 +177,7 @@ GUN.Brutal:
 	Valued:
 		Cost: 480
 	Buildable:
+		BuildPaletteOrder: 9011
 		Prerequisites: tent.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gun
@@ -168,6 +186,7 @@ TSLA.Brutal:
 	Valued:
 		Cost: 720
 	Buildable:
+		BuildPaletteOrder: 9014
 		Prerequisites: weap.brutal, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: tsla
@@ -176,6 +195,7 @@ GAP.Brutal:
 	Valued:
 		Cost: 540
 	Buildable:
+		BuildPaletteOrder: 9017
 		Prerequisites: dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gap
@@ -184,6 +204,7 @@ FTUR.Brutal:
 	Valued:
 		Cost: 360
 	Buildable:
+		BuildPaletteOrder: 9020
 		Prerequisites: barr.brutal, ~structures.soviet, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: ftur
@@ -192,6 +213,7 @@ AGUN.Brutal:
 	Valued:
 		Cost: 480
 	Buildable:
+		BuildPaletteOrder: 9023
 		Prerequisites: dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: agun
@@ -200,6 +222,7 @@ SAM.Brutal:
 	Valued:
 		Cost: 420
 	Buildable:
+		BuildPaletteOrder: 9026
 		Prerequisites: dome.brutal, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: sam
@@ -208,6 +231,7 @@ MSLO.Brutal:
 	Valued:
 		Cost: 1500
 	Buildable:
+		BuildPaletteOrder: 9029
 		Prerequisites: techcenter, ~techlevel.unrestricted, ~structures.ai
 	RenderSprites:
 		Image: mslo
@@ -219,6 +243,7 @@ E1.Brutal:
 	Valued:
 		Cost: 60
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barracks.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e1
@@ -227,6 +252,7 @@ E2.Brutal:
 	Valued:
 		Cost: 96
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barr.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e2
@@ -235,6 +261,7 @@ E3.Brutal:
 	Valued:
 		Cost: 180
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barracks.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e3
@@ -243,6 +270,7 @@ E4.Brutal:
 	Valued:
 		Cost: 180
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barr.brutal, ftur.brutal, ~techlevel.low, ~infantry.ai
 	RenderSprites:
 		Image: e4
@@ -251,6 +279,7 @@ DOG.Brutal:
 	Valued:
 		Cost: 120
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~kenn.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: dog
@@ -259,6 +288,7 @@ SHOK.Brutal:
 	Valued:
 		Cost: 180
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barr.brutal, stek.brutal, tsla.brutal, ~infantry.russia, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: shok
@@ -270,6 +300,7 @@ MCV.Brutal:
 	Valued:
 		Cost: 1200
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.brutal, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
@@ -278,6 +309,7 @@ HARV.Brutal:
 	Valued:
 		Cost: 660
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: proc.brutal, ~techlevel.infonly, ~vehicles.ai
 	Harvester:
 		SearchFromOrderRadius: 20
@@ -288,6 +320,7 @@ APC.Brutal:
 	Valued:
 		Cost: 510
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: apc
@@ -296,6 +329,7 @@ JEEP.Brutal:
 	Valued:
 		Cost: 240
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: jeep
@@ -304,6 +338,7 @@ ARTY.Brutal:
 	Valued:
 		Cost: 480
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: dome.brutal, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: arty
@@ -312,6 +347,7 @@ V2RL.Brutal:
 	Valued:
 		Cost: 540
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: dome.brutal, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: v2rl
@@ -320,6 +356,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 360
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: ftrk
@@ -328,6 +365,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 420
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: 1tnk
@@ -336,6 +374,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 510
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.brutal, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk
@@ -344,6 +383,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 630
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.brutal, ~vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk.ger
@@ -352,6 +392,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 690
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.brutal, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 3tnk
@@ -360,6 +401,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 1200
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.brutal, stek.brutal, ~vehicles.soviet, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk
@@ -368,6 +410,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 1200
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.brutal, stek.brutal, ~vehicles.ukraine, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk.kv-8
@@ -376,6 +419,7 @@ TTNK.Brutal:
 	Valued:
 		Cost: 810
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: tsla.brutal, stek.brutal, ~vehicles.russia, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: ttnk
@@ -384,6 +428,7 @@ STNK.Brutal:
 	Valued:
 		Cost: 810
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: atek.brutal, ~vehicles.england, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: stnk
@@ -395,6 +440,7 @@ HELI.Brutal:
 	Valued:
 		Cost: 900
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~hpad.brutal, atek.brutal, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.brutal
@@ -406,6 +452,7 @@ HIND.Brutal:
 	Valued:
 		Cost: 610
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~hpad.brutal, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.brutal
@@ -417,6 +464,7 @@ MIG.Brutal:
 	Valued:
 		Cost: 900
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~afld.brutal, stek.brutal, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.brutal, afld.ukraine.brutal
@@ -428,9 +476,105 @@ YAK.Brutal:
 	Valued:
 		Cost: 610
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~afld.brutal, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.brutal, afld.ukraine.brutal
 		RepairBuildings: afld.brutal, afld.ukraine.brutal
 	RenderSprites:
 		Image: yak
+
+# Player units available upon capture
+
+# Infantry
+
+E2.Brutal.Player:
+	Inherits: ^Soldier
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.brutal
+		Description: Inflicts damage upon impact.
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Suicide Grenadier
+	Health:
+		HP: 100
+	Mobile:
+		Speed: 71
+	AttackSuicides:
+	Armament@GARRISONED:
+		Name: garrisoned
+		Weapon: Grenade
+		FireDelay: 15
+	TakeCover:
+		ProneOffset: 256,64,-331
+	AttackFrontal:
+	WithInfantryBody:
+		DefaultAttackSequence: throw
+		RequiresCondition: !parachute
+	WithInfantryBody@PARACHUTE:
+		StandSequences: parachute
+		RequiresCondition: parachute
+	Explodes:
+		Weapon: Explosion.Kamikaze
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded
+	RenderSprites:
+		Image: e2
+
+E4.Brutal.Player:
+	Inherits: E4
+	Valued:
+		Cost: 400
+	Tooltip:
+		Name: Crazed Flamethrower
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.brutal, ftur.brutal
+		Description: Infantryman under influence.\nA preferable ally.
+	Armament@PRIMARY:
+		Weapon: Flamer.Brutal
+	Armament@GARRISONED:
+		Weapon: Flamer.Brutal
+	Explodes:
+		Chance: 0
+	RenderSprites:
+		Image: e4
+DOG.Brutal.Player:
+	Inherits: DOG
+	Valued:
+		Cost: 400
+	Tooltip:
+		Name: Rabid Dog
+		GenericName: Rabid Dog
+	Health:
+		HP: 80
+	Armament:
+		Weapon: DogJaw.Brutal
+	Wanders:
+		MinMoveDelay: 5
+		MaxMoveDelay: 100
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~kenn.brutal
+		Description: Spreads infectios damage\nBeware of the dog.
+	RenderSprites:
+		Image: dog
+# SPY.England.Brutal.Player:
+# MachineGunner.Brutal.Player:
+# E7.Brutal.Player:
+# MEDI.Brutal.Player:
+# MECH.Brutal.Player:
+# EINSTEIN.Brutal.Player:
+# VOLVKOV.Brutal.Player:
+# HIJACKER.Brutal.Player:
+# SHOK.Brutal.Player:
+# SNIPER.Brutal.Player:
+
+# Vehicles
+
+# Aircraft

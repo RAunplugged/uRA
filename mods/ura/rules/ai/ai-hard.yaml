@@ -1,4 +1,4 @@
-# Hard AI | +20% Cost/Production boost
+# Hard AI | Naval AI (Hard) | +20% Cost/Production boost
 
 # Structures
 
@@ -7,6 +7,7 @@ POWR.Hard:
 	Valued:
 		Cost: 240
 	Buildable:
+		BuildPaletteOrder: 9001
 		Prerequisites: ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: powr
@@ -15,22 +16,16 @@ APWR.Hard:
 	Valued:
 		Cost: 400
 	Buildable:
+		BuildPaletteOrder: 9004
 		Prerequisites: dome.hard, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: apwr
-SILO.Hard:
-	Inherits: SILO
-	Valued:
-		Cost: 120
-	Buildable:
-		Prerequisites: proc.hard, ~techlevel.infonly, ~structures.ai
-	RenderSprites:
-		Image: silo
 PROC.Hard:
 	Inherits: PROC
 	Valued:
 		Cost: 1120
 	Buildable:
+		BuildPaletteOrder: 9007
 		Prerequisites: anypower, ~techlevel.infonly, ~structures.ai
 	FreeActor:
 		Actor: HARV.Hard
@@ -43,6 +38,7 @@ TENT.Hard:
 	ProvidesPrerequisite@barracks:
 		Prerequisite: barracks.hard
 	Buildable:
+		BuildPaletteOrder: 9010
 		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: tent
@@ -53,6 +49,7 @@ BARR.Hard:
 	ProvidesPrerequisite@barracks:
 		Prerequisite: barracks.hard
 	Buildable:
+		BuildPaletteOrder: 9013
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: barr
@@ -61,6 +58,7 @@ KENN.Hard:
 	Valued:
 		Cost: 80
 	Buildable:
+		BuildPaletteOrder: 9016
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: kenn
@@ -69,6 +67,7 @@ WEAP.Hard:
 	Valued:
 		Cost: 1600
 	Buildable:
+		BuildPaletteOrder: 9019
 		Prerequisites: proc.hard, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
@@ -77,6 +76,7 @@ FIX.Hard:
 	Valued:
 		Cost: 960
 	Buildable:
+		BuildPaletteOrder: 9022
 		Prerequisites: weap.hard, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
@@ -85,6 +85,7 @@ DOME.Hard:
 	Valued:
 		Cost: 1280
 	Buildable:
+		BuildPaletteOrder: 9025
 		Prerequisites: proc.hard, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.hard, ~structures.england
@@ -95,6 +96,7 @@ HPAD.Hard:
 	Valued:
 		Cost: 400
 	Buildable:
+		BuildPaletteOrder: 9028
 		Prerequisites: dome.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: hpad
@@ -103,6 +105,7 @@ AFLD.Hard:
 	Valued:
 		Cost: 400
 	Buildable:
+		BuildPaletteOrder: 9031
 		Prerequisites: dome.hard, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
 	ProvidesPrerequisite@buildingname:
 		Prerequisite: afld.hard
@@ -113,14 +116,34 @@ AFLD.Ukraine.Hard:
 	Valued:
 		Cost: 400
 	Buildable:
+		BuildPaletteOrder: 9034
 		Prerequisites: dome.hard, ~techlevel.medium, ~structures.ukraine, ~structures.ai
 	RenderSprites:
 		Image: afld
+SPEN.Hard:
+	Inherits: SPEN
+	Valued:
+		Cost: 640
+	Buildable:
+		BuildPaletteOrder: 9101
+		Prerequisites: anypower, ~structures.soviet, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: spen
+SYRD.Hard:
+	Inherits: SYRD
+	Valued:
+		Cost: 800
+	Buildable:
+		BuildPaletteOrder: 9100
+		Prerequisites: anypower, ~structures.allies, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: syrd
 ATEK.Hard:
 	Inherits: ATEK
 	Valued:
 		Cost: 1200
 	Buildable:
+		BuildPaletteOrder: 9037
 		Prerequisites: weap.hard, dome.hard, ~structures.allies, ~techlevel.high, ~structures.ai
 	BaseProvider:
 		Range: 16c0
@@ -131,6 +154,7 @@ STEK.Hard:
 	Valued:
 		Cost: 1200
 	Buildable:
+		BuildPaletteOrder: 9040
 		Prerequisites: weap.hard, dome.hard, ~structures.soviet, ~techlevel.high, ~structures.ai
 	BaseProvider:
 		Range: 16c0
@@ -139,11 +163,21 @@ STEK.Hard:
 
 # Defensive structures
 
+SILO.Hard:
+	Inherits: SILO
+	Valued:
+		Cost: 120
+	Buildable:
+		BuildPaletteOrder: 9001
+		Prerequisites: proc.hard, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: silo
 PBOX.Hard:
 	Inherits: PBOX
 	Valued:
 		Cost: 480
 	Buildable:
+		BuildPaletteOrder: 9004
 		Prerequisites: tent.hard, ~structures.allies, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: pbox
@@ -152,6 +186,7 @@ HBOX.Hard:
 	Valued:
 		Cost: 640
 	Buildable:
+		BuildPaletteOrder: 9007
 		Prerequisites: tent.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: hbox
@@ -160,6 +195,7 @@ GUN.Hard:
 	Valued:
 		Cost: 640
 	Buildable:
+		BuildPaletteOrder: 9010
 		Prerequisites: tent.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gun
@@ -168,6 +204,7 @@ TSLA.Hard:
 	Valued:
 		Cost: 960
 	Buildable:
+		BuildPaletteOrder: 9013
 		Prerequisites: weap.hard, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: tsla
@@ -176,6 +213,7 @@ GAP.Hard:
 	Valued:
 		Cost: 720
 	Buildable:
+		BuildPaletteOrder: 9016
 		Prerequisites: dome.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gap
@@ -184,6 +222,7 @@ FTUR.Hard:
 	Valued:
 		Cost: 480
 	Buildable:
+		BuildPaletteOrder: 9019
 		Prerequisites: barr.hard, ~structures.soviet, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: ftur
@@ -192,6 +231,7 @@ AGUN.Hard:
 	Valued:
 		Cost: 640
 	Buildable:
+		BuildPaletteOrder: 9022
 		Prerequisites: dome.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: agun
@@ -200,6 +240,7 @@ SAM.Hard:
 	Valued:
 		Cost: 560
 	Buildable:
+		BuildPaletteOrder: 9025
 		Prerequisites: dome.hard, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: sam
@@ -208,6 +249,7 @@ MSLO.Hard:
 	Valued:
 		Cost: 2000
 	Buildable:
+		BuildPaletteOrder: 9028
 		Prerequisites: techcenter, ~techlevel.unrestricted, ~structures.ai
 	RenderSprites:
 		Image: mslo
@@ -219,6 +261,7 @@ E1.Hard:
 	Valued:
 		Cost: 80
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barracks.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e1
@@ -227,6 +270,7 @@ E2.Hard:
 	Valued:
 		Cost: 128
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barr.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e2
@@ -235,6 +279,7 @@ E3.Hard:
 	Valued:
 		Cost: 240
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barracks.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e3
@@ -243,6 +288,7 @@ E4.Hard:
 	Valued:
 		Cost: 240
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barr.hard, ftur.hard, ~techlevel.low, ~infantry.ai
 	RenderSprites:
 		Image: e4
@@ -251,6 +297,7 @@ DOG.Hard:
 	Valued:
 		Cost: 160
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~kenn.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: dog
@@ -259,6 +306,7 @@ SHOK.Hard:
 	Valued:
 		Cost: 240
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~barr.hard, stek.hard, tsla.hard, ~infantry.russia, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: shok
@@ -270,6 +318,7 @@ MCV.Hard:
 	Valued:
 		Cost: 1600
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.hard, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
@@ -278,6 +327,7 @@ HARV.Hard:
 	Valued:
 		Cost: 880
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: proc.hard, ~techlevel.infonly, ~vehicles.ai
 	Harvester:
 		SearchFromOrderRadius: 20
@@ -288,6 +338,7 @@ APC.Hard:
 	Valued:
 		Cost: 680
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: apc
@@ -296,6 +347,7 @@ JEEP.Hard:
 	Valued:
 		Cost: 320
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: jeep
@@ -304,6 +356,7 @@ ARTY.Hard:
 	Valued:
 		Cost: 640
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: dome.hard, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: arty
@@ -312,6 +365,7 @@ V2RL.Hard:
 	Valued:
 		Cost: 720
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: dome.hard, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: v2rl
@@ -320,6 +374,7 @@ FTRK.Hard:
 	Valued:
 		Cost: 480
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: ftrk
@@ -328,6 +383,7 @@ FTRK.Hard:
 	Valued:
 		Cost: 560
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: 1tnk
@@ -336,6 +392,7 @@ FTRK.Hard:
 	Valued:
 		Cost: 680
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.hard, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk
@@ -344,6 +401,7 @@ FTRK.Hard:
 	Valued:
 		Cost: 840
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.hard, ~vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk.ger
@@ -352,6 +410,7 @@ FTRK.Hard:
 	Valued:
 		Cost: 920
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.hard, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 3tnk
@@ -360,6 +419,7 @@ FTRK.Hard:
 	Valued:
 		Cost: 1600
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.hard, stek.hard, ~vehicles.soviet, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk
@@ -368,6 +428,7 @@ FTRK.Hard:
 	Valued:
 		Cost: 1600
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: fix.hard, stek.hard, ~vehicles.ukraine, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk.kv-8
@@ -376,6 +437,7 @@ TTNK.Hard:
 	Valued:
 		Cost: 1080
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: tsla.hard, stek.hard, ~vehicles.russia, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: ttnk
@@ -384,6 +446,7 @@ STNK.Hard:
 	Valued:
 		Cost: 1080
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: atek.hard, ~vehicles.england, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: stnk
@@ -395,6 +458,7 @@ HELI.Hard:
 	Valued:
 		Cost: 1200
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~hpad.hard, atek.hard, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.hard
@@ -406,6 +470,7 @@ HIND.Hard:
 	Valued:
 		Cost: 810
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~hpad.hard, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.hard
@@ -417,6 +482,7 @@ MIG.Hard:
 	Valued:
 		Cost: 1200
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~afld.hard, stek.hard, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.hard, afld.ukraine.hard
@@ -428,9 +494,133 @@ YAK.Hard:
 	Valued:
 		Cost: 810
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: ~afld.hard, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.hard, afld.ukraine.hard
 		RepairBuildings: afld.hard, afld.ukraine.hard
 	RenderSprites:
 		Image: yak
+
+# Ships
+
+SS.Hard:
+	Inherits: SS
+	Valued:
+		Cost: 760
+	Buildable:
+		BuildPaletteOrder: 9000
+		Prerequisites: ~spen.hard, ~techlevel.low, ~naval.ai
+	RenderSprites:
+		Image: ss
+MSUB.Hard:
+	Inherits: MSUB
+	Valued:
+		Cost: 1600
+	Buildable:
+		BuildPaletteOrder: 9000
+		Prerequisites: ~spen.hard, stek.hard, ~techlevel.high, ~naval.ai
+	RenderSprites:
+		Image: msub
+DD.Hard:
+	Inherits: DD
+	Valued:
+		Cost: 800
+	Buildable:
+		BuildPaletteOrder: 9000
+		Prerequisites: ~syrd.hard, dome.hard, ~techlevel.medium, ~naval.ai
+	RenderSprites:
+		Image: dd
+CA.Hard:
+	Inherits: CA
+	Buildable:
+		BuildPaletteOrder: 9000
+		Prerequisites: ~syrd.hard, atek.hard, ~techlevel.high, ~naval.ai
+	Valued:
+		Cost: 1920
+	RenderSprites:
+		Image: ca
+PT.Hard:
+	Inherits: PT
+	Valued:
+		Cost: 400
+	Buildable:
+		BuildPaletteOrder: 9000
+		Prerequisites: ~syrd.hard, ~techlevel.low, ~naval.ai
+	RenderSprites:
+		Image: pt
+
+# Player units available upon capture
+
+# Infantry
+
+E2.Hard.Player:
+	Inherits: E2
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Scout Grenadier
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.hard
+		Description: Cloaked grenadiers.\nAquired extra vision.
+	RevealsShroud:
+		Range: 8c0
+	Cloak:
+		InitialDelay: 200
+		CloakDelay: 150
+		CloakSound:
+		UncloakSound:
+		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
+		IsPlayerPalette: true
+		RequiresCondition: !cloak-force-disabled
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: cloak-force-disabled
+		ValidDamageStates: Critical
+	RenderSprites:
+		Image: e2
+E4.Hard.Player:
+	Inherits: E4
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Burst Flamethrower
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.hard, ftur.hard
+		Description: FireballLauncher infantry.\nGoodness gracious great balls of fire.
+	Armament@PRIMARY:
+		Weapon: FireballLauncher.E4
+		LocalOffset: 700,0,500
+	Armament@GARRISONED:
+		Name: garrisoned
+		Weapon: FireballLauncher.E4
+	RenderSprites:
+		Image: e4
+DOG.Hard.Player:
+	Inherits: DOG
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Assault Dog
+		GenericName: Assault Dog
+	Health:
+		HP: 50
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~kenn.hard
+		Description: Damage resistant dog.\nGo fetch!
+	RenderSprites:
+		Image: dog
+# SPY.Hard.Player:
+# E7.Hard.Player:
+# MEDI.Hard.Player:
+# MECH.Hard.Player:
+# HIJACKER.Hard.Player:
+# SHOK.Hard.Player:
+
+# Vehicles
+
+# Aircraft
+
+# Ships

@@ -1,0 +1,12 @@
+# Behemoth AI | 
+
+# Structures
+
+FACT.Behemoth:
+	Inherits: FACT
+	Valued:
+		Cost: 500
+	Buildable:
+		BuildPaletteOrder: 8000
+	RenderSprites:
+		Image: fact

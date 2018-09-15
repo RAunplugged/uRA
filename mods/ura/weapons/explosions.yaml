@@ -23,6 +23,13 @@
 		ValidTargets: Water, Underwater
 		InvalidTargets: Ship, Structure, Bridge
 
+Explosion.Kamikaze:
+	Inherits: ^Explosion
+	Warhead@1Dam: SpreadDamage
+		Spread: 426
+		Damage: 200
+		Falloff: 1000, 368, 135, 50, 18, 7, 0
+
 CrateNapalm:
 	Inherits: ^Explosion
 	ValidTargets: Ground, Trees
