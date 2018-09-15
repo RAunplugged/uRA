@@ -318,8 +318,6 @@ SPY.England:
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
 		InitialLevels: 1
-	DisguiseTooltip:
-		Name: British Spy
 	Armament:
 		Weapon: SilencedPPK.England
 	RenderSprites:
