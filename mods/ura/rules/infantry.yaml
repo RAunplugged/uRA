@@ -307,8 +307,8 @@ SPY.England:
 	Inherits: SPY
 	Buildable:
 		Prerequisites: ~infantry.england, dome, ~tent, ~techlevel.medium
-	Valued:
-		Cost: 400
+	DisguiseTooltip:
+		Name: British Spy
 	Health:
 		HP: 50
 	RevealsShroud:
