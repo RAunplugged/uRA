@@ -107,17 +107,17 @@ AFLD.Hard:
 	Buildable:
 		BuildPaletteOrder: 9031
 		Prerequisites: dome.hard, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
-	ProvidesPrerequisite@buildingname:
-		Prerequisite: afld.hard
 	RenderSprites:
 		Image: afld
 AFLD.Ukraine.Hard:
-	Inherits: AFLD.Hard
+	Inherits: AFLD.Ukraine
 	Valued:
 		Cost: 400
 	Buildable:
 		BuildPaletteOrder: 9034
 		Prerequisites: dome.hard, ~techlevel.medium, ~structures.ukraine, ~structures.ai
+	ProvidesPrerequisite@ukraine.hard:
+		Prerequisite: afld.hard
 	RenderSprites:
 		Image: afld
 SPEN.Hard:
@@ -319,7 +319,7 @@ MCV.Hard:
 		Cost: 1600
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: fix.hard, ~weap.brutal.extra, ~techlevel.medium, ~vehicles.ai
+		Prerequisites: fix.hard, ~weap.hard.extra, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
 HARV.Hard:
@@ -615,7 +615,7 @@ BARR.Hard.Extra:
 	RenderSprites:
 		Image: barr
 
-# Player units available upon capture
+# Units available to Player upon capture
 
 # Infantry
 
@@ -677,7 +677,38 @@ DOG.Hard.Player:
 		Description: Damage resistant dog.\nGo fetch!
 	RenderSprites:
 		Image: dog
-# SPY.Hard.Player:
+
+SPY.England.Hard.Player:
+	Inherits: SPY.England
+	Valued:
+		Cost: 600
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.hard, ~dome.hard
+		Description: Unique spy agent.\nAquired cloak.
+	DisguiseTooltip:
+		Name: Special Agent
+	Health:
+		HP: 60
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 2
+	Armament:
+		Weapon: SilencedPPK.England
+	Cloak:
+		InitialDelay: 200
+		CloakDelay: 150
+		CloakSound:
+		UncloakSound:
+		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
+		IsPlayerPalette: true
+		RequiresCondition: !cloak-force-disabled
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: cloak-force-disabled
+		ValidDamageStates: Critical
+	RenderSprites:
+		Image: spy
+
 # E7.Hard.Player:
 # MEDI.Hard.Player:
 # MECH.Hard.Player:
@@ -689,3 +720,5 @@ DOG.Hard.Player:
 # Aircraft
 
 # Ships
+
+# Support Powers

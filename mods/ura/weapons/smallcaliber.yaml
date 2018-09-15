@@ -252,6 +252,16 @@ Pistol:
 	Warhead@3EffWater: CreateEffect
 		Explosions: water_piff
 
+Pistol.Agent:
+	Inherits: Pistol
+	ReloadDelay: 30
+	Range: 5c0
+	Projectile: Bullet
+		Inaccuracy: 1706
+	Warhead@1Dam: SpreadDamage
+		Damage: 30
+
+
 M1Carbine:
 	Inherits: ^LightMG
 	ReloadDelay: 20
@@ -292,7 +302,6 @@ M60mg.APC:
 	Projectile: Bullet
 		Speed: 1c682
 	Warhead@1Dam: SpreadDamage
-		Spread: 42
 		Damage: 150
 		ValidTargets: Barrel, Infantry
 		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
@@ -302,7 +311,6 @@ SilencedPPK:
 	ReloadDelay: 70
 	Report: silppk.aud
 	Warhead@1Dam: SpreadDamage
-		Spread: 128
 	Warhead@2Eff: CreateEffect
 		Explosions: piffs
 		ValidTargets: Ground, Ship, Air, Trees
@@ -314,6 +322,11 @@ SilencedPPK:
 SilencedPPK.England:
 	Inherits: SilencedPPK
 	Range: 7c0
+
+SilencedPPK.Agent:
+	Inherits: SilencedPPK
+	ReloadDelay: 25
+	Range: 8c0
 
 Colt45:
 	Inherits: ^SnipeWeapon

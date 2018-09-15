@@ -107,8 +107,6 @@ AFLD.Easy:
 	Buildable:
 		BuildPaletteOrder: 9030
 		Prerequisites: dome.easy, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
-	ProvidesPrerequisite@buildingname:
-		Prerequisite: afld.easy
 	RenderSprites:
 		Image: afld
 AFLD.Ukraine.Easy:
@@ -118,6 +116,8 @@ AFLD.Ukraine.Easy:
 	Buildable:
 		BuildPaletteOrder: 9033
 		Prerequisites: dome.easy, ~techlevel.medium, ~structures.ukraine, ~structures.ai
+	ProvidesPrerequisite@ukraine.easy:
+		Prerequisite: afld.easy
 	RenderSprites:
 		Image: afld
 ATEK.Easy:
@@ -484,7 +484,7 @@ YAK.Easy:
 	RenderSprites:
 		Image: yak
 
-# Player units available upon capture
+# Units available to Player upon capture
 
 # Infantry
 
@@ -535,7 +535,53 @@ DOG.Easy.Player:
 		Description: Slow anti-infantry unit.\nKeep it safe at home. 
 	RenderSprites:
 		Image: dog
-# SPY.Easy.Player:
+SPY.England.Easy.Player:
+	Inherits: ^Soldier
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.easy, ~dome.easy
+		Description: Dimwitted spy agent.\nHe's *your* problem now.
+	Valued:
+		Cost: 200
+	-Tooltip:
+	DisguiseTooltip:
+		Name: "Special" Agent
+		GenericName: Soldier
+	-Guard:
+	Passenger:
+		PipType: Blue
+	Disguise:
+		DisguisedCondition: disguise
+	DeliversCash:
+		Payload: 200
+	AutoTarget:
+		InitialStance: HoldFire
+		InitialStanceAI: HoldFire
+		ScanRadius: 5
+	-WithInfantryBody:
+	WithDisguisingInfantryBody:
+		DefaultAttackSequence: shoot
+		IdleSequences: idle1,idle2
+		StandSequences: stand,stand2
+	WithDecoration@disguise:
+		Image: pips
+		Sequence: pip-disguise
+		Palette: effect
+		ReferencePoint: Top, Right
+		ZOffset: 256
+		RequiresCondition: disguise
+	IgnoresDisguise:
+	Armament:
+		Weapon: Pistol.Agent
+	AttackFrontal:
+	Voiced:
+		VoiceSet: CivilianMaleVoice
+	RenderSprites:
+		Image: spy
+
 # E7.Easy.Player:
 # MEDI.Easy.Player:
 # MECH.Easy.Player:
@@ -545,3 +591,5 @@ DOG.Easy.Player:
 # Vehicles
 
 # Aircraft
+
+# Support Powers

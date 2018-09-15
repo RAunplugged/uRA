@@ -224,6 +224,8 @@ SPEN:
 		RequiresPrerequisites: structures.ukraine
 		Prerequisite: ships.ukraine
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: spen
 	BotProvidesPrerequisite@ai:
 		Prerequisite: naval.ai
 	EditorTilesetFilter:
@@ -346,6 +348,8 @@ SYRD:
 		RequiresPrerequisites: structures.germany
 		Prerequisite: ships.germany
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: syrd
 	BotProvidesPrerequisite@ai:
 		Prerequisite: naval.ai
 	EditorTilesetFilter:
@@ -505,6 +509,8 @@ PDOX:
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: pdox
 
 TSLA:
 	Inherits: ^Defense
@@ -549,6 +555,8 @@ TSLA:
 		Range: 6c0
 		RequiresCondition: !disabled
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: tsla
 
 AGUN:
 	Inherits: ^Defense
@@ -647,6 +655,8 @@ DOME:
 	Power:
 		Amount: -40
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: dome
 	ExternalCondition@JAMMED:
 		Condition: jammed
 	ParatroopersPower@paratroopers:
@@ -856,6 +866,8 @@ FTUR:
 	DetectCloaked:
 		Range: 4c0
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: ftur
 	Explodes:
 		Weapon: BuildingExplode
 		EmptyWeapon: BuildingExplode
@@ -958,6 +970,8 @@ ATEK:
 	Power:
 		Amount: -200
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: atek
 
 WEAP:
 	Inherits: ^Building
@@ -1057,6 +1071,8 @@ WEAP:
 	Power:
 		Amount: -30
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: weap
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	InfiltrateForSupportPower:
@@ -1215,6 +1231,8 @@ PROC:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: proc
 	HitShape:
 		Type: Rectangle
 			TopLeft: -1536, -512
@@ -1338,6 +1356,8 @@ HPAD:
 		RequiresPrerequisites: structures.germany
 		Prerequisite: aircraft.germany
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: hpad
 	BotProvidesPrerequisite@ai:
 		Prerequisite: aircraft.ai
 	Targetable:
@@ -1484,6 +1504,7 @@ AFLD:
 	Power:
 		Amount: -20
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
 		Prerequisite: afld
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
@@ -1628,6 +1649,8 @@ STEK:
 	Power:
 		Amount: -100
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: stek
 
 BARR:
 	Inherits: ^Building
@@ -1702,6 +1725,8 @@ BARR:
 	Power:
 		Amount: -20
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: barr
 	InfiltrateForSupportPower:
 		Proxy: barracks.upgraded
 		Types: SpyInfiltrate
@@ -1756,6 +1781,8 @@ KENN:
 	Power:
 		Amount: 0
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: kenn
 	WithDecoration@primary:
 		RequiresSelection: true
 		Image: pips
@@ -1843,6 +1870,8 @@ TENT:
 	Power:
 		Amount: -20
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: tent
 	InfiltrateForSupportPower:
 		Proxy: barracks.upgraded
 		Types: SpyInfiltrate
@@ -1897,6 +1926,8 @@ FIX:
 	Power:
 		Amount: -30
 	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: fix
 	HitShape:
 		TargetableOffsets: 840,0,0, 598,-640,0, 598,640,0, -1060,0,0, -768,-640,0, -768,640,0
 		Type: Polygon

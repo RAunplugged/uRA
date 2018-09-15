@@ -107,17 +107,17 @@ AFLD.Brutal:
 	Buildable:
 		BuildPaletteOrder: 9032
 		Prerequisites: dome.brutal, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
-	ProvidesPrerequisite@buildingname:
-		Prerequisite: afld.brutal
 	RenderSprites:
 		Image: afld
 AFLD.Ukraine.Brutal:
-	Inherits: AFLD.Brutal
+	Inherits: AFLD.Ukraine
 	Valued:
 		Cost: 300
 	Buildable:
 		BuildPaletteOrder: 9035
 		Prerequisites: dome.brutal, ~techlevel.medium, ~structures.ukraine, ~structures.ai
+	ProvidesPrerequisite@ukraine.brutal:
+		Prerequisite: afld.brutal
 	RenderSprites:
 		Image: afld
 ATEK.Brutal:
@@ -549,7 +549,7 @@ BARR.Brutal.Extra:
 	RenderSprites:
 		Image: barr
 
-# Player units available upon capture
+# Units available to Player upon capture
 
 # Infantry
 
@@ -629,7 +629,41 @@ DOG.Brutal.Player:
 		Description: Spreads infectios damage\nBeware of the dog.
 	RenderSprites:
 		Image: dog
-# SPY.England.Brutal.Player:
+
+SPY.England.Brutal.Player:
+	Inherits: SPY.England
+	Valued:
+		Cost: 1200
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.brutal, ~dome.brutal, ~atek.brutal
+		Description: Exceptional spy agent.\nAquired license to kill.
+		BuildLimit: 1
+	DisguiseTooltip:
+		Name: Agent 007
+	Health:
+		HP: 100
+	RevealsShroud:
+		Range: 9c256
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 4
+	Armament:
+		Weapon: SilencedPPK.Agent
+	Cloak:
+		InitialDelay: 100
+		CloakDelay: 75
+		CloakSound:
+		UncloakSound:
+		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
+		IsPlayerPalette: true
+		RequiresCondition: !cloak-force-disabled
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: cloak-force-disabled
+		ValidDamageStates: Critical
+	RenderSprites:
+		Image: spy
+
 # MachineGunner.Brutal.Player:
 # E7.Brutal.Player:
 # MEDI.Brutal.Player:
@@ -643,3 +677,5 @@ DOG.Brutal.Player:
 # Vehicles
 
 # Aircraft
+
+# Support Powers
