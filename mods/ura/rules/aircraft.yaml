@@ -429,8 +429,8 @@ U2:
 	AttackBomber:
 	RejectsOrders:
 	Interactable:
-	-Targetable@AIRBORNE:
 	-Selectable:
+	-Targetable@AIRBORNE:
 	SelectionDecorations:
 		RenderSelectionBars: False
 	Contrail@1:
