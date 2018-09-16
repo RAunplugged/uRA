@@ -464,9 +464,9 @@ V19.Husk:
 	WithIdleOverlay:
 		StartSequence: fire-start
 		Sequence: fire-loop
-	WithSpriteBody:
 	RenderSprites:
 		Palette: player
+	WithSpriteBody:
 
 # Decoration structures (desert)
 
