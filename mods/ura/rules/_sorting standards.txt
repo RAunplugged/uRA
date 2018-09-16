@@ -1,0 +1,54 @@
+Completed:
+- aircraft.yaml
+
+Excluded:
+- campaign-palettes.yaml
+- campaign-rules.yaml
+
+Sorting standards
+
+* aircraft.yaml
+
+- Tran
+- Hind
+- Heli
+- Yak
+- MiG
+- Badger
+- Badger.Bomber
+- U2
+
+* Traits
+
+Inherits
+Inherits@AUTOTARGET
+Tooltip
+Valued
+Health
+Buildable
+Aircraft
+Armament
+AmmoPool
+AttackBomber
+AttackHeli
+AttackPlane
+AutoTarget
+ParaDrop
+Cargo
+RevealsShroud
+GivesExperience *uncertain
+ReturnOnIdle
+RejectOrders
+Interactable
+Targetable
+Selectable
+SelectDecorations
+WithIdleOverlay
+WithMuzzleOverlay
+Contrail
+SmokeTrailWhenDamaged
+Voiced
+EjectOnDeath
+SpawnActorOnDeath
+ProducibleWithLevel
+RenderSprites

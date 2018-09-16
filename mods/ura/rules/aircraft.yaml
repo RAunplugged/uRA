@@ -1,238 +1,37 @@
-BADR:
-	Inherits: ^NeutralPlane
-	ParaDrop:
-		DropRange: 5c0
-		ChuteSound: chute1.aud
-	Health:
-		HP: 300
-	Aircraft:
-		CruiseAltitude: 2560
-		TurnSpeed: 5
-		Speed: 164
-		Repulsable: False
-		MaximumPitch: 56
-	Cargo:
-		MaxWeight: 10
-	-Selectable:
-	SelectionDecorations:
-		RenderSelectionBars: False
-	-Voiced:
-	Tooltip:
-		Name: Badger
-	Contrail@1:
-		Offset: -432,560,0
-	Contrail@2:
-		Offset: -432,-560,0
-	SpawnActorOnDeath:
-		Actor: BADR.Husk
-	SmokeTrailWhenDamaged@0:
-		Offset: -432,560,0
-		Interval: 2
-	SmokeTrailWhenDamaged@1:
-		Offset: -432,-560,0
-		Interval: 2
-	-EjectOnDeath:
-	RejectsOrders:
-	GivesExperience:
-		Experience: 1000
-	Interactable:
-
-BADR.Bomber:
-	Inherits: ^NeutralPlane
-	AttackBomber:
-	Armament:
-		Weapon: ParaBomb
-	Health:
-		HP: 300
-	Aircraft:
-		CruiseAltitude: 2560
-		TurnSpeed: 5
-		Speed: 149
-		Repulsable: False
-		MaximumPitch: 56
-	AmmoPool:
-		Ammo: 7
-	-Selectable:
-	SelectionDecorations:
-		RenderSelectionBars: False
-	-Voiced:
-	Tooltip:
-		Name: Badger
-	Contrail@1:
-		Offset: -432,560,0
-	Contrail@2:
-		Offset: -432,-560,0
-	SpawnActorOnDeath:
-		Actor: BADR.Husk
-	SmokeTrailWhenDamaged@0:
-		Offset: -432,560,0
-		Interval: 2
-	SmokeTrailWhenDamaged@1:
-		Offset: -432,-560,0
-		Interval: 2
-	-EjectOnDeath:
-	RejectsOrders:
-	RenderSprites:
-		Image: badr
-	GivesExperience:
-		Experience: 1000
-	Interactable:
-
-MIG:
-	Inherits: ^Plane
-	Inherits@AUTOTARGET: ^AutoTargetAll
-	Buildable:
-		Queue: Aircraft
-		BuildAtProductionType: Plane
-		BuildPaletteOrder: 50
-		Prerequisites: ~afld, stek, ~techlevel.high
-		BuildDurationModifier: 50
-		Description: Fast Air- and Ground-Attack Plane.\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry
-	Valued:
-		Cost: 2000
-	Tooltip:
-		Name: MiG
-	Health:
-		HP: 80
-	RevealsShroud:
-		Range: 15c0
-		Type: GroundPosition
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 13c0
-		Type: GroundPosition
-	Armament@PRIMARY:
-		Weapon: MaverickAG
-		LocalOffset: 0,-640,0, 0,640,0
-		LocalYaw: -40, 24
-		PauseOnCondition: !ammo
-	Armament@SECONDARY:
-		Weapon: MaverickAA
-		PauseOnCondition: !ammo
-	AttackPlane:
-		FacingTolerance: 20
-	Aircraft:
-		RearmBuildings: afld, afld.ukraine
-		CruiseAltitude: 2560
-		InitialFacing: 192
-		TurnSpeed: 4
-		Speed: 235
-		RepulsionSpeed: 40
-		MaximumPitch: 56
-	AutoTarget:
-		InitialStance: HoldFire
-		InitialStanceAI: HoldFire
-	AmmoPool:
-		Ammo: 6
-		ReloadDelay: 85
-		AmmoCondition: ammo
-	ReturnOnIdle:
-	Selectable:
-		Bounds: 36,28,0,2
-		DecorationBounds: 40,29,0,1
-	SelectionDecorations:
-	Contrail@1:
-		Offset: -598,-683,0
-	Contrail@2:
-		Offset: -598,683,0
-	SpawnActorOnDeath:
-		Actor: MIG.Husk
-	SmokeTrailWhenDamaged:
-		Offset: -853,0,171
-		Interval: 2
-	ProducibleWithLevel:
-		Prerequisites: aircraft.upgraded
-
-YAK:
-	Inherits: ^Plane
-	Inherits@AUTOTARGET: ^AutoTargetGround
-	Buildable:
-		Queue: Aircraft
-		BuildAtProductionType: Plane
-		BuildPaletteOrder: 30
-		Prerequisites: ~afld, ~techlevel.medium
-		Description: Attack Plane armed with\ndual machine guns.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
-	Valued:
-		Cost: 1350
-	Tooltip:
-		Name: Yak
-	Health:
-		HP: 60
-	RevealsShroud:
-		Range: 13c0
-		Type: GroundPosition
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 11c0
-		Type: GroundPosition
-	Armament@PRIMARY:
-		Weapon: ChainGun.Yak
-		LocalOffset: 256,-213,0
-		MuzzleSequence: muzzle
-		PauseOnCondition: !ammo
-	Armament@SECONDARY:
-		Name: secondary
-		Weapon: ChainGun.Yak
-		LocalOffset: 256,213,0
-		MuzzleSequence: muzzle
-		PauseOnCondition: !ammo
-	AttackPlane:
-		FacingTolerance: 20
-	Aircraft:
-		RearmBuildings: afld, afld.ukraine
-		CruiseAltitude: 2560
-		InitialFacing: 192
-		TurnSpeed: 4
-		Speed: 178
-		RepulsionSpeed: 40
-		MaximumPitch: 56
-	AutoTarget:
-		InitialStance: HoldFire
-		InitialStanceAI: HoldFire
-	AmmoPool:
-		Ammo: 18
-		PipCount: 6
-		ReloadDelay: 11
-		AmmoCondition: ammo
-	ReturnOnIdle:
-	SelectionDecorations:
-	WithMuzzleOverlay:
-	Contrail:
-		Offset: -853,0,0
-	SpawnActorOnDeath:
-		Actor: YAK.Husk
-	SmokeTrailWhenDamaged:
-		Offset: -853,0,0
-		Interval: 2
-	ProducibleWithLevel:
-		Prerequisites: aircraft.upgraded
-	Selectable:
-		DecorationBounds: 30,28,0,2
-
 TRAN:
 	Inherits: ^Helicopter
 	Inherits@AUTOTARGET: ^AutoTargetGround
+	Tooltip:
+		Name: Chinook
+	Valued:
+		Cost: 850
+	Health:
+		HP: 160
 	Buildable:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 50
 		Prerequisites: ~hpad, ~techlevel.medium
 		Description: Fast Infantry Transport Helicopter.\n  Unarmed
-	Valued:
-		Cost: 850
-	Tooltip:
-		Name: Chinook
-	Health:
-		HP: 160
+	Aircraft:
+		InitialFacing: 224
+		TurnSpeed: 5
+		Speed: 136
+		LandableTerrainTypes: Clear,Rough,Road,Ore,Beach,Gems
+		AltitudeVelocity: 0c58
 	Armament@PRIMARY:
 		Weapon: Hover
+	AmmoPool:
+		Ammo: 0
 	AttackHeli:
 		FacingTolerance: 20
 	AutoTarget:
 		InitialStance: HoldFire
 		InitialStanceAI: HoldFire
-	AmmoPool:
-		Ammo: 0
+	Cargo:
+		Types: Infantry
+		MaxWeight: 8
+		PipCount: 8
 	RevealsShroud:
 		Range: 10c0
 		Type: GroundPosition
@@ -240,12 +39,9 @@ TRAN:
 	RevealsShroud@GAPGEN:
 		Range: 8c0
 		Type: GroundPosition
-	Aircraft:
-		InitialFacing: 224
-		TurnSpeed: 5
-		Speed: 136
-		LandableTerrainTypes: Clear,Rough,Road,Ore,Beach,Gems
-		AltitudeVelocity: 0c58
+	Selectable:
+		DecorationBounds: 40,36
+	SelectionDecorations:
 	WithIdleOverlay@ROTOR1AIR:
 		Offset: 597,0,213
 		Sequence: rotor
@@ -262,102 +58,30 @@ TRAN:
 		Offset: -597,0,341
 		Sequence: slow-rotor2
 		RequiresCondition: !airborne
-	Cargo:
-		Types: Infantry
-		MaxWeight: 8
-		PipCount: 8
 	SpawnActorOnDeath:
 		Actor: TRAN.Husk
-	SelectionDecorations:
-	Selectable:
-		DecorationBounds: 40,36
-
-HELI:
-	Inherits: ^Helicopter
-	Inherits@AUTOTARGET: ^AutoTargetAll
-	Buildable:
-		Queue: Aircraft
-		BuildAtProductionType: Helicopter
-		BuildPaletteOrder: 40
-		Prerequisites: ~hpad, atek, ~techlevel.high
-		BuildDurationModifier: 50
-		Description: Helicopter gunship armed\nwith multi-purpose missiles.\n  Strong vs Buildings, Vehicles, Aircraft\n  Weak vs Infantry
-	Valued:
-		Cost: 2000
-	Tooltip:
-		Name: Longbow
-	Health:
-		HP: 120
-	RevealsShroud:
-		Range: 14c0
-		Type: GroundPosition
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 12c0
-		Type: GroundPosition
-	Armament@PRIMARY:
-		Weapon: HellfireAA
-		LocalOffset: 0,-213,-85, 0,213,-85
-		PauseOnCondition: !ammo
-	Armament@SECONDARY:
-		Weapon: HellfireAG
-		LocalOffset: 0,213,-85, 0,-213,-85
-		PauseOnCondition: !ammo
-	AttackHeli:
-		FacingTolerance: 20
-	Aircraft:
-		RearmBuildings: hpad
-		LandWhenIdle: false
-		InitialFacing: 224
-		TurnSpeed: 5
-		Speed: 160
-		IdealSeparation: 1c512
-	AutoTarget:
-		InitialStance: HoldFire
-		InitialStanceAI: HoldFire
-	WithIdleOverlay@ROTORAIR:
-		Offset: 0,0,85
-		Sequence: rotor
-		RequiresCondition: airborne
-	WithIdleOverlay@ROTORGROUND:
-		Offset: 0,0,85
-		Sequence: slow-rotor
-		RequiresCondition: !airborne
-	AmmoPool:
-		Ammo: 8
-		AmmoCondition: ammo
-	SelectionDecorations:
-	SpawnActorOnDeath:
-		Actor: HELI.Husk
-	SmokeTrailWhenDamaged:
-		Offset: -427,0,0
-	ProducibleWithLevel:
-		Prerequisites: aircraft.upgraded
-	Selectable:
-		DecorationBounds: 36,28
 
 HIND:
 	Inherits: ^Helicopter
 	Inherits@AUTOTARGET: ^AutoTargetGround
+	Tooltip:
+		Name: Hind
+	Valued:
+		Cost: 1350
+	Health:
+		HP: 100
 	Buildable:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 20
 		Prerequisites: ~hpad, ~techlevel.medium
 		Description: Helicopter gunship armed\nwith dual chainguns.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
-	Valued:
-		Cost: 1350
-	Tooltip:
-		Name: Hind
-	Health:
-		HP: 100
-	RevealsShroud:
-		Range: 12c0
-		Type: GroundPosition
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 10c0
-		Type: GroundPosition
+	Aircraft:
+		RearmBuildings: hpad
+		LandWhenIdle: false
+		InitialFacing: 224
+		TurnSpeed: 4
+		Speed: 112
 	Armament@PRIMARY:
 		Weapon: ChainGun
 		LocalOffset: 85,-213,-85, 85,213,-85
@@ -369,45 +93,320 @@ HIND:
 		LocalOffset: 85,213,-85, 85,-213,-85
 		MuzzleSequence: muzzle
 		PauseOnCondition: !ammo
+	AmmoPool:
+		Ammo: 24
+		PipCount: 6
+		ReloadDelay: 8
+		AmmoCondition: ammo
 	AttackHeli:
 		FacingTolerance: 20
-	Aircraft:
-		RearmBuildings: hpad
-		LandWhenIdle: false
-		InitialFacing: 224
-		TurnSpeed: 4
-		Speed: 112
 	AutoTarget:
 		InitialStance: HoldFire
 		InitialStanceAI: HoldFire
+	RevealsShroud:
+		Range: 12c0
+		Type: GroundPosition
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 10c0
+		Type: GroundPosition
+	Selectable:
+		DecorationBounds: 38,32
+	SelectionDecorations:
 	WithIdleOverlay@ROTORAIR:
 		Sequence: rotor
 		RequiresCondition: airborne
 	WithIdleOverlay@ROTORGROUND:
 		Sequence: slow-rotor
 		RequiresCondition: !airborne
-	AmmoPool:
-		Ammo: 24
-		PipCount: 6
-		ReloadDelay: 8
-		AmmoCondition: ammo
-	SelectionDecorations:
 	WithMuzzleOverlay:
-	SpawnActorOnDeath:
-		Actor: HIND.Husk
 	SmokeTrailWhenDamaged:
 		Offset: -427,0,0
+	SpawnActorOnDeath:
+		Actor: HIND.Husk
 	ProducibleWithLevel:
 		Prerequisites: aircraft.upgraded
-	Selectable:
-		DecorationBounds: 38,32
 
+HELI:
+	Inherits: ^Helicopter
+	Inherits@AUTOTARGET: ^AutoTargetAll
+	Tooltip:
+		Name: Longbow
+	Valued:
+		Cost: 2000
+	Health:
+		HP: 120
+	Buildable:
+		Queue: Aircraft
+		BuildAtProductionType: Helicopter
+		BuildPaletteOrder: 40
+		Prerequisites: ~hpad, atek, ~techlevel.high
+		BuildDurationModifier: 50
+		Description: Helicopter gunship armed\nwith multi-purpose missiles.\n  Strong vs Buildings, Vehicles, Aircraft\n  Weak vs Infantry
+	Aircraft:
+		RearmBuildings: hpad
+		LandWhenIdle: false
+		InitialFacing: 224
+		TurnSpeed: 5
+		Speed: 160
+		IdealSeparation: 1c512
+	Armament@PRIMARY:
+		Weapon: HellfireAA
+		LocalOffset: 0,-213,-85, 0,213,-85
+		PauseOnCondition: !ammo
+	Armament@SECONDARY:
+		Weapon: HellfireAG
+		LocalOffset: 0,213,-85, 0,-213,-85
+		PauseOnCondition: !ammo
+	AmmoPool:
+		Ammo: 8
+		AmmoCondition: ammo
+	AttackHeli:
+		FacingTolerance: 20
+	AutoTarget:
+		InitialStance: HoldFire
+		InitialStanceAI: HoldFire
+	RevealsShroud:
+		Range: 14c0
+		Type: GroundPosition
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 12c0
+		Type: GroundPosition
+	Selectable:
+		DecorationBounds: 36,28
+	SelectionDecorations:
+	WithIdleOverlay@ROTORAIR:
+		Offset: 0,0,85
+		Sequence: rotor
+		RequiresCondition: airborne
+	WithIdleOverlay@ROTORGROUND:
+		Offset: 0,0,85
+		Sequence: slow-rotor
+		RequiresCondition: !airborne
+	SmokeTrailWhenDamaged:
+		Offset: -427,0,0
+	SpawnActorOnDeath:
+		Actor: HELI.Husk
+	ProducibleWithLevel:
+		Prerequisites: aircraft.upgraded
+
+YAK:
+	Inherits: ^Plane
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Tooltip:
+		Name: Yak
+	Valued:
+		Cost: 1350
+	Health:
+		HP: 60
+	Buildable:
+		Queue: Aircraft
+		BuildAtProductionType: Plane
+		BuildPaletteOrder: 30
+		Prerequisites: ~afld, ~techlevel.medium
+		Description: Attack Plane armed with\ndual machine guns.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
+	Aircraft:
+		RearmBuildings: afld, afld.ukraine
+		CruiseAltitude: 2560
+		InitialFacing: 192
+		TurnSpeed: 4
+		Speed: 178
+		RepulsionSpeed: 40
+		MaximumPitch: 56
+	Armament@PRIMARY:
+		Weapon: ChainGun.Yak
+		LocalOffset: 256,-213,0
+		MuzzleSequence: muzzle
+		PauseOnCondition: !ammo
+	Armament@SECONDARY:
+		Name: secondary
+		Weapon: ChainGun.Yak
+		LocalOffset: 256,213,0
+		MuzzleSequence: muzzle
+		PauseOnCondition: !ammo
+	AmmoPool:
+		Ammo: 18
+		PipCount: 6
+		ReloadDelay: 11
+		AmmoCondition: ammo
+	AttackPlane:
+		FacingTolerance: 20
+	AutoTarget:
+		InitialStance: HoldFire
+		InitialStanceAI: HoldFire
+	RevealsShroud:
+		Range: 13c0
+		Type: GroundPosition
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 11c0
+		Type: GroundPosition
+	ReturnOnIdle:
+	Selectable:
+		DecorationBounds: 30,28,0,2
+	SelectionDecorations:
+	WithMuzzleOverlay:
+	Contrail:
+		Offset: -853,0,0
+	SmokeTrailWhenDamaged:
+		Offset: -853,0,0
+		Interval: 2
+	SpawnActorOnDeath:
+		Actor: YAK.Husk
+	ProducibleWithLevel:
+		Prerequisites: aircraft.upgraded
+
+MIG:
+	Inherits: ^Plane
+	Inherits@AUTOTARGET: ^AutoTargetAll
+	Tooltip:
+		Name: MiG
+	Valued:
+		Cost: 2000
+	Health:
+		HP: 80
+	Buildable:
+		Queue: Aircraft
+		BuildAtProductionType: Plane
+		BuildPaletteOrder: 50
+		Prerequisites: ~afld, stek, ~techlevel.high
+		BuildDurationModifier: 50
+		Description: Fast Air- and Ground-Attack Plane.\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry
+	Aircraft:
+		RearmBuildings: afld, afld.ukraine
+		CruiseAltitude: 2560
+		InitialFacing: 192
+		TurnSpeed: 4
+		Speed: 235
+		RepulsionSpeed: 40
+		MaximumPitch: 56
+	Armament@PRIMARY:
+		Weapon: MaverickAG
+		LocalOffset: 0,-640,0, 0,640,0
+		LocalYaw: -40, 24
+		PauseOnCondition: !ammo
+	Armament@SECONDARY:
+		Weapon: MaverickAA
+		PauseOnCondition: !ammo
+	AmmoPool:
+		Ammo: 6
+		ReloadDelay: 85
+		AmmoCondition: ammo
+	AttackPlane:
+		FacingTolerance: 20
+	AutoTarget:
+		InitialStance: HoldFire
+		InitialStanceAI: HoldFire
+	RevealsShroud:
+		Range: 15c0
+		Type: GroundPosition
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 13c0
+		Type: GroundPosition
+	ReturnOnIdle:
+	Selectable:
+		Bounds: 36,28,0,2
+		DecorationBounds: 40,29,0,1
+	SelectionDecorations:
+	Contrail@1:
+		Offset: -598,-683,0
+	Contrail@2:
+		Offset: -598,683,0
+	SmokeTrailWhenDamaged:
+		Offset: -853,0,171
+		Interval: 2
+	SpawnActorOnDeath:
+		Actor: MIG.Husk
+	ProducibleWithLevel:
+		Prerequisites: aircraft.upgraded
+
+BADR:
+	Inherits: ^NeutralPlane
+	Tooltip:
+		Name: Badger
+	Health:
+		HP: 300
+	Aircraft:
+		CruiseAltitude: 2560
+		TurnSpeed: 5
+		Speed: 164
+		Repulsable: False
+		MaximumPitch: 56
+	ParaDrop:
+		DropRange: 5c0
+		ChuteSound: chute1.aud
+	Cargo:
+		MaxWeight: 10
+	GivesExperience:
+		Experience: 1000
+	RejectsOrders:
+	Interactable:
+	-Selectable:
+	SelectionDecorations:
+		RenderSelectionBars: False
+	Contrail@1:
+		Offset: -432,560,0
+	Contrail@2:
+		Offset: -432,-560,0
+	SmokeTrailWhenDamaged@0:
+		Offset: -432,560,0
+		Interval: 2
+	SmokeTrailWhenDamaged@1:
+		Offset: -432,-560,0
+		Interval: 2
+	-Voiced:
+	-EjectOnDeath:
+	SpawnActorOnDeath:
+		Actor: BADR.Husk
+
+BADR.Bomber:
+	Inherits: ^NeutralPlane
+	Tooltip:
+		Name: Badger
+	Health:
+		HP: 300
+	Aircraft:
+		CruiseAltitude: 2560
+		TurnSpeed: 5
+		Speed: 149
+		Repulsable: False
+		MaximumPitch: 56
+	Armament:
+		Weapon: ParaBomb
+	AmmoPool:
+		Ammo: 7
+	AttackBomber:
+	GivesExperience:
+		Experience: 1000
+	RejectsOrders:
+	Interactable:
+	-Selectable:
+	SelectionDecorations:
+		RenderSelectionBars: False
+	Contrail@1:
+		Offset: -432,560,0
+	Contrail@2:
+		Offset: -432,-560,0
+	SmokeTrailWhenDamaged@0:
+		Offset: -432,560,0
+		Interval: 2
+	SmokeTrailWhenDamaged@1:
+		Offset: -432,-560,0
+		Interval: 2
+	-Voiced:
+	-EjectOnDeath:
+	SpawnActorOnDeath:
+		Actor: BADR.Husk
+	RenderSprites:
+		Image: badr
 U2:
 	Inherits: ^NeutralPlane
-	Health:
-		HP: 2000
 	Tooltip:
 		Name: Spy Plane
+	Health:
+		HP: 2000
 	Aircraft:
 		CruiseAltitude: 3840
 		TurnSpeed: 7
@@ -415,19 +414,19 @@ U2:
 		Repulsable: False
 		MaximumPitch: 56
 	AttackBomber:
+	RejectsOrders:
+	Interactable:
+	-Targetable@AIRBORNE:
 	-Selectable:
 	SelectionDecorations:
 		RenderSelectionBars: False
-	-Voiced:
-	-Targetable@AIRBORNE:
 	Contrail@1:
 		Offset: -725,683,0
 	Contrail@2:
 		Offset: -725,-683,0
-	SpawnActorOnDeath:
-		Actor: U2.Husk
 	SmokeTrailWhenDamaged:
 		Offset: -1c43,0,0
 		Interval: 2
-	RejectsOrders:
-	Interactable:
+	-Voiced:
+	SpawnActorOnDeath:
+		Actor: U2.Husk
