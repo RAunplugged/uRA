@@ -61,6 +61,9 @@ MSLO:
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	WithNukeLaunchAnimation:
+	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@default:
+		Prerequisite: mslo
 
 GAP:
 	Inherits: ^ScienceBuilding
