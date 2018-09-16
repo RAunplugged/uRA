@@ -1,24 +1,21 @@
 Completed:
 - aircraft.yaml
+- campaign-tooltips.yaml
 
 Excluded:
 - campaign-palettes.yaml
 - campaign-rules.yaml
 
-Sorting standards
+Sorting standards: aircraft.yaml
 
-* aircraft.yaml
-
-- Tran
-- Hind
-- Heli
+- TRAN (Chinook)
+- Hind 
+- Heli (Longbow)
 - Yak
 - MiG
 - Badger
 - Badger.Bomber
 - U2
-
-* Traits
 
 Inherits
 Inherits@AUTOTARGET
@@ -52,3 +49,11 @@ EjectOnDeath
 SpawnActorOnDeath
 ProducibleWithLevel
 RenderSprites
+
+Sorting standards: civilian.yaml
+
+# Infantry
+# Neutral structures | Capturable
+# Decoration structures
+# Decoration structures (desert)
+# Interactive decoration structures
