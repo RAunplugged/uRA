@@ -51,7 +51,7 @@ SpawnActorOnDeath
 ProducibleWithLevel
 RenderSprites
 
-Sorting standards: civilian.yaml
+Sorting standards: civilian.yaml, decorations.yaml
 
 flaws:
 - neutral structures revealshroud standard, armor,
