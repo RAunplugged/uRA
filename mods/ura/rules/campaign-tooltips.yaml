@@ -1,14 +1,9 @@
-^Vehicle:
-	Tooltip:
-		GenericVisibility: Enemy
-		ShowOwnerRow: false
-
 ^Infantry:
 	Tooltip:
 		GenericVisibility: Enemy
 		ShowOwnerRow: false
 
-^Ship:
+^Vehicle:
 	Tooltip:
 		GenericVisibility: Enemy
 		ShowOwnerRow: false
@@ -19,6 +14,11 @@
 		ShowOwnerRow: false
 
 ^Helicopter:
+	Tooltip:
+		GenericVisibility: Enemy
+		ShowOwnerRow: false
+
+^Ship:
 	Tooltip:
 		GenericVisibility: Enemy
 		ShowOwnerRow: false
