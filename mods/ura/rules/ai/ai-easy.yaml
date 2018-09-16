@@ -491,7 +491,7 @@ YAK.Easy:
 E2.Easy.Player:
 	Inherits: E2
 	Valued:
-		Cost: 100
+		Cost: 80
 	Tooltip:
 		Name: Barely Grenadier
 	Health:
@@ -582,8 +582,8 @@ SPY.England.Easy.Player:
 	RenderSprites:
 		Image: spy
 
-# E7.Easy.Player:
 # MEDI.Easy.Player:
+
 # MECH.Easy.Player:
 # HIJACKER.Easy.Player:
 # SHOK.Easy.Player:

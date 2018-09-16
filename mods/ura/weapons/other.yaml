@@ -184,6 +184,15 @@ Heal:
 		ValidTargets: Infantry
 		DebugOverlayColor: 00FF00
 
+Heal.Priest:
+	Inherits: Heal
+	ReloadDelay: 160
+	Range: 12c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 462
+		Damage: -75
+	
+
 Repair:
 	Inherits: Heal
 	Report: fixit1.aud

@@ -709,8 +709,8 @@ SPY.England.Hard.Player:
 	RenderSprites:
 		Image: spy
 
-# E7.Hard.Player:
 # MEDI.Hard.Player:
+
 # MECH.Hard.Player:
 # HIJACKER.Hard.Player:
 # SHOK.Hard.Player:

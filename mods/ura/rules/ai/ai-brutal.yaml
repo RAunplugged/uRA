@@ -664,15 +664,31 @@ SPY.England.Brutal.Player:
 	RenderSprites:
 		Image: spy
 
-# MachineGunner.Brutal.Player:
-# E7.Brutal.Player:
-# MEDI.Brutal.Player:
+MEDI.Brutal.Player:
+	Inherits: MEDI
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~tent.brutal
+		Description: Heals units far and near.\n  The power of prayer.
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Field Priest
+	RevealsShroud:
+		Range: 8c0
+	Armament:
+		Weapon: Heal.Priest
+	RenderSprites:
+		Image: medi
+
 # MECH.Brutal.Player:
-# EINSTEIN.Brutal.Player:
-# VOLVKOV.Brutal.Player:
 # HIJACKER.Brutal.Player:
 # SHOK.Brutal.Player:
+
 # SNIPER.Brutal.Player:
+# MachineGunner.Brutal.Player:
+# EINSTEIN.Brutal.Player:
+# VOLVKOV.Brutal.Player:
 
 # Vehicles
 
