@@ -244,7 +244,7 @@ E1.Easy:
 		Cost: 120
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barracks.easy, ~techlevel.infonly, ~infantry.ai
+		Prerequisites: barracks.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e1
 E2.Easy:
@@ -253,7 +253,7 @@ E2.Easy:
 		Cost: 192
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barr.easy, ~techlevel.infonly, ~infantry.ai
+		Prerequisites: barr.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e2
 E3.Easy:
@@ -262,7 +262,7 @@ E3.Easy:
 		Cost: 360
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barracks.easy, ~techlevel.infonly, ~infantry.ai
+		Prerequisites: barracks.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e3
 E4.Easy:
@@ -271,7 +271,7 @@ E4.Easy:
 		Cost: 360
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barr.easy, ftur.easy, ~techlevel.low, ~infantry.ai
+		Prerequisites: barr.easy, ftur.easy, ~techlevel.low, ~infantry.ai
 	RenderSprites:
 		Image: e4
 DOG.Easy:
@@ -289,7 +289,7 @@ SHOK.Easy:
 		Cost: 360
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barr.easy, stek.easy, tsla.easy, ~infantry.russia, ~techlevel.high, ~infantry.ai
+		Prerequisites: barr.easy, stek.easy, tsla.easy, ~infantry.russia, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: shok
 
@@ -441,7 +441,7 @@ HELI.Easy:
 		Cost: 1800
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~hpad.easy, atek.easy, ~techlevel.high, ~aircraft.ai
+		Prerequisites: hpad.easy, atek.easy, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.easy
 		RepairBuildings: hpad.easy
@@ -453,7 +453,7 @@ HIND.Easy:
 		Cost: 1215
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~hpad.easy, ~techlevel.medium, ~aircraft.ai
+		Prerequisites: hpad.easy, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.easy
 		RepairBuildings: hpad.easy
@@ -465,7 +465,7 @@ MIG.Easy:
 		Cost: 1800
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~afld.easy, stek.easy, ~techlevel.high, ~aircraft.ai
+		Prerequisites: afld.easy, stek.easy, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.easy, afld.ukraine.easy
 		RepairBuildings: afld.easy, afld.ukraine.easy
@@ -477,7 +477,7 @@ YAK.Easy:
 		Cost: 1215
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~afld.easy, ~techlevel.medium, ~aircraft.ai
+		Prerequisites: afld.easy, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.easy, afld.ukraine.easy
 		RepairBuildings: afld.easy, afld.ukraine.easy
@@ -510,7 +510,7 @@ E4.Easy.Player:
 		Name: Drunk Flamethrower
 	Buildable:
 		BuildPaletteOrder: 8000
-		Prerequisites: ~barr.easy, ftur.easy
+		Prerequisites: ~barr.easy, ~ftur.easy
 		Description: Infantryman under influence.\nFire hazard
 	Armament@PRIMARY:
 		Weapon: Flamer.Easy

@@ -68,7 +68,7 @@ WEAP.Hard:
 		Cost: 1600
 	Buildable:
 		BuildPaletteOrder: 9019
-		Prerequisites: proc.hard, ~barracks.hard, ~techlevel.low, ~structures.ai
+		Prerequisites: proc.hard, barracks.hard, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
 FIX.Hard:
@@ -77,7 +77,7 @@ FIX.Hard:
 		Cost: 960
 	Buildable:
 		BuildPaletteOrder: 9022
-		Prerequisites: weap.hard, ~barracks.hard, ~techlevel.medium, ~structures.ai
+		Prerequisites: weap.hard, barracks.hard, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
 DOME.Hard:
@@ -86,7 +86,7 @@ DOME.Hard:
 		Cost: 1280
 	Buildable:
 		BuildPaletteOrder: 9025
-		Prerequisites: proc.hard, ~barracks.hard, ~techlevel.medium, ~structures.ai
+		Prerequisites: proc.hard, barracks.hard, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.hard, ~structures.england
 	RenderSprites:
@@ -262,7 +262,7 @@ E1.Hard:
 		Cost: 80
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barracks.hard, ~techlevel.infonly, ~infantry.ai
+		Prerequisites: barracks.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e1
 E2.Hard:
@@ -271,7 +271,7 @@ E2.Hard:
 		Cost: 128
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barr.hard, ~techlevel.infonly, ~infantry.ai
+		Prerequisites: barr.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e2
 E3.Hard:
@@ -280,7 +280,7 @@ E3.Hard:
 		Cost: 240
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barracks.hard, ~techlevel.infonly, ~infantry.ai
+		Prerequisites: barracks.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e3
 E4.Hard:
@@ -289,7 +289,7 @@ E4.Hard:
 		Cost: 240
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barr.hard, ftur.hard, ~techlevel.low, ~infantry.ai
+		Prerequisites: barr.hard, ftur.hard, ~techlevel.low, ~infantry.ai
 	RenderSprites:
 		Image: e4
 DOG.Hard:
@@ -307,7 +307,7 @@ SHOK.Hard:
 		Cost: 240
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barr.hard, stek.hard, tsla.hard, ~infantry.russia, ~techlevel.high, ~infantry.ai
+		Prerequisites: barr.hard, stek.hard, tsla.hard, ~infantry.russia, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: shok
 
@@ -319,7 +319,7 @@ MCV.Hard:
 		Cost: 1600
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: fix.hard, ~weap.hard.extra, ~techlevel.medium, ~vehicles.ai
+		Prerequisites: fix.hard, dome.hard, !weap.hard.extra2, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
 HARV.Hard:
@@ -459,7 +459,7 @@ HELI.Hard:
 		Cost: 1200
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~hpad.hard, atek.hard, ~techlevel.high, ~aircraft.ai
+		Prerequisites: hpad.hard, atek.hard, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.hard
 		RepairBuildings: hpad.hard
@@ -471,7 +471,7 @@ HIND.Hard:
 		Cost: 810
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~hpad.hard, ~techlevel.medium, ~aircraft.ai
+		Prerequisites: hpad.hard, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.hard
 		RepairBuildings: hpad.hard
@@ -483,7 +483,7 @@ MIG.Hard:
 		Cost: 1200
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~afld.hard, stek.hard, ~techlevel.high, ~aircraft.ai
+		Prerequisites: afld.hard, stek.hard, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.hard, afld.ukraine.hard
 		RepairBuildings: afld.hard, afld.ukraine.hard
@@ -495,7 +495,7 @@ YAK.Hard:
 		Cost: 810
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~afld.hard, ~techlevel.medium, ~aircraft.ai
+		Prerequisites: afld.hard, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.hard, afld.ukraine.hard
 		RepairBuildings: afld.hard, afld.ukraine.hard
@@ -510,7 +510,7 @@ SS.Hard:
 		Cost: 760
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~spen.hard, ~techlevel.low, ~naval.ai
+		Prerequisites: spen.hard, ~techlevel.low, ~naval.ai
 	RenderSprites:
 		Image: ss
 MSUB.Hard:
@@ -519,7 +519,7 @@ MSUB.Hard:
 		Cost: 1600
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~spen.hard, stek.hard, ~techlevel.high, ~naval.ai
+		Prerequisites: spen.hard, stek.hard, ~techlevel.high, ~naval.ai
 	RenderSprites:
 		Image: msub
 DD.Hard:
@@ -528,14 +528,14 @@ DD.Hard:
 		Cost: 800
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~syrd.hard, dome.hard, ~techlevel.medium, ~naval.ai
+		Prerequisites: syrd.hard, dome.hard, ~techlevel.medium, ~naval.ai
 	RenderSprites:
 		Image: dd
 CA.Hard:
 	Inherits: CA
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~syrd.hard, atek.hard, ~techlevel.high, ~naval.ai
+		Prerequisites: syrd.hard, atek.hard, ~techlevel.high, ~naval.ai
 	Valued:
 		Cost: 1920
 	RenderSprites:
@@ -546,7 +546,7 @@ PT.Hard:
 		Cost: 400
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~syrd.hard, ~techlevel.low, ~naval.ai
+		Prerequisites: syrd.hard, ~techlevel.low, ~naval.ai
 	RenderSprites:
 		Image: pt
 
@@ -558,7 +558,7 @@ PROC.Hard.Extra:
 		Cost: 1120
 	Buildable:
 		BuildPaletteOrder: 9200
-		Prerequisites: anypower, ~mslo.hard, ~fix.hard, ~techlevel.infonly, ~structures.ai
+		Prerequisites: anypower, mslo.hard, fix.hard, ~techlevel.infonly, ~structures.ai
 	FreeActor:
 		Actor: HARV.Hard
 	RenderSprites:
@@ -569,7 +569,8 @@ PROC.Hard.Extra2:
 		Cost: 1120
 	Buildable:
 		BuildPaletteOrder: 9200
-		Prerequisites: anypower, ~weap.hard.extra2, ~techlevel.infonly, ~structures.ai
+		Prerequisites: anypower, weap.hard.extra, ~techlevel.infonly, ~structures.ai
+		BuildDurationModifier: 100
 	FreeActor:
 		Actor: HARV.Hard
 	RenderSprites:
@@ -579,8 +580,8 @@ WEAP.Hard.Extra:
 	Valued:
 		Cost: 1600
 	Buildable:
-		BuildPaletteOrder: 9019
-		Prerequisites: proc.hard, ~dome.hard, ~weap.hard, ~techlevel.low, ~structures.ai
+		BuildPaletteOrder: 9200
+		Prerequisites: proc.hard.extra, mslo.hard, fix.hard, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
 WEAP.Hard.Extra2:
@@ -589,7 +590,8 @@ WEAP.Hard.Extra2:
 		Cost: 1600
 	Buildable:
 		BuildPaletteOrder: 9200
-		Prerequisites: proc.hard, ~proc.hard.extra, ~techlevel.low, ~structures.ai
+		Prerequisites: proc.hard.extra2, weap.hard.extra, ~techlevel.low, ~structures.ai
+		BuildDurationModifier: 100
 	RenderSprites:
 		Image: weap
 TENT.Hard.Extra:
@@ -600,7 +602,7 @@ TENT.Hard.Extra:
 		Prerequisite: barracks.hard
 	Buildable:
 		BuildPaletteOrder: 9200
-		Prerequisites: anypower, ~proc.hard.extra, ~structures.allies, ~techlevel.infonly, ~structures.ai
+		Prerequisites: anypower, proc.hard.extra2, mslo.hard, fix.hard, ~structures.allies, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: tent
 BARR.Hard.Extra:
@@ -608,10 +610,10 @@ BARR.Hard.Extra:
 	Valued:
 		Cost: 400
 	ProvidesPrerequisite@barracks:
-		Prerequisite: barracks.hard ~mslo.hard,
+		Prerequisite: barracks.hard
 	Buildable:
 		BuildPaletteOrder: 9200
-		Prerequisites: anypower, ~proc.hard.extra, ~structures.soviet, ~techlevel.infonly, ~structures.ai
+		Prerequisites: anypower, proc.hard.extra2, mslo.hard, fix.hard, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: barr
 
@@ -652,7 +654,7 @@ E4.Hard.Player:
 		Name: Burst Flamethrower
 	Buildable:
 		BuildPaletteOrder: 8000
-		Prerequisites: ~barr.hard, ftur.hard
+		Prerequisites: ~barr.hard, ~ftur.hard
 		Description: FireballLauncher infantry.\nGoodness gracious great balls of fire.
 	Armament@PRIMARY:
 		Weapon: FireballLauncher.E4

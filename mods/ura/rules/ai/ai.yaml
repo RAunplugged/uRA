@@ -376,17 +376,17 @@ Player:
 			Mcv: mcv,mcv.hard
 			ExcludeFromSquads: harv.hard,mcv.hard
 		BuildingFractions:
-			proc.hard: 20%
-			proc.hard.extra: 10%
-			proc.hard.extra2: 10%
+			proc.hard: 30%
+			proc.hard.extra: 7%
+			proc.hard.extra2: 7%
 			kenn.hard: 0.5%
 			barr.hard: 20%
 			barr.hard.extra: 10%
 			tent.hard: 20%
 			tent.hard.extra: 10%
 			weap.hard: 10%
-			weap.hard.extra: 10%
-			weap.hard.extra2: 10%
+			weap.hard.extra: 7%
+			weap.hard.extra2: 7%
 			pbox.hard: 5%
 			hbox.hard: 5%
 			gun.hard: 5%
@@ -563,17 +563,17 @@ Player:
 			Mcv: mcv,mcv.brutal
 			ExcludeFromSquads: harv.brutal,mcv.brutal
 		BuildingFractions:
-			proc.brutal: 20%
-			proc.brutal.extra: 10%
-			proc.brutal.extra2: 10%
+			proc.brutal: 30%
+			proc.brutal.extra: 7%
+			proc.brutal.extra2: 7%
 			kenn.brutal: 0.5%
 			barr.brutal: 20%
 			barr.brutal.extra: 10%
 			tent.brutal: 20%
 			tent.brutal.extra: 10%
 			weap.brutal: 5%
-			weap.brutal.extra: 5%
-			weap.brutal.extra2: 5%
+			weap.brutal.extra: 7%
+			weap.brutal.extra2: 7%
 			pbox.brutal: 5%
 			hbox.brutal: 5%
 			gun.brutal: 5%

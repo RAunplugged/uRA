@@ -68,7 +68,7 @@ WEAP.Brutal:
 		Cost: 1200
 	Buildable:
 		BuildPaletteOrder: 9020
-		Prerequisites: proc.brutal, ~barracks.brutal, ~techlevel.low, ~structures.ai
+		Prerequisites: proc.brutal, barracks.brutal, !weap.brutal.extra, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
 FIX.Brutal:
@@ -77,7 +77,7 @@ FIX.Brutal:
 		Cost: 720
 	Buildable:
 		BuildPaletteOrder: 9023
-		Prerequisites: weap.brutal, ~barracks.brutal, ~techlevel.medium, ~structures.ai
+		Prerequisites: weap.brutal, barracks.brutal, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
 DOME.Brutal:
@@ -86,7 +86,7 @@ DOME.Brutal:
 		Cost: 960
 	Buildable:
 		BuildPaletteOrder: 9026
-		Prerequisites: proc.brutal, ~barracks.brutal, ~techlevel.medium, ~structures.ai
+		Prerequisites: proc.brutal, barracks.brutal, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.brutal, ~structures.england
 	RenderSprites:
@@ -244,7 +244,7 @@ E1.Brutal:
 		Cost: 60
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barracks.brutal, ~techlevel.infonly, ~infantry.ai
+		Prerequisites: barracks.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e1
 E2.Brutal:
@@ -253,7 +253,7 @@ E2.Brutal:
 		Cost: 96
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barr.brutal, ~techlevel.infonly, ~infantry.ai
+		Prerequisites: barr.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e2
 E3.Brutal:
@@ -262,7 +262,7 @@ E3.Brutal:
 		Cost: 180
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barracks.brutal, ~techlevel.infonly, ~infantry.ai
+		Prerequisites: barracks.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e3
 E4.Brutal:
@@ -271,7 +271,7 @@ E4.Brutal:
 		Cost: 180
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barr.brutal, ftur.brutal, ~techlevel.low, ~infantry.ai
+		Prerequisites: barr.brutal, ftur.brutal, ~techlevel.low, ~infantry.ai
 	RenderSprites:
 		Image: e4
 DOG.Brutal:
@@ -289,7 +289,7 @@ SHOK.Brutal:
 		Cost: 180
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~barr.brutal, stek.brutal, tsla.brutal, ~infantry.russia, ~techlevel.high, ~infantry.ai
+		Prerequisites: barr.brutal, stek.brutal, tsla.brutal, ~infantry.russia, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: shok
 
@@ -301,7 +301,7 @@ MCV.Brutal:
 		Cost: 1200
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: fix.brutal, ~weap.brutal.extra, ~techlevel.medium, ~vehicles.ai
+		Prerequisites: fix.brutal, dome.brutal, !weap.brutal.extra2, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
 HARV.Brutal:
@@ -441,7 +441,7 @@ HELI.Brutal:
 		Cost: 900
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~hpad.brutal, atek.brutal, ~techlevel.high, ~aircraft.ai
+		Prerequisites: hpad.brutal, atek.brutal, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.brutal
 		RepairBuildings: hpad.brutal
@@ -453,7 +453,7 @@ HIND.Brutal:
 		Cost: 610
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~hpad.brutal, ~techlevel.medium, ~aircraft.ai
+		Prerequisites: hpad.brutal, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.brutal
 		RepairBuildings: hpad.brutal
@@ -465,7 +465,7 @@ MIG.Brutal:
 		Cost: 900
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~afld.brutal, stek.brutal, ~techlevel.high, ~aircraft.ai
+		Prerequisites: afld.brutal, stek.brutal, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.brutal, afld.ukraine.brutal
 		RepairBuildings: afld.brutal, afld.ukraine.brutal
@@ -477,7 +477,7 @@ YAK.Brutal:
 		Cost: 610
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~afld.brutal, ~techlevel.medium, ~aircraft.ai
+		Prerequisites: afld.brutal, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.brutal, afld.ukraine.brutal
 		RepairBuildings: afld.brutal, afld.ukraine.brutal
@@ -492,7 +492,7 @@ PROC.Brutal.Extra:
 		Cost: 840
 	Buildable:
 		BuildPaletteOrder: 9200
-		Prerequisites: anypower, ~mslo.brutal, ~fix.brutal, ~techlevel.infonly, ~structures.ai
+		Prerequisites: anypower, mslo.brutal, fix.brutal, ~techlevel.infonly, ~structures.ai
 	FreeActor:
 		Actor: HARV.Brutal
 	RenderSprites:
@@ -503,7 +503,8 @@ PROC.Brutal.Extra2:
 		Cost: 840
 	Buildable:
 		BuildPaletteOrder: 9200
-		Prerequisites: anypower, ~weap.brutal.extra2, ~techlevel.infonly, ~structures.ai
+		Prerequisites: anypower, weap.brutal.extra, ~techlevel.infonly, ~structures.ai
+		BuildDurationModifier: 100
 	FreeActor:
 		Actor: HARV.Brutal
 	RenderSprites:
@@ -513,8 +514,8 @@ WEAP.Brutal.Extra:
 	Valued:
 		Cost: 1200
 	Buildable:
-		BuildPaletteOrder: 9020
-		Prerequisites: proc.brutal, ~dome.brutal, ~weap.brutal, ~techlevel.low, ~structures.ai
+		BuildPaletteOrder: 9200
+		Prerequisites: proc.brutal.extra, mslo.brutal, fix.brutal, !weap.brutal.extra2, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
 WEAP.Brutal.Extra2:
@@ -523,7 +524,8 @@ WEAP.Brutal.Extra2:
 		Cost: 1200
 	Buildable:
 		BuildPaletteOrder: 9200
-		Prerequisites: proc.brutal, ~proc.brutal.extra, ~techlevel.low, ~structures.ai
+		Prerequisites: proc.brutal.extra2, weap.brutal.extra, ~techlevel.low, ~structures.ai
+		BuildDurationModifier: 100
 	RenderSprites:
 		Image: weap
 TENT.Brutal.Extra:
@@ -534,7 +536,7 @@ TENT.Brutal.Extra:
 		Prerequisite: barracks.brutal
 	Buildable:
 		BuildPaletteOrder: 9200
-		Prerequisites: anypower, ~proc.brutal.extra, ~mslo.brutal, ~fix.brutal, ~techlevel.infonly, ~structures.ai
+		Prerequisites: anypower, proc.brutal.extra2, mslo.brutal, fix.brutal, ~structures.allies, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: tent
 BARR.Brutal.Extra:
@@ -545,7 +547,7 @@ BARR.Brutal.Extra:
 		Prerequisite: barracks.brutal
 	Buildable:
 		BuildPaletteOrder: 9014
-		Prerequisites: anypower, ~proc.brutal.extra, ~mslo.brutal, fix.brutal, ~techlevel.infonly, ~structures.ai
+		Prerequisites: anypower, proc.brutal.extra2, mslo.brutal, fix.brutal, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: barr
 
@@ -599,7 +601,7 @@ E4.Brutal.Player:
 		Name: Crazed Flamethrower
 	Buildable:
 		BuildPaletteOrder: 8000
-		Prerequisites: ~barr.brutal, ftur.brutal
+		Prerequisites: ~barr.brutal, ~ftur.brutal
 		Description: Infantryman under influence.\nA preferable ally.
 	Armament@PRIMARY:
 		Weapon: Flamer.Brutal
