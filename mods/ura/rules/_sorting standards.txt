@@ -1,6 +1,7 @@
 Completed:
 - aircraft.yaml
 - campaign-tooltips.yaml
+- civilian.yaml
 
 Excluded:
 - campaign-palettes.yaml
@@ -37,8 +38,8 @@ GivesExperience *uncertain
 ReturnOnIdle
 RejectOrders
 Interactable
-Targetable
 Selectable
+Targetable
 SelectDecorations
 WithIdleOverlay
 WithMuzzleOverlay
@@ -52,8 +53,50 @@ RenderSprites
 
 Sorting standards: civilian.yaml
 
+flaws:
+- neutral structures revealshroud standard, armor,
+health
+
 # Infantry
 # Neutral structures | Capturable
 # Decoration structures
 # Decoration structures (desert)
 # Interactive decoration structures
+
+Inherits
+Tooltip
+TooltipDescription
+Health
+Armor
+Power
+GivesBuildableArea
+BaseProvider
+CashTrickler
+FreeActor
+Bridge
+Building
+LegacyBridgeHut
+HitShape
+WithBuildingBib
+RevealsShroud
+GpsDot
+Interactable
+Selectable
+Targetable
+Demolishable
+Explodes
+ShakeOnDeath
+SoundOnDamageTransition
+SelectionDecorations
+ExternalCapturable
+ExternalCapturableBar
+EngineerRepairable
+OwnerLostAction
+WithDeathAnimation
+Voiced
+WithIdleOverlay
+SpawnActorOnDeath
+WithSpriteBody:
+RenderSprites
+ProvidesPrerequisite
+EditorTilesetFilter

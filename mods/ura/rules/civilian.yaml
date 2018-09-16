@@ -24,10 +24,10 @@ C3:
 
 C4:
 	Inherits: ^CivInfantry
-	RenderSprites:
-		Image: C2
 	Voiced:
 		VoiceSet: CivilianFemaleVoice
+	RenderSprites:
+		Image: C2
 
 C5:
 	Inherits: ^CivInfantry
@@ -36,10 +36,10 @@ C5:
 
 C6:
 	Inherits: ^CivInfantry
-	RenderSprites:
-		Image: C2
 	Voiced:
 		VoiceSet: CivilianFemaleVoice
+	RenderSprites:
+		Image: C2
 
 C7:
 	Inherits@1: ^CivInfantry
@@ -49,10 +49,10 @@ C7:
 
 C8:
 	Inherits: ^CivInfantry
-	RenderSprites:
-		Image: C2
 	Voiced:
 		VoiceSet: CivilianFemaleVoice
+	RenderSprites:
+		Image: C2
 
 C9:
 	Inherits: ^CivInfantry
@@ -61,10 +61,10 @@ C9:
 
 C10:
 	Inherits: ^CivInfantry
-	RenderSprites:
-		Image: C2
 	Voiced:
 		VoiceSet: CivilianFemaleVoice
+	RenderSprites:
+		Image: C2
 
 TECN:
 	Inherits@1: ^CivInfantry
@@ -79,20 +79,6 @@ TECN:
 BIO:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
-	Selectable:
-		Bounds: 48,48
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
-	OwnerLostAction:
-		Action: ChangeOwner
-	Building:
-		Footprint: xx xx
-		Dimensions: 2,2
-	RevealsShroud:
-		Range: 3c0
-	ExternalCapturable:
-	ExternalCapturableBar:
-	EngineerRepairable:
 	Tooltip:
 		Name: Biological Lab
 	TooltipDescription@ally:
@@ -101,6 +87,22 @@ BIO:
 	TooltipDescription@other:
 		Description: Capture to produce Bio-Lab units.
 		ValidStances: Neutral, Enemy
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	RevealsShroud:
+		Range: 3c0
+	GpsDot:
+		String: Biohazard
+	Selectable:
+		Bounds: 48,48
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
+	ExternalCapturable:
+	ExternalCapturableBar:
+	EngineerRepairable:
+	OwnerLostAction:
+		Action: ChangeOwner
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
@@ -111,21 +113,6 @@ BIO:
 HOSP:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
-	Selectable:
-		Priority: 0
-		Bounds: 48,48
-	OwnerLostAction:
-		Action: ChangeOwner
-	Building:
-		Footprint: xx xx
-		Dimensions: 2,2
-	Health:
-		HP: 800
-	ExternalCapturable:
-	ExternalCapturableBar:
-	EngineerRepairable:
 	Tooltip:
 		Name: Hospital
 	TooltipDescription@ally:
@@ -134,43 +121,36 @@ HOSP:
 	TooltipDescription@other:
 		Description: Capture to enable self-healing for infantry.
 		ValidStances: Neutral, Enemy
-	RevealsShroud:
-		Range: 4c0
+	Health:
+		HP: 800
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
 	WithBuildingBib:
 		HasMinibib: Yes
+	RevealsShroud:
+		Range: 4c0
+	GpsDot:
+		String: Hospital
+	Selectable:
+		Priority: 0
+		Bounds: 48,48
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
+	ExternalCapturable:
+	ExternalCapturableBar:
+	EngineerRepairable:
+	OwnerLostAction:
+		Action: ChangeOwner
+
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
 	ProvidesPrerequisite@buildingname:
-	GpsDot:
-		String: Hospital
 
 MISS:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^3x2Shape
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
-	HitShape:
-		UseTargetableCellsOffsets: false
-		TargetableOffsets: 0,0,0, 840,0,0, 840,-1024,0, 420,768,0, -840,0,0, -840,-1024,0, -840,1024,0
-	Selectable:
-		Priority: 0
-		Bounds: 72,48
-	OwnerLostAction:
-		Action: ChangeOwner
-	Building:
-		Footprint: xxx xxx ===
-		Dimensions: 3,3
-		LocalCenterOffset: 0,-512,0
-	Health:
-		HP: 600
-	RevealsShroud:
-		Range: 10c0
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 6c0
-	Armor:
-		Type: Wood
 	Tooltip:
 		Name: Communications Center
 	TooltipDescription@ally:
@@ -179,34 +159,43 @@ MISS:
 	TooltipDescription@other:
 		Description: Capture to give visual range.
 		ValidStances: Neutral, Enemy
+	Health:
+		HP: 600
+	Armor:
+		Type: Wood
+	Building:
+		Footprint: xxx xxx ===
+		Dimensions: 3,3
+		LocalCenterOffset: 0,-512,0
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 840,0,0, 840,-1024,0, 420,768,0, -840,0,0, -840,-1024,0, -840,1024,0
 	WithBuildingBib:
+	RevealsShroud:
+		Range: 10c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 6c0
+	GpsDot:
+		String: Communications
+	Selectable:
+		Priority: 0
+		Bounds: 72,48
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
 	ExternalCapturable:
 	ExternalCapturableBar:
 	EngineerRepairable:
+	OwnerLostAction:
+		Action: ChangeOwner
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
 	ProvidesPrerequisite@buildingname:
-	GpsDot:
-		String: Communications
 
 FCOM:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
-	Selectable:
-		Bounds: 48,48
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
-	OwnerLostAction:
-		Action: ChangeOwner
-	Building:
-		Footprint: xx xx ==
-		Dimensions: 2,3
-		LocalCenterOffset: 0,-512,0
-	Health:
-		HP: 800
-	Armor:
-		Type: Wood
 	Tooltip:
 		Name: Forward Command
 	TooltipDescription@ally:
@@ -215,52 +204,43 @@ FCOM:
 	TooltipDescription@other:
 		Description: Capture to give buildable area.
 		ValidStances: Neutral, Enemy
+	Health:
+		HP: 800
+	Armor:
+		Type: Wood
+	Power:
+		Amount: 0
+	GivesBuildableArea:
+		AreaTypes: building
+	BaseProvider:
+		Range: 8c0
+	Building:
+		Footprint: xx xx ==
+		Dimensions: 2,3
+		LocalCenterOffset: 0,-512,0
+	WithBuildingBib:
 	RevealsShroud:
 		Range: 5c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 4c0
-	WithBuildingBib:
+	GpsDot:
+		String: Forward
+	Selectable:
+		Bounds: 48,48
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
 	ExternalCapturable:
 		CaptureCompleteTime: 30
 	ExternalCapturableBar:
-	GivesBuildableArea:
-		AreaTypes: building
-	BaseProvider:
-		Range: 8c0
 	EngineerRepairable:
-	Power:
-		Amount: 0
+	OwnerLostAction:
+		Action: ChangeOwner
 	ProvidesPrerequisite@buildingname:
-	GpsDot:
-		String: Forward
 
 OILB:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
-	OwnerLostAction:
-		Action: ChangeOwner
-	HitShape:
-		UseTargetableCellsOffsets: false
-		TargetableOffsets: 0,0,0, 630,-300,0, 420,512,0, -420,-512,0, -630,300,0
-	Selectable:
-		Priority: 0
-		Bounds: 48,48
-	Building:
-		Footprint: xx xx
-		Dimensions: 2,2
-	Health:
-		HP: 800
-	RevealsShroud:
-		Range: 4c0
-	ExternalCapturable:
-	ExternalCapturableBar:
-	EngineerRepairable:
-	CashTrickler:
-		Interval: 375
-		Amount: 100
 	Tooltip:
 		Name: Oil Derrick
 	TooltipDescription@ally:
@@ -269,32 +249,56 @@ OILB:
 	TooltipDescription@other:
 		Description: Capture to receive additional funds.
 		ValidStances: Neutral, Enemy
-	Explodes:
-		Weapon: BarrelExplode
-	GpsDot:
-		String: Oil
+	Health:
+		HP: 800
+	CashTrickler:
+		Interval: 375
+		Amount: 100
 	GivesCashOnCapture:
 		Amount: 100
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 630,-300,0, 420,512,0, -420,-512,0, -630,300,0
+	RevealsShroud:
+		Range: 4c0
+	GpsDot:
+		String: Oil
+	Selectable:
+		Priority: 0
+		Bounds: 48,48
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
+	Explodes:
+		Weapon: BarrelExplode
+	ExternalCapturable:
+	ExternalCapturableBar:
+	EngineerRepairable:
+	OwnerLostAction:
+		Action: ChangeOwner
 
 # Decoration structures
 
 V01:
 	Inherits: ^CivBuilding
+	Tooltip:
+		Name: Church
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	Tooltip:
-		Name: Church
-	RevealsShroud:
-		Range: 10c0
-	EditorTilesetFilter:
-		ExcludeTilesets: DESERT, INTERIOR
 	HitShape:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: -490,-384,0, 0,0,0, 0,470,0
 		Type: Rectangle
 			TopLeft: -768, -597
 			BottomRight: 896, 683
+	RevealsShroud:
+		Range: 10c0
+	EditorTilesetFilter:
+		ExcludeTilesets: DESERT, INTERIOR
+
 
 V01.Money:
 	Inherits: V01
@@ -310,42 +314,42 @@ V02:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	EditorTilesetFilter:
-		ExcludeTilesets: DESERT, INTERIOR
 	HitShape:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: -490,-512,0, 0,0,0, 0,512,0
 		Type: Rectangle
 			TopLeft: -1024, -512
 			BottomRight: 1024, 597
+	EditorTilesetFilter:
+		ExcludeTilesets: DESERT, INTERIOR
 
 V03:
 	Inherits: ^CivBuilding
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	EditorTilesetFilter:
-		ExcludeTilesets: DESERT, INTERIOR
 	HitShape:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: -490,-512,0, 0,0,0, 421,512,0, -210,512,0
 		Type: Rectangle
 			TopLeft: -1024, -597
 			BottomRight: 1024, 597
+	EditorTilesetFilter:
+		ExcludeTilesets: DESERT, INTERIOR
 
 V04:
 	Inherits: ^CivBuilding
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	EditorTilesetFilter:
-		ExcludeTilesets: DESERT, INTERIOR
 	HitShape:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,0,0, -421,-256,0, -421,256,0
 		Type: Rectangle
 			TopLeft: -683, -432
 			BottomRight: 683, 683
+	EditorTilesetFilter:
+		ExcludeTilesets: DESERT, INTERIOR
 
 V05:
 	Inherits: ^CivBuilding
@@ -431,38 +435,38 @@ V18:
 
 V19:
 	Inherits: ^CivBuilding
-	RenderSprites:
-		Palette: player
 	Tooltip:
 		Name: Oil Pump
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
 	-SpawnActorOnDeath@1:
 	-SpawnActorOnDeath@2:
 	-SpawnActorOnDeath@3:
 	SpawnActorOnDeath:
 		Actor: V19.Husk
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
+	RenderSprites:
+		Palette: player
 
 V19.Husk:
 	Inherits: ^CivBuilding
-	RenderSprites:
-		Palette: player
 	Tooltip:
 		Name: Husk (Oil Pump)
-	WithSpriteBody:
+	-Health:
+	-HitShape:
+	Interactable:
+	-Selectable:
+	-Targetable:
+	-Demolishable:
+	-Explodes:
+	-Explodes@CIVPANIC:
+	SelectionDecorations:
+		RenderSelectionBars: False
 	WithIdleOverlay:
 		StartSequence: fire-start
 		Sequence: fire-loop
-	-Selectable:
-	SelectionDecorations:
-		RenderSelectionBars: False
-	-Targetable:
-	-Demolishable:
-	-HitShape:
-	-Health:
-	-Explodes:
-	-Explodes@CIVPANIC:
-	Interactable:
+	WithSpriteBody:
+	RenderSprites:
+		Palette: player
 
 # Decoration structures (desert)
 
@@ -519,19 +523,19 @@ V24:
 
 V25:
 	Inherits: ^DesertCivBuilding
+	Tooltip:
+		Name: Church
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	Tooltip:
-		Name: Church
-	RevealsShroud:
-		Range: 10c0
 	HitShape:
 		UseTargetableCellsOffsets: false
 		TargetableOffsets: 0,-128,0, 420,512,0
 		Type: Rectangle
 			TopLeft: -683, -683
 			BottomRight: 1024, 512
+	RevealsShroud:
+		Range: 10c0
 
 V25.Money:
 	Inherits: V25
@@ -614,13 +618,13 @@ RICE:
 
 RUSHOUSE:
 	Inherits: ^CivBuilding
-	EditorTilesetFilter:
-		RequireTilesets: TEMPERAT
 	Building:
 		Footprint: x x
 		Dimensions: 1,2
 	HitShape:
 		UseTargetableCellsOffsets: false
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERAT
 
 ASIANHUT:
 	Inherits: ^CivBuilding
@@ -629,91 +633,92 @@ ASIANHUT:
 
 SNOWHUT:
 	Inherits: ^CivBuilding
-	EditorTilesetFilter:
-		RequireTilesets: SNOW
 	Building:
 		Footprint: x x
 		Dimensions: 1,2
-	RenderSprites:
-		Scale: 0.7
 	HitShape:
 		UseTargetableCellsOffsets: false
+	RenderSprites:
+		Scale: 0.7
+	EditorTilesetFilter:
+		RequireTilesets: SNOW
 
 LHUS:
 	Inherits: ^CivBuilding
-	EditorTilesetFilter:
-		RequireTilesets: TEMPERAT
-	Selectable:
-		Bounds: 24,48,0,-16
 	Tooltip:
 		Name: Lighthouse
 	Building:
 		Footprint: x
 		Dimensions: 1,1
+	Selectable:
+		Bounds: 24,48,0,-16
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERAT
 
 WINDMILL:
 	Inherits: ^CivBuilding
-	EditorTilesetFilter:
-		RequireTilesets: TEMPERAT
-	Selectable:
-		Bounds: 24,24,0,-14
-		DecorationBounds: 36,36,0,-14
-	SelectionDecorations:
 	Tooltip:
 		Name: Windmill
 	Building:
 		Footprint: x
 		Dimensions: 1,1
+	Selectable:
+		Bounds: 24,24,0,-14
+		DecorationBounds: 36,36,0,-14
+	SelectionDecorations:
+	EditorTilesetFilter:
+		RequireTilesets: TEMPERAT
 
 # Interactive decoration structures
 
 BARL:
 	Inherits: ^TechBuilding
-	-Selectable:
-	SelectionDecorations:
-		RenderSelectionBars: False
-	Health:
-		HP: 10
-	Explodes:
-		Weapon: BarrelExplode
 	Tooltip:
 		Name: Explosive Barrel
 		ShowOwnerRow: False
+	Health:
+		HP: 10
 	Armor:
 		Type: None
-	Targetable:
-		TargetTypes: Ground, DemoTruck, Barrel, NoAutoTarget
-	-ShakeOnDeath:
-	-SoundOnDamageTransition:
-	-Demolishable:
-	EditorTilesetFilter:
-		Categories: Decoration
 	Interactable:
 		Bounds: 24,24
+	-Selectable:
+	Targetable:
+		TargetTypes: Ground, DemoTruck, Barrel, NoAutoTarget
+	-SoundOnDamageTransition:
+	-Demolishable:
+	Explodes:
+		Weapon: BarrelExplode
+	-ShakeOnDeath:
+
+	SelectionDecorations:
+		RenderSelectionBars: False
+	EditorTilesetFilter:
+		Categories: Decoration
 
 BRL3:
 	Inherits: ^TechBuilding
-	-Selectable:
-	SelectionDecorations:
-		RenderSelectionBars: False
-	Health:
-		HP: 10
-	Explodes:
-		Weapon: BarrelExplode
 	Tooltip:
 		Name: Explosive Barrel
 		ShowOwnerRow: False
+	Health:
+		HP: 10
 	Armor:
 		Type: None
-	Targetable:
-		TargetTypes: Ground, DemoTruck, Barrel, NoAutoTarget
-	-ShakeOnDeath:
-	-SoundOnDamageTransition:
-	-Demolishable:
-	EditorTilesetFilter:
-		Categories: Decoration
 	Interactable:
 		Bounds: 24,24
+	-Selectable:
+	SelectionDecorations:
+		RenderSelectionBars: False
+	Targetable:
+		TargetTypes: Ground, DemoTruck, Barrel, NoAutoTarget
+	-SoundOnDamageTransition:
+	-Demolishable:
+	Explodes:
+		Weapon: BarrelExplode
+	-ShakeOnDeath:
+	EditorTilesetFilter:
+		Categories: Decoration
 
 AMMOBOX1:
 	Inherits: ^AmmoBox
