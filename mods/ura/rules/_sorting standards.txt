@@ -2,6 +2,7 @@ Completed:
 - aircraft.yaml
 - campaign-tooltips.yaml
 - civilian.yaml
+- decoration.yaml
 
 Excluded:
 - campaign-palettes.yaml
@@ -53,10 +54,6 @@ RenderSprites
 
 Sorting standards: civilian.yaml, decorations.yaml
 
-flaws:
-- neutral structures revealshroud standard, armor,
-health
-
 # Infantry
 # Neutral structures | Capturable
 # Decoration structures
@@ -100,3 +97,5 @@ WithSpriteBody:
 RenderSprites
 ProvidesPrerequisite
 EditorTilesetFilter
+
+Sorting standards: defaults.yaml
