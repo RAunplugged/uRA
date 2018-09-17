@@ -6,16 +6,19 @@ Completed:
 - defaults.yaml
 - fakes.yaml
 - infantry.yaml
+- misc.yaml
 
 Excluded:
 - campaign-palettes.yaml
 - campaign-rules.yaml
 - disable-player-experience
 - husks.yaml
+- palettes.yaml
+- player.yaml
 
 - - - - - - - - - - - - - - - -
 
-Sorting range: aircraft.yaml, infantry.yaml
+Sorting range: aircraft.yaml, infantry.yaml, ships.yaml
 
 Inherits
 Inherits@AUTOTARGET
@@ -27,8 +30,12 @@ Mobile
 GivesExperience
 Buildable
 Aircraft
-RevealsShroud	??? RevealsShroud GapGen for infantry?
+MustBeDestroyed
+RevealsShroud
+RevealsShroud@GAPGEN !!! check and inherit units/structures!
 Armament	!!! remove PRIMARY with TRAN!
+Turreted
+AttackTurreted
 AmmoPool
 AttackBomber
 AttackHeli
@@ -36,6 +43,7 @@ AttackPlane
 Infiltrates
 Cloak
 DetectCloaked
+RenderDetectionCircle
 Disguise
 IgnoresDisguise
 Captures
@@ -63,6 +71,7 @@ Voiced
 RenderSprites
 GrantCondition
 WithIdleOverlay
+WithSpriteTurret
 WithMuzzleOverlay
 WithInfantryBody
 WithDecoration
