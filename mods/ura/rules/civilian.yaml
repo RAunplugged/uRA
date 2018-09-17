@@ -142,7 +142,6 @@ HOSP:
 	EngineerRepairable:
 	OwnerLostAction:
 		Action: ChangeOwner
-
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
@@ -452,6 +451,8 @@ V19.Husk:
 	Tooltip:
 		Name: Husk (Oil Pump)
 	-Health:
+	SelectionDecorations:
+		RenderSelectionBars: False
 	-HitShape:
 	Interactable:
 	-Selectable:
@@ -459,8 +460,6 @@ V19.Husk:
 	-Demolishable:
 	-Explodes:
 	-Explodes@CIVPANIC:
-	SelectionDecorations:
-		RenderSelectionBars: False
 	WithIdleOverlay:
 		StartSequence: fire-start
 		Sequence: fire-loop
@@ -662,10 +661,10 @@ WINDMILL:
 	Building:
 		Footprint: x
 		Dimensions: 1,1
+	SelectionDecorations:
 	Selectable:
 		Bounds: 24,24,0,-14
 		DecorationBounds: 36,36,0,-14
-	SelectionDecorations:
 	EditorTilesetFilter:
 		RequireTilesets: TEMPERAT
 
@@ -680,19 +679,18 @@ BARL:
 		HP: 10
 	Armor:
 		Type: None
+	SelectionDecorations:
+		RenderSelectionBars: False
 	Interactable:
 		Bounds: 24,24
 	-Selectable:
 	Targetable:
 		TargetTypes: Ground, DemoTruck, Barrel, NoAutoTarget
-	-SoundOnDamageTransition:
 	-Demolishable:
 	Explodes:
 		Weapon: BarrelExplode
 	-ShakeOnDeath:
-
-	SelectionDecorations:
-		RenderSelectionBars: False
+	-SoundOnDamageTransition:
 	EditorTilesetFilter:
 		Categories: Decoration
 
@@ -705,18 +703,18 @@ BRL3:
 		HP: 10
 	Armor:
 		Type: None
+	SelectionDecorations:
+		RenderSelectionBars: False
 	Interactable:
 		Bounds: 24,24
 	-Selectable:
-	SelectionDecorations:
-		RenderSelectionBars: False
 	Targetable:
 		TargetTypes: Ground, DemoTruck, Barrel, NoAutoTarget
-	-SoundOnDamageTransition:
 	-Demolishable:
 	Explodes:
 		Weapon: BarrelExplode
 	-ShakeOnDeath:
+	-SoundOnDamageTransition:
 	EditorTilesetFilter:
 		Categories: Decoration
 

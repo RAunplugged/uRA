@@ -309,6 +309,7 @@
 	GrantConditionOnPrerequisite:
 		Condition: hospitalheal
 		Prerequisites: hosp
+	SelectionDecorations:
 	HitShape:
 		Type: Circle
 			Radius: 128
@@ -346,19 +347,9 @@
 		CrushSound: squishy2.aud
 	DrawLineToTarget:
 	Guardable:
-	SelectionDecorations:
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: DefaultDeath
-	WithDeathAnimation:
-		DeathTypes:
-			DefaultDeath: 1
-			BulletDeath: 2
-			SmallExplosionDeath: 3
-			ExplosionDeath: 4
-			FireDeath: 5
-			ElectricityDeath: 6
-		CrushedSequence: die-crushed
 	DeathSounds@NORMAL:
 		DeathTypes: DefaultDeath, BulletDeath, SmallExplosionDeath, ExplosionDeath
 	Voiced:
@@ -374,6 +365,15 @@
 		Sequence: stand
 	WithSpriteControlGroupDecoration:
 	WithInfantryBody:
+	WithDeathAnimation:
+		DeathTypes:
+			DefaultDeath: 1
+			BulletDeath: 2
+			SmallExplosionDeath: 3
+			ExplosionDeath: 4
+			FireDeath: 5
+			ElectricityDeath: 6
+		CrushedSequence: die-crushed
 	EditorTilesetFilter:
 		Categories: Infantry
 
@@ -446,6 +446,7 @@
 	Passenger:
 		CargoType: Vehicle
 		Weight: 3
+	SelectionDecorations:
 	HitShape:
 	GpsDot:
 		String: Vehicle
@@ -482,7 +483,6 @@
 	Explodes:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
-	SelectionDecorations:
 	OwnerLostAction:
 		Action: Kill
 	Voiced:
@@ -528,6 +528,7 @@
 		EjectInAir: true
 		AllowUnsuitableCell: true
 		ChuteSound: chute1.aud
+	SelectionDecorations:
 	HitShape:
 	GpsDot:
 		String: Plane
@@ -549,7 +550,6 @@
 	Explodes:
 		Weapon: UnitExplode
 		RequiresCondition: !airborne
-	SelectionDecorations:
 	OwnerLostAction:
 		Action: Kill
 	Voiced:
@@ -606,6 +606,7 @@
 		Types: Ship
 	AttackMove:
 	Guard:
+	SelectionDecorations:
 	HitShape:
 	GpsDot:
 		String: Ship
@@ -622,7 +623,6 @@
 	Explodes:
 		Weapon: UnitExplodeShip
 		EmptyWeapon: UnitExplodeShip
-	SelectionDecorations:
 	OwnerLostAction:
 		Action: Kill
 	Voiced:
@@ -657,6 +657,7 @@
 		UndeploySounds: cashturn.aud
 	RequiresBuildableArea:
 		AreaTypes: building
+	SelectionDecorations:
 	FrozenUnderFog:
 	FrozenUnderFogUpdatedByGps:
 	Selectable:
@@ -672,7 +673,6 @@
 		Weapon: BuildingExplode
 		EmptyWeapon: BuildingExplode
 	ShakeOnDeath:
-	SelectionDecorations:
 	SoundOnDamageTransition:
 		DamagedSounds: kaboom1.aud
 		DestroyedSounds: kaboom22.aud
@@ -835,6 +835,8 @@
 		HP: 10
 	Armor:
 		Type: Light
+	SelectionDecorations:
+		RenderSelectionBars: False
 	Interactable:
 		Bounds: 24,24
 	-Selectable:
@@ -842,8 +844,6 @@
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
 	Explodes:
 		Weapon: UnitExplode
-	SelectionDecorations:
-		RenderSelectionBars: False
 	EditorTilesetFilter:
 		Categories: Decoration
 
@@ -875,6 +875,7 @@
 	Tooltip:
 		Name: Field
 	-Health:
+	-SelectionDecorations:
 	-HitShape:
 	Interactable:
 	-Selectable:
@@ -882,7 +883,6 @@
 	-Demolishable:
 	-Explodes:
 	-Explodes@CIVPANIC:
-	-SelectionDecorations:
 	EditorTilesetFilter:
 		ExcludeTilesets: INTERIOR
 

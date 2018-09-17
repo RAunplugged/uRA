@@ -288,12 +288,12 @@ FAPW:
 		Dimensions: 3,3
 		LocalCenterOffset: 0,-512,0
 	WithBuildingBib:
+	SelectionDecorations:
 	HitShape:
 		TargetableOffsets: -355,-1024,0
 	Selectable:
 		Bounds: 72,48
 		DecorationBounds: 72,68,0,-10
-	SelectionDecorations:
 	RenderSprites:
 		Image: APWR
 

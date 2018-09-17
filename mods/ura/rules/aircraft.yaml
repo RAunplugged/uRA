@@ -45,6 +45,7 @@ TRAN:
 		Types: Infantry
 		MaxWeight: 8
 		PipCount: 8
+	SelectionDecorations:
 	RevealsShroud:
 		Range: 10c0
 		Type: GroundPosition
@@ -54,7 +55,6 @@ TRAN:
 		Type: GroundPosition
 	Selectable:
 		DecorationBounds: 40,36
-	SelectionDecorations:
 	WithIdleOverlay@ROTOR1AIR:
 		Offset: 597,0,213
 		Sequence: rotor
@@ -116,6 +116,7 @@ HIND:
 	AutoTarget:
 		InitialStance: HoldFire
 		InitialStanceAI: HoldFire
+	SelectionDecorations:
 	RevealsShroud:
 		Range: 12c0
 		Type: GroundPosition
@@ -125,7 +126,6 @@ HIND:
 		Type: GroundPosition
 	Selectable:
 		DecorationBounds: 38,32
-	SelectionDecorations:
 	WithIdleOverlay@ROTORAIR:
 		Sequence: rotor
 		RequiresCondition: airborne
@@ -179,6 +179,7 @@ HELI:
 	AutoTarget:
 		InitialStance: HoldFire
 		InitialStanceAI: HoldFire
+	SelectionDecorations:
 	RevealsShroud:
 		Range: 14c0
 		Type: GroundPosition
@@ -188,7 +189,6 @@ HELI:
 		Type: GroundPosition
 	Selectable:
 		DecorationBounds: 36,28
-	SelectionDecorations:
 	WithIdleOverlay@ROTORAIR:
 		Offset: 0,0,85
 		Sequence: rotor
@@ -248,6 +248,7 @@ YAK:
 	AutoTarget:
 		InitialStance: HoldFire
 		InitialStanceAI: HoldFire
+	SelectionDecorations:
 	RevealsShroud:
 		Range: 13c0
 		Type: GroundPosition
@@ -258,7 +259,6 @@ YAK:
 	ReturnOnIdle:
 	Selectable:
 		DecorationBounds: 30,28,0,2
-	SelectionDecorations:
 	WithMuzzleOverlay:
 	Contrail:
 		Offset: -853,0,0
@@ -311,6 +311,7 @@ MIG:
 	AutoTarget:
 		InitialStance: HoldFire
 		InitialStanceAI: HoldFire
+	SelectionDecorations:
 	RevealsShroud:
 		Range: 15c0
 		Type: GroundPosition
@@ -322,7 +323,6 @@ MIG:
 	Selectable:
 		Bounds: 36,28,0,2
 		DecorationBounds: 40,29,0,1
-	SelectionDecorations:
 	Contrail@1:
 		Offset: -598,-683,0
 	Contrail@2:
@@ -354,11 +354,11 @@ BADR:
 		ChuteSound: chute1.aud
 	Cargo:
 		MaxWeight: 10
+	SelectionDecorations:
+		RenderSelectionBars: False
 	RejectsOrders:
 	Interactable:
 	-Selectable:
-	SelectionDecorations:
-		RenderSelectionBars: False
 	Contrail@1:
 		Offset: -432,560,0
 	Contrail@2:
@@ -393,11 +393,11 @@ BADR.Bomber:
 	AmmoPool:
 		Ammo: 7
 	AttackBomber:
+	SelectionDecorations:
+		RenderSelectionBars: False
 	RejectsOrders:
 	Interactable:
 	-Selectable:
-	SelectionDecorations:
-		RenderSelectionBars: False
 	Contrail@1:
 		Offset: -432,560,0
 	Contrail@2:
@@ -414,6 +414,7 @@ BADR.Bomber:
 		Actor: BADR.Husk
 	RenderSprites:
 		Image: badr
+
 U2:
 	Inherits: ^NeutralPlane
 	Tooltip:
@@ -427,12 +428,12 @@ U2:
 		Repulsable: False
 		MaximumPitch: 56
 	AttackBomber:
+	SelectionDecorations:
+		RenderSelectionBars: False
 	RejectsOrders:
 	Interactable:
 	-Selectable:
 	-Targetable@AIRBORNE:
-	SelectionDecorations:
-		RenderSelectionBars: False
 	Contrail@1:
 		Offset: -725,683,0
 	Contrail@2:

@@ -10,8 +10,11 @@ Excluded:
 - campaign-palettes.yaml
 - campaign-rules.yaml
 - disable-player-experience
+- husks.yaml
 
-Sorting standards: aircraft.yaml
+- - - - - - - - - - - - - - - -
+
+Sorting range: aircraft.yaml
 
 - TRAN (Chinook)
 - Hind 
@@ -55,12 +58,14 @@ SpawnActorOnDeath
 ProducibleWithLevel
 RenderSprites
 
-Sorting standards: civilian.yaml, decorations.yaml,
-defaults.yaml
+- - - - - - - - - - - - - - - -
+
+Sorting range: civilian.yaml, decorations.yaml,
+defaults.yaml, fakes.yaml
 
 decorations.yaml
 # Infantry
-# Neutral structures | Capturable
+# Neutral structures (capturable)
 # Decoration structures
 # Decoration structures (desert)
 # Interactive decoration structures
@@ -138,6 +143,7 @@ Bridge
 Passenger
 SelfHealing
 LegacyBridgeHut
+SelectionDecorations
 HitShape
 RevealsShroud
 GpsDot
@@ -166,16 +172,14 @@ TransformOnCapture
 Demolishable ??? ships - enable for tanya?
 Explodes
 ShakeOnDeath
-SoundOnDamageTransition
-SelectionDecorations
 ExternalCapturable
 ExternalCapturableBar
 EngineerRepairable
 OwnerLostAction
-WithDeathAnimation
 Voiced
 DeathSounds
 ActorLostNotification
+SoundOnDamageTransition
 WithIdleOverlay
 WithDamageOverlay
 SpawnActorOnDeath
@@ -197,4 +201,28 @@ ConditionManager
 ScriptTriggers
 EditorTilesetFilter
 
-Sorting standards: defaults.yaml
+- - - - - - - - - - - - - - - -
+
+Sorting range: infantry.yaml
+
+Inherits
+Tooltips
+Valued
+Health
+Mobile
+Buildable
+Armament
+AmmoPool
+Cloak
+DetectCloaked
+IgnoresDisguise
+AutoTarget
+AttackMove
+AttackLeap
+RevealsShroud
+Passenger
+Guard
+Selectable
+Targetable
+SelectionDecorations
+WithInfantryBody
