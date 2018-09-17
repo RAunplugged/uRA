@@ -7,6 +7,7 @@ Completed:
 - fakes.yaml
 - infantry.yaml
 - misc.yaml
+- ships.yaml
 
 Excluded:
 - campaign-palettes.yaml
@@ -19,6 +20,14 @@ Excluded:
 - - - - - - - - - - - - - - - -
 
 Sorting range: aircraft.yaml, infantry.yaml, ships.yaml
+
+structures.yaml
+# Low tech (tier 1)
+# Medium, High tech (tier 2,3)
+# Defensive structures
+# Defensive structures (non-combat)
+# Superpowers
+# Misc
 
 Inherits
 Inherits@AUTOTARGET

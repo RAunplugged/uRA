@@ -1,47 +1,134 @@
-V2RL:
+MCV:
 	Inherits: ^Vehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
-	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 90
-		Prerequisites: dome, ~vehicles.soviet, ~techlevel.medium
-		Description: Long-range rocket artillery.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
+		BuildPaletteOrder: 50
+		Prerequisites: fix, ~techlevel.medium
+		BuildDurationModifier: 50
+		Description: Deploys into another Construction Yard.\n  Unarmed
 	Valued:
-		Cost: 900
+		Cost: 2000
 	Tooltip:
-		Name: V2 Rocket Launcher
+		Name: Mobile Construction Vehicle
+	Selectable:
+		Priority: 6
+		DecorationBounds: 42,42
+	SelectionDecorations:
 	Health:
-		HP: 200
+		HP: 600
 	Armor:
 		Type: Light
 	Mobile:
+		Speed: 71
+		Locomotor: heavywheeled
+	RevealsShroud:
+		Range: 6c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 4c0
+	RevealOnDeath:
+		Duration: 80
+		Radius: 2c512
+	Transforms:
+		IntoActor: fact
+		Offset: -1,-1
+		Facing: 96
+		TransformSounds: placbldg.aud, build5.aud
+		NoTransformNotification: BuildingCannotPlaceAudio
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	BaseBuilding:
+	SpawnActorOnDeath:
+		Actor: MCV.Husk
+		OwnerType: InternalName
+		EffectiveOwnerFromOwner: true
+
+HARV:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 10
+		Prerequisites: proc, ~techlevel.infonly
+		Description: Collects Ore and Gems for processing.\n  Unarmed
+	Valued:
+		Cost: 1100
+	Tooltip:
+		Name: Ore Truck
+		GenericName: Harvester
+	Selectable:
+		Priority: 7
+		DecorationBounds: 42,42
+	SelectionDecorations:
+	Harvester:
+		Capacity: 20
+		Resources: Ore,Gems
+		BaleUnloadDelay: 1
+		SearchFromProcRadius: 30
+		SearchFromOrderRadius: 10
+	Health:
+		HP: 600
+	Armor:
+		Type: Heavy
+	Mobile:
 		Speed: 85
+		Locomotor: heavywheeled
+	RevealsShroud:
+		Range: 6c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 4c0
+	RevealOnDeath:
+		Duration: 80
+		Radius: 2c512
+	WithHarvestAnimation:
+		PrefixByFullness: empty-, half-, full-
+	WithDockingAnimation:
+	GpsDot:
+		String: Harvester
+	SpawnActorOnDeath:
+		Actor: HARV.EmptyHusk
+		OwnerType: InternalName
+		EffectiveOwnerFromOwner: true
+	HarvesterHuskModifier:
+		FullHuskActor: HARV.FullHusk
+		FullnessThreshold: 50
+	SelfHealing:
+		Step: 1
+		Delay: 25
+		HealIfBelow: 50
+		DamageCooldown: 500
+	Explodes:
+		Weapon: OreExplosion
+
+TRUK:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 90
+		Prerequisites: ~techlevel.low
+		Description: Transports cash to other players.\n  Unarmed
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Supply Truck
+	Selectable:
+		Priority: 4
+	Health:
+		HP: 110
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 128
 	RevealsShroud:
 		Range: 5c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 4c0
-	Armament:
-		Weapon: SCUD
-		ReloadingCondition: reloading
-	AutoTarget:
-		ScanRadius: 12
-	AttackFrontal:
-	WithFacingSpriteBody:
-		RequiresCondition: !reloading
-		Name: loaded
-	WithFacingSpriteBody@EMPTY:
-		RequiresCondition: reloading
-		Sequence: empty-idle
-		Name: reloading
-	SelectionDecorations:
-	Explodes:
-		Weapon: V2Explode
-	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
-	Selectable:
-		DecorationBounds: 28,28
+	DeliversCash:
+		Payload: 500
+		PlayerExperience: 50
+	SpawnActorOnDeath:
+		Actor: moneycrate
 
 1TNK:
 	Inherits: ^TrackedVehicle
@@ -348,107 +435,50 @@ ARTY:
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
 
-HARV:
+V2RL:
 	Inherits: ^Vehicle
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 10
-		Prerequisites: proc, ~techlevel.infonly
-		Description: Collects Ore and Gems for processing.\n  Unarmed
+		BuildPaletteOrder: 90
+		Prerequisites: dome, ~vehicles.soviet, ~techlevel.medium
+		Description: Long-range rocket artillery.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Valued:
-		Cost: 1100
+		Cost: 900
 	Tooltip:
-		Name: Ore Truck
-		GenericName: Harvester
-	Selectable:
-		Priority: 7
-		DecorationBounds: 42,42
-	SelectionDecorations:
-	Harvester:
-		Capacity: 20
-		Resources: Ore,Gems
-		BaleUnloadDelay: 1
-		SearchFromProcRadius: 30
-		SearchFromOrderRadius: 10
+		Name: V2 Rocket Launcher
 	Health:
-		HP: 600
-	Armor:
-		Type: Heavy
-	Mobile:
-		Speed: 85
-		Locomotor: heavywheeled
-	RevealsShroud:
-		Range: 6c0
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 4c0
-	RevealOnDeath:
-		Duration: 80
-		Radius: 2c512
-	WithHarvestAnimation:
-		PrefixByFullness: empty-, half-, full-
-	WithDockingAnimation:
-	GpsDot:
-		String: Harvester
-	SpawnActorOnDeath:
-		Actor: HARV.EmptyHusk
-		OwnerType: InternalName
-		EffectiveOwnerFromOwner: true
-	HarvesterHuskModifier:
-		FullHuskActor: HARV.FullHusk
-		FullnessThreshold: 50
-	SelfHealing:
-		Step: 1
-		Delay: 25
-		HealIfBelow: 50
-		DamageCooldown: 500
-	Explodes:
-		Weapon: OreExplosion
-
-MCV:
-	Inherits: ^Vehicle
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 50
-		Prerequisites: fix, ~techlevel.medium
-		BuildDurationModifier: 50
-		Description: Deploys into another Construction Yard.\n  Unarmed
-	Valued:
-		Cost: 2000
-	Tooltip:
-		Name: Mobile Construction Vehicle
-	Selectable:
-		Priority: 6
-		DecorationBounds: 42,42
-	SelectionDecorations:
-	Health:
-		HP: 600
+		HP: 200
 	Armor:
 		Type: Light
 	Mobile:
-		Speed: 71
-		Locomotor: heavywheeled
+		Speed: 85
 	RevealsShroud:
-		Range: 6c0
+		Range: 5c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 4c0
-	RevealOnDeath:
-		Duration: 80
-		Radius: 2c512
-	Transforms:
-		IntoActor: fact
-		Offset: -1,-1
-		Facing: 96
-		TransformSounds: placbldg.aud, build5.aud
-		NoTransformNotification: BuildingCannotPlaceAudio
-	MustBeDestroyed:
-		RequiredForShortGame: true
-	BaseBuilding:
-	SpawnActorOnDeath:
-		Actor: MCV.Husk
-		OwnerType: InternalName
-		EffectiveOwnerFromOwner: true
+	Armament:
+		Weapon: SCUD
+		ReloadingCondition: reloading
+	AutoTarget:
+		ScanRadius: 12
+	AttackFrontal:
+	WithFacingSpriteBody:
+		RequiresCondition: !reloading
+		Name: loaded
+	WithFacingSpriteBody@EMPTY:
+		RequiresCondition: reloading
+		Sequence: empty-idle
+		Name: reloading
+	SelectionDecorations:
+	Explodes:
+		Weapon: V2Explode
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded
+	Selectable:
+		DecorationBounds: 28,28
 
 # Jeep IFV traits using custom yaml code by Grayon Dilach
 JEEP:
@@ -637,6 +667,55 @@ JEEP:
 		InvalidTargets: NoAutoTarget
 		RequiresCondition: ifv-mechanic
 
+FTRK:
+	Inherits: ^Vehicle
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@AUTOTARGET: ^AutoTargetAll
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 40
+		Prerequisites: ~vehicles.soviet, ~techlevel.low
+		Description: Mobile unit with mounted Flak cannon.\n  Strong vs Infantry, Light armor, Aircraft\n  Weak vs Tanks
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Flack Track
+	Health:
+		HP: 150
+	Armor:
+		Type: Light
+	Mobile:
+		TurnSpeed: 10
+		Speed: 128
+	RevealsShroud:
+		Range: 7c256
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 4c0
+	Turreted:
+		TurnSpeed: 10
+		Offset: -298,0,298
+	Armament@AA:
+		Weapon: FLAK-23-AA
+		Recoil: 85
+		LocalOffset: 512,0,192
+		MuzzleSequence: muzzle
+	Armament@AG:
+		Weapon: FLAK-23-AG
+		Recoil: 85
+		LocalOffset: 512,0,192
+		MuzzleSequence: muzzle
+	DetectCloaked:
+		Range: 1c512
+	AttackTurreted:
+	WithMuzzleOverlay:
+	WithSpriteTurret:
+	SelectionDecorations:
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded
+	Selectable:
+		DecorationBounds: 28,28
+
 APC:
 	Inherits: ^TrackedVehicle
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
@@ -717,36 +796,6 @@ MNLY:
 	RenderSprites:
 		Image: MNLY
 
-TRUK:
-	Inherits: ^Vehicle
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 90
-		Prerequisites: ~techlevel.low
-		Description: Transports cash to other players.\n  Unarmed
-	Valued:
-		Cost: 500
-	Tooltip:
-		Name: Supply Truck
-	Selectable:
-		Priority: 4
-	Health:
-		HP: 110
-	Armor:
-		Type: Light
-	Mobile:
-		Speed: 128
-	RevealsShroud:
-		Range: 5c0
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 4c0
-	DeliversCash:
-		Payload: 500
-		PlayerExperience: 50
-	SpawnActorOnDeath:
-		Actor: moneycrate
-
 MGG:
 	Inherits: ^Vehicle
 	Buildable:
@@ -823,128 +872,6 @@ MRJ:
 	DetectCloaked:
 		Range: 6c0
 
-TTNK:
-	Inherits: ^TrackedVehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
-	Inherits@AUTOTARGET: ^AutoTargetGround
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 200
-		Prerequisites: tsla, stek, ~vehicles.russia, ~techlevel.high
-		BuildDurationModifier: 50
-		Description: Tank with mounted Tesla coil.\n  Strong vs Infantry, Vehicles, Buildings\n  Weak vs Aircraft
-	Valued:
-		Cost: 1350
-	Tooltip:
-		Name: Tesla Tank
-		GenericName: Tank
-	Health:
-		HP: 450
-	Armor:
-		Type: Light
-	Mobile:
-		Speed: 113
-	RevealsShroud:
-		Range: 9c256
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 4c0
-	Armament:
-		Weapon: TTankZap
-		LocalOffset: 0,0,213
-	DetectCloaked:
-		Range: 1c512
-	AttackTurreted:
-	Turreted:
-	WithIdleOverlay@SPINNER:
-		Sequence: spinner
-	SelectionDecorations:
-	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
-	Selectable:
-		DecorationBounds: 30,30
-
-FTRK:
-	Inherits: ^Vehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
-	Inherits@AUTOTARGET: ^AutoTargetAll
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 40
-		Prerequisites: ~vehicles.soviet, ~techlevel.low
-		Description: Mobile unit with mounted Flak cannon.\n  Strong vs Infantry, Light armor, Aircraft\n  Weak vs Tanks
-	Valued:
-		Cost: 600
-	Tooltip:
-		Name: Flack Track
-	Health:
-		HP: 150
-	Armor:
-		Type: Light
-	Mobile:
-		TurnSpeed: 10
-		Speed: 128
-	RevealsShroud:
-		Range: 7c256
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 4c0
-	Turreted:
-		TurnSpeed: 10
-		Offset: -298,0,298
-	Armament@AA:
-		Weapon: FLAK-23-AA
-		Recoil: 85
-		LocalOffset: 512,0,192
-		MuzzleSequence: muzzle
-	Armament@AG:
-		Weapon: FLAK-23-AG
-		Recoil: 85
-		LocalOffset: 512,0,192
-		MuzzleSequence: muzzle
-	DetectCloaked:
-		Range: 1c512
-	AttackTurreted:
-	WithMuzzleOverlay:
-	WithSpriteTurret:
-	SelectionDecorations:
-	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
-	Selectable:
-		DecorationBounds: 28,28
-
-DTRK:
-	Inherits: ^Vehicle
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 200
-		Prerequisites: stek, ~vehicles.ukraine, ~techlevel.high
-		Description: Truck with actively armed nuclear\nexplosives. Has very weak armor.
-	Valued:
-		Cost: 2500
-	Tooltip:
-		Name: Demolition Truck
-	Health:
-		HP: 50
-	Armor:
-		Type: Light
-	Mobile:
-		Speed: 85
-	RevealsShroud:
-		Range: 5c0
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 4c0
-	Explodes:
-		Weapon: MiniNuke
-		EmptyWeapon: MiniNuke
-	AttackSuicides:
-	-DamageMultiplier@IRONCURTAIN:
-	KillsSelf:
-		RequiresCondition: invulnerability
-	Chronoshiftable:
-		ExplodeInstead: yes
-
 CTNK:
 	Inherits: ^Vehicle
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
@@ -991,44 +918,6 @@ CTNK:
 		Prerequisites: vehicles.upgraded
 	Selectable:
 		DecorationBounds: 30,30
-
-QTNK:
-	Inherits: ^TrackedVehicle
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 170
-		BuildDurationModifier: 50
-		Prerequisites: fix, stek, ~vehicles.soviet, ~techlevel.high
-		Description: Deals seismic damage to nearby vehicles\nand structures.\n  Strong vs Vehicles, Buildings\n  Weak vs Infantry, Aircraft
-	Valued:
-		Cost: 2200
-	Tooltip:
-		Name: MAD Tank
-		GenericName: Tank
-	Health:
-		HP: 800
-	Armor:
-		Type: Heavy
-	Mobile:
-		RequiresCondition: !deployed
-		Speed: 56
-	Chronoshiftable:
-		RequiresCondition: !deployed
-	RevealsShroud:
-		Range: 9c256
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 4c0
-	SelectionDecorations:
-	MadTank:
-		DeployedCondition: deployed
-		ChargeDelay: 192
-	KillsSelf:
-		RequiresCondition: invulnerability
-	Targetable:
-		TargetTypes: Ground, MADTank, Repair, Vehicle
-	Selectable:
-		DecorationBounds: 44,38,0,-4
 
 STNK:
 	Inherits: ^Vehicle
@@ -1087,3 +976,114 @@ STNK:
 	-MustBeDestroyed:
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
+
+TTNK:
+	Inherits: ^TrackedVehicle
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 200
+		Prerequisites: tsla, stek, ~vehicles.russia, ~techlevel.high
+		BuildDurationModifier: 50
+		Description: Tank with mounted Tesla coil.\n  Strong vs Infantry, Vehicles, Buildings\n  Weak vs Aircraft
+	Valued:
+		Cost: 1350
+	Tooltip:
+		Name: Tesla Tank
+		GenericName: Tank
+	Health:
+		HP: 450
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 113
+	RevealsShroud:
+		Range: 9c256
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 4c0
+	Armament:
+		Weapon: TTankZap
+		LocalOffset: 0,0,213
+	DetectCloaked:
+		Range: 1c512
+	AttackTurreted:
+	Turreted:
+	WithIdleOverlay@SPINNER:
+		Sequence: spinner
+	SelectionDecorations:
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded
+	Selectable:
+		DecorationBounds: 30,30
+
+QTNK:
+	Inherits: ^TrackedVehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 170
+		BuildDurationModifier: 50
+		Prerequisites: fix, stek, ~vehicles.soviet, ~techlevel.high
+		Description: Deals seismic damage to nearby vehicles\nand structures.\n  Strong vs Vehicles, Buildings\n  Weak vs Infantry, Aircraft
+	Valued:
+		Cost: 2200
+	Tooltip:
+		Name: MAD Tank
+		GenericName: Tank
+	Health:
+		HP: 800
+	Armor:
+		Type: Heavy
+	Mobile:
+		RequiresCondition: !deployed
+		Speed: 56
+	Chronoshiftable:
+		RequiresCondition: !deployed
+	RevealsShroud:
+		Range: 9c256
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 4c0
+	SelectionDecorations:
+	MadTank:
+		DeployedCondition: deployed
+		ChargeDelay: 192
+	KillsSelf:
+		RequiresCondition: invulnerability
+	Targetable:
+		TargetTypes: Ground, MADTank, Repair, Vehicle
+	Selectable:
+		DecorationBounds: 44,38,0,-4
+
+DTRK:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 200
+		Prerequisites: stek, ~vehicles.ukraine, ~techlevel.high
+		Description: Truck with actively armed nuclear\nexplosives. Has very weak armor.
+	Valued:
+		Cost: 2500
+	Tooltip:
+		Name: Demolition Truck
+	Health:
+		HP: 50
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 85
+	RevealsShroud:
+		Range: 5c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 4c0
+	Explodes:
+		Weapon: MiniNuke
+		EmptyWeapon: MiniNuke
+	AttackSuicides:
+	-DamageMultiplier@IRONCURTAIN:
+	KillsSelf:
+		RequiresCondition: invulnerability
+	Chronoshiftable:
+		ExplodeInstead: yes
