@@ -463,6 +463,8 @@ HELI.Hard:
 	Aircraft:
 		RearmBuildings: hpad.hard
 		RepairBuildings: hpad.hard
+	AutoTargetPriority:
+		InvalidTargets: ^infantry
 	RenderSprites:
 		Image: heli
 HIND.Hard:
@@ -487,6 +489,8 @@ MIG.Hard:
 	Aircraft:
 		RearmBuildings: afld.hard, afld.ukraine.hard
 		RepairBuildings: afld.hard, afld.ukraine.hard
+	AutoTargetPriority:
+		InvalidTargets: ^infantry
 	RenderSprites:
 		Image: mig
 YAK.Hard:
@@ -631,6 +635,7 @@ E2.Hard.Player:
 		BuildPaletteOrder: 8000
 		Prerequisites: ~barr.hard
 		Description: Cloaked grenadiers.\nAquired extra vision.
+	-MustBeDestroyed:
 	RevealsShroud:
 		Range: 8c0
 	Cloak:
@@ -688,6 +693,7 @@ SPY.England.Hard.Player:
 		BuildPaletteOrder: 8000
 		Prerequisites: ~barr.hard, ~dome.hard
 		Description: Unique spy agent.\nAquired cloak.
+	-MustBeDestroyed:
 	DisguiseTooltip:
 		Name: Special Agent
 	Health:

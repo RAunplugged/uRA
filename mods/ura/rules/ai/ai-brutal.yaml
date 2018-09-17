@@ -445,6 +445,8 @@ HELI.Brutal:
 	Aircraft:
 		RearmBuildings: hpad.brutal
 		RepairBuildings: hpad.brutal
+	AutoTargetPriority:
+		InvalidTargets: ^infantry
 	RenderSprites:
 		Image: heli
 HIND.Brutal:
@@ -469,6 +471,8 @@ MIG.Brutal:
 	Aircraft:
 		RearmBuildings: afld.brutal, afld.ukraine.brutal
 		RepairBuildings: afld.brutal, afld.ukraine.brutal
+	AutoTargetPriority:
+		InvalidTargets: ^infantry
 	RenderSprites:
 		Image: mig
 YAK.Brutal:
@@ -641,6 +645,7 @@ SPY.England.Brutal.Player:
 		Prerequisites: ~barr.brutal, ~dome.brutal, ~atek.brutal
 		Description: Exceptional spy agent.\nAquired license to kill.
 		BuildLimit: 1
+	-MustBeDestroyed:
 	DisguiseTooltip:
 		Name: Agent 007
 	Health:
