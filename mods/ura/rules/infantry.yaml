@@ -470,6 +470,7 @@ MECH:
 		StandSequences: stand
 	Voiced:
 		VoiceSet: MechanicVoice
+
 HIJACKER:
 	Inherits: ^Soldier
 	Tooltip:
@@ -486,6 +487,7 @@ HIJACKER:
 		BuildPaletteOrder: 110
 		Prerequisites: ~barr, fix, ~techlevel.medium
 		Description: Hijacks enemy vehicles.\n  Unarmed
+	-MustBeDestroyed:
 	RevealsShroud:
 		Range: 6c0
 	Cloak:
@@ -495,6 +497,9 @@ HIJACKER:
 		CloakTypes: Cloak, Hijacker
 		IsPlayerPalette: true
 		RequiresCondition: !cloak-force-disabled
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: cloak-force-disabled
+		ValidDamageStates: Critical
 	Captures:
 		CaptureTypes: vehicle
 		PlayerExperience: 50
@@ -508,9 +513,6 @@ HIJACKER:
 	WithInfantryBody:
 		IdleSequences: idle
 		StandSequences: stand
-	GrantConditionOnDamageState@UNCLOAK:
-		Condition: cloak-force-disabled
-		ValidDamageStates: Critical
 
 SHOK:
 	Inherits: ^Soldier
@@ -537,13 +539,13 @@ SHOK:
 	Armament@GARRISONED:
 		Name: garrisoned
 		Weapon: PortaTesla
+	Passenger:
+		Voice: Move
 	AttackMove:
 		Voice: Move
 	AttackFrontal:
 		Voice: Attack
 	Guard:
-		Voice: Move
-	Passenger:
 		Voice: Move
 	TakeCover:
 		ProneOffset: 227,0,-245
@@ -574,6 +576,7 @@ SNIPER:
 		BuildPaletteOrder: 80
 		Prerequisites: ~disabled
 		Description: Elite sniper infantry unit.\nCan detect cloaked units.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	-MustBeDestroyed:
 	RevealsShroud:
 		Range: 9c256
 	Armament@PRIMARY:
@@ -590,6 +593,9 @@ SNIPER:
 		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
 		IsPlayerPalette: true
 		RequiresCondition: !cloak-force-disabled
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: cloak-force-disabled
+		ValidDamageStates: Critical
 	DetectCloaked:
 		CloakTypes: Cloak, Hijacker
 		Range: 6c0
@@ -607,9 +613,6 @@ SNIPER:
 	WithInfantryBody@PARACHUTE:
 		StandSequences: parachute
 		RequiresCondition: parachute
-	GrantConditionOnDamageState@UNCLOAK:
-		Condition: cloak-force-disabled
-		ValidDamageStates: Critical
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
 		InitialLevels: 1
