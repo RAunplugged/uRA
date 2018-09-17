@@ -338,13 +338,13 @@
 		RequiresCondition: parachute
 	Huntable:
 	Crushable:
+		CrushSound: squishy2.aud
 	Selectable:
 		Bounds: 18,20,0,-6
 		DecorationBounds: 12,18,0,-8
 	Targetable:
 		TargetTypes: Ground, Infantry, Disguise
 		RequiresCondition: !parachute
-		CrushSound: squishy2.aud
 	DrawLineToTarget:
 	Guardable:
 	OwnerLostAction:
