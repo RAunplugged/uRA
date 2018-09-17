@@ -3,10 +3,13 @@ Completed:
 - campaign-tooltips.yaml
 - civilian.yaml
 - decoration.yaml
+- defaults.yaml
+- fakes.yaml
 
 Excluded:
 - campaign-palettes.yaml
 - campaign-rules.yaml
+- disable-player-experience
 
 Sorting standards: aircraft.yaml
 
@@ -25,6 +28,7 @@ Tooltip
 Valued
 Health
 Buildable
+GivesExperience
 Aircraft
 Armament
 AmmoPool
@@ -35,7 +39,6 @@ AutoTarget
 ParaDrop
 Cargo
 RevealsShroud
-GivesExperience *uncertain
 ReturnOnIdle
 RejectOrders
 Interactable
@@ -52,35 +55,115 @@ SpawnActorOnDeath
 ProducibleWithLevel
 RenderSprites
 
-Sorting standards: civilian.yaml, decorations.yaml
+Sorting standards: civilian.yaml, decorations.yaml,
+defaults.yaml
 
+decorations.yaml
 # Infantry
 # Neutral structures | Capturable
 # Decoration structures
 # Decoration structures (desert)
 # Interactive decoration structures
 
+defaults.yaml
+# Shapes
+# Generic
+# Targeting
+# Infantry
+# Vehicles
+# Aircraft
+# Ships
+# Structures
+# Decorative
+# Husks
+
 Inherits
 Tooltip
 TooltipDescription
+Valued
 Health
 Armor
+Mobile
+Immobile
+Buildable
+GivesExperience
+UpdatesPlayerStatistics
+MustBeDestroyed
+ProximityCaptor
+TakeCover
+Aircraft
+FallsToEarth
+Armament
+AmmoPool
+Cloak
+DetectCloaked
+AutoTarget
+AttackFrontal
+AttackMove
+Guard
+Hovers
+AttackBomber
+AttackHeli
+AttackPlane
+ParaDrop
+EjectOnDeath
+Cargo
 Power
+RevealOnDeath
+ScaredyCat
+Wanders
+Building
+WithBuildingBib
+Crate
+Mine
+Husk
+Burns
+WithCrateBody
 GivesBuildableArea
+RequiresBuilableArea
+RepairableBuilding
+EngineerRepairable
+ExternalCapturable
+ExternalCapturableBar
+AcceptsDeliveredCash
+Sellable
+SpawnActorsOnSell
 BaseProvider
+LineBuild
+LineBuildNode
+RenderRangeCircle
 CashTrickler
 FreeActor
 Bridge
-Building
+Passenger
+SelfHealing
 LegacyBridgeHut
 HitShape
-WithBuildingBib
 RevealsShroud
 GpsDot
+AlwaysVisible
+AppearsOnRadar
+HiddenUnderFog		??? Trees?
+FrozenUnderFog
+FrozenUnderFogUpdatedByGps
+RadarColorFromTerrain
+Cloneable
+Parachuteable
+WithParachute
 Interactable
+Huntable
+Crushable
 Selectable
+Repairable
+RepairableNear
 Targetable
-Demolishable
+Guardable	??? ^wall - remove?
+DrawLineToTarget
+Chronoshiftable
+Capturable
+CaptureNotification
+TransformOnCapture
+Demolishable ??? ships - enable for tanya?
 Explodes
 ShakeOnDeath
 SoundOnDamageTransition
@@ -91,11 +174,27 @@ EngineerRepairable
 OwnerLostAction
 WithDeathAnimation
 Voiced
+DeathSounds
+ActorLostNotification
 WithIdleOverlay
+WithDamageOverlay
 SpawnActorOnDeath
-WithSpriteBody:
+QuantizeFacingsFromSequence
 RenderSprites
+WithInfantryBody
+WithSpriteBody
+WithWallSpriteBody
+WithFacingSpriteBody
+WithShadow
+WithColoredOverlay
+BodyOrientation
+WithSpriteControlGroupDecoration
+WithBuildingRepairDecoration
+WithMakeAnimation
 ProvidesPrerequisite
+CommandBarBlacklist
+ConditionManager
+ScriptTriggers
 EditorTilesetFilter
 
 Sorting standards: defaults.yaml
