@@ -1,19 +1,9 @@
-MINV:
-	Inherits: ^Mine
-	RenderSprites:
-		Image: minv
-		FactionImages:
-			soviet: minp
-			russia: minp
-			ukraine: minp
-	Explodes:
-		Weapon: ATMine
+# Categories
 
-# Only kept for backwards-compatibility with existing and imported maps, use MINV instead
-MINP:
-	Inherits: MINV
-	Explodes:
-		Weapon: APMine
+# - Crates
+# - Support powers and events
+# - Misc actors
+# - Misc
 
 CRATE:
 	Inherits: ^Crate
@@ -148,161 +138,48 @@ SCRATE:
 	Tooltip:
 		Name: Steel Crate
 
+# Support Powers and events
+
 CAMERA:
 	Interactable:
-	EditorOnlyTooltip:
-		Name: (reveals area to owner)
-	AlwaysVisible:
 	Immobile:
 		OccupiesSpace: false
 	RevealsShroud:
 		Range: 12c256
 		Type: GroundPosition
+	AlwaysVisible:
 	BodyOrientation:
 		QuantizedFacings: 1
 	WithSpriteBody:
 	RenderSpritesEditorOnly:
 		Image: camera
+	EditorOnlyTooltip:
+		Name: (reveals area to owner)
 	EditorTilesetFilter:
 		Categories: System
 
 camera.paradrop:
 	Inherits: CAMERA
-	EditorOnlyTooltip:
-		Name: (support power proxy camera)
 	RevealsShroud:
 		Range: 8c0
+	EditorOnlyTooltip:
+		Name: (support power proxy camera)
 
 camera.spyplane:
 	Inherits: CAMERA
-	EditorOnlyTooltip:
-		Name: (support power proxy camera)
 	DetectCloaked:
 		Range: 12c256
 		CloakTypes: Cloak, Hijacker
+	EditorOnlyTooltip:
+		Name: (support power proxy camera)
 
 SONAR:
 	Inherits: camera.spyplane
-	EditorOnlyTooltip:
-		Name: (support power proxy camera)
 	-RevealsShroud:
 	DetectCloaked:
 		CloakTypes: Underwater
-
-FLARE:
-	Immobile:
-		OccupiesSpace: false
-	RevealsShroud:
-		Range: 4c0
-		Type: CenterPosition
-	RenderSprites:
-		Image: smokland
-	WithSpriteBody:
-		StartSequence: open
-	BodyOrientation:
-		QuantizedFacings: 1
-	HiddenUnderFog:
-		Type: CenterPosition
-	Interactable:
-	Tooltip:
-		Name: Flare
-		ShowOwnerRow: false
-	EditorTilesetFilter:
-		Categories: Decoration
-
-MINE:
-	Inherits@1: ^SpriteActor
-	Interactable:
-	HiddenUnderShroud:
-	Tooltip:
-		Name: Ore Mine
-	RenderSprites:
-		Palette: terrain
-	WithSpriteBody:
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-	AppearsOnRadar:
-	RadarColorFromTerrain:
-		Terrain: Ore
-	SeedsResource:
-	EditorTilesetFilter:
-		Categories: Resource spawn
-
-GMINE:
-	Inherits@1: ^SpriteActor
-	Interactable:
-	HiddenUnderShroud:
-	Tooltip:
-		Name: Gem Mine
-	RenderSprites:
-		Palette: player
-	WithSpriteBody:
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-	AppearsOnRadar:
-	RadarColorFromTerrain:
-		Terrain: Gems
-	SeedsResource:
-		ResourceType: Gems
-	EditorTilesetFilter:
-		Categories: Resource spawn
-
-RAILMINE:
-	Inherits@1: ^SpriteActor
-	Interactable:
-	HiddenUnderShroud:
-	Tooltip:
-		Name: Abandoned Mine
-	RenderSprites:
-		Palette: player
-	WithSpriteBody:
-	Building:
-		Footprint: xx
-		Dimensions: 2,1
-	EditorTilesetFilter:
-		ExcludeTilesets: INTERIOR
-		Categories: Civilian building
-
-QUEE:
-	Inherits@1: ^SpriteActor
-	Inherits@shape: ^2x1Shape
-	Interactable:
-	HiddenUnderShroud:
-	Tooltip:
-		Name: Queen Ant
-	Building:
-		Footprint: xx
-		Dimensions: 2,1
-	WithSpriteBody:
-	AppearsOnRadar:
-	EditorTilesetFilter:
-		RequireTilesets: INTERIOR
-		Categories: Critter
-
-LAR1:
-	Inherits@1: ^SpriteActor
-	Inherits@shape: ^1x1Shape
-	Interactable:
-	HiddenUnderShroud:
-	Tooltip:
-		Name: Ant Larva
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-	RenderSprites:
-		Palette: terrain
-	WithSpriteBody:
-	AppearsOnRadar:
-	EditorTilesetFilter:
-		RequireTilesets: INTERIOR
-		Categories: Critter
-
-LAR2:
-	Inherits@1: LAR1
-	Tooltip:
-		Name: Ant Larvae
+	EditorOnlyTooltip:
+		Name: (support power proxy camera)
 
 powerproxy.parabombs:
 	AlwaysVisible:
@@ -355,6 +232,189 @@ powerproxy.paratroopers:
 		ClockSequence: clock
 		CircleSequence: circles
 
+# Misc actors
+
+mpspawn:
+	Interactable:
+	EditorOnlyTooltip:
+		Name: (multiplayer player starting point)
+	Immobile:
+		OccupiesSpace: false
+	AlwaysVisible:
+	WithSpriteBody:
+	BodyOrientation:
+		QuantizedFacings: 1
+	RenderSpritesEditorOnly:
+	EditorTilesetFilter:
+		Categories: System
+
+waypoint:
+	Interactable:
+	EditorOnlyTooltip:
+		Name: (waypoint for scripted behavior)
+	Immobile:
+		OccupiesSpace: false
+	AlwaysVisible:
+	WithSpriteBody:
+	BodyOrientation:
+		QuantizedFacings: 1
+	RenderSpritesEditorOnly:
+	EditorTilesetFilter:
+		Categories: System
+
+CTFLAG:
+	Inherits: ^TechBuilding
+	Tooltip:
+		Name: Flag
+	-Health:
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	WithBuildingBib:
+		HasMinibib: Yes
+	-HitShape:
+	Interactable:
+	-Selectable:
+	-Targetable:
+	-Explodes:
+	-SelectionDecorations:
+	EditorTilesetFilter:
+		Categories: Decoration
+
+FLARE:
+	Immobile:
+		OccupiesSpace: false
+	Tooltip:
+		Name: Flare
+		ShowOwnerRow: false
+	RevealsShroud:
+		Range: 4c0
+		Type: CenterPosition
+	HiddenUnderFog:
+		Type: CenterPosition
+	Interactable:
+	RenderSprites:
+		Image: smokland
+	BodyOrientation:
+		QuantizedFacings: 1
+	WithSpriteBody:
+		StartSequence: open
+	EditorTilesetFilter:
+		Categories: Decoration
+
+MINE:
+	Inherits@1: ^SpriteActor
+	Tooltip:
+		Name: Ore Mine
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	HiddenUnderShroud:
+	AppearsOnRadar:
+	RadarColorFromTerrain:
+		Terrain: Ore
+	Interactable:
+	RenderSprites:
+		Palette: terrain
+	WithSpriteBody:
+	SeedsResource:
+	EditorTilesetFilter:
+		Categories: Resource spawn
+
+GMINE:
+	Inherits@1: ^SpriteActor
+	Tooltip:
+		Name: Gem Mine
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	HiddenUnderShroud:
+	AppearsOnRadar:
+	RadarColorFromTerrain:
+		Terrain: Gems
+	Interactable:
+	RenderSprites:
+		Palette: player
+	WithSpriteBody:
+	SeedsResource:
+		ResourceType: Gems
+	EditorTilesetFilter:
+		Categories: Resource spawn
+
+RAILMINE:
+	Inherits@1: ^SpriteActor
+	Tooltip:
+		Name: Abandoned Mine
+	Building:
+		Footprint: xx
+		Dimensions: 2,1
+	HiddenUnderShroud:
+	Interactable:
+	RenderSprites:
+		Palette: player
+	WithSpriteBody:
+	EditorTilesetFilter:
+		ExcludeTilesets: INTERIOR
+		Categories: Civilian building
+
+QUEE:
+	Inherits@1: ^SpriteActor
+	Inherits@shape: ^2x1Shape
+	Tooltip:
+		Name: Queen Ant
+	Building:
+		Footprint: xx
+		Dimensions: 2,1
+	HiddenUnderShroud:
+	AppearsOnRadar:
+	Interactable:
+	WithSpriteBody:
+	EditorTilesetFilter:
+		RequireTilesets: INTERIOR
+		Categories: Critter
+
+LAR1:
+	Inherits@1: ^SpriteActor
+	Inherits@shape: ^1x1Shape
+	Tooltip:
+		Name: Ant Larva
+	Building:
+		Footprint: x
+		Dimensions: 1,1
+	HiddenUnderShroud:
+	AppearsOnRadar:
+	Interactable:
+	RenderSprites:
+		Palette: terrain
+	WithSpriteBody:
+	EditorTilesetFilter:
+		RequireTilesets: INTERIOR
+		Categories: Critter
+
+LAR2:
+	Inherits@1: LAR1
+	Tooltip:
+		Name: Ant Larvae
+
+MINV:
+	Inherits: ^Mine
+	Explodes:
+		Weapon: ATMine
+	RenderSprites:
+		Image: minv
+		FactionImages:
+			soviet: minp
+			russia: minp
+			ukraine: minp
+
+# Only kept for backwards-compatibility with existing and imported maps, use MINV instead
+MINP:
+	Inherits: MINV
+	Explodes:
+		Weapon: APMine
+
+# Misc
+
 barracks.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
@@ -367,57 +427,10 @@ aircraft.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 
-mpspawn:
-	Interactable:
-	EditorOnlyTooltip:
-		Name: (multiplayer player starting point)
-	AlwaysVisible:
-	Immobile:
-		OccupiesSpace: false
-	WithSpriteBody:
-	RenderSpritesEditorOnly:
-	BodyOrientation:
-		QuantizedFacings: 1
-	EditorTilesetFilter:
-		Categories: System
-
-waypoint:
-	Interactable:
-	EditorOnlyTooltip:
-		Name: (waypoint for scripted behavior)
-	AlwaysVisible:
-	Immobile:
-		OccupiesSpace: false
-	WithSpriteBody:
-	RenderSpritesEditorOnly:
-	BodyOrientation:
-		QuantizedFacings: 1
-	EditorTilesetFilter:
-		Categories: System
-
 fact.colorpicker:
 	Inherits: FACT
 	-Buildable:
-	-EditorTilesetFilter:
 	RenderSprites:
 		Image: fact
 		Palette: colorpicker
-
-CTFLAG:
-	Inherits: ^TechBuilding
-	Building:
-		Footprint: x
-		Dimensions: 1,1
-	Tooltip:
-		Name: Flag
-	WithBuildingBib:
-		HasMinibib: Yes
-	-HitShape:
-	-Health:
-	-Explodes:
-	-Selectable:
-	-SelectionDecorations:
-	-Targetable:
-	EditorTilesetFilter:
-		Categories: Decoration
-	Interactable:
+	-EditorTilesetFilter:

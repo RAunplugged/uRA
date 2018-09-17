@@ -32,7 +32,6 @@ FPWR:
 	RenderSprites:
 		Image: POWR
 
-
 TENF:
 	Inherits: ^FakeBuilding
 	Inherits@infiltrate: ^InfiltratableFake
@@ -66,7 +65,6 @@ TENF:
 		Bounds: 48,48
 	RenderSprites:
 		Image: TENT
-
 
 SYRF:
 	Inherits: ^FakeBuilding

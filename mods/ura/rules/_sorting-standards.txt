@@ -5,6 +5,7 @@ Completed:
 - decoration.yaml
 - defaults.yaml
 - fakes.yaml
+- infantry.yaml
 
 Excluded:
 - campaign-palettes.yaml
@@ -14,54 +15,66 @@ Excluded:
 
 - - - - - - - - - - - - - - - -
 
-Sorting range: aircraft.yaml
-
-- TRAN (Chinook)
-- Hind 
-- Heli (Longbow)
-- Yak
-- MiG
-- Badger
-- Badger.Bomber
-- U2
+Sorting range: aircraft.yaml, infantry.yaml
 
 Inherits
 Inherits@AUTOTARGET
 Tooltip
+DisguisedTooltip
 Valued
 Health
-Buildable
+Mobile
 GivesExperience
+Buildable
 Aircraft
-Armament
+RevealsShroud	??? RevealsShroud GapGen for infantry?
+Armament	!!! remove PRIMARY with TRAN!
 AmmoPool
 AttackBomber
 AttackHeli
 AttackPlane
-AutoTarget
+Infiltrates
+Cloak
+DetectCloaked
+Disguise
+IgnoresDisguise
+Captures
+Crushable
+Demolition
 ParaDrop
 Cargo
-RevealsShroud
-ReturnOnIdle
+Passenger
+EngineerRepair
+RepairsBridges
+ExternalCaptures
+AutoTarget
+AttackMove
+AttackLeap
+AttackFrontal
+Guard
+TakeCover
+SelectionDecorations
+ReturnOnIdle !!! Broken IFlyOnIdle.cs!
 RejectOrders
 Interactable
 Selectable
 Targetable
-SelectDecorations
+Voiced
+RenderSprites
+GrantCondition
 WithIdleOverlay
 WithMuzzleOverlay
+WithInfantryBody
+WithDecoration
 Contrail
 SmokeTrailWhenDamaged
-Voiced
-EjectOnDeath
-SpawnActorOnDeath
+
 ProducibleWithLevel
-RenderSprites
 
 - - - - - - - - - - - - - - - -
 
 Sorting range: civilian.yaml, decorations.yaml,
-defaults.yaml, fakes.yaml
+defaults.yaml, fakes.yaml, misc.yaml
 
 decorations.yaml
 # Infantry
@@ -95,7 +108,6 @@ GivesExperience
 UpdatesPlayerStatistics
 MustBeDestroyed
 ProximityCaptor
-TakeCover
 Aircraft
 FallsToEarth
 Armament
@@ -106,6 +118,7 @@ AutoTarget
 AttackFrontal
 AttackMove
 Guard
+TakeCover
 Hovers
 AttackBomber
 AttackHeli
@@ -172,9 +185,6 @@ TransformOnCapture
 Demolishable ??? ships - enable for tanya?
 Explodes
 ShakeOnDeath
-ExternalCapturable
-ExternalCapturableBar
-EngineerRepairable
 OwnerLostAction
 Voiced
 DeathSounds
@@ -200,29 +210,3 @@ CommandBarBlacklist
 ConditionManager
 ScriptTriggers
 EditorTilesetFilter
-
-- - - - - - - - - - - - - - - -
-
-Sorting range: infantry.yaml
-
-Inherits
-Tooltips
-Valued
-Health
-Mobile
-Buildable
-Armament
-AmmoPool
-Cloak
-DetectCloaked
-IgnoresDisguise
-AutoTarget
-AttackMove
-AttackLeap
-RevealsShroud
-Passenger
-Guard
-Selectable
-Targetable
-SelectionDecorations
-WithInfantryBody

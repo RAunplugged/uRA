@@ -32,6 +32,13 @@ TRAN:
 		Speed: 136
 		LandableTerrainTypes: Clear,Rough,Road,Ore,Beach,Gems
 		AltitudeVelocity: 0c58
+	RevealsShroud:
+		Range: 10c0
+		Type: GroundPosition
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 8c0
+		Type: GroundPosition
 	Armament@PRIMARY:
 		Weapon: Hover
 	AmmoPool:
@@ -46,13 +53,6 @@ TRAN:
 		MaxWeight: 8
 		PipCount: 8
 	SelectionDecorations:
-	RevealsShroud:
-		Range: 10c0
-		Type: GroundPosition
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 8c0
-		Type: GroundPosition
 	Selectable:
 		DecorationBounds: 40,36
 	WithIdleOverlay@ROTOR1AIR:
@@ -95,6 +95,13 @@ HIND:
 		InitialFacing: 224
 		TurnSpeed: 4
 		Speed: 112
+	RevealsShroud:
+		Range: 12c0
+		Type: GroundPosition
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 10c0
+		Type: GroundPosition
 	Armament@PRIMARY:
 		Weapon: ChainGun
 		LocalOffset: 85,-213,-85, 85,213,-85
@@ -117,13 +124,6 @@ HIND:
 		InitialStance: HoldFire
 		InitialStanceAI: HoldFire
 	SelectionDecorations:
-	RevealsShroud:
-		Range: 12c0
-		Type: GroundPosition
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 10c0
-		Type: GroundPosition
 	Selectable:
 		DecorationBounds: 38,32
 	WithIdleOverlay@ROTORAIR:
@@ -163,6 +163,13 @@ HELI:
 		TurnSpeed: 5
 		Speed: 160
 		IdealSeparation: 1c512
+	RevealsShroud:
+		Range: 14c0
+		Type: GroundPosition
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 12c0
+		Type: GroundPosition
 	Armament@PRIMARY:
 		Weapon: HellfireAA
 		LocalOffset: 0,-213,-85, 0,213,-85
@@ -180,13 +187,6 @@ HELI:
 		InitialStance: HoldFire
 		InitialStanceAI: HoldFire
 	SelectionDecorations:
-	RevealsShroud:
-		Range: 14c0
-		Type: GroundPosition
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 12c0
-		Type: GroundPosition
 	Selectable:
 		DecorationBounds: 36,28
 	WithIdleOverlay@ROTORAIR:
@@ -227,6 +227,13 @@ YAK:
 		Speed: 178
 		RepulsionSpeed: 40
 		MaximumPitch: 56
+	RevealsShroud:
+		Range: 13c0
+		Type: GroundPosition
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 11c0
+		Type: GroundPosition
 	Armament@PRIMARY:
 		Weapon: ChainGun.Yak
 		LocalOffset: 256,-213,0
@@ -249,13 +256,6 @@ YAK:
 		InitialStance: HoldFire
 		InitialStanceAI: HoldFire
 	SelectionDecorations:
-	RevealsShroud:
-		Range: 13c0
-		Type: GroundPosition
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 11c0
-		Type: GroundPosition
 	ReturnOnIdle:
 	Selectable:
 		DecorationBounds: 30,28,0,2
@@ -294,6 +294,13 @@ MIG:
 		Speed: 235
 		RepulsionSpeed: 40
 		MaximumPitch: 56
+	RevealsShroud:
+		Range: 15c0
+		Type: GroundPosition
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 13c0
+		Type: GroundPosition
 	Armament@PRIMARY:
 		Weapon: MaverickAG
 		LocalOffset: 0,-640,0, 0,640,0
@@ -312,13 +319,6 @@ MIG:
 		InitialStance: HoldFire
 		InitialStanceAI: HoldFire
 	SelectionDecorations:
-	RevealsShroud:
-		Range: 15c0
-		Type: GroundPosition
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 13c0
-		Type: GroundPosition
 	ReturnOnIdle:
 	Selectable:
 		Bounds: 36,28,0,2

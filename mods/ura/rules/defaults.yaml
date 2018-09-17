@@ -383,12 +383,12 @@
 	MustBeDestroyed:
 	ProximityCaptor:
 		Types: Infantry
+	DetectCloaked:
+		CloakTypes: Hijacker
 	TakeCover:
 		DamageModifiers:
 			Prone50Percent: 50
 		DamageTriggers: TriggerProne
-	DetectCloaked:
-		CloakTypes: Hijacker
 	WithInfantryBody:
 		IdleSequences: idle1,idle2
 		StandSequences: stand,stand2
