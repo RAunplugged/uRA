@@ -645,7 +645,7 @@ SPY.England.Brutal.Player:
 		Prerequisites: ~barr.brutal, ~dome.brutal, ~atek.brutal
 		Description: Exceptional spy agent.\nAquired license to kill.
 		BuildLimit: 1
-	-MustBeDestroyed:
+	# -MustBeDestroyed:
 	DisguiseTooltip:
 		Name: Agent 007
 	Health:
