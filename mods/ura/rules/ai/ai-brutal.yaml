@@ -550,7 +550,7 @@ BARR.Brutal.Extra:
 	ProvidesPrerequisite@barracks:
 		Prerequisite: barracks.brutal
 	Buildable:
-		BuildPaletteOrder: 9014
+		BuildPaletteOrder: 9200
 		Prerequisites: anypower, proc.brutal.extra2, mslo.brutal, fix.brutal, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: barr

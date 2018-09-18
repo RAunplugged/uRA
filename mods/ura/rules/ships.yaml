@@ -212,7 +212,6 @@ SS:
 		BuildPaletteOrder: 30
 		Prerequisites: ~spen, ~techlevel.low
 		Description: Submerged anti-ship unit\narmed with torpedoes.\nCan detect other submarines.\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft\n  Special Ability: Submerge
-	-MustBeDestroyed:
 	RevealsShroud:
 		Range: 10c0
 		RevealGeneratedShroud: False
@@ -234,6 +233,7 @@ SS:
 	GrantConditionOnDamageState@UNCLOAK:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
+	-MustBeDestroyed:
 	DetectCloaked:
 		CloakTypes: Underwater
 		Range: 4c0
@@ -280,7 +280,6 @@ MSUB:
 		Prerequisites: ~spen, stek, ~techlevel.high
 		BuildDurationModifier: 50
 		Description: Submerged anti-ground siege unit\nwith anti-air capabilities.\nCan detect other submarines.\n  Strong vs Buildings, Ground units, Aircraft\n  Weak vs Naval units\n  Special Ability: Submerge
-	-MustBeDestroyed:
 	RevealsShroud:
 		Range: 10c0
 		RevealGeneratedShroud: False
@@ -306,6 +305,7 @@ MSUB:
 	GrantConditionOnDamageState@UNCLOAK:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
+	-MustBeDestroyed:
 	DetectCloaked:
 		CloakTypes: Underwater
 		Range: 4c0

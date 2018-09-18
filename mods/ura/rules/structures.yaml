@@ -13,17 +13,59 @@
 
 FACT:
 	Inherits: ^Building
-	Selectable:
-		Bounds: 72,72
-	Building:
-		Footprint: xxX xxx XxX ===
-		Dimensions: 3,4
-		LocalCenterOffset: 0,-512,0
+	Tooltip:
+		Name: Construction Yard
+	Valued:
+		Cost: 2500
+	Health:
+		HP: 1500
+	Armor:
+		Type: Wood
+	Power:
+		Amount: 0
+	BaseProvider:
+		Range: 16c0
+	Production:
+		Produces: Building,Defense
+	ProductionBar@Building:
+		ProductionType: Building
+	ProductionBar@Defense:
+		ProductionType: Defense
+		Color: 8A8A8A
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 1000
 		Prerequisites: ~disabled
 		Description: Produces structures.
+	Building:
+		Footprint: xxX xxx XxX ===
+		Dimensions: 3,4
+		LocalCenterOffset: 0,-512,0
+	BaseBuilding:
+	WithBuildingBib:
+	WithBuildingPlacedAnimation:
+	Transforms:
+		IntoActor: mcv
+		Offset: 1,1
+		Facing: 96
+		RequiresCondition: factundeploy
+	HitShape:
+		TargetableOffsets: 1273,939,0, -980,-640,0, -980,640,0
+		Type: Rectangle
+			TopLeft: -1536, -1536
+			BottomRight: 1536, 1536
+	Selectable:
+		Bounds: 72,72
+	RevealsShroud:
+		Range: 6c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c0
+	SpawnActorsOnSell:
+		ActorTypes: e1,e1,e1,tecn,tecn,e6
+	WithDeathAnimation:
+		DeathSequence: dead
+		UseDeathTypeSuffix: false
 	ProvidesPrerequisite@allies:
 		Factions: allies, england, france, germany
 		Prerequisite: structures.allies
@@ -51,153 +93,77 @@ FACT:
 	ProvidesPrerequisite@ukraine:
 		Factions: ukraine
 		Prerequisite: structures.ukraine
+	ProvidesPrerequisite@buildingname:
 	BotProvidesPrerequisite@ai:
 		Prerequisite: structures.ai
-	Health:
-		HP: 1500
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 6c0
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 5c0
-	WithBuildingBib:
-	Production:
-		Produces: Building,Defense
-	Valued:
-		Cost: 2500
-	Tooltip:
-		Name: Construction Yard
-	SpawnActorsOnSell:
-		ActorTypes: e1,e1,e1,tecn,tecn,e6
-	BaseBuilding:
-	Transforms:
-		IntoActor: mcv
-		Offset: 1,1
-		Facing: 96
-		RequiresCondition: factundeploy
 	GrantConditionOnPrerequisite@GLOBALFACTUNDEPLOY:
 		Condition: factundeploy
 		Prerequisites: global-factundeploy
-	ProductionBar@Building:
-		ProductionType: Building
-	ProductionBar@Defense:
-		ProductionType: Defense
-		Color: 8A8A8A
-	BaseProvider:
-		Range: 16c0
-	WithBuildingPlacedAnimation:
-	Power:
-		Amount: 0
-	WithDeathAnimation:
-		DeathSequence: dead
-		UseDeathTypeSuffix: false
-	ProvidesPrerequisite@buildingname:
-	HitShape:
-		TargetableOffsets: 1273,939,0, -980,-640,0, -980,640,0
-		Type: Rectangle
-			TopLeft: -1536, -1536
-			BottomRight: 1536, 1536
 
 POWR:
 	Inherits: ^Building
 	Inherits@POWER_OUTAGE: ^DisabledByPowerOutage
 	Inherits@shape: ^2x2Shape
-	Selectable:
-		Bounds: 48,48
-	HitShape:
-		UseTargetableCellsOffsets: false
-		TargetableOffsets: 0,0,0, 640,-384,0, 640,512,0, -710,-512,0, -710,512,0
+	Tooltip:
+		Name: Power Plant
+	Valued:
+		Cost: 300
+	Health:
+		HP: 400
+	Armor:
+		Type: Wood
+	Power:
+		Amount: 100
+	ScalePowerWithHealth:
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 10
 		Prerequisites: ~techlevel.infonly
 		Description: Provides power for other structures.
-	Valued:
-		Cost: 300
-	Tooltip:
-		Name: Power Plant
-	ProvidesPrerequisite:
-		Prerequisite: anypower
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
 		LocalCenterOffset: 0,-512,0
-	Health:
-		HP: 400
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 5c0
 	WithBuildingBib:
-	Power:
-		Amount: 100
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 640,-384,0, 640,512,0, -710,-512,0, -710,512,0
+	Selectable:
+		Bounds: 48,48
 	Targetable:
 		TargetTypes: Ground, Structure, C4, DetonateAttack, SpyInfiltrate
-	ScalePowerWithHealth:
+	RevealsShroud:
+		Range: 5c0
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
+	ProvidesPrerequisite:
+		Prerequisite: anypower
 
 PROC:
 	Inherits: ^Building
+	Tooltip:
+		Name: Ore Refinery
+	Valued:
+		Cost: 1400
+	CustomSellValue:
+		Value: 300
+	Health:
+		HP: 900
+	Armor:
+		Type: Wood
+	Power:
+		Amount: -30
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 60
 		Prerequisites: anypower, ~techlevel.infonly
 		Description: Refines Ore and Gems\ninto credits.
-	Valued:
-		Cost: 1400
-	Tooltip:
-		Name: Ore Refinery
 	Building:
 		Footprint: _X_ xxx X== ===
 		Dimensions: 3,4
 		LocalCenterOffset: 0,-512,0
-	Selectable:
-		Bounds: 72,50,0,4
-		DecorationBounds: 72,70,0,-2
-	SelectionDecorations:
-	Targetable:
-		TargetTypes: Ground, Structure, C4, DetonateAttack, SpyInfiltrate
-	Health:
-		HP: 900
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 6c0
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 5c0
 	WithBuildingBib:
-	Refinery:
-		DockAngle: 64
-		DockOffset: 1,2
-	StoresResources:
-		PipCount: 17
-		Capacity: 2000
-	DrawLineToTarget:
-	CustomSellValue:
-		Value: 300
-	FreeActor:
-		Actor: HARV
-		SpawnOffset: 1,2
-		Facing: 64
-	InfiltrateForCash:
-		Percentage: 50
-		Types: SpyInfiltrate
-		Notification: CreditsStolen
-	WithIdleOverlay@TOP:
-		Sequence: idle-top
-	Power:
-		Amount: -30
-	WithDeathAnimation:
-		DeathSequence: dead
-		UseDeathTypeSuffix: false
-	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
-		Prerequisite: proc
 	HitShape:
 		Type: Rectangle
 			TopLeft: -1536, -512
@@ -212,25 +178,65 @@ PROC:
 		Type: Rectangle
 			TopLeft: -1536, 598
 			BottomRight: -512, 1280
+	Selectable:
+		Bounds: 72,50,0,4
+		DecorationBounds: 72,70,0,-2
+	Targetable:
+		TargetTypes: Ground, Structure, C4, DetonateAttack, SpyInfiltrate
+	DrawLineToTarget:
+	RevealsShroud:
+		Range: 6c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c0
+	Refinery:
+		DockAngle: 64
+		DockOffset: 1,2
+	StoresResources:
+		PipCount: 17
+		Capacity: 2000
+	FreeActor:
+		Actor: HARV
+		SpawnOffset: 1,2
+		Facing: 64
+	InfiltrateForCash:
+		Percentage: 50
+		Types: SpyInfiltrate
+		Notification: CreditsStolen
+	SelectionDecorations:
+	WithIdleOverlay@TOP:
+		Sequence: idle-top
+	WithDeathAnimation:
+		DeathSequence: dead
+		UseDeathTypeSuffix: false
+	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@inheritedbotstructure:
+		Prerequisite: proc
 
 KENN:
 	Inherits: ^Building
-	Selectable:
-		Bounds: 24,24
+	Tooltip:
+		Name: Kennel
+	Valued:
+		Cost: 100
+	Health:
+		HP: 300
+	Armor:
+		Type: Wood
+	Power:
+		Amount: 0
+	Production:
+		Produces: Infantry, Dog
+	PrimaryBuilding:
+		PrimaryCondition: primary
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 175
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly
 		Description: Trains Attack Dogs.
-	Valued:
-		Cost: 100
-	Tooltip:
-		Name: Kennel
 	-GivesBuildableArea:
-	Health:
-		HP: 300
-	Armor:
-		Type: Wood
+	Selectable:
+		Bounds: 24,24
 	RevealsShroud:
 		Range: 4c0
 	WithBuildingBib:
@@ -245,17 +251,8 @@ KENN:
 		SpawnOffset: -280,400,0
 		ExitCell: -1,0
 		ProductionTypes: Dog, Infantry
-	Production:
-		Produces: Infantry, Dog
-	PrimaryBuilding:
-		PrimaryCondition: primary
 	ProductionBar:
 	-SpawnActorsOnSell:
-	Power:
-		Amount: 0
-	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
-		Prerequisite: kenn
 	WithDecoration@primary:
 		RequiresSelection: true
 		Image: pips
@@ -263,36 +260,49 @@ KENN:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
+	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@inheritedbotstructure:
+		Prerequisite: kenn
 
 TENT:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
-	Selectable:
-		Bounds: 48,48
-	HitShape:
-		UseTargetableCellsOffsets: false
-		TargetableOffsets: 0,0,0, 630,-512,0, 355,512,0, -281,-512,0, -630,512,0
+	Tooltip:
+		Name: Allied Barracks
+	Valued:
+		Cost: 500
+	Power:
+		Amount: -20
+	Health:
+		HP: 600
+	Armor:
+		Type: Wood
+	Production:
+		Produces: Infantry, Soldier
+	PrimaryBuilding:
+		PrimaryCondition: primary
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
 		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly
 		Description: Trains infantry.
-	Valued:
-		Cost: 500
-	Tooltip:
-		Name: Allied Barracks
+	InfiltrateForSupportPower:
+		Proxy: barracks.upgraded
+		Types: SpyInfiltrate
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
 		LocalCenterOffset: 0,-512,0
-	Health:
-		HP: 600
-	Armor:
-		Type: Wood
+	WithBuildingBib:
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 630,-512,0, 355,512,0, -281,-512,0, -630,512,0
+	Selectable:
+		Bounds: 48,48
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RevealsShroud:
 		Range: 5c0
-	WithBuildingBib:
-	RallyPoint:
 	Exit@1:
 		SpawnOffset: -42,810,0
 		ExitCell: 1,2
@@ -301,11 +311,15 @@ TENT:
 		SpawnOffset: -725,640,0
 		ExitCell: 0,2
 		ProductionTypes: Soldier, Infantry
-	Production:
-		Produces: Infantry, Soldier
-	PrimaryBuilding:
-		PrimaryCondition: primary
+	RallyPoint:
 	ProductionBar:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary
 	ProvidesPrerequisite@barracks:
 		Prerequisite: barracks
 	ProvidesPrerequisite@allies:
@@ -340,53 +354,49 @@ TENT:
 		Prerequisite: infantry.germany
 	BotProvidesPrerequisite@ai:
 		Prerequisite: infantry.ai
-	Power:
-		Amount: -20
 	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: tent
-	InfiltrateForSupportPower:
-		Proxy: barracks.upgraded
-		Types: SpyInfiltrate
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	WithDecoration@primary:
-		RequiresSelection: true
-		Image: pips
-		Sequence: tag-primary
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
 
 BARR:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
-	Selectable:
-		Bounds: 48,48
-	HitShape:
-		UseTargetableCellsOffsets: false
-		TargetableOffsets: 0,0,0, 490,-470,0, 355,512,0, -355,-512,0, -630,512,0
+	Tooltip:
+		Name: Soviet Barracks
+	Valued:
+		Cost: 500
+	Health:
+		HP: 600
+	Armor:
+		Type: Wood
+	Power:
+		Amount: -20
+	Production:
+		Produces: Infantry, Soldier
+	PrimaryBuilding:
+		PrimaryCondition: primary
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 30
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly
 		Description: Trains infantry.
-	Valued:
-		Cost: 500
-	Tooltip:
-		Name: Soviet Barracks
+	InfiltrateForSupportPower:
+		Proxy: barracks.upgraded
+		Types: SpyInfiltrate
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
 		LocalCenterOffset: 0,-512,0
-	Health:
-		HP: 600
-	Armor:
-		Type: Wood
+	WithBuildingBib:
 	RevealsShroud:
 		Range: 5c0
-	WithBuildingBib:
-	RallyPoint:
+	Selectable:
+		Bounds: 48,48
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 490,-470,0, 355,512,0, -355,-512,0, -630,512,0
 	Exit@1:
 		SpawnOffset: -170,810,0
 		ExitCell: 1,2
@@ -395,11 +405,15 @@ BARR:
 		SpawnOffset: -725,640,0
 		ExitCell: 0,2
 		ProductionTypes: Soldier, Infantry
-	Production:
-		Produces: Infantry, Soldier
-	PrimaryBuilding:
-		PrimaryCondition: primary
+	RallyPoint:
 	ProductionBar:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary
 	ProvidesPrerequisite:
 		Prerequisite: barracks
 	ProvidesPrerequisite@soviet:
@@ -428,16 +442,56 @@ BARR:
 		Prerequisite: infantry.ukraine
 	BotProvidesPrerequisite@ai:
 		Prerequisite: infantry.ai
-	Power:
-		Amount: -20
 	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: barr
+
+WEAP:
+	Inherits: ^Building
+	Inherits@shape: ^3x2Shape
+	Tooltip:
+		Name: War Factory
+	Valued:
+		Cost: 2000
+	Health:
+		HP: 1500
+	Armor:
+		Type: Wood
+	Power:
+		Amount: -30
+	Selectable:
+		Bounds: 72,48
+	Production:
+		Produces: Vehicle
+	PrimaryBuilding:
+		PrimaryCondition: primary
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 80
+		Prerequisites: proc, ~techlevel.low
+		Description: Produces vehicles.
 	InfiltrateForSupportPower:
-		Proxy: barracks.upgraded
+		Proxy: vehicles.upgraded
 		Types: SpyInfiltrate
+	Building:
+		Footprint: xxx xxx ===
+		Dimensions: 3,3
+		LocalCenterOffset: 0,-512,0
+	WithBuildingBib:
+	RevealsShroud:
+		Range: 6c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c0
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	WithProductionDoorOverlay:
+		Sequence: build-top
+	Exit@1:
+		SpawnOffset: 213,-128,0
+		ExitCell: 1,2
+	RallyPoint:
+	ProductionBar:
 	WithDecoration@primary:
 		RequiresSelection: true
 		Image: pips
@@ -445,43 +499,6 @@ BARR:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
-
-WEAP:
-	Inherits: ^Building
-	Inherits@shape: ^3x2Shape
-	Selectable:
-		Bounds: 72,48
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 80
-		Prerequisites: proc, ~techlevel.low
-		Description: Produces vehicles.
-	Valued:
-		Cost: 2000
-	Tooltip:
-		Name: War Factory
-	Building:
-		Footprint: xxx xxx ===
-		Dimensions: 3,3
-		LocalCenterOffset: 0,-512,0
-	Health:
-		HP: 1500
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 6c0
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 5c0
-	WithBuildingBib:
-	WithProductionDoorOverlay:
-		Sequence: build-top
-	RallyPoint:
-	Exit@1:
-		SpawnOffset: 213,-128,0
-		ExitCell: 1,2
-	Production:
-		Produces: Vehicle
 	ProvidesPrerequisite@allies:
 		Factions: allies, england, france, germany
 		Prerequisite: vehicles.allies
@@ -538,104 +555,107 @@ WEAP:
 		Prerequisite: vehicles.ukraine
 	BotProvidesPrerequisite@ai:
 		Prerequisite: vehicles.ai
-	PrimaryBuilding:
-		PrimaryCondition: primary
-	ProductionBar:
-	Power:
-		Amount: -30
 	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: weap
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	InfiltrateForSupportPower:
-		Proxy: vehicles.upgraded
-		Types: SpyInfiltrate
-	WithDecoration@primary:
-		RequiresSelection: true
-		Image: pips
-		Sequence: tag-primary
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
 
 FIX:
 	Inherits: ^Building
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 100
-		Prerequisites: weap, ~techlevel.medium
-		Description: Repairs vehicles for credits.
-	Valued:
-		Cost: 1200
 	Tooltip:
 		Name: Service Depot
-	Building:
-		Footprint: _=_ xxx _=_
-		Dimensions: 3,3
-	Selectable:
-		Bounds: 68,34,0,3
-		DecorationBounds: 72,48
-	SelectionDecorations:
+	Valued:
+		Cost: 1200
 	Health:
 		HP: 800
 	Armor:
 		Type: Wood
-	RevealsShroud:
-		Range: 6c0
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 5c0
-	WithBuildingBib:
-		HasMinibib: Yes
-	Reservable:
-	RallyPoint:
+	Power:
+		Amount: -30
 	RepairsUnits:
 		HpPerStep: 10
 		Interval: 7
 		FinishRepairingNotification: UnitRepaired
 		PlayerExperience: 15
-	WithRepairAnimation:
-	WithRearmAnimation:
-	Power:
-		Amount: -30
-	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
-		Prerequisite: fix
+	Reservable:
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 100
+		Prerequisites: weap, ~techlevel.medium
+		Description: Repairs vehicles for credits.
+	Building:
+		Footprint: _=_ xxx _=_
+		Dimensions: 3,3
+	WithBuildingBib:
+		HasMinibib: Yes
 	HitShape:
 		TargetableOffsets: 840,0,0, 598,-640,0, 598,640,0, -1060,0,0, -768,-640,0, -768,640,0
 		Type: Polygon
 			Points: -1536,-300, -640,-811, 640,-811, 1536,-300, 1536,555, 640,1110, -640,1110, -1536,555
+	Selectable:
+		Bounds: 68,34,0,3
+		DecorationBounds: 72,48
+	RevealsShroud:
+		Range: 6c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c0
+	SelectionDecorations:
+	RallyPoint:
+	WithRepairAnimation:
+	WithRearmAnimation:
+	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@inheritedbotstructure:
+		Prerequisite: fix
 
 SYRD:
 	Inherits: ^Building
-	Selectable:
-		Bounds: 72,48
-	InfiltrateForSupportPower:
-		Proxy: powerproxy.sonarpulse
-		Types: SpyInfiltrate
+	Tooltip:
+		Name: Naval Yard
+	Valued:
+		Cost: 1000
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	Power:
+		Amount: -30
+	RepairsUnits:
+		HpPerStep: 1000
+		FinishRepairingNotification: UnitRepaired
+		PlayerExperience: 15
+	RequiresBuildableArea:
+		Adjacent: 10
+	-GivesBuildableArea:
+	Production:
+		Produces: Ship, Boat
+	PrimaryBuilding:
+		PrimaryCondition: primary
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
 		Prerequisites: anypower, ~structures.allies, ~techlevel.low
 		Description: Produces and repairs\nships and transports.
-	Valued:
-		Cost: 1000
-	Tooltip:
-		Name: Naval Yard
-	Targetable:
-		TargetTypes: Ground, Water, Structure, WaterStructure, C4, DetonateAttack, SpyInfiltrate
+	InfiltrateForSupportPower:
+		Proxy: powerproxy.sonarpulse
+		Types: SpyInfiltrate
 	Building:
 		Footprint: XXX xxx XXX
 		Dimensions: 3,3
 		TerrainTypes: Water
-	RequiresBuildableArea:
-		Adjacent: 8
-	-GivesBuildableArea:
-	Health:
-		HP: 1000
-	Armor:
-		Type: Wood
+	HitShape:
+		TargetableOffsets: 768,0,0, 768,-1024,0, 768,1024,0
+		Type: Rectangle
+			TopLeft: -1536, -1152
+			BottomRight: 1536, 598
+	HitShape@BOTTOM:
+		TargetableOffsets: -768,0,0
+		Type: Rectangle
+			TopLeft: -512, 598
+			BottomRight: 512, 1110
+	Selectable:
+		Bounds: 72,48
+	Targetable:
+		TargetTypes: Ground, Water, Structure, WaterStructure, C4, DetonateAttack, SpyInfiltrate
 	RevealsShroud:
 		Range: 6c0
 		RevealGeneratedShroud: False
@@ -644,6 +664,7 @@ SYRD:
 	DetectCloaked: 
 		CloakTypes: Underwater
 		Range: 8c0
+	-SpawnActorsOnSell:
 	Exit@1:
 		SpawnOffset: -1024,1024,0
 		Facing: 160
@@ -664,19 +685,17 @@ SYRD:
 		Facing: 32
 		ExitCell: 2,0
 		ProductionTypes: Ship, Boat
-	Production:
-		Produces: Ship, Boat
-	PrimaryBuilding:
-		PrimaryCondition: primary
-	-SpawnActorsOnSell:
-	RepairsUnits:
-		HpPerStep: 1000
-		FinishRepairingNotification: UnitRepaired
-		PlayerExperience: 15
 	RallyPoint:
 	ProductionBar:
-	Power:
-		Amount: -30
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary
+	EditorTilesetFilter:
+		ExcludeTilesets: INTERIOR
 	ProvidesPrerequisite@allies:
 		Factions: allies, england, france, germany
 		Prerequisite: ships.allies
@@ -708,60 +727,60 @@ SYRD:
 		RequiresPrerequisites: structures.germany
 		Prerequisite: ships.germany
 	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: syrd
 	BotProvidesPrerequisite@ai:
 		Prerequisite: naval.ai
-	EditorTilesetFilter:
-		ExcludeTilesets: INTERIOR
-	WithDecoration@primary:
-		RequiresSelection: true
-		Image: pips
-		Sequence: tag-primary
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
-	HitShape:
-		TargetableOffsets: 768,0,0, 768,-1024,0, 768,1024,0
-		Type: Rectangle
-			TopLeft: -1536, -1152
-			BottomRight: 1536, 598
-	HitShape@BOTTOM:
-		TargetableOffsets: -768,0,0
-		Type: Rectangle
-			TopLeft: -512, 598
-			BottomRight: 512, 1110
 
 SPEN:
 	Inherits: ^Building
-	Selectable:
-		Bounds: 72,48
-	InfiltrateForSupportPower:
-		Proxy: powerproxy.sonarpulse
-		Types: SpyInfiltrate
-	Valued:
-		Cost: 800
 	Tooltip:
 		Name: Sub Pen
+	Valued:
+		Cost: 800
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	Power:
+		Amount: -30
+	RepairsUnits:
+		HpPerStep: 1000
+		FinishRepairingNotification: UnitRepaired
+		PlayerExperience: 15
+	RequiresBuildableArea:
+		AreaTypes: building
+		Adjacent: 10
+	-GivesBuildableArea:
+	Production:
+		Produces: Ship, Submarine
+	PrimaryBuilding:
+		PrimaryCondition: primary
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.low
 		Description: Produces and repairs\nsubmarines and transports.
-	Targetable:
-		TargetTypes: Ground, Water, Structure, WaterStructure, C4, DetonateAttack, SpyInfiltrate
+	InfiltrateForSupportPower:
+		Proxy: powerproxy.sonarpulse
+		Types: SpyInfiltrate
 	Building:
 		Footprint: XXX xxx XXX
 		Dimensions: 3,3
 		TerrainTypes: Water
-	RequiresBuildableArea:
-		AreaTypes: building
-		Adjacent: 8
-	-GivesBuildableArea:
-	Health:
-		HP: 1000
-	Armor:
-		Type: Wood
+	HitShape:
+		Type: Rectangle
+			TopLeft: -1536, -598
+			BottomRight: 1536, 598
+	HitShape@TOPANDBOTTOM:
+		TargetableOffsets: 811,0,0, -811,0,0
+		Type: Rectangle
+			TopLeft: -555, -1110
+			BottomRight: 555, 1110
+	Selectable:
+		Bounds: 72,48
+	Targetable:
+		TargetTypes: Ground, Water, Structure, WaterStructure, C4, DetonateAttack, SpyInfiltrate
 	RevealsShroud:
 		Range: 6c0
 		RevealGeneratedShroud: False
@@ -770,6 +789,7 @@ SPEN:
 	DetectCloaked: 
 		CloakTypes: Underwater
 		Range: 8c0
+	-SpawnActorsOnSell:
 	Exit@1:
 		SpawnOffset: 0,-213,0
 		Facing: 96
@@ -810,19 +830,17 @@ SPEN:
 		Facing: 32
 		ExitCell: 2,0
 		ProductionTypes: Ship
-	Production:
-		Produces: Ship, Submarine
-	PrimaryBuilding:
-		PrimaryCondition: primary
-	-SpawnActorsOnSell:
-	RepairsUnits:
-		HpPerStep: 1000
-		FinishRepairingNotification: UnitRepaired
-		PlayerExperience: 15
 	RallyPoint:
 	ProductionBar:
-	Power:
-		Amount: -30
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary
+	EditorTilesetFilter:
+		ExcludeTilesets: INTERIOR
 	ProvidesPrerequisite@soviet:
 		Factions: soviet, russia, ukraine
 		Prerequisite: ships.soviet
@@ -848,28 +866,10 @@ SPEN:
 		RequiresPrerequisites: structures.ukraine
 		Prerequisite: ships.ukraine
 	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: spen
 	BotProvidesPrerequisite@ai:
 		Prerequisite: naval.ai
-	EditorTilesetFilter:
-		ExcludeTilesets: INTERIOR
-	WithDecoration@primary:
-		RequiresSelection: true
-		Image: pips
-		Sequence: tag-primary
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
-	HitShape:
-		Type: Rectangle
-			TopLeft: -1536, -598
-			BottomRight: 1536, 598
-	HitShape@TOPANDBOTTOM:
-		TargetableOffsets: 811,0,0, -811,0,0
-		Type: Rectangle
-			TopLeft: -555, -1110
-			BottomRight: 555, 1110
 
 # Medium/High tech (tier 2,3)
 
@@ -877,30 +877,37 @@ DOME:
 	Inherits: ^Building
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
 	Inherits@shape: ^2x2Shape
-	Selectable:
-		Bounds: 48,48
-	HitShape:
-		UseTargetableCellsOffsets: false
-		TargetableOffsets: 0,0,0, 630,-384,0, 630,384,0, -700,-512,0, -700,512,0
+	Tooltip:
+		Name: Radar Dome
+	Valued:
+		Cost: 1600
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	Power:
+		Amount: -40
+	ProvidesRadar:
+		RequiresCondition: !jammed && !disabled
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 90
 		Prerequisites: proc, ~techlevel.medium
 		Description: Provides an overview\nof the battlefield.\nCan detect cloaked units.\nRequires power to operate.
-	Valued:
-		Cost: 1600
-	Tooltip:
-		Name: Radar Dome
+	InfiltrateForExploration:
+		Types: SpyInfiltrate
 	Building:
 		Footprint: xx xx ==
 		Dimensions: 2,3
 		LocalCenterOffset: 0,-512,0
+	WithBuildingBib:
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 630,-384,0, 630,384,0, -700,-512,0, -700,512,0
+	Selectable:
+		Bounds: 48,48
 	Targetable:
 		TargetTypes: Ground, Structure, C4, DetonateAttack, SpyInfiltrate
-	Health:
-		HP: 1000
-	Armor:
-		Type: Wood
 	RevealsShroud:
 		Range: 10c0
 		RequiresCondition: !disabled
@@ -911,22 +918,16 @@ DOME:
 	RevealsShroud@GAPGEN:
 		Range: 5c0
 		RequiresCondition: !disabled
-	WithBuildingBib:
-	ProvidesRadar:
-		RequiresCondition: !jammed && !disabled
-	InfiltrateForExploration:
-		Types: SpyInfiltrate
 	DetectCloaked:
 		Range: 6c0
 		RequiresCondition: !disabled
 	RenderDetectionCircle:
-	Power:
-		Amount: -40
-	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
-		Prerequisite: dome
 	ExternalCondition@JAMMED:
 		Condition: jammed
+	SupportPowerChargeBar:
+	ProvidesPrerequisite@buildingname:
+	ProvidesPrerequisite@inheritedbotstructure:
+		Prerequisite: dome
 	ParatroopersPower@paratroopers:
 		PauseOnCondition: disabled
 		OrderName: AlliedParatroopers
@@ -946,45 +947,44 @@ DOME:
 		ArrowSequence: arrow
 		ClockSequence: clock
 		CircleSequence: circles
-	SupportPowerChargeBar:
 
 APWR:
 	Inherits: ^Building
 	Inherits@POWER_OUTAGE: ^DisabledByPowerOutage
 	Inherits@shape: ^3x2Shape
-	HitShape:
-		TargetableOffsets: -355,-1024,0
+	Tooltip:
+		Name: Advanced Power Plant
+	Valued:
+		Cost: 500
+	Power:
+		Amount: 200
+	ScalePowerWithHealth:
+	Health:
+		HP: 700
+	Armor:
+		Type: Wood
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 110
 		Prerequisites: dome, ~techlevel.medium
 		Description: Provides double the power of\na standard Power Plant.
-	Valued:
-		Cost: 500
-	Tooltip:
-		Name: Advanced Power Plant
 	ProvidesPrerequisite:
 		Prerequisite: anypower
 	Building:
 		Footprint: xxx Xxx ===
 		Dimensions: 3,3
 		LocalCenterOffset: 0,-512,0
+	WithBuildingBib:
+	HitShape:
+		TargetableOffsets: -355,-1024,0
 	Selectable:
 		Bounds: 72,48
 		DecorationBounds: 72,68,0,-10
-	SelectionDecorations:
-	Health:
-		HP: 700
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 5c0
-	WithBuildingBib:
-	Power:
-		Amount: 200
 	Targetable:
 		TargetTypes: Ground, Structure, C4, DetonateAttack, SpyInfiltrate
-	ScalePowerWithHealth:
+	RevealsShroud:
+		Range: 5c0
+	SelectionDecorations:
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
@@ -992,46 +992,63 @@ APWR:
 HPAD:
 	Inherits: ^Building
 	Inherits@shape: ^2x2Shape
-	Selectable:
-		Bounds: 48,48
-	HitShape:
-		UseTargetableCellsOffsets: false
-		TargetableOffsets: 0,0,0, 768,-512,0, 768,512,0, -281,-512,0, -630,512,0
+	Tooltip:
+		Name: Helipad
+	Valued:
+		Cost: 500
+	Health:
+		HP: 800
+	Armor:
+		Type: Wood
+	Power:
+		Amount: -20
+	RepairsUnits:
+		HpPerStep: 1
+		Interval: 10
+		PlayerExperience: 15
+	Reservable:
+	WithRepairAnimation:
+	Production:
+		Produces: Aircraft, Helicopter
+	PrimaryBuilding:
+		PrimaryCondition: primary
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 120
 		Prerequisites: dome, ~structures.allies, ~techlevel.medium
 		Description: Produces and reloads\nhelicopters.
-	Valued:
-		Cost: 500
-	Tooltip:
-		Name: Helipad
+	InfiltrateForSupportPower:
+		Proxy: aircraft.upgraded
+		Types: SpyInfiltrate
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
 		LocalCenterOffset: 0,0,0
-	Health:
-		HP: 800
-	Armor:
-		Type: Wood
+	WithBuildingBib:
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 768,-512,0, 768,512,0, -281,-512,0, -630,512,0
+	Selectable:
+		Bounds: 48,48
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	RevealsShroud:
 		Range: 5c0
-	WithBuildingBib:
-	WithRepairAnimation:
 	Exit@1:
 		SpawnOffset: 0,-256,0
 		ExitCell: 0,0
 		MoveIntoWorld: false
 		Facing: 224
 	RallyPoint:
-	Production:
-		Produces: Aircraft, Helicopter
-	Reservable:
 	ProductionBar:
-	PrimaryBuilding:
-		PrimaryCondition: primary
-	Power:
-		Amount: -10
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary
+	WithRearmAnimation:
 	ProvidesPrerequisite@allies:
 		Factions: allies, england, france, germany
 		Prerequisite: aircraft.allies
@@ -1063,15 +1080,64 @@ HPAD:
 		RequiresPrerequisites: structures.germany
 		Prerequisite: aircraft.germany
 	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: hpad
 	BotProvidesPrerequisite@ai:
 		Prerequisite: aircraft.ai
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+
+AFLD:
+	Inherits: ^Building
+	Inherits@shape: ^3x2Shape
+	Tooltip:
+		Name: Airfield
+	Valued:
+		Cost: 500
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	Power:
+		Amount: -20
+	RepairsUnits:
+		HpPerStep: 1
+		Interval: 12
+		PlayerExperience: 15
+	Reservable:
+	Production:
+		Produces: Aircraft, Plane
+	PrimaryBuilding:
+		PrimaryCondition: primary
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 130
+		Prerequisites: dome, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine
+		Description: Produces and reloads aircraft.\n  Special Ability: Spy Plane\n  Special Ability: Paratroopers
 	InfiltrateForSupportPower:
 		Proxy: aircraft.upgraded
 		Types: SpyInfiltrate
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+	RevealsShroud:
+		Range: 7c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c0
+	HitShape:
+		UseTargetableCellsOffsets: false
+		TargetableOffsets: 0,0,0, 420,0,0, 420,-1024,0, 420,1024,0, -777,0,0, -777,-1024,0, -777,1024,0
+	Selectable:
+		Class: afld
+		Bounds: 72,48
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
+	Exit@1:
+		ExitCell: 1,1
+		Facing: 192
+		MoveIntoWorld: false
+	RallyPoint:
+	ProductionBar:
+	SupportPowerChargeBar:
 	WithDecoration@primary:
 		RequiresSelection: true
 		Image: pips
@@ -1080,75 +1146,7 @@ HPAD:
 		ZOffset: 256
 		RequiresCondition: primary
 	WithRearmAnimation:
-	RepairsUnits:
-		HpPerStep: 1
-		Interval: 10
-		PlayerExperience: 15
-
-AFLD:
-	Inherits: ^Building
-	Inherits@shape: ^3x2Shape
-	HitShape:
-		UseTargetableCellsOffsets: false
-		TargetableOffsets: 0,0,0, 420,0,0, 420,-1024,0, 420,1024,0, -777,0,0, -777,-1024,0, -777,1024,0
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 130
-		Prerequisites: dome, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine
-		Description: Produces and reloads aircraft.\n  Special Ability: Spy Plane\n  Special Ability: Paratroopers
-	Valued:
-		Cost: 500
-	Tooltip:
-		Name: Airfield
-	Selectable:
-		Class: afld
-		Bounds: 72,48
-	Building:
-		Footprint: xxx xxx
-		Dimensions: 3,2
-	Health:
-		HP: 1000
-	Armor:
-		Type: Wood
-	RevealsShroud:
-		Range: 7c0
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 5c0
-	Exit@1:
-		ExitCell: 1,1
-		Facing: 192
-		MoveIntoWorld: false
-	RallyPoint:
-	Production:
-		Produces: Aircraft, Plane
-	Reservable:
-	ProvidesPrerequisite@soviet:
-		Factions: soviet, russia, ukraine
-		Prerequisite: aircraft.soviet
-	ProvidesPrerequisite@sovietvanilla:
-		Factions: soviet
-		Prerequisite: aircraft.sovietvanilla
-	ProvidesPrerequisite@russia:
-		Factions: russia
-		Prerequisite: aircraft.russia
-	ProvidesPrerequisite@ukraine:
-		Factions: ukraine
-		Prerequisite: aircraft.ukraine
-	ProvidesPrerequisite@sovietstructure:
-		RequiresPrerequisites: structures.soviet
-		Prerequisite: aircraft.soviet
-	ProvidesPrerequisite@sovietvanillastructure:
-		RequiresPrerequisites: structures.sovietvanilla
-		Prerequisite: aircraft.sovietvanilla
-	ProvidesPrerequisite@russianstructure:
-		RequiresPrerequisites: structures.russia
-		Prerequisite: aircraft.russia
-	ProvidesPrerequisite@ukrainianstructure:
-		RequiresPrerequisites: structures.ukraine
-		Prerequisite: aircraft.ukraine
-	BotProvidesPrerequisite@ai:
-		Prerequisite: aircraft.ai
+	WithRepairAnimation:
 	AirstrikePower@spyplane:
 		OrderName: SovietSpyPlane
 		Prerequisites: aircraft.soviet
@@ -1204,33 +1202,35 @@ AFLD:
 		ArrowSequence: arrow
 		ClockSequence: clock
 		CircleSequence: circles
-	ProductionBar:
-	SupportPowerChargeBar:
-	PrimaryBuilding:
-		PrimaryCondition: primary
-	Power:
-		Amount: -20
+	ProvidesPrerequisite@soviet:
+		Factions: soviet, russia, ukraine
+		Prerequisite: aircraft.soviet
+	ProvidesPrerequisite@sovietvanilla:
+		Factions: soviet
+		Prerequisite: aircraft.sovietvanilla
+	ProvidesPrerequisite@russia:
+		Factions: russia
+		Prerequisite: aircraft.russia
+	ProvidesPrerequisite@ukraine:
+		Factions: ukraine
+		Prerequisite: aircraft.ukraine
+	ProvidesPrerequisite@sovietstructure:
+		RequiresPrerequisites: structures.soviet
+		Prerequisite: aircraft.soviet
+	ProvidesPrerequisite@sovietvanillastructure:
+		RequiresPrerequisites: structures.sovietvanilla
+		Prerequisite: aircraft.sovietvanilla
+	ProvidesPrerequisite@russianstructure:
+		RequiresPrerequisites: structures.russia
+		Prerequisite: aircraft.russia
+	ProvidesPrerequisite@ukrainianstructure:
+		RequiresPrerequisites: structures.ukraine
+		Prerequisite: aircraft.ukraine
+	BotProvidesPrerequisite@ai:
+		Prerequisite: aircraft.ai
 	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: afld
-	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	InfiltrateForSupportPower:
-		Proxy: aircraft.upgraded
-		Types: SpyInfiltrate
-	WithDecoration@primary:
-		RequiresSelection: true
-		Image: pips
-		Sequence: tag-primary
-		ReferencePoint: Top
-		ZOffset: 256
-		RequiresCondition: primary
-	WithRearmAnimation:
-	WithRepairAnimation:
-	RepairsUnits:
-		HpPerStep: 1
-		Interval: 12
-		PlayerExperience: 15
 
 AFLD.Ukraine:
 	Inherits: AFLD
@@ -1244,33 +1244,16 @@ ATEK:
 	Inherits: ^ScienceBuilding
 	Inherits@IDISABLE: ^DisableOnLowPower
 	Inherits@shape: ^2x2Shape
-	Selectable:
-		Bounds: 48,48
-	Buildable:
-		Queue: Building
-		BuildPaletteOrder: 140
-		Prerequisites: weap, dome, ~structures.allies, ~techlevel.high
-		Description: Provides Allied advanced technologies.\n  Special Ability: GPS Satellite
-	Valued:
-		Cost: 1500
 	Tooltip:
 		Name: Allied Tech Center
-	ProvidesPrerequisite:
-		Prerequisite: techcenter
-	Building:
-		Footprint: xx xx ==
-		Dimensions: 2,3
-		LocalCenterOffset: 0,-512,0
+	Valued:
+		Cost: 1500
 	Health:
 		HP: 600
 	Armor:
 		Type: Wood
-	RevealsShroud:
-		Range: 10c0
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 5c0
-	WithBuildingBib:
+	Power:
+		Amount: -200
 	GpsPower:
 		PauseOnCondition: disabled
 		Icon: gps
@@ -1281,49 +1264,66 @@ ATEK:
 		RevealDelay: 375
 		LaunchSpeechNotification: SatelliteLaunched
 		DisplayTimerStances: Ally, Neutral, Enemy
+	Buildable:
+		Queue: Building
+		BuildPaletteOrder: 140
+		Prerequisites: weap, dome, ~structures.allies, ~techlevel.high
+		Description: Provides Allied advanced technologies.\n  Special Ability: GPS Satellite
+	Building:
+		Footprint: xx xx ==
+		Dimensions: 2,3
+		LocalCenterOffset: 0,-512,0
+	WithBuildingBib:
+	Selectable:
+		Bounds: 48,48
+	RevealsShroud:
+		Range: 10c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c0
 	SupportPowerChargeBar:
-	Power:
-		Amount: -200
+	ProvidesPrerequisite:
+		Prerequisite: techcenter
 	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: atek
 
 STEK:
 	Inherits: ^ScienceBuilding
 	Inherits@shape: ^3x2Shape
-	Selectable:
-		Bounds: 72,48
-	HitShape:
-		TargetableOffsets: 420,-768,0, 420,768,0, -770,-768,0, -770,768,0
+	Tooltip:
+		Name: Soviet Tech Center
+	Valued:
+		Cost: 1500
+	Health:
+		HP: 800
+	Armor:
+		Type: Wood
+	Power:
+		Amount: -100
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 150
 		Prerequisites: weap, dome, ~structures.soviet, ~techlevel.high
 		Description: Provides Soviet advanced technologies.
-	Valued:
-		Cost: 1500
-	Tooltip:
-		Name: Soviet Tech Center
-	ProvidesPrerequisite:
-		Prerequisite: techcenter
 	Building:
 		Footprint: XxX XxX ===
 		Dimensions: 3,3
 		LocalCenterOffset: 0,-512,0
-	Health:
-		HP: 800
-	Armor:
-		Type: Wood
+	WithBuildingBib:
+	HitShape:
+		TargetableOffsets: 420,-768,0, 420,768,0, -770,-768,0, -770,768,0
+	Selectable:
+		Bounds: 72,48
 	RevealsShroud:
 		Range: 7c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 5c0
-	WithBuildingBib:
-	Power:
-		Amount: -100
+	ProvidesPrerequisite:
+		Prerequisite: techcenter
 	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: stek
 
 # Defensive structures
@@ -1333,12 +1333,6 @@ PBOX:
 	Inherits@AUTOTARGET: ^AutoTargetAll
 	Tooltip:
 		Name: Pillbox
-	Building:
-	Buildable:
-		Queue: Defense
-		BuildPaletteOrder: 40
-		Prerequisites: tent, ~structures.allies, ~techlevel.low
-		Description: Static defense with a fireport for\na garrisoned soldier.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 600
 	CustomSellValue:
@@ -1347,47 +1341,47 @@ PBOX:
 		HP: 350
 	Armor:
 		Type: Heavy
+	Power:
+		Amount: -15
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 40
+		Prerequisites: tent, ~structures.allies, ~techlevel.low
+		Description: Static defense with a fireport for\na garrisoned soldier.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
+	Building:
+	WithBuildingBib:
+		HasMinibib: Yes
 	RevealsShroud:
 		Range: 6c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 5c0
-	WithBuildingBib:
-		HasMinibib: Yes
 	Turreted:
 		TurnSpeed: 255
-	-QuantizeFacingsFromSequence:
 	BodyOrientation:
 		QuantizedFacings: 8
+	-QuantizeFacingsFromSequence:
+	DetectCloaked:
+		Range: 4c0
+	RenderRangeCircle:
+		FallbackRange: 6c0
 	Cargo:
 		Types: Infantry
 		MaxWeight: 1
 		PipCount: 1
 		InitialUnits: e1
-	-SpawnActorsOnSell:
 	AttackGarrisoned:
 		Armaments: garrisoned
 		PortOffsets: 384,0,128, 224,-341,128, -224,-341,128, -384,0,128, -224,341,128, 224,341,128
 		PortYaws: 0, 176, 341, 512, 682, 853
 		PortCones: 88, 88, 88, 88, 88, 88
-	RenderRangeCircle:
-		FallbackRange: 6c0
-	Power:
-		Amount: -15
-	DetectCloaked:
-		Range: 4c0
+	-SpawnActorsOnSell:
 
 HBOX:
 	Inherits: ^Defense
 	Inherits@AUTOTARGET: ^AutoTargetAll
 	Tooltip:
 		Name: Camo Pillbox
-	Building:
-	Buildable:
-		Queue: Defense
-		BuildPaletteOrder: 50
-		Prerequisites: tent, ~structures.allies, ~techlevel.medium
-		Description: Camouflaged static defense with a fireport\nfor a garrisoned soldier.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Valued:
 		Cost: 800
 	CustomSellValue:
@@ -1396,6 +1390,14 @@ HBOX:
 		HP: 400
 	Armor:
 		Type: Heavy
+	Power:
+		Amount: -15
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 50
+		Prerequisites: tent, ~structures.allies, ~techlevel.medium
+		Description: Camouflaged static defense with a fireport\nfor a garrisoned soldier.\nCan detect cloaked units.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
+	Building:
 	RevealsShroud:
 		Range: 6c0
 		RevealGeneratedShroud: False
@@ -1406,9 +1408,11 @@ HBOX:
 		CloakDelay: 60
 		IsPlayerPalette: true
 		RequiresCondition: !cloak-force-disabled
-	GrantConditionOnDamageState@UNCLOAK:
-		Condition: cloak-force-disabled
-		ValidDamageStates: Critical
+	-MustBeDestroyed:
+	DetectCloaked:
+		Range: 6c0
+	RenderRangeCircle:
+		FallbackRange: 6c0
 	Turreted:
 		TurnSpeed: 255
 	-QuantizeFacingsFromSequence:
@@ -1419,19 +1423,15 @@ HBOX:
 		MaxWeight: 1
 		PipCount: 1
 		InitialUnits: e1
-	-SpawnActorsOnSell:
-	DetectCloaked:
-		Range: 6c0
-	RenderRangeCircle:
-		FallbackRange: 6c0
 	AttackGarrisoned:
 		Armaments: garrisoned
 		PortOffsets: 384,0,128, 224,-341,128, -224,-341,128, -384,0,128, -224,341,128, 224,341,128
 		PortYaws: 0, 176, 341, 512, 682, 853
 		PortCones: 88, 88, 88, 88, 88, 88
-	Power:
-		Amount: -15
-	-MustBeDestroyed:
+	-SpawnActorsOnSell:
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: cloak-force-disabled
+		ValidDamageStates: Critical
 
 GUN:
 	Inherits: ^Defense
@@ -1514,7 +1514,7 @@ FTUR:
 	DetectCloaked:
 		Range: 4c0
 	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: ftur
 	Explodes:
 		Weapon: BuildingExplode
@@ -1563,7 +1563,7 @@ TSLA:
 		Range: 6c0
 		RequiresCondition: !disabled
 	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: tsla
 
 AGUN:
@@ -1908,7 +1908,7 @@ PDOX:
 	MustBeDestroyed:
 		RequiredForShortGame: false
 	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: pdox
 
 IRON:
@@ -2032,7 +2032,7 @@ MSLO:
 		RequiredForShortGame: false
 	WithNukeLaunchAnimation:
 	ProvidesPrerequisite@buildingname:
-	ProvidesPrerequisite@default:
+	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: mslo
 
 # Misc

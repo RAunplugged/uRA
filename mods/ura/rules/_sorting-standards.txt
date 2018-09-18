@@ -16,10 +16,12 @@ Excluded:
 - husks.yaml
 - palettes.yaml
 - player.yaml
+- world.yaml
 
 - - - - - - - - - - - - - - - -
 
-Sorting range: aircraft.yaml, infantry.yaml, ships.yaml
+Sorting range: aircraft.yaml, infantry.yaml, ships.yaml,
+structures.yaml
 
 structures.yaml
 # Low tech (tier 1)
@@ -36,9 +38,25 @@ DisguisedTooltip
 Valued
 Health
 Mobile
+Power
 GivesExperience
+BaseProvider
+Production
+ProductionBar
 Buildable
+ProvidesPrerequisites
+BotProvidesPrerequisite
+GrantConditionOnPrerequisite
+GrantCondition
+Building
+BaseBuilding
+WithBuildingBib
+WithBuildingPlacedAnimation
 Aircraft
+HitShape
+Interactable (structures.yaml)
+Selectable (structures.yaml)
+Targetable (structures.yaml)
 MustBeDestroyed
 RevealsShroud
 RevealsShroud@GAPGEN !!! check and inherit units/structures!
@@ -46,10 +64,15 @@ Armament	!!! remove PRIMARY with TRAN!
 Turreted
 AttackTurreted
 AmmoPool
+GivesBuildableArea
+RequiresBuilableArea
+RepairableBuilding
+SpawnActorsOnSell
+Transforms
+Infiltrates
 AttackBomber
 AttackHeli
 AttackPlane
-Infiltrates
 Cloak
 DetectCloaked
 RenderDetectionCircle
@@ -83,6 +106,7 @@ WithIdleOverlay
 WithSpriteTurret
 WithMuzzleOverlay
 WithInfantryBody
+WithDeathAnimation:
 WithDecoration
 Contrail
 SmokeTrailWhenDamaged

@@ -106,9 +106,9 @@ BIO:
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
-	ProvidesPrerequisite@buildingname:
 	GpsDot:
 		String: Biohazard
+	ProvidesPrerequisite@buildingname:
 
 HOSP:
 	Inherits: ^TechBuilding
