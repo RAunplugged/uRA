@@ -635,7 +635,7 @@ E2.Hard.Player:
 		BuildPaletteOrder: 8000
 		Prerequisites: ~barr.hard
 		Description: Cloaked grenadiers.\nAquired extra vision.
-	-MustBeDestroyed:
+	# -MustBeDestroyed:
 	RevealsShroud:
 		Range: 8c0
 	Cloak:
@@ -693,7 +693,7 @@ SPY.England.Hard.Player:
 		BuildPaletteOrder: 8000
 		Prerequisites: ~barr.hard, ~dome.hard
 		Description: Unique spy agent.\nAquired cloak.
-	-MustBeDestroyed:
+	# -MustBeDestroyed:
 	DisguiseTooltip:
 		Name: Special Agent
 	Health:
