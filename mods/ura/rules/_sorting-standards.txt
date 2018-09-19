@@ -51,15 +51,7 @@ Reservable
 Buildable
 PrimaryBuilding
 InfiltrateForSupportPower
-Building
-BaseBuilding
-WithBuildingBib
-WithBuildingPlacedAnimation
 Aircraft
-HitShape
-Interactable (structures.yaml)
-Selectable (structures.yaml)
-Targetable (structures.yaml)
 MustBeDestroyed
 RevealsShroud
 RevealsShroud@GAPGEN !!! check and inherit units/structures!
@@ -93,6 +85,14 @@ EngineerRepair
 RepairsBridges
 ExternalCaptures
 SpawnActorsOnSell
+Building
+BaseBuilding
+WithBuildingBib
+WithBuildingPlacedAnimation
+HitShape
+Interactable
+Selectable
+Targetable
 AutoTarget
 AttackMove
 AttackLeap

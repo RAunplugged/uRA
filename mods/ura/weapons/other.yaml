@@ -184,6 +184,13 @@ Heal:
 		ValidTargets: Infantry
 		DebugOverlayColor: 00FF00
 
+Heal.IFV:
+	Inherits: Heal
+	Range: 5c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 1704
+		Damage: -15
+
 Heal.Priest:
 	Inherits: Heal
 	ReloadDelay: 160
@@ -191,7 +198,6 @@ Heal.Priest:
 	Warhead@1Dam: SpreadDamage
 		Spread: 462
 		Damage: -75
-	
 
 Repair:
 	Inherits: Heal
@@ -200,6 +206,12 @@ Repair:
 	Warhead@1Dam: SpreadDamage
 		Damage: -20
 		ValidTargets: Repair
+
+Repair.IFV:
+	Inherits: Repair
+	Range: 5c0
+	Warhead@1Dam: SpreadDamage
+		Damage: -40
 
 Hover:
 	ReloadDelay: 100

@@ -1,16 +1,3 @@
-# Unit list:
-
-# - TRAN (Chinook)
-# - Hind 
-# - Heli (Longbow)
-# - Yak
-# - MiG
-# - Badger
-# - Badger.Bomber
-# - U2
-
-
-
 TRAN:
 	Inherits: ^Helicopter
 	Inherits@AUTOTARGET: ^AutoTargetGround
