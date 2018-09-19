@@ -36,18 +36,21 @@ Inherits@AUTOTARGET
 Tooltip
 DisguisedTooltip
 Valued
+CustomSellValue
 Health
 Mobile
 Power
+ScalePowerWithHealth
 GivesExperience
 BaseProvider
 Production
 ProductionBar
+StroresResources
+RepairsUnits
+Reservable
 Buildable
-ProvidesPrerequisites
-BotProvidesPrerequisite
-GrantConditionOnPrerequisite
-GrantCondition
+PrimaryBuilding
+InfiltrateForSupportPower
 Building
 BaseBuilding
 WithBuildingBib
@@ -64,10 +67,11 @@ Armament	!!! remove PRIMARY with TRAN!
 Turreted
 AttackTurreted
 AmmoPool
+QuantizeFacingsFromSequence
+BodyOrientation
 GivesBuildableArea
 RequiresBuilableArea
 RepairableBuilding
-SpawnActorsOnSell
 Transforms
 Infiltrates
 AttackBomber
@@ -83,10 +87,12 @@ Crushable
 Demolition
 ParaDrop
 Cargo
+AttackGarrisoned
 Passenger
 EngineerRepair
 RepairsBridges
 ExternalCaptures
+SpawnActorsOnSell
 AutoTarget
 AttackMove
 AttackLeap
@@ -99,6 +105,9 @@ RejectOrders
 Interactable
 Selectable
 Targetable
+Exit
+RallyPoint
+ProductionBar
 Voiced
 RenderSprites
 GrantCondition
@@ -110,8 +119,12 @@ WithDeathAnimation:
 WithDecoration
 Contrail
 SmokeTrailWhenDamaged
-
 ProducibleWithLevel
+SupportPower
+ProvidesPrerequisites
+BotProvidesPrerequisite
+GrantConditionOnPrerequisite
+GrantCondition
 
 - - - - - - - - - - - - - - - -
 
