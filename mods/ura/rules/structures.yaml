@@ -1993,6 +1993,7 @@ MSLO:
 		BuildLimit: 1
 		Description: Provides an atomic bomb.\nRequires power to operate.\nMaximum 1 can be built.\n  Special Ability: Atom Bomb
 	MustBeDestroyed:
+		RequiredForShortGame: false
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
@@ -2009,7 +2010,6 @@ MSLO:
 		Range: 5c0
 		RequiresCondition: !disabled
 	SupportPowerChargeBar:
-		RequiredForShortGame: false
 	WithNukeLaunchAnimation:
 	ProvidesPrerequisite@buildingname:
 	ProvidesPrerequisite@inheritedbotstructure:
