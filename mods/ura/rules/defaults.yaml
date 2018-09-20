@@ -314,7 +314,7 @@
 		Type: Circle
 			Radius: 128
 	RevealsShroud:
-		Range: 5c0
+		Range: 5c384
 	GpsDot:
 		String: Infantry
 	HiddenUnderFog:

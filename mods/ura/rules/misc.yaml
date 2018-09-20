@@ -145,7 +145,7 @@ CAMERA:
 	Immobile:
 		OccupiesSpace: false
 	RevealsShroud:
-		Range: 12c256
+		Range: 12c0
 		Type: GroundPosition
 	AlwaysVisible:
 	BodyOrientation:
@@ -168,7 +168,7 @@ camera.paradrop:
 camera.spyplane:
 	Inherits: CAMERA
 	DetectCloaked:
-		Range: 12c256
+		Range: 12c0
 		CloakTypes: Cloak, Hijacker
 	EditorOnlyTooltip:
 		Name: (support power proxy camera)

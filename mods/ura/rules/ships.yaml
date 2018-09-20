@@ -19,10 +19,10 @@ LST:
 		Prerequisites: ~techlevel.low
 		Description: General-purpose naval transport.\nCan carry infantry and tanks.\n  Unarmed
 	RevealsShroud:
-		Range: 7c256
+		Range: 7c576
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 5c0
+		Range: 5c384
 	Cargo:
 		Types: Infantry, Vehicle
 		MaxWeight: 15
@@ -59,7 +59,7 @@ PT:
 		Range: 8c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 5c0
+		Range: 5c384
 	Armament@PRIMARY:
 		Weapon: 2Inch
 		LocalOffset: 208,0,48
@@ -106,7 +106,7 @@ DD:
 		Range: 10c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 5c0
+		Range: 5c384
 	Armament@PRIMARY:
 		Weapon: Stinger
 		LocalOffset: 0,-100,0, 0,100,0
@@ -157,7 +157,7 @@ CA:
 		Range: 9c256
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 5c0
+		Range: 5c384
 	Armament@PRIMARY:
 		Turret: primary
 		Weapon: 8Inch
@@ -216,7 +216,7 @@ SS:
 		Range: 10c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 5c0
+		Range: 5c384
 	Armament:
 		Weapon: TorpTube
 		LocalOffset: 0,-171,0, 0,171,0
@@ -284,7 +284,7 @@ MSUB:
 		Range: 10c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
-		Range: 5c0
+		Range: 5c384
 	Armament@PRIMARY:
 		Weapon: SubMissile
 		LocalOffset: 0,-171,0, 0,171,0

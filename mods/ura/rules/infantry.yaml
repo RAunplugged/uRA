@@ -18,6 +18,9 @@ DOG:
 		Description: Anti-infantry unit.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	RevealsShroud:
 		Range: 8c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c384
 	Armament:
 		Weapon: DogJaw
 	DetectCloaked:
@@ -268,7 +271,10 @@ SPY:
 		Prerequisites: ~!infantry.england, dome, ~tent, ~techlevel.medium
 		Description: Infiltrates enemy structures for intel or\nsabotage. Exact effect depends on the\nbuilding infiltrated.\nLoses disguise when attacking.\nCan detect cloaked units and spies.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft\n  Special Ability: Disguised
 	RevealsShroud:
-		Range: 6c0
+		Range: 6c512
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c384
 	Armament:
 		Weapon: SilencedPPK
 	Infiltrates:
@@ -315,6 +321,9 @@ SPY.England:
 		Prerequisites: ~infantry.england, dome, ~tent, ~techlevel.medium
 	RevealsShroud:
 		Range: 8c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c384
 	Armament:
 		Weapon: SilencedPPK.England
 	AutoTarget:
@@ -348,6 +357,9 @@ E7:
 		Description: Elite commando infantry. Armed with\ndual pistols and C4.\nCan detect cloaked units.\nMaximum 1 can be trained.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n  Special Ability: Destroy Building with C4
 	RevealsShroud:
 		Range: 8c0
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c384
 	Armament@PRIMARY:
 		Weapon: Colt45
 	Armament@SECONDARY:
@@ -488,7 +500,10 @@ HIJACKER:
 		Prerequisites: ~barr, fix, ~techlevel.medium
 		Description: Hijacks enemy vehicles.\n  Unarmed
 	RevealsShroud:
-		Range: 6c0
+		Range: 6c512
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c384
 	Cloak:
 		InitialDelay: 250
 		CloakDelay: 120
@@ -532,7 +547,10 @@ SHOK:
 		Prerequisites: ~barr, stek, tsla, ~infantry.russia, ~techlevel.high
 		Description: Elite infantry with portable Tesla coils.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	RevealsShroud:
-		Range: 6c0
+		Range: 6c512
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c384
 	Armament@PRIMARY:
 		Weapon: PortaTesla
 		LocalOffset: 427,0,341
@@ -578,6 +596,9 @@ SNIPER:
 		Description: Elite sniper infantry unit.\nCan detect cloaked units.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	RevealsShroud:
 		Range: 9c256
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c384
 	Armament@PRIMARY:
 		Weapon: Sniper
 	Armament@GARRISONED:
@@ -681,7 +702,7 @@ THF:
 	Buildable:
 		Description: Steals enemy credits.\n  Unarmed
 	RevealsShroud:
-		Range: 5c0
+		Range: 5c384
 	Infiltrates:
 		PlayerExperience: 50
 	Passenger:
