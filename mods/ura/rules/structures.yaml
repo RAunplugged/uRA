@@ -882,7 +882,7 @@ DOME:
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
 	RevealsShroud:
-		Range: 10c0
+		Range: 10c256
 		RequiresCondition: !disabled
 		RevealGeneratedShroud: False
 	RevealsShroud@Offline:
