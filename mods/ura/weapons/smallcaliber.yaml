@@ -1,6 +1,6 @@
 ^AACannon:
 	ReloadDelay: 10
-	Range: 9c0
+	Range: 9c256
 	ValidTargets: Air
 	Projectile: Bullet
 		Speed: 1c682
@@ -45,7 +45,7 @@ FLAK-23-AA:
 
 FLAK-23-AG:
 	Inherits: ^AACannon
-	Range: 7c0
+	Range: 7c576
 	ValidTargets: Ground, Water
 	Warhead@1Dam: SpreadDamage
 		ValidTargets: Air, Ground, Water
@@ -59,7 +59,7 @@ FLAK-23-AG:
 
 ^HeavyMG:
 	ReloadDelay: 30
-	Range: 6c0
+	Range: 6c512
 	Projectile: Bullet
 		Speed: 1c682
 	Warhead@1Dam: SpreadDamage
@@ -207,7 +207,7 @@ Vulcan:
 ChainGun:
 	Inherits: ^HeavyMG
 	ReloadDelay: 10
-	Range: 7c0
+	Range: 7c576
 	MinRange: 0c768
 	Projectile: Bullet
 		Blockable: false
@@ -226,7 +226,7 @@ ChainGunAA:
 ChainGun.Yak:
 	Inherits: ^HeavyMG
 	ReloadDelay: 3
-	Range: 7c0
+	Range: 7c576
 	MinRange: 4c0
 	Projectile: Bullet
 		Blockable: false
@@ -255,7 +255,7 @@ Pistol:
 Pistol.Agent:
 	Inherits: Pistol
 	ReloadDelay: 30
-	Range: 5c0
+	Range: 5c384
 	Projectile: Bullet
 		Inaccuracy: 1706
 	Warhead@1Dam: SpreadDamage
@@ -265,7 +265,7 @@ Pistol.Agent:
 M1Carbine:
 	Inherits: ^LightMG
 	ReloadDelay: 20
-	Range: 6c0
+	Range: 6c512
 	Warhead@1Dam: SpreadDamage
 		Versus:
 			Wood: 25
@@ -275,7 +275,7 @@ M60mg:
 	Inherits: ^LightMG
 	ReloadDelay: 30
 	Burst: 5
-	Range: 5c0
+	Range: 5c384
 	Warhead@1Dam: SpreadDamage
 		Versus:
 			Wood: 20
@@ -295,7 +295,7 @@ M60mg.APC:
 
 ^SnipeWeapon:
 	ReloadDelay: 80
-	Range: 6c0
+	Range: 6c512
 	Report: gun5.aud
 	ValidTargets: Ground, Water, Infantry
 	InvalidTargets: Vehicle, Tank, Ship, Structure, Wall, Husk
@@ -321,7 +321,7 @@ SilencedPPK:
 
 SilencedPPK.England:
 	Inherits: SilencedPPK
-	Range: 7c0
+	Range: 7c576
 
 SilencedPPK.Agent:
 	Inherits: SilencedPPK

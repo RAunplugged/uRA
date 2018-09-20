@@ -1,11 +1,11 @@
 ^AntiGroundMissile:
 	ReloadDelay: 50
-	Range: 6c0
+	Range: 6c512
 	MinRange: 0c512
 	Projectile: Missile
 		Arm: 2
 		Speed: 234
-		RangeLimit: 6c0
+		RangeLimit: 6c512
 		Inaccuracy: 128
 		HorizontalRateOfTurn: 5
 		Blockable: false
@@ -127,7 +127,7 @@ MammothTusk:
 	Inherits: ^AntiGroundMissile
 	ReloadDelay: 60
 	Burst: 2
-	Range: 9c0
+	Range: 8c0
 	ValidTargets: Air, Infantry
 	Projectile: Missile
 		Speed: 341
@@ -154,7 +154,7 @@ MammothTusk:
 MammothTuskAT:
 	ReloadDelay: 60
 	Burst: 2
-	Range: 6c0
+	Range: 6c512
 	ValidTargets: Tank, Vehicle, Husk
 	Projectile: Missile
 		Arm: 2
@@ -192,11 +192,11 @@ MammothTuskAT:
 Nike:
 	Inherits: ^AntiAirMissile
 	ReloadDelay: 15
-	Range: 9c0
+	Range: 9c256
 	Projectile: Missile
 		Arm: 3
 		Speed: 341
-		RangeLimit: 9c0
+		RangeLimit: 9c256
 		Inaccuracy: 0
 		HorizontalRateOfTurn: 25
 		Image: MISSILE
@@ -226,7 +226,7 @@ RedEye:
 Stinger:
 	Inherits: ^AntiGroundMissile
 	ReloadDelay: 60
-	Range: 9c0
+	Range: 9c256
 	Burst: 2
 	BurstDelays: 0
 	InvalidTargets: Underwater
@@ -257,7 +257,7 @@ StingerAA:
 APTusk:
 	Inherits: ^AntiGroundMissile
 	ReloadDelay: 60
-	Range: 7c0
+	Range: 7c576
 	Projectile: Missile
 		Speed: 298
 		RangeLimit: 9c0

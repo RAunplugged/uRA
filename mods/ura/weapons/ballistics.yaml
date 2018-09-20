@@ -1,6 +1,6 @@
 ^Cannon:
 	ReloadDelay: 50
-	Range: 6c0
+	Range: 6c512
 	Projectile: Bullet
 		Speed: 853
 		Image: 120MM
@@ -31,7 +31,7 @@
 25mm:
 	Inherits: ^Cannon
 	ReloadDelay: 22
-	Range: 5c0
+	Range: 5c384
 	Projectile: Bullet
 		Image: 50CAL
 	Warhead@1Dam: SpreadDamage
@@ -153,7 +153,7 @@ TurretGun:
 2Inch:
 	Inherits: ^Cannon
 	ReloadDelay: 60
-	Range: 7c0
+	Range: 7c576
 	InvalidTargets: Underwater
 	Projectile: Bullet
 		Speed: 426
@@ -164,7 +164,7 @@ TurretGun:
 Grenade:
 	Inherits: ^Artillery
 	ReloadDelay: 60
-	Range: 5c0
+	Range: 5c384
 	Projectile: Bullet
 		Speed: 136
 		Inaccuracy: 554
@@ -188,7 +188,7 @@ Grenade:
 DepthCharge:
 	Inherits: ^Artillery
 	ReloadDelay: 60
-	Range: 6c0
+	Range: 6c512
 	ValidTargets: Underwater
 	Projectile: Bullet
 		Speed: 100

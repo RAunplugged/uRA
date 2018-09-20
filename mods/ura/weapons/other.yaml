@@ -1,6 +1,6 @@
 ^FireWeapon:
 	ReloadDelay: 65
-	Range: 6c0
+	Range: 6c512
 	ValidTargets: Ground, Water, Trees
 	Warhead@1Dam: SpreadDamage
 		Damage: 150
@@ -59,7 +59,7 @@ Flamer:
 Flamer.Easy:
 	Inherits: Flamer
 	ReloadDelay: 75
-	Range: 5c0
+	Range: 5c384
 	Projectile: Bullet
 		Inaccuracy: 3412
 	Warhead@1Dam: SpreadDamage
@@ -69,14 +69,14 @@ Flamer.Brutal:
 	Inherits: Flamer
 	ReloadDelay: 30
 	Burst: 20
-	Range: 6c0
+	Range: 6c512
 	Projectile: Bullet
 		Inaccuracy: 1706
 
 Napalm:
 	Inherits: ^FireWeapon
 	ReloadDelay: 20
-	Range: 4c512
+	Range: 4c0
 	Projectile: Bullet
 		Speed: 85
 		Blockable: false
@@ -91,7 +91,7 @@ Napalm:
 #Modified version of KVFlame by FiveAces
 KVFlame:
 	ReloadDelay: 90
-	Range: 6c0
+	Range: 6c512
 	Burst: 25
 	BurstDelays: 1
 	ValidTargets: Infantry, Vehicle, Tank, Structure, Wall, Ground
@@ -121,7 +121,7 @@ KVFlame:
 
 ^TeslaWeapon:
 	ReloadDelay: 3
-	Range: 9c0
+	Range: 9c256
 	Projectile: TeslaZap
 	Warhead@1Dam: SpreadDamage
 		Spread: 42
@@ -140,7 +140,7 @@ TeslaZap:
 PortaTesla:
 	Inherits: ^TeslaWeapon
 	ReloadDelay: 70
-	Range: 7c0
+	Range: 7c576
 	Warhead@1Dam: SpreadDamage
 		Damage: 45
 		Versus:
@@ -150,7 +150,7 @@ PortaTesla:
 TTankZap:
 	Inherits: ^TeslaWeapon
 	ReloadDelay: 120
-	Range: 9c0
+	Range: 9c256
 	Warhead@1Dam: SpreadDamage
 		Damage: 85
 
@@ -168,7 +168,7 @@ DogJaw:
 
 DogJaw.Brutal:
 	Inherits: DogJaw
-	Range: 5c0
+	Range: 5c384
 
 Heal:
 	ReloadDelay: 80
@@ -186,7 +186,7 @@ Heal:
 
 Heal.IFV:
 	Inherits: Heal
-	Range: 5c0
+	Range: 5c384
 	Warhead@1Dam: SpreadDamage
 		Damage: -15
 		Spread: 1704
@@ -210,7 +210,7 @@ Repair:
 
 Repair.IFV:
 	Inherits: Repair
-	Range: 5c0
+	Range: 5c384
 	Warhead@1Dam: SpreadDamage
 		Damage: -40
 
