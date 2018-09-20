@@ -1,0 +1,61 @@
+Completed:
+all
+
+- - - - - - - - - - - - - - - -
+
+Inherits
+ReloadDelay
+Burst
+BurstDelays
+Range
+MinRange
+ValidTargets
+InvalidTargets
+TargetActorCenter
+Projectile:
+	Arm
+	Speed
+	RangeLimit
+	Inaccuracy
+	CloseEnough
+	TrailDelay
+	HorizontalRateOfTurn ++++
+	LaunchAngle ++++
+	MaximumLaunchAngle +++
+	CruiseAltitude +++
+	Blockable
+	ContrailLength
+	Image
+	Shadow
+	Palette
+Warhead-Damage
+	Delay
+	Range
+	Damage
+	Versus
+	Spread ++
+	Falloff ++
+	Affectsparent
+	ValidTargets
+	InvalidTargets
+	DamageTypes
+Warhead-Effect
+	Delay
+	Explosions
+	ImpactActors ++
+	ImpactSounds ++
+	ValidTargets
+	InvalidTargets
+Warhead-Smudge:
+	SmudgeType
+	Delay
+	Size
+	ValidTargets
+	InvalidTargets
+Warhead-Resource:
+	Delay
+	Size
+	AddsResourceType
+Report
+
+

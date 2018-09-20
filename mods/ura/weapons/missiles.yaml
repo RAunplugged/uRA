@@ -2,27 +2,26 @@
 	ReloadDelay: 50
 	Range: 6c0
 	MinRange: 0c512
-	Report: missile6.aud
 	Projectile: Missile
-		Speed: 234
 		Arm: 2
+		Speed: 234
+		RangeLimit: 6c0
+		Inaccuracy: 128
+		HorizontalRateOfTurn: 5
 		Blockable: false
 		ContrailLength: 10
-		Inaccuracy: 128
 		Image: DRAGON
 		Shadow: True
-		HorizontalRateOfTurn: 5
-		RangeLimit: 6c0
 	Warhead@1Dam: SpreadDamage
-		Spread: 128
 		Damage: 50
-		ValidTargets: Ground, Water, Air
 		Versus:
 			None: 10
 			Wood: 75
 			Light: 35
 			Heavy: 100
 			Concrete: 50
+		Spread: 128
+		ValidTargets: Ground, Water, Air
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Crater
@@ -36,6 +35,7 @@
 		ImpactSounds: splash9.aud
 		ValidTargets: Water, Underwater
 		InvalidTargets: Ship, Structure, Bridge
+	Report: missile6.aud
 
 ^AntiAirMissile:
 	Inherits: ^AntiGroundMissile
@@ -46,16 +46,15 @@
 MaverickAG:
 	Inherits: ^AntiGroundMissile
 	ReloadDelay: 30
-	Range: 11c0
-	MinRange: 3c0
-	Report: missile7.aud
 	Burst: 2
 	BurstDelays: 7
+	Range: 11c0
+	MinRange: 3c0
 	Projectile: Missile
 		Speed: 256
 		Inaccuracy: 512
-		CruiseAltitude: 2c0
 		RangeLimit: 14c410
+		CruiseAltitude: 2c0
 	Warhead@1Dam: SpreadDamage
 		Damage: 90
 		Versus:
@@ -63,19 +62,20 @@ MaverickAG:
 			Wood: 90
 			Light: 90
 			Concrete: 100
+	Report: missile7.aud
 
 MaverickAA:
 	Inherits: MaverickAG
-	ValidTargets: Air
 	ReloadDelay: 104
 	MinRange: 3c0
+	ValidTargets: Air
 	Projectile: Missile
 		Speed: 304
 	Warhead@1Dam: SpreadDamage
-		Spread: 256
 		Damage: 25
 		Versus:
 			Light: 100
+		Spread: 256
 		ValidTargets: Air
 	Warhead@2Eff: CreateEffect
 		Explosions: med_explosion_air
@@ -93,8 +93,8 @@ HellfireAG:
 	BurstDelays: 12
 	Projectile: Missile
 		Speed: 304
-		HorizontalRateOfTurn: 10
 		RangeLimit: 9c0
+		HorizontalRateOfTurn: 10
 	Warhead@1Dam: SpreadDamage
 		Damage: 60
 		Versus:
@@ -111,36 +111,36 @@ HellfireAA:
 	BurstDelays: 8
 	Projectile: Missile
 		Speed: 334
+		RangeLimit: 9c0
 		Inaccuracy: 128
 		HorizontalRateOfTurn: 5
-		RangeLimit: 9c0
 	Warhead@1Dam: SpreadDamage
-		Spread: 256
 		Damage: 30
-		ValidTargets: Air
 		Versus:
 			Light: 75
+		Spread: 256
+		ValidTargets: Air
 	Warhead@3Eff: CreateEffect
 		Explosions: med_explosion_air
 
 MammothTusk:
 	Inherits: ^AntiGroundMissile
 	ReloadDelay: 60
-	Range: 9c0
 	Burst: 2
+	Range: 9c0
 	ValidTargets: Air, Infantry
 	Projectile: Missile
 		Speed: 341
-		HorizontalRateOfTurn: 15
 		RangeLimit: 9c614
+		HorizontalRateOfTurn: 15
 	Warhead@1Dam: SpreadDamage
-		Spread: 256
 		Damage: 50
 		Versus:
 			None: 100
 			Light: 60
 			Heavy: 25
 			Concrete: 50
+		Spread: 256
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@3Eff: CreateEffect
 		ImpactSounds: kaboom12.aud
@@ -153,25 +153,24 @@ MammothTusk:
 # Modified version of MammothTuskAT by FiveAces
 MammothTuskAT:
 	ReloadDelay: 60
-	Range: 6c0
-	Report: missile6.aud
 	Burst: 2
+	Range: 6c0
 	ValidTargets: Tank, Vehicle, Husk
 	Projectile: Missile
-		Speed: 341
 		Arm: 2
+		Speed: 341
+		RangeLimit: 7c256
+		Inaccuracy: 128
+		HorizontalRateOfTurn: 15
 		Blockable: false
 		ContrailLength: 10
-		Inaccuracy: 128
 		Image: DRAGON
-		HorizontalRateOfTurn: 15
-		RangeLimit: 7c256
 	Warhead@1Dam: SpreadDamage
-		Spread: 256
 		Damage: 25
 		Versus:
 			Light: 80
 			Heavy: 110
+		Spread: 256
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Crater
@@ -188,40 +187,41 @@ MammothTuskAT:
 		Explosions: med_explosion_air
 		ImpactSounds: kaboom25.aud
 		ValidTargets: Air
+	Report: missile6.aud
 
 Nike:
 	Inherits: ^AntiAirMissile
 	ReloadDelay: 15
 	Range: 9c0
-	Report: missile1.aud
 	Projectile: Missile
 		Arm: 3
-		Inaccuracy: 0
-		Image: MISSILE
-		HorizontalRateOfTurn: 25
-		RangeLimit: 9c0
 		Speed: 341
+		RangeLimit: 9c0
+		Inaccuracy: 0
+		HorizontalRateOfTurn: 25
+		Image: MISSILE
 	Warhead@1Dam: SpreadDamage
 		Damage: 50
-		ValidTargets: Air
 		Versus:
 			Light: 90
+		ValidTargets: Air
 	Warhead@3Eff: CreateEffect
 		Explosions: med_explosion_air
 		ImpactSounds: kaboom25.aud
+	Report: missile1.aud
 
 RedEye:
 	Inherits: Nike
 	ReloadDelay: 50
 	Projectile: Missile
+		Speed: 298
 		Inaccuracy: 0
 		HorizontalRateOfTurn: 20
-		Speed: 298
 	Warhead@1Dam: SpreadDamage
 		Damage: 40
-		ValidTargets: Air
 		Versus:
 			Light: 60
+		ValidTargets: Air
 
 Stinger:
 	Inherits: ^AntiGroundMissile
@@ -232,11 +232,11 @@ Stinger:
 	InvalidTargets: Underwater
 	Projectile: Missile
 		Arm: 3
-		Inaccuracy: 0
-		HorizontalRateOfTurn: 20
 		RangeLimit: 11c0
 		Speed: 170
+		Inaccuracy: 0
 		CloseEnough: 149
+		HorizontalRateOfTurn: 20
 	Warhead@1Dam: SpreadDamage
 		Damage: 30
 		Versus:
@@ -260,45 +260,44 @@ APTusk:
 	Range: 7c0
 	Projectile: Missile
 		Speed: 298
-		TrailImage: smokey
-		HorizontalRateOfTurn: 10
 		RangeLimit: 9c0
+		HorizontalRateOfTurn: 10
+		TrailImage: smokey
 	Warhead@1Dam: SpreadDamage
-		Spread: 256
 		Damage: 30
 		Versus:
 			None: 50
 			Light: 75
 			Heavy: 110
 			Concrete: 50
+		Spread: 256
 
 TorpTube:
 	ReloadDelay: 100
 	Range: 11c0
-	Report: torpedo1.aud
-	ValidTargets: Water, Underwater, Bridge
 	Burst: 2
 	BurstDelays: 20
+	ValidTargets: Water, Underwater, Bridge
 	Projectile: Missile
-		Image: torpedo
 		Arm: 3
 		Speed: 85
-		TrailImage: bubbles
-		HorizontalRateOfTurn: 1
 		RangeLimit: 11c0
-		BoundToTerrainType: Water
-		Palette: shadow
+		HorizontalRateOfTurn: 1
 		MaximumLaunchAngle: 0
 		CruiseAltitude: 0
+		BoundToTerrainType: Water
+		Image: torpedo
+		TrailImage: bubbles
+		Palette: shadow
 	Warhead@1Dam: SpreadDamage
-		Spread: 426
 		Damage: 180
-		ValidTargets: Water, Underwater, Bridge
 		Versus:
 			Wood: 75
 			Light: 75
 			Heavy: 100
 			Concrete: 500
+		Spread: 426
+		ValidTargets: Water, Underwater, Bridge
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@3Eff: CreateEffect
 		Explosions: artillery_explosion
@@ -309,6 +308,7 @@ TorpTube:
 		ImpactSounds: splash9.aud
 		ValidTargets: Water
 		InvalidTargets: Ship, Structure, Underwater, Bridge
+	Report: torpedo1.aud
 
 ^SubMissileDefault:
 	Inherits: ^AntiGroundMissile
@@ -317,22 +317,22 @@ TorpTube:
 	Burst: 2
 	Projectile: Missile
 		Speed: 234
+		RangeLimit: 11c0
 		Inaccuracy: 0c614
 		HorizontalRateOfTurn: 15
-		RangeLimit: 11c0
+		ContrailLength: 30
 		Image: MISSILE
 		TrailImage: smokey
-		ContrailLength: 30
 	Warhead@1Dam: SpreadDamage
-		Spread: 426
 		Damage: 25
-		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		Versus:
 			None: 40
 			Wood: 40
 			Light: 35
 			Heavy: 30
 			Concrete: 100
+		Spread: 426
+		Falloff: 1000, 368, 135, 50, 18, 7, 0
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@3Eff: CreateEffect
 		Explosions: artillery_explosion
@@ -348,13 +348,13 @@ SubMissile:
 	-Projectile:
 	Projectile: Bullet
 		Speed: 162
-		Blockable: false
-		LaunchAngle: 120
 		Inaccuracy: 1c512
-		Image: MISSILE
-		Shadow: True
-		TrailImage: smokey
+		LaunchAngle: 120
+		Blockable: false
 		ContrailLength: 30
+		Image: MISSILE
+		TrailImage: smokey
+		Shadow: True
 
 SubMissileAA:
 	Inherits: ^SubMissileDefault
@@ -367,31 +367,31 @@ SCUD:
 	ReloadDelay: 240
 	Range: 12c0
 	MinRange: 4c0
-	Report: missile1.aud
 	-Projectile:
 	Projectile: Bullet
 		Speed: 220
-		Blockable: false
-		TrailImage: smokey
-		TrailDelay: 5
 		Inaccuracy: 213
-		Image: V2
-		Shadow: True
+		TrailDelay: 5
 		LaunchAngle: 62
+		Blockable: false
+		Image: V2
+		TrailImage: smokey
+		Shadow: True
 	Warhead@1Dam: SpreadDamage
-		Spread: 341
 		Damage: 45
-		Falloff: 1000, 368, 135, 50, 18, 7, 0
-		ValidTargets: Ground, Water, Trees
 		Versus:
 			None: 90
 			Wood: 75
 			Light: 70
 			Heavy: 40
 			Concrete: 100
+		Spread: 341
+		Falloff: 1000, 368, 135, 50, 18, 7, 0
+		ValidTargets: Ground, Water, Trees
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath, Incendiary
 	Warhead@3Eff: CreateEffect
 		Explosions: napalm
 		ImpactSounds: firebl3.aud
 	Warhead@4EffWater: CreateEffect
 		Explosions: large_splash
+	Report: missile1.aud

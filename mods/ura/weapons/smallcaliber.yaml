@@ -1,31 +1,31 @@
 ^AACannon:
 	ReloadDelay: 10
 	Range: 9c0
-	Report: aacanon3.aud
 	ValidTargets: Air
 	Projectile: Bullet
 		Speed: 1c682
 		Blockable: false
 	Warhead@1Dam: SpreadDamage
-		Spread: 213
 		Damage: 20
-		ValidTargets: Air
 		Versus:
 			None: 40
 			Wood: 10
 			Light: 60
 			Heavy: 10
 			Concrete: 20
+		Spread: 213
+		ValidTargets: Air
 		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: small_explosion_air
 		ValidTargets: Air, Ground, Water, Trees
+	Report: aacanon3.aud
 
 ZSU-23:
 	Inherits: ^AACannon
+	ReloadDelay: 5
 	Burst: 2
 	BurstDelays: 0
-	ReloadDelay: 5
 	Range: 11c0
 	Projectile: Bullet
 		Speed: 3c340
@@ -60,11 +60,9 @@ FLAK-23-AG:
 ^HeavyMG:
 	ReloadDelay: 30
 	Range: 6c0
-	Report: gun13.aud
 	Projectile: Bullet
 		Speed: 1c682
 	Warhead@1Dam: SpreadDamage
-		Spread: 128
 		Damage: 30
 		Versus:
 			None: 100
@@ -72,6 +70,7 @@ FLAK-23-AG:
 			Light: 60
 			Heavy: 25
 			Concrete: 25
+		Spread: 128
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: piffs
@@ -80,6 +79,7 @@ FLAK-23-AG:
 		Explosions: water_piffs
 		ValidTargets: Water, Underwater
 		InvalidTargets: Ship, Structure, Bridge
+	Report: gun13.aud
 
 ^LightMG:
 	Inherits: ^HeavyMG
@@ -104,105 +104,105 @@ Vulcan:
 			Heavy: 20
 			Concrete: 20
 	Warhead@4Dam_2: SpreadDamage
-		Spread: 128
-		Damage: 10
 		Delay: 2
+		Damage: 10
 		Versus:
 			None: 200
 			Wood: 50
 			Light: 50
 			Heavy: 25
 			Concrete: 25
+		Spread: 128
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@4Eff_2: CreateEffect
+		Delay: 2
 		Explosions: piffs
 		ValidTargets: Ground, Ship, Trees
-		Delay: 2
 	Warhead@4Eff_2Water: CreateEffect
+		Delay: 2
 		Explosions: water_piffs
 		ValidTargets: Water, Underwater
 		InvalidTargets: Ship, Structure, Bridge
-		Delay: 2
 	Warhead@5Dam_3: SpreadDamage
-		Spread: 128
-		Damage: 10
 		Delay: 4
+		Damage: 10
 		Versus:
 			None: 200
 			Wood: 50
 			Light: 50
 			Heavy: 25
 			Concrete: 25
+		Spread: 128
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@6Eff_3: CreateEffect
+		Delay: 4
 		Explosions: piffs
 		ValidTargets: Ground, Ship, Trees
-		Delay: 4
 	Warhead@6Eff_3Water: CreateEffect
+		Delay: 4
 		Explosions: water_piffs
 		ValidTargets: Water, Underwater
 		InvalidTargets: Ship, Structure, Bridge
-		Delay: 4
 	Warhead@7Dam_4: SpreadDamage
-		Spread: 128
-		Damage: 10
 		Delay: 6
+		Damage: 10
 		Versus:
 			None: 200
 			Wood: 50
 			Light: 50
 			Heavy: 25
 			Concrete: 25
+		Spread: 128
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@8Eff_4: CreateEffect
+		Delay: 6
 		Explosions: piffs
 		ValidTargets: Ground, Ship, Trees
-		Delay: 6
 	Warhead@8Eff_4Water: CreateEffect
+		Delay: 6
 		Explosions: water_piffs
 		ValidTargets: Water, Underwater
 		InvalidTargets: Ship, Structure, Bridge
-		Delay: 6
 	Warhead@9Dam_5: SpreadDamage
-		Spread: 128
-		Damage: 10
 		Delay: 8
+		Damage: 10
 		Versus:
 			None: 200
 			Wood: 50
 			Light: 50
 			Heavy: 25
 			Concrete: 25
+		Spread: 128
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@10Eff_5: CreateEffect
+		Delay: 8
 		Explosions: piffs
 		ValidTargets: Ground, Ship, Trees
-		Delay: 8
 	Warhead@10Eff_5Water: CreateEffect
+		Delay: 8
 		Explosions: water_piffs
 		ValidTargets: Water, Underwater
 		InvalidTargets: Ship, Structure, Bridge
-		Delay: 8
 	Warhead@11Dam_6: SpreadDamage
-		Spread: 128
-		Damage: 10
 		Delay: 10
+		Damage: 10
 		Versus:
 			None: 200
 			Wood: 50
 			Light: 50
 			Heavy: 25
 			Concrete: 25
+		Spread: 128
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@12Eff_6: CreateEffect
+		Delay: 10
 		Explosions: piffs
 		ValidTargets: Ground, Ship, Trees
-		Delay: 10
 	Warhead@12Eff_6Water: CreateEffect
+		Delay: 10
 		Explosions: water_piffs
 		ValidTargets: Water, Underwater
 		InvalidTargets: Ship, Structure, Bridge
-		Delay: 10
 
 ChainGun:
 	Inherits: ^HeavyMG
@@ -244,13 +244,13 @@ Pistol:
 	Inherits: ^LightMG
 	ReloadDelay: 7
 	Range: 4c0
-	Report: gun27.aud
 	Warhead@1Dam: SpreadDamage
 		Damage: 2
 	Warhead@2Eff: CreateEffect
 		Explosions: piff
 	Warhead@3EffWater: CreateEffect
 		Explosions: water_piff
+	Report: gun27.aud
 
 Pistol.Agent:
 	Inherits: Pistol
@@ -266,14 +266,15 @@ M1Carbine:
 	Inherits: ^LightMG
 	ReloadDelay: 20
 	Range: 6c0
-	Report: gun11.aud
 	Warhead@1Dam: SpreadDamage
 		Versus:
 			Wood: 25
+	Report: gun11.aud
 
 M60mg:
 	Inherits: ^LightMG
 	ReloadDelay: 30
+	Burst: 5
 	Range: 5c0
 	Warhead@1Dam: SpreadDamage
 		Versus:
@@ -281,7 +282,6 @@ M60mg:
 			Light: 25
 			Heavy: 15
 	Report: pillbox1.aud
-	Burst: 5
 
 M60mg.APC:
 	Inherits: M60mg
@@ -309,7 +309,6 @@ M60mg.APC:
 SilencedPPK:
 	Inherits: ^SnipeWeapon
 	ReloadDelay: 70
-	Report: silppk.aud
 	Warhead@1Dam: SpreadDamage
 	Warhead@2Eff: CreateEffect
 		Explosions: piffs
@@ -318,6 +317,7 @@ SilencedPPK:
 		Explosions: water_piffs
 		ValidTargets: Water, Underwater
 		InvalidTargets: Ship, Structure, Bridge
+	Report: silppk.aud
 
 SilencedPPK.England:
 	Inherits: SilencedPPK
