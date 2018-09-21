@@ -79,7 +79,7 @@
 			Beach: 70
 	Locomotor@HEAVYTRACKED:
 		Name: heavytracked
-		Crushes: wall, infantry, mine, crate, heavywall
+		Crushes: wall, infantry, vehicles, mine, crate, heavywall
 		TerrainSpeeds:
 			Clear: 80
 			Rough: 70

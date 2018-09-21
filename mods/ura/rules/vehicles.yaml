@@ -122,6 +122,8 @@ TRUK:
 		Description: Transports cash to other players.\n  Unarmed
 	RevealsShroud:
 		Range: 5c384
+	Crushable:
+		CrushClasses: vehicles
 	Selectable:
 		Priority: 4
 	SpawnActorOnDeath:
@@ -420,6 +422,8 @@ ARTY:
 		Weapon: 155mm
 		LocalOffset: 624,0,208
 		MuzzleSequence: muzzle
+	Crushable:
+		CrushClasses: vehicles
 	Explodes:
 		Weapon: ArtilleryExplode
 		EmptyWeapon: UnitExplodeSmall
@@ -453,6 +457,8 @@ V2RL:
 	Armament:
 		Weapon: SCUD
 		ReloadingCondition: reloading
+	Crushable:
+		CrushClasses: vehicles
 	AutoTarget:
 		ScanRadius: 12
 	Selectable:
@@ -504,6 +510,8 @@ JEEP:
 		Offset: 0,0,128
 	AttackTurreted:
 	#	RequiresCondition: !ifv-medic
+	Crushable:
+		CrushClasses: vehicles
 	# AttackFrontal:
 	#	FacingTolerance: 128
 	#	RequiresCondition: ifv-medic
@@ -708,6 +716,8 @@ FTRK:
 	DetectCloaked:
 		Range: 1c512
 	AttackTurreted:
+	Crushable:
+		CrushClasses: vehicles
 	WithMuzzleOverlay:
 	WithSpriteTurret:
 	Selectable:
@@ -1033,6 +1043,7 @@ QTNK:
 	Mobile:
 		RequiresCondition: !deployed
 		Speed: 56
+		Crushes: wall, infantry, vehicles, mine, crate, heavywall
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 170
@@ -1076,6 +1087,8 @@ DTRK:
 		Description: Truck with actively armed nuclear\nexplosives. Has very weak armor.
 	RevealsShroud:
 		Range: 5c384
+	Crushable:
+		CrushClasses: vehicles
 	Explodes:
 		Weapon: MiniNuke
 		EmptyWeapon: MiniNuke
