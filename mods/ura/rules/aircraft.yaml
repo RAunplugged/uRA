@@ -26,7 +26,7 @@ TRAN:
 	RevealsShroud@GAPGEN:
 		Range: 8c0
 		Type: GroundPosition
-	Armament@PRIMARY:
+	Armament:
 		Weapon: Hover
 	AmmoPool:
 		Ammo: 0
