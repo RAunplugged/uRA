@@ -581,7 +581,7 @@ SHOK:
 SNIPER:
 	Inherits: ^Soldier
 	Tooltip:
-		Name: Sniper
+		Name: British Sniper
 	Valued:
 		Cost: 700
 	Health:
