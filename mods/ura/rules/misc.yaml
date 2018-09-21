@@ -36,14 +36,14 @@ CRATE:
 	ExplodeCrateAction@fire:
 		Weapon: CrateNapalm
 		SelectionShares: 5
-	ExplodeCrateAction@fire18000:
+	ExplodeCrateAction@fire.18000:
 		Weapon: CrateNapalm
 		SelectionShares: 10
 		TimeDelay: 18000
 	ExplodeCrateAction@boom:
 		Weapon: CrateExplosion
 		SelectionShares: 5
-	ExplodeCrateAction@boom18000:
+	ExplodeCrateAction@boom.18000:
 		Weapon: CrateExplosion
 		SelectionShares: 10
 		TimeDelay: 18000
@@ -86,36 +86,62 @@ CRATE:
 		Units: stnk
 		ValidFactions: england
 		TimeDelay: 18000
+	GiveUnitCrateAction@stnk.36000:
+		SelectionShares: 40
+		Units: stnk, stnk, spy.england, spy.england, sniper, sniper
+		ValidFactions: england
+		TimeDelay: 36000
 	GiveUnitCrateAction@mgg:
 		SelectionShares: 25
 		Units: mgg
 		ValidFactions: france
 		TimeDelay: 13500
+	GiveUnitCrateAction@mgg.36000:
+		SelectionShares: 40
+		Units: mgg, mrj, 2tnk, 2tnk, 2tnk
+		ValidFactions: france
+		TimeDelay: 36000
 	GiveUnitCrateAction@2tnk.ger:
-		SelectionShares: 15
+		SelectionShares: 10
 		Units: 2tnk.ger
 		ValidFactions: germany
 		TimeDelay: 13500
 	GiveUnitCrateAction@ctnk:
-		SelectionShares: 25
+		SelectionShares: 15
 		Units: ctnk
 		ValidFactions: germany
 		TimeDelay: 18000
+	GiveUnitCrateAction@ctnk.36000:
+		SelectionShares: 40
+		Units: mrj, ctnk, ctnk, ctnk
+		ValidFactions: germany
+		TimeDelay: 36000
 	GiveUnitCrateAction@ttnk:
 		SelectionShares: 25
 		Units: ttnk
 		ValidFactions: russia
 		TimeDelay: 18000
+	GiveUnitCrateAction@ttnk.36000:
+		SelectionShares: 40
+		Units: ftrk, ftrk, ttnk, ttnk, ttnk
+		ValidFactions: russia
+		TimeDelay: 36000
 	GiveUnitCrateAction@4tnk.kv-8:
 		SelectionShares: 25
 		Units: 4tnk.kv-8
 		ValidFactions: ukraine
 		TimeDelay: 18000
+	GiveUnitCrateAction@4tnk.kv-8.36000:
+		SelectionShares: 40
+		Units: ftrk, ftrk, 4tnk.kv-8, 4tnk.kv-8
+		ValidFactions: ukraine
+		TimeDelay: 36000
 	GrantExternalConditionCrateAction@invuln:
 		SelectionShares: 15
 		Effect: invuln
 		Notification: ironcur9.aud
 		Condition: invulnerability
+		Range: 1c512
 		Duration: 750
 		TimeDelay: 9000
 
