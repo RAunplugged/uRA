@@ -54,8 +54,8 @@ InfiltrateForSupportPower
 Aircraft
 MustBeDestroyed
 RevealsShroud
-RevealsShroud@GAPGEN !!! check and inherit units/structures!
-Armament	!!! remove PRIMARY with TRAN!
+RevealsShroud@GAPGEN
+Armament
 Turreted
 AttackTurreted
 AmmoPool

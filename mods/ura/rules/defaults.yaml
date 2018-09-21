@@ -618,6 +618,8 @@
 	Targetable:
 		TargetTypes: Ground, Water, Ship, Repair
 	Guardable:
+	Demolishable:
+		PreventsEjectOnDeath: True
 	DrawLineToTarget:
 	Chronoshiftable:
 	Explodes:
