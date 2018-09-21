@@ -592,8 +592,8 @@ Actors:
 	Actor36: brik
 		Location: 72,66
 		Owner: Allies
-	Actor228: mgg
-		Location: 49,63
+	Actor228: mrj
+		Location: 49,64
 		Owner: Allies
 	Actor255: e1
 		Location: 67,76
