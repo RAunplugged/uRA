@@ -1043,7 +1043,7 @@ QTNK:
 	Mobile:
 		RequiresCondition: !deployed
 		Speed: 56
-		Crushes: wall, infantry, vehicles, mine, crate, heavywall
+		Locomotor: heavytracked
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 170
