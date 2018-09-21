@@ -338,6 +338,7 @@
 		RequiresCondition: parachute
 	Huntable:
 	Crushable:
+		WarnProbability: 67
 		CrushSound: squishy2.aud
 	Selectable:
 		Bounds: 18,20,0,-6

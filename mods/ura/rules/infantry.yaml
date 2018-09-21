@@ -519,7 +519,7 @@ HIJACKER:
 		CaptureTypes: vehicle
 		PlayerExperience: 50
 	Crushable:
-		WarnProbability: 95
+		WarnProbability: 100
 	Passenger:
 		PipType: Blue
 	-TakeCover:
