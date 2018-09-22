@@ -5,7 +5,7 @@ T01:
 		Dimensions: 2,2
 	SpawnActorOnDeath:
 		Actor: T01.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 T02:
@@ -15,7 +15,7 @@ T02:
 		Dimensions: 2,2
 	SpawnActorOnDeath:
 		Actor: T02.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 T03:
@@ -25,7 +25,7 @@ T03:
 		Dimensions: 2,2
 	SpawnActorOnDeath:
 		Actor: T03.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 T04:
@@ -35,7 +35,7 @@ T04:
 		Dimensions: 2,2
 	SpawnActorOnDeath:
 		Actor: T04.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: TEMPERAT, SNOW, INTERIOR
 
 T05:
@@ -45,7 +45,7 @@ T05:
 		Dimensions: 2,2
 	SpawnActorOnDeath:
 		Actor: T05.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 T06:
@@ -55,7 +55,7 @@ T06:
 		Dimensions: 2,2
 	SpawnActorOnDeath:
 		Actor: T06.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 T07:
@@ -65,7 +65,7 @@ T07:
 		Dimensions: 2,2
 	SpawnActorOnDeath:
 		Actor: T07.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 T08:
@@ -80,7 +80,7 @@ T09:
 	Inherits: ^Tree
 	SpawnActorOnDeath:
 		Actor: T09.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: TEMPERAT, SNOW, INTERIOR
 
 T10:
@@ -90,7 +90,7 @@ T10:
 		Dimensions: 2,2
 	SpawnActorOnDeath:
 		Actor: T10.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 T11:
@@ -100,7 +100,7 @@ T11:
 		Dimensions: 2,2
 	SpawnActorOnDeath:
 		Actor: T11.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 T12:
@@ -110,7 +110,7 @@ T12:
 		Dimensions: 2,2
 	SpawnActorOnDeath:
 		Actor: T12.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 T13:
@@ -120,7 +120,7 @@ T13:
 		Dimensions: 2,2
 	SpawnActorOnDeath:
 		Actor: T13.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 T14:
@@ -130,7 +130,7 @@ T14:
 		Dimensions: 3,2
 	SpawnActorOnDeath:
 		Actor: T14.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 T15:
@@ -140,7 +140,7 @@ T15:
 		Dimensions: 3,2
 	SpawnActorOnDeath:
 		Actor: T15.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 T16:
@@ -150,7 +150,7 @@ T16:
 		Dimensions: 2,2
 	SpawnActorOnDeath:
 		Actor: T16.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 T17:
@@ -160,7 +160,7 @@ T17:
 		Dimensions: 2,2
 	SpawnActorOnDeath:
 		Actor: T17.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 TC01:
@@ -170,7 +170,7 @@ TC01:
 		Dimensions: 3,2
 	SpawnActorOnDeath:
 		Actor: TC01.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: INTERIOR
 
 TC02:
@@ -180,7 +180,7 @@ TC02:
 		Dimensions: 3,2
 	SpawnActorOnDeath:
 		Actor: TC02.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 TC03:
@@ -190,7 +190,7 @@ TC03:
 		Dimensions: 3,2
 	SpawnActorOnDeath:
 		Actor: TC03.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 TC04:
@@ -200,7 +200,7 @@ TC04:
 		Dimensions: 4,3
 	SpawnActorOnDeath:
 		Actor: TC04.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 TC05:
@@ -210,7 +210,7 @@ TC05:
 		Dimensions: 4,3
 	SpawnActorOnDeath:
 		Actor: TC05.Husk
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 BOXES01:
@@ -219,7 +219,7 @@ BOXES01:
 		Name: Boxes
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 BOXES02:
@@ -228,7 +228,7 @@ BOXES02:
 		Name: Boxes
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 BOXES03:
@@ -237,7 +237,7 @@ BOXES03:
 		Name: Boxes
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 BOXES04:
@@ -246,7 +246,7 @@ BOXES04:
 		Name: Boxes
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 BOXES05:
@@ -255,7 +255,7 @@ BOXES05:
 		Name: Boxes
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 BOXES06:
@@ -264,7 +264,7 @@ BOXES06:
 		Name: Boxes
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 BOXES07:
@@ -273,7 +273,7 @@ BOXES07:
 		Name: Boxes
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 BOXES08:
@@ -282,7 +282,7 @@ BOXES08:
 		Name: Boxes
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 BOXES09:
@@ -291,7 +291,7 @@ BOXES09:
 		Name: Boxes
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 ICE01:
@@ -303,7 +303,7 @@ ICE01:
 		Dimensions: 2,2
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: SNOW
 		Categories: Decoration
 
@@ -316,7 +316,7 @@ ICE02:
 		Dimensions: 1,2
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: SNOW
 		Categories: Decoration
 
@@ -329,7 +329,7 @@ ICE03:
 		Dimensions: 2,1
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: SNOW
 		Categories: Decoration
 
@@ -339,7 +339,7 @@ ICE04:
 		Name: Ice Floe
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: SNOW
 		Categories: Decoration
 
@@ -349,7 +349,7 @@ ICE05:
 		Name: Ice Floe
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: SNOW
 		Categories: Decoration
 
@@ -401,7 +401,7 @@ UTILPOL1:
 		Name: Utility Pole
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 UTILPOL2:
@@ -410,7 +410,7 @@ UTILPOL2:
 		Name: Utility Pole
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 TANKTRAP1:
@@ -422,7 +422,7 @@ TANKTRAP1:
 		Dimensions: 1,1
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: TEMPERAT, SNOW, DESERT, INTERIOR
 
 TANKTRAP2:
@@ -434,5 +434,5 @@ TANKTRAP2:
 		Dimensions: 1,1
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: TEMPERAT, SNOW, DESERT, INTERIOR

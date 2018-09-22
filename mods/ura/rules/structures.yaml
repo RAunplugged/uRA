@@ -682,7 +682,7 @@ SYRD:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: INTERIOR
 	ProvidesPrerequisite@allies:
 		Factions: allies, england, france, germany
@@ -824,7 +824,7 @@ SPEN:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: INTERIOR
 	ProvidesPrerequisite@soviet:
 		Factions: soviet, russia, ukraine

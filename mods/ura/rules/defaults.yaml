@@ -375,7 +375,7 @@
 			FireDeath: 5
 			ElectricityDeath: 6
 		CrushedSequence: die-crushed
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Infantry
 
 ^Soldier:
@@ -415,7 +415,7 @@
 		MaxMoveDelay: 750
 	Voiced:
 		VoiceSet: CivilianMaleVoice
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Civilian infantry
 
 ^ArmedCivilian:
@@ -494,7 +494,7 @@
 	BodyOrientation:
 		UseClassicFacingFudge: True
 	WithSpriteControlGroupDecoration:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Vehicle
 
 ^TrackedVehicle:
@@ -564,7 +564,7 @@
 	WithShadow:
 		Offset: 43, 128, 0
 		ZOffset: -129
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Aircraft
 
 ^Plane:
@@ -635,7 +635,7 @@
 	WithDamageOverlay:
 	WithFacingSpriteBody:
 	WithSpriteControlGroupDecoration:
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: INTERIOR
 		Categories: Naval
 
@@ -682,7 +682,7 @@
 	WithSpriteBody:
 	WithSpriteControlGroupDecoration:
 	CommandBarBlacklist:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Building
 
 ^Building:
@@ -736,7 +736,7 @@
 		Weapon: SmallBuildingExplode
 		EmptyWeapon: SmallBuildingExplode
 	-CommandBarBlacklist:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Defense
 
 ^Wall:
@@ -779,7 +779,7 @@
 	RenderSprites:
 		Palette: effect
 	WithWallSpriteBody:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Wall
 
 ^FakeBuilding:
@@ -803,7 +803,7 @@
 		Sequence: tag-fake
 		ReferencePoint: Top
 		ZOffset: 256
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Fake
 
 ^InfiltratableFake:
@@ -827,7 +827,7 @@
 		Type: Wood
 	FrozenUnderFog:
 	Huntable:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Tech building
 
 ^AmmoBox:
@@ -847,7 +847,7 @@
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
 	Explodes:
 		Weapon: UnitExplode
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 # Decorative
@@ -869,7 +869,7 @@
 		Probability: 15
 	RenderSprites:
 		Palette: player
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: INTERIOR
 		Categories: Civilian building
 
@@ -886,7 +886,7 @@
 	-Demolishable:
 	-Explodes:
 	-Explodes@CIVPANIC:
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: INTERIOR
 
 
@@ -894,7 +894,7 @@
 	Inherits: ^CivBuilding
 	RenderSprites:
 		Palette: desert
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: DESERT
 
 ^Tree:
@@ -936,7 +936,7 @@
 		Palette: terrain
 	WithSpriteBody:
 	ScriptTriggers:
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: INTERIOR
 		Categories: Tree
 
@@ -982,7 +982,7 @@
 		Palette: desert
 	WithSpriteBody:
 	ScriptTriggers:
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: DESERT
 		Categories: Decoration
 
@@ -1020,7 +1020,7 @@
 		Palette: effect
 		Image: scrate
 	ConditionManager:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: System
 
 ^Mine:
@@ -1052,7 +1052,7 @@
 	Targetable:
 		TargetTypes: Ground, Defense
 	WithSpriteBody:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: System
 
 # Husks
@@ -1074,7 +1074,7 @@
 	RenderSprites:
 		Palette: terrain
 	ScriptTriggers:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Tree
 
 ^BasicHusk:
@@ -1089,7 +1089,7 @@
 	Interactable:
 	ScriptTriggers:
 	WithFacingSpriteBody:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Husk
 
 ^Husk:
@@ -1131,7 +1131,7 @@
 	WithShadow:
 		Offset: 43, 128, 0
 		ZOffset: -129
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Husk
 
 ^HelicopterHusk:

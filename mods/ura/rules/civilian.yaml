@@ -295,7 +295,7 @@ V01:
 			BottomRight: 896, 683
 	RevealsShroud:
 		Range: 10c0
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 
@@ -319,7 +319,7 @@ V02:
 		Type: Rectangle
 			TopLeft: -1024, -512
 			BottomRight: 1024, 597
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V03:
@@ -333,7 +333,7 @@ V03:
 		Type: Rectangle
 			TopLeft: -1024, -597
 			BottomRight: 1024, 597
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V04:
@@ -347,7 +347,7 @@ V04:
 		Type: Rectangle
 			TopLeft: -683, -432
 			BottomRight: 683, 683
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V05:
@@ -356,7 +356,7 @@ V05:
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V06:
@@ -365,7 +365,7 @@ V06:
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V07:
@@ -374,62 +374,62 @@ V07:
 	Building:
 		Footprint: xx
 		Dimensions: 2,1
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V08:
 	Inherits: ^CivBuilding
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V09:
 	Inherits: ^CivBuilding
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V10:
 	Inherits: ^CivBuilding
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V11:
 	Inherits: ^CivBuilding
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V12:
 	Inherits: ^CivBuilding
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V13:
 	Inherits: ^CivBuilding
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V14:
 	Inherits: ^CivField
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V15:
 	Inherits: ^CivField
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V16:
 	Inherits: ^CivField
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V17:
 	Inherits: ^CivField
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V18:
 	Inherits: ^CivField
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
 V19:
@@ -612,7 +612,7 @@ V37:
 
 RICE:
 	Inherits: ^CivField
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: TEMPERAT
 
 RUSHOUSE:
@@ -622,12 +622,12 @@ RUSHOUSE:
 		Dimensions: 1,2
 	HitShape:
 		UseTargetableCellsOffsets: false
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: TEMPERAT
 
 ASIANHUT:
 	Inherits: ^CivBuilding
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: TEMPERAT
 
 SNOWHUT:
@@ -639,7 +639,7 @@ SNOWHUT:
 		UseTargetableCellsOffsets: false
 	RenderSprites:
 		Scale: 0.7
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: SNOW
 
 LHUS:
@@ -651,7 +651,7 @@ LHUS:
 		Dimensions: 1,1
 	Selectable:
 		Bounds: 24,48,0,-16
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: TEMPERAT
 
 WINDMILL:
@@ -665,7 +665,7 @@ WINDMILL:
 	Selectable:
 		Bounds: 24,24,0,-14
 		DecorationBounds: 36,36,0,-14
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: TEMPERAT
 
 # Interactive decoration structures
@@ -691,7 +691,7 @@ BARL:
 		Weapon: BarrelExplode
 	-ShakeOnDeath:
 	-SoundOnDamageTransition:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 BRL3:
@@ -715,7 +715,7 @@ BRL3:
 		Weapon: BarrelExplode
 	-ShakeOnDeath:
 	-SoundOnDamageTransition:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 AMMOBOX1:

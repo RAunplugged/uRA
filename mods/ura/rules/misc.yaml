@@ -207,7 +207,7 @@ CAMERA:
 		Image: camera
 	EditorOnlyTooltip:
 		Name: (reveals area to owner)
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: System
 
 camera.paradrop:
@@ -297,7 +297,7 @@ mpspawn:
 	BodyOrientation:
 		QuantizedFacings: 1
 	RenderSpritesEditorOnly:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: System
 
 waypoint:
@@ -311,7 +311,7 @@ waypoint:
 	BodyOrientation:
 		QuantizedFacings: 1
 	RenderSpritesEditorOnly:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: System
 
 CTFLAG:
@@ -330,7 +330,7 @@ CTFLAG:
 	-Targetable:
 	-Explodes:
 	-SelectionDecorations:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 FLARE:
@@ -351,7 +351,7 @@ FLARE:
 		QuantizedFacings: 1
 	WithSpriteBody:
 		StartSequence: open
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Decoration
 
 MINE:
@@ -370,7 +370,7 @@ MINE:
 		Palette: terrain
 	WithSpriteBody:
 	SeedsResource:
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Resource spawn
 
 GMINE:
@@ -390,7 +390,7 @@ GMINE:
 	WithSpriteBody:
 	SeedsResource:
 		ResourceType: Gems
-	EditorTilesetFilter:
+	MapEditorData:
 		Categories: Resource spawn
 
 RAILMINE:
@@ -405,7 +405,7 @@ RAILMINE:
 	RenderSprites:
 		Palette: player
 	WithSpriteBody:
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: INTERIOR
 		Categories: Civilian building
 
@@ -421,7 +421,7 @@ QUEE:
 	AppearsOnRadar:
 	Interactable:
 	WithSpriteBody:
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: INTERIOR
 		Categories: Critter
 
@@ -439,7 +439,7 @@ LAR1:
 	RenderSprites:
 		Palette: terrain
 	WithSpriteBody:
-	EditorTilesetFilter:
+	MapEditorData:
 		RequireTilesets: INTERIOR
 		Categories: Critter
 
@@ -485,4 +485,4 @@ fact.colorpicker:
 	RenderSprites:
 		Image: fact
 		Palette: colorpicker
-	-EditorTilesetFilter:
+	-MapEditorData:

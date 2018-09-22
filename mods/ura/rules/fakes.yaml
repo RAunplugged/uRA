@@ -108,7 +108,7 @@ SYRF:
 		TargetTypes: Ground, Water, Structure, SpyInfiltrate
 	RenderSprites:
 		Image: SYRD
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: INTERIOR
 
 SPEF:
@@ -152,7 +152,7 @@ SPEF:
 		TargetTypes: Ground, Water, Structure, SpyInfiltrate
 	RenderSprites:
 		Image: SPEN
-	EditorTilesetFilter:
+	MapEditorData:
 		ExcludeTilesets: INTERIOR
 
 WEAF:
