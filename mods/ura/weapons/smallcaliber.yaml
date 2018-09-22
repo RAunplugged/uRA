@@ -298,13 +298,15 @@ M60mg.Inf:
 	Inherits: ^LightMG
 	ReloadDelay: 30
 	Range: 6c512
-	Report: pillbox1.aud
 	Burst: 5
 	BurstDelays: 5
+	Warhead@1Dam: SpreadDamage
+		Damage: 20
 	FirstBurstTargetOffset: -64,0,0
 	FollowingBurstTargetOffset: 256,0,0
 	Projectile: Bullet
 		Inaccuracy: 256
+	Report: pillbox1.aud
 
 ^SnipeWeapon:
 	ReloadDelay: 80

@@ -190,7 +190,6 @@ GrenLauncher:
 	Inherits: ^Artillery
 	ReloadDelay: 60
 	Range: 9c256
-	Report: aacanon3.aud
 	Projectile: Bullet
 		Speed: 170
 		Inaccuracy: 554
@@ -205,7 +204,7 @@ GrenLauncher:
 		Spread: 256
 		Damage: 60
 		Versus:
-			None: 60
+			None: 120
 			Wood: 100
 			Light: 25
 			Heavy: 25
@@ -215,6 +214,7 @@ GrenLauncher:
 		ImpactSounds: kaboom25.aud
 	Warhead@4EffWater: CreateEffect
 		Explosions: small_splash
+	Report: aacanon3.aud
 
 DepthCharge:
 	Inherits: ^Artillery
