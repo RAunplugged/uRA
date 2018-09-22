@@ -505,7 +505,7 @@ HELI.Hard:
 	Valued:
 		Cost: 1200
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9001
 		Prerequisites: hpad.hard, atek.hard, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.hard
@@ -520,7 +520,7 @@ HIND.Hard:
 	Valued:
 		Cost: 810
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9004
 		Prerequisites: hpad.hard, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.hard
@@ -533,7 +533,7 @@ MIG.Hard:
 	Valued:
 		Cost: 1200
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9007
 		Prerequisites: afld.hard, stek.hard, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.hard, afld.ukraine.hard
@@ -548,7 +548,7 @@ YAK.Hard:
 	Valued:
 		Cost: 810
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9010
 		Prerequisites: afld.hard, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.hard, afld.ukraine.hard
@@ -559,12 +559,23 @@ YAK.Hard:
 
 # Ships
 
+LST.Hard:
+	Inherits: LST
+	Valued:
+		Cost: 560
+	Buildable:
+		BuildPaletteOrder: 9000
+		Prerequisites: ~techlevel.low, ~naval.ai
+	RenderSprites:
+		Image: lst
+	-MapEditorData:
+
 SS.Hard:
 	Inherits: SS
 	Valued:
 		Cost: 760
 	Buildable:
-		BuildPaletteOrder: 9004
+		BuildPaletteOrder: 9005
 		Prerequisites: spen.hard, ~techlevel.low, ~naval.ai
 	RenderSprites:
 		Image: ss
@@ -574,7 +585,7 @@ MSUB.Hard:
 	Valued:
 		Cost: 1600
 	Buildable:
-		BuildPaletteOrder: 9003
+		BuildPaletteOrder: 9004
 		Prerequisites: spen.hard, stek.hard, ~techlevel.high, ~naval.ai
 	RenderSprites:
 		Image: msub
@@ -584,7 +595,7 @@ DD.Hard:
 	Valued:
 		Cost: 800
 	Buildable:
-		BuildPaletteOrder: 9001
+		BuildPaletteOrder: 9002
 		Prerequisites: syrd.hard, dome.hard, ~techlevel.medium, ~naval.ai
 	RenderSprites:
 		Image: dd
@@ -592,7 +603,7 @@ DD.Hard:
 CA.Hard:
 	Inherits: CA
 	Buildable:
-		BuildPaletteOrder: 9002
+		BuildPaletteOrder: 9003
 		Prerequisites: syrd.hard, atek.hard, ~techlevel.high, ~naval.ai
 	Valued:
 		Cost: 1920

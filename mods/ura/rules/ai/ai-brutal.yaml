@@ -485,7 +485,7 @@ HELI.Brutal:
 	Valued:
 		Cost: 900
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9002
 		Prerequisites: hpad.brutal, atek.brutal, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.brutal
@@ -500,7 +500,7 @@ HIND.Brutal:
 	Valued:
 		Cost: 610
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9005
 		Prerequisites: hpad.brutal, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.brutal
@@ -513,7 +513,7 @@ MIG.Brutal:
 	Valued:
 		Cost: 900
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9008
 		Prerequisites: afld.brutal, stek.brutal, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.brutal, afld.ukraine.brutal
@@ -528,7 +528,7 @@ YAK.Brutal:
 	Valued:
 		Cost: 610
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9011
 		Prerequisites: afld.brutal, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.brutal, afld.ukraine.brutal

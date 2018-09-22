@@ -33,3 +33,17 @@ MCV.Behemoth2:
 	RenderSprites:
 		Image: mcv
 	-MapEditorData:
+
+# Aircraft
+
+MIG.Behemoth:
+	Inherits: MIG
+	Valued:
+		Cost: 500
+	Buildable:
+		BuildPaletteOrder: 8000
+	AutoTargetPriority:
+		InvalidTargets: ^infantry
+	RenderSprites:
+		Image: mig
+	-MapEditorData:
