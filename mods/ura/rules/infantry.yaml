@@ -653,7 +653,7 @@ E9:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		BuildPaletteOrder: 60
+		BuildPaletteOrder: 400
 		Description: Infantry armed with long range grenade launcher.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
 		Weapon: GrenLauncher
@@ -685,7 +685,7 @@ E10:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 401
 		Description: Infantry equiped with a rapid firing Machine Gun.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
 		Weapon: M60mg.Inf
@@ -820,7 +820,7 @@ Ant:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		BuildPaletteOrder: 1954
+		BuildPaletteOrder: 300
 		Prerequisites: ~barracks, ~bio
 		Description: Irradiated insect that grew oversize.
 	Armament:

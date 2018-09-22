@@ -11,3 +11,25 @@ FACT.Behemoth:
 	RenderSprites:
 		Image: fact
 	-MapEditorData:
+
+# Vehicles
+
+MCV.Behemoth:
+	Inherits: MCV
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 8000
+	RenderSprites:
+		Image: mcv
+	-MapEditorData:
+
+MCV.Behemoth2:
+	Inherits: MCV
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 8000
+	RenderSprites:
+		Image: mcv
+	-MapEditorData:

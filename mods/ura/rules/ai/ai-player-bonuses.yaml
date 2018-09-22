@@ -16,7 +16,7 @@ E2.Brutal.Player:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		BuildPaletteOrder: 8000
+		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.brutal
 		Description: Inflicts damage upon impact.
 	Valued:
@@ -55,7 +55,7 @@ E4.Brutal.Player:
 	Tooltip:
 		Name: Crazed Flamethrower
 	Buildable:
-		BuildPaletteOrder: 8000
+		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.brutal, ~ftur.brutal
 		Description: Infantryman under influence.\nA preferable ally.
 	Armament@PRIMARY:
@@ -81,7 +81,7 @@ DOG.Brutal.Player:
 		MinMoveDelay: 5
 		MaxMoveDelay: 100
 	Buildable:
-		BuildPaletteOrder: 8000
+		BuildPaletteOrder: 9600
 		Prerequisites: ~kenn.brutal
 		Description: Spreads infectios damage\nBeware of the dog.
 	RenderSprites:
@@ -92,7 +92,7 @@ SPY.England.Brutal.Player:
 	Valued:
 		Cost: 1200
 	Buildable:
-		BuildPaletteOrder: 8000
+		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.brutal, ~dome.brutal, ~atek.brutal
 		Description: Exceptional spy agent.\nAquired license to kill.
 		BuildLimit: 1
@@ -125,7 +125,7 @@ SPY.England.Brutal.Player:
 MEDI.Brutal.Player:
 	Inherits: MEDI
 	Buildable:
-		BuildPaletteOrder: 8000
+		BuildPaletteOrder: 9600
 		Prerequisites: ~tent.brutal
 		Description: Heals units far and near.\n  The power of prayer.
 	Valued:
@@ -163,7 +163,7 @@ E2.Hard.Player:
 	Tooltip:
 		Name: Scout Grenadier
 	Buildable:
-		BuildPaletteOrder: 8000
+		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.hard
 		Description: Cloaked grenadiers.\nAquired extra vision.
 	# -MustBeDestroyed:
@@ -189,7 +189,7 @@ E4.Hard.Player:
 	Tooltip:
 		Name: Burst Flamethrower
 	Buildable:
-		BuildPaletteOrder: 8000
+		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.hard, ~ftur.hard
 		Description: FireballLauncher infantry.\nGoodness gracious great balls of fire.
 	Armament@PRIMARY:
@@ -210,7 +210,7 @@ DOG.Hard.Player:
 	Health:
 		HP: 50
 	Buildable:
-		BuildPaletteOrder: 8000
+		BuildPaletteOrder: 9600
 		Prerequisites: ~kenn.hard
 		Description: Damage resistant dog.\nGo fetch!
 	RenderSprites:
@@ -221,7 +221,7 @@ SPY.England.Hard.Player:
 	Valued:
 		Cost: 600
 	Buildable:
-		BuildPaletteOrder: 8000
+		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.hard, ~dome.hard
 		Description: Unique spy agent.\nAquired cloak.
 	# -MustBeDestroyed:
@@ -272,7 +272,7 @@ E2.Easy.Player:
 	Health:
 		HP: 4
 	Buildable:
-		BuildPaletteOrder: 8000
+		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.easy
 		Description: Weakling armed with grenades.\nKeep your distance.
 	RenderSprites:
@@ -284,7 +284,7 @@ E4.Easy.Player:
 	Tooltip:
 		Name: Drunk Flamethrower
 	Buildable:
-		BuildPaletteOrder: 8000
+		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.easy, ~ftur.easy
 		Description: Infantryman under influence.\nFire hazard
 	Armament@PRIMARY:
@@ -305,7 +305,7 @@ DOG.Easy.Player:
 	Mobile:
 		Speed: 33
 	Buildable:
-		BuildPaletteOrder: 8000
+		BuildPaletteOrder: 9600
 		Prerequisites: ~kenn.easy
 		Description: Slow anti-infantry unit.\nKeep it safe at home. 
 	RenderSprites:
@@ -316,7 +316,7 @@ SPY.England.Easy.Player:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		BuildPaletteOrder: 8000
+		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.easy, ~dome.easy
 		Description: Dimwitted spy agent.\nHe's *your* problem now.
 	Valued:

@@ -277,7 +277,7 @@ E2.Easy:
 	Valued:
 		Cost: 192
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9003
 		Prerequisites: barr.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e2
@@ -287,7 +287,7 @@ E3.Easy:
 	Valued:
 		Cost: 360
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9006
 		Prerequisites: barracks.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e3
@@ -297,7 +297,7 @@ E4.Easy:
 	Valued:
 		Cost: 360
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9009
 		Prerequisites: barr.easy, ftur.easy, ~techlevel.low, ~infantry.ai
 	RenderSprites:
 		Image: e4
@@ -307,7 +307,7 @@ DOG.Easy:
 	Valued:
 		Cost: 240
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9012
 		Prerequisites: ~kenn.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: dog
@@ -317,7 +317,7 @@ SHOK.Easy:
 	Valued:
 		Cost: 360
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9015
 		Prerequisites: barr.easy, stek.easy, tsla.easy, ~infantry.russia, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: shok
@@ -340,7 +340,7 @@ HARV.Easy:
 	Valued:
 		Cost: 1320
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9003
 		Prerequisites: proc.easy, ~techlevel.infonly, ~vehicles.ai
 	Harvester:
 		SearchFromOrderRadius: 20
@@ -352,7 +352,7 @@ APC.Easy:
 	Valued:
 		Cost: 960
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9006
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: apc
@@ -362,7 +362,7 @@ JEEP.Easy:
 	Valued:
 		Cost: 480
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9009
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: jeep
@@ -372,7 +372,7 @@ ARTY.Easy:
 	Valued:
 		Cost: 960
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9012
 		Prerequisites: dome.easy, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: arty
@@ -382,7 +382,7 @@ V2RL.Easy:
 	Valued:
 		Cost: 1080
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9015
 		Prerequisites: dome.easy, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: v2rl
@@ -392,7 +392,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 720
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9018
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: ftrk
@@ -402,7 +402,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 840
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9021
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: 1tnk
@@ -412,7 +412,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 1020
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9024
 		Prerequisites: fix.easy, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk
@@ -422,7 +422,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 1260
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9027
 		Prerequisites: fix.easy, ~vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk.ger
@@ -432,7 +432,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 1380
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9030
 		Prerequisites: fix.easy, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 3tnk
@@ -442,7 +442,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 2400
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9033
 		Prerequisites: fix.easy, stek.easy, ~vehicles.soviet, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk
@@ -452,7 +452,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 2400
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9036
 		Prerequisites: fix.easy, stek.easy, ~vehicles.ukraine, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk.kv-8
@@ -462,7 +462,7 @@ TTNK.Easy:
 	Valued:
 		Cost: 1620
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9039
 		Prerequisites: tsla.easy, stek.easy, ~vehicles.russia, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: ttnk
@@ -472,7 +472,7 @@ STNK.Easy:
 	Valued:
 		Cost: 1620
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9042
 		Prerequisites: atek.easy, ~vehicles.england, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: stnk

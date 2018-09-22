@@ -267,7 +267,7 @@ E1.Brutal:
 	Valued:
 		Cost: 60
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9002
 		Prerequisites: barracks.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e1
@@ -277,7 +277,7 @@ E2.Brutal:
 	Valued:
 		Cost: 96
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9005
 		Prerequisites: barr.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e2
@@ -287,7 +287,7 @@ E3.Brutal:
 	Valued:
 		Cost: 180
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9008
 		Prerequisites: barracks.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e3
@@ -297,7 +297,7 @@ E4.Brutal:
 	Valued:
 		Cost: 180
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9011
 		Prerequisites: barr.brutal, ftur.brutal, ~techlevel.low, ~infantry.ai
 	RenderSprites:
 		Image: e4
@@ -307,7 +307,7 @@ DOG.Brutal:
 	Valued:
 		Cost: 120
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9014
 		Prerequisites: ~kenn.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: dog
@@ -317,7 +317,7 @@ SHOK.Brutal:
 	Valued:
 		Cost: 180
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9017
 		Prerequisites: barr.brutal, stek.brutal, tsla.brutal, ~infantry.russia, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: shok
@@ -330,7 +330,7 @@ MCV.Brutal:
 	Valued:
 		Cost: 1200
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9002
 		Prerequisites: fix.brutal, dome.brutal, !weap.brutal.extra2, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
@@ -340,7 +340,7 @@ HARV.Brutal:
 	Valued:
 		Cost: 660
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9005
 		Prerequisites: proc.brutal, ~techlevel.infonly, ~vehicles.ai
 	Harvester:
 		SearchFromOrderRadius: 40
@@ -352,7 +352,7 @@ APC.Brutal:
 	Valued:
 		Cost: 510
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9008
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: apc
@@ -362,7 +362,7 @@ JEEP.Brutal:
 	Valued:
 		Cost: 240
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9011
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: jeep
@@ -372,7 +372,7 @@ ARTY.Brutal:
 	Valued:
 		Cost: 480
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9014
 		Prerequisites: dome.brutal, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: arty
@@ -382,7 +382,7 @@ V2RL.Brutal:
 	Valued:
 		Cost: 540
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9017
 		Prerequisites: dome.brutal, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: v2rl
@@ -392,7 +392,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 360
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9020
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: ftrk
@@ -402,7 +402,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 420
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9023
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: 1tnk
@@ -412,7 +412,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 510
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9026
 		Prerequisites: fix.brutal, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk
@@ -422,7 +422,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 630
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9029
 		Prerequisites: fix.brutal, ~vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk.ger
@@ -432,7 +432,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 690
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9032
 		Prerequisites: fix.brutal, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 3tnk
@@ -442,7 +442,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 1200
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9035
 		Prerequisites: fix.brutal, stek.brutal, ~vehicles.soviet, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk
@@ -452,7 +452,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 1200
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9038
 		Prerequisites: fix.brutal, stek.brutal, ~vehicles.ukraine, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk.kv-8
@@ -462,7 +462,7 @@ TTNK.Brutal:
 	Valued:
 		Cost: 810
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9041
 		Prerequisites: tsla.brutal, stek.brutal, ~vehicles.russia, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: ttnk
@@ -472,7 +472,7 @@ STNK.Brutal:
 	Valued:
 		Cost: 810
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9044
 		Prerequisites: atek.brutal, ~vehicles.england, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: stnk

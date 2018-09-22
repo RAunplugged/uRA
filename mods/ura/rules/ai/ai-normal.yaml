@@ -7,6 +7,7 @@ HELI.Normal:
 	Valued:
 		Cost: 1500
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: hpad, atek, ~techlevel.high, ~aircraft.ai
 	RenderSprites:
 		Image: heli
@@ -16,6 +17,7 @@ HIND.Normal:
 	Valued:
 		Cost: 1010
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: hpad, ~techlevel.medium, ~aircraft.ai
 	RenderSprites:
 		Image: hind
@@ -25,6 +27,7 @@ MIG.Normal:
 	Valued:
 		Cost: 1500
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: afld, stek, ~techlevel.high, ~aircraft.ai
 	RenderSprites:
 		Image: mig
@@ -34,6 +37,7 @@ YAK.Normal:
 	Valued:
 		Cost: 1010
 	Buildable:
+		BuildPaletteOrder: 9000
 		Prerequisites: afld, ~techlevel.medium, ~aircraft.ai
 	RenderSprites:
 		Image: yak

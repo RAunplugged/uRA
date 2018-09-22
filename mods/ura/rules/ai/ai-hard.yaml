@@ -287,7 +287,7 @@ E1.Hard:
 	Valued:
 		Cost: 80
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9001
 		Prerequisites: barracks.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e1
@@ -297,7 +297,7 @@ E2.Hard:
 	Valued:
 		Cost: 128
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9004
 		Prerequisites: barr.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e2
@@ -307,7 +307,7 @@ E3.Hard:
 	Valued:
 		Cost: 240
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9007
 		Prerequisites: barracks.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e3
@@ -317,7 +317,7 @@ E4.Hard:
 	Valued:
 		Cost: 240
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9010
 		Prerequisites: barr.hard, ftur.hard, ~techlevel.low, ~infantry.ai
 	RenderSprites:
 		Image: e4
@@ -327,7 +327,7 @@ DOG.Hard:
 	Valued:
 		Cost: 160
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9013
 		Prerequisites: ~kenn.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: dog
@@ -337,7 +337,7 @@ SHOK.Hard:
 	Valued:
 		Cost: 240
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9016
 		Prerequisites: barr.hard, stek.hard, tsla.hard, ~infantry.russia, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: shok
@@ -350,7 +350,7 @@ MCV.Hard:
 	Valued:
 		Cost: 1600
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9001
 		Prerequisites: fix.hard, dome.hard, !weap.hard.extra2, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
@@ -360,7 +360,7 @@ HARV.Hard:
 	Valued:
 		Cost: 880
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9004
 		Prerequisites: proc.hard, ~techlevel.infonly, ~vehicles.ai
 	Harvester:
 		SearchFromOrderRadius: 40
@@ -372,7 +372,7 @@ APC.Hard:
 	Valued:
 		Cost: 680
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9007
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: apc
@@ -382,7 +382,7 @@ JEEP.Hard:
 	Valued:
 		Cost: 320
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9010
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: jeep
@@ -392,7 +392,7 @@ ARTY.Hard:
 	Valued:
 		Cost: 640
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9013
 		Prerequisites: dome.hard, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: arty
@@ -402,7 +402,7 @@ V2RL.Hard:
 	Valued:
 		Cost: 720
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9016
 		Prerequisites: dome.hard, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: v2rl
@@ -412,7 +412,7 @@ FTRK.Hard:
 	Valued:
 		Cost: 480
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9019
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: ftrk
@@ -422,7 +422,7 @@ FTRK.Hard:
 	Valued:
 		Cost: 560
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9022
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: 1tnk
@@ -432,7 +432,7 @@ FTRK.Hard:
 	Valued:
 		Cost: 680
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9025
 		Prerequisites: fix.hard, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk
@@ -442,7 +442,7 @@ FTRK.Hard:
 	Valued:
 		Cost: 840
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9028
 		Prerequisites: fix.hard, ~vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk.ger
@@ -452,7 +452,7 @@ FTRK.Hard:
 	Valued:
 		Cost: 920
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9031
 		Prerequisites: fix.hard, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 3tnk
@@ -462,7 +462,7 @@ FTRK.Hard:
 	Valued:
 		Cost: 1600
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9034
 		Prerequisites: fix.hard, stek.hard, ~vehicles.soviet, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk
@@ -472,7 +472,7 @@ FTRK.Hard:
 	Valued:
 		Cost: 1600
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9037
 		Prerequisites: fix.hard, stek.hard, ~vehicles.ukraine, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk.kv-8
@@ -482,7 +482,7 @@ TTNK.Hard:
 	Valued:
 		Cost: 1080
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9040
 		Prerequisites: tsla.hard, stek.hard, ~vehicles.russia, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: ttnk
@@ -492,7 +492,7 @@ STNK.Hard:
 	Valued:
 		Cost: 1080
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9043
 		Prerequisites: atek.hard, ~vehicles.england, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: stnk
@@ -564,7 +564,7 @@ SS.Hard:
 	Valued:
 		Cost: 760
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9004
 		Prerequisites: spen.hard, ~techlevel.low, ~naval.ai
 	RenderSprites:
 		Image: ss
@@ -574,7 +574,7 @@ MSUB.Hard:
 	Valued:
 		Cost: 1600
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9003
 		Prerequisites: spen.hard, stek.hard, ~techlevel.high, ~naval.ai
 	RenderSprites:
 		Image: msub
@@ -584,7 +584,7 @@ DD.Hard:
 	Valued:
 		Cost: 800
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9001
 		Prerequisites: syrd.hard, dome.hard, ~techlevel.medium, ~naval.ai
 	RenderSprites:
 		Image: dd
@@ -592,7 +592,7 @@ DD.Hard:
 CA.Hard:
 	Inherits: CA
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9002
 		Prerequisites: syrd.hard, atek.hard, ~techlevel.high, ~naval.ai
 	Valued:
 		Cost: 1920
