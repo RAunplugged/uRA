@@ -93,7 +93,7 @@ HellfireAG:
 	BurstDelays: 12
 	Projectile: Missile
 		Speed: 304
-		RangeLimit: 9c0
+		RangeLimit: 9c256
 		HorizontalRateOfTurn: 10
 	Warhead@1Dam: SpreadDamage
 		Damage: 60
@@ -111,7 +111,7 @@ HellfireAA:
 	BurstDelays: 8
 	Projectile: Missile
 		Speed: 334
-		RangeLimit: 9c0
+		RangeLimit: 9c256
 		Inaccuracy: 128
 		HorizontalRateOfTurn: 5
 	Warhead@1Dam: SpreadDamage
@@ -131,7 +131,7 @@ MammothTusk:
 	ValidTargets: Air, Infantry
 	Projectile: Missile
 		Speed: 341
-		RangeLimit: 9c614
+		RangeLimit: 9c256
 		HorizontalRateOfTurn: 15
 	Warhead@1Dam: SpreadDamage
 		Damage: 50
@@ -260,7 +260,7 @@ APTusk:
 	Range: 7c576
 	Projectile: Missile
 		Speed: 298
-		RangeLimit: 9c0
+		RangeLimit: 9c256
 		HorizontalRateOfTurn: 10
 		TrailImage: smokey
 	Warhead@1Dam: SpreadDamage
