@@ -881,6 +881,9 @@ DOME:
 		Description: Provides an overview\nof the battlefield.\nCan detect cloaked units.\nRequires power to operate.
 	InfiltrateForExploration:
 		Types: SpyInfiltrate
+	InfiltrateForSupportPower:
+		Proxy: radardome.upgraded
+		Types: SpyInfiltrate
 	RevealsShroud:
 		Range: 10c256
 		RequiresCondition: !disabled

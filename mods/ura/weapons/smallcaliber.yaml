@@ -301,7 +301,7 @@ M60mg.Inf:
 	Burst: 5
 	BurstDelays: 5
 	Warhead@1Dam: SpreadDamage
-		Damage: 20
+		Damage: 25
 	FirstBurstTargetOffset: -64,0,0
 	FollowingBurstTargetOffset: 256,0,0
 	Projectile: Bullet

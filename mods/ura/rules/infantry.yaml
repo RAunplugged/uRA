@@ -648,8 +648,6 @@ E9:
 		Cost: 300
 	Health:
 		HP: 50
-	Mobile:
-		Speed: 43
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -680,9 +678,9 @@ E10:
 	Tooltip:
 		Name: Machine Gunner
 	Valued:
-		Cost: 300
+		Cost: 400
 	Health:
-		HP: 50
+		HP: 60
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
