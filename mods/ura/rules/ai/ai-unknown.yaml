@@ -20,6 +20,7 @@ MCV.Behemoth:
 		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 8000
+		Prerequisites: ~disabled
 	RenderSprites:
 		Image: mcv
 	-MapEditorData:
@@ -30,6 +31,7 @@ MCV.Behemoth2:
 		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 8000
+		Prerequisites: ~disabled
 	RenderSprites:
 		Image: mcv
 	-MapEditorData:
@@ -42,6 +44,7 @@ MIG.Behemoth:
 		Cost: 500
 	Buildable:
 		BuildPaletteOrder: 8000
+		Prerequisites: ~disabled
 	AutoTargetPriority:
 		InvalidTargets: ^infantry
 	RenderSprites:
