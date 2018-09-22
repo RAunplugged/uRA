@@ -638,6 +638,67 @@ SNIPER:
 		Prerequisites: techlevel.infonly
 		InitialLevels: 1
 
+# Modified version of the Grenade Launcher by Kiraye
+E9:
+	Inherits: ^Soldier
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Tooltip:
+		Name: Grenade Launcher
+	Valued:
+		Cost: 300
+	Health:
+		HP: 50
+	Mobile:
+		Speed: 43
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 60
+		Description: Infantry armed with long range grenade launcher.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
+	Armament@PRIMARY:
+		Weapon: GrenLauncher
+		LocalOffset: 700,0,500
+	Armament@GARRISONED:
+		Name: garrisoned
+		Weapon: GrenLauncher
+	AttackFrontal:
+	Explodes:
+		Weapon: UnitExplodeSmall
+		EmptyWeapon: UnitExplodeSmall
+	TakeCover:
+		ProneOffset: 160,0,-288
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded
+
+# Modified version of the Machine Gunner by Kiraye
+E10:
+	Inherits: ^Soldier
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Tooltip:
+		Name: Machine Gunner
+	Valued:
+		Cost: 300
+	Health:
+		HP: 50
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 40
+		Description: Infantry equiped with a rapid firing Machine Gun.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	Armament@PRIMARY:
+		Weapon: M60mg.Inf
+	Armament@GARRISONED:
+		Name: garrisoned
+		Weapon: M60mg.Inf
+		MuzzleSequence: garrison-muzzle
+	AttackFrontal:
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded
+
 EINSTEIN:
 	Inherits: ^CivInfantry
 	Tooltip:

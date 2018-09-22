@@ -185,6 +185,37 @@ Grenade:
 		Explosions: small_splash
 	Report: grenade1.aud
 
+# Modified version of GrenLauncher by Kiraye
+GrenLauncher:
+	Inherits: ^Artillery
+	ReloadDelay: 60
+	Range: 9c256
+	Report: aacanon3.aud
+	Projectile: Bullet
+		Speed: 170
+		Inaccuracy: 554
+		LaunchAngle: 42
+		Image: BOMB
+		ContrailLength: 10
+		ContrailColor: FFFF9980
+		ContrailZOffset: 0
+		ContrailDelay: 0
+		ContrailWidth: 0c064
+	Warhead@1Dam: SpreadDamage
+		Spread: 256
+		Damage: 60
+		Versus:
+			None: 60
+			Wood: 100
+			Light: 25
+			Heavy: 25
+			Concrete: 100
+	Warhead@3Eff: CreateEffect
+		Explosions: med_explosion
+		ImpactSounds: kaboom25.aud
+	Warhead@4EffWater: CreateEffect
+		Explosions: small_splash
+
 DepthCharge:
 	Inherits: ^Artillery
 	ReloadDelay: 60

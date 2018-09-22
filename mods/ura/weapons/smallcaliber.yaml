@@ -293,6 +293,19 @@ M60mg.APC:
 			Heavy: 15
 			Concrete: 10
 
+# Modified version of M60mginf by Kiraye
+M60mg.Inf:
+	Inherits: ^LightMG
+	ReloadDelay: 30
+	Range: 6c512
+	Report: pillbox1.aud
+	Burst: 5
+	BurstDelays: 5
+	FirstBurstTargetOffset: -64,0,0
+	FollowingBurstTargetOffset: 256,0,0
+	Projectile: Bullet
+		Inaccuracy: 256
+
 ^SnipeWeapon:
 	ReloadDelay: 80
 	Range: 6c512
