@@ -28,7 +28,7 @@ CRATE:
 		TimeDelay: 27000
 	LevelUpCrateAction:
 		Levels: 2
-		SelectionShares: 30
+		SelectionShares: 20
 	LevelUpCrateAction@18000:
 		Levels: 4
 		SelectionShares: 50
@@ -47,15 +47,15 @@ CRATE:
 		Weapon: CrateExplosion
 		SelectionShares: 10
 		TimeDelay: 18000
-	HealUnitsCrateAction:
-		Notification: heal2.aud
-		SelectionShares: 10
-		TimeDelay: 9000
-		Effect: heal
 	GiveMcvCrateAction:
 		SelectionShares: 0
 		NoBaseSelectionShares: 120
 		Units: mcv
+		Prerequisites: techlevel.medium
+	GiveUnitCrateAction@harvester:
+		SelectionShares: 20
+		Units: harvester
+		Prerequisites: techlevel.infonly
 	GiveUnitCrateAction@jeep:
 		SelectionShares: 5
 		Units: jeep
@@ -76,66 +76,79 @@ CRATE:
 		Units: mrj
 		ValidFactions: allies, england, france, germany
 		TimeDelay: 18000
+		Prerequisites: techlevel.high
 	GiveUnitCrateAction@qtnk:
 		SelectionShares: 15
 		Units: qtnk
 		ValidFactions: soviet, russia, ukraine
 		TimeDelay: 18000
+		Prerequisites: techlevel.high
 	GiveUnitCrateAction@stnk:
 		SelectionShares: 25
 		Units: stnk
 		ValidFactions: england
 		TimeDelay: 18000
+		Prerequisites: techlevel.high
 	GiveUnitCrateAction@stnk.36000:
-		SelectionShares: 40
+		SelectionShares: 60
 		Units: stnk, stnk, spy.england, spy.england, sniper, sniper
 		ValidFactions: england
 		TimeDelay: 36000
+		Prerequisites: techlevel.high
 	GiveUnitCrateAction@mgg:
 		SelectionShares: 25
 		Units: mgg
 		ValidFactions: france
 		TimeDelay: 13500
+		Prerequisites: techlevel.medium
 	GiveUnitCrateAction@mgg.36000:
-		SelectionShares: 40
+		SelectionShares: 60
 		Units: mgg, mrj, 2tnk, 2tnk, 2tnk
 		ValidFactions: france
 		TimeDelay: 36000
+		Prerequisites: techlevel.high
 	GiveUnitCrateAction@2tnk.ger:
 		SelectionShares: 10
 		Units: 2tnk.ger
 		ValidFactions: germany
 		TimeDelay: 13500
+		Prerequisites: techlevel.medium
 	GiveUnitCrateAction@ctnk:
 		SelectionShares: 15
 		Units: ctnk
 		ValidFactions: germany
 		TimeDelay: 18000
+		Prerequisites: techlevel.high
 	GiveUnitCrateAction@ctnk.36000:
-		SelectionShares: 40
+		SelectionShares: 60
 		Units: mrj, ctnk, ctnk, ctnk
 		ValidFactions: germany
 		TimeDelay: 36000
+		Prerequisites: techlevel.high
 	GiveUnitCrateAction@ttnk:
 		SelectionShares: 25
 		Units: ttnk
 		ValidFactions: russia
 		TimeDelay: 18000
+		Prerequisites: techlevel.high
 	GiveUnitCrateAction@ttnk.36000:
-		SelectionShares: 40
+		SelectionShares: 60
 		Units: ftrk, ftrk, ttnk, ttnk, ttnk
 		ValidFactions: russia
 		TimeDelay: 36000
+		Prerequisites: techlevel.high
 	GiveUnitCrateAction@4tnk.kv-8:
 		SelectionShares: 25
 		Units: 4tnk.kv-8
 		ValidFactions: ukraine
 		TimeDelay: 18000
+		Prerequisites: techlevel.high
 	GiveUnitCrateAction@4tnk.kv-8.36000:
-		SelectionShares: 40
+		SelectionShares: 60
 		Units: ftrk, ftrk, 4tnk.kv-8, 4tnk.kv-8
 		ValidFactions: ukraine
 		TimeDelay: 36000
+		Prerequisites: techlevel.high
 	GrantExternalConditionCrateAction@invuln:
 		SelectionShares: 15
 		Effect: invuln
