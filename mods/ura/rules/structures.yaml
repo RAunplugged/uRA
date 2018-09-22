@@ -1251,6 +1251,9 @@ ATEK:
 		BuildPaletteOrder: 140
 		Prerequisites: weap, dome, ~structures.allies, ~techlevel.high
 		Description: Provides Allied advanced technologies.\n  Special Ability: GPS Satellite
+	InfiltrateForSupportPower:
+		Proxy: techcenter.upgraded
+		Types: SpyInfiltrate
 	RevealsShroud:
 		Range: 10c0
 		RevealGeneratedShroud: False
@@ -1263,6 +1266,8 @@ ATEK:
 	WithBuildingBib:
 	Selectable:
 		Bounds: 48,48
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SupportPowerChargeBar:
 	ProvidesPrerequisite:
 		Prerequisite: techcenter
@@ -1288,6 +1293,9 @@ STEK:
 		BuildPaletteOrder: 150
 		Prerequisites: weap, dome, ~structures.soviet, ~techlevel.high
 		Description: Provides Soviet advanced technologies.
+	InfiltrateForSupportPower:
+		Proxy: techcenter.upgraded
+		Types: SpyInfiltrate
 	RevealsShroud:
 		Range: 7c576
 		RevealGeneratedShroud: False
@@ -1302,6 +1310,8 @@ STEK:
 		TargetableOffsets: 420,-768,0, 420,768,0, -770,-768,0, -770,768,0
 	Selectable:
 		Bounds: 72,48
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	ProvidesPrerequisite:
 		Prerequisite: techcenter
 	ProvidesPrerequisite@buildingname:

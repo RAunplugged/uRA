@@ -479,6 +479,10 @@ aircraft.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 
+techcenter.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+
 fact.colorpicker:
 	Inherits: FACT
 	-Buildable:
