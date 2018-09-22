@@ -11,6 +11,7 @@ POWR.Hard:
 		Prerequisites: ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: powr
+	-MapEditorData:
 APWR.Hard:
 	Inherits: APWR
 	Valued:
@@ -20,6 +21,7 @@ APWR.Hard:
 		Prerequisites: dome.hard, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: apwr
+	-MapEditorData:
 PROC.Hard:
 	Inherits: PROC
 	Valued:
@@ -31,6 +33,7 @@ PROC.Hard:
 		Actor: HARV.Hard
 	RenderSprites:
 		Image: proc
+	-MapEditorData:
 TENT.Hard:
 	Inherits: TENT
 	Valued:
@@ -42,6 +45,7 @@ TENT.Hard:
 		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: tent
+	-MapEditorData:
 BARR.Hard:
 	Inherits: BARR
 	Valued:
@@ -53,6 +57,7 @@ BARR.Hard:
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: barr
+	-MapEditorData:
 KENN.Hard:
 	Inherits: KENN
 	Valued:
@@ -62,6 +67,7 @@ KENN.Hard:
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: kenn
+	-MapEditorData:
 WEAP.Hard:
 	Inherits: WEAP
 	Valued:
@@ -71,6 +77,7 @@ WEAP.Hard:
 		Prerequisites: proc.hard, barracks.hard, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
+	-MapEditorData:
 FIX.Hard:
 	Inherits: FIX
 	Valued:
@@ -80,6 +87,7 @@ FIX.Hard:
 		Prerequisites: weap.hard, barracks.hard, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
+	-MapEditorData:
 DOME.Hard:
 	Inherits: DOME
 	Valued:
@@ -91,6 +99,7 @@ DOME.Hard:
 		Prerequisites: dome.hard, ~structures.england
 	RenderSprites:
 		Image: dome
+	-MapEditorData:
 HPAD.Hard:
 	Inherits: HPAD
 	Valued:
@@ -100,6 +109,7 @@ HPAD.Hard:
 		Prerequisites: dome.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: hpad
+	-MapEditorData:
 AFLD.Hard:
 	Inherits: AFLD
 	Valued:
@@ -109,6 +119,7 @@ AFLD.Hard:
 		Prerequisites: dome.hard, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
 	RenderSprites:
 		Image: afld
+	-MapEditorData:
 AFLD.Ukraine.Hard:
 	Inherits: AFLD.Ukraine
 	Valued:
@@ -120,6 +131,7 @@ AFLD.Ukraine.Hard:
 		Prerequisite: afld.hard
 	RenderSprites:
 		Image: afld
+	-MapEditorData:
 SPEN.Hard:
 	Inherits: SPEN
 	Valued:
@@ -129,6 +141,7 @@ SPEN.Hard:
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: spen
+	-MapEditorData:
 SYRD.Hard:
 	Inherits: SYRD
 	Valued:
@@ -138,6 +151,7 @@ SYRD.Hard:
 		Prerequisites: anypower, ~structures.allies, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: syrd
+	-MapEditorData:
 ATEK.Hard:
 	Inherits: ATEK
 	Valued:
@@ -149,6 +163,7 @@ ATEK.Hard:
 		Range: 16c0
 	RenderSprites:
 		Image: atek
+	-MapEditorData:
 STEK.Hard:
 	Inherits: STEK
 	Valued:
@@ -160,6 +175,7 @@ STEK.Hard:
 		Range: 16c0
 	RenderSprites:
 		Image: stek
+	-MapEditorData:
 
 # Defensive structures
 
@@ -172,6 +188,7 @@ SILO.Hard:
 		Prerequisites: proc.hard, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: silo
+	-MapEditorData:
 PBOX.Hard:
 	Inherits: PBOX
 	Valued:
@@ -181,6 +198,7 @@ PBOX.Hard:
 		Prerequisites: tent.hard, ~structures.allies, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: pbox
+	-MapEditorData:
 HBOX.Hard:
 	Inherits: HBOX
 	Valued:
@@ -190,6 +208,7 @@ HBOX.Hard:
 		Prerequisites: tent.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: hbox
+	-MapEditorData:
 GUN.Hard:
 	Inherits: GUN
 	Valued:
@@ -199,6 +218,7 @@ GUN.Hard:
 		Prerequisites: tent.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gun
+	-MapEditorData:
 TSLA.Hard:
 	Inherits: TSLA
 	Valued:
@@ -208,6 +228,7 @@ TSLA.Hard:
 		Prerequisites: weap.hard, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: tsla
+	-MapEditorData:
 GAP.Hard:
 	Inherits: GAP
 	Valued:
@@ -217,6 +238,7 @@ GAP.Hard:
 		Prerequisites: dome.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gap
+	-MapEditorData:
 FTUR.Hard:
 	Inherits: FTUR
 	Valued:
@@ -226,6 +248,7 @@ FTUR.Hard:
 		Prerequisites: barr.hard, ~structures.soviet, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: ftur
+	-MapEditorData:
 AGUN.Hard:
 	Inherits: AGUN
 	Valued:
@@ -235,6 +258,7 @@ AGUN.Hard:
 		Prerequisites: dome.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: agun
+	-MapEditorData:
 SAM.Hard:
 	Inherits: SAM
 	Valued:
@@ -244,6 +268,7 @@ SAM.Hard:
 		Prerequisites: dome.hard, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: sam
+	-MapEditorData:
 MSLO.Hard:
 	Inherits: MSLO
 	Valued:
@@ -253,6 +278,7 @@ MSLO.Hard:
 		Prerequisites: techcenter, ~techlevel.unrestricted, ~structures.ai
 	RenderSprites:
 		Image: mslo
+	-MapEditorData:
 
 # Infantry
 
@@ -265,6 +291,7 @@ E1.Hard:
 		Prerequisites: barracks.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e1
+	-MapEditorData:
 E2.Hard:
 	Inherits: E2
 	Valued:
@@ -274,6 +301,7 @@ E2.Hard:
 		Prerequisites: barr.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e2
+	-MapEditorData:
 E3.Hard:
 	Inherits: E3
 	Valued:
@@ -283,6 +311,7 @@ E3.Hard:
 		Prerequisites: barracks.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e3
+	-MapEditorData:
 E4.Hard:
 	Inherits: E4
 	Valued:
@@ -292,6 +321,7 @@ E4.Hard:
 		Prerequisites: barr.hard, ftur.hard, ~techlevel.low, ~infantry.ai
 	RenderSprites:
 		Image: e4
+	-MapEditorData:
 DOG.Hard:
 	Inherits: DOG
 	Valued:
@@ -301,6 +331,7 @@ DOG.Hard:
 		Prerequisites: ~kenn.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: dog
+	-MapEditorData:
 SHOK.Hard:
 	Inherits: SHOK
 	Valued:
@@ -310,6 +341,7 @@ SHOK.Hard:
 		Prerequisites: barr.hard, stek.hard, tsla.hard, ~infantry.russia, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: shok
+	-MapEditorData:
 
 # Vehicles
 
@@ -322,6 +354,7 @@ MCV.Hard:
 		Prerequisites: fix.hard, dome.hard, !weap.hard.extra2, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
+	-MapEditorData:
 HARV.Hard:
 	Inherits: HARV
 	Valued:
@@ -333,6 +366,7 @@ HARV.Hard:
 		SearchFromOrderRadius: 40
 	RenderSprites:
 		Image: harv
+	-MapEditorData:
 APC.Hard:
 	Inherits: APC
 	Valued:
@@ -342,6 +376,7 @@ APC.Hard:
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: apc
+	-MapEditorData:
 JEEP.Hard:
 	Inherits: JEEP
 	Valued:
@@ -351,6 +386,7 @@ JEEP.Hard:
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: jeep
+	-MapEditorData:
 ARTY.Hard:
 	Inherits: ARTY
 	Valued:
@@ -360,6 +396,7 @@ ARTY.Hard:
 		Prerequisites: dome.hard, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: arty
+	-MapEditorData:
 V2RL.Hard:
 	Inherits: V2RL
 	Valued:
@@ -369,6 +406,7 @@ V2RL.Hard:
 		Prerequisites: dome.hard, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: v2rl
+	-MapEditorData:
 FTRK.Hard:
 	Inherits: FTRK
 	Valued:
@@ -378,6 +416,7 @@ FTRK.Hard:
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: ftrk
+	-MapEditorData:
 1TNK.Hard:
 	Inherits: 1TNK
 	Valued:
@@ -387,6 +426,7 @@ FTRK.Hard:
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: 1tnk
+	-MapEditorData:
 2TNK.Hard:
 	Inherits: 2TNK
 	Valued:
@@ -396,6 +436,7 @@ FTRK.Hard:
 		Prerequisites: fix.hard, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk
+	-MapEditorData:
 2TNK.GER.Hard:
 	Inherits: 2TNK.GER
 	Valued:
@@ -405,6 +446,7 @@ FTRK.Hard:
 		Prerequisites: fix.hard, ~vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk.ger
+	-MapEditorData:
 3TNK.Hard:
 	Inherits: 3TNK
 	Valued:
@@ -414,6 +456,7 @@ FTRK.Hard:
 		Prerequisites: fix.hard, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 3tnk
+	-MapEditorData:
 4TNK.Hard:
 	Inherits: 4TNK
 	Valued:
@@ -423,6 +466,7 @@ FTRK.Hard:
 		Prerequisites: fix.hard, stek.hard, ~vehicles.soviet, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk
+	-MapEditorData:
 4TNK.KV-8.Hard:
 	Inherits: 4TNK.KV-8
 	Valued:
@@ -432,6 +476,7 @@ FTRK.Hard:
 		Prerequisites: fix.hard, stek.hard, ~vehicles.ukraine, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk.kv-8
+	-MapEditorData:
 TTNK.Hard:
 	Inherits: TTNK
 	Valued:
@@ -441,6 +486,7 @@ TTNK.Hard:
 		Prerequisites: tsla.hard, stek.hard, ~vehicles.russia, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: ttnk
+	-MapEditorData:
 STNK.Hard:
 	Inherits: STNK
 	Valued:
@@ -450,6 +496,7 @@ STNK.Hard:
 		Prerequisites: atek.hard, ~vehicles.england, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: stnk
+	-MapEditorData:
 
 # Aircraft | +25% Cost/Production boost on top of bot specific Cost/Production modifier
 
@@ -467,6 +514,7 @@ HELI.Hard:
 		InvalidTargets: ^infantry
 	RenderSprites:
 		Image: heli
+	-MapEditorData:
 HIND.Hard:
 	Inherits: HIND
 	Valued:
@@ -479,6 +527,7 @@ HIND.Hard:
 		RepairBuildings: hpad.hard
 	RenderSprites:
 		Image: hind
+	-MapEditorData:
 MIG.Hard:
 	Inherits: MIG
 	Valued:
@@ -493,6 +542,7 @@ MIG.Hard:
 		InvalidTargets: ^infantry
 	RenderSprites:
 		Image: mig
+	-MapEditorData:
 YAK.Hard:
 	Inherits: YAK
 	Valued:
@@ -505,6 +555,7 @@ YAK.Hard:
 		RepairBuildings: afld.hard, afld.ukraine.hard
 	RenderSprites:
 		Image: yak
+	-MapEditorData:
 
 # Ships
 
@@ -517,6 +568,7 @@ SS.Hard:
 		Prerequisites: spen.hard, ~techlevel.low, ~naval.ai
 	RenderSprites:
 		Image: ss
+	-MapEditorData:
 MSUB.Hard:
 	Inherits: MSUB
 	Valued:
@@ -526,6 +578,7 @@ MSUB.Hard:
 		Prerequisites: spen.hard, stek.hard, ~techlevel.high, ~naval.ai
 	RenderSprites:
 		Image: msub
+	-MapEditorData:
 DD.Hard:
 	Inherits: DD
 	Valued:
@@ -535,6 +588,7 @@ DD.Hard:
 		Prerequisites: syrd.hard, dome.hard, ~techlevel.medium, ~naval.ai
 	RenderSprites:
 		Image: dd
+	-MapEditorData:
 CA.Hard:
 	Inherits: CA
 	Buildable:
@@ -544,6 +598,7 @@ CA.Hard:
 		Cost: 1920
 	RenderSprites:
 		Image: ca
+	-MapEditorData:
 PT.Hard:
 	Inherits: PT
 	Valued:
@@ -553,6 +608,7 @@ PT.Hard:
 		Prerequisites: syrd.hard, ~techlevel.low, ~naval.ai
 	RenderSprites:
 		Image: pt
+	-MapEditorData:
 
 # Aditional Hard AI Structures unlocked at late tech.
 
@@ -567,6 +623,7 @@ PROC.Hard.Extra:
 		Actor: HARV.Hard
 	RenderSprites:
 		Image: proc
+	-MapEditorData:
 PROC.Hard.Extra2:
 	Inherits: PROC
 	Valued:
@@ -579,6 +636,7 @@ PROC.Hard.Extra2:
 		Actor: HARV.Hard
 	RenderSprites:
 		Image: proc
+	-MapEditorData:
 WEAP.Hard.Extra:
 	Inherits: WEAP
 	Valued:
@@ -588,6 +646,7 @@ WEAP.Hard.Extra:
 		Prerequisites: proc.hard.extra, mslo.hard, fix.hard, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
+	-MapEditorData:
 WEAP.Hard.Extra2:
 	Inherits: WEAP
 	Valued:
@@ -598,6 +657,7 @@ WEAP.Hard.Extra2:
 		BuildDurationModifier: 100
 	RenderSprites:
 		Image: weap
+	-MapEditorData:
 TENT.Hard.Extra:
 	Inherits: TENT
 	Valued:
@@ -609,6 +669,7 @@ TENT.Hard.Extra:
 		Prerequisites: anypower, proc.hard.extra2, mslo.hard, fix.hard, ~structures.allies, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: tent
+	-MapEditorData:
 BARR.Hard.Extra:
 	Inherits: BARR
 	Valued:
@@ -620,3 +681,4 @@ BARR.Hard.Extra:
 		Prerequisites: anypower, proc.hard.extra2, mslo.hard, fix.hard, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: barr
+	-MapEditorData:

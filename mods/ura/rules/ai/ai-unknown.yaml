@@ -10,3 +10,4 @@ FACT.Behemoth:
 		BuildPaletteOrder: 8000
 	RenderSprites:
 		Image: fact
+	-MapEditorData:

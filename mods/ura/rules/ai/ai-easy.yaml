@@ -11,6 +11,7 @@ POWR.Easy:
 		Prerequisites: ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: powr
+	-MapEditorData:
 APWR.Easy:
 	Inherits: APWR
 	Valued:
@@ -20,6 +21,7 @@ APWR.Easy:
 		Prerequisites: dome.easy, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: apwr
+	-MapEditorData:
 PROC.Easy:
 	Inherits: PROC
 	Valued:
@@ -31,6 +33,7 @@ PROC.Easy:
 		Actor: HARV.Easy
 	RenderSprites:
 		Image: proc
+	-MapEditorData:
 TENT.Easy:
 	Inherits: TENT
 	Valued:
@@ -42,6 +45,7 @@ TENT.Easy:
 		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: tent
+	-MapEditorData:
 BARR.Easy:
 	Inherits: BARR
 	Valued:
@@ -53,6 +57,7 @@ BARR.Easy:
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: barr
+	-MapEditorData:
 KENN.Easy:
 	Inherits: KENN
 	Valued:
@@ -62,6 +67,7 @@ KENN.Easy:
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: kenn
+	-MapEditorData:
 WEAP.Easy:
 	Inherits: WEAP
 	Valued:
@@ -71,6 +77,7 @@ WEAP.Easy:
 		Prerequisites: proc.easy, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
+	-MapEditorData:
 FIX.Easy:
 	Inherits: FIX
 	Valued:
@@ -80,6 +87,7 @@ FIX.Easy:
 		Prerequisites: weap.easy, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
+	-MapEditorData:
 DOME.Easy:
 	Inherits: DOME
 	Valued:
@@ -91,6 +99,7 @@ DOME.Easy:
 		Prerequisites: dome.easy, ~structures.england
 	RenderSprites:
 		Image: dome
+	-MapEditorData:
 HPAD.Easy:
 	Inherits: HPAD
 	Valued:
@@ -100,6 +109,7 @@ HPAD.Easy:
 		Prerequisites: dome.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: hpad
+	-MapEditorData:
 AFLD.Easy:
 	Inherits: AFLD
 	Valued:
@@ -109,8 +119,9 @@ AFLD.Easy:
 		Prerequisites: dome.easy, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
 	RenderSprites:
 		Image: afld
+	-MapEditorData:
 AFLD.Ukraine.Easy:
-	Inherits: AFLD.Easy
+	Inherits: AFLD.Ukraine
 	Valued:
 		Cost: 600
 	Buildable:
@@ -120,6 +131,7 @@ AFLD.Ukraine.Easy:
 		Prerequisite: afld.easy
 	RenderSprites:
 		Image: afld
+	-MapEditorData:
 ATEK.Easy:
 	Inherits: ATEK
 	Valued:
@@ -131,6 +143,7 @@ ATEK.Easy:
 		Range: 16c0
 	RenderSprites:
 		Image: atek
+	-MapEditorData:
 STEK.Easy:
 	Inherits: STEK
 	Valued:
@@ -142,6 +155,7 @@ STEK.Easy:
 		Range: 16c0
 	RenderSprites:
 		Image: stek
+	-MapEditorData:
 
 # Defensive structures
 
@@ -154,6 +168,7 @@ SILO.Easy:
 		Prerequisites: proc.easy, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: silo
+	-MapEditorData:
 PBOX.Easy:
 	Inherits: PBOX
 	Valued:
@@ -163,6 +178,7 @@ PBOX.Easy:
 		Prerequisites: tent.easy, ~structures.allies, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: pbox
+	-MapEditorData:
 HBOX.Easy:
 	Inherits: HBOX
 	Valued:
@@ -172,6 +188,7 @@ HBOX.Easy:
 		Prerequisites: tent.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: hbox
+	-MapEditorData:
 GUN.Easy:
 	Inherits: GUN
 	Valued:
@@ -181,6 +198,7 @@ GUN.Easy:
 		Prerequisites: tent.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gun
+	-MapEditorData:
 TSLA.Easy:
 	Inherits: TSLA
 	Valued:
@@ -190,6 +208,7 @@ TSLA.Easy:
 		Prerequisites: weap.easy, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: tsla
+	-MapEditorData:
 GAP.Easy:
 	Inherits: GAP
 	Valued:
@@ -199,6 +218,7 @@ GAP.Easy:
 		Prerequisites: dome.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gap
+	-MapEditorData:
 FTUR.Easy:
 	Inherits: FTUR
 	Valued:
@@ -208,6 +228,7 @@ FTUR.Easy:
 		Prerequisites: barr.easy, ~structures.soviet, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: ftur
+	-MapEditorData:
 AGUN.Easy:
 	Inherits: AGUN
 	Valued:
@@ -217,6 +238,7 @@ AGUN.Easy:
 		Prerequisites: dome.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: agun
+	-MapEditorData:
 SAM.Easy:
 	Inherits: SAM
 	Valued:
@@ -226,6 +248,7 @@ SAM.Easy:
 		Prerequisites: dome.easy, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: sam
+	-MapEditorData:
 MSLO.Easy:
 	Inherits: MSLO
 	Valued:
@@ -235,6 +258,7 @@ MSLO.Easy:
 		Prerequisites: techcenter, ~techlevel.unrestricted, ~structures.ai
 	RenderSprites:
 		Image: mslo
+	-MapEditorData:
 
 # Infantry
 
@@ -247,6 +271,7 @@ E1.Easy:
 		Prerequisites: barracks.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e1
+	-MapEditorData:
 E2.Easy:
 	Inherits: E2
 	Valued:
@@ -256,6 +281,7 @@ E2.Easy:
 		Prerequisites: barr.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e2
+	-MapEditorData:
 E3.Easy:
 	Inherits: E3
 	Valued:
@@ -265,6 +291,7 @@ E3.Easy:
 		Prerequisites: barracks.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e3
+	-MapEditorData:
 E4.Easy:
 	Inherits: E4
 	Valued:
@@ -274,6 +301,7 @@ E4.Easy:
 		Prerequisites: barr.easy, ftur.easy, ~techlevel.low, ~infantry.ai
 	RenderSprites:
 		Image: e4
+	-MapEditorData:
 DOG.Easy:
 	Inherits: DOG
 	Valued:
@@ -283,6 +311,7 @@ DOG.Easy:
 		Prerequisites: ~kenn.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: dog
+	-MapEditorData:
 SHOK.Easy:
 	Inherits: SHOK
 	Valued:
@@ -292,6 +321,7 @@ SHOK.Easy:
 		Prerequisites: barr.easy, stek.easy, tsla.easy, ~infantry.russia, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: shok
+	-MapEditorData:
 
 # Vehicles
 
@@ -304,6 +334,7 @@ MCV.Easy:
 		Prerequisites: fix.easy, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
+	-MapEditorData:
 HARV.Easy:
 	Inherits: HARV
 	Valued:
@@ -315,6 +346,7 @@ HARV.Easy:
 		SearchFromOrderRadius: 20
 	RenderSprites:
 		Image: harv
+	-MapEditorData:
 APC.Easy:
 	Inherits: APC
 	Valued:
@@ -324,6 +356,7 @@ APC.Easy:
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: apc
+	-MapEditorData:
 JEEP.Easy:
 	Inherits: JEEP
 	Valued:
@@ -333,6 +366,7 @@ JEEP.Easy:
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: jeep
+	-MapEditorData:
 ARTY.Easy:
 	Inherits: ARTY
 	Valued:
@@ -342,6 +376,7 @@ ARTY.Easy:
 		Prerequisites: dome.easy, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: arty
+	-MapEditorData:
 V2RL.Easy:
 	Inherits: V2RL
 	Valued:
@@ -351,6 +386,7 @@ V2RL.Easy:
 		Prerequisites: dome.easy, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: v2rl
+	-MapEditorData:
 FTRK.Easy:
 	Inherits: FTRK
 	Valued:
@@ -360,6 +396,7 @@ FTRK.Easy:
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: ftrk
+	-MapEditorData:
 1TNK.Easy:
 	Inherits: 1TNK
 	Valued:
@@ -369,6 +406,7 @@ FTRK.Easy:
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: 1tnk
+	-MapEditorData:
 2TNK.Easy:
 	Inherits: 2TNK
 	Valued:
@@ -378,6 +416,7 @@ FTRK.Easy:
 		Prerequisites: fix.easy, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk
+	-MapEditorData:
 2TNK.GER.Easy:
 	Inherits: 2TNK.GER
 	Valued:
@@ -387,6 +426,7 @@ FTRK.Easy:
 		Prerequisites: fix.easy, ~vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk.ger
+	-MapEditorData:
 3TNK.Easy:
 	Inherits: 3TNK
 	Valued:
@@ -396,6 +436,7 @@ FTRK.Easy:
 		Prerequisites: fix.easy, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 3tnk
+	-MapEditorData:
 4TNK.Easy:
 	Inherits: 4TNK
 	Valued:
@@ -405,6 +446,7 @@ FTRK.Easy:
 		Prerequisites: fix.easy, stek.easy, ~vehicles.soviet, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk
+	-MapEditorData:
 4TNK.KV-8.Easy:
 	Inherits: 4TNK.KV-8
 	Valued:
@@ -414,6 +456,7 @@ FTRK.Easy:
 		Prerequisites: fix.easy, stek.easy, ~vehicles.ukraine, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk.kv-8
+	-MapEditorData:
 TTNK.Easy:
 	Inherits: TTNK
 	Valued:
@@ -423,6 +466,7 @@ TTNK.Easy:
 		Prerequisites: tsla.easy, stek.easy, ~vehicles.russia, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: ttnk
+	-MapEditorData:
 STNK.Easy:
 	Inherits: STNK
 	Valued:
@@ -432,6 +476,7 @@ STNK.Easy:
 		Prerequisites: atek.easy, ~vehicles.england, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: stnk
+	-MapEditorData:
 
 # Aircraft | +25% Cost/Production boost on top of bot specific Cost/Production modifier
 
@@ -447,6 +492,7 @@ HELI.Easy:
 		RepairBuildings: hpad.easy
 	RenderSprites:
 		Image: heli
+	-MapEditorData:
 HIND.Easy:
 	Inherits: HIND
 	Valued:
@@ -459,6 +505,7 @@ HIND.Easy:
 		RepairBuildings: hpad.easy
 	RenderSprites:
 		Image: hind
+	-MapEditorData:
 MIG.Easy:
 	Inherits: MIG
 	Valued:
@@ -471,6 +518,7 @@ MIG.Easy:
 		RepairBuildings: afld.easy, afld.ukraine.easy
 	RenderSprites:
 		Image: mig
+	-MapEditorData:
 YAK.Easy:
 	Inherits: YAK
 	Valued:
@@ -483,3 +531,4 @@ YAK.Easy:
 		RepairBuildings: afld.easy, afld.ukraine.easy
 	RenderSprites:
 		Image: yak
+	-MapEditorData:

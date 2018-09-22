@@ -10,6 +10,7 @@ HELI.Normal:
 		Prerequisites: hpad, atek, ~techlevel.high, ~aircraft.ai
 	RenderSprites:
 		Image: heli
+	-MapEditorData:
 HIND.Normal:
 	Inherits: HIND
 	Valued:
@@ -18,6 +19,7 @@ HIND.Normal:
 		Prerequisites: hpad, ~techlevel.medium, ~aircraft.ai
 	RenderSprites:
 		Image: hind
+	-MapEditorData:
 MIG.Normal:
 	Inherits: MIG
 	Valued:
@@ -26,6 +28,7 @@ MIG.Normal:
 		Prerequisites: afld, stek, ~techlevel.high, ~aircraft.ai
 	RenderSprites:
 		Image: mig
+	-MapEditorData:
 YAK.Normal:
 	Inherits: YAK
 	Valued:
@@ -34,3 +37,4 @@ YAK.Normal:
 		Prerequisites: afld, ~techlevel.medium, ~aircraft.ai
 	RenderSprites:
 		Image: yak
+	-MapEditorData:

@@ -11,6 +11,7 @@ POWR.Brutal:
 		Prerequisites: ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: powr
+	-MapEditorData:
 APWR.Brutal:
 	Inherits: APWR
 	Valued:
@@ -20,6 +21,7 @@ APWR.Brutal:
 		Prerequisites: dome.brutal, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: apwr
+	-MapEditorData:
 PROC.Brutal:
 	Inherits: PROC
 	Valued:
@@ -31,6 +33,7 @@ PROC.Brutal:
 		Actor: HARV.Brutal
 	RenderSprites:
 		Image: proc
+	-MapEditorData:
 TENT.Brutal:
 	Inherits: TENT
 	Valued:
@@ -42,6 +45,7 @@ TENT.Brutal:
 		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: tent
+	-MapEditorData:
 BARR.Brutal:
 	Inherits: BARR
 	Valued:
@@ -53,6 +57,7 @@ BARR.Brutal:
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: barr
+	-MapEditorData:
 KENN.Brutal:
 	Inherits: KENN
 	Valued:
@@ -62,6 +67,7 @@ KENN.Brutal:
 		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: kenn
+	-MapEditorData:
 WEAP.Brutal:
 	Inherits: WEAP
 	Valued:
@@ -71,6 +77,7 @@ WEAP.Brutal:
 		Prerequisites: proc.brutal, barracks.brutal, !weap.brutal.extra, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
+	-MapEditorData:
 FIX.Brutal:
 	Inherits: FIX
 	Valued:
@@ -80,6 +87,7 @@ FIX.Brutal:
 		Prerequisites: weap.brutal, barracks.brutal, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
+	-MapEditorData:
 DOME.Brutal:
 	Inherits: DOME
 	Valued:
@@ -91,6 +99,7 @@ DOME.Brutal:
 		Prerequisites: dome.brutal, ~structures.england
 	RenderSprites:
 		Image: dome
+	-MapEditorData:
 HPAD.Brutal:
 	Inherits: HPAD
 	Valued:
@@ -100,6 +109,7 @@ HPAD.Brutal:
 		Prerequisites: dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: hpad
+	-MapEditorData:
 AFLD.Brutal:
 	Inherits: AFLD
 	Valued:
@@ -109,6 +119,7 @@ AFLD.Brutal:
 		Prerequisites: dome.brutal, ~structures.soviet, ~techlevel.medium, ~!structures.ukraine, ~structures.ai
 	RenderSprites:
 		Image: afld
+	-MapEditorData:
 AFLD.Ukraine.Brutal:
 	Inherits: AFLD.Ukraine
 	Valued:
@@ -120,6 +131,7 @@ AFLD.Ukraine.Brutal:
 		Prerequisite: afld.brutal
 	RenderSprites:
 		Image: afld
+	-MapEditorData:
 ATEK.Brutal:
 	Inherits: ATEK
 	Valued:
@@ -131,6 +143,7 @@ ATEK.Brutal:
 		Range: 16c0
 	RenderSprites:
 		Image: atek
+	-MapEditorData:
 STEK.Brutal:
 	Inherits: STEK
 	Valued:
@@ -142,6 +155,7 @@ STEK.Brutal:
 		Range: 16c0
 	RenderSprites:
 		Image: stek
+	-MapEditorData:
 
 # Defensive structures
 
@@ -154,6 +168,7 @@ SILO.Brutal:
 		Prerequisites: proc.brutal, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: silo
+	-MapEditorData:
 PBOX.Brutal:
 	Inherits: PBOX
 	Valued:
@@ -163,6 +178,7 @@ PBOX.Brutal:
 		Prerequisites: tent.brutal, ~structures.allies, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: pbox
+	-MapEditorData:
 HBOX.Brutal:
 	Inherits: HBOX
 	Valued:
@@ -172,6 +188,7 @@ HBOX.Brutal:
 		Prerequisites: tent.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: hbox
+	-MapEditorData:
 GUN.Brutal:
 	Inherits: GUN
 	Valued:
@@ -181,6 +198,7 @@ GUN.Brutal:
 		Prerequisites: tent.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gun
+	-MapEditorData:
 TSLA.Brutal:
 	Inherits: TSLA
 	Valued:
@@ -190,6 +208,7 @@ TSLA.Brutal:
 		Prerequisites: weap.brutal, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: tsla
+	-MapEditorData:
 GAP.Brutal:
 	Inherits: GAP
 	Valued:
@@ -199,6 +218,7 @@ GAP.Brutal:
 		Prerequisites: dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gap
+	-MapEditorData:
 FTUR.Brutal:
 	Inherits: FTUR
 	Valued:
@@ -208,6 +228,7 @@ FTUR.Brutal:
 		Prerequisites: barr.brutal, ~structures.soviet, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: ftur
+	-MapEditorData:
 AGUN.Brutal:
 	Inherits: AGUN
 	Valued:
@@ -217,6 +238,7 @@ AGUN.Brutal:
 		Prerequisites: dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: agun
+	-MapEditorData:
 SAM.Brutal:
 	Inherits: SAM
 	Valued:
@@ -226,6 +248,7 @@ SAM.Brutal:
 		Prerequisites: dome.brutal, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: sam
+	-MapEditorData:
 MSLO.Brutal:
 	Inherits: MSLO
 	Valued:
@@ -235,6 +258,7 @@ MSLO.Brutal:
 		Prerequisites: techcenter, ~techlevel.unrestricted, ~structures.ai
 	RenderSprites:
 		Image: mslo
+	-MapEditorData:
 
 # Infantry
 
@@ -247,6 +271,7 @@ E1.Brutal:
 		Prerequisites: barracks.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e1
+	-MapEditorData:
 E2.Brutal:
 	Inherits: E2
 	Valued:
@@ -256,6 +281,7 @@ E2.Brutal:
 		Prerequisites: barr.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e2
+	-MapEditorData:
 E3.Brutal:
 	Inherits: E3
 	Valued:
@@ -265,6 +291,7 @@ E3.Brutal:
 		Prerequisites: barracks.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e3
+	-MapEditorData:
 E4.Brutal:
 	Inherits: E4
 	Valued:
@@ -274,6 +301,7 @@ E4.Brutal:
 		Prerequisites: barr.brutal, ftur.brutal, ~techlevel.low, ~infantry.ai
 	RenderSprites:
 		Image: e4
+	-MapEditorData:
 DOG.Brutal:
 	Inherits: DOG
 	Valued:
@@ -283,6 +311,7 @@ DOG.Brutal:
 		Prerequisites: ~kenn.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: dog
+	-MapEditorData:
 SHOK.Brutal:
 	Inherits: SHOK
 	Valued:
@@ -292,6 +321,7 @@ SHOK.Brutal:
 		Prerequisites: barr.brutal, stek.brutal, tsla.brutal, ~infantry.russia, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: shok
+	-MapEditorData:
 
 # Vehicles
 
@@ -304,6 +334,7 @@ MCV.Brutal:
 		Prerequisites: fix.brutal, dome.brutal, !weap.brutal.extra2, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
+	-MapEditorData:
 HARV.Brutal:
 	Inherits: HARV
 	Valued:
@@ -315,6 +346,7 @@ HARV.Brutal:
 		SearchFromOrderRadius: 40
 	RenderSprites:
 		Image: harv
+	-MapEditorData:
 APC.Brutal:
 	Inherits: APC
 	Valued:
@@ -324,6 +356,7 @@ APC.Brutal:
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: apc
+	-MapEditorData:
 JEEP.Brutal:
 	Inherits: JEEP
 	Valued:
@@ -333,6 +366,7 @@ JEEP.Brutal:
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: jeep
+	-MapEditorData:
 ARTY.Brutal:
 	Inherits: ARTY
 	Valued:
@@ -342,6 +376,7 @@ ARTY.Brutal:
 		Prerequisites: dome.brutal, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: arty
+	-MapEditorData:
 V2RL.Brutal:
 	Inherits: V2RL
 	Valued:
@@ -351,6 +386,7 @@ V2RL.Brutal:
 		Prerequisites: dome.brutal, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: v2rl
+	-MapEditorData:
 FTRK.Brutal:
 	Inherits: FTRK
 	Valued:
@@ -360,6 +396,7 @@ FTRK.Brutal:
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: ftrk
+	-MapEditorData:
 1TNK.Brutal:
 	Inherits: 1TNK
 	Valued:
@@ -369,6 +406,7 @@ FTRK.Brutal:
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: 1tnk
+	-MapEditorData:
 2TNK.Brutal:
 	Inherits: 2TNK
 	Valued:
@@ -378,6 +416,7 @@ FTRK.Brutal:
 		Prerequisites: fix.brutal, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk
+	-MapEditorData:
 2TNK.GER.Brutal:
 	Inherits: 2TNK.GER
 	Valued:
@@ -387,6 +426,7 @@ FTRK.Brutal:
 		Prerequisites: fix.brutal, ~vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk.ger
+	-MapEditorData:
 3TNK.Brutal:
 	Inherits: 3TNK
 	Valued:
@@ -396,6 +436,7 @@ FTRK.Brutal:
 		Prerequisites: fix.brutal, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 3tnk
+	-MapEditorData:
 4TNK.Brutal:
 	Inherits: 4TNK
 	Valued:
@@ -405,6 +446,7 @@ FTRK.Brutal:
 		Prerequisites: fix.brutal, stek.brutal, ~vehicles.soviet, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk
+	-MapEditorData:
 4TNK.KV-8.Brutal:
 	Inherits: 4TNK.KV-8
 	Valued:
@@ -414,6 +456,7 @@ FTRK.Brutal:
 		Prerequisites: fix.brutal, stek.brutal, ~vehicles.ukraine, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk.kv-8
+	-MapEditorData:
 TTNK.Brutal:
 	Inherits: TTNK
 	Valued:
@@ -423,6 +466,7 @@ TTNK.Brutal:
 		Prerequisites: tsla.brutal, stek.brutal, ~vehicles.russia, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: ttnk
+	-MapEditorData:
 STNK.Brutal:
 	Inherits: STNK
 	Valued:
@@ -432,6 +476,7 @@ STNK.Brutal:
 		Prerequisites: atek.brutal, ~vehicles.england, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: stnk
+	-MapEditorData:
 
 # Aircraft | +25% Cost/Production boost on top of bot specific Cost/Production modifier
 
@@ -449,6 +494,7 @@ HELI.Brutal:
 		InvalidTargets: ^infantry
 	RenderSprites:
 		Image: heli
+	-MapEditorData:
 HIND.Brutal:
 	Inherits: HIND
 	Valued:
@@ -461,6 +507,7 @@ HIND.Brutal:
 		RepairBuildings: hpad.brutal
 	RenderSprites:
 		Image: hind
+	-MapEditorData:
 MIG.Brutal:
 	Inherits: MIG
 	Valued:
@@ -475,6 +522,7 @@ MIG.Brutal:
 		InvalidTargets: ^infantry
 	RenderSprites:
 		Image: mig
+	-MapEditorData:
 YAK.Brutal:
 	Inherits: YAK
 	Valued:
@@ -487,6 +535,7 @@ YAK.Brutal:
 		RepairBuildings: afld.brutal, afld.ukraine.brutal
 	RenderSprites:
 		Image: yak
+	-MapEditorData:
 
 # Aditional Brutal AI Structures unlocked at later tech.
 
@@ -501,6 +550,7 @@ PROC.Brutal.Extra:
 		Actor: HARV.Brutal
 	RenderSprites:
 		Image: proc
+	-MapEditorData:
 PROC.Brutal.Extra2:
 	Inherits: PROC
 	Valued:
@@ -513,6 +563,7 @@ PROC.Brutal.Extra2:
 		Actor: HARV.Brutal
 	RenderSprites:
 		Image: proc
+	-MapEditorData:
 WEAP.Brutal.Extra:
 	Inherits: WEAP
 	Valued:
@@ -522,6 +573,7 @@ WEAP.Brutal.Extra:
 		Prerequisites: proc.brutal.extra, mslo.brutal, fix.brutal, !weap.brutal.extra2, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
+	-MapEditorData:
 WEAP.Brutal.Extra2:
 	Inherits: WEAP
 	Valued:
@@ -532,6 +584,7 @@ WEAP.Brutal.Extra2:
 		BuildDurationModifier: 100
 	RenderSprites:
 		Image: weap
+	-MapEditorData:
 TENT.Brutal.Extra:
 	Inherits: TENT
 	Valued:
@@ -543,6 +596,7 @@ TENT.Brutal.Extra:
 		Prerequisites: anypower, proc.brutal.extra2, mslo.brutal, fix.brutal, ~structures.allies, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: tent
+	-MapEditorData:
 BARR.Brutal.Extra:
 	Inherits: BARR
 	Valued:
@@ -554,3 +608,4 @@ BARR.Brutal.Extra:
 		Prerequisites: anypower, proc.brutal.extra2, mslo.brutal, fix.brutal, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: barr
+	-MapEditorData:
