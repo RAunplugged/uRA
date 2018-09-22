@@ -54,7 +54,7 @@ CRATE:
 		Prerequisites: techlevel.medium
 	GiveUnitCrateAction@harvester:
 		SelectionShares: 20
-		Units: harvester
+		Units: harv
 		Prerequisites: techlevel.infonly
 	GiveUnitCrateAction@jeep:
 		SelectionShares: 5
