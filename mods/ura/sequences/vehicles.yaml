@@ -160,7 +160,7 @@ hhusk2:
 		Length: 5
 	icon: 4tnkicon
 
-#Mammoth KV8 sequence by FiveAces
+# Mammoth KV-8 sequence by FiveAces
 4tnk.kv-8:
 	idle:
 		Facings: 32
