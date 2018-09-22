@@ -1,0 +1,368 @@
+# Units available to the player upon captures
+
+# Categories
+
+# Brutal AI
+# Hard AI
+# Easy AI
+
+
+
+# Brutal AI | Infantry
+
+E2.Brutal.Player:
+	Inherits: ^Soldier
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.brutal
+		Description: Inflicts damage upon impact.
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Suicide Grenadier
+	Health:
+		HP: 100
+	Mobile:
+		Speed: 71
+	AttackSuicides:
+	Armament@GARRISONED:
+		Name: garrisoned
+		Weapon: Grenade
+		FireDelay: 15
+	TakeCover:
+		ProneOffset: 256,64,-331
+	AttackFrontal:
+	WithInfantryBody:
+		DefaultAttackSequence: throw
+		RequiresCondition: !parachute
+	WithInfantryBody@PARACHUTE:
+		StandSequences: parachute
+		RequiresCondition: parachute
+	Explodes:
+		Weapon: Explosion.Kamikaze
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded
+	RenderSprites:
+		Image: e2
+
+E4.Brutal.Player:
+	Inherits: E4
+	Valued:
+		Cost: 400
+	Tooltip:
+		Name: Crazed Flamethrower
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.brutal, ~ftur.brutal
+		Description: Infantryman under influence.\nA preferable ally.
+	Armament@PRIMARY:
+		Weapon: Flamer.Brutal
+	Armament@GARRISONED:
+		Weapon: Flamer.Brutal
+	Explodes:
+		Chance: 0
+	RenderSprites:
+		Image: e4
+DOG.Brutal.Player:
+	Inherits: DOG
+	Valued:
+		Cost: 400
+	Tooltip:
+		Name: Rabid Dog
+		GenericName: Rabid Dog
+	Health:
+		HP: 80
+	Armament:
+		Weapon: DogJaw.Brutal
+	Wanders:
+		MinMoveDelay: 5
+		MaxMoveDelay: 100
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~kenn.brutal
+		Description: Spreads infectios damage\nBeware of the dog.
+	RenderSprites:
+		Image: dog
+
+SPY.England.Brutal.Player:
+	Inherits: SPY.England
+	Valued:
+		Cost: 1200
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.brutal, ~dome.brutal, ~atek.brutal
+		Description: Exceptional spy agent.\nAquired license to kill.
+		BuildLimit: 1
+	# -MustBeDestroyed:
+	DisguiseTooltip:
+		Name: Agent 007
+	Health:
+		HP: 100
+	RevealsShroud:
+		Range: 9c256
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 4
+	Armament:
+		Weapon: SilencedPPK.Agent
+	Cloak:
+		InitialDelay: 100
+		CloakDelay: 75
+		CloakSound:
+		UncloakSound:
+		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
+		IsPlayerPalette: true
+		RequiresCondition: !cloak-force-disabled
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: cloak-force-disabled
+		ValidDamageStates: Critical
+	RenderSprites:
+		Image: spy
+
+MEDI.Brutal.Player:
+	Inherits: MEDI
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~tent.brutal
+		Description: Heals units far and near.\n  The power of prayer.
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Field Priest
+	RevealsShroud:
+		Range: 8c0
+	Armament:
+		Weapon: Heal.Priest
+	RenderSprites:
+		Image: medi
+
+# MECH.Brutal.Player:
+# HIJACKER.Brutal.Player:
+# SHOK.Brutal.Player:
+
+# SNIPER.Brutal.Player:
+# MachineGunner.Brutal.Player:
+# EINSTEIN.Brutal.Player:
+# VOLVKOV.Brutal.Player:
+
+# Brutal AI | Vehicles
+# Brutal AI | Aircraft
+# Brutal AI | Support Powers
+
+
+
+# Hard AI | Infantry
+
+E2.Hard.Player:
+	Inherits: E2
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Scout Grenadier
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.hard
+		Description: Cloaked grenadiers.\nAquired extra vision.
+	# -MustBeDestroyed:
+	RevealsShroud:
+		Range: 8c0
+	Cloak:
+		InitialDelay: 200
+		CloakDelay: 150
+		CloakSound:
+		UncloakSound:
+		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
+		IsPlayerPalette: true
+		RequiresCondition: !cloak-force-disabled
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: cloak-force-disabled
+		ValidDamageStates: Critical
+	RenderSprites:
+		Image: e2
+E4.Hard.Player:
+	Inherits: E4
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Burst Flamethrower
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.hard, ~ftur.hard
+		Description: FireballLauncher infantry.\nGoodness gracious great balls of fire.
+	Armament@PRIMARY:
+		Weapon: FireballLauncher.E4
+		LocalOffset: 700,0,500
+	Armament@GARRISONED:
+		Name: garrisoned
+		Weapon: FireballLauncher.E4
+	RenderSprites:
+		Image: e4
+DOG.Hard.Player:
+	Inherits: DOG
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Assault Dog
+		GenericName: Assault Dog
+	Health:
+		HP: 50
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~kenn.hard
+		Description: Damage resistant dog.\nGo fetch!
+	RenderSprites:
+		Image: dog
+
+SPY.England.Hard.Player:
+	Inherits: SPY.England
+	Valued:
+		Cost: 600
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.hard, ~dome.hard
+		Description: Unique spy agent.\nAquired cloak.
+	# -MustBeDestroyed:
+	DisguiseTooltip:
+		Name: Special Agent
+	Health:
+		HP: 60
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 2
+	Armament:
+		Weapon: SilencedPPK.England
+	Cloak:
+		InitialDelay: 200
+		CloakDelay: 150
+		CloakSound:
+		UncloakSound:
+		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
+		IsPlayerPalette: true
+		RequiresCondition: !cloak-force-disabled
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: cloak-force-disabled
+		ValidDamageStates: Critical
+	RenderSprites:
+		Image: spy
+
+# MEDI.Hard.Player:
+
+# MECH.Hard.Player:
+# HIJACKER.Hard.Player:
+# SHOK.Hard.Player:
+
+# Hard AI | Vehicles
+# Hard AI | Aircraft
+# Hard AI | Ships
+# Hard AI | Support Powers
+
+
+
+# Easy AI | Infantry
+
+E2.Easy.Player:
+	Inherits: E2
+	Valued:
+		Cost: 80
+	Tooltip:
+		Name: Barely Grenadier
+	Health:
+		HP: 4
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.easy
+		Description: Weakling armed with grenades.\nKeep your distance.
+	RenderSprites:
+		Image: e2
+E4.Easy.Player:
+	Inherits: E4
+	Valued:
+		Cost: 200
+	Tooltip:
+		Name: Drunk Flamethrower
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.easy, ~ftur.easy
+		Description: Infantryman under influence.\nFire hazard
+	Armament@PRIMARY:
+		Weapon: Flamer.Easy
+	Armament@GARRISONED:
+		Weapon: Flamer.Easy
+	Explodes:
+		Chance: 100
+	RenderSprites:
+		Image: e4
+DOG.Easy.Player:
+	Inherits: DOG
+	Valued:
+		Cost: 100
+	Tooltip:
+		Name: Old Dog
+		GenericName: Old Dog
+	Mobile:
+		Speed: 33
+	Buildable:
+		BuildPaletteOrder: 8000
+		Prerequisites: ~kenn.easy
+		Description: Slow anti-infantry unit.\nKeep it safe at home. 
+	RenderSprites:
+		Image: dog
+SPY.England.Easy.Player:
+	Inherits: ^Soldier
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 8000
+		Prerequisites: ~barr.easy, ~dome.easy
+		Description: Dimwitted spy agent.\nHe's *your* problem now.
+	Valued:
+		Cost: 200
+	-Tooltip:
+	DisguiseTooltip:
+		Name: "Special" Agent
+		GenericName: Soldier
+	-Guard:
+	Passenger:
+		PipType: Blue
+	Disguise:
+		DisguisedCondition: disguise
+	DeliversCash:
+		Payload: 200
+	AutoTarget:
+		InitialStance: HoldFire
+		InitialStanceAI: HoldFire
+		ScanRadius: 5
+	-WithInfantryBody:
+	WithDisguisingInfantryBody:
+		DefaultAttackSequence: shoot
+		IdleSequences: idle1,idle2
+		StandSequences: stand,stand2
+	WithDecoration@disguise:
+		Image: pips
+		Sequence: pip-disguise
+		Palette: effect
+		ReferencePoint: Top, Right
+		ZOffset: 256
+		RequiresCondition: disguise
+	IgnoresDisguise:
+	Armament:
+		Weapon: Pistol.Agent
+	AttackFrontal:
+	Voiced:
+		VoiceSet: CivilianMaleVoice
+	RenderSprites:
+		Image: spy
+
+# MEDI.Easy.Player:
+
+# MECH.Easy.Player:
+# HIJACKER.Easy.Player:
+# SHOK.Easy.Player:
+
+# Easy AI | Vehicles
+# Easy AI | Aircraft
+# Easy AI | Support Powers
