@@ -1,62 +1,3 @@
-^AACannon:
-	ReloadDelay: 10
-	Range: 9c256
-	ValidTargets: Air
-	Projectile: Bullet
-		Speed: 1c682
-		Blockable: false
-	Warhead@1Dam: SpreadDamage
-		Damage: 20
-		Versus:
-			None: 40
-			Wood: 10
-			Light: 60
-			Heavy: 10
-			Concrete: 20
-		Spread: 213
-		ValidTargets: Air
-		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
-	Warhead@2Eff: CreateEffect
-		Explosions: small_explosion_air
-		ValidTargets: Air, Ground, Water, Trees
-	Report: aacanon3.aud
-
-ZSU-23:
-	Inherits: ^AACannon
-	ReloadDelay: 5
-	Burst: 2
-	BurstDelays: 0
-	Range: 11c0
-	Projectile: Bullet
-		Speed: 3c340
-	Warhead@1Dam: SpreadDamage
-		Damage: 12
-		Versus:
-			None: 30
-			Wood: 75
-			Light: 75
-			Heavy: 100
-			Concrete: 50
-
-FLAK-23-AA:
-	Inherits: ^AACannon
-	Warhead@1Dam: SpreadDamage
-		ValidTargets: Air, Ground, Water
-
-FLAK-23-AG:
-	Inherits: ^AACannon
-	Range: 7c576
-	ValidTargets: Ground, Water
-	Warhead@1Dam: SpreadDamage
-		ValidTargets: Air, Ground, Water
-	Warhead@2Eff: CreateEffect
-		Explosions: flak_explosion_ground
-		ValidTargets: Ground, Ship, Air, Trees
-	Warhead@3EffWater: CreateEffect
-		Explosions: small_splash
-		ValidTargets: Water, Underwater
-		InvalidTargets: Ship, Structure, Bridge
-
 ^HeavyMG:
 	ReloadDelay: 30
 	Range: 6c512
@@ -261,7 +202,6 @@ Pistol.Agent:
 	Warhead@1Dam: SpreadDamage
 		Damage: 30
 
-
 M1Carbine:
 	Inherits: ^LightMG
 	ReloadDelay: 20
@@ -307,6 +247,65 @@ M60mg.Inf:
 	Projectile: Bullet
 		Inaccuracy: 256
 	Report: pillbox1.aud
+
+^AACannon:
+	ReloadDelay: 10
+	Range: 9c256
+	ValidTargets: Air
+	Projectile: Bullet
+		Speed: 1c682
+		Blockable: false
+	Warhead@1Dam: SpreadDamage
+		Damage: 20
+		Versus:
+			None: 40
+			Wood: 10
+			Light: 60
+			Heavy: 10
+			Concrete: 20
+		Spread: 213
+		ValidTargets: Air
+		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosions: small_explosion_air
+		ValidTargets: Air, Ground, Water, Trees
+	Report: aacanon3.aud
+
+ZSU-23:
+	Inherits: ^AACannon
+	ReloadDelay: 5
+	Burst: 2
+	BurstDelays: 0
+	Range: 11c0
+	Projectile: Bullet
+		Speed: 3c340
+	Warhead@1Dam: SpreadDamage
+		Damage: 12
+		Versus:
+			None: 30
+			Wood: 75
+			Light: 75
+			Heavy: 100
+			Concrete: 50
+
+FLAK-23-AA:
+	Inherits: ^AACannon
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air, Ground, Water
+
+FLAK-23-AG:
+	Inherits: ^AACannon
+	Range: 7c576
+	ValidTargets: Ground, Water
+	Warhead@1Dam: SpreadDamage
+		ValidTargets: Air, Ground, Water
+	Warhead@2Eff: CreateEffect
+		Explosions: flak_explosion_ground
+		ValidTargets: Ground, Ship, Air, Trees
+	Warhead@3EffWater: CreateEffect
+		Explosions: small_splash
+		ValidTargets: Water, Underwater
+		InvalidTargets: Ship, Structure, Bridge
 
 ^SnipeWeapon:
 	ReloadDelay: 80

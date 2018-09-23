@@ -138,7 +138,6 @@ CivPanicExplosion:
 		Range: 0, 128
 		Falloff: 100, 100
 
-
 BarrelExplode:
 	Inherits: ^Explosion
 	Warhead@1Dam: SpreadDamage
