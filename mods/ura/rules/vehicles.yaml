@@ -226,7 +226,7 @@ TRUK:
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
+		Prerequisites: vehicles.upgraded, servicedepot.upgraded
 
 2TNK.GER:
 	Inherits: 2TNK
@@ -297,7 +297,7 @@ TRUK:
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
+		Prerequisites: vehicles.upgraded, servicedepot.upgraded
 
 4TNK:
 	Inherits: ^TrackedVehicle
@@ -359,10 +359,10 @@ TRUK:
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 	SelectionDecorations:
-	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
 	Selectable:
 		DecorationBounds: 44,38,0,-4
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded, servicedepot.upgraded, techcenter.upgraded
 
 # Modified version of the Mammoth KV-8 by FiveAces
 4TNK.KV-8:
@@ -431,7 +431,7 @@ ARTY:
 	AttackFrontal:
 	WithMuzzleOverlay:
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
+		Prerequisites: vehicles.upgraded, radardome.upgraded
 
 V2RL:
 	Inherits: ^Vehicle
@@ -475,7 +475,7 @@ V2RL:
 		Sequence: empty-idle
 		Name: reloading
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
+		Prerequisites: vehicles.upgraded, radardome.upgraded
 
 JEEP:
 	Inherits: ^Vehicle
@@ -786,6 +786,7 @@ APC:
 
 MNLY:
 	Inherits: ^TrackedVehicle
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Tooltip:
 		Name: Minelayer
 	Valued:
@@ -822,9 +823,12 @@ MNLY:
 		Weapon: ATMine
 	RenderSprites:
 		Image: MNLY
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded, servicedepot.upgraded
 
 MGG:
 	Inherits: ^Vehicle
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Tooltip:
 		Name: Mobile Gap Generator
 	Valued:
@@ -860,9 +864,12 @@ MGG:
 		Actor: MGG.Husk
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded, radardome.upgraded
 
 MRJ:
 	Inherits: ^Vehicle
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Tooltip:
 		Name: Mobile Radar Jammer
 	Valued:
@@ -898,6 +905,8 @@ MRJ:
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
 		Offset: -256,0,256
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded, techcenter.upgraded
 
 CTNK:
 	Inherits: ^Vehicle
@@ -944,7 +953,7 @@ CTNK:
 		DecorationBounds: 30,30
 	SelectionDecorations:
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
+		Prerequisites: vehicles.upgraded, techcenter.upgraded
 
 STNK:
 	Inherits: ^Vehicle
@@ -1002,7 +1011,7 @@ STNK:
 		InitialStanceAI: ReturnFire
 	WithSpriteTurret:
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
+		Prerequisites: vehicles.upgraded, techcenter.upgraded
 
 TTNK:
 	Inherits: ^TrackedVehicle
@@ -1043,11 +1052,11 @@ TTNK:
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
-
+		Prerequisites: vehicles.upgraded, techcenter.upgraded
 
 QTNK:
 	Inherits: ^TrackedVehicle
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Tooltip:
 		Name: MAD Tank
 		GenericName: Tank
@@ -1084,6 +1093,8 @@ QTNK:
 	Selectable:
 		DecorationBounds: 44,38,0,-4
 	SelectionDecorations:
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded, servicedepot.upgraded, techcenter.upgraded
 
 DTRK:
 	Inherits: ^Vehicle

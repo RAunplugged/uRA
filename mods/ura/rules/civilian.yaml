@@ -97,7 +97,10 @@ BIO:
 	Selectable:
 		Bounds: 48,48
 	Targetable:
-		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
+		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget, SpyInfiltrate
+	InfiltrateForSupportPower:
+		Proxy: biolab.upgraded
+		Types: SpyInfiltrate
 	ExternalCapturable:
 	ExternalCapturableBar:
 	EngineerRepairable:

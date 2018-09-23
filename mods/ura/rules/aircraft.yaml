@@ -60,6 +60,8 @@ TRAN:
 		RequiresCondition: !airborne
 	SpawnActorOnDeath:
 		Actor: TRAN.Husk
+	ProducibleWithLevel:
+		Prerequisites: aircraft.upgraded
 
 HIND:
 	Inherits: ^Helicopter
@@ -189,7 +191,7 @@ HELI:
 	SpawnActorOnDeath:
 		Actor: HELI.Husk
 	ProducibleWithLevel:
-		Prerequisites: aircraft.upgraded
+		Prerequisites: aircraft.upgraded, techcenter.upgraded
 
 YAK:
 	Inherits: ^Plane
@@ -320,7 +322,7 @@ MIG:
 	SpawnActorOnDeath:
 		Actor: MIG.Husk
 	ProducibleWithLevel:
-		Prerequisites: aircraft.upgraded
+		Prerequisites: aircraft.upgraded, techcenter.upgraded
 
 BADR:
 	Inherits: ^NeutralPlane

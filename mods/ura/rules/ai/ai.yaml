@@ -75,6 +75,9 @@ Player:
 			e2.easy: 15%
 			e3.easy: 30%
 			e4.easy: 25%
+			# e9.easy: 15%
+			# e10.easy: 15%
+			# sniper.easy: 15%
 			dog.easy: 15%
 			shok.easy: 30%
 			harv.easy: 15%
@@ -242,6 +245,9 @@ Player:
 			e2: 15%
 			e3: 30%
 			e4: 25%
+			# e9: 15%
+			# e10: 15%
+			# sniper: 15%
 			dog: 15%
 			shok: 30%
 			harv: 15%
@@ -264,6 +270,9 @@ Player:
 			yak.normal: 25%
 		UnitLimits:
 			dog: 4
+			# e9: 5
+			# e10: 5
+			# sniper: 2
 			harv: 8
 			jeep: 3
 			ftrk: 4
@@ -366,11 +375,11 @@ Player:
 
 		BuildingCommonNames:
 			ConstructionYard: fact
-			Refinery: proc.hard
+			Refinery: proc.hard,proc.hard.extra,proc.hard.extra2
 			Power: powr.hard,apwr.hard
-			Barracks: barr.hard,tent.hard
-			VehiclesFactory: weap.hard
-			Production: barr.hard,tent.hard,weap.hard,afld.hard,hpad.hard
+			Barracks: barr.hard,barr.hard.extra,tent.hard,tent.hard.extra
+			VehiclesFactory: weap.hard,weap.hard.extra,weap.hard.extra2
+			Production: barr.hard,barr.hard.extra,tent.hard,tent.hard.extra,weap.hard,weap.hard.extra,weap.hard.extra2,afld.hard,hpad.hard
 			Silo: silo.hard
 		UnitsCommonNames:
 			Mcv: mcv,mcv.hard
@@ -427,6 +436,9 @@ Player:
 			e2.hard: 15%
 			e3.hard: 30%
 			e4.hard: 20%
+			e9.hard: 15%
+			e10.hard: 15%
+			sniper.hard: 15%
 			dog.hard: 15%
 			shok.hard: 30%
 			mcv.hard: 0.1%
@@ -450,6 +462,9 @@ Player:
 			yak.hard: 25%
 		UnitLimits:
 			dog.hard: 6
+			e9.hard: 5
+			e10.hard: 5
+			sniper.hard: 2
 			harv.hard: 8
 			mcv.hard: 1
 			jeep.hard: 3
@@ -553,11 +568,11 @@ Player:
 
 		BuildingCommonNames:
 			ConstructionYard: fact
-			Refinery: proc.brutal
+			Refinery: proc.brutal,proc.brutal.extra,proc.brutal.extra2
 			Power: powr.brutal,apwr.brutal
-			Barracks: barr.brutal,tent.brutal
-			VehiclesFactory: weap.brutal
-			Production: barr.brutal,tent.brutal,weap.brutal,afld.brutal,hpad.brutal
+			Barracks: barr.brutal,barr.brutal.extra,tent.brutal,tent.brutal.extra
+			VehiclesFactory: weap.brutal,weap.brutal.extra,weap.brutal.extra2
+			Production: barr.brutal,barr.brutal.extra,tent.brutal,tent.brutal.extra,weap.brutal,weap.brutal.extra,weap.brutal.extra2,afld.brutal,hpad.brutal
 			Silo: silo.brutal
 		UnitsCommonNames:
 			Mcv: mcv,mcv.brutal
@@ -614,6 +629,9 @@ Player:
 			e2.brutal: 15%
 			e3.brutal: 30%
 			e4.brutal: 20%
+			e9.brutal: 15%
+			e10.brutal: 15%
+			sniper.brutal: 15%
 			dog.brutal: 15%
 			shok.brutal: 30%
 			mcv.brutal: 0.1%
@@ -637,6 +655,9 @@ Player:
 			yak.brutal: 25%
 		UnitLimits:
 			dog.brutal: 6
+			e9.brutal: 5
+			e10.brutal: 5
+			sniper.brutal: 2
 			harv.brutal: 8
 			mcv.brutal: 1
 			jeep.brutal: 3

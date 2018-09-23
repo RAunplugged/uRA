@@ -323,6 +323,39 @@ SHOK.Brutal:
 		Image: shok
 	-MapEditorData:
 
+E9.Brutal:
+	Inherits: E9
+	Valued:
+		Cost: 180
+	Buildable:
+		BuildPaletteOrder: 9020
+		Prerequisites: barracks.brutal.extra, ~infantry.france, ~techlevel.high, ~infantry.ai
+	RenderSprites:
+		Image: e9
+	-MapEditorData:
+
+E10.Brutal:
+	Inherits: E10
+	Valued:
+		Cost: 240
+	Buildable:
+		BuildPaletteOrder: 9023
+		Prerequisites: barracks.brutal.extra, ~infantry.germany, ~techlevel.high, ~infantry.ai
+	RenderSprites:
+		Image: e10
+	-MapEditorData:
+
+SNIPER.Brutal:
+	Inherits: SNIPER
+	Valued:
+		Cost: 480
+	Buildable:
+		BuildPaletteOrder: 9026
+		Prerequisites: barracks.brutal.extra, ~infantry.england, ~techlevel.high, ~infantry.ai
+	RenderSprites:
+		Image: sniper
+	-MapEditorData:
+
 # Vehicles
 
 MCV.Brutal:
@@ -591,6 +624,8 @@ TENT.Brutal.Extra:
 		Cost: 300
 	ProvidesPrerequisite@barracks:
 		Prerequisite: barracks.brutal
+	ProvidesPrerequisite@barracks.extra:
+		Prerequisite: barracks.brutal.extra
 	Buildable:
 		BuildPaletteOrder: 9200
 		Prerequisites: anypower, proc.brutal.extra2, mslo.brutal, fix.brutal, ~structures.allies, ~techlevel.infonly, ~structures.ai
@@ -603,6 +638,8 @@ BARR.Brutal.Extra:
 		Cost: 300
 	ProvidesPrerequisite@barracks:
 		Prerequisite: barracks.brutal
+	ProvidesPrerequisite@barracks.extra:
+		Prerequisite: barracks.brutal.extra
 	Buildable:
 		BuildPaletteOrder: 9200
 		Prerequisites: anypower, proc.brutal.extra2, mslo.brutal, fix.brutal, ~structures.soviet, ~techlevel.infonly, ~structures.ai

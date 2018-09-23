@@ -323,6 +323,39 @@ SHOK.Easy:
 		Image: shok
 	-MapEditorData:
 
+E9.Easy:
+	Inherits: E9
+	Valued:
+		Cost: 360
+	Buildable:
+		BuildPaletteOrder: 9018
+		Prerequisites: barr.easy.extra, ~infantry.france, ~techlevel.high, ~infantry.ai
+	RenderSprites:
+		Image: e9
+	-MapEditorData:
+
+E10.Easy:
+	Inherits: E10
+	Valued:
+		Cost: 480
+	Buildable:
+		BuildPaletteOrder: 9021
+		Prerequisites: barr.easy.extra, ~infantry.germany, ~techlevel.high, ~infantry.ai
+	RenderSprites:
+		Image: e10
+	-MapEditorData:
+
+SNIPER.Easy:
+	Inherits: SNIPER
+	Valued:
+		Cost: 960
+	Buildable:
+		BuildPaletteOrder: 9024
+		Prerequisites: barr.easy.extra, ~infantry.england, ~techlevel.high, ~infantry.ai
+	RenderSprites:
+		Image: sniper
+	-MapEditorData:
+
 # Vehicles
 
 MCV.Easy:

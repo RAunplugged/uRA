@@ -50,6 +50,8 @@ DOG:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 		StandSequences: stand
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded
 
 E1:
 	Inherits: ^Soldier
@@ -89,7 +91,6 @@ E1R1:
 	-Buildable:
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
-		InitialLevels: 1
 	RenderSprites:
 		Image: E1
 
@@ -180,7 +181,6 @@ E3R1:
 	-Buildable:
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
-		InitialLevels: 1
 	RenderSprites:
 		Image: E3
 
@@ -220,9 +220,7 @@ E4:
 		StandSequences: parachute
 		RequiresCondition: parachute
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded
-
-# E5: (German MachineGunner)
+		Prerequisites: barracks.upgraded, radardome.upgraded
 
 E6:
 	Inherits: ^Soldier
@@ -310,6 +308,8 @@ SPY:
 		ReferencePoint: Top, Right
 		ZOffset: 256
 		RequiresCondition: disguise
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded, techcenter.upgraded
 
 SPY.England:
 	Inherits: SPY
@@ -332,7 +332,6 @@ SPY.England:
 		Image: spy
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
-		InitialLevels: 1
 
 #Tanya Swim properties and sequences by SirCake
 E7:
@@ -404,7 +403,7 @@ E7:
 	AnnounceOnBuild:
 	AnnounceOnKill:
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded
+		Prerequisites: barracks.upgraded, techcenter.upgraded
 
 MEDI:
 	Inherits: ^Soldier
@@ -440,6 +439,8 @@ MEDI:
 		DefaultAttackSequence: heal
 	Voiced:
 		VoiceSet: MedicVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded
 
 MECH:
 	Inherits: ^Soldier
@@ -482,6 +483,8 @@ MECH:
 		StandSequences: stand
 	Voiced:
 		VoiceSet: MechanicVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded, servicedepot.upgraded
 
 HIJACKER:
 	Inherits: ^Soldier
@@ -528,6 +531,8 @@ HIJACKER:
 	WithInfantryBody:
 		IdleSequences: idle
 		StandSequences: stand
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded, servicedepot.upgraded
 
 SHOK:
 	Inherits: ^Soldier
@@ -576,7 +581,7 @@ SHOK:
 		StandSequences: parachute
 		RequiresCondition: parachute
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded
+		Prerequisites: barracks.upgraded, techcenter.upgraded
 
 SNIPER:
 	Inherits: ^Soldier
@@ -592,7 +597,7 @@ SNIPER:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 500
-		Prerequisites: ~infantry.england, ~barracks.upgraded, ~techcenter.upgraded
+		Prerequisites: ~infantry.england, ~barracks.upgraded, radardome.upgraded, ~techcenter.upgraded
 		Description: Elite sniper infantry unit.\nCan detect cloaked units.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	RevealsShroud:
 		Range: 9c256
@@ -636,7 +641,6 @@ SNIPER:
 		RequiresCondition: parachute
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
-		InitialLevels: 1
 
 # Modified version of the Grenade Launcher by Kiraye
 E9:
@@ -651,7 +655,7 @@ E9:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		Prerequisites: ~infantry.france, ~barracks.upgraded, ~techcenter.upgraded
+		Prerequisites: ~infantry.france, ~barracks.upgraded, ~radardome.upgraded, ~techcenter.upgraded
 		BuildPaletteOrder: 400
 		Description: Infantry armed with long range grenade launcher.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
@@ -669,7 +673,7 @@ E9:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded
+		Prerequisites: techlevel.infonly
 
 # Modified version of the Machine Gunner by Kiraye
 E10:
@@ -684,7 +688,7 @@ E10:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		Prerequisites: ~infantry.germany, ~barracks.upgraded, ~techcenter.upgraded
+		Prerequisites: ~infantry.germany, ~barracks.upgraded, ~servicedepot.upgraded, ~techcenter.upgraded
 		BuildPaletteOrder: 401
 		Description: Infantry equiped with a rapid firing Machine Gun.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
@@ -697,7 +701,7 @@ E10:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded
+		Prerequisites: techlevel.infonly
 
 EINSTEIN:
 	Inherits: ^CivInfantry
@@ -802,6 +806,8 @@ Zombie:
 		IdleSequences: idle1
 	Voiced:
 		VoiceSet: AntVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded, biolab.upgraded
 
 Ant:
 	Inherits: ^Infantry
@@ -844,3 +850,5 @@ Ant:
 		UseDeathTypeSuffix: false
 	Voiced:
 		VoiceSet: AntVoice
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded, biolab.upgraded

@@ -576,6 +576,9 @@ FIX:
 		BuildPaletteOrder: 100
 		Prerequisites: weap, ~techlevel.medium
 		Description: Repairs vehicles for credits.
+	InfiltrateForSupportPower:
+		Proxy: servicedepot.upgraded
+		Types: SpyInfiltrate
 	RevealsShroud:
 		Range: 5c256
 	Building:
@@ -590,6 +593,8 @@ FIX:
 	Selectable:
 		Bounds: 68,34,0,3
 		DecorationBounds: 72,48
+	Targetable:
+		TargetTypes: Ground, Structure, C4, DetonateAttack, SpyInfiltrate
 	SelectionDecorations:
 	RallyPoint:
 	WithRepairAnimation:

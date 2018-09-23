@@ -479,11 +479,19 @@ aircraft.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 
+servicedepot.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+
 radardome.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 
 techcenter.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+
+biolab.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 

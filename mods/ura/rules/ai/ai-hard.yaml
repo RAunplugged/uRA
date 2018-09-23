@@ -343,6 +343,39 @@ SHOK.Hard:
 		Image: shok
 	-MapEditorData:
 
+E9.Hard:
+	Inherits: E9
+	Valued:
+		Cost: 240
+	Buildable:
+		BuildPaletteOrder: 9019
+		Prerequisites: barracks.hard.extra, ~infantry.france, ~techlevel.high, ~infantry.ai
+	RenderSprites:
+		Image: e9
+	-MapEditorData:
+
+E10.Hard:
+	Inherits: E10
+	Valued:
+		Cost: 320
+	Buildable:
+		BuildPaletteOrder: 9022
+		Prerequisites: barracks.hard.extra, ~infantry.germany, ~techlevel.high, ~infantry.ai
+	RenderSprites:
+		Image: e10
+	-MapEditorData:
+
+SNIPER.Hard:
+	Inherits: SNIPER
+	Valued:
+		Cost: 640
+	Buildable:
+		BuildPaletteOrder: 9025
+		Prerequisites: barracks.hard.extra, ~infantry.england, ~techlevel.high, ~infantry.ai
+	RenderSprites:
+		Image: sniper
+	-MapEditorData:
+
 # Vehicles
 
 MCV.Hard:
@@ -675,6 +708,8 @@ TENT.Hard.Extra:
 		Cost: 400
 	ProvidesPrerequisite@barracks:
 		Prerequisite: barracks.hard
+	ProvidesPrerequisite@barracks.extra:
+		Prerequisite: barracks.hard.extra
 	Buildable:
 		BuildPaletteOrder: 9200
 		Prerequisites: anypower, proc.hard.extra2, mslo.hard, fix.hard, ~structures.allies, ~techlevel.infonly, ~structures.ai
@@ -687,6 +722,8 @@ BARR.Hard.Extra:
 		Cost: 400
 	ProvidesPrerequisite@barracks:
 		Prerequisite: barracks.hard
+	ProvidesPrerequisite@barracks.extra:
+		Prerequisite: barracks.hard.extra
 	Buildable:
 		BuildPaletteOrder: 9200
 		Prerequisites: anypower, proc.hard.extra2, mslo.hard, fix.hard, ~structures.soviet, ~techlevel.infonly, ~structures.ai
