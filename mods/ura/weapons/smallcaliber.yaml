@@ -297,7 +297,7 @@ M60mg.APC:
 M60mg.Inf:
 	Inherits: ^LightMG
 	ReloadDelay: 30
-	Range: 6c512
+	Range: 7c576
 	Burst: 5
 	BurstDelays: 5
 	Warhead@1Dam: SpreadDamage

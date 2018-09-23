@@ -543,10 +543,12 @@ JEEP:
 			thf: ifv-hijacker
 			shok: ifv-tesla
 			sniper: ifv-sniper
+			e9: ifv-grenlauncher
+			e10: ifv-mgunner
 			dog: ifv-dog
 			tecn: ifv-technician
 	GrantCondition@civfallback:
-		RequiresCondition: loaded && !ifv-rifle && !ifv-grenadier && !ifv-rocket && !ifv-flame && !ifv-engineer && !ifv-spy && !ifv-tanya && !ifv-medic && !ifv-mechanic && !ifv-hijacker && !ifv-tesla && !ifv-sniper && !ifv-dog && !ifv-technician
+		RequiresCondition: loaded && !ifv-rifle && !ifv-grenadier && !ifv-rocket && !ifv-flame && !ifv-engineer && !ifv-spy && !ifv-tanya && !ifv-medic && !ifv-mechanic && !ifv-hijacker && !ifv-tesla && !ifv-sniper && !ifv-mgunner && !ifv-grenlauncher && !ifv-dog && !ifv-technician
 		Condition: ifv-civilian
 	RenderDetectionCircle:
 	Armament:
@@ -633,6 +635,21 @@ JEEP:
 	Tooltip@sniper:
 		Name: Sniper Ranger
 		RequiresCondition: ifv-sniper
+	Armament@grenlauncher:
+		Weapon: GrenLauncher
+		LocalOffset: 128,0,43
+		RequiresCondition: ifv-grenlauncher
+	Tooltip@grenlauncher:
+		Name: Grenade Ranger
+		RequiresCondition: ifv-grenlauncher
+	Armament@mgunner:
+		Weapon: M60mg.Inf
+		LocalOffset: 128,0,43
+		RequiresCondition: ifv-mgunner
+		MuzzleSequence: muzzle
+	Tooltip@mgunner:
+		Name: Machinegun Ranger
+		RequiresCondition: ifv-mgunner
 	Tooltip@tanya:
 		Name: Sniper Ranger
 		RequiresCondition: ifv-tanya
@@ -641,7 +658,7 @@ JEEP:
 		LocalOffset: 128,0,43
 		RequiresCondition: ifv-grenadier
 	Tooltip@grenadier:
-		Name: Grenade Ranger
+		Name: Grenadier Ranger
 		RequiresCondition: ifv-grenadier
 	Armament@flamer:
 		Weapon: Flamer
