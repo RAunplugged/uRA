@@ -329,7 +329,7 @@ E9.Easy:
 		Cost: 360
 	Buildable:
 		BuildPaletteOrder: 9018
-		Prerequisites: barr.easy.extra, ~infantry.france, ~techlevel.high, ~infantry.ai
+		# Prerequisites: barr.easy.extra, ~infantry.france, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: e9
 	-MapEditorData:
@@ -340,7 +340,7 @@ E10.Easy:
 		Cost: 480
 	Buildable:
 		BuildPaletteOrder: 9021
-		Prerequisites: barr.easy.extra, ~infantry.germany, ~techlevel.high, ~infantry.ai
+		# Prerequisites: barr.easy.extra, ~infantry.germany, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: e10
 	-MapEditorData:
@@ -351,7 +351,7 @@ SNIPER.Easy:
 		Cost: 960
 	Buildable:
 		BuildPaletteOrder: 9024
-		Prerequisites: barr.easy.extra, ~infantry.england, ~techlevel.high, ~infantry.ai
+		# Prerequisites: barr.easy.extra, ~infantry.england, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: sniper
 	-MapEditorData:
