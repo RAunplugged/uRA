@@ -1517,7 +1517,7 @@ zombie:
 		Length: 4
 		Facings: 8
 	idle1:
-		Start: 96
+		Start: 95
 		Length: 10
 		Tick: 120
 	die1:
