@@ -226,6 +226,7 @@ KENN:
 		Produces: Infantry, Dog
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 175
@@ -278,6 +279,7 @@ TENT:
 		Produces: Infantry, Soldier
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 20
@@ -372,6 +374,7 @@ BARR:
 		Produces: Infantry, Soldier
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 30
@@ -462,6 +465,7 @@ WEAP:
 		Produces: Vehicle
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 80
@@ -568,8 +572,9 @@ FIX:
 	RepairsUnits:
 		HpPerStep: 10
 		Interval: 7
-		FinishRepairingNotification: UnitRepaired
 		PlayerExperience: 15
+		StartRepairingNotification: Repairing
+		FinishRepairingNotification: UnitRepaired
 	Reservable:
 	Buildable:
 		Queue: Building
@@ -617,8 +622,9 @@ SYRD:
 		Amount: -30
 	RepairsUnits:
 		HpPerStep: 1000
-		FinishRepairingNotification: UnitRepaired
 		PlayerExperience: 15
+		StartRepairingNotification: Repairing
+		FinishRepairingNotification: UnitRepaired
 	RequiresBuildableArea:
 		Adjacent: 10
 	-GivesBuildableArea:
@@ -626,6 +632,7 @@ SYRD:
 		Produces: Ship, Boat
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 40
@@ -739,8 +746,9 @@ SPEN:
 		Amount: -30
 	RepairsUnits:
 		HpPerStep: 1000
-		FinishRepairingNotification: UnitRepaired
 		PlayerExperience: 15
+		StartRepairingNotification: Repairing
+		FinishRepairingNotification: UnitRepaired
 	RequiresBuildableArea:
 		AreaTypes: building
 		Adjacent: 10
@@ -749,6 +757,7 @@ SPEN:
 		Produces: Ship, Submarine
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 50
@@ -999,12 +1008,15 @@ HPAD:
 		HpPerStep: 1
 		Interval: 10
 		PlayerExperience: 15
+		StartRepairingNotification: Repairing
+		FinishRepairingNotification: UnitRepaired
 	Reservable:
 	WithRepairAnimation:
 	Production:
 		Produces: Aircraft, Helicopter
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 120
@@ -1095,11 +1107,14 @@ AFLD:
 		HpPerStep: 1
 		Interval: 12
 		PlayerExperience: 15
+		StartRepairingNotification: Repairing
+		FinishRepairingNotification: UnitRepaired
 	Reservable:
 	Production:
 		Produces: Aircraft, Plane
 	PrimaryBuilding:
 		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	Buildable:
 		Queue: Building
 		BuildPaletteOrder: 130

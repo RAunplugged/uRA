@@ -61,6 +61,7 @@
 
 ^GainsExperience:
 	GainsExperience:
+		LevelUpNotification: LevelUp
 		Conditions:
 			200: rank-veteran
 			400: rank-veteran
@@ -694,6 +695,7 @@
 		AreaTypes: building, fake
 	RepairableBuilding:
 		PlayerExperience: 25
+		RepairingNotification: Repairing
 	EngineerRepairable:
 	ExternalCapturable:
 	ExternalCapturableBar:
