@@ -60,7 +60,7 @@ HARV.Normal:
 	Inherits: HARV
 	Buildable:
 		BuildPaletteOrder: 9045
-		Prerequisites: proc.normal, ~techlevel.infonly, ~vehicles.ai
+		Prerequisites: proc, ~techlevel.infonly, ~vehicles.ai
 	Harvester:
 		SearchFromOrderRadius: 30
 	RenderSprites:
