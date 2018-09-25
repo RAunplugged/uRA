@@ -195,12 +195,12 @@ Pistol:
 
 Pistol.Agent:
 	Inherits: Pistol
-	ReloadDelay: 30
+	ReloadDelay: 15
 	Range: 5c384
 	Projectile: Bullet
 		Inaccuracy: 1706
 	Warhead@1Dam: SpreadDamage
-		Damage: 30
+		Damage: 15
 
 M1Carbine:
 	Inherits: ^LightMG
