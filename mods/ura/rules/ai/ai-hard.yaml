@@ -235,7 +235,7 @@ GAP.Hard:
 		Cost: 720
 	Buildable:
 		BuildPaletteOrder: 9016
-		Prerequisites: dome.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
+		Prerequisites: weap.hard, dome.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gap
 	-MapEditorData:
@@ -255,7 +255,7 @@ AGUN.Hard:
 		Cost: 640
 	Buildable:
 		BuildPaletteOrder: 9022
-		Prerequisites: dome.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
+		Prerequisites: weap.hard, dome.hard, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: agun
 	-MapEditorData:
@@ -265,7 +265,7 @@ SAM.Hard:
 		Cost: 560
 	Buildable:
 		BuildPaletteOrder: 9025
-		Prerequisites: dome.hard, ~structures.soviet, ~techlevel.medium, ~structures.ai
+		Prerequisites: weap.hard, dome.hard, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: sam
 	-MapEditorData:

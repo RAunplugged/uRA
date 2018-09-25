@@ -215,7 +215,7 @@ GAP.Brutal:
 		Cost: 540
 	Buildable:
 		BuildPaletteOrder: 9017
-		Prerequisites: dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
+		Prerequisites: weap.brutal, dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gap
 	-MapEditorData:
@@ -235,7 +235,7 @@ AGUN.Brutal:
 		Cost: 480
 	Buildable:
 		BuildPaletteOrder: 9023
-		Prerequisites: dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
+		Prerequisites: weap.brutal, dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: agun
 	-MapEditorData:
@@ -245,7 +245,7 @@ SAM.Brutal:
 		Cost: 420
 	Buildable:
 		BuildPaletteOrder: 9026
-		Prerequisites: dome.brutal, ~structures.soviet, ~techlevel.medium, ~structures.ai
+		Prerequisites: weap.brutal, dome.brutal, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: sam
 	-MapEditorData:

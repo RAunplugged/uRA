@@ -1,5 +1,72 @@
 # Normal AI
 
+# Defensive Structures
+
+GAP.Normal:
+	Inherits: GAP
+	Buildable:
+		BuildPaletteOrder: 9030
+		Prerequisites: weap, dome, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: gap
+	-MapEditorData:
+AGUN.Normal:
+	Inherits: AGUN
+	Buildable:
+		BuildPaletteOrder: 9031
+		Prerequisites: weap, dome, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: agun
+	-MapEditorData:
+SAM.Normal:
+	Inherits: SAM
+	Buildable:
+		BuildPaletteOrder: 9032
+		Prerequisites: weap, dome, ~structures.soviet, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: sam
+	-MapEditorData:
+
+# Infantry
+
+E9.Normal:
+	Inherits: E9
+	Buildable:
+		BuildPaletteOrder: 9027
+		Prerequisites: fix, mslo, ~infantry.france, ~techlevel.high, ~infantry.ai
+	RenderSprites:
+		Image: e9
+	-MapEditorData:
+E10.Normal:
+	Inherits: E10
+	Buildable:
+		BuildPaletteOrder: 9028
+		Prerequisites: fix, mslo, ~infantry.germany, ~techlevel.high, ~infantry.ai
+	RenderSprites:
+		Image: e10
+	-MapEditorData:
+SNIPER.Normal:
+	Inherits: SNIPER
+	Buildable:
+		BuildPaletteOrder: 9029
+		Prerequisites: fix, mslo, ~infantry.england, ~techlevel.high, ~infantry.ai
+	RenderSprites:
+		Image: sniper
+	-MapEditorData:
+
+# Vehicles
+
+HARV.Normal:
+	Inherits: HARV
+	Buildable:
+		BuildPaletteOrder: 9045
+		Prerequisites: proc.normal, ~techlevel.infonly, ~vehicles.ai
+	Harvester:
+		SearchFromOrderRadius: 30
+	RenderSprites:
+		Image: harv
+	-MapEditorData:
+
 # Aircraft | +25% Cost/Production boost on top of bot specific Cost/Production modifier
 
 HELI.Normal:

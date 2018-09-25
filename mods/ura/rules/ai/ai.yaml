@@ -5,7 +5,7 @@ Player:
 	# All bots are granted +25% Aircraft Cost/Production boost on top of their specific modifier.
 	# related files: ai-easy.yaml, ai-normal.yaml, ai-hard.yaml, ai-brutal.yaml, ai-naval-hard.yaml
 
-	# Easy AI | Turtle Mode | -20% Cost/Production penalty
+	# Easy AI | Vanilla Mode | -20% Cost/Production penalty
 
 	HackyAI@EasyAI:
 		Name: Easy AI
@@ -13,7 +13,7 @@ Player:
 
 		SquadSize: 30
 		SquadSizeRandomBonus: 40
-		MinimumExcessPower: 90
+		MinimumExcessPower: 80
 		MaximumExcessPower: 180
 		ExcessPowerIncrement: 50
 		ExcessPowerIncreaseThreshold: 4
@@ -40,69 +40,72 @@ Player:
 			ExcludeFromSquads: harv.easy,mcv.easy
 		BuildingFractions:
 			proc.easy: 30%
+			kenn.easy: 0.5%
 			tent.easy: 10%
 			barr.easy: 10%
-			kenn.easy: 0.5%
-			weap.easy: 10%
-			hpad.easy: 2%
-			afld.easy: 2%
-			afld.ukraine.easy: 2%
+			weap.easy: 5%
+			fix.easy: 0.1%
+			dome.easy: 7%
+			hpad.easy: 5%
+			afld.easy: 5%
+			afld.ukraine.easy: 5%
+			atek.easy: 1%
+			stek.easy: 1%
 			pbox.easy: 10%
 			hbox.easy: 10%
 			gun.easy: 10%
 			ftur.easy: 20%
 			tsla.easy: 10%
 			gap.easy: 7%
-			fix.easy: 0.1%
-			dome.easy: 10%
 			agun.easy: 7%
 			sam.easy: 7%
-			atek.easy: 1%
-			stek.easy: 1%
 			mslo.easy: 1%
 		BuildingLimits:
 			proc.easy: 4
-			barr.easy: 3
-			tent.easy: 3
 			kenn.easy: 1
-			dome.easy: 1
+			tent.easy: 2
+			barr.easy: 2
 			weap.easy: 1
+			fix.easy: 1
+			dome.easy: 1
 			hpad.easy: 2
 			afld.easy: 2
 			afld.ukraine.easy: 2
 			atek.easy: 1
 			stek.easy: 1
-			fix.easy: 1
 		UnitsToBuild:
+			dog.easy: 15%
 			e1.easy: 65%
 			e2.easy: 15%
 			e3.easy: 30%
 			e4.easy: 25%
-			# e9.easy: 15%
-			# e10.easy: 15%
-			# sniper.easy: 15%
-			dog.easy: 15%
+			e9.easy: 15%
+			e10.easy: 15%
+			sniper.easy: 15%
 			shok.easy: 30%
 			harv.easy: 15%
-			apc.easy: 20%
 			jeep.easy: 20%
-			arty.easy: 15%
-			v2rl.easy: 30%
 			ftrk.easy: 30%
+			apc.easy: 20%
 			1tnk.easy: 30%
 			2tnk.easy: 50%
 			2tnk.ger.easy: 50%
 			3tnk.easy: 50%
 			4tnk.easy: 25%
 			4tnk.kv-8.easy: 25%
-			ttnk.easy: 25%
+			arty.easy: 15%
+			v2rl.easy: 30%
 			stnk.easy: 5%
-			heli.easy: 25%
+			ttnk.easy: 25%
 			hind.easy: 25%
-			mig.easy: 25%
+			heli.easy: 25%
 			yak.easy: 25%
+			mig.easy: 25%
 		UnitLimits:
 			dog.easy: 4
+			e9.easy: 5
+			e10.easy: 5
+			sniper.easy: 2
 			harv.easy: 8
 			jeep.easy: 3
 			ftrk.easy: 4
@@ -181,7 +184,7 @@ Player:
 
 		SquadSize: 30
 		SquadSizeRandomBonus: 40
-		MinimumExcessPower: 90
+		MinimumExcessPower: 80
 		MaximumExcessPower: 180
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
@@ -211,72 +214,73 @@ Player:
 			ExcludeFromSquads: harv
 		BuildingFractions:
 			proc: 30%
+			kenn: 0.5%
 			tent: 10%
 			barr: 10%
-			kenn: 0.5%
-			dome: 3%
-			weap: 10%
-			hpad: 4%
-			afld: 4%
-			afld.ukraine: 4%
+			weap: 5%
+			dome: 7%
+			fix: 1%
+			hpad: 5%
+			afld: 5%
+			afld.ukraine: 5%
+			atek: 1%
+			stek: 1%
 			pbox: 5%
 			hbox: 5%
 			gun: 5%
 			ftur: 10%
 			tsla: 5%
-			gap: 3%
-			fix: 1%
-			agun: 3%
-			sam: 1%
-			atek: 1%
-			stek: 1%
+			gap.normal: 3%
+			agun.normal: 3%
+			sam.normal: 1%
 			mslo: 1%
 		BuildingLimits:
 			proc: 4
-			barr: 2
+			kenn: 1
 			tent: 2
-			dome: 1
+			barr: 2
+			fix: 1
 			weap: 1
+			dome: 1
+			atek: 1
+			stek: 1
 			hpad: 2
 			afld: 2
 			afld.ukraine: 2
-			atek: 1
-			stek: 1
-			fix: 1
 		UnitsToBuild:
+			dog: 15%
 			e1: 65%
 			e2: 15%
 			e3: 30%
 			e4: 25%
-			# e9: 15%
-			# e10: 15%
-			# sniper: 15%
-			dog: 15%
+			e9.normal: 15%
+			e10.normal: 15%
+			sniper.normal: 15%
 			shok: 30%
 			harv: 15%
-			apc: 20%
 			jeep: 20%
-			arty: 15%
-			v2rl: 30%
 			ftrk: 30%
+			apc: 20%
 			1tnk: 30%
 			2tnk: 50%
 			2tnk.ger: 50%
 			3tnk: 50%
 			4tnk: 25%
 			4tnk.kv-8: 25%
-			ttnk: 25%
+			arty: 15%
+			v2rl: 30%
 			stnk: 5%
-			heli.normal: 25%
+			ttnk: 25%
 			hind.normal: 25%
-			mig.normal: 25%
+			heli.normal: 25%
 			yak.normal: 25%
+			mig.normal: 25%
 		UnitLimits:
 			dog: 4
-			# e9: 5
-			# e10: 5
-			# sniper: 2
-			harv: 8
+			e9.normal: 5
+			e10.normal: 5
+			sniper.normal: 2
+			harv.normal: 8
 			jeep: 3
 			ftrk: 4
 			apc: 5
@@ -352,9 +356,9 @@ Player:
 		Name: Hard AI
 		Type: hard
 
-		SquadSize: 20
+		SquadSize: 15
 		SquadSizeRandomBonus: 40
-		MinimumExcessPower: 90
+		MinimumExcessPower: 80
 		MaximumExcessPower: 180
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
@@ -392,25 +396,25 @@ Player:
 			proc.hard.extra: 7%
 			proc.hard.extra2: 7%
 			kenn.hard: 0.5%
-			barr.hard: 20%
-			barr.hard.extra: 10%
 			tent.hard: 20%
 			tent.hard.extra: 10%
+			barr.hard: 20%
+			barr.hard.extra: 10%
 			weap.hard: 10%
 			weap.hard.extra: 7%
 			weap.hard.extra2: 7%
+			fix.hard: 1%
+			dome.hard: 5%
+			atek.hard: 1%
+			stek.hard: 1%
 			pbox.hard: 5%
 			hbox.hard: 5%
 			gun.hard: 5%
+			ftur.hard: 10%
 			tsla.hard: 5%
 			gap.hard: 3%
-			ftur.hard: 10%
 			agun.hard: 3%
 			sam.hard: 3%
-			atek.hard: 1%
-			stek.hard: 1%
-			fix.hard: 1%
-			dome.hard: 5%
 			hpad.hard: 4%
 			afld.hard: 4%
 			afld.ukraine.hard: 4%
@@ -419,22 +423,23 @@ Player:
 			proc.hard: 3
 			proc.hard.extra: 1
 			proc.hard.extra2: 2
-			barr.hard: 2
-			barr.hard.extra: 2
+			kenn.hard: 1
 			tent.hard: 2
 			tent.hard.extra: 2
-			kenn.hard: 1
-			dome.hard: 1
+			barr.hard: 2
+			barr.hard.extra: 2
 			weap.hard: 1
 			weap.hard.extra: 1
 			weap.hard.extra2: 1
+			fix.hard: 1
+			dome.hard: 1
 			atek.hard: 1
 			stek.hard: 1
-			fix.hard: 1
 			hpad.hard: 2
 			afld.hard: 2
 			afld.ukraine.hard: 2
 		UnitsToBuild:
+			dog.hard: 15%
 			e1.hard: 65%
 			e2.hard: 15%
 			e3.hard: 30%
@@ -442,34 +447,33 @@ Player:
 			e9.hard: 15%
 			e10.hard: 15%
 			sniper.hard: 15%
-			dog.hard: 15%
 			shok.hard: 30%
 			mcv.hard: 0.1%
 			harv.hard: 15%
-			apc.hard: 20%
 			jeep.hard: 20%
-			arty.hard: 15%
-			v2rl.hard: 30%
 			ftrk.hard: 30%
+			apc.hard: 20%
 			1tnk.hard: 30%
 			2tnk.hard: 50%
 			2tnk.ger.hard: 50%
 			3tnk.hard: 50%
 			4tnk.hard: 25%
 			4tnk.kv-8.hard: 25%
-			ttnk.hard: 25%
+			arty.hard: 15%
+			v2rl.hard: 30%
 			stnk.hard: 5%
-			heli.hard: 25%
+			ttnk.hard: 25%
 			hind.hard: 25%
-			mig.hard: 25%
+			heli.hard: 25%
 			yak.hard: 25%
+			mig.hard: 25%
 		UnitLimits:
 			dog.hard: 6
 			e9.hard: 5
 			e10.hard: 5
 			sniper.hard: 2
-			harv.hard: 8
 			mcv.hard: 1
+			harv.hard: 8
 			jeep.hard: 3
 			ftrk.hard: 4
 			apc.hard: 5
@@ -545,9 +549,9 @@ Player:
 		Name: Brutal AI
 		Type: brutal
 
-		SquadSize: 20
-		SquadSizeRandomBonus: 30
-		MinimumExcessPower: 90
+		SquadSize: 15
+		SquadSizeRandomBonus: 40
+		MinimumExcessPower: 80
 		MaximumExcessPower: 180
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
@@ -585,25 +589,25 @@ Player:
 			proc.brutal.extra: 7%
 			proc.brutal.extra2: 7%
 			kenn.brutal: 0.5%
-			barr.brutal: 20%
-			barr.brutal.extra: 10%
 			tent.brutal: 20%
 			tent.brutal.extra: 10%
+			barr.brutal: 20%
+			barr.brutal.extra: 10%
 			weap.brutal: 5%
 			weap.brutal.extra: 7%
 			weap.brutal.extra2: 7%
+			fix.brutal: 1%
+			dome.brutal: 5%
+			atek.brutal: 1%
+			stek.brutal: 1%
 			pbox.brutal: 5%
 			hbox.brutal: 5%
 			gun.brutal: 5%
+			ftur.brutal: 10%
 			tsla.brutal: 5%
 			gap.brutal: 3%
-			ftur.brutal: 10%
 			agun.brutal: 3%
 			sam.brutal: 3%
-			atek.brutal: 1%
-			stek.brutal: 1%
-			fix.brutal: 1%
-			dome.brutal: 5%
 			hpad.brutal: 4%
 			afld.brutal: 4%
 			afld.ukraine.brutal: 4%
@@ -612,22 +616,23 @@ Player:
 			proc.brutal: 3
 			proc.brutal.extra: 1
 			proc.brutal.extra2: 2
-			barr.brutal: 3
-			barr.brutal.extra: 2
+			kenn.brutal: 1
 			tent.brutal: 3
 			tent.brutal.extra: 2
-			kenn.brutal: 1
-			dome.brutal: 1
+			barr.brutal: 3
+			barr.brutal.extra: 2
 			weap.brutal: 1
 			weap.brutal.extra: 1
 			weap.brutal.extra2: 1
+			fix.brutal: 1
+			dome.brutal: 1
 			atek.brutal: 1
 			stek.brutal: 1
-			fix.brutal: 1
 			hpad.brutal: 2
 			afld.brutal: 2
 			afld.ukraine.brutal: 2
 		UnitsToBuild:
+			dog.brutal: 15%
 			e1.brutal: 65%
 			e2.brutal: 15%
 			e3.brutal: 30%
@@ -635,27 +640,26 @@ Player:
 			e9.brutal: 15%
 			e10.brutal: 15%
 			sniper.brutal: 15%
-			dog.brutal: 15%
 			shok.brutal: 30%
 			mcv.brutal: 0.1%
 			harv.brutal: 15%
-			apc.brutal: 20%
 			jeep.brutal: 20%
-			arty.brutal: 15%
-			v2rl.brutal: 30%
 			ftrk.brutal: 30%
+			apc.brutal: 20%
 			1tnk.brutal: 30%
 			2tnk.brutal: 50%
 			2tnk.ger.brutal: 50%
 			3tnk.brutal: 50%
 			4tnk.brutal: 25%
 			4tnk.kv-8.brutal: 25%
-			ttnk.brutal: 25%
+			arty.brutal: 15%
+			v2rl.brutal: 30%
 			stnk.brutal: 5%
-			heli.brutal: 25%
+			ttnk.brutal: 25%
 			hind.brutal: 25%
-			mig.brutal: 25%
+			heli.brutal: 25%
 			yak.brutal: 25%
+			mig.brutal: 25%
 		UnitLimits:
 			dog.brutal: 6
 			e9.brutal: 5
@@ -773,49 +777,51 @@ Player:
 			NavalUnits: ss,msub,dd,ca,lst,pt
 		BuildingFractions:
 			proc: 30%
-			dome: 1%
+			tent: 1%
+			barr: 1%
 			weap: 1%
+			fix: 0.1%
+			dome: 1%
 			hpad: 20%
 			afld: 20%
 			afld.ukraine: 20%
+			syrd: 20%
+			spen: 20%
 			atek: 1%
 			stek: 1%
-			spen: 20%
-			syrd: 20%
-			fix: 0.1%
 			hbox: 10%
 			gun: 10%
-			gap: 3%
 			ftur: 10%
 			tsla: 10%
+			gap: 3%
 			agun: 5%
 			sam: 5%
 			mslo: 1%
 		BuildingLimits:
 			proc: 4
-			dome: 1
-			barr: 1
 			tent: 1
-			spen: 3
-			syrd: 3
+			barr: 1
+			weap: 1
+			fix: 1
+			dome: 1
 			hpad: 4
 			afld: 4
 			afld.ukraine: 4
-			weap: 1
+			spen: 3
+			syrd: 3
 			atek: 1
 			stek: 1
-			fix: 1
 		UnitsToBuild:
 			harv: 1%
-			heli.normal: 20%
 			hind.normal: 20%
-			mig.normal: 20%
+			heli.normal: 20%
 			yak.normal: 20%
-			ss: 15%
-			msub: 30%
+			mig.normal: 20%
+			pt: 10%
 			dd: 30%
 			ca: 20%
-			pt: 10%
+			ss: 15%
+			msub: 30%
 		UnitLimits:
 			harv: 6
 
@@ -925,49 +931,51 @@ Player:
 			NavalUnits: ss.hard,msub.hard,dd.hard,ca.hard,lst.hard,pt.hard
 		BuildingFractions:
 			proc.hard: 30%
-			dome.hard: 1%
+			tent.hard: 1%
+			barr.hard: 1%
 			weap.hard: 1%
+			fix.hard: 0.1%
+			dome.hard: 1%
 			hpad.hard: 20%
 			afld.hard: 20%
 			afld.ukraine.hard: 20%
+			syrd.hard: 20%
+			spen.hard: 20%
 			atek.hard: 1%
 			stek.hard: 1%
-			spen.hard: 20%
-			syrd.hard: 20%
-			fix.hard: 0.1%
 			hbox.hard: 10%
 			gun.hard: 10%
-			gap.hard: 3%
 			ftur.hard: 10%
 			tsla.hard: 10%
+			gap.hard: 3%
 			agun.hard: 5%
 			sam.hard: 5%
 			mslo.hard: 1%
 		BuildingLimits:
 			proc.hard: 4
-			dome.hard: 1
-			barr.hard: 1
 			tent.hard: 1
-			spen.hard: 3
-			syrd.hard: 3
+			barr.hard: 1
+			weap.hard: 1
+			fix.hard: 1
+			dome.hard: 1
 			hpad.hard: 4
 			afld.hard: 4
 			afld.ukraine.hard: 4
-			weap.hard: 1
+			syrd.hard: 3
+			spen.hard: 3
 			atek.hard: 1
 			stek.hard: 1
-			fix.hard: 1
 		UnitsToBuild:
 			harv.hard: 1%
-			heli.hard: 20%
 			hind.hard: 20%
-			mig.hard: 20%
+			heli.hard: 20%
 			yak.hard: 20%
-			ss.hard: 15%
-			msub.hard: 30%
+			mig.hard: 20%
+			pt.hard: 10%
 			dd.hard: 30%
 			ca.hard: 20%
-			pt.hard: 10%
+			ss.hard: 15%
+			msub.hard: 30%
 		UnitLimits:
 			harv.hard: 6
 
