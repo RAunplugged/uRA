@@ -18,7 +18,7 @@ E2.Brutal.Player:
 	Valued:
 		Cost: 300
 	Health:
-		HP: 100
+		HP: 60
 	Mobile:
 		Speed: 71
 	Buildable:

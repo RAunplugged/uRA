@@ -26,7 +26,7 @@
 Explosion.Kamikaze:
 	Inherits: ^Explosion
 	Warhead@1Dam: SpreadDamage
-		Damage: 200
+		Damage: 150
 		Spread: 426
 		Falloff: 1000, 368, 135, 50, 18, 7, 0
 
