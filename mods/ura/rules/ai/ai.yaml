@@ -56,9 +56,9 @@ Player:
 			gun.easy: 10%
 			ftur.easy: 20%
 			tsla.easy: 10%
-			gap.easy: 7%
 			agun.easy: 7%
 			sam.easy: 7%
+			gap.easy: 7%
 			mslo.easy: 1%
 		BuildingLimits:
 			proc.easy: 4
@@ -79,6 +79,7 @@ Player:
 			e2.easy: 15%
 			e3.easy: 30%
 			e4.easy: 25%
+			# e7.easy: 0.1%
 			e9.easy: 15%
 			e10.easy: 15%
 			sniper.easy: 15%
@@ -218,8 +219,8 @@ Player:
 			tent: 10%
 			barr: 10%
 			weap: 5%
-			dome: 7%
 			fix: 1%
+			dome: 7%
 			hpad: 10%
 			afld: 10%
 			afld.ukraine: 10%
@@ -230,29 +231,30 @@ Player:
 			gun: 5%
 			ftur: 10%
 			tsla: 5%
-			gap.normal: 3%
 			agun.normal: 3%
 			sam.normal: 1%
+			gap.normal: 3%
 			mslo: 1%
 		BuildingLimits:
 			proc: 4
 			kenn: 1
 			tent: 2
 			barr: 2
-			fix: 1
 			weap: 1
+			fix: 1
 			dome: 1
-			atek: 1
-			stek: 1
 			hpad: 2
 			afld: 2
 			afld.ukraine: 2
+			atek: 1
+			stek: 1
 		UnitsToBuild:
 			dog: 15%
 			e1: 65%
 			e2: 15%
 			e3: 30%
 			e4: 25%
+			# e7.normal: 0.1%
 			e9.normal: 15%
 			e10.normal: 15%
 			sniper.normal: 15%
@@ -405,6 +407,9 @@ Player:
 			weap.hard.extra2: 7%
 			fix.hard: 1%
 			dome.hard: 5%
+			hpad.hard: 4%
+			afld.hard: 4%
+			afld.ukraine.hard: 4%
 			atek.hard: 1%
 			stek.hard: 1%
 			pbox.hard: 5%
@@ -412,12 +417,9 @@ Player:
 			gun.hard: 5%
 			ftur.hard: 10%
 			tsla.hard: 5%
-			gap.hard: 3%
 			agun.hard: 3%
 			sam.hard: 3%
-			hpad.hard: 4%
-			afld.hard: 4%
-			afld.ukraine.hard: 4%
+			gap.hard: 3%
 			mslo.hard: 1%
 		BuildingLimits:
 			proc.hard: 3
@@ -433,17 +435,18 @@ Player:
 			weap.hard.extra2: 1
 			fix.hard: 1
 			dome.hard: 1
-			atek.hard: 1
-			stek.hard: 1
 			hpad.hard: 2
 			afld.hard: 2
 			afld.ukraine.hard: 2
+			atek.hard: 1
+			stek.hard: 1
 		UnitsToBuild:
 			dog.hard: 15%
 			e1.hard: 65%
 			e2.hard: 15%
 			e3.hard: 30%
 			e4.hard: 20%
+			e7.hard: 0.1%
 			e9.hard: 15%
 			e10.hard: 15%
 			sniper.hard: 15%
@@ -598,6 +601,9 @@ Player:
 			weap.brutal.extra2: 7%
 			fix.brutal: 1%
 			dome.brutal: 5%
+			hpad.brutal: 4%
+			afld.brutal: 4%
+			afld.ukraine.brutal: 4%
 			atek.brutal: 1%
 			stek.brutal: 1%
 			pbox.brutal: 5%
@@ -605,12 +611,9 @@ Player:
 			gun.brutal: 5%
 			ftur.brutal: 10%
 			tsla.brutal: 5%
-			gap.brutal: 3%
 			agun.brutal: 3%
 			sam.brutal: 3%
-			hpad.brutal: 4%
-			afld.brutal: 4%
-			afld.ukraine.brutal: 4%
+			gap.brutal: 3%
 			mslo.brutal: 1%
 		BuildingLimits:
 			proc.brutal: 3
@@ -626,17 +629,18 @@ Player:
 			weap.brutal.extra2: 1
 			fix.brutal: 1
 			dome.brutal: 1
-			atek.brutal: 1
-			stek.brutal: 1
 			hpad.brutal: 2
 			afld.brutal: 2
 			afld.ukraine.brutal: 2
+			atek.brutal: 1
+			stek.brutal: 1
 		UnitsToBuild:
 			dog.brutal: 15%
 			e1.brutal: 65%
 			e2.brutal: 15%
 			e3.brutal: 30%
 			e4.brutal: 20%
+			e7.brutal: 0.1%
 			e9.brutal: 15%
 			e10.brutal: 15%
 			sniper.brutal: 15%
@@ -781,21 +785,21 @@ Player:
 			barr: 1%
 			weap: 1%
 			fix: 0.1%
+			syrd: 20%
+			spen: 20%
 			dome: 1%
 			hpad: 20%
 			afld: 20%
 			afld.ukraine: 20%
-			syrd: 20%
-			spen: 20%
 			atek: 1%
 			stek: 1%
 			hbox: 10%
 			gun: 10%
 			ftur: 10%
 			tsla: 10%
-			gap: 3%
 			agun: 5%
 			sam: 5%
+			gap: 3%
 			mslo: 1%
 		BuildingLimits:
 			proc: 4
@@ -803,12 +807,12 @@ Player:
 			barr: 1
 			weap: 1
 			fix: 1
+			spen: 3
+			syrd: 3
 			dome: 1
 			hpad: 4
 			afld: 4
 			afld.ukraine: 4
-			spen: 3
-			syrd: 3
 			atek: 1
 			stek: 1
 		UnitsToBuild:
@@ -935,21 +939,21 @@ Player:
 			barr.hard: 1%
 			weap.hard: 1%
 			fix.hard: 0.1%
+			syrd.hard: 20%
+			spen.hard: 20%
 			dome.hard: 1%
 			hpad.hard: 20%
 			afld.hard: 20%
 			afld.ukraine.hard: 20%
-			syrd.hard: 20%
-			spen.hard: 20%
 			atek.hard: 1%
 			stek.hard: 1%
 			hbox.hard: 10%
 			gun.hard: 10%
 			ftur.hard: 10%
 			tsla.hard: 10%
-			gap.hard: 3%
 			agun.hard: 5%
 			sam.hard: 5%
+			gap.hard: 3%
 			mslo.hard: 1%
 		BuildingLimits:
 			proc.hard: 4
@@ -957,12 +961,12 @@ Player:
 			barr.hard: 1
 			weap.hard: 1
 			fix.hard: 1
+			syrd.hard: 3
+			spen.hard: 3
 			dome.hard: 1
 			hpad.hard: 4
 			afld.hard: 4
 			afld.ukraine.hard: 4
-			syrd.hard: 3
-			spen.hard: 3
 			atek.hard: 1
 			stek.hard: 1
 		UnitsToBuild:

@@ -2,14 +2,6 @@
 
 # Defensive Structures
 
-GAP.Normal:
-	Inherits: GAP
-	Buildable:
-		BuildPaletteOrder: 9030
-		Prerequisites: weap, dome, ~structures.allies, ~techlevel.medium, ~structures.ai
-	RenderSprites:
-		Image: gap
-	-MapEditorData:
 AGUN.Normal:
 	Inherits: AGUN
 	Buildable:
@@ -26,13 +18,32 @@ SAM.Normal:
 	RenderSprites:
 		Image: sam
 	-MapEditorData:
+GAP.Normal:
+	Inherits: GAP
+	Buildable:
+		BuildPaletteOrder: 9030
+		Prerequisites: weap, dome, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: gap
+	-MapEditorData:
 
 # Infantry
 
+E7.Normal:
+	Inherits: E7
+	Buildable:
+		BuildPaletteOrder: 9033
+		Prerequisites: fix, atek, mslo, ~infantry.allies, ~techlevel.high, ~infantry.ai
+	Wanders:
+		MinMoveDelay: 25
+		MaxMoveDelay: 150
+	RenderSprites:
+		Image: e7
+	-MapEditorData:
 E9.Normal:
 	Inherits: E9
 	Buildable:
-		BuildPaletteOrder: 9027
+		BuildPaletteOrder: 9030
 		Prerequisites: fix, mslo, ~infantry.france, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: e9
@@ -40,7 +51,7 @@ E9.Normal:
 E10.Normal:
 	Inherits: E10
 	Buildable:
-		BuildPaletteOrder: 9028
+		BuildPaletteOrder: 9031
 		Prerequisites: fix, mslo, ~infantry.germany, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: e10
@@ -48,7 +59,7 @@ E10.Normal:
 SNIPER.Normal:
 	Inherits: SNIPER
 	Buildable:
-		BuildPaletteOrder: 9029
+		BuildPaletteOrder: 9032
 		Prerequisites: fix, mslo, ~infantry.england, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: sniper
@@ -69,16 +80,6 @@ HARV.Normal:
 
 # Aircraft | +25% Cost/Production boost on top of bot specific Cost/Production modifier
 
-HELI.Normal:
-	Inherits: HELI
-	Valued:
-		Cost: 1500
-	Buildable:
-		BuildPaletteOrder: 9100
-		Prerequisites: hpad, atek, ~techlevel.high, ~aircraft.ai
-	RenderSprites:
-		Image: heli
-	-MapEditorData:
 HIND.Normal:
 	Inherits: HIND
 	Valued:
@@ -89,23 +90,33 @@ HIND.Normal:
 	RenderSprites:
 		Image: hind
 	-MapEditorData:
-MIG.Normal:
-	Inherits: MIG
+HELI.Normal:
+	Inherits: HELI
 	Valued:
 		Cost: 1500
 	Buildable:
-		BuildPaletteOrder: 9100
-		Prerequisites: afld, stek, ~techlevel.high, ~aircraft.ai
+		BuildPaletteOrder: 9101
+		Prerequisites: hpad, atek, ~techlevel.high, ~aircraft.ai
 	RenderSprites:
-		Image: mig
+		Image: heli
 	-MapEditorData:
 YAK.Normal:
 	Inherits: YAK
 	Valued:
 		Cost: 1010
 	Buildable:
-		BuildPaletteOrder: 9100
+		BuildPaletteOrder: 9102
 		Prerequisites: afld, ~techlevel.medium, ~aircraft.ai
 	RenderSprites:
 		Image: yak
+	-MapEditorData:
+MIG.Normal:
+	Inherits: MIG
+	Valued:
+		Cost: 1500
+	Buildable:
+		BuildPaletteOrder: 9103
+		Prerequisites: afld, stek, ~techlevel.high, ~aircraft.ai
+	RenderSprites:
+		Image: mig
 	-MapEditorData:

@@ -12,27 +12,27 @@ POWR.Brutal:
 	RenderSprites:
 		Image: powr
 	-MapEditorData:
-APWR.Brutal:
-	Inherits: APWR
-	Valued:
-		Cost: 300
-	Buildable:
-		BuildPaletteOrder: 9005
-		Prerequisites: dome.brutal, ~techlevel.medium, ~structures.ai
-	RenderSprites:
-		Image: apwr
-	-MapEditorData:
 PROC.Brutal:
 	Inherits: PROC
 	Valued:
 		Cost: 840
 	Buildable:
-		BuildPaletteOrder: 9008
+		BuildPaletteOrder: 9005
 		Prerequisites: anypower, ~techlevel.infonly, ~structures.ai
 	FreeActor:
 		Actor: HARV.Brutal
 	RenderSprites:
 		Image: proc
+	-MapEditorData:
+KENN.Brutal:
+	Inherits: KENN
+	Valued:
+		Cost: 60
+	Buildable:
+		BuildPaletteOrder: 9008
+		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: kenn
 	-MapEditorData:
 TENT.Brutal:
 	Inherits: TENT
@@ -58,22 +58,12 @@ BARR.Brutal:
 	RenderSprites:
 		Image: barr
 	-MapEditorData:
-KENN.Brutal:
-	Inherits: KENN
-	Valued:
-		Cost: 60
-	Buildable:
-		BuildPaletteOrder: 9017
-		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
-	RenderSprites:
-		Image: kenn
-	-MapEditorData:
 WEAP.Brutal:
 	Inherits: WEAP
 	Valued:
 		Cost: 1200
 	Buildable:
-		BuildPaletteOrder: 9020
+		BuildPaletteOrder: 9017
 		Prerequisites: proc.brutal, barracks.brutal, !weap.brutal.extra, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
@@ -83,7 +73,7 @@ FIX.Brutal:
 	Valued:
 		Cost: 720
 	Buildable:
-		BuildPaletteOrder: 9023
+		BuildPaletteOrder: 9020
 		Prerequisites: weap.brutal, barracks.brutal, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
@@ -93,12 +83,22 @@ DOME.Brutal:
 	Valued:
 		Cost: 960
 	Buildable:
-		BuildPaletteOrder: 9026
+		BuildPaletteOrder: 9023
 		Prerequisites: proc.brutal, barracks.brutal, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.brutal, ~structures.england
 	RenderSprites:
 		Image: dome
+	-MapEditorData:
+APWR.Brutal:
+	Inherits: APWR
+	Valued:
+		Cost: 300
+	Buildable:
+		BuildPaletteOrder: 9026
+		Prerequisites: dome.brutal, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: apwr
 	-MapEditorData:
 HPAD.Brutal:
 	Inherits: HPAD
@@ -159,22 +159,12 @@ STEK.Brutal:
 
 # Defensive structures
 
-SILO.Brutal:
-	Inherits: SILO
-	Valued:
-		Cost: 90
-	Buildable:
-		BuildPaletteOrder: 9002
-		Prerequisites: proc.brutal, ~techlevel.infonly, ~structures.ai
-	RenderSprites:
-		Image: silo
-	-MapEditorData:
 PBOX.Brutal:
 	Inherits: PBOX
 	Valued:
 		Cost: 360
 	Buildable:
-		BuildPaletteOrder: 9005
+		BuildPaletteOrder: 9002
 		Prerequisites: tent.brutal, ~structures.allies, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: pbox
@@ -184,7 +174,7 @@ HBOX.Brutal:
 	Valued:
 		Cost: 480
 	Buildable:
-		BuildPaletteOrder: 9008
+		BuildPaletteOrder: 9005
 		Prerequisites: tent.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: hbox
@@ -194,10 +184,20 @@ GUN.Brutal:
 	Valued:
 		Cost: 480
 	Buildable:
-		BuildPaletteOrder: 9011
+		BuildPaletteOrder: 9008
 		Prerequisites: tent.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gun
+	-MapEditorData:
+FTUR.Brutal:
+	Inherits: FTUR
+	Valued:
+		Cost: 360
+	Buildable:
+		BuildPaletteOrder: 9011
+		Prerequisites: barr.brutal, ~structures.soviet, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: ftur
 	-MapEditorData:
 TSLA.Brutal:
 	Inherits: TSLA
@@ -209,32 +209,12 @@ TSLA.Brutal:
 	RenderSprites:
 		Image: tsla
 	-MapEditorData:
-GAP.Brutal:
-	Inherits: GAP
-	Valued:
-		Cost: 540
-	Buildable:
-		BuildPaletteOrder: 9017
-		Prerequisites: weap.brutal, dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
-	RenderSprites:
-		Image: gap
-	-MapEditorData:
-FTUR.Brutal:
-	Inherits: FTUR
-	Valued:
-		Cost: 360
-	Buildable:
-		BuildPaletteOrder: 9020
-		Prerequisites: barr.brutal, ~structures.soviet, ~techlevel.low, ~structures.ai
-	RenderSprites:
-		Image: ftur
-	-MapEditorData:
 AGUN.Brutal:
 	Inherits: AGUN
 	Valued:
 		Cost: 480
 	Buildable:
-		BuildPaletteOrder: 9023
+		BuildPaletteOrder: 9017
 		Prerequisites: weap.brutal, dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: agun
@@ -244,30 +224,60 @@ SAM.Brutal:
 	Valued:
 		Cost: 420
 	Buildable:
-		BuildPaletteOrder: 9026
+		BuildPaletteOrder: 9020
 		Prerequisites: weap.brutal, dome.brutal, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: sam
+	-MapEditorData:
+GAP.Brutal:
+	Inherits: GAP
+	Valued:
+		Cost: 540
+	Buildable:
+		BuildPaletteOrder: 9023
+		Prerequisites: weap.brutal, dome.brutal, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: gap
 	-MapEditorData:
 MSLO.Brutal:
 	Inherits: MSLO
 	Valued:
 		Cost: 1500
 	Buildable:
-		BuildPaletteOrder: 9029
+		BuildPaletteOrder: 9026
 		Prerequisites: techcenter, ~techlevel.unrestricted, ~structures.ai
 	RenderSprites:
 		Image: mslo
 	-MapEditorData:
+SILO.Brutal:
+	Inherits: SILO
+	Valued:
+		Cost: 90
+	Buildable:
+		BuildPaletteOrder: 9029
+		Prerequisites: proc.brutal, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: silo
+	-MapEditorData:
 
 # Infantry
 
+DOG.Brutal:
+	Inherits: DOG
+	Valued:
+		Cost: 120
+	Buildable:
+		BuildPaletteOrder: 9002
+		Prerequisites: ~kenn.brutal, ~techlevel.infonly, ~infantry.ai
+	RenderSprites:
+		Image: dog
+	-MapEditorData:
 E1.Brutal:
 	Inherits: E1
 	Valued:
 		Cost: 60
 	Buildable:
-		BuildPaletteOrder: 9002
+		BuildPaletteOrder: 9005
 		Prerequisites: barracks.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e1
@@ -277,7 +287,7 @@ E2.Brutal:
 	Valued:
 		Cost: 96
 	Buildable:
-		BuildPaletteOrder: 9005
+		BuildPaletteOrder: 9008
 		Prerequisites: barr.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e2
@@ -287,7 +297,7 @@ E3.Brutal:
 	Valued:
 		Cost: 180
 	Buildable:
-		BuildPaletteOrder: 9008
+		BuildPaletteOrder: 9011
 		Prerequisites: barracks.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e3
@@ -297,20 +307,10 @@ E4.Brutal:
 	Valued:
 		Cost: 180
 	Buildable:
-		BuildPaletteOrder: 9011
+		BuildPaletteOrder: 9014
 		Prerequisites: barr.brutal, ftur.brutal, ~techlevel.low, ~infantry.ai
 	RenderSprites:
 		Image: e4
-	-MapEditorData:
-DOG.Brutal:
-	Inherits: DOG
-	Valued:
-		Cost: 120
-	Buildable:
-		BuildPaletteOrder: 9014
-		Prerequisites: ~kenn.brutal, ~techlevel.infonly, ~infantry.ai
-	RenderSprites:
-		Image: dog
 	-MapEditorData:
 SHOK.Brutal:
 	Inherits: SHOK
@@ -322,35 +322,45 @@ SHOK.Brutal:
 	RenderSprites:
 		Image: shok
 	-MapEditorData:
-
+E7.Brutal:
+	Inherits: E7
+	Valued:
+		Cost: 720
+	Buildable:
+		BuildPaletteOrder: 9020
+		Prerequisites: barracks.brutal.extra, ~infantry.allies, ~techlevel.high, ~infantry.ai
+	Wanders:
+		MinMoveDelay: 25
+		MaxMoveDelay: 150
+	RenderSprites:
+		Image: e7
+	-MapEditorData:
 E9.Brutal:
 	Inherits: E9
 	Valued:
 		Cost: 180
 	Buildable:
-		BuildPaletteOrder: 9020
+		BuildPaletteOrder: 9023
 		Prerequisites: barracks.brutal.extra, ~infantry.france, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: e9
 	-MapEditorData:
-
 E10.Brutal:
 	Inherits: E10
 	Valued:
 		Cost: 240
 	Buildable:
-		BuildPaletteOrder: 9023
+		BuildPaletteOrder: 9026
 		Prerequisites: barracks.brutal.extra, ~infantry.germany, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: e10
 	-MapEditorData:
-
 SNIPER.Brutal:
 	Inherits: SNIPER
 	Valued:
 		Cost: 480
 	Buildable:
-		BuildPaletteOrder: 9026
+		BuildPaletteOrder: 9029
 		Prerequisites: barracks.brutal.extra, ~infantry.england, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: sniper
@@ -380,62 +390,12 @@ HARV.Brutal:
 	RenderSprites:
 		Image: harv
 	-MapEditorData:
-APC.Brutal:
-	Inherits: APC
-	Valued:
-		Cost: 510
-	Buildable:
-		BuildPaletteOrder: 9008
-		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
-	RenderSprites:
-		Image: apc
-	-MapEditorData:
-JEEP.Brutal:
-	Inherits: JEEP
-	Valued:
-		Cost: 240
-	Buildable:
-		BuildPaletteOrder: 9011
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
-	RenderSprites:
-		Image: jeep
-	-MapEditorData:
-ARTY.Brutal:
-	Inherits: ARTY
-	Valued:
-		Cost: 480
-	Buildable:
-		BuildPaletteOrder: 9014
-		Prerequisites: dome.brutal, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
-	RenderSprites:
-		Image: arty
-	-MapEditorData:
-V2RL.Brutal:
-	Inherits: V2RL
-	Valued:
-		Cost: 540
-	Buildable:
-		BuildPaletteOrder: 9017
-		Prerequisites: dome.brutal, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
-	RenderSprites:
-		Image: v2rl
-	-MapEditorData:
-FTRK.Brutal:
-	Inherits: FTRK
-	Valued:
-		Cost: 360
-	Buildable:
-		BuildPaletteOrder: 9020
-		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
-	RenderSprites:
-		Image: ftrk
-	-MapEditorData:
 1TNK.Brutal:
 	Inherits: 1TNK
 	Valued:
 		Cost: 420
 	Buildable:
-		BuildPaletteOrder: 9023
+		BuildPaletteOrder: 9008
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: 1tnk
@@ -445,7 +405,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 510
 	Buildable:
-		BuildPaletteOrder: 9026
+		BuildPaletteOrder: 9011
 		Prerequisites: fix.brutal, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk
@@ -455,7 +415,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 630
 	Buildable:
-		BuildPaletteOrder: 9029
+		BuildPaletteOrder: 9014
 		Prerequisites: fix.brutal, ~vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk.ger
@@ -465,7 +425,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 690
 	Buildable:
-		BuildPaletteOrder: 9032
+		BuildPaletteOrder: 9017
 		Prerequisites: fix.brutal, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 3tnk
@@ -475,7 +435,7 @@ FTRK.Brutal:
 	Valued:
 		Cost: 1200
 	Buildable:
-		BuildPaletteOrder: 9035
+		BuildPaletteOrder: 9020
 		Prerequisites: fix.brutal, stek.brutal, ~vehicles.soviet, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk
@@ -485,10 +445,60 @@ FTRK.Brutal:
 	Valued:
 		Cost: 1200
 	Buildable:
-		BuildPaletteOrder: 9038
+		BuildPaletteOrder: 9023
 		Prerequisites: fix.brutal, stek.brutal, ~vehicles.ukraine, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk.kv-8
+	-MapEditorData:
+JEEP.Brutal:
+	Inherits: JEEP
+	Valued:
+		Cost: 240
+	Buildable:
+		BuildPaletteOrder: 9026
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
+	RenderSprites:
+		Image: jeep
+	-MapEditorData:
+FTRK.Brutal:
+	Inherits: FTRK
+	Valued:
+		Cost: 360
+	Buildable:
+		BuildPaletteOrder: 9029
+		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
+	RenderSprites:
+		Image: ftrk
+	-MapEditorData:
+APC.Brutal:
+	Inherits: APC
+	Valued:
+		Cost: 510
+	Buildable:
+		BuildPaletteOrder: 9032
+		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
+	RenderSprites:
+		Image: apc
+	-MapEditorData:
+ARTY.Brutal:
+	Inherits: ARTY
+	Valued:
+		Cost: 480
+	Buildable:
+		BuildPaletteOrder: 9035
+		Prerequisites: dome.brutal, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: arty
+	-MapEditorData:
+V2RL.Brutal:
+	Inherits: V2RL
+	Valued:
+		Cost: 540
+	Buildable:
+		BuildPaletteOrder: 9038
+		Prerequisites: dome.brutal, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: v2rl
 	-MapEditorData:
 TTNK.Brutal:
 	Inherits: TTNK
@@ -513,12 +523,25 @@ STNK.Brutal:
 
 # Aircraft | +25% Cost/Production boost on top of bot specific Cost/Production modifier
 
+HIND.Brutal:
+	Inherits: HIND
+	Valued:
+		Cost: 610
+	Buildable:
+		BuildPaletteOrder: 9002
+		Prerequisites: hpad.brutal, ~techlevel.medium, ~aircraft.ai
+	Aircraft:
+		RearmBuildings: hpad.brutal
+		RepairBuildings: hpad.brutal
+	RenderSprites:
+		Image: hind
+	-MapEditorData:
 HELI.Brutal:
 	Inherits: HELI
 	Valued:
 		Cost: 900
 	Buildable:
-		BuildPaletteOrder: 9002
+		BuildPaletteOrder: 9005
 		Prerequisites: hpad.brutal, atek.brutal, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.brutal
@@ -528,25 +551,25 @@ HELI.Brutal:
 	RenderSprites:
 		Image: heli
 	-MapEditorData:
-HIND.Brutal:
-	Inherits: HIND
+YAK.Brutal:
+	Inherits: YAK
 	Valued:
 		Cost: 610
 	Buildable:
-		BuildPaletteOrder: 9005
-		Prerequisites: hpad.brutal, ~techlevel.medium, ~aircraft.ai
+		BuildPaletteOrder: 9008
+		Prerequisites: afld.brutal, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
-		RearmBuildings: hpad.brutal
-		RepairBuildings: hpad.brutal
+		RearmBuildings: afld.brutal, afld.ukraine.brutal
+		RepairBuildings: afld.brutal, afld.ukraine.brutal
 	RenderSprites:
-		Image: hind
+		Image: yak
 	-MapEditorData:
 MIG.Brutal:
 	Inherits: MIG
 	Valued:
 		Cost: 900
 	Buildable:
-		BuildPaletteOrder: 9008
+		BuildPaletteOrder: 9011
 		Prerequisites: afld.brutal, stek.brutal, ~techlevel.high, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.brutal, afld.ukraine.brutal
@@ -555,19 +578,6 @@ MIG.Brutal:
 		InvalidTargets: ^infantry
 	RenderSprites:
 		Image: mig
-	-MapEditorData:
-YAK.Brutal:
-	Inherits: YAK
-	Valued:
-		Cost: 610
-	Buildable:
-		BuildPaletteOrder: 9011
-		Prerequisites: afld.brutal, ~techlevel.medium, ~aircraft.ai
-	Aircraft:
-		RearmBuildings: afld.brutal, afld.ukraine.brutal
-		RepairBuildings: afld.brutal, afld.ukraine.brutal
-	RenderSprites:
-		Image: yak
 	-MapEditorData:
 
 # Aditional Brutal AI Structures unlocked at later tech.
@@ -597,27 +607,6 @@ PROC.Brutal.Extra2:
 	RenderSprites:
 		Image: proc
 	-MapEditorData:
-WEAP.Brutal.Extra:
-	Inherits: WEAP
-	Valued:
-		Cost: 1200
-	Buildable:
-		BuildPaletteOrder: 9200
-		Prerequisites: proc.brutal.extra, mslo.brutal, fix.brutal, !weap.brutal.extra2, ~techlevel.low, ~structures.ai
-	RenderSprites:
-		Image: weap
-	-MapEditorData:
-WEAP.Brutal.Extra2:
-	Inherits: WEAP
-	Valued:
-		Cost: 1200
-	Buildable:
-		BuildPaletteOrder: 9200
-		Prerequisites: proc.brutal.extra2, weap.brutal.extra, ~techlevel.low, ~structures.ai
-		BuildDurationModifier: 100
-	RenderSprites:
-		Image: weap
-	-MapEditorData:
 TENT.Brutal.Extra:
 	Inherits: TENT
 	Valued:
@@ -645,4 +634,25 @@ BARR.Brutal.Extra:
 		Prerequisites: anypower, proc.brutal.extra2, mslo.brutal, fix.brutal, ~structures.soviet, ~techlevel.infonly, ~structures.ai
 	RenderSprites:
 		Image: barr
+	-MapEditorData:
+WEAP.Brutal.Extra:
+	Inherits: WEAP
+	Valued:
+		Cost: 1200
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: proc.brutal.extra, mslo.brutal, fix.brutal, !weap.brutal.extra2, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: weap
+	-MapEditorData:
+WEAP.Brutal.Extra2:
+	Inherits: WEAP
+	Valued:
+		Cost: 1200
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: proc.brutal.extra2, weap.brutal.extra, ~techlevel.low, ~structures.ai
+		BuildDurationModifier: 100
+	RenderSprites:
+		Image: weap
 	-MapEditorData:

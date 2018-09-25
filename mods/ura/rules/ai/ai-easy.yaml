@@ -12,27 +12,27 @@ POWR.Easy:
 	RenderSprites:
 		Image: powr
 	-MapEditorData:
-APWR.Easy:
-	Inherits: APWR
-	Valued:
-		Cost: 600
-	Buildable:
-		BuildPaletteOrder: 9003
-		Prerequisites: dome.easy, ~techlevel.medium, ~structures.ai
-	RenderSprites:
-		Image: apwr
-	-MapEditorData:
 PROC.Easy:
 	Inherits: PROC
 	Valued:
 		Cost: 1680
 	Buildable:
-		BuildPaletteOrder: 9006
+		BuildPaletteOrder: 9003
 		Prerequisites: anypower, ~techlevel.infonly, ~structures.ai
 	FreeActor:
 		Actor: HARV.Easy
 	RenderSprites:
 		Image: proc
+	-MapEditorData:
+KENN.Easy:
+	Inherits: KENN
+	Valued:
+		Cost: 120
+	Buildable:
+		BuildPaletteOrder: 9006
+		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: kenn
 	-MapEditorData:
 TENT.Easy:
 	Inherits: TENT
@@ -58,22 +58,12 @@ BARR.Easy:
 	RenderSprites:
 		Image: barr
 	-MapEditorData:
-KENN.Easy:
-	Inherits: KENN
-	Valued:
-		Cost: 120
-	Buildable:
-		BuildPaletteOrder: 9015
-		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly, ~structures.ai
-	RenderSprites:
-		Image: kenn
-	-MapEditorData:
 WEAP.Easy:
 	Inherits: WEAP
 	Valued:
 		Cost: 2400
 	Buildable:
-		BuildPaletteOrder: 9018
+		BuildPaletteOrder: 9015
 		Prerequisites: proc.easy, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
@@ -83,7 +73,7 @@ FIX.Easy:
 	Valued:
 		Cost: 1440
 	Buildable:
-		BuildPaletteOrder: 9021
+		BuildPaletteOrder: 9018
 		Prerequisites: weap.easy, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
@@ -93,12 +83,22 @@ DOME.Easy:
 	Valued:
 		Cost: 1920
 	Buildable:
-		BuildPaletteOrder: 9024
+		BuildPaletteOrder: 9021
 		Prerequisites: proc.easy, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.easy, ~structures.england
 	RenderSprites:
 		Image: dome
+	-MapEditorData:
+APWR.Easy:
+	Inherits: APWR
+	Valued:
+		Cost: 600
+	Buildable:
+		BuildPaletteOrder: 9024
+		Prerequisites: dome.easy, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: apwr
 	-MapEditorData:
 HPAD.Easy:
 	Inherits: HPAD
@@ -159,22 +159,12 @@ STEK.Easy:
 
 # Defensive structures
 
-SILO.Easy:
-	Inherits: SILO
-	Valued:
-		Cost: 180
-	Buildable:
-		BuildPaletteOrder: 9000
-		Prerequisites: proc.easy, ~techlevel.infonly, ~structures.ai
-	RenderSprites:
-		Image: silo
-	-MapEditorData:
 PBOX.Easy:
 	Inherits: PBOX
 	Valued:
 		Cost: 720
 	Buildable:
-		BuildPaletteOrder: 9003
+		BuildPaletteOrder: 9000
 		Prerequisites: tent.easy, ~structures.allies, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: pbox
@@ -184,7 +174,7 @@ HBOX.Easy:
 	Valued:
 		Cost: 960
 	Buildable:
-		BuildPaletteOrder: 9006
+		BuildPaletteOrder: 9003
 		Prerequisites: tent.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: hbox
@@ -194,10 +184,20 @@ GUN.Easy:
 	Valued:
 		Cost: 960
 	Buildable:
-		BuildPaletteOrder: 9009
+		BuildPaletteOrder: 9006
 		Prerequisites: tent.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: gun
+	-MapEditorData:
+FTUR.Easy:
+	Inherits: FTUR
+	Valued:
+		Cost: 720
+	Buildable:
+		BuildPaletteOrder: 9009
+		Prerequisites: barr.easy, ~structures.soviet, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: ftur
 	-MapEditorData:
 TSLA.Easy:
 	Inherits: TSLA
@@ -209,32 +209,12 @@ TSLA.Easy:
 	RenderSprites:
 		Image: tsla
 	-MapEditorData:
-GAP.Easy:
-	Inherits: GAP
-	Valued:
-		Cost: 1080
-	Buildable:
-		BuildPaletteOrder: 9015
-		Prerequisites: weap.easy, dome.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
-	RenderSprites:
-		Image: gap
-	-MapEditorData:
-FTUR.Easy:
-	Inherits: FTUR
-	Valued:
-		Cost: 720
-	Buildable:
-		BuildPaletteOrder: 9018
-		Prerequisites: barr.easy, ~structures.soviet, ~techlevel.low, ~structures.ai
-	RenderSprites:
-		Image: ftur
-	-MapEditorData:
 AGUN.Easy:
 	Inherits: AGUN
 	Valued:
 		Cost: 960
 	Buildable:
-		BuildPaletteOrder: 9021
+		BuildPaletteOrder: 9015
 		Prerequisites: weap.easy, dome.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: agun
@@ -244,30 +224,60 @@ SAM.Easy:
 	Valued:
 		Cost: 840
 	Buildable:
-		BuildPaletteOrder: 9024
+		BuildPaletteOrder: 9018
 		Prerequisites: weap.easy, dome.easy, ~structures.soviet, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: sam
+	-MapEditorData:
+GAP.Easy:
+	Inherits: GAP
+	Valued:
+		Cost: 1080
+	Buildable:
+		BuildPaletteOrder: 9021
+		Prerequisites: weap.easy, dome.easy, ~structures.allies, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: gap
 	-MapEditorData:
 MSLO.Easy:
 	Inherits: MSLO
 	Valued:
 		Cost: 3000
 	Buildable:
-		BuildPaletteOrder: 9027
+		BuildPaletteOrder: 9024
 		Prerequisites: techcenter, ~techlevel.unrestricted, ~structures.ai
 	RenderSprites:
 		Image: mslo
 	-MapEditorData:
+SILO.Easy:
+	Inherits: SILO
+	Valued:
+		Cost: 180
+	Buildable:
+		BuildPaletteOrder: 9027
+		Prerequisites: proc.easy, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: silo
+	-MapEditorData:
 
 # Infantry
 
+DOG.Easy:
+	Inherits: DOG
+	Valued:
+		Cost: 240
+	Buildable:
+		BuildPaletteOrder: 9000
+		Prerequisites: ~kenn.easy, ~techlevel.infonly, ~infantry.ai
+	RenderSprites:
+		Image: dog
+	-MapEditorData:
 E1.Easy:
 	Inherits: E1
 	Valued:
 		Cost: 120
 	Buildable:
-		BuildPaletteOrder: 9000
+		BuildPaletteOrder: 9003
 		Prerequisites: barracks.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e1
@@ -277,7 +287,7 @@ E2.Easy:
 	Valued:
 		Cost: 192
 	Buildable:
-		BuildPaletteOrder: 9003
+		BuildPaletteOrder: 9006
 		Prerequisites: barr.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e2
@@ -287,7 +297,7 @@ E3.Easy:
 	Valued:
 		Cost: 360
 	Buildable:
-		BuildPaletteOrder: 9006
+		BuildPaletteOrder: 9009
 		Prerequisites: barracks.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: e3
@@ -297,20 +307,10 @@ E4.Easy:
 	Valued:
 		Cost: 360
 	Buildable:
-		BuildPaletteOrder: 9009
+		BuildPaletteOrder: 9012
 		Prerequisites: barr.easy, ftur.easy, ~techlevel.low, ~infantry.ai
 	RenderSprites:
 		Image: e4
-	-MapEditorData:
-DOG.Easy:
-	Inherits: DOG
-	Valued:
-		Cost: 240
-	Buildable:
-		BuildPaletteOrder: 9012
-		Prerequisites: ~kenn.easy, ~techlevel.infonly, ~infantry.ai
-	RenderSprites:
-		Image: dog
 	-MapEditorData:
 SHOK.Easy:
 	Inherits: SHOK
@@ -322,13 +322,25 @@ SHOK.Easy:
 	RenderSprites:
 		Image: shok
 	-MapEditorData:
-
+E7.Easy:
+	Inherits: E7
+	Valued:
+		Cost: 1440
+	Buildable:
+		BuildPaletteOrder: 9018
+		Prerequisites: fix.easy, atek.easy, mslo.easy,  ~infantry.allies, ~techlevel.high, ~infantry.ai
+	Wanders:
+		MinMoveDelay: 25
+		MaxMoveDelay: 150
+	RenderSprites:
+		Image: e7
+	-MapEditorData:
 E9.Easy:
 	Inherits: E9
 	Valued:
 		Cost: 360
 	Buildable:
-		BuildPaletteOrder: 9018
+		BuildPaletteOrder: 9021
 		Prerequisites: fix.easy, mslo.easy, ~infantry.france, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: e9
@@ -339,18 +351,17 @@ E10.Easy:
 	Valued:
 		Cost: 480
 	Buildable:
-		BuildPaletteOrder: 9021
+		BuildPaletteOrder: 9024
 		Prerequisites: fix.easy, mslo.easy, ~infantry.germany, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: e10
 	-MapEditorData:
-
 SNIPER.Easy:
 	Inherits: SNIPER
 	Valued:
 		Cost: 960
 	Buildable:
-		BuildPaletteOrder: 9024
+		BuildPaletteOrder: 9027
 		Prerequisites: fix.easy, mslo.easy, ~infantry.england, ~techlevel.high, ~infantry.ai
 	RenderSprites:
 		Image: sniper
@@ -380,62 +391,12 @@ HARV.Easy:
 	RenderSprites:
 		Image: harv
 	-MapEditorData:
-APC.Easy:
-	Inherits: APC
-	Valued:
-		Cost: 960
-	Buildable:
-		BuildPaletteOrder: 9006
-		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
-	RenderSprites:
-		Image: apc
-	-MapEditorData:
-JEEP.Easy:
-	Inherits: JEEP
-	Valued:
-		Cost: 480
-	Buildable:
-		BuildPaletteOrder: 9009
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
-	RenderSprites:
-		Image: jeep
-	-MapEditorData:
-ARTY.Easy:
-	Inherits: ARTY
-	Valued:
-		Cost: 960
-	Buildable:
-		BuildPaletteOrder: 9012
-		Prerequisites: dome.easy, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
-	RenderSprites:
-		Image: arty
-	-MapEditorData:
-V2RL.Easy:
-	Inherits: V2RL
-	Valued:
-		Cost: 1080
-	Buildable:
-		BuildPaletteOrder: 9015
-		Prerequisites: dome.easy, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
-	RenderSprites:
-		Image: v2rl
-	-MapEditorData:
-FTRK.Easy:
-	Inherits: FTRK
-	Valued:
-		Cost: 720
-	Buildable:
-		BuildPaletteOrder: 9018
-		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
-	RenderSprites:
-		Image: ftrk
-	-MapEditorData:
 1TNK.Easy:
 	Inherits: 1TNK
 	Valued:
 		Cost: 840
 	Buildable:
-		BuildPaletteOrder: 9021
+		BuildPaletteOrder: 9006
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
 	RenderSprites:
 		Image: 1tnk
@@ -445,7 +406,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 1020
 	Buildable:
-		BuildPaletteOrder: 9024
+		BuildPaletteOrder: 9009
 		Prerequisites: fix.easy, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk
@@ -455,7 +416,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 1260
 	Buildable:
-		BuildPaletteOrder: 9027
+		BuildPaletteOrder: 9012
 		Prerequisites: fix.easy, ~vehicles.germany, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 2tnk.ger
@@ -465,7 +426,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 1380
 	Buildable:
-		BuildPaletteOrder: 9030
+		BuildPaletteOrder: 9015
 		Prerequisites: fix.easy, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: 3tnk
@@ -475,7 +436,7 @@ FTRK.Easy:
 	Valued:
 		Cost: 2400
 	Buildable:
-		BuildPaletteOrder: 9033
+		BuildPaletteOrder: 9018
 		Prerequisites: fix.easy, stek.easy, ~vehicles.soviet, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk
@@ -485,10 +446,60 @@ FTRK.Easy:
 	Valued:
 		Cost: 2400
 	Buildable:
-		BuildPaletteOrder: 9036
+		BuildPaletteOrder: 9021
 		Prerequisites: fix.easy, stek.easy, ~vehicles.ukraine, ~techlevel.high, ~vehicles.ai
 	RenderSprites:
 		Image: 4tnk.kv-8
+	-MapEditorData:
+JEEP.Easy:
+	Inherits: JEEP
+	Valued:
+		Cost: 480
+	Buildable:
+		BuildPaletteOrder: 9024
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~vehicles.ai
+	RenderSprites:
+		Image: jeep
+	-MapEditorData:
+FTRK.Easy:
+	Inherits: FTRK
+	Valued:
+		Cost: 720
+	Buildable:
+		BuildPaletteOrder: 9027
+		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
+	RenderSprites:
+		Image: ftrk
+	-MapEditorData:
+APC.Easy:
+	Inherits: APC
+	Valued:
+		Cost: 960
+	Buildable:
+		BuildPaletteOrder: 9030
+		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~vehicles.ai
+	RenderSprites:
+		Image: apc
+	-MapEditorData:
+ARTY.Easy:
+	Inherits: ARTY
+	Valued:
+		Cost: 960
+	Buildable:
+		BuildPaletteOrder: 9033
+		Prerequisites: dome.easy, ~vehicles.allies, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: arty
+	-MapEditorData:
+V2RL.Easy:
+	Inherits: V2RL
+	Valued:
+		Cost: 1080
+	Buildable:
+		BuildPaletteOrder: 9036
+		Prerequisites: dome.easy, ~vehicles.soviet, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: v2rl
 	-MapEditorData:
 TTNK.Easy:
 	Inherits: TTNK
@@ -513,25 +524,12 @@ STNK.Easy:
 
 # Aircraft | +25% Cost/Production boost on top of bot specific Cost/Production modifier
 
-HELI.Easy:
-	Inherits: HELI
-	Valued:
-		Cost: 1800
-	Buildable:
-		BuildPaletteOrder: 9000
-		Prerequisites: hpad.easy, atek.easy, ~techlevel.high, ~aircraft.ai
-	Aircraft:
-		RearmBuildings: hpad.easy
-		RepairBuildings: hpad.easy
-	RenderSprites:
-		Image: heli
-	-MapEditorData:
 HIND.Easy:
 	Inherits: HIND
 	Valued:
 		Cost: 1215
 	Buildable:
-		BuildPaletteOrder: 9003
+		BuildPaletteOrder: 9000
 		Prerequisites: hpad.easy, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: hpad.easy
@@ -539,25 +537,25 @@ HIND.Easy:
 	RenderSprites:
 		Image: hind
 	-MapEditorData:
-MIG.Easy:
-	Inherits: MIG
+HELI.Easy:
+	Inherits: HELI
 	Valued:
 		Cost: 1800
 	Buildable:
-		BuildPaletteOrder: 9006
-		Prerequisites: afld.easy, stek.easy, ~techlevel.high, ~aircraft.ai
+		BuildPaletteOrder: 9003
+		Prerequisites: hpad.easy, atek.easy, ~techlevel.high, ~aircraft.ai
 	Aircraft:
-		RearmBuildings: afld.easy, afld.ukraine.easy
-		RepairBuildings: afld.easy, afld.ukraine.easy
+		RearmBuildings: hpad.easy
+		RepairBuildings: hpad.easy
 	RenderSprites:
-		Image: mig
+		Image: heli
 	-MapEditorData:
 YAK.Easy:
 	Inherits: YAK
 	Valued:
 		Cost: 1215
 	Buildable:
-		BuildPaletteOrder: 9009
+		BuildPaletteOrder: 9006
 		Prerequisites: afld.easy, ~techlevel.medium, ~aircraft.ai
 	Aircraft:
 		RearmBuildings: afld.easy, afld.ukraine.easy
@@ -565,3 +563,17 @@ YAK.Easy:
 	RenderSprites:
 		Image: yak
 	-MapEditorData:
+MIG.Easy:
+	Inherits: MIG
+	Valued:
+		Cost: 1800
+	Buildable:
+		BuildPaletteOrder: 9009
+		Prerequisites: afld.easy, stek.easy, ~techlevel.high, ~aircraft.ai
+	Aircraft:
+		RearmBuildings: afld.easy, afld.ukraine.easy
+		RepairBuildings: afld.easy, afld.ukraine.easy
+	RenderSprites:
+		Image: mig
+	-MapEditorData:
+
