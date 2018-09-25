@@ -13,8 +13,8 @@ Player:
 
 		SquadSize: 30
 		SquadSizeRandomBonus: 40
-		MinimumExcessPower: 80
-		MaximumExcessPower: 250
+		MinimumExcessPower: 90
+		MaximumExcessPower: 180
 		ExcessPowerIncrement: 50
 		ExcessPowerIncreaseThreshold: 4
 		StructureProductionResumeDelay: 500
@@ -23,6 +23,9 @@ Player:
 		DangerScanRadius: 14
 		AttackScanRadius: 14
 		ProtectionScanRadius: 10
+
+		RestrictMCVDeploymentFallbackToBase: False
+		MaxResourceCellsToCheck: 8
 
 		BuildingCommonNames:
 			ConstructionYard: fact
@@ -59,14 +62,14 @@ Player:
 			mslo.easy: 1%
 		BuildingLimits:
 			proc.easy: 4
-			barr.easy: 1
-			tent.easy: 1
+			barr.easy: 3
+			tent.easy: 3
 			kenn.easy: 1
 			dome.easy: 1
 			weap.easy: 1
-			hpad.easy: 3
-			afld.easy: 3
-			afld.ukraine.easy: 3
+			hpad.easy: 2
+			afld.easy: 2
+			afld.ukraine.easy: 2
 			atek.easy: 1
 			stek.easy: 1
 			fix.easy: 1
@@ -178,8 +181,8 @@ Player:
 
 		SquadSize: 30
 		SquadSizeRandomBonus: 40
-		MinimumExcessPower: 80
-		MaximumExcessPower: 160
+		MinimumExcessPower: 90
+		MaximumExcessPower: 180
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
 		StructureProductionResumeDelay: 500
@@ -192,7 +195,7 @@ Player:
 		AttackScanRadius: 14
 		ProtectionScanRadius: 10
 
-		HarvesterEnemyAvoidanceRadius: 10c0
+		RestrictMCVDeploymentFallbackToBase: False
 		MaxResourceCellsToCheck: 8
 
 		BuildingCommonNames:
@@ -207,7 +210,7 @@ Player:
 			Mcv: mcv
 			ExcludeFromSquads: harv
 		BuildingFractions:
-			proc: 20%
+			proc: 30%
 			tent: 10%
 			barr: 10%
 			kenn: 0.5%
@@ -231,12 +234,12 @@ Player:
 		BuildingLimits:
 			proc: 4
 			barr: 2
-			tent: 1
+			tent: 2
 			dome: 1
 			weap: 1
-			hpad: 3
-			afld: 3
-			afld.ukraine: 3
+			hpad: 2
+			afld: 2
+			afld.ukraine: 2
 			atek: 1
 			stek: 1
 			fix: 1
@@ -738,7 +741,7 @@ Player:
 		SquadSize: 1
 		SquadSizeRandomBonus: 3
 		MinimumExcessPower: 120
-		MaximumExcessPower: 200
+		MaximumExcessPower: 220
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
 		StructureProductionResumeDelay: 500
@@ -890,7 +893,7 @@ Player:
 		SquadSize: 1
 		SquadSizeRandomBonus: 3
 		MinimumExcessPower: 120
-		MaximumExcessPower: 200
+		MaximumExcessPower: 220
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
 		StructureProductionResumeDelay: 500
