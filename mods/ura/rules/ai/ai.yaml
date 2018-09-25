@@ -46,9 +46,9 @@ Player:
 			weap.easy: 5%
 			fix.easy: 0.1%
 			dome.easy: 7%
-			hpad.easy: 5%
-			afld.easy: 5%
-			afld.ukraine.easy: 5%
+			hpad.easy: 10%
+			afld.easy: 10%
+			afld.ukraine.easy: 10%
 			atek.easy: 1%
 			stek.easy: 1%
 			pbox.easy: 10%
@@ -220,9 +220,9 @@ Player:
 			weap: 5%
 			dome: 7%
 			fix: 1%
-			hpad: 5%
-			afld: 5%
-			afld.ukraine: 5%
+			hpad: 10%
+			afld: 10%
+			afld.ukraine: 10%
 			atek: 1%
 			stek: 1%
 			pbox: 5%
