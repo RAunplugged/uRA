@@ -333,78 +333,6 @@ SPY.England:
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
 
-#Tanya Swim properties and sequences by SirCake
-E7:
-	Inherits: ^Soldier
-	Inherits@AUTOTARGET: ^AutoTargetGround
-	Tooltip:
-		Name: Tanya
-	Valued:
-		Cost: 1200
-	Health:
-		HP: 100
-	Mobile:
-		Speed: 71
-		Voice: Move
-		Locomotor: tanyafoot
-	Buildable:
-		Queue: Infantry
-		BuildAtProductionType: Soldier
-		BuildPaletteOrder: 120
-		Prerequisites: ~tent, atek, ~techlevel.high
-		BuildLimit: 1
-		Description: Elite commando infantry. Armed with\ndual pistols and C4.\nCan detect cloaked units.\nMaximum 1 can be trained.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n  Special Ability: Destroy Building with C4
-	RevealsShroud:
-		Range: 8c0
-		RevealGeneratedShroud: False
-	RevealsShroud@GAPGEN:
-		Range: 5c384
-	Armament@PRIMARY:
-		Weapon: Colt45
-	Armament@SECONDARY:
-		Weapon: Colt45
-	Armament@GARRISONED:
-		Name: garrisoned
-		Weapon: Colt45
-		MuzzleSequence: garrison-muzzle
-	DetectCloaked:
-		CloakTypes: Cloak, Hijacker
-	Demolition:
-		DetonationDelay: 45
-		Voice: Demolish
-	Passenger:
-		PipType: Red
-		Voice: Move
-	AttackFrontal:
-	Guard:
-		Voice: Move
-	Targetable:
-		RequiresCondition: !parachute && !swimming
-	Targetable@SEA:
-		TargetTypes: Ground, Water, Infantry
-		RequiresCondition: !parachute && swimming
-	GrantConditionOnTerrain:
-		TerrainTypes: Water
-		Condition: swimming
-	WithInfantryBody:
-		RequiresCondition: !swimming
-		DefaultAttackSequence: shoot
-		StandSequences: stand
-	WithInfantryBody@SEA:
-		RequiresCondition: swimming
-		MoveSequence: swim
-		DefaultAttackSequence: swim_shoot
-		IdleSequences: swim_idle
-		StandSequences: swim_stand
-	WithDeathAnimation:
-		RequiresCondition: !swimming
-	Voiced:
-		VoiceSet: TanyaVoice
-	AnnounceOnBuild:
-	AnnounceOnKill:
-	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded, techcenter.upgraded
-
 MEDI:
 	Inherits: ^Soldier
 	Tooltip:
@@ -583,64 +511,77 @@ SHOK:
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded, techcenter.upgraded
 
-SNIPER:
+#Tanya Swim properties and sequences by SirCake
+E7:
 	Inherits: ^Soldier
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Tooltip:
-		Name: British Sniper
+		Name: Tanya
 	Valued:
-		Cost: 800
+		Cost: 1200
 	Health:
-		HP: 80
+		HP: 100
 	Mobile:
-		Speed: 63
+		Speed: 71
+		Voice: Move
+		Locomotor: tanyafoot
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		BuildPaletteOrder: 500
-		Prerequisites: ~infantry.england, ~barracks.upgraded, radardome.upgraded, ~techcenter.upgraded
-		Description: Elite sniper infantry unit.\nCan detect cloaked units.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+		BuildPaletteOrder: 120
+		Prerequisites: ~tent, atek, ~techlevel.high
+		BuildLimit: 1
+		Description: Elite commando infantry. Armed with\ndual pistols and C4.\nCan detect cloaked units.\nMaximum 1 can be trained.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n  Special Ability: Destroy Building with C4
 	RevealsShroud:
-		Range: 9c256
+		Range: 8c0
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 5c384
 	Armament@PRIMARY:
-		Weapon: Sniper
+		Weapon: Colt45
+	Armament@SECONDARY:
+		Weapon: Colt45
 	Armament@GARRISONED:
 		Name: garrisoned
-		Weapon: Sniper
+		Weapon: Colt45
 		MuzzleSequence: garrison-muzzle
-	Cloak:
-		InitialDelay: 250
-		CloakDelay: 150
-		CloakSound:
-		UncloakSound:
-		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
-		IsPlayerPalette: true
-		RequiresCondition: !cloak-force-disabled
-	GrantConditionOnDamageState@UNCLOAK:
-		Condition: cloak-force-disabled
-		ValidDamageStates: Critical
-	-MustBeDestroyed:
 	DetectCloaked:
 		CloakTypes: Cloak, Hijacker
-		Range: 6c0
+	Demolition:
+		DetonationDelay: 45
+		Voice: Demolish
 	Passenger:
 		PipType: Red
-	AutoTarget:
-		InitialStance: HoldFire
-		InitialStanceAI: ReturnFire
-	AutoTargetPriority@DEFAULT:
-		ValidTargets: Infantry
+		Voice: Move
 	AttackFrontal:
+	Guard:
+		Voice: Move
+	Targetable:
+		RequiresCondition: !parachute && !swimming
+	Targetable@SEA:
+		TargetTypes: Ground, Water, Infantry
+		RequiresCondition: !parachute && swimming
+	GrantConditionOnTerrain:
+		TerrainTypes: Water
+		Condition: swimming
 	WithInfantryBody:
+		RequiresCondition: !swimming
 		DefaultAttackSequence: shoot
-		RequiresCondition: !parachute
-	WithInfantryBody@PARACHUTE:
-		StandSequences: parachute
-		RequiresCondition: parachute
+		StandSequences: stand
+	WithInfantryBody@SEA:
+		RequiresCondition: swimming
+		MoveSequence: swim
+		DefaultAttackSequence: swim_shoot
+		IdleSequences: swim_idle
+		StandSequences: swim_stand
+	WithDeathAnimation:
+		RequiresCondition: !swimming
+	Voiced:
+		VoiceSet: TanyaVoice
+	AnnounceOnBuild:
+	AnnounceOnKill:
 	ProducibleWithLevel:
-		Prerequisites: techlevel.infonly
+		Prerequisites: barracks.upgraded, techcenter.upgraded
 
 # Modified version of the Grenade Launcher by Kiraye
 E9:
@@ -700,6 +641,65 @@ E10:
 	AttackFrontal:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+
+SNIPER:
+	Inherits: ^Soldier
+	Tooltip:
+		Name: British Sniper
+	Valued:
+		Cost: 800
+	Health:
+		HP: 80
+	Mobile:
+		Speed: 63
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Soldier
+		BuildPaletteOrder: 500
+		Prerequisites: ~infantry.england, ~barracks.upgraded, radardome.upgraded, ~techcenter.upgraded
+		Description: Elite sniper infantry unit.\nCan detect cloaked units.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
+	RevealsShroud:
+		Range: 9c256
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c384
+	Armament@PRIMARY:
+		Weapon: Sniper
+	Armament@GARRISONED:
+		Name: garrisoned
+		Weapon: Sniper
+		MuzzleSequence: garrison-muzzle
+	Cloak:
+		InitialDelay: 250
+		CloakDelay: 150
+		CloakSound:
+		UncloakSound:
+		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
+		IsPlayerPalette: true
+		RequiresCondition: !cloak-force-disabled
+	GrantConditionOnDamageState@UNCLOAK:
+		Condition: cloak-force-disabled
+		ValidDamageStates: Critical
+	-MustBeDestroyed:
+	DetectCloaked:
+		CloakTypes: Cloak, Hijacker
+		Range: 6c0
+	Passenger:
+		PipType: Red
+	AutoTarget:
+		InitialStance: HoldFire
+		InitialStanceAI: ReturnFire
+	AutoTargetPriority@DEFAULT:
+		ValidTargets: Infantry
+	AttackFrontal:
+	WithInfantryBody:
+		DefaultAttackSequence: shoot
+		RequiresCondition: !parachute
+	WithInfantryBody@PARACHUTE:
+		StandSequences: parachute
+		RequiresCondition: parachute
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
 

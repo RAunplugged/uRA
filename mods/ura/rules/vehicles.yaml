@@ -395,88 +395,6 @@ TRUK:
 	RenderSprites:
 		Image: 4tnk.kv-8
 
-ARTY:
-	Inherits: ^TrackedVehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
-	Inherits@AUTOTARGET: ^AutoTargetGround
-	Tooltip:
-		Name: Artillery
-	Valued:
-		Cost: 800
-	Health:
-		HP: 100
-	Armor:
-		Type: Light
-	Mobile:
-		TurnSpeed: 2
-		Speed: 85
-		Locomotor: lighttracked
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 80
-		Prerequisites: dome, ~vehicles.allies, ~techlevel.medium
-		Description: Long-range artillery.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
-	RevealsShroud:
-		Range: 5c384
-	Armament:
-		Weapon: 155mm
-		LocalOffset: 624,0,208
-		MuzzleSequence: muzzle
-	Crushable:
-		CrushClasses: vehicles
-	Explodes:
-		Weapon: ArtilleryExplode
-		EmptyWeapon: UnitExplodeSmall
-		LoadedChance: 75
-	AttackFrontal:
-	WithMuzzleOverlay:
-	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, radardome.upgraded
-
-V2RL:
-	Inherits: ^Vehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
-	Inherits@AUTOTARGET: ^AutoTargetGround
-	Tooltip:
-		Name: V2 Rocket Launcher
-	Valued:
-		Cost: 900
-	Health:
-		HP: 200
-	Armor:
-		Type: Light
-	Mobile:
-		Speed: 85
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 90
-		Prerequisites: dome, ~vehicles.soviet, ~techlevel.medium
-		Description: Long-range rocket artillery.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
-	RevealsShroud:
-		Range: 5c384
-	Armament:
-		Weapon: SCUD
-		ReloadingCondition: reloading
-	Crushable:
-		CrushClasses: vehicles
-	AutoTarget:
-		ScanRadius: 12
-	Selectable:
-		DecorationBounds: 28,28
-	Explodes:
-		Weapon: V2Explode
-	SelectionDecorations:
-	AttackFrontal:
-	WithFacingSpriteBody:
-		RequiresCondition: !reloading
-		Name: loaded
-	WithFacingSpriteBody@EMPTY:
-		RequiresCondition: reloading
-		Sequence: empty-idle
-		Name: reloading
-	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, radardome.upgraded
-
 JEEP:
 	Inherits: ^Vehicle
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
@@ -825,6 +743,88 @@ MNLY:
 		Image: MNLY
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded, servicedepot.upgraded
+
+ARTY:
+	Inherits: ^TrackedVehicle
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Tooltip:
+		Name: Artillery
+	Valued:
+		Cost: 800
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	Mobile:
+		TurnSpeed: 2
+		Speed: 85
+		Locomotor: lighttracked
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 80
+		Prerequisites: dome, ~vehicles.allies, ~techlevel.medium
+		Description: Long-range artillery.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
+	RevealsShroud:
+		Range: 5c384
+	Armament:
+		Weapon: 155mm
+		LocalOffset: 624,0,208
+		MuzzleSequence: muzzle
+	Crushable:
+		CrushClasses: vehicles
+	Explodes:
+		Weapon: ArtilleryExplode
+		EmptyWeapon: UnitExplodeSmall
+		LoadedChance: 75
+	AttackFrontal:
+	WithMuzzleOverlay:
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded, radardome.upgraded
+
+V2RL:
+	Inherits: ^Vehicle
+	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@AUTOTARGET: ^AutoTargetGround
+	Tooltip:
+		Name: V2 Rocket Launcher
+	Valued:
+		Cost: 900
+	Health:
+		HP: 200
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 85
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 90
+		Prerequisites: dome, ~vehicles.soviet, ~techlevel.medium
+		Description: Long-range rocket artillery.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
+	RevealsShroud:
+		Range: 5c384
+	Armament:
+		Weapon: SCUD
+		ReloadingCondition: reloading
+	Crushable:
+		CrushClasses: vehicles
+	AutoTarget:
+		ScanRadius: 12
+	Selectable:
+		DecorationBounds: 28,28
+	Explodes:
+		Weapon: V2Explode
+	SelectionDecorations:
+	AttackFrontal:
+	WithFacingSpriteBody:
+		RequiresCondition: !reloading
+		Name: loaded
+	WithFacingSpriteBody@EMPTY:
+		RequiresCondition: reloading
+		Sequence: empty-idle
+		Name: reloading
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded, radardome.upgraded
 
 MGG:
 	Inherits: ^Vehicle
