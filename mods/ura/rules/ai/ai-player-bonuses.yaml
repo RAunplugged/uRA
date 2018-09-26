@@ -26,7 +26,7 @@ E2.Brutal.Player:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.brutal
-		Description: Inflicts damage upon impact.
+		Description: Fighting for a cause.  \nInflicts great damage upon impact.
 	Armament@GARRISONED:
 		Name: garrisoned
 		Weapon: Grenade
@@ -43,7 +43,6 @@ E2.Brutal.Player:
 	WithInfantryBody@PARACHUTE:
 		StandSequences: parachute
 		RequiresCondition: parachute
-
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded
 	RenderSprites:
@@ -58,7 +57,7 @@ E4.Brutal.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.brutal, ~ftur.brutal
-		Description: Infantryman under influence.\nA preferable ally.
+		Description: Infantryman under influence.  \nSubstance unknown.
 	Armament@PRIMARY:
 		Weapon: Flamer.Brutal
 	Armament@GARRISONED:
@@ -83,7 +82,7 @@ DOG.Brutal.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~kenn.brutal
-		Description: Spreads infectios damage\nBeware of the dog.
+		Description: Animal under influence.  \nSurely there are rules against this.
 	Armament:
 		Weapon: DogJaw.Brutal
 	RenderSprites:
@@ -92,7 +91,7 @@ DOG.Brutal.Player:
 SPY.England.Brutal.Player:
 	Inherits: SPY.England
 	DisguiseTooltip:
-		Name: Agent 007
+		Name: Agent 0007
 	Valued:
 		Cost: 1200
 	# -MustBeDestroyed:
@@ -101,7 +100,7 @@ SPY.England.Brutal.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.brutal, ~dome.brutal, ~atek.brutal
-		Description: Exceptional spy agent.\nAquired license to kill.
+		Description: Exceptional spy agent.  \nAquired license to kill.
 		BuildLimit: 1
 	RevealsShroud:
 		Range: 9c256
@@ -133,7 +132,7 @@ MEDI.Brutal.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~tent.brutal
-		Description: Heals units far and near.\n  The power of prayer.
+		Description: Heals infantry infantry from afar.\n  The power of prayer.
 	RevealsShroud:
 		Range: 8c0
 	Armament:
@@ -167,7 +166,7 @@ E2.Hard.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.hard
-		Description: Cloaked grenadiers.\nAquired extra vision.
+		Description: Cloaked grenadiers.  \nAquired extra vision.
 	# -MustBeDestroyed:
 	RevealsShroud:
 		Range: 8c0
@@ -194,7 +193,7 @@ E4.Hard.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.hard, ~ftur.hard
-		Description: FireballLauncher infantry.\nGoodness gracious great balls of fire.
+		Description: Goodness gracious great balls of fire!
 	Armament@PRIMARY:
 		Weapon: FireballLauncher.E4
 		LocalOffset: 700,0,500
@@ -215,7 +214,7 @@ DOG.Hard.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~kenn.hard
-		Description: Damage resistant dog.\nGo fetch!
+		Description: Damage resistant dog.  \nGo fetch!
 	RenderSprites:
 		Image: dog
 
@@ -230,7 +229,7 @@ SPY.England.Hard.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.hard, ~dome.hard
-		Description: Unique spy agent.\nAquired cloak.
+		Description: Unique spy agent.  \nAquired cloak.
 	# -MustBeDestroyed:
 	Armament:
 		Weapon: SilencedPPK.England
@@ -277,7 +276,7 @@ E2.Easy.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.easy
-		Description: Weakling armed with grenades.\nKeep your distance.
+		Description: Weakling armed with grenades.  \nKeep your distance.
 	RenderSprites:
 		Image: e2
 
@@ -290,7 +289,7 @@ E4.Easy.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.easy, ~ftur.easy
-		Description: Infantryman under influence.\nFire hazard
+		Description: Infantryman under influence.  \nKeep your distance.
 	Armament@PRIMARY:
 		Weapon: Flamer.Easy
 	Armament@GARRISONED:
@@ -312,7 +311,7 @@ DOG.Easy.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~kenn.easy
-		Description: Slow anti-infantry unit.\nKeep it safe at home. 
+		Description: Slow, old, retired dog.  \nPlease, keep it safe at home. 
 	RenderSprites:
 		Image: dog
 
@@ -330,7 +329,7 @@ SPY.England.Easy.Player:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.easy, ~dome.easy
-		Description: Dimwitted spy agent.\nHe's *your* problem now.
+		Description: Dimwitted spy agent.\n  Aquired job through family contacts..
 	Passenger:
 		PipType: Blue
 	Disguise:
