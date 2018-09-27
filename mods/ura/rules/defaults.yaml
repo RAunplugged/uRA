@@ -521,6 +521,7 @@
 	Aircraft:
 		RepairBuildings: afld, afld.ukraine, afld.brutal, afld.ukraine.brutal, afld.hard, afld.ukraine.hard, afld.easy, afld.ukraine.easy
 		AirborneCondition: airborne
+		FlyCircleOnIdle:
 	AttackMove:
 	Guard:
 	EjectOnDeath:
