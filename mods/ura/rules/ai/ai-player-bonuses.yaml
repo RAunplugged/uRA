@@ -26,7 +26,7 @@ E2.Brutal.Player:
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.brutal
-		Description: Fighting for a cause.  \nInflicts great damage upon impact.
+		Description: Fighting for a cause.\n  Inflicts great damage upon impact.
 	Armament@GARRISONED:
 		Name: garrisoned
 		Weapon: Grenade
@@ -57,7 +57,7 @@ E4.Brutal.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.brutal, ~ftur.brutal
-		Description: Infantryman under influence.  \nSubstance unknown.
+		Description: Infantryman under influence.\n  Substance unknown.
 	Armament@PRIMARY:
 		Weapon: Flamer.Brutal
 	Armament@GARRISONED:
@@ -82,7 +82,7 @@ DOG.Brutal.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~kenn.brutal
-		Description: Animal under influence.  \nSurely there are rules against this.
+		Description: Animal under influence.\n  Surely there are rules against this.
 	Armament:
 		Weapon: DogJaw.Brutal
 	RenderSprites:
@@ -100,7 +100,7 @@ SPY.England.Brutal.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.brutal, ~dome.brutal, ~atek.brutal
-		Description: Exceptional spy agent.  \nAquired license to kill.
+		Description: Exceptional spy agent.\n  Aquired license to kill.
 		BuildLimit: 1
 	RevealsShroud:
 		Range: 9c256
@@ -229,7 +229,7 @@ SPY.England.Hard.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.hard, ~dome.hard
-		Description: Unique spy agent.  \nAquired cloak.
+		Description: Unique spy agent.\n  Aquired cloak.
 	# -MustBeDestroyed:
 	Armament:
 		Weapon: SilencedPPK.England
@@ -276,7 +276,7 @@ E2.Easy.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.easy
-		Description: Weakling armed with grenades.  \nKeep your distance.
+		Description: Weakling armed with grenades.\n  Keep your distance.
 	RenderSprites:
 		Image: e2
 
@@ -289,7 +289,7 @@ E4.Easy.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~barr.easy, ~ftur.easy
-		Description: Infantryman under influence.  \nKeep your distance.
+		Description: Infantryman under influence.\n  Keep your distance.
 	Armament@PRIMARY:
 		Weapon: Flamer.Easy
 	Armament@GARRISONED:
@@ -311,7 +311,7 @@ DOG.Easy.Player:
 	Buildable:
 		BuildPaletteOrder: 9600
 		Prerequisites: ~kenn.easy
-		Description: Slow, old, retired dog.  \nPlease, keep it safe at home. 
+		Description: Slow, old, retired dog.\n  Please, keep it safe at home. 
 	RenderSprites:
 		Image: dog
 
