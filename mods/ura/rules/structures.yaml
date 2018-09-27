@@ -602,8 +602,7 @@ FIX:
 		TargetTypes: Ground, Structure, C4, DetonateAttack, SpyInfiltrate
 	SelectionDecorations:
 	RallyPoint:
-	WithRepairAnimation:
-	WithRearmAnimation:
+  WithResupplyAnimation:
 	ProvidesPrerequisite@buildingname:
 	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: fix
@@ -1011,7 +1010,6 @@ HPAD:
 		StartRepairingNotification: Repairing
 		FinishRepairingNotification: UnitRepaired
 	Reservable:
-	WithRepairAnimation:
 	Production:
 		Produces: Aircraft, Helicopter
 	PrimaryBuilding:
@@ -1053,7 +1051,7 @@ HPAD:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
-	WithRearmAnimation:
+	WithResupplyAnimation:
 	ProvidesPrerequisite@allies:
 		Factions: allies, england, france, germany
 		Prerequisite: aircraft.allies
@@ -1150,8 +1148,7 @@ AFLD:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
-	WithRearmAnimation:
-	WithRepairAnimation:
+  WithResupplyAnimation:
 	AirstrikePower@spyplane:
 		OrderName: SovietSpyPlane
 		Prerequisites: aircraft.soviet
