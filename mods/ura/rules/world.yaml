@@ -112,7 +112,7 @@
 		Side: Allies
 		Selectable: False
 	Faction@1:
-		Name: England
+		Name: Britain
 		InternalName: england
 		Side: Allies
 		Description: England: Espionage\nSpecial Ability: Sniper Drop\nSpecial Unit: British Spy\nSpecial Unit: Phase Transport
