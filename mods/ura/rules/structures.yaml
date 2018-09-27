@@ -602,7 +602,7 @@ FIX:
 		TargetTypes: Ground, Structure, C4, DetonateAttack, SpyInfiltrate
 	SelectionDecorations:
 	RallyPoint:
-  WithResupplyAnimation:
+	WithResupplyAnimation:
 	ProvidesPrerequisite@buildingname:
 	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: fix
