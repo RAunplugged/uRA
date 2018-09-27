@@ -1148,7 +1148,7 @@ AFLD:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
-  WithResupplyAnimation:
+	WithResupplyAnimation:
 	AirstrikePower@spyplane:
 		OrderName: SovietSpyPlane
 		Prerequisites: aircraft.soviet
