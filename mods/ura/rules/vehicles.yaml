@@ -287,6 +287,18 @@ TRUK:
 	SpawnActorOnDeath:
 		Actor: 2TNK.Ger.Husk
 
+2TNK.Ger.2rank:
+	Inherits: 2TNK.Ger
+	Buildable:
+		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~servicedepot.upgraded, ~alliestechcenter.upgraded
+	RenderSprites:
+		Image: 2tnk.ger.2rank
+	SpawnActorOnDeath:
+		Actor: 2TNK.Ger.2rank.Husk
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded, servicedepot.upgraded, ~alliestechcenter.upgraded
+		InitialLevels: 2
+
 3TNK:
 	Inherits: ^TrackedVehicle
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
