@@ -499,7 +499,7 @@
 	WithDamageOverlay:
 	WithFacingSpriteBody:
 	BodyOrientation:
-		UseClassicFacingFudge: True
+		UseClassicFacingFudge: False
 	WithSpriteControlGroupDecoration:
 	MapEditorData:
 		Categories: Vehicle
