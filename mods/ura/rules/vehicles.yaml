@@ -499,10 +499,10 @@ JEEP:
 		LoadedCondition: loaded
 		PassengerConditions:
 			e1: ifv-rifle
-			e1r1: ifv-rifle
+			e1.rank1: ifv-rifle
 			e2: ifv-grenadier
 			e3: ifv-rocket
-			e3r1: ifv-rocket
+			e3.rank1: ifv-rocket
 			e4: ifv-flame
 			e6: ifv-engineer
 			spy: ifv-spy

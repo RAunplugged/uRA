@@ -1187,7 +1187,7 @@ AFLD:
 		ChargeInterval: 7500
 		Description: Paratroopers
 		LongDesc: A Badger drops a squad of infantry\nanywhere on the map.
-		DropItems: E1R1,E1R1,E1R1,E3R1,E3R1
+		DropItems: E1.Rank1,E1.Rank1,E1.Rank1,E3.Rank1,E3.Rank1
 		ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
 		SelectTargetSpeechNotification: SelectTarget
 		AllowImpassableCells: false

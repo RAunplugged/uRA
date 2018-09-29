@@ -86,7 +86,7 @@ E1:
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded
 
-E1R1:
+E1.Rank1:
 	Inherits: E1
 	-Buildable:
 	ProducibleWithLevel:
@@ -176,7 +176,7 @@ E3:
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded
 
-E3R1:
+E3.Rank1:
 	Inherits: E3
 	-Buildable:
 	ProducibleWithLevel:
