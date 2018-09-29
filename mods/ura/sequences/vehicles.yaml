@@ -127,7 +127,7 @@ hhusk2:
 		Length: 5
 	icon: 2tnkicon
 
-2tnk.2rank:
+2tnk.rank2:
 	idle:
 		Facings: 32
 		UseClassicFacingFudge: True
@@ -137,7 +137,7 @@ hhusk2:
 		UseClassicFacingFudge: True
 	muzzle: gunfire2
 		Length: 5
-	icon: 2tnk.2rankicon
+	icon: 2tnk.rank2icon
 		UseTilesetExtension: false
 
 2tnk.ger:
@@ -153,7 +153,7 @@ hhusk2:
 	icon: 2tnk.gericon
 		UseTilesetExtension: false
 
-2tnk.ger.2rank:
+2tnk.ger.rank2:
 	idle:
 		Facings: 32
 		UseClassicFacingFudge: True
@@ -163,7 +163,7 @@ hhusk2:
 		UseClassicFacingFudge: True
 	muzzle: gunfire2
 		Length: 5
-	icon: 2tnk.ger.2rankicon
+	icon: 2tnk.ger.rank2icon
 		UseTilesetExtension: false
 
 2tnk.destroyed:

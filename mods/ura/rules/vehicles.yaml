@@ -255,14 +255,14 @@ TRUK:
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded, servicedepot.upgraded
 
-2TNK.2rank:
+2TNK.rank2:
 	Inherits: 2TNK
 	Buildable:
 		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, servicedepot.upgraded, ~alliestechcenter.upgraded
 	RenderSprites:
-		Image: 2tnk.2rank
+		Image: 2tnk.rank2
 	SpawnActorOnDeath:
-		Actor: 2TNK.2rank.Husk
+		Actor: 2TNK.rank2.Husk
 	ProducibleWithLevel:
 		Prerequisites: ~techlevel.medium
 		InitialLevels: 2
@@ -287,14 +287,14 @@ TRUK:
 	SpawnActorOnDeath:
 		Actor: 2TNK.Ger.Husk
 
-2TNK.Ger.2rank:
+2TNK.Ger.rank2:
 	Inherits: 2TNK.Ger
 	Buildable:
 		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~servicedepot.upgraded, ~alliestechcenter.upgraded
 	RenderSprites:
-		Image: 2tnk.ger.2rank
+		Image: 2tnk.ger.rank2
 	SpawnActorOnDeath:
-		Actor: 2TNK.Ger.2rank.Husk
+		Actor: 2TNK.Ger.rank2.Husk
 	ProducibleWithLevel:
 		Prerequisites: ~techlevel.medium
 		InitialLevels: 2

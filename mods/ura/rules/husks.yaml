@@ -42,14 +42,14 @@
 	RenderSprites:
 		Image: 2tnk.destroyed
 
-2TNK.2rank.Husk:
+2TNK.rank2.Husk:
 	Inherits: ^Husk
 	Tooltip:
 		Name: Husk (Medium Tank)
 	ThrowsParticle@turret:
 		Anim: turret
 	TransformOnCapture:
-		IntoActor: 2tnk.2rank
+		IntoActor: 2tnk.rank2
 	RenderSprites:
 		Image: 2tnk.destroyed
 
@@ -64,14 +64,14 @@
 	RenderSprites:
 		Image: 2tnk.destroyed
 
-2TNK.Ger.2rank.Husk:
+2TNK.Ger.rank2.Husk:
 	Inherits: ^Husk
 	Tooltip:
 		Name: Husk (German Medium Tank)
 	ThrowsParticle@turret:
 		Anim: turret
 	TransformOnCapture:
-		IntoActor: 2tnk.ger.2rank
+		IntoActor: 2tnk.ger.rank2
 	RenderSprites:
 		Image: 2tnk.destroyed
 
