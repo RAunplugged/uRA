@@ -869,7 +869,6 @@
 		MaxWeight: 1
 		PipCount: 1
 		EjectOnDeath: True
-		LoadedCondition: loaded
 	Explodes:
 		Weapon: SmallBuildingExplode
 	Explodes@CIVPANIC:
