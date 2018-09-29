@@ -1,6 +1,6 @@
 @echo off
 setlocal EnableDelayedExpansion
-title OpenRA
+title Red Alert: Unplugged
 
 FOR /F "tokens=1,2 delims==" %%A IN (mod.config) DO (set %%A=%%B)
 if exist user.config (FOR /F "tokens=1,2 delims==" %%A IN (user.config) DO (set %%A=%%B))

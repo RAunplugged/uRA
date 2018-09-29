@@ -34,11 +34,11 @@ fi
 
 require_variables "MOD_ID" "ENGINE_VERSION" "ENGINE_DIRECTORY"
 
-NAME="${Name:-"Dedicated Server"}"
+NAME="${Name:-"Big Kahuna Server"}"
 LAUNCH_MOD="${Mod:-"${MOD_ID}"}"
 LISTEN_PORT="${ListenPort:-"1234"}"
 ADVERTISE_ONLINE="${AdvertiseOnline:-"True"}"
-ENABLE_SINGLE_PLAYER="${EnableSingleplayer:-"False"}"
+ENABLE_SINGLE_PLAYER="${EnableSingleplayer:-"True"}"
 PASSWORD="${Password:-""}"
 
 cd "${TEMPLATE_ROOT}"

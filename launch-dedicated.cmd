@@ -2,10 +2,10 @@
 
 @echo on
 
-set Name="Dedicated Server"
+set Name="Big Kahuna Server"
 set ListenPort=1234
 set AdvertiseOnline=True
-set EnableSingleplayer=False
+set EnableSingleplayer=True
 set Password=""
 
 @echo off
