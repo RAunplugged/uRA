@@ -179,26 +179,26 @@ TRUK:
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
 
-1TNK.2rank:
+1TNK.rank2:
 	Inherits: 1TNK
 	Buildable:
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~servicedepot.upgraded, ~!alliestechcenter.upgraded
 	RenderSprites:
-		Image: 1tnk.2rank
+		Image: 1tnk.rank2
 	SpawnActorOnDeath:
-		Actor: 1TNK.2rank.Husk
+		Actor: 1TNK.rank2.Husk
 	ProducibleWithLevel:
 		Prerequisites: ~techlevel.low
 		InitialLevels: 2
 
-1TNK.3rank:
+1TNK.rank3:
 	Inherits: 1TNK
 	Buildable:
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~servicedepot.upgraded, ~alliestechcenter.upgraded
 	RenderSprites:
-		Image: 1tnk.3rank
+		Image: 1tnk.rank3
 	SpawnActorOnDeath:
-		Actor: 1TNK.3rank.Husk
+		Actor: 1TNK.rank3.Husk
 	ProducibleWithLevel:
 		Prerequisites: ~techlevel.low
 		InitialLevels: 3

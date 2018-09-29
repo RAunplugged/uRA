@@ -9,7 +9,7 @@
 	RenderSprites:
 		Image: 1tnk.destroyed
 
-1TNK.2rank.Husk:
+1TNK.rank2.Husk:
 	Inherits: ^Husk
 	Tooltip:
 		Name: Husk (Light Tank)
@@ -20,14 +20,14 @@
 	RenderSprites:
 		Image: 1tnk.destroyed
 
-1TNK.3rank.Husk:
+1TNK.rank3.Husk:
 	Inherits: ^Husk
 	Tooltip:
 		Name: Husk (Light Tank)
 	ThrowsParticle@turret:
 		Anim: turret
 	TransformOnCapture:
-		IntoActor: 1tnk.3rank
+		IntoActor: 1tnk.rank3
 	RenderSprites:
 		Image: 1tnk.destroyed
 
