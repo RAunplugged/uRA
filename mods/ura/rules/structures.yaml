@@ -873,7 +873,7 @@ SPEN:
 
 DOME:
 	Inherits: ^Building
-	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDown
+	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDownMute
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Radar Dome
@@ -885,6 +885,10 @@ DOME:
 		Type: Wood
 	Power:
 		Amount: -40
+		RequiresCondition: !deployed
+	Power@deployed:
+		Amount: -240
+		RequiresCondition: deployed
 	ProvidesRadar:
 		RequiresCondition: !jammed && !disabled
 	Buildable:
@@ -899,7 +903,11 @@ DOME:
 		Types: SpyInfiltrate
 	RevealsShroud:
 		Range: 10c256
-		RequiresCondition: !disabled
+		RequiresCondition: !disabled && !deployed
+		RevealGeneratedShroud: False
+	RevealsShroud@deployed:
+		Range: 15c0
+		RequiresCondition: !disabled && deployed
 		RevealGeneratedShroud: False
 	RevealsShroud@Offline:
 		Range: 5c256
@@ -910,6 +918,11 @@ DOME:
 	DetectCloaked:
 		Range: 5c256
 		RequiresCondition: !disabled
+	GrantConditionOnDeploy:
+		DeployedCondition: deployed
+		SkipMakeAnimation: True
+		DeploySound: bleep9.aud
+		UndeploySound: bleep13.aud
 	RenderDetectionCircle:
 	ExternalCondition@JAMMED:
 		Condition: jammed
@@ -1272,7 +1285,7 @@ ATEK:
 		Prerequisites: weap, dome, ~structures.allies, ~techlevel.high
 		Description: Provides Allied advanced technologies.\n  Special Ability: GPS Satellite
 	InfiltrateForSupportPower:
-		Proxy: techcenter.upgraded
+		Proxy: alliestechcenter.upgraded
 		Types: SpyInfiltrate
 	RevealsShroud:
 		Range: 10c0
@@ -1314,7 +1327,7 @@ STEK:
 		Prerequisites: weap, dome, ~structures.soviet, ~techlevel.high
 		Description: Provides Soviet advanced technologies.
 	InfiltrateForSupportPower:
-		Proxy: techcenter.upgraded
+		Proxy: soviettechcenter.upgraded
 		Types: SpyInfiltrate
 	RevealsShroud:
 		Range: 7c576
@@ -1758,7 +1771,6 @@ FENC:
 		Cost: 50
 	CustomSellValue:
 		Value: 0
-
 	Health:
 		HP: 150
 	Armor:
@@ -1882,6 +1894,9 @@ PDOX:
 		RequiresCondition: !disabled
 	SpawnActorsOnSell:
 		ActorTypes: e1,e1,e1,e1,e1,e1,e1,e1,e1,tecn,tecn,tecn,tecn,tecn,einstein
+	SpawnActorOnDeath@rare:
+		Actor: einstein
+		Probability: 2
 	SupportPowerChargeBar:
 	ProvidesPrerequisite@germany:
 		Factions: germany
@@ -2020,6 +2035,9 @@ MSLO:
 		RequiresCondition: !disabled
 	SupportPowerChargeBar:
 	WithNukeLaunchAnimation:
+	AnnounceOnBuild:
+	Voiced:
+		VoiceSet: MissileSiloVoice
 	ProvidesPrerequisite@buildingname:
 	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: mslo
@@ -2054,12 +2072,25 @@ WOOD:
 	Inherits: ^Wall
 	Tooltip:
 		Name: Wooden Fence
+	Valued:
+		Cost: 50
+	CustomSellValue:
+		Value: 0
+	Health:
+		HP: 25
 	Armor:
 		Type: Wood
+	Buildable:
+		Queue: Defense
+		BuildPaletteOrder: 200
+		Prerequisites: ~church, ~techlevel.low
+		Description: Stops infantry.\nCan be crushed by vehicles.
 	LineBuild:
 		NodeTypes: woodfence
 	LineBuildNode:
 		Types: woodfence
+	Crushable:
+		CrushClasses: woodfence
 	WithWallSpriteBody:
 		Type: woodfence
 

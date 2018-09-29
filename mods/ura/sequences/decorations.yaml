@@ -711,6 +711,7 @@ wood:
 	damaged-idle:
 		Start: 16
 		Length: 16
+	icon: woodfencicon
 
 barl:
 	idle:

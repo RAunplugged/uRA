@@ -220,6 +220,12 @@
 		RequiresCondition: powerdown
 		Modifier: 0
 
+^DisableOnLowPowerOrPowerDownMute:
+	Inherits: ^DisableOnLowPowerOrPowerDown
+	ToggleConditionOnOrder:
+		-DisabledSound:
+		-EnabledSound:
+
 ^DisabledByPowerOutage:
 	WithColoredOverlay@IDISABLE:
 		RequiresCondition: disabled
@@ -521,7 +527,6 @@
 	Aircraft:
 		RepairBuildings: afld, afld.ukraine, afld.brutal, afld.ukraine.brutal, afld.hard, afld.ukraine.hard, afld.easy, afld.ukraine.easy
 		AirborneCondition: airborne
-	FlyCircleOnIdle:
 	AttackMove:
 	Guard:
 	EjectOnDeath:
@@ -857,10 +862,22 @@
 
 ^CivBuilding:
 	Inherits: ^TechBuilding
+	ExternalCapturable:
+	ExternalCapturableBar:
+	Cargo:
+		Types: Infantry
+		MaxWeight: 1
+		PipCount: 1
+		EjectOnDeath: True
+		LoadedCondition: loaded
 	Explodes:
 		Weapon: SmallBuildingExplode
 	Explodes@CIVPANIC:
 		Weapon: CivPanicExplosion
+	RevealsShroud:
+		Range: 0c512
+	Targetable:
+		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
 	SpawnActorOnDeath@1:
 		Actor: c1
 		Probability: 40

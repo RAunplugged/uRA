@@ -191,7 +191,7 @@ HELI:
 	SpawnActorOnDeath:
 		Actor: HELI.Husk
 	ProducibleWithLevel:
-		Prerequisites: aircraft.upgraded, techcenter.upgraded
+		Prerequisites: aircraft.upgraded, radardome.upgraded
 
 YAK:
 	Inherits: ^Plane
@@ -216,6 +216,7 @@ YAK:
 		Speed: 178
 		RepulsionSpeed: 40
 		MaximumPitch: 56
+	FlyCircleOnIdle:
 	RevealsShroud:
 		Range: 13c0
 		Type: GroundPosition
@@ -283,6 +284,7 @@ MIG:
 		Speed: 235
 		RepulsionSpeed: 40
 		MaximumPitch: 56
+	FlyCircleOnIdle:
 	RevealsShroud:
 		Range: 15c0
 		Type: GroundPosition
@@ -322,7 +324,7 @@ MIG:
 	SpawnActorOnDeath:
 		Actor: MIG.Husk
 	ProducibleWithLevel:
-		Prerequisites: aircraft.upgraded, techcenter.upgraded
+		Prerequisites: aircraft.upgraded, radardome.upgraded
 
 BADR:
 	Inherits: ^NeutralPlane

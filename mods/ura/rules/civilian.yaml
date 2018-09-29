@@ -152,6 +152,7 @@ HOSP:
 
 MISS:
 	Inherits: ^TechBuilding
+	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDownMute
 	Inherits@shape: ^3x2Shape
 	Tooltip:
 		Name: Communications Center
@@ -165,6 +166,9 @@ MISS:
 		HP: 600
 	Armor:
 		Type: Wood
+	Power@deployed:
+		Amount: -200
+		RequiresCondition: deployed
 	Building:
 		Footprint: xxx xxx ===
 		Dimensions: 3,3
@@ -176,10 +180,22 @@ MISS:
 	RevealsShroud:
 		Range: 10c256
 		RevealGeneratedShroud: False
+		RequiresCondition: !disabled && !deployed
+	RevealsShroud@deployed:
+		Range: 15c0
+		RequiresCondition: !disabled && deployed
+		RevealGeneratedShroud: False
+	RevealsShroud@Offline:
+		Range: 5c256
+		RequiresCondition: disabled
 	RevealsShroud@GAPGEN:
 		Range: 5c256
 	GpsDot:
 		String: Communications
+	GrantConditionOnDeploy:
+		DeployedCondition: deployed
+		DeploySound: bleep9.aud
+		UndeploySound: bleep13.aud
 	Selectable:
 		Priority: 0
 		Bounds: 72,48
@@ -212,6 +228,11 @@ FCOM:
 		Type: Wood
 	Power:
 		Amount: 0
+	Production:
+		Produces: Infantry, Soldier
+	PrimaryBuilding:
+		PrimaryCondition: primary
+		SelectionNotification: PrimaryBuildingSelected
 	GivesBuildableArea:
 		AreaTypes: building
 	BaseProvider:
@@ -232,6 +253,19 @@ FCOM:
 		Bounds: 48,48
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
+	Exit:
+		SpawnOffset: -725,640,0
+		ExitCell: 0,2
+		ProductionTypes: Soldier, Infantry
+	RallyPoint:
+	ProductionBar:
+	WithDecoration@primary:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-primary
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: primary
 	ExternalCapturable:
 		CaptureCompleteTime: 30
 	ExternalCapturableBar:
@@ -296,8 +330,8 @@ V01:
 		Type: Rectangle
 			TopLeft: -768, -597
 			BottomRight: 896, 683
-	RevealsShroud:
-		Range: 10c0
+	ProvidesPrerequisite@church:
+		Prerequisite: church
 	MapEditorData:
 		ExcludeTilesets: DESERT, INTERIOR
 
@@ -463,6 +497,8 @@ V19.Husk:
 	-Demolishable:
 	-Explodes:
 	-Explodes@CIVPANIC:
+	-ExternalCapturable:
+	-ExternalCapturableBar:
 	WithIdleOverlay:
 		StartSequence: fire-start
 		Sequence: fire-loop

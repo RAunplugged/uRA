@@ -487,7 +487,11 @@ radardome.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 
-techcenter.upgraded:
+alliestechcenter.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+
+soviettechcenter.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 

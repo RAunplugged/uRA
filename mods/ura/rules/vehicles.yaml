@@ -147,7 +147,7 @@ TRUK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~vehicles.allies, ~techlevel.low
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~!servicedepot.upgraded
 		Description: Fast tank, good for scouting.\n  Strong vs Light armor\n  Weak vs Infantry, Tanks, Aircraft
 	RevealsShroud:
 		Range: 7c576
@@ -167,6 +167,8 @@ TRUK:
 		MuzzleSequence: muzzle
 	Turreted:
 		TurnSpeed: 7
+	Selectable:
+		Class: 1tnk
 	AttackTurreted:
 	WithMuzzleOverlay:
 	WithSpriteTurret:
@@ -176,6 +178,30 @@ TRUK:
 		EffectiveOwnerFromOwner: true
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded
+
+1TNK.2rank:
+	Inherits: 1TNK
+	Buildable:
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~servicedepot.upgraded, ~!alliestechcenter.upgraded
+	RenderSprites:
+		Image: 1tnk.2rank
+	SpawnActorOnDeath:
+		Actor: 1TNK.2rank.Husk
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded, servicedepot.upgraded
+		InitialLevels: 2
+
+1TNK.3rank:
+	Inherits: 1TNK
+	Buildable:
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~servicedepot.upgraded, ~alliestechcenter.upgraded
+	RenderSprites:
+		Image: 1tnk.3rank
+	SpawnActorOnDeath:
+		Actor: 1TNK.3rank.Husk
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded, servicedepot.upgraded, ~alliestechcenter.upgraded
+		InitialLevels: 3
 
 2TNK:
 	Inherits: ^TrackedVehicle
@@ -195,7 +221,7 @@ TRUK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
-		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium
+		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~!alliestechcenter.upgraded
 		Description: Allied Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	RevealsShroud:
 		Range: 7c576
@@ -217,6 +243,7 @@ TRUK:
 		TurnSpeed: 5
 	Selectable:
 		DecorationBounds: 28,28
+		Class: 2tnk
 	SelectionDecorations:
 	AttackTurreted:
 	WithMuzzleOverlay:
@@ -228,10 +255,22 @@ TRUK:
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded, servicedepot.upgraded
 
-2TNK.GER:
+2TNK.2rank:
 	Inherits: 2TNK
 	Buildable:
-		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium
+		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, servicedepot.upgraded, ~alliestechcenter.upgraded
+	RenderSprites:
+		Image: 2tnk.2rank
+	SpawnActorOnDeath:
+		Actor: 2TNK.2rank.Husk
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded, servicedepot.upgraded, ~alliestechcenter.upgraded
+		InitialLevels: 2
+
+2TNK.Ger:
+	Inherits: 2TNK
+	Buildable:
+		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~!alliestechcenter.upgraded
 		Description: German Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Tooltip:
 		Name: German Medium Tank
@@ -246,7 +285,19 @@ TRUK:
 	RenderSprites:
 		Image: 2tnk.ger
 	SpawnActorOnDeath:
-		Actor: 2TNK.GER.Husk
+		Actor: 2TNK.Ger.Husk
+
+2TNK.Ger.2rank:
+	Inherits: 2TNK.Ger
+	Buildable:
+		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~servicedepot.upgraded, ~alliestechcenter.upgraded
+	RenderSprites:
+		Image: 2tnk.ger.2rank
+	SpawnActorOnDeath:
+		Actor: 2TNK.Ger.2rank.Husk
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded, servicedepot.upgraded, ~alliestechcenter.upgraded
+		InitialLevels: 2
 
 3TNK:
 	Inherits: ^TrackedVehicle
@@ -362,7 +413,7 @@ TRUK:
 	Selectable:
 		DecorationBounds: 44,38,0,-4
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, servicedepot.upgraded, techcenter.upgraded
+		Prerequisites: vehicles.upgraded, radardome.upgraded
 
 # Modified version of the Mammoth KV-8 by FiveAces
 4TNK.KV-8:
@@ -416,7 +467,7 @@ JEEP:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
-		Prerequisites: ~vehicles.allies, ~techlevel.low
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~!servicedepot.upgraded
 		Description: Fast scout & anti-infantry vehicle.\nCan carry one infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	RevealsShroud:
 		Range: 9c256
@@ -433,6 +484,8 @@ JEEP:
 	# AttackFrontal:
 	#	FacingTolerance: 128
 	#	RequiresCondition: ifv-medic
+	Selectable:
+		Class: jeep
 	WithMuzzleOverlay:
 	WithSpriteTurret:
 		RequiresCondition: !ifv-medic && !ifv-mechanic && ifv-dog
@@ -609,6 +662,26 @@ JEEP:
 		ValidTargets: Infantry
 		InvalidTargets: NoAutoTarget
 		RequiresCondition: ifv-sniper || ifv-tanya
+
+JEEP.2rank:
+	Inherits: JEEP
+	Buildable:
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~servicedepot.upgraded, ~!alliestechcenter.upgraded
+	RenderSprites:
+		Image: jeep.2rank
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded, servicedepot.upgraded
+		InitialLevels: 2
+
+JEEP.3rank:
+	Inherits: JEEP
+	Buildable:
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~servicedepot.upgraded, ~alliestechcenter.upgraded
+	RenderSprites:
+		Image: jeep.3rank
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded, servicedepot.upgraded, ~alliestechcenter.upgraded
+		InitialLevels: 3
 
 FTRK:
 	Inherits: ^Vehicle
@@ -906,7 +979,7 @@ MRJ:
 		Sequence: spinner
 		Offset: -256,0,256
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, techcenter.upgraded
+		Prerequisites: vehicles.upgraded, radardome.upgraded
 
 CTNK:
 	Inherits: ^Vehicle
@@ -953,7 +1026,7 @@ CTNK:
 		DecorationBounds: 30,30
 	SelectionDecorations:
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, techcenter.upgraded
+		Prerequisites: vehicles.upgraded, radardome.upgraded
 
 STNK:
 	Inherits: ^Vehicle
@@ -1011,7 +1084,7 @@ STNK:
 		InitialStanceAI: ReturnFire
 	WithSpriteTurret:
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, techcenter.upgraded
+		Prerequisites: vehicles.upgraded, radardome.upgraded
 
 TTNK:
 	Inherits: ^TrackedVehicle
@@ -1052,7 +1125,7 @@ TTNK:
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, techcenter.upgraded
+		Prerequisites: vehicles.upgraded, radardome.upgraded
 
 QTNK:
 	Inherits: ^TrackedVehicle
@@ -1094,7 +1167,7 @@ QTNK:
 		DecorationBounds: 44,38,0,-4
 	SelectionDecorations:
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, servicedepot.upgraded, techcenter.upgraded
+		Prerequisites: vehicles.upgraded, radardome.upgraded
 
 DTRK:
 	Inherits: ^Vehicle

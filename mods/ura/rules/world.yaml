@@ -35,7 +35,7 @@
 			Water: 80
 	Locomotor@WHEELED:
 		Name: wheeled
-		Crushes: mine, crate
+		Crushes: mine, crate, woodfence
 		TerrainSpeeds:
 			Clear: 80
 			Rough: 40
@@ -46,7 +46,7 @@
 			Beach: 40
 	Locomotor@HEAVYWHEELED:
 		Name: heavywheeled
-		Crushes: wall, mine, crate, infantry
+		Crushes: wall, mine, crate, infantry, woodfence
 		TerrainSpeeds:
 			Clear: 80
 			Rough: 40
@@ -57,7 +57,7 @@
 			Beach: 40
 	Locomotor@LIGHTTRACKED:
 		Name: lighttracked
-		Crushes: wall, mine, crate
+		Crushes: wall, mine, crate, woodfence
 		TerrainSpeeds:
 			Clear: 80
 			Rough: 70
@@ -68,7 +68,7 @@
 			Beach: 70
 	Locomotor@TRACKED:
 		Name: tracked
-		Crushes: wall, infantry, mine, crate
+		Crushes: wall, infantry, mine, crate, woodfence
 		TerrainSpeeds:
 			Clear: 80
 			Rough: 70
@@ -79,7 +79,7 @@
 			Beach: 70
 	Locomotor@HEAVYTRACKED:
 		Name: heavytracked
-		Crushes: wall, infantry, vehicles, mine, crate, heavywall
+		Crushes: wall, infantry, vehicles, mine, crate, heavywall, woodfence
 		TerrainSpeeds:
 			Clear: 80
 			Rough: 70
@@ -95,7 +95,7 @@
 			Water: 100
 	Locomotor@LANDINGCRAFT:
 		Name: lcraft
-		Crushes: crate
+		Crushes: crate, woodfence
 		TerrainSpeeds:
 			Water: 100
 			Beach: 70

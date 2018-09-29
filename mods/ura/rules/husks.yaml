@@ -9,6 +9,28 @@
 	RenderSprites:
 		Image: 1tnk.destroyed
 
+1TNK.2rank.Husk:
+	Inherits: ^Husk
+	Tooltip:
+		Name: Husk (Light Tank)
+	ThrowsParticle@turret:
+		Anim: turret
+	TransformOnCapture:
+		IntoActor: 1tnk.2rank
+	RenderSprites:
+		Image: 1tnk.destroyed
+
+1TNK.3rank.Husk:
+	Inherits: ^Husk
+	Tooltip:
+		Name: Husk (Light Tank)
+	ThrowsParticle@turret:
+		Anim: turret
+	TransformOnCapture:
+		IntoActor: 1tnk.3rank
+	RenderSprites:
+		Image: 1tnk.destroyed
+
 2TNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
@@ -20,7 +42,18 @@
 	RenderSprites:
 		Image: 2tnk.destroyed
 
-2TNK.GER.Husk:
+2TNK.2rank.Husk:
+	Inherits: ^Husk
+	Tooltip:
+		Name: Husk (Medium Tank)
+	ThrowsParticle@turret:
+		Anim: turret
+	TransformOnCapture:
+		IntoActor: 2tnk.2rank
+	RenderSprites:
+		Image: 2tnk.destroyed
+
+2TNK.Ger.Husk:
 	Inherits: ^Husk
 	Tooltip:
 		Name: Husk (German Medium Tank)
@@ -28,6 +61,17 @@
 		Anim: turret
 	TransformOnCapture:
 		IntoActor: 2tnk.ger
+	RenderSprites:
+		Image: 2tnk.destroyed
+
+2TNK.Ger.2rank.Husk:
+	Inherits: ^Husk
+	Tooltip:
+		Name: Husk (German Medium Tank)
+	ThrowsParticle@turret:
+		Anim: turret
+	TransformOnCapture:
+		IntoActor: 2tnk.ger.2rank
 	RenderSprites:
 		Image: 2tnk.destroyed
 

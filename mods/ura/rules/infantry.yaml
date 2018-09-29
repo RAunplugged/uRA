@@ -294,6 +294,8 @@ SPY:
 		Voice: Move
 	AttackFrontal:
 	-Guard:
+	Selectable:
+		Class: Spy
 	Voiced:
 		VoiceSet: SpyVoice
 	-WithInfantryBody:
@@ -309,7 +311,7 @@ SPY:
 		ZOffset: 256
 		RequiresCondition: disguise
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded, techcenter.upgraded
+		Prerequisites: barracks.upgraded, radardome.upgraded
 
 SPY.England:
 	Inherits: SPY
@@ -318,7 +320,7 @@ SPY.England:
 	Health:
 		HP: 50
 	Buildable:
-		Prerequisites: ~infantry.england, dome, ~tent, ~techlevel.medium
+		Prerequisites: ~infantry.england, dome, ~tent, ~techlevel.medium, ~!radardome.upgraded
 	RevealsShroud:
 		Range: 8c0
 		RevealGeneratedShroud: False
@@ -329,9 +331,19 @@ SPY.England:
 	AutoTarget:
 		ScanRadius: 7
 	RenderSprites:
-		Image: spy
+		Image: spy.england
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
+
+SPY.England.2rank:
+	Inherits: SPY.England
+	Buildable:
+		Prerequisites: ~infantry.england, dome, ~tent, ~techlevel.medium, ~radardome.upgraded
+	RenderSprites:
+		Image: spy.england.2rank
+	ProducibleWithLevel:
+		Prerequisites: barracks.upgraded, radardome.upgraded
+		InitialLevels: 2
 
 MEDI:
 	Inherits: ^Soldier
@@ -412,7 +424,7 @@ MECH:
 	Voiced:
 		VoiceSet: MechanicVoice
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded, servicedepot.upgraded
+		Prerequisites: barracks.upgraded
 
 HIJACKER:
 	Inherits: ^Soldier
@@ -460,7 +472,7 @@ HIJACKER:
 		IdleSequences: idle
 		StandSequences: stand
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded, servicedepot.upgraded
+		Prerequisites: barracks.upgraded
 
 SHOK:
 	Inherits: ^Soldier
@@ -509,7 +521,7 @@ SHOK:
 		StandSequences: parachute
 		RequiresCondition: parachute
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded, techcenter.upgraded
+		Prerequisites: barracks.upgraded, radardome.upgraded
 
 #Tanya Swim properties and sequences by SirCake
 E7:
@@ -581,7 +593,7 @@ E7:
 	AnnounceOnBuild:
 	AnnounceOnKill:
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded, techcenter.upgraded
+		Prerequisites: barracks.upgraded, radardome.upgraded
 
 # Modified version of the Grenade Launcher by Kiraye
 E9:
@@ -596,7 +608,7 @@ E9:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		Prerequisites: ~infantry.france, ~barracks.upgraded, ~radardome.upgraded, ~techcenter.upgraded
+		Prerequisites: ~infantry.france, ~barracks.upgraded, ~radardome.upgraded, ~alliestechcenter.upgraded
 		BuildPaletteOrder: 400
 		Description: Infantry armed with long range grenade launcher.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
@@ -629,7 +641,7 @@ E10:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		Prerequisites: ~infantry.germany, ~barracks.upgraded, ~servicedepot.upgraded, ~techcenter.upgraded
+		Prerequisites: ~infantry.germany, ~barracks.upgraded, ~servicedepot.upgraded, ~alliestechcenter.upgraded
 		BuildPaletteOrder: 401
 		Description: Infantry equiped with a rapid firing Machine Gun.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
@@ -658,7 +670,7 @@ SNIPER:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 500
-		Prerequisites: ~infantry.england, ~barracks.upgraded, radardome.upgraded, ~techcenter.upgraded
+		Prerequisites: ~infantry.england, ~barracks.upgraded, radardome.upgraded, ~alliestechcenter.upgraded
 		Description: Elite sniper infantry unit.\nCan detect cloaked units.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	RevealsShroud:
 		Range: 9c256

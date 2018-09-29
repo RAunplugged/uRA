@@ -411,8 +411,8 @@ HARV.Easy:
 	RenderSprites:
 		Image: 2tnk
 	-MapEditorData:
-2TNK.GER.Easy:
-	Inherits: 2TNK.GER
+2TNK.Ger.Easy:
+	Inherits: 2TNK.Ger
 	Valued:
 		Cost: 1260
 	Buildable:

@@ -431,8 +431,8 @@ HARV.Hard:
 	RenderSprites:
 		Image: 2tnk
 	-MapEditorData:
-2TNK.GER.Hard:
-	Inherits: 2TNK.GER
+2TNK.Ger.Hard:
+	Inherits: 2TNK.Ger
 	Valued:
 		Cost: 840
 	Buildable:

@@ -410,8 +410,8 @@ HARV.Brutal:
 	RenderSprites:
 		Image: 2tnk
 	-MapEditorData:
-2TNK.GER.Brutal:
-	Inherits: 2TNK.GER
+2TNK.Ger.Brutal:
+	Inherits: 2TNK.Ger
 	Valued:
 		Cost: 630
 	Buildable:

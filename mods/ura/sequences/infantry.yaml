@@ -615,6 +615,148 @@ spy:
 		Facings: 8
 	icon: spyicon
 
+spy.england:
+	stand:
+		Facings: 8
+	stand2:
+		Start: 8
+		Facings: 8
+	run:
+		Start: 16
+		Length: 6
+		Facings: 8
+		Tick: 100
+	shoot:
+		Start: 64
+		Length: 8
+		Facings: 8
+	idle1:
+		Start: 256
+		Length: 14
+		Tick: 120
+	idle2:
+		Start: 271
+		Length: 16
+		Tick: 120
+	die1:
+		Start: 288
+		Length: 8
+	die2:
+		Start: 296
+		Length: 8
+	die3:
+		Start: 304
+		Length: 8
+	die4:
+		Start: 312
+		Length: 12
+	die5:
+		Start: 324
+		Length: 18
+	die6: electro
+		Length: *
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			INTERIOR: TEMPERAT
+	die-crushed: corpse1
+		Length: 6
+		Tick: 1600
+		ZOffset: -511
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			INTERIOR: TEMPERAT
+	prone-stand:
+		Start: 144
+		Stride: 4
+		Facings: 8
+	prone-stand2:
+		Start: 144
+		Stride: 4
+		Facings: 8
+	prone-run:
+		Start: 144
+		Length: 4
+		Facings: 8
+		Tick: 100
+	prone-shoot:
+		Start: 192
+		Length: 8
+		Facings: 8
+	icon: spy.englandicon
+
+spy.england.2rank:
+	stand:
+		Facings: 8
+	stand2:
+		Start: 8
+		Facings: 8
+	run:
+		Start: 16
+		Length: 6
+		Facings: 8
+		Tick: 100
+	shoot:
+		Start: 64
+		Length: 8
+		Facings: 8
+	idle1:
+		Start: 256
+		Length: 14
+		Tick: 120
+	idle2:
+		Start: 271
+		Length: 16
+		Tick: 120
+	die1:
+		Start: 288
+		Length: 8
+	die2:
+		Start: 296
+		Length: 8
+	die3:
+		Start: 304
+		Length: 8
+	die4:
+		Start: 312
+		Length: 12
+	die5:
+		Start: 324
+		Length: 18
+	die6: electro
+		Length: *
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			INTERIOR: TEMPERAT
+	die-crushed: corpse1
+		Length: 6
+		Tick: 1600
+		ZOffset: -511
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			INTERIOR: TEMPERAT
+	prone-stand:
+		Start: 144
+		Stride: 4
+		Facings: 8
+	prone-stand2:
+		Start: 144
+		Stride: 4
+		Facings: 8
+	prone-run:
+		Start: 144
+		Length: 4
+		Facings: 8
+		Tick: 100
+	prone-shoot:
+		Start: 192
+		Length: 8
+		Facings: 8
+	icon: spy.england.2rankicon
+
 thf:
 	stand:
 		Facings: 8
