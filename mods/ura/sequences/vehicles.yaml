@@ -89,6 +89,7 @@ hhusk2:
 	muzzle: gunfire2
 		Length: 2
 	icon: 1tnk.2rankicon
+		UseTilesetExtension: false
 
 1tnk.3rank:
 	idle:
@@ -101,6 +102,7 @@ hhusk2:
 	muzzle: gunfire2
 		Length: 2
 	icon: 1tnk.3rankicon
+		UseTilesetExtension: false
 
 1tnk.destroyed:
 	idle: 1tnk
@@ -136,6 +138,7 @@ hhusk2:
 	muzzle: gunfire2
 		Length: 5
 	icon: 2tnk.2rankicon
+		UseTilesetExtension: false
 
 2tnk.ger:
 	idle:
@@ -277,6 +280,7 @@ jeep.2rank:
 		Length: 6
 		Facings: 8
 	icon: jeep.2rankicon
+		UseTilesetExtension: false
 
 jeep.3rank:
 	idle:
@@ -290,6 +294,7 @@ jeep.3rank:
 		Length: 6
 		Facings: 8
 	icon: jeep.3rankicon
+		UseTilesetExtension: false
 
 apc:
 	idle:
