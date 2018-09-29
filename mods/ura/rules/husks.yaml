@@ -16,7 +16,7 @@
 	ThrowsParticle@turret:
 		Anim: turret
 	TransformOnCapture:
-		IntoActor: 1tnk.2rank
+		IntoActor: 1tnk.rank2
 	RenderSprites:
 		Image: 1tnk.destroyed
 
