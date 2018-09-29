@@ -962,10 +962,10 @@ MRJ:
 	RevealsShroud:
 		Range: 9c256
 	JamsMissiles:
-		Range: 6c0
+		Range: 6c512
 		DeflectionStances: Neutral, Enemy
 	DetectCloaked:
-		Range: 6c0
+		Range: 7c576
 	ProximityExternalCondition@JAMMER:
 		Range: 18c0
 		ValidStances: Enemy, Neutral
