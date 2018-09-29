@@ -621,6 +621,7 @@ E9:
 	Explodes:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
+		DamageSource: Killer
 	TakeCover:
 		ProneOffset: 160,0,-288
 	WithInfantryBody:
