@@ -295,3 +295,7 @@ ModContent:
 		ura|installer/firstdecade.yaml
 		ura|installer/origin.yaml
 		ura|installer/soviet95.yaml
+
+ModCredits:
+	ModTabTitle: RA: Unplugged
+	ModCreditsFile: ura|modcredits.yaml
