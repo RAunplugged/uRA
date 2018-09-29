@@ -188,7 +188,7 @@ TRUK:
 	SpawnActorOnDeath:
 		Actor: 1TNK.2rank.Husk
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, servicedepot.upgraded
+		Prerequisites: ~techlevel.low
 		InitialLevels: 2
 
 1TNK.3rank:
@@ -200,7 +200,7 @@ TRUK:
 	SpawnActorOnDeath:
 		Actor: 1TNK.3rank.Husk
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, servicedepot.upgraded, ~alliestechcenter.upgraded
+		Prerequisites: ~techlevel.low
 		InitialLevels: 3
 
 2TNK:
@@ -264,7 +264,7 @@ TRUK:
 	SpawnActorOnDeath:
 		Actor: 2TNK.2rank.Husk
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, servicedepot.upgraded, ~alliestechcenter.upgraded
+		Prerequisites: ~techlevel.medium
 		InitialLevels: 2
 
 2TNK.Ger:
@@ -296,7 +296,7 @@ TRUK:
 	SpawnActorOnDeath:
 		Actor: 2TNK.Ger.2rank.Husk
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, servicedepot.upgraded, ~alliestechcenter.upgraded
+		Prerequisites: ~techlevel.medium
 		InitialLevels: 2
 
 3TNK:
@@ -670,7 +670,7 @@ JEEP.2rank:
 	RenderSprites:
 		Image: jeep.2rank
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, servicedepot.upgraded
+		Prerequisites: ~techlevel.low
 		InitialLevels: 2
 
 JEEP.3rank:
@@ -680,7 +680,7 @@ JEEP.3rank:
 	RenderSprites:
 		Image: jeep.3rank
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, servicedepot.upgraded, ~alliestechcenter.upgraded
+		Prerequisites: ~techlevel.low
 		InitialLevels: 3
 
 FTRK:
