@@ -40,7 +40,7 @@ MapFolders:
 	ura|maps/missions: System
 	ura|maps/modded: System
 	ura|maps/other: System
-	~^maps/ura/alpha: User
+	~^maps/ura/Alpha: User
 	~^maps/ra/release-20180923: User
 
 Rules:
