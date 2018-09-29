@@ -342,7 +342,7 @@ SPY.England.2rank:
 	RenderSprites:
 		Image: spy.england.2rank
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded, radardome.upgraded
+		Prerequisites: ~techlevel.medium
 		InitialLevels: 2
 
 MEDI:
