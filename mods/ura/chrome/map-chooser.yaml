@@ -19,19 +19,19 @@ Background@MAPCHOOSER_PANEL:
 			Width: 110
 			Text: Official
 			Font: Bold
-		Button@MODDED_TAB_BUTTON:
+		Button@USER_MAPS_TAB_BUTTON:
 			X: 130
 			Y: 48
 			Height: 31
 			Width: 110
-			Text: Modded
+			Text: Custom
 			Font: Bold
-		Button@USER_MAPS_TAB_BUTTON:
+		Button@MODDED_TAB_BUTTON:
 			X: 240
 			Y: 48
 			Height: 31
 			Width: 110
-			Text: Custom
+			Text: Modded (WIP)
 			Font: Bold
 		Container@SYSTEM_MAPS_TAB:
 			X: 20
