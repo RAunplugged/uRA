@@ -595,6 +595,18 @@ scrollbar: buttons.png
 	up_arrow: 132,140,16,16
 	up_pressed: 132,140,16,16
 
+# Used for tooltips and the video player
+dialogTransparentNoBorder: dialog3.png
+	background: 517,392,54,54
+	border-t: 517,387,54,0
+	border-b: 517,446,54,0
+	border-l: 512,392,0,54
+	border-r: 571,392,0,54
+	corner-tl: 512,387,0,0
+	corner-tr: 571,387,0,0
+	corner-bl: 512,446,0,0
+	corner-br: 571,446,0,0
+
 # A copy of dialog3 (pressed button)
 progressbar-bg: dialog.png
 	background: 641,1,126,126

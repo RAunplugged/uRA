@@ -102,7 +102,7 @@ ChromeLayout:
 	common|chrome/ingame-infostats.yaml
 	common|chrome/ingame-menu.yaml
 	ura|chrome/ingame-observer.yaml
-	common|chrome/ingame-observerstats.yaml
+	ura|chrome/ingame-observerstats.yaml
 	ura|chrome/ingame-player.yaml
 	common|chrome/ingame-perf.yaml
 	common|chrome/ingame-debug.yaml
