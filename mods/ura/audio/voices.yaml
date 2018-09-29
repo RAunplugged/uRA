@@ -143,4 +143,5 @@ StavrosVoice:
 
 MissileSiloVoice:
 	Voices:
+		Select: 
 		Build: buzzy1
