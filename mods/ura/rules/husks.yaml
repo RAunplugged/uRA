@@ -64,17 +64,6 @@
 	RenderSprites:
 		Image: 2tnk.destroyed
 
-2TNK.Ger.2rank.Husk:
-	Inherits: ^Husk
-	Tooltip:
-		Name: Husk (German Medium Tank)
-	ThrowsParticle@turret:
-		Anim: turret
-	TransformOnCapture:
-		IntoActor: 2tnk.ger.2rank
-	RenderSprites:
-		Image: 2tnk.destroyed
-
 3TNK.Husk:
 	Inherits: ^Husk
 	Tooltip:
