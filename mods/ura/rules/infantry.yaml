@@ -335,12 +335,12 @@ SPY.England:
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
 
-SPY.England.2rank:
+SPY.England.rank2:
 	Inherits: SPY.England
 	Buildable:
 		Prerequisites: ~infantry.england, dome, ~tent, ~techlevel.medium, ~radardome.upgraded
 	RenderSprites:
-		Image: spy.england.2rank
+		Image: spy.england.rank2
 	ProducibleWithLevel:
 		Prerequisites: ~techlevel.medium
 		InitialLevels: 2

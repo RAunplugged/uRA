@@ -686,7 +686,7 @@ spy.england:
 		Facings: 8
 	icon: spy.englandicon
 
-spy.england.2rank:
+spy.england.rank2:
 	stand:
 		Facings: 8
 	stand2:
@@ -755,7 +755,7 @@ spy.england.2rank:
 		Start: 192
 		Length: 8
 		Facings: 8
-	icon: spy.england.2rankicon
+	icon: spy.england.rank2icon
 
 thf:
 	stand:
