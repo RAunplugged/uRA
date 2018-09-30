@@ -27,7 +27,7 @@ E7:
 	Buildable:
 		Prerequisites: ~disabled
 	Health:
-		HP: 25000
+		HP: 250
 	Armor:
 		Type: Heavy
         
@@ -93,7 +93,7 @@ AFAC:
 	Buildable:
 		Prerequisites: ~disabled
 	Health:
-		HP: 400000
+		HP: 4000
 	Tooltip:
 		Name: Alloy Facility
 		GenericName: Alloy Facility
@@ -156,7 +156,7 @@ ZKOI:
 		Name: Chitzkoi
 		GenericName: Cyborg Dog
 	Health:
-		HP: 100000
+		HP: 1000
 	-Crushable:
 	RevealsShroud:
 		Range: 7c0
@@ -174,7 +174,7 @@ VOLK:
 	Tooltip:
 		Name: Volkov
 	Health:
-		HP: 250000
+		HP: 2500
 	Armor:
 		Type: Heavy
 	-Crushable:
