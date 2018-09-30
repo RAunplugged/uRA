@@ -3,6 +3,7 @@
 # - Crates
 # - Support powers and events
 # - Misc actors
+# - Infiltration Tech Tree
 # - Misc
 
 CRATE:
@@ -465,15 +466,24 @@ MINP:
 	Explodes:
 		Weapon: APMine
 
-# Misc
+# Infiltration Tech Tree
 
 barracks.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
+	ProvidesPrerequisite@MEDIUMDOME:
+		RequiresPrerequisites: radardome.upgraded
+		Prerequisite: mediumdome.upgraded
 
 vehicles.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
+	ProvidesPrerequisite@MEDIUMFIX:
+		RequiresPrerequisites: servicedepot.upgraded
+		Prerequisite: mediumfix.upgraded
+	ProvidesPrerequisite@HIGHFIXALLIES:
+		RequiresPrerequisites: servicedepot.upgraded, alliestechcenter.upgraded
+		Prerequisite: allieshighfix.upgraded
 
 aircraft.upgraded:
 	AlwaysVisible:
@@ -482,14 +492,26 @@ aircraft.upgraded:
 servicedepot.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
+	ProvidesPrerequisite@MEDIUMFIX:
+		RequiresPrerequisites: vehicles.upgraded
+		Prerequisite: mediumfix.upgraded
+	ProvidesPrerequisite@HIGHFIXALLIES:
+		RequiresPrerequisites: vehicles.upgraded, alliestechcenter.upgraded
+		Prerequisite: allieshighfix.upgraded
 
 radardome.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
+	ProvidesPrerequisite@MEDIUMDOME:
+		RequiresPrerequisites: barracks.upgraded
+		Prerequisite: mediumdome.upgraded
 
 alliestechcenter.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
+	ProvidesPrerequisite@HIGHFIXALLIES:
+		RequiresPrerequisites: vehicles.upgraded, servicedepot.upgraded
+		Prerequisite: allieshighfix.upgraded
 
 soviettechcenter.upgraded:
 	AlwaysVisible:
@@ -498,6 +520,8 @@ soviettechcenter.upgraded:
 biolab.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
+
+# Misc
 
 fact.colorpicker:
 	Inherits: FACT

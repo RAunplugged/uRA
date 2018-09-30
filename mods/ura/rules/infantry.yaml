@@ -320,7 +320,7 @@ SPY.England:
 	Health:
 		HP: 50
 	Buildable:
-		Prerequisites: ~infantry.england, dome, ~tent, ~techlevel.medium, ~!radardome.upgraded
+		Prerequisites: ~infantry.england, dome, ~tent, ~!mediumdome.upgraded
 	RevealsShroud:
 		Range: 8c0
 		RevealGeneratedShroud: False
@@ -338,7 +338,7 @@ SPY.England:
 SPY.England.rank2:
 	Inherits: SPY.England
 	Buildable:
-		Prerequisites: ~infantry.england, dome, ~tent, ~techlevel.medium, ~radardome.upgraded
+		Prerequisites: ~infantry.england, dome, ~tent, ~mediumdome.upgraded
 	RenderSprites:
 		Image: spy.england.rank2
 	ProducibleWithLevel:

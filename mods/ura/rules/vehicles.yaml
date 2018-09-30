@@ -147,7 +147,7 @@ TRUK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~!servicedepot.upgraded
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~!mediumfix.upgraded, ~!allieshighfix.upgraded
 		Description: Fast tank, good for scouting.\n  Strong vs Light armor\n  Weak vs Infantry, Tanks, Aircraft
 	RevealsShroud:
 		Range: 7c576
@@ -182,7 +182,7 @@ TRUK:
 1TNK.rank2:
 	Inherits: 1TNK
 	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~servicedepot.upgraded, ~!alliestechcenter.upgraded
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~mediumfix.upgraded, ~!allieshighfix.upgraded
 	RenderSprites:
 		Image: 1tnk.rank2
 	SpawnActorOnDeath:
@@ -194,7 +194,7 @@ TRUK:
 1TNK.rank3:
 	Inherits: 1TNK
 	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~servicedepot.upgraded, ~alliestechcenter.upgraded
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~allieshighfix.upgraded
 	RenderSprites:
 		Image: 1tnk.rank3
 	SpawnActorOnDeath:
@@ -221,7 +221,7 @@ TRUK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
-		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~!alliestechcenter.upgraded
+		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~!allieshighfix.upgraded
 		Description: Allied Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	RevealsShroud:
 		Range: 7c576
@@ -258,7 +258,7 @@ TRUK:
 2TNK.rank2:
 	Inherits: 2TNK
 	Buildable:
-		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~servicedepot.upgraded, ~alliestechcenter.upgraded
+		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~allieshighfix.upgraded
 	RenderSprites:
 		Image: 2tnk.rank2
 	SpawnActorOnDeath:
@@ -270,7 +270,7 @@ TRUK:
 2TNK.Ger:
 	Inherits: 2TNK
 	Buildable:
-		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~!alliestechcenter.upgraded
+		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~!allieshighfix.upgraded
 		Description: German Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Tooltip:
 		Name: German Medium Tank
@@ -290,7 +290,7 @@ TRUK:
 2TNK.Ger.rank2:
 	Inherits: 2TNK.Ger
 	Buildable:
-		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~servicedepot.upgraded, ~alliestechcenter.upgraded
+		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~allieshighfix.upgraded
 	RenderSprites:
 		Image: 2tnk.ger.rank2
 	SpawnActorOnDeath:
@@ -467,7 +467,7 @@ JEEP:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~!servicedepot.upgraded
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~!mediumfix.upgraded, ~!allieshighfix.upgraded
 		Description: Fast scout & anti-infantry vehicle.\nCan carry one infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	RevealsShroud:
 		Range: 9c256
@@ -666,7 +666,7 @@ JEEP:
 JEEP.2rank:
 	Inherits: JEEP
 	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~servicedepot.upgraded, ~!alliestechcenter.upgraded
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~mediumfix.upgraded, ~!allieshighfix.upgraded
 	RenderSprites:
 		Image: jeep.2rank
 	ProducibleWithLevel:
@@ -676,7 +676,7 @@ JEEP.2rank:
 JEEP.3rank:
 	Inherits: JEEP
 	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~servicedepot.upgraded, ~alliestechcenter.upgraded
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~allieshighfix.upgraded
 	RenderSprites:
 		Image: jeep.3rank
 	ProducibleWithLevel:
