@@ -16,15 +16,13 @@ https://github.com/OpenRA/OpenRA/commit/493603b130d53991c08544015bc87a66a9658bd5
 https://github.com/OpenRA/OpenRA/commit/91097078da479c83a004e9604cdf4b5b3f71c1ba
 4* Add FlyCircleOnIdle trait:
 https://github.com/OpenRA/OpenRA/commit/ca5c83a4f73cafb6f760da5c4eddf9c0f3093c83
-5* add MustaphaTR CustomProductionCost and Time traits:
-https://github.com/RAunplugged/OpenRA/commit/1a51f48412e08403279f6d97f715b499e07dd0cd
 
 
 
 Latest updates:
 
 OpenRAModSDK commit tag: 8a1f1a9 - 8a1f1a9706057cb8872a784cbe8fc0b915778554
-OpenRA Engine commit tag: 8144fca - 8144fca5be948a20e9cf9c1270db5b70c069af3e
+OpenRA Engine commit tag: 893e20e - 893e20ee76537c6dd55df410a387c208b48927fe
 
 
 
