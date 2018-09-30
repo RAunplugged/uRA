@@ -258,7 +258,7 @@ TRUK:
 2TNK.rank2:
 	Inherits: 2TNK
 	Buildable:
-		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, servicedepot.upgraded, ~alliestechcenter.upgraded
+		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~servicedepot.upgraded, ~alliestechcenter.upgraded
 	RenderSprites:
 		Image: 2tnk.rank2
 	SpawnActorOnDeath:
