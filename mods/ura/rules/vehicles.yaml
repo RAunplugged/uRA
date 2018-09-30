@@ -177,7 +177,7 @@ TRUK:
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
+		Prerequisites: warfactory.upgraded
 
 1TNK.rank2:
 	Inherits: 1TNK
@@ -253,7 +253,7 @@ TRUK:
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, servicedepot.upgraded
+		Prerequisites: warfactory.upgraded, servicedepot.upgraded
 
 2TNK.rank2:
 	Inherits: 2TNK
@@ -348,7 +348,7 @@ TRUK:
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, servicedepot.upgraded
+		Prerequisites: warfactory.upgraded, servicedepot.upgraded
 
 4TNK:
 	Inherits: ^TrackedVehicle
@@ -413,7 +413,7 @@ TRUK:
 	Selectable:
 		DecorationBounds: 44,38,0,-4
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, radardome.upgraded
+		Prerequisites: warfactory.upgraded, radardome.upgraded
 
 # Modified version of the Mammoth KV-8 by FiveAces
 4TNK.KV-8:
@@ -490,7 +490,7 @@ JEEP:
 	WithSpriteTurret:
 		RequiresCondition: !ifv-medic && !ifv-mechanic && ifv-dog
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
+		Prerequisites: warfactory.upgraded
 	Cargo:
 		Types: Infantry
 		MaxWeight: 1
@@ -732,7 +732,7 @@ FTRK:
 		DecorationBounds: 28,28
 	SelectionDecorations:
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
+		Prerequisites: warfactory.upgraded
 
 APC:
 	Inherits: ^TrackedVehicle
@@ -773,7 +773,7 @@ APC:
 	AttackFrontal:
 	WithMuzzleOverlay:
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded
+		Prerequisites: warfactory.upgraded
 
 MNLY:
 	Inherits: ^TrackedVehicle
@@ -815,7 +815,7 @@ MNLY:
 	RenderSprites:
 		Image: MNLY
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, servicedepot.upgraded
+		Prerequisites: warfactory.upgraded, servicedepot.upgraded
 
 ARTY:
 	Inherits: ^TrackedVehicle
@@ -853,7 +853,7 @@ ARTY:
 	AttackFrontal:
 	WithMuzzleOverlay:
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, radardome.upgraded
+		Prerequisites: warfactory.upgraded, radardome.upgraded
 
 V2RL:
 	Inherits: ^Vehicle
@@ -897,7 +897,7 @@ V2RL:
 		Sequence: empty-idle
 		Name: reloading
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, radardome.upgraded
+		Prerequisites: warfactory.upgraded, radardome.upgraded
 
 MGG:
 	Inherits: ^Vehicle
@@ -938,7 +938,7 @@ MGG:
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, radardome.upgraded
+		Prerequisites: warfactory.upgraded, radardome.upgraded
 
 MRJ:
 	Inherits: ^Vehicle
@@ -979,7 +979,7 @@ MRJ:
 		Sequence: spinner
 		Offset: -256,0,256
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, radardome.upgraded
+		Prerequisites: warfactory.upgraded, radardome.upgraded
 
 CTNK:
 	Inherits: ^Vehicle
@@ -1026,7 +1026,7 @@ CTNK:
 		DecorationBounds: 30,30
 	SelectionDecorations:
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, radardome.upgraded
+		Prerequisites: warfactory.upgraded, radardome.upgraded
 
 STNK:
 	Inherits: ^Vehicle
@@ -1084,7 +1084,7 @@ STNK:
 		InitialStanceAI: ReturnFire
 	WithSpriteTurret:
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, radardome.upgraded
+		Prerequisites: warfactory.upgraded, radardome.upgraded
 
 TTNK:
 	Inherits: ^TrackedVehicle
@@ -1125,7 +1125,7 @@ TTNK:
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, radardome.upgraded
+		Prerequisites: warfactory.upgraded, radardome.upgraded
 
 QTNK:
 	Inherits: ^TrackedVehicle
@@ -1167,7 +1167,7 @@ QTNK:
 		DecorationBounds: 44,38,0,-4
 	SelectionDecorations:
 	ProducibleWithLevel:
-		Prerequisites: vehicles.upgraded, radardome.upgraded
+		Prerequisites: warfactory.upgraded, radardome.upgraded
 
 DTRK:
 	Inherits: ^Vehicle

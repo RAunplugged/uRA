@@ -472,7 +472,7 @@ WEAP:
 		Prerequisites: proc, ~techlevel.low
 		Description: Produces vehicles.
 	InfiltrateForSupportPower:
-		Proxy: vehicles.upgraded
+		Proxy: warfactory.upgraded
 		Types: SpyInfiltrate
 	RevealsShroud:
 		Range: 5c256

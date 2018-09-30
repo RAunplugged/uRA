@@ -475,7 +475,7 @@ barracks.upgraded:
 		RequiresPrerequisites: radardome.upgraded
 		Prerequisite: mediumdome.upgraded
 
-vehicles.upgraded:
+warfactory.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 	ProvidesPrerequisite@MEDIUMFIX:
@@ -493,10 +493,10 @@ servicedepot.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 	ProvidesPrerequisite@MEDIUMFIX:
-		RequiresPrerequisites: vehicles.upgraded
+		RequiresPrerequisites: warfactory.upgraded
 		Prerequisite: mediumfix.upgraded
 	ProvidesPrerequisite@HIGHFIXALLIES:
-		RequiresPrerequisites: vehicles.upgraded, alliestechcenter.upgraded
+		RequiresPrerequisites: warfactory.upgraded, alliestechcenter.upgraded
 		Prerequisite: allieshighfix.upgraded
 
 radardome.upgraded:
@@ -510,7 +510,7 @@ alliestechcenter.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 	ProvidesPrerequisite@HIGHFIXALLIES:
-		RequiresPrerequisites: vehicles.upgraded, servicedepot.upgraded
+		RequiresPrerequisites: warfactory.upgraded, servicedepot.upgraded
 		Prerequisite: allieshighfix.upgraded
 
 soviettechcenter.upgraded:
