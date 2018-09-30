@@ -1290,13 +1290,11 @@ Actors:
 		Owner: Greece
 		Facing: 95
 		SubCell: 4
-		Health: 1
 	InitialRifleman02: e1
 		Location: 24,76
 		Owner: Greece
 		Facing: 95
 		SubCell: 5
-		Health: 1
 	InitialHuntUnit04: e3
 		Location: 27,76
 		Owner: Greece
