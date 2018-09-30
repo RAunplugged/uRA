@@ -572,8 +572,6 @@ V25:
 		Type: Rectangle
 			TopLeft: -683, -683
 			BottomRight: 1024, 512
-	RevealsShroud:
-		Range: 10c0
 
 V25.Money:
 	Inherits: V25
