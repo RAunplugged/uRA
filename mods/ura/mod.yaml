@@ -110,7 +110,7 @@ ChromeLayout:
 	ura|chrome/mainmenu.yaml
 	common|chrome/settings.yaml
 	common|chrome/credits.yaml
-	common|chrome/lobby.yaml
+	ura|chrome/lobby.yaml
 	common|chrome/lobby-mappreview.yaml
 	common|chrome/lobby-players.yaml
 	common|chrome/lobby-options.yaml
@@ -177,15 +177,18 @@ ChromeMetrics:
 	ura|metrics.yaml
 
 Fonts:
+	Title:
+		Font: ura|ZoodRangmah.ttf
+		Size:48
 	Regular:
 		Font: common|FreeSans.ttf
 		Size:14
 	Bold:
 		Font: common|FreeSansBold.ttf
 		Size:14
-	Title:
-		Font: ura|ZoodRangmah.ttf
-		Size:48
+	Medium:
+		Font: common|FreeSans.ttf
+		Size:18
 	MediumBold:
 		Font: common|FreeSansBold.ttf
 		Size:18

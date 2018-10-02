@@ -21,203 +21,203 @@ Container@MAINMENU:
 			ImageCollection: logos
 			ImageName: logo
 		Label@VERSION_LABEL:
-			X: WINDOW_RIGHT - 296
+			X: WINDOW_RIGHT - 305
 			Y: 296 - 20
 			Width: 296 - 20
 			Height: 25
 			Align: Center
-			Font: Regular
+			Font: Medium
 			Shadow: true
 		Container@MENUS:
-			X: 13 + (WINDOW_RIGHT - 522) / 4 - WIDTH / 2
+			X: (WINDOW_RIGHT - 522) / 4 - WIDTH / 2 - 30
 			Y: WINDOW_BOTTOM / 2 - HEIGHT / 2
-			Width: 200
-			Height: 360
+			Width: 214
+			Height: 402
 			Children:
 				Background@MAIN_MENU:
 					Width: PARENT_RIGHT
 					Height: PARENT_BOTTOM
 					Children:
 						Label@MAINMENU_LABEL_TITLE:
-							X: 0
+							X: 6
 							Y: 17
 							Width: 200
 							Height: 30
-							Text: Red Alert: Unplugged
+							Text: Main Menu
 							Align: Center
-							Font: Bold
+							Font: MediumBold
 						Button@SINGLEPLAYER_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 60
-							Width: 140
-							Height: 30
+							Width: 160
+							Height: 35
 							Text: Singleplayer
-							Font: Bold
+							Font: Medium
 						Button@MULTIPLAYER_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 100
-							Width: 140
-							Height: 30
+							Y: 107
+							Width: 160
+							Height: 35
 							Text: Multiplayer
-							Font: Bold
+							Font: Medium
 						Button@SETTINGS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 140
-							Width: 140
-							Height: 30
+							Y: 154
+							Width: 160
+							Height: 35
 							Text: Settings
-							Font: Bold
+							Font: Medium
 						Button@EXTRAS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 180
-							Width: 140
-							Height: 30
+							Y: 201
+							Width: 160
+							Height: 35
 							Text: Extras
-							Font: Bold
+							Font: Medium
 						Button@CONTENT_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 220
-							Width: 140
-							Height: 30
+							Y: 248
+							Width: 160
+							Height: 35
 							Text: Manage Content
-							Font: Bold
+							Font: Medium
 						Button@QUIT_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 300
-							Width: 140
-							Height: 30
+							Y: 342
+							Width: 160
+							Height: 35
 							Text: Quit
-							Font: Bold
+							Font: Medium
 				Background@SINGLEPLAYER_MENU:
 					Width: PARENT_RIGHT
 					Height: PARENT_BOTTOM
 					Children:
 						Label@SINGLEPLAYER_MENU_TITLE:
-							X: 0
+							X: 6
 							Y: 17
 							Width: 200
 							Height: 30
 							Text: Singleplayer
 							Align: Center
-							Font: Bold
+							Font: MediumBold
 						Button@SKIRMISH_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 60
-							Width: 140
-							Height: 30
+							Width: 160
+							Height: 35
 							Text: Skirmish
-							Font: Bold
+							Font: Medium
 						Button@MISSIONS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 100
-							Width: 140
-							Height: 30
+							Y: 107
+							Width: 160
+							Height: 35
 							Text: Missions
-							Font: Bold
+							Font: Medium
 						Button@TUTORIAL_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 140
-							Width: 140
-							Height: 30
+							Y: 154
+							Width: 160
+							Height: 35
 							Text: Tutorial (WIP)
-							Font: Bold
+							Font: Medium
 						Button@BACK_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Key: escape
-							Y: 300
-							Width: 140
-							Height: 30
+							Y: 342
+							Width: 160
+							Height: 35
 							Text: Back
-							Font: Bold
+							Font: Medium
 				Background@EXTRAS_MENU:
 					Width: PARENT_RIGHT
 					Height: PARENT_BOTTOM
 					Children:
 						Label@EXTRAS_MENU_TITLE:
-							X: 0
+							X: 6
 							Y: 17
 							Width: 200
 							Height: 30
 							Text: Extras
 							Align: Center
-							Font: Bold
+							Font: MediumBold
 						Button@REPLAYS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 60
-							Width: 140
-							Height: 30
+							Width: 160
+							Height: 35
 							Text: Replays
-							Font: Bold
+							Font: Medium
 						Button@MUSIC_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 100
-							Width: 140
-							Height: 30
+							Y: 107
+							Width: 160
+							Height: 35
 							Text: Music
-							Font: Bold
+							Font: Medium
 						Button@MAP_EDITOR_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 140
-							Width: 140
-							Height: 30
+							Y: 154
+							Width: 160
+							Height: 35
 							Text: Map Editor
-							Font: Bold
+							Font: Medium
 						Button@ASSETBROWSER_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 180
-							Width: 140
-							Height: 30
+							Y: 201
+							Width: 160
+							Height: 35
 							Text: Asset Browser
-							Font: Bold
+							Font: Medium
 						Button@CREDITS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 220
-							Width: 140
-							Height: 30
+							Y: 258
+							Width: 160
+							Height: 35
 							Text: Credits
-							Font: Bold
+							Font: Medium
 						Button@BACK_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Key: escape
-							Y: 300
-							Width: 140
-							Height: 30
+							Y: 342
+							Width: 160
+							Height: 35
 							Text: Back
-							Font: Bold
+							Font: Medium
 				Background@MAP_EDITOR_MENU:
 					Width: PARENT_RIGHT
 					Height: PARENT_BOTTOM
 					Children:
 						Label@MAP_EDITOR_MENU_TITLE:
-							X: 0
-							Y: 20
+							X: 6
+							Y: 17
 							Width: 200
 							Height: 30
 							Text: Map Editor
 							Align: Center
-							Font: Bold
+							Font: MediumBold
 						Button@NEW_MAP_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 60
-							Width: 140
-							Height: 30
+							Width: 160
+							Height: 35
 							Text: New Map
-							Font: Bold
+							Font: Medium
 						Button@LOAD_MAP_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 100
-							Width: 140
-							Height: 30
+							Y: 107
+							Width: 160
+							Height: 35
 							Text: Load Map
-							Font: Bold
+							Font: Medium
 						Button@BACK_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Key: escape
-							Y: 300
-							Width: 140
-							Height: 30
+							Y: 342
+							Width: 160
+							Height: 35
 							Text: Back
-							Font: Bold
+							Font: Medium
 		Background@SYSTEM_INFO_PROMPT:
 			X: (WINDOW_RIGHT - WIDTH) / 2
 			Y: (WINDOW_BOTTOM - HEIGHT) / 2
