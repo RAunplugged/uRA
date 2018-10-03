@@ -32,7 +32,7 @@ Container@MAINMENU:
 			X: (WINDOW_RIGHT - 522) / 4 - WIDTH / 2 - 30
 			Y: WINDOW_BOTTOM / 2 - HEIGHT / 2
 			Width: 214
-			Height: 402
+			Height: 392
 			Children:
 				Background@MAIN_MENU:
 					Width: PARENT_RIGHT
@@ -40,50 +40,51 @@ Container@MAINMENU:
 					Children:
 						Label@MAINMENU_LABEL_TITLE:
 							X: 6
-							Y: 17
+							Y: 20
 							Width: 200
 							Height: 30
 							Text: Main Menu
 							Align: Center
 							Font: MediumBold
+							Shadow: true
 						Button@SINGLEPLAYER_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 60
+							Y: 65
 							Width: 160
 							Height: 35
 							Text: Singleplayer
 							Font: Medium
 						Button@MULTIPLAYER_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 107
+							Y: 110
 							Width: 160
 							Height: 35
 							Text: Multiplayer
 							Font: Medium
 						Button@SETTINGS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 154
+							Y: 155
 							Width: 160
 							Height: 35
 							Text: Settings
 							Font: Medium
 						Button@EXTRAS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 201
+							Y: 200
 							Width: 160
 							Height: 35
 							Text: Extras
 							Font: Medium
 						Button@CONTENT_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 248
+							Y: 245
 							Width: 160
 							Height: 35
 							Text: Manage Content
 							Font: Medium
 						Button@QUIT_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 342
+							Y: 335
 							Width: 160
 							Height: 35
 							Text: Quit
@@ -94,29 +95,30 @@ Container@MAINMENU:
 					Children:
 						Label@SINGLEPLAYER_MENU_TITLE:
 							X: 6
-							Y: 17
+							Y: 20
 							Width: 200
 							Height: 30
 							Text: Singleplayer
 							Align: Center
 							Font: MediumBold
+							Shadow: true
 						Button@SKIRMISH_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 60
+							Y: 65
 							Width: 160
 							Height: 35
 							Text: Skirmish
 							Font: Medium
 						Button@MISSIONS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 107
+							Y: 110
 							Width: 160
 							Height: 35
 							Text: Missions
 							Font: Medium
 						Button@TUTORIAL_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 154
+							Y: 155
 							Width: 160
 							Height: 35
 							Text: Tutorial (WIP)
@@ -124,7 +126,7 @@ Container@MAINMENU:
 						Button@BACK_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Key: escape
-							Y: 342
+							Y: 335
 							Width: 160
 							Height: 35
 							Text: Back
@@ -135,43 +137,44 @@ Container@MAINMENU:
 					Children:
 						Label@EXTRAS_MENU_TITLE:
 							X: 6
-							Y: 17
+							Y: 20
 							Width: 200
 							Height: 30
 							Text: Extras
 							Align: Center
 							Font: MediumBold
+							Shadow: true
 						Button@REPLAYS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 60
+							Y: 66
 							Width: 160
 							Height: 35
 							Text: Replays
 							Font: Medium
 						Button@MUSIC_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 107
+							Y: 110
 							Width: 160
 							Height: 35
 							Text: Music
 							Font: Medium
 						Button@MAP_EDITOR_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 154
+							Y: 155
 							Width: 160
 							Height: 35
 							Text: Map Editor
 							Font: Medium
 						Button@ASSETBROWSER_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 201
+							Y: 200
 							Width: 160
 							Height: 35
 							Text: Asset Browser
 							Font: Medium
 						Button@CREDITS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 258
+							Y: 245
 							Width: 160
 							Height: 35
 							Text: Credits
@@ -179,7 +182,7 @@ Container@MAINMENU:
 						Button@BACK_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Key: escape
-							Y: 342
+							Y: 335
 							Width: 160
 							Height: 35
 							Text: Back
@@ -190,22 +193,23 @@ Container@MAINMENU:
 					Children:
 						Label@MAP_EDITOR_MENU_TITLE:
 							X: 6
-							Y: 17
+							Y: 20
 							Width: 200
 							Height: 30
 							Text: Map Editor
 							Align: Center
 							Font: MediumBold
+							Shadow: true
 						Button@NEW_MAP_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 60
+							Y: 65
 							Width: 160
 							Height: 35
 							Text: New Map
 							Font: Medium
 						Button@LOAD_MAP_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 107
+							Y: 110
 							Width: 160
 							Height: 35
 							Text: Load Map
@@ -213,7 +217,7 @@ Container@MAINMENU:
 						Button@BACK_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Key: escape
-							Y: 342
+							Y: 335
 							Width: 160
 							Height: 35
 							Text: Back

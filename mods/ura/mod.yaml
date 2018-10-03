@@ -111,11 +111,11 @@ ChromeLayout:
 	common|chrome/settings.yaml
 	common|chrome/credits.yaml
 	ura|chrome/lobby.yaml
-	common|chrome/lobby-mappreview.yaml
-	common|chrome/lobby-players.yaml
-	common|chrome/lobby-options.yaml
-	common|chrome/lobby-music.yaml
-	common|chrome/lobby-servers.yaml
+	ura|chrome/lobby-mappreview.yaml
+	ura|chrome/lobby-players.yaml
+	ura|chrome/lobby-options.yaml
+	ura|chrome/lobby-music.yaml
+	ura|chrome/lobby-servers.yaml
 	common|chrome/lobby-kickdialogs.yaml
 	common|chrome/color-picker.yaml
 	ura|chrome/map-chooser.yaml
@@ -178,31 +178,31 @@ ChromeMetrics:
 
 Fonts:
 	Title:
-		Font: ura|ZoodRangmah.ttf
+		Font: ura|fonts/ZoodRangmah.ttf
 		Size:48
 	Regular:
-		Font: common|FreeSans.ttf
+		Font: ura|fonts/FreeSans.ttf
 		Size:14
 	Bold:
-		Font: common|FreeSansBold.ttf
+		Font: ura|fonts/FreeSansBold.ttf
 		Size:14
 	Medium:
-		Font: common|FreeSans.ttf
+		Font: ura|fonts/FreeSansEdited.ttf
 		Size:18
 	MediumBold:
-		Font: common|FreeSansBold.ttf
+		Font: ura|fonts/FreeSansEditedBold.ttf
 		Size:18
 	BigBold:
-		Font: common|FreeSansBold.ttf
+		Font: ura|fonts/FreeSansEditedBold.ttf
 		Size:24
 	Small:
-		Font: common|FreeSans.ttf
+		Font: ura|fonts/FreeSans.ttf
 		Size:12
 	Tiny:
-		Font: common|FreeSans.ttf
+		Font: ura|fonts/FreeSans.ttf
 		Size:10
 	TinyBold:
-		Font: common|FreeSansBold.ttf
+		Font: ura|fonts/FreeSansBold.ttf
 		Size:10
 
 Missions:

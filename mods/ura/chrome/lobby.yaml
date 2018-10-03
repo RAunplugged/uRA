@@ -1,9 +1,9 @@
 Background@SERVER_LOBBY:
 	Logic: LobbyLogic
 	X: (WINDOW_RIGHT - WIDTH) / 2
-	Y: (WINDOW_BOTTOM - HEIGHT) / 2
-	Width: 808
-	Height: 600
+	Y: (WINDOW_BOTTOM - HEIGHT) / 2 + 25
+	Width: 919
+	Height: 658
 	Children:
 		ColorPreviewManager@COLOR_MANAGER:
 		Label@SERVER_NAME:
@@ -11,91 +11,91 @@ Background@SERVER_LOBBY:
 			Align: Center
 			Width: PARENT_RIGHT
 			Height: 25
-			Font: Bold
+			Font: MediumBold
+			Shadow: true
 		Container@MAP_PREVIEW_ROOT:
-			X: PARENT_RIGHT - 20 - WIDTH
-			Y: 67
-			Width: 174
-			Height: 250
+			X: PARENT_RIGHT - 32 - WIDTH
+			Y: 70
+			Width: 224
 		DropDownButton@SLOTS_DROPDOWNBUTTON:
-			X: 20
-			Y: 291
-			Width: 178
-			Height: 25
-			Font: Bold
+			X: 40
+			Y: 351
+			Width: 165
+			Height: 27
+			Font: Medium
 			Text: Slot Admin
 		Container@SKIRMISH_TABS:
 			Visible: False
 			Children:
 				Button@PLAYERS_TAB:
-					X: 203
-					Y: 285
+					X: 215
+					Y: 349
 					Width: 134
-					Height: 31
-					Font: Bold
+					Height: 29
+					Font: Medium
 					Text: Players
 				Button@OPTIONS_TAB:
-					X: 337
-					Y: 285
-					Width: 133
-					Height: 31
-					Font: Bold
+					X: 349
+					Y: 349
+					Width: 134
+					Height: 29
+					Font: Medium
 					Text: Options
 				Button@MUSIC_TAB:
-					X: 470
-					Y: 285
+					X: 483
+					Y: 349
 					Width: 133
-					Height: 31
-					Font: Bold
+					Height: 29
+					Font: Medium
 					Text: Music
 		Container@MULTIPLAYER_TABS:
 			Visible: False
 			Children:
 				Button@PLAYERS_TAB:
-					X: 203
-					Y: 285
+					X: 215
+					Y: 349
 					Width: 100
-					Height: 31
-					Font: Bold
+					Height: 29
+					Font: Medium
 					Text: Players
 				Button@OPTIONS_TAB:
-					X: 303
-					Y: 285
+					X: 315
+					Y: 349
 					Width: 100
-					Height: 31
-					Font: Bold
+					Height: 29
+					Font: Medium
 					Text: Options
 				Button@MUSIC_TAB:
-					X: 403
-					Y: 285
+					X: 415
+					Y: 349
 					Width: 100
-					Height: 31
-					Font: Bold
+					Height: 29
+					Font: Medium
 					Text: Music
 				Button@SERVERS_TAB:
-					X: 503
-					Y: 285
+					X: 515
+					Y: 349
 					Width: 100
-					Height: 31
-					Font: Bold
+					Height: 29
+					Font: Medium
 					Text: Servers
 		Container@TOP_PANELS_ROOT:
 			X: 20
-			Y: 67
-			Width: 583
+			Y: 70
+			Width: 620
 			Height: 219
 		Button@CHANGEMAP_BUTTON:
-			X: PARENT_RIGHT - WIDTH - 20
-			Y: 291
+			X: PARENT_RIGHT - WIDTH - 57
+			Y: 351
 			Width: 174
-			Height: 25
+			Height: 27
 			Text: Change Map
-			Font: Bold
+			Font: Medium
 		Container@LOBBYCHAT:
 			X: 20
 			Y: PARENT_BOTTOM - HEIGHT - 20
 			Width: PARENT_RIGHT - 40
-			Height: 259
+			Height: 253
 			Children:
 				ScrollPanel@CHAT_DISPLAY:
 					Width: PARENT_RIGHT
@@ -141,17 +141,17 @@ Background@SERVER_LOBBY:
 							Text: Chat:
 		Button@START_GAME_BUTTON:
 			X: PARENT_RIGHT - WIDTH - 150
-			Y: PARENT_BOTTOM - HEIGHT - 20
+			Y: PARENT_BOTTOM - HEIGHT - 18
 			Width: 120
-			Height: 25
+			Height: 29
 			Text: Start Game
-			Font: Bold
+			Font: Medium
 		Button@DISCONNECT_BUTTON:
 			X: PARENT_RIGHT - WIDTH - 20
-			Y: PARENT_BOTTOM - HEIGHT - 20
+			Y: PARENT_BOTTOM - HEIGHT - 18
 			Width: 120
-			Height: 25
+			Height: 29
 			Text: Leave Game
-			Font: Bold
+			Font: Medium
 		Container@FACTION_DROPDOWN_PANEL_ROOT:
 		TooltipContainer@TOOLTIP_CONTAINER:
