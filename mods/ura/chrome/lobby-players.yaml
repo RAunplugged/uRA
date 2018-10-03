@@ -9,22 +9,22 @@ Container@LOBBY_PLAYER_BIN:
 			Height: PARENT_BOTTOM
 			Children:
 				Label@LABEL_LOBBY_NAME:
-					Width: 180
+					Width: 118
 					Height: 25
 					Text: Name
 					Shadow: true
 					Align: Center
 					Font: Bold
 				Label@LABEL_LOBBY_COLOR:
-					X: 190
+					X: 199
 					Width: 70
 					Height: 25
 					Text: Color
 					Shadow: true
-					Align: Center
+					Align: Left
 					Font: Bold
 				Label@LABEL_LOBBY_FACTION:
-					X: 270
+					X: 240
 					Width: 130
 					Height: 25
 					Text: Faction
@@ -32,15 +32,15 @@ Container@LOBBY_PLAYER_BIN:
 					Align: Center
 					Font: Bold
 				Label@LABEL_LOBBY_TEAM:
-					X: 410
-					Width: 48
+					X: 415
+					Width: 52
 					Height: 25
 					Text: Team
 					Shadow: true
 					Align: Center
 					Font: Bold
 				Label@LABEL_LOBBY_SPAWN:
-					X: 468
+					X: 482
 					Width: 48
 					Height: 25
 					Text: Spawn
@@ -48,12 +48,12 @@ Container@LOBBY_PLAYER_BIN:
 					Align: Center
 					Font: Bold
 				Label@LABEL_LOBBY_STATUS:
-					X: 525
+					X: 552
 					Width: 20
 					Height: 25
 					Text: Ready
 					Shadow: true
-					Align: Left
+					Align: Center
 					Font: Bold
 		ScrollPanel@LOBBY_PLAYERS:
 			Width: PARENT_RIGHT
@@ -85,7 +85,7 @@ Container@LOBBY_PLAYER_BIN:
 							Template: LATENCY_TOOLTIP
 						TextField@NAME:
 							X: 15
-							Width: 165
+							Width: 169
 							Height: 25
 							Text: Name
 							LeftMargin: 24
@@ -106,13 +106,13 @@ Container@LOBBY_PLAYER_BIN:
 									Template: ANONYMOUS_PLAYER_TOOLTIP
 						DropDownButton@SLOT_OPTIONS:
 							X: 15
-							Width: 165
+							Width: 169
 							Height: 25
 							Text: Name
 							Font: Regular
 							Visible: false
 						DropDownButton@COLOR:
-							X: 190
+							X: 194
 							Width: 70
 							Height: 25
 							IgnoreChildMouseOver: true
@@ -123,8 +123,8 @@ Container@LOBBY_PLAYER_BIN:
 									Width: PARENT_RIGHT - 35
 									Height: PARENT_BOTTOM - 12
 						DropDownButton@FACTION:
-							X: 270
-							Width: 130
+							X: 274
+							Width: 136
 							Height: 25
 							IgnoreChildMouseOver: true
 							TooltipContainer: TOOLTIP_CONTAINER
@@ -141,23 +141,23 @@ Container@LOBBY_PLAYER_BIN:
 									Height: 25
 									Text: Faction
 						DropDownButton@TEAM_DROPDOWN:
-							X: 410
-							Width: 48
+							X: 420
+							Width: 52
 							Height: 25
 							Text: Team
 						DropDownButton@SPAWN_DROPDOWN:
-							X: 468
-							Width: 48
+							X: 482
+							Width: 52
 							Height: 25
 							Text: Spawn
 						Checkbox@STATUS_CHECKBOX:
-							X: 525
+							X: 552
 							Y: 2
 							Width: 20
 							Height: 20
 							Visible: false
 						Image@STATUS_IMAGE:
-							X: 527
+							X: 554
 							Y: 4
 							Width: 20
 							Height: 20
@@ -206,7 +206,7 @@ Container@LOBBY_PLAYER_BIN:
 							Text: Name
 						DropDownButton@PLAYER_ACTION:
 							X: 15
-							Width: 165
+							Width: 169
 							Height: 25
 							Font: Regular
 							Visible: false
@@ -226,13 +226,13 @@ Container@LOBBY_PLAYER_BIN:
 									TooltipContainer: TOOLTIP_CONTAINER
 									Template: ANONYMOUS_PLAYER_TOOLTIP
 						ColorBlock@COLORBLOCK:
-							X: 195
+							X: 199
 							Y: 6
 							Width: 35
 							Height: 13
 						Container@FACTION:
-							X: 270
-							Width: 150
+							X: 274
+							Width: 154
 							Height: 25
 							Children:
 								Image@FACTIONFLAG:
@@ -246,28 +246,28 @@ Container@LOBBY_PLAYER_BIN:
 									Height: 25
 									Text: Faction
 						Label@TEAM:
-							X: 410
+							X: 422
 							Width: 23
 							Height: 25
 							Text: Team
 							Align: Center
 						Label@SPAWN:
-							X: 468
+							X: 484
 							Width: 23
 							Height: 25
 							Align: Center
 						DropDownButton@TEAM_DROPDOWN:
-							X: 410
-							Width: 48
+							X: 420
+							Width: 52
 							Height: 25
 							Visible: false
 						DropDownButton@SPAWN_DROPDOWN:
-							X: 468
-							Width: 48
+							X: 482
+							Width: 52
 							Height: 25
 							Visible: false
 						Image@STATUS_IMAGE:
-							X: 527
+							X: 554
 							Y: 4
 							Width: 20
 							Height: 20
@@ -281,21 +281,21 @@ Container@LOBBY_PLAYER_BIN:
 					Visible: false
 					Children:
 						Label@NAME:
-							Width: 165
+							Width: 169
 							Height: 25
 							X: 20
 							Y: 0 - 1
 							Text: Name
 						DropDownButton@SLOT_OPTIONS:
 							X: 15
-							Width: 165
+							Width: 169
 							Height: 25
 							Text: Name
 							Visible: false
 						Button@JOIN:
-							X: 190
+							X: 194
 							Text: Play in this slot
-							Width: 326
+							Width: 340
 							Height: 25
 				Container@TEMPLATE_EDITABLE_SPECTATOR:
 					X: 5
@@ -321,7 +321,7 @@ Container@LOBBY_PLAYER_BIN:
 							Template: LATENCY_TOOLTIP
 						TextField@NAME:
 							X: 15
-							Width: 165
+							Width: 169
 							Height: 25
 							Text: Name
 							LeftMargin: 24
@@ -340,20 +340,20 @@ Container@LOBBY_PLAYER_BIN:
 									TooltipContainer: TOOLTIP_CONTAINER
 									Template: ANONYMOUS_PLAYER_TOOLTIP
 						Label@SPECTATOR:
-							X: 190
+							X: 194
 							Width: 326
 							Height: 25
 							Text: Spectator
 							Align: Center
 							Font: Bold
 						Checkbox@STATUS_CHECKBOX:
-							X: 525
+							X: 552
 							Y: 2
 							Width: 20
 							Height: 20
 							Visible: false
 						Image@STATUS_IMAGE:
-							X: 527
+							X: 554
 							Y: 4
 							Width: 20
 							Height: 20
@@ -422,14 +422,14 @@ Container@LOBBY_PLAYER_BIN:
 									TooltipContainer: TOOLTIP_CONTAINER
 									Template: ANONYMOUS_PLAYER_TOOLTIP
 						Label@SPECTATOR:
-							X: 190
+							X: 194
 							Width: 326
 							Height: 25
 							Text: Spectator
 							Align: Center
 							Font: Bold
 						Image@STATUS_IMAGE:
-							X: 527
+							X: 554
 							Y: 4
 							Width: 20
 							Height: 20
@@ -449,8 +449,8 @@ Container@LOBBY_PLAYER_BIN:
 							Font: Regular
 							Text: Allow Spectators?
 						Button@SPECTATE:
-							X: 190
-							Width: 326
+							X: 194
+							Width: 340
 							Height: 25
 							Text: Spectate
 							Font: Regular
