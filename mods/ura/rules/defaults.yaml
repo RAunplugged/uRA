@@ -862,19 +862,10 @@
 
 ^CivBuilding:
 	Inherits: ^TechBuilding
-	ExternalCapturable:
-	ExternalCapturableBar:
-	Cargo:
-		Types: Infantry
-		MaxWeight: 1
-		PipCount: 1
-		EjectOnDeath: True
 	Explodes:
 		Weapon: SmallBuildingExplode
 	Explodes@CIVPANIC:
 		Weapon: CivPanicExplosion
-	RevealsShroud:
-		Range: 0c512
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
 	SpawnActorOnDeath@1:
