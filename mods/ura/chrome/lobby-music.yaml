@@ -14,22 +14,25 @@ Container@LOBBY_MUSIC_BIN:
 					Text: Music
 					Align: Center
 					Font: Bold
+					Shadow: true
 				Label@TITLE:
-					X: 278
+					X: 280
 					Width: 230
 					Height: 25
 					Text: Track
 					Font: Bold
+					Shadow: true
 				Label@TYPE:
-					X: PARENT_RIGHT - 63
+					X: PARENT_RIGHT - 73
 					Height: 25
 					Width: 50
 					Text: Length
 					Font: Bold
+					Shadow: true
 		Background@CONTROLS:
 			Background: dialog3
 			Width: 268
-			Height: PARENT_BOTTOM
+			Height: 279
 			Children:
 				Label@MUTE_LABEL:
 					X: 45
@@ -137,7 +140,7 @@ Container@LOBBY_MUSIC_BIN:
 		ScrollPanel@MUSIC_LIST:
 			X: 268
 			Width: PARENT_RIGHT - 268
-			Height: PARENT_BOTTOM
+			Height: 279
 			Children:
 				ScrollItem@MUSIC_TEMPLATE:
 					Width: PARENT_RIGHT - 27
@@ -150,7 +153,7 @@ Container@LOBBY_MUSIC_BIN:
 							Width: PARENT_RIGHT - 50
 							Height: 25
 						Label@LENGTH:
-							X: PARENT_RIGHT - 60
+							X: PARENT_RIGHT - 55
 							Width: 50
 							Height: 25
 							Align: Right

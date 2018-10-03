@@ -9,47 +9,49 @@ Container@LOBBY_OPTIONS_BIN:
 			Font: Bold
 			Align: Center
 			Text: Map Options
+			Shadow: true
 		ScrollPanel:
 			Logic: LobbyOptionsLogic
 			Width: PARENT_RIGHT
-			Height: PARENT_BOTTOM
+			Height: 279
 			Children:
 				Container@LOBBY_OPTIONS:
 					X: 18
-					Y: 9
+					Y: 0 - 70
 					Width: PARENT_RIGHT - 18 - 24
 					Children:
 						Container@CHECKBOX_ROW_TEMPLATE:
-							Height: 34
+							Height: 38
 							Children:
 								Checkbox@A:
-									Width: 175
+									Width: 200
 									Height: 20
 									Visible: False
 									TooltipContainer: TOOLTIP_CONTAINER
 								Checkbox@B:
-									X: 195
-									Width: 175
+									X: 210
+									Width: 200
 									Height: 20
 									Visible: False
 									TooltipContainer: TOOLTIP_CONTAINER
 								Checkbox@C:
-									X: 375
-									Width: 175
+									X: 405
+									Width: 200
 									Height: 20
 									Visible: False
 									TooltipContainer: TOOLTIP_CONTAINER
 						Container@DROPDOWN_ROW_TEMPLATE:
-							Height: 34
+							Height: 38
 							Width: PARENT_RIGHT
 							Children:
 								Label@A_DESC:
+									X: 8
 									Width: 80
 									Height: 25
 									Align: Right
 									Visible: False
 								DropDownButton@A:
-									X: 85
+									X: 93
 									Width: 160
 									Height: 25
 									Visible: False

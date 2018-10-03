@@ -8,30 +8,34 @@ Container@LOBBY_SERVERS_BIN:
 			Width: PARENT_RIGHT
 			Children:
 				Label@NAME:
-					X: 5
+					X: 10
 					Width: 255
 					Height: 25
 					Text: Server
-					Align: Center
+					Align: Left
 					Font: Bold
+					Shadow: true
 				Label@PLAYERS:
-					X: 290
+					X: 291
 					Width: 85
 					Height: 25
 					Text: Players
 					Font: Bold
+					Shadow: true
 				Label@LOCATION:
-					X: 380
+					X: 413
 					Width: 110
 					Height: 25
 					Text: Location
 					Font: Bold
+					Shadow: true
 				Label@STATUS:
-					X: 495
+					X: 536
 					Width: 50
 					Height: 25
 					Text: Status
 					Font: Bold
+					Shadow: true
 		LogicTicker@NOTICE_WATCHER:
 		Background@NOTICE_CONTAINER:
 			Width: 583
@@ -61,7 +65,7 @@ Container@LOBBY_SERVERS_BIN:
 					Font: TinyBold
 		ScrollPanel@SERVER_LIST:
 			Width: PARENT_RIGHT
-			Height: PARENT_BOTTOM
+			Height: 279
 			Children:
 				ScrollItem@HEADER_TEMPLATE:
 					X: 2
@@ -76,6 +80,7 @@ Container@LOBBY_SERVERS_BIN:
 							Width: PARENT_RIGHT
 							Height: 20
 							Align: Center
+							Shadow: true
 				ScrollItem@SERVER_TEMPLATE:
 					X: 2
 					Width: PARENT_RIGHT - 27
@@ -83,7 +88,7 @@ Container@LOBBY_SERVERS_BIN:
 					EnableChildMouseOver: True
 					Children:
 						Label@TITLE:
-							X: 5
+							X: 8
 							Width: 245
 							Height: 25
 						Image@PASSWORD_PROTECTED:
@@ -111,11 +116,11 @@ Container@LOBBY_SERVERS_BIN:
 							TooltipContainer: TOOLTIP_CONTAINER
 							TooltipTemplate: SIMPLE_TOOLTIP
 						Label@LOCATION:
-							X: 380
+							X: 412
 							Width: 110
 							Height: 25
 						Label@STATUS:
-							X: 495
+							X: 536
 							Width: 50
 							Height: 25
 		Label@PROGRESS_LABEL:
@@ -126,35 +131,35 @@ Container@LOBBY_SERVERS_BIN:
 			Align: Center
 			Visible: false
 		DropDownButton@FILTERS_DROPDOWNBUTTON:
-			Y: PARENT_BOTTOM + 5
+			Y: PARENT_BOTTOM + 62
 			Width: 147
-			Height: 25
+			Height: 27
 			Text: Filter Games
-			Font: Bold
+			Font: Medium
 		Button@RELOAD_BUTTON:
 			X: 152
-			Y: PARENT_BOTTOM + 5
-			Width: 26
-			Height: 25
+			Y: PARENT_BOTTOM + 62
+			Width: 27
+			Height: 27
 			Children:
 				Image@IMAGE_RELOAD:
-					X: 5
-					Y: 5
-					Width: 16
-					Height: 16
+					X: 6
+					Y: 6
+					Width: 15
+					Height: 15
 					ImageCollection: reload-icon
 					ImageName: enabled
 					IgnoreMouseOver: True
 					Children:
 						LogicTicker@ANIMATION:
 		Container@SELECTED_SERVER:
-			X: PARENT_RIGHT + 11
-			Width: 174
+			X: 643
+			Width: 224
 			Height: 280
 			Children:
 				Background@MAP_BG:
 					Width: PARENT_RIGHT
-					Height: 174
+					Height: 224
 					Background: dialog3
 					Children:
 						MapPreview@SELECTED_MAP_PREVIEW:
@@ -164,32 +169,37 @@ Container@LOBBY_SERVERS_BIN:
 							Height: PARENT_BOTTOM - 2
 							TooltipContainer: TOOLTIP_CONTAINER
 				Label@SELECTED_MAP:
-					Y: 172
+					Y: 223
 					Width: PARENT_RIGHT
 					Height: 25
-					Font: Bold
+					Font: MediumBold
 					Align: Center
+					Shadow: true
 				Label@SELECTED_IP:
-					Y: 187
+					Y: 240
 					Width: PARENT_RIGHT
 					Height: 25
 					Font: Tiny
 					Align: Center
+					Shadow: true
 				Label@SELECTED_STATUS:
-					Y: 203
+					Y: 256
 					Width: PARENT_RIGHT
 					Height: 25
 					Font: TinyBold
 					Align: Center
+					Shadow: true
 				Label@SELECTED_MOD_VERSION:
-					Y: 216
+					Y: 269
 					Width: PARENT_RIGHT
 					Height: 25
 					Font: Tiny
 					Align: Center
+					Shadow: true
 				Label@SELECTED_PLAYERS:
-					Y: 229
+					Y: 282
 					Width: PARENT_RIGHT
 					Height: 25
 					Font: TinyBold
 					Align: Center
+					Shadow: true
