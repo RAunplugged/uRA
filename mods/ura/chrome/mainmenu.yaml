@@ -29,7 +29,7 @@ Container@MAINMENU:
 			Font: Medium
 			Shadow: true
 		Container@MENUS:
-			X: (WINDOW_RIGHT - 522) / 4 - WIDTH / 2 - 30
+			X: (WINDOW_RIGHT - 522) / 4 - WIDTH / 2
 			Y: WINDOW_BOTTOM / 2 - HEIGHT / 2
 			Width: 214
 			Height: 392

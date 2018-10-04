@@ -1,0 +1,60 @@
+Background@DIRECTCONNECT_PANEL:
+	Logic: DirectConnectLogic
+	X: (WINDOW_RIGHT - WIDTH)/2
+	Y: (WINDOW_BOTTOM - HEIGHT)/2
+	Width: 450
+	Height: 160
+	Children:
+		Label@DIRECTCONNECT_LABEL_TITLE:
+			X: 0
+			Y: 16
+			Width: 450
+			Height: 25
+			Text: Connect to Server
+			Align: Center
+			Font: MediumBold
+			Shadow: true
+		Label@ADDRESS_LABEL:
+			X: 45
+			Y: 61
+			Width: 95
+			Height: 25
+			Align: Right
+			Text: Server Address:
+			Shadow: true
+		TextField@IP:
+			X: 145
+			Y: 62
+			Width: 210
+			MaxLength: 50
+			Height: 25
+		Label@PORT_LABEL:
+			X: 355
+			Y: 61
+			Width: 10
+			Height: 25
+			Align: Center
+			Text: :
+		TextField@PORT:
+			X: 365
+			Y: 62
+			Width: 60
+			MaxLength: 5
+			Height: 25
+			Type: Integer
+		Button@JOIN_BUTTON:
+			X: PARENT_RIGHT - WIDTH - 150
+			Y: PARENT_BOTTOM - HEIGHT - 16
+			Width: 120
+			Height: 29
+			Text: Join
+			Font: Medium
+			Key: return
+		Button@BACK_BUTTON:
+			X: PARENT_RIGHT - WIDTH - 20
+			Y: PARENT_BOTTOM - HEIGHT - 16
+			Width: 120
+			Height: 29
+			Text: Cancel
+			Font: Medium
+			Key: escape

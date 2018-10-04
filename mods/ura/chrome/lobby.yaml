@@ -141,14 +141,14 @@ Background@SERVER_LOBBY:
 							Text: Chat:
 		Button@START_GAME_BUTTON:
 			X: PARENT_RIGHT - WIDTH - 150
-			Y: PARENT_BOTTOM - HEIGHT - 18
+			Y: PARENT_BOTTOM - HEIGHT - 16
 			Width: 120
 			Height: 29
 			Text: Start Game
 			Font: Medium
 		Button@DISCONNECT_BUTTON:
 			X: PARENT_RIGHT - WIDTH - 20
-			Y: PARENT_BOTTOM - HEIGHT - 18
+			Y: PARENT_BOTTOM - HEIGHT - 16
 			Width: 120
 			Height: 29
 			Text: Leave Game
