@@ -6,7 +6,7 @@ Background@MULTIPLAYER_PANEL:
 	Height: 658
 	Children:
 		Label@TITLE:
-			X: (WINDOW_RIGHT - WIDTH) / 2 - 300
+			X: (WINDOW_RIGHT - WIDTH) / 2 - 575
 			Y: 17
 			Width: PARENT_RIGHT
 			Height: 25
@@ -235,8 +235,8 @@ Background@MULTIPLAYER_PANEL:
 					Children:
 						LogicTicker@ANIMATION:
 		Label@PLAYER_COUNT:
-			X: 450
-			Y: 16
+			X: 448
+			Y: 18
 			Width: 162
 			Height: 25
 			Align: Left
