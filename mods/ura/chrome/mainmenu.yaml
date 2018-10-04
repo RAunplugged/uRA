@@ -146,7 +146,7 @@ Container@MAINMENU:
 							Shadow: true
 						Button@REPLAYS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
-							Y: 66
+							Y: 65
 							Width: 160
 							Height: 35
 							Text: Replays
