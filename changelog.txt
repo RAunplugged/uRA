@@ -20,6 +20,7 @@ https://github.com/RAunplugged/OpenRA/commit/bb25ddbae1669152a8651888d3a08c4216a
 5* Alter lobby dropdown heights:
 https://github.com/RAunplugged/OpenRA/commit/7a58ed9a610a495055ecf77fcf057e3721f918c4
 https://github.com/RAunplugged/OpenRA/commit/9e8da77364956f6da3914aadf568017633010a4a
+https://github.com/RAunplugged/OpenRA/commit/9407722bf22db52f3544b548f42a4e62861e638e
 
 
 
