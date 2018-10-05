@@ -1193,4 +1193,4 @@ Actors:
 		Location: 58,61
 		Owner: Neutral
 
-Rules: ura|rules/campaign-rules.yaml, ura|rules/campaign-tooltips.yaml, ura|rules/campaign-palettes.yaml, rules.yaml
+Rules: ura|rules/campaign/campaign-rules.yaml, ura|rules/campaign/campaign-tooltips.yaml, ura|rules/campaign/campaign-palettes.yaml, rules.yaml

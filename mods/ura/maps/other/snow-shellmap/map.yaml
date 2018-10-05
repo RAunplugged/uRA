@@ -1454,6 +1454,6 @@ Actors:
 		Owner: Neutral
 		Location: 88,49
 
-Rules: ura|rules/campaign-palettes.yaml, rules.yaml
+Rules: ura|rules/campaign/campaign-palettes.yaml, rules.yaml
 
 Weapons: weapons.yaml
