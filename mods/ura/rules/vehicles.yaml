@@ -450,7 +450,7 @@ JEEP:
 	Inherits: ^Vehicle
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetGround
-	# Jeep IFV traits using custom yaml code by Grayon Dilach
+	# Jeep IFV traits using custom yaml code by Graion Dilach
 	Tooltip:
 		Name: Ranger
 		RequiresCondition: !loaded
