@@ -402,7 +402,7 @@ Container@LOBBY_PLAYER_BIN:
 							Text: Name
 						DropDownButton@PLAYER_ACTION:
 							X: 15
-							Width: 165
+							Width: 169
 							Height: 25
 							Font: Regular
 							Visible: false
