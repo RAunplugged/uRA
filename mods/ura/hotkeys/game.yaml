@@ -47,7 +47,7 @@ ToggleMute: M
 	Types: World, Menu
 
 TogglePlayerStanceColor: COMMA Ctrl
-	Description: Toggle player stance colors
+	Description: Toggle stance colors
 	Types: World
 
 TakeScreenshot: P Ctrl

@@ -6,12 +6,12 @@ Background@MULTIPLAYER_PANEL:
 	Height: 658
 	Children:
 		Label@TITLE:
-			X: (WINDOW_RIGHT - WIDTH) / 2 - 575
+			X: 333
 			Y: 17
 			Width: PARENT_RIGHT
 			Height: 25
 			Text: Multiplayer
-			Align: Center
+			Align: Left
 			Font: MediumBold
 			Shadow: true
 		Container@LABEL_CONTAINER:

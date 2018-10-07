@@ -19,7 +19,7 @@ Container@MAP_PREVIEW:
 							Height: 222
 							TooltipContainer: TOOLTIP_CONTAINER
 				LabelWithTooltip@MAP_TITLE:
-					Y: 223
+					Y: 221
 					Width: PARENT_RIGHT
 					Height: 25
 					Font: MediumBold
@@ -28,14 +28,14 @@ Container@MAP_PREVIEW:
 					TooltipContainer: TOOLTIP_CONTAINER
 					TooltipTemplate: SIMPLE_TOOLTIP
 				Label@MAP_AUTHOR:
-					Y: 240
+					Y: 254
 					Width: PARENT_RIGHT
 					Height: 25
 					Font: Regular
 					Shadow: true
 					Align: Center
 				Label@MAP_TYPE:
-					Y: 256
+					Y: 239
 					Width: PARENT_RIGHT
 					Height: 25
 					Font: TinyBold
@@ -123,10 +123,10 @@ Container@MAP_PREVIEW:
 					Shadow: true
 					Align: Center
 				Button@MAP_INSTALL:
-					Y: 227
+					Y: 245
 					Width: PARENT_RIGHT
-					Height: 25
-					Font: Bold
+					Height: 29
+					Font: Medium
 					Shadow: true
 					Text: Install Map
 		Container@MAP_PROGRESS:
@@ -197,13 +197,13 @@ Container@MAP_PREVIEW:
 					Shadow: true
 					Align: Center
 				ProgressBar@MAP_PROGRESSBAR:
-					Y: 227
+					Y: 245
 					Width: PARENT_RIGHT
-					Height: 25
+					Height: 29
 					Indeterminate: True
 				Button@MAP_RETRY:
-					Y: 227
+					Y: 245
 					Width: PARENT_RIGHT
-					Height: 25
-					Font: Bold
+					Height: 29
+					Font: Medium
 					Shadow: true

@@ -173,6 +173,7 @@ Background@REPLAYBROWSER_PANEL:
 					Text: Replay Files
 					Align: Center
 					Font: Bold
+					Shadow: true
 				ScrollPanel@REPLAY_LIST:
 					X: 0
 					Y: 30
@@ -199,7 +200,7 @@ Background@REPLAYBROWSER_PANEL:
 			X: PARENT_RIGHT - 32 - WIDTH
 			Y: 310
 			Width: 224
-			Height: PARENT_BOTTOM - 250 - 135
+			Height: PARENT_BOTTOM - 250 - 133
 			Children:
 				Label@DURATION:
 					Y: 20
