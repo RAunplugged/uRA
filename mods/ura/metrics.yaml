@@ -16,3 +16,44 @@ Metrics:
 	ChatLineSound: ChatLine
 	ClickDisabledSound: ClickDisabledSound
 	ClickSound: ClickSound
+	ButtonBaseLine: 2
+	TextShadow: false
+	ButtonTextShadow: false
+
+	ButtonDepth: 1
+	ButtonFont: Regular
+	ButtonTextColor: FFFFFF
+	ButtonTextColorDisabled: 808080
+	ButtonTextContrast: false
+	ButtonTextContrastColorDark: 000000
+	ButtonTextContrastColorLight: 7F7F7F
+	CheckboxPressedState: false
+	GameStartedColor: FFA500
+	HotkeyColor: FFFFFF
+	HotkeyColorDisabled: 808080
+	HotkeyFont: Regular
+	IncompatibleGameColor: A9A9A9
+	IncompatibleGameStartedColor: D2691E
+	IncompatibleWaitingGameColor: 32CD32
+	PlayerStanceColorAllies: FFFF00
+	PlayerStanceColorEnemies: FF0000
+	PlayerStanceColorNeutrals: D2B48C
+	PlayerStanceColorSelf: 32CD32
+	ProtectedGameColor: FF0000
+	SpawnColor: FFFFFF
+	SpawnContrastColor: 000000
+	SpawnFont: TinyBold
+	SpawnLabelOffset: -1,2
+	TextColor: FFFFFF
+	TextContrast: false
+	TextContrastColorDark: 000000
+	TextContrastColorLight: 7F7F7F
+	TextFont: Regular
+	TextfieldColor: FFFFFF
+	TextfieldColorDisabled: 808080
+	TextfieldColorInvalid: FFC0C0
+	TextfieldFont: Regular
+	WaitingGameColor: 00FF00
+	UPnPDisabledColor: FFFFFF
+	UPnPEnabledColor: 00FF00
+	UPnPNotSupportedColor: FF0000

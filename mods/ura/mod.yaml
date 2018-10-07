@@ -173,7 +173,6 @@ ServerTraits:
 	LobbySettingsNotification
 
 ChromeMetrics:
-	common|metrics.yaml
 	ura|metrics.yaml
 
 Fonts:
@@ -181,29 +180,29 @@ Fonts:
 		Font: ura|fonts/ZoodRangmah.ttf
 		Size:48
 	Regular:
-		Font: ura|fonts/FreeSans.ttf
-		Size:14
+		Font: ura|fonts/palanquin-medium.ttf
+		Size:16
 	Bold:
-		Font: ura|fonts/FreeSansBold.ttf
-		Size:14
+		Font: ura|fonts/palanquin-bold.ttf
+		Size:16
 	Medium:
-		Font: ura|fonts/FreeSansEdited.ttf
-		Size:18
+		Font: ura|fonts/palanquin-medium.ttf
+		Size:20
 	MediumBold:
-		Font: ura|fonts/FreeSansEditedBold.ttf
-		Size:18
+		Font: ura|fonts/palanquin-bold.ttf
+		Size:20
 	BigBold:
-		Font: ura|fonts/FreeSansEditedBold.ttf
-		Size:24
+		Font: ura|fonts/palanquin-bold.ttf
+		Size:26
 	Small:
-		Font: ura|fonts/FreeSans.ttf
-		Size:12
+		Font: ura|fonts/palanquin-medium.ttf
+		Size:14
 	Tiny:
-		Font: ura|fonts/FreeSans.ttf
-		Size:10
+		Font: ura|fonts/palanquin-medium.ttf
+		Size:12
 	TinyBold:
-		Font: ura|fonts/FreeSansBold.ttf
-		Size:10
+		Font: ura|fonts/palanquin-bold.ttf
+		Size:12
 
 Missions:
 	ura|missions.yaml
