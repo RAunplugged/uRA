@@ -51,7 +51,7 @@ Rules:
 	ura|rules/ai/ai-normal.yaml
 	ura|rules/ai/ai-easy.yaml
 	ura|rules/ai/ai-unknown.yaml
-	ura|rules/ai/ai-player-bonuses.yaml
+	ura|rules/ai/player-bonuses-ai.yaml
 	ura|rules/player.yaml
 	ura|rules/palettes.yaml
 	ura|rules/world.yaml
@@ -141,7 +141,11 @@ Weapons:
 	ura|weapons/other.yaml
 	ura|weapons/smallcaliber.yaml
 	ura|weapons/superweapons.yaml
-	
+	ura|weapons/ai/ai-ballistics.yaml
+	ura|weapons/ai/ai-missiles.yaml
+	ura|weapons/ai/ai-other.yaml
+	ura|weapons/ai/ai-smallcaliber.yaml
+
 Voices:
 	ura|audio/voices.yaml
 

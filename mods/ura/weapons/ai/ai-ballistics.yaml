@@ -1,0 +1,64 @@
+# Damage vs Concrete: 200% and 400% for ballistics available with mediumtech or higher.
+
+25mm.AI:
+	Inherits: 25mm
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 60
+
+90mm.AI:
+	Inherits: 90mm
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 200
+
+90mm.Germany.AI:
+	Inherits: 90mm.Germany
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 200
+
+105mm.AI:
+	Inherits: 105mm
+		Versus:
+			Concrete: 200
+
+120mm.AI:
+	Inherits: 120mm
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 200
+
+TurretGun.AI:
+	Inherits: TurretGun
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 200
+
+155mm.AI:
+	Inherits: 155mm
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 200
+
+8Inch.AI:
+	Inherits: 8Inch
+	InvalidTargets: Walls
+
+2Inch.AI:
+	Inherits: 2Inch
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 100
+
+Grenade.AI:
+	Inherits: Grenade
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 100
+
+GrenLauncher.AI:
+	Inherits: GrenLauncher
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 200

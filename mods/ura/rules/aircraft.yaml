@@ -96,12 +96,30 @@ HIND:
 		LocalOffset: 85,-213,-85, 85,213,-85
 		MuzzleSequence: muzzle
 		PauseOnCondition: !ammo
+		RequiresCondition: !botowner
 	Armament@SECONDARY:
 		Name: secondary
 		Weapon: ChainGun
 		LocalOffset: 85,213,-85, 85,-213,-85
 		MuzzleSequence: muzzle
 		PauseOnCondition: !ammo
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@PRIMARY.BOT:
+		Weapon: ChainGun.AI
+		LocalOffset: 85,-213,-85, 85,213,-85
+		MuzzleSequence: muzzle
+		PauseOnCondition: !ammo
+		RequiresCondition: botowner
+	Armament@SECONDARY.BOT:
+		Name: secondary
+		Weapon: ChainGun.AI
+		LocalOffset: 85,213,-85, 85,-213,-85
+		MuzzleSequence: muzzle
+		PauseOnCondition: !ammo
+		RequiresCondition: botowner
 	AmmoPool:
 		Ammo: 24
 		PipCount: 6
@@ -167,6 +185,15 @@ HELI:
 		Weapon: HellfireAG
 		LocalOffset: 0,213,-85, 0,-213,-85
 		PauseOnCondition: !ammo
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@SECONDARY@BOT:
+		Weapon: HellfireAG.AI
+		LocalOffset: 0,213,-85, 0,-213,-85
+		PauseOnCondition: !ammo
+		RequiresCondition: botowner
 	AmmoPool:
 		Ammo: 8
 		AmmoCondition: ammo
@@ -229,12 +256,30 @@ YAK:
 		LocalOffset: 256,-213,0
 		MuzzleSequence: muzzle
 		PauseOnCondition: !ammo
+		RequiresCondition: !botowner
 	Armament@SECONDARY:
 		Name: secondary
 		Weapon: ChainGun.Yak
 		LocalOffset: 256,213,0
 		MuzzleSequence: muzzle
 		PauseOnCondition: !ammo
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@PRIMARY.BOT:
+		Weapon: ChainGun.Yak.AI
+		LocalOffset: 256,-213,0
+		MuzzleSequence: muzzle
+		PauseOnCondition: !ammo
+		RequiresCondition: botowner
+	Armament@SECONDARY.BOT:
+		Name: secondary
+		Weapon: ChainGun.Yak.AI
+		LocalOffset: 256,213,0
+		MuzzleSequence: muzzle
+		PauseOnCondition: !ammo
+		RequiresCondition: botowner
 	AmmoPool:
 		Ammo: 18
 		PipCount: 6
@@ -297,9 +342,19 @@ MIG:
 		LocalOffset: 0,-640,0, 0,640,0
 		LocalYaw: -40, 24
 		PauseOnCondition: !ammo
+		RequiresCondition: !botowner
 	Armament@SECONDARY:
 		Weapon: MaverickAA
 		PauseOnCondition: !ammo
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@PRIMARY.BOT:
+		Weapon: MaverickAG.AI
+		LocalOffset: 0,-640,0, 0,640,0
+		LocalYaw: -40, 24
+		PauseOnCondition: !ammo
+		RequiresCondition: botowner
 	AmmoPool:
 		Ammo: 6
 		ReloadDelay: 85

@@ -1,0 +1,37 @@
+# Damage vs Concrete: 200%.
+
+FireballLauncher.AI:
+	Inherits: FireballLauncher
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 40
+
+Flamer.AI:
+	Inherits: Flamer
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 40
+
+KVFlame.AI:
+	Inherits: KVFlame
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 100
+
+TeslaZap.AI:
+	Inherits: TeslaZap
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 200
+
+PortaTesla.AI:
+	Inherits: PortaTesla
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 200
+
+TTankZap.AI:
+	Inherits: TTankZap
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 200

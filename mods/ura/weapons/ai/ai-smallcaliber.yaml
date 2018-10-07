@@ -1,0 +1,64 @@
+# Damage vs Concrete: 200%.
+
+M1Carbine.AI:
+	Inherits: M1Carbine
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 20
+
+M60mg.AI:
+	Inherits: M60mg
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 20
+
+M60mg.APC.AI:
+	Inherits: M60mg.APC
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 20
+
+M60mg.Inf.AI:
+	Inherits: M60mg.Inf
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 20
+
+FLAK-23-AG.AI:
+	Inherits: FLAK-23-AG
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 40
+
+Vulcan.AI:
+	Inherits: Vulcan
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 40
+	Warhead@4Dam_2: SpreadDamage
+		Versus:
+			Concrete: 50
+	Warhead@5Dam_3: SpreadDamage
+		Versus:
+			Concrete: 50
+	Warhead@7Dam_4: SpreadDamage
+		Versus:
+			Concrete: 50
+	Warhead@9Dam_5: SpreadDamage
+		Versus:
+			Concrete: 50
+	Warhead@11Dam_6: SpreadDamage
+		Versus:
+			Concrete: 50
+
+ChainGun.Yak.AI:
+	Inherits: ChainGun.Yak
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 50
+
+ChainGun.AI:
+	Inherits: ChainGun
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 50

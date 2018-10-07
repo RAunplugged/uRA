@@ -165,6 +165,17 @@ TRUK:
 		RecoilRecovery: 25
 		LocalOffset: 768,0,90
 		MuzzleSequence: muzzle
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@BOT:
+		Weapon: 25mm.AI
+		Recoil: 85
+		RecoilRecovery: 25
+		LocalOffset: 768,0,90
+		MuzzleSequence: muzzle
+		RequiresCondition: botowner
 	Turreted:
 		TurnSpeed: 7
 	Selectable:
@@ -239,6 +250,17 @@ TRUK:
 		RecoilRecovery: 38
 		LocalOffset: 720,0,80
 		MuzzleSequence: muzzle
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@BOT:
+		Weapon: 90mm.AI
+		Recoil: 128
+		RecoilRecovery: 38
+		LocalOffset: 720,0,80
+		MuzzleSequence: muzzle
+		RequiresCondition: botowner
 	Turreted:
 		TurnSpeed: 5
 	Selectable:
@@ -280,6 +302,10 @@ TRUK:
 		HP: 500
 	Armament:
 		Weapon: 90mm.Germany
+		RequiresCondition: !botowner
+	Armament@BOT:
+		Weapon: 90mm.Germany.AI
+		RequiresCondition: botowner
 	Turreted:
 		TurnSpeed: 4
 	RenderSprites:
@@ -335,6 +361,17 @@ TRUK:
 		RecoilRecovery: 38
 		LocalOffset: 768,85,90, 768,-85,90
 		MuzzleSequence: muzzle
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@BOT:
+		Weapon: 105mm.AI
+		Recoil: 128
+		RecoilRecovery: 38
+		LocalOffset: 768,85,90, 768,-85,90
+		MuzzleSequence: muzzle
+		RequiresCondition: botowner
 	Turreted:
 		TurnSpeed: 5
 	AttackTurreted:
@@ -393,6 +430,7 @@ TRUK:
 		Recoil: 171
 		RecoilRecovery: 30
 		MuzzleSequence: muzzle
+		RequiresCondition: !botowner
 	Armament@SECONDARY:
 		Name: secondary
 		Weapon: MammothTusk
@@ -400,6 +438,16 @@ TRUK:
 		LocalYaw: -100,100
 		Recoil: 43
 		MuzzleSequence: muzzle
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@PRIMARY.BOT:
+		Weapon: 120mm.AI
+		LocalOffset: 900,180,340, 900,-180,340
+		Recoil: 171
+		RecoilRecovery: 30
+		MuzzleSequence: muzzle
+		RequiresCondition: botowner
 	Turreted:
 		TurnSpeed: 2
 	AttackTurreted:
@@ -434,6 +482,7 @@ TRUK:
 		Recoil: 171
 		RecoilRecovery: 30
 		MuzzleSequence: muzzle
+		RequiresCondition: !botowner
 	Armament@SECONDARY:
 		Name: secondary
 		Weapon: MammothTuskAT
@@ -441,6 +490,13 @@ TRUK:
 		LocalYaw: -100,100
 		Recoil: 43
 		MuzzleSequence: muzzle
+	Armament@PRIMARY.BOT:
+		Weapon: KVFlame.AI
+		LocalOffset: 900,180,340, 900,-180,340
+		Recoil: 171
+		RecoilRecovery: 30
+		MuzzleSequence: muzzle
+		RequiresCondition: botowner
 	SpawnActorOnDeath:
 		Actor: 4TNK.KV-8.Husk
 	RenderSprites:
@@ -526,7 +582,15 @@ JEEP:
 		Weapon: M60mg
 		MuzzleSequence: muzzle
 		LocalOffset: 128,0,43
-		RequiresCondition: !loaded || ifv-rifle || ifv-civilian || ifv-spy || ifv-hijacker || ifv-dog || ifv-engineer
+		RequiresCondition: !loaded || ifv-rifle || ifv-civilian || ifv-spy || ifv-hijacker || ifv-dog || ifv-engineer || !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@BOT:
+		Weapon: M60mg.AI
+		MuzzleSequence: muzzle
+		LocalOffset: 128,0,43
+		RequiresCondition: botowner
 	# Damage modifier
 	FirepowerMultiplier@generic-ifv-bonus:
 		Modifier: 125
@@ -718,6 +782,16 @@ FTRK:
 		Recoil: 85
 		LocalOffset: 512,0,192
 		MuzzleSequence: muzzle
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@AG.BOT:
+		Weapon: FLAK-23-AG.AI
+		Recoil: 85
+		LocalOffset: 512,0,192
+		MuzzleSequence: muzzle
+		RequiresCondition: botowner
 	Turreted:
 		TurnSpeed: 10
 		Offset: -298,0,298
@@ -768,6 +842,15 @@ APC:
 		Weapon: M60mg.APC
 		LocalOffset: 85,0,171
 		MuzzleSequence: muzzle
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@BOT:
+		Weapon: M60mg.APC.AI
+		LocalOffset: 85,0,171
+		MuzzleSequence: muzzle
+		RequiresCondition: botowner
 	DetectCloaked:
 		Range: 1c512
 	AttackFrontal:
@@ -844,6 +927,15 @@ ARTY:
 		Weapon: 155mm
 		LocalOffset: 624,0,208
 		MuzzleSequence: muzzle
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@BOT:
+		Weapon: 155mm.AI
+		LocalOffset: 624,0,208
+		MuzzleSequence: muzzle
+		RequiresCondition: botowner
 	Crushable:
 		CrushClasses: vehicles
 	Explodes:
@@ -879,6 +971,14 @@ V2RL:
 	Armament:
 		Weapon: SCUD
 		ReloadingCondition: reloading
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@BOT:
+		Weapon: SCUD.AI
+		ReloadingCondition: reloading
+		RequiresCondition: botowner
 	Crushable:
 		CrushClasses: vehicles
 	AutoTarget:
@@ -1074,6 +1174,14 @@ STNK:
 	Armament:
 		Weapon: APTusk
 		LocalOffset: 192,0,176
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@BOT:
+		Weapon: APTusk.AI
+		LocalOffset: 192,0,176
+		RequiresCondition: botowner
 	DetectCloaked:
 		Range: 6c0
 	Turreted:
@@ -1117,6 +1225,14 @@ TTNK:
 	Armament:
 		Weapon: TTankZap
 		LocalOffset: 0,0,213
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@BOT:
+		Weapon: TTankZap.AI
+		LocalOffset: 0,0,213
+		RequiresCondition: botowner
 	Turreted:
 	AttackTurreted:
 	Selectable:

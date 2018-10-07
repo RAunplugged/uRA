@@ -1488,6 +1488,15 @@ GUN:
 		Weapon: TurretGun
 		LocalOffset: 512,0,112
 		MuzzleSequence: muzzle
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@BOT:
+		Weapon: TurretGun.AI
+		LocalOffset: 512,0,112
+		MuzzleSequence: muzzle
+		RequiresCondition: botowner
 	Turreted:
 		TurnSpeed: 12
 		InitialFacing: 56
@@ -1529,6 +1538,14 @@ FTUR:
 	Armament:
 		Weapon: FireballLauncher
 		LocalOffset: 512,0,0
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@BOT:
+		Weapon: FireballLauncher.AI
+		LocalOffset: 512,0,0
+		RequiresCondition: botowner
 	Turreted:
 		TurnSpeed: 255
 		Offset: 0,0,112
@@ -1578,6 +1595,14 @@ TSLA:
 	Armament:
 		Weapon: TeslaZap
 		LocalOffset: 0,0,896
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@BOT:
+		Weapon: TeslaZap.AI
+		LocalOffset: 0,0,896
+		RequiresCondition: botowner
 	AttackTesla:
 		PauseOnCondition: disabled
 		ChargeAudio: tslachg2.aud

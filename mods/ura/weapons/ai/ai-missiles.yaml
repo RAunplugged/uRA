@@ -1,0 +1,41 @@
+# Damage vs Concrete: 200% and 400% for SubMissile.AI and SCUD.AI.
+
+Dragon.AI:
+	Inherits: Dragon
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 100
+
+Stinger.AI:
+	Inherits: Stinger
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 50
+
+APTusk.AI:
+	Inherits: APTusk
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 100
+
+SubMissile.AI:
+	Inherits: SubMissile
+	InvalidTargets: Walls
+
+SCUD.AI:
+	Inherits: SCUD
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 400
+
+MaverickAG.AI:
+	Inherits: MaverickAG
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 200
+
+HellfireAG.AI:
+	Inherits: HellfireAG
+	Warhead@1Dam: SpreadDamage
+		Versus:
+			Concrete: 200

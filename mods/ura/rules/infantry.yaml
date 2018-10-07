@@ -70,10 +70,23 @@ E1:
 		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
 		Weapon: M1Carbine
+		RequiresCondition: !botowner
 	Armament@GARRISONED:
 		Name: garrisoned
 		Weapon: Vulcan
 		MuzzleSequence: garrison-muzzle
+		RequiresCondition: !botowner
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@PRIMARY.BOT:
+		Weapon: M1Carbine.AI
+		RequiresCondition: botowner
+	Armament@GARRISONED.BOT:
+		Name: garrisoned
+		Weapon: Vulcan.AI
+		MuzzleSequence: garrison-muzzle
+		RequiresCondition: botowner
 	AttackFrontal:
 	Selectable:
 		Class: E1
@@ -115,10 +128,19 @@ E2:
 		Weapon: Grenade
 		LocalOffset: 0,0,555
 		FireDelay: 15
+		RequiresCondition: !botowner
 	Armament@GARRISONED:
 		Name: garrisoned
 		Weapon: Grenade
 		FireDelay: 15
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@PRIMARY.BOT:
+		Weapon: Grenade.AI
+		LocalOffset: 0,0,555
+		FireDelay: 15
+		RequiresCondition: botowner
 	AttackFrontal:
 	TakeCover:
 		ProneOffset: 256,64,-331
@@ -157,9 +179,18 @@ E3:
 		Name: secondary
 		Weapon: Dragon
 		LocalOffset: 0,0,555
+		RequiresCondition: !botowner
 	Armament@GARRISONED:
 		Name: garrisoned
 		Weapon: Dragon
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@SECONDARY.BOT:
+		Name: secondary
+		Weapon: Dragon.AI
+		LocalOffset: 0,0,555
+		RequiresCondition: botowner
 	AutoTarget:
 		ScanRadius: 6
 	AttackFrontal:
@@ -203,9 +234,18 @@ E4:
 		Weapon: Flamer
 		LocalOffset: 700,0,500
 		FireDelay: 8
+		RequiresCondition: !botowner
 	Armament@GARRISONED:
 		Name: garrisoned
 		Weapon: Flamer
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@PRIMARY.BOT:
+		Weapon: Flamer.AI
+		LocalOffset: 700,0,500
+		FireDelay: 8
+		RequiresCondition: botowner
 	AttackFrontal:
 	TakeCover:
 		ProneOffset: 160,0,-288
@@ -499,9 +539,17 @@ SHOK:
 	Armament@PRIMARY:
 		Weapon: PortaTesla
 		LocalOffset: 427,0,341
+		RequiresCondition: !botowner
 	Armament@GARRISONED:
 		Name: garrisoned
 		Weapon: PortaTesla
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@PRIMARY.BOT:
+		Weapon: PortaTesla.AI
+		LocalOffset: 427,0,341
+		RequiresCondition: botowner
 	Passenger:
 		Voice: Move
 	AttackMove:
@@ -614,9 +662,17 @@ E9:
 	Armament@PRIMARY:
 		Weapon: GrenLauncher
 		LocalOffset: 700,0,500
+		RequiresCondition: !botowner
 	Armament@GARRISONED:
 		Name: garrisoned
 		Weapon: GrenLauncher
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@PRIMARY.BOT:
+		Weapon: GrenLauncher.AI
+		LocalOffset: 700,0,500
+		RequiresCondition: botowner
 	AttackFrontal:
 	Explodes:
 		Weapon: UnitExplodeSmall
@@ -647,10 +703,17 @@ E10:
 		Description: Infantry equiped with a rapid firing Machine Gun.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
 		Weapon: M60mg.Inf
+		RequiresCondition: !botowner
 	Armament@GARRISONED:
 		Name: garrisoned
 		Weapon: M60mg.Inf
 		MuzzleSequence: garrison-muzzle
+	GrantConditionOnBotOwner:
+		Condition: botowner
+		Bots: easy, normal, hard, brutal, naval, navalHard
+	Armament@PRIMARY.BOT:
+		Weapon: M60mg.Inf.AI
+		RequiresCondition: botowner
 	AttackFrontal:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
