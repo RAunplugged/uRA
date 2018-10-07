@@ -176,7 +176,7 @@ Grenade:
 			Wood: 100
 			Light: 60
 			Heavy: 25
-			Concrete: 100
+			Concrete: 50
 		Spread: 256
 	Warhead@3Eff: CreateEffect
 		Explosions: med_explosion
