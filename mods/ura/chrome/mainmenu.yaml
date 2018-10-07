@@ -61,6 +61,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Multiplayer
 							Font: Medium
+							Shadow: true
 						Button@SETTINGS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 155
@@ -68,6 +69,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Settings
 							Font: Medium
+							Shadow: true
 						Button@EXTRAS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 200
@@ -75,6 +77,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Extras
 							Font: Medium
+							Shadow: true
 						Button@CONTENT_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 245
@@ -82,6 +85,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Manage Content
 							Font: Medium
+							Shadow: true
 						Button@QUIT_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 335
@@ -89,6 +93,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Quit
 							Font: Medium
+							Shadow: true
 				Background@SINGLEPLAYER_MENU:
 					Width: PARENT_RIGHT
 					Height: PARENT_BOTTOM
@@ -109,6 +114,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Skirmish
 							Font: Medium
+							Shadow: true
 						Button@MISSIONS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 110
@@ -116,6 +122,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Missions
 							Font: Medium
+							Shadow: true
 						Button@TUTORIAL_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 155
@@ -123,6 +130,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Tutorial (WIP)
 							Font: Medium
+							Shadow: true
 						Button@BACK_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Key: escape
@@ -131,6 +139,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Back
 							Font: Medium
+							Shadow: true
 				Background@EXTRAS_MENU:
 					Width: PARENT_RIGHT
 					Height: PARENT_BOTTOM
@@ -151,6 +160,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Replays
 							Font: Medium
+							Shadow: true
 						Button@MUSIC_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 110
@@ -158,6 +168,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Music
 							Font: Medium
+							Shadow: true
 						Button@MAP_EDITOR_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 155
@@ -165,6 +176,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Map Editor
 							Font: Medium
+							Shadow: true
 						Button@ASSETBROWSER_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 200
@@ -172,6 +184,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Asset Browser
 							Font: Medium
+							Shadow: true
 						Button@CREDITS_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 245
@@ -179,6 +192,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Credits
 							Font: Medium
+							Shadow: true
 						Button@BACK_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Key: escape
@@ -187,6 +201,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Back
 							Font: Medium
+							Shadow: true
 				Background@MAP_EDITOR_MENU:
 					Width: PARENT_RIGHT
 					Height: PARENT_BOTTOM
@@ -207,6 +222,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: New Map
 							Font: Medium
+							Shadow: true
 						Button@LOAD_MAP_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Y: 110
@@ -214,6 +230,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Load Map
 							Font: Medium
+							Shadow: true
 						Button@BACK_BUTTON:
 							X: PARENT_RIGHT / 2 - WIDTH / 2
 							Key: escape
@@ -222,6 +239,7 @@ Container@MAINMENU:
 							Height: 35
 							Text: Back
 							Font: Medium
+							Shadow: true
 		Background@SYSTEM_INFO_PROMPT:
 			X: (WINDOW_RIGHT - WIDTH) / 2
 			Y: (WINDOW_BOTTOM - HEIGHT) / 2
@@ -313,6 +331,7 @@ Container@MAINMENU:
 					Height: 25
 					Text: Battlefield News
 					Font: Bold
+					Shadow: true
 		Container@UPDATE_NOTICE:
 			X: (WINDOW_RIGHT - WIDTH) / 2
 			Y: 95

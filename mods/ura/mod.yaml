@@ -92,47 +92,47 @@ Assemblies:
 	common|OpenRA.Mods.Cnc.dll
 
 ChromeLayout:
-	common|chrome/ingame.yaml
-	common|chrome/ingame-chat.yaml
-	common|chrome/ingame-fmvplayer.yaml
+	ura|chrome/ingame.yaml
+	ura|chrome/ingame-chat.yaml
+	ura|chrome/ingame-fmvplayer.yaml
 	ura|chrome/ingame-info.yaml
-	common|chrome/ingame-infoscripterror.yaml
-	common|chrome/ingame-infobriefing.yaml
+	ura|chrome/ingame-infoscripterror.yaml
+	ura|chrome/ingame-infobriefing.yaml
 	ura|chrome/ingame-infoobjectives.yaml
 	ura|chrome/ingame-infostats.yaml
 	ura|chrome/ingame-menu.yaml
 	ura|chrome/ingame-observer.yaml
 	ura|chrome/ingame-observerstats.yaml
 	ura|chrome/ingame-player.yaml
-	common|chrome/ingame-perf.yaml
-	common|chrome/ingame-debug.yaml
-	common|chrome/ingame-infochat.yaml
+	ura|chrome/ingame-perf.yaml
+	ura|chrome/ingame-debug.yaml
+	ura|chrome/ingame-infochat.yaml
 	ura|chrome/mainmenu.yaml
-	common|chrome/settings.yaml
-	common|chrome/credits.yaml
+	ura|chrome/settings.yaml
+	ura|chrome/credits.yaml
 	ura|chrome/lobby.yaml
 	ura|chrome/lobby-mappreview.yaml
 	ura|chrome/lobby-players.yaml
 	ura|chrome/lobby-options.yaml
 	ura|chrome/lobby-music.yaml
 	ura|chrome/lobby-servers.yaml
-	common|chrome/lobby-kickdialogs.yaml
-	common|chrome/color-picker.yaml
+	ura|chrome/lobby-kickdialogs.yaml
+	ura|chrome/color-picker.yaml
 	ura|chrome/map-chooser.yaml
 	ura|chrome/multiplayer-browser.yaml
 	ura|chrome/multiplayer-browserpanels.yaml
 	ura|chrome/multiplayer-createserver.yaml
 	ura|chrome/multiplayer-directconnect.yaml
-	common|chrome/connection.yaml
+	ura|chrome/connection.yaml
 	ura|chrome/replaybrowser.yaml
-	common|chrome/dropdowns.yaml
-	common|chrome/musicplayer.yaml
-	common|chrome/tooltips.yaml
-	common|chrome/assetbrowser.yaml
-	common|chrome/missionbrowser.yaml
-	common|chrome/confirmation-dialogs.yaml
-	common|chrome/editor.yaml
-	common|chrome/playerprofile.yaml
+	ura|chrome/dropdowns.yaml
+	ura|chrome/musicplayer.yaml
+	ura|chrome/tooltips.yaml
+	ura|chrome/assetbrowser.yaml
+	ura|chrome/missionbrowser.yaml
+	ura|chrome/confirmation-dialogs.yaml
+	ura|chrome/editor.yaml
+	ura|chrome/playerprofile.yaml
 
 Weapons:
 	ura|weapons/explosions.yaml
@@ -155,11 +155,11 @@ Translations:
 	ura|languages/english.yaml
 
 Hotkeys:
-	common|hotkeys/game.yaml
+	ura|hotkeys/game.yaml
 	ura|hotkeys/observer.yaml
-	common|hotkeys/production-common.yaml
-	common|hotkeys/supportpowers.yaml
-	common|hotkeys/viewport.yaml
+	ura|hotkeys/production.yaml
+	ura|hotkeys/supportpowers.yaml
+	ura|hotkeys/viewport.yaml
 	ura|hotkeys.yaml
 
 LoadScreen: LogoStripeLoadScreen
