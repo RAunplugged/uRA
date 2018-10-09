@@ -1,4 +1,5 @@
 # Damage vs Concrete: 200% and 400% for SubMissile.AI and SCUD.AI.
+# Longbow/MiG armaments ignore Walls and Infantry.
 
 Dragon.AI:
 	Inherits: Dragon
@@ -30,12 +31,10 @@ SCUD.AI:
 
 MaverickAG.AI:
 	Inherits: MaverickAG
+	InvalidTargets: Wall, Infantry
 	Warhead@1Dam: SpreadDamage
-		Versus:
-			Concrete: 200
 
 HellfireAG.AI:
 	Inherits: HellfireAG
+	InvalidTargets: Wall, Infantry
 	Warhead@1Dam: SpreadDamage
-		Versus:
-			Concrete: 200

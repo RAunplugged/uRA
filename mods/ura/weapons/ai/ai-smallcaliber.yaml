@@ -1,4 +1,5 @@
 # Damage vs Concrete: 200%.
+# Hind/Yak armaments ignore Walls and Defenses.
 
 M1Carbine.AI:
 	Inherits: M1Carbine
@@ -53,12 +54,10 @@ Vulcan.AI:
 
 ChainGun.Yak.AI:
 	Inherits: ChainGun.Yak
+	InvalidTargets: Wall, Defense
 	Warhead@1Dam: SpreadDamage
-		Versus:
-			Concrete: 50
 
 ChainGun.AI:
 	Inherits: ChainGun
+	InvalidTargets: Wall, Defense
 	Warhead@1Dam: SpreadDamage
-		Versus:
-			Concrete: 50
