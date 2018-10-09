@@ -326,6 +326,9 @@ V01:
 		Dimensions: 2,2
 	ExternalCapturable:
 	ExternalCapturableBar:
+	EngineerRepairable:
+	OwnerLostAction:
+		Action: ChangeOwner
 	Cargo:
 		Types: Infantry
 		MaxWeight: 1
@@ -575,6 +578,9 @@ V25:
 		Dimensions: 2,2
 	ExternalCapturable:
 	ExternalCapturableBar:
+	EngineerRepairable:
+	OwnerLostAction:
+		Action: ChangeOwner
 	Cargo:
 		Types: Infantry
 		MaxWeight: 1
