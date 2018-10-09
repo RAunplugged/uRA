@@ -17,6 +17,8 @@ Player:
 		MaximumExcessPower: 180
 		ExcessPowerIncrement: 50
 		ExcessPowerIncreaseThreshold: 4
+		AssignRolesInterval: 10
+		StructureProductionInactiveDelay: 25
 		StructureProductionResumeDelay: 500
 		CheckForNewBasesDelay: 500
 
@@ -189,6 +191,8 @@ Player:
 		MaximumExcessPower: 180
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
+		AssignRolesInterval: 10
+		StructureProductionInactiveDelay: 25
 		StructureProductionResumeDelay: 500
 		CheckForNewBasesDelay: 500
 
@@ -364,6 +368,8 @@ Player:
 		MaximumExcessPower: 180
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
+		AssignRolesInterval: 10
+		StructureProductionInactiveDelay: 25
 		StructureProductionResumeDelay: 500
 		CheckForNewBasesDelay: 500
 		NewProductionCashThreshold: 4000
@@ -558,6 +564,8 @@ Player:
 		MaximumExcessPower: 180
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
+		AssignRolesInterval: 10
+		StructureProductionInactiveDelay: 25
 		StructureProductionResumeDelay: 500
 		CheckForNewBasesDelay: 500
 		NewProductionCashThreshold: 4000
@@ -752,6 +760,8 @@ Player:
 		MaximumExcessPower: 220
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
+		AssignRolesInterval: 10
+		StructureProductionInactiveDelay: 25
 		StructureProductionResumeDelay: 500
 		CheckForNewBasesDelay: 500
 		IdleBaseUnitsMaximum: 16
@@ -906,6 +916,8 @@ Player:
 		MaximumExcessPower: 220
 		ExcessPowerIncrement: 40
 		ExcessPowerIncreaseThreshold: 4
+		AssignRolesInterval: 10
+		StructureProductionInactiveDelay: 25
 		StructureProductionResumeDelay: 500
 		CheckForNewBasesDelay: 500
 		IdleBaseUnitsMaximum: 16
