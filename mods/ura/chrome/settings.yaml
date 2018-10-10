@@ -269,6 +269,7 @@ Background@SETTINGS_PANEL:
 					Y: 390
 					Width: 200
 					Height: 25
+					Visible: false
 				Label@LANGUAGE_DESC_A:
 					Y: 410
 					Width: PARENT_RIGHT
