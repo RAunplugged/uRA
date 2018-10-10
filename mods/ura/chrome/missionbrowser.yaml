@@ -2,21 +2,22 @@ Background@MISSIONBROWSER_PANEL:
 	Logic: MissionBrowserLogic
 	X: (WINDOW_RIGHT - WIDTH) / 2
 	Y: (WINDOW_BOTTOM - HEIGHT) / 2
-	Width: 682
-	Height: 487
+	Width: 780
+	Height: 560
 	Children:
 		Label@MISSIONBROWSER_TITLE:
-			Y: 20
+			Y: 18
 			Width: PARENT_RIGHT
 			Height: 25
 			Text: Missions
 			Align: Center
-			Font: Bold
+			Font: MediumBold
+			Shadow: true
 		ScrollPanel@MISSION_LIST:
 			X: 20
-			Y: 50
-			Width: 270
-			Height: 377
+			Y: 60
+			Width: 290
+			Height: 420
 			Children:
 				ScrollItem@HEADER:
 					BaseName: scrollheader
@@ -40,10 +41,10 @@ Background@MISSIONBROWSER_PANEL:
 							Width: PARENT_RIGHT - 20
 							Height: 25
 		Container@MISSION_INFO:
-			X: 300
-			Y: 50
-			Width: 362
-			Height: 363
+			X: 320
+			Y: 60
+			Width: 440
+			Height: 420
 			Children:
 				Background@MISSION_BG:
 					Width: PARENT_RIGHT
@@ -61,7 +62,7 @@ Background@MISSIONBROWSER_PANEL:
 				ScrollPanel@MISSION_DESCRIPTION_PANEL:
 					Y: 212
 					Width: PARENT_RIGHT
-					Height: 130
+					Height: 173
 					Children:
 						Label@MISSION_DESCRIPTION:
 							X: 4
@@ -69,77 +70,80 @@ Background@MISSIONBROWSER_PANEL:
 							Width: PARENT_RIGHT - 32
 							VAlign: Top
 							Font: Small
+							Shadow: true
 				Label@DIFFICULTY_DESC:
-					Y: 352
+					X: 60
+					Y: 393
 					Width: 56
 					Height: 25
 					Text: Difficulty:
 					Align: Right
 				DropDownButton@DIFFICULTY_DROPDOWNBUTTON:
-					X: 61
-					Y: 352
+					X: 121
+					Y: 395
 					Width: 135
 					Height: 25
 					Font: Regular
 				Label@GAMESPEED_DESC:
 					X: PARENT_RIGHT - WIDTH - 115
-					Y: 352
+					Y: 393
 					Width: 120
 					Height: 25
 					Text: Speed:
 					Align: Right
 				DropDownButton@GAMESPEED_DROPDOWNBUTTON:
 					X: PARENT_RIGHT - WIDTH
-					Y: 352
+					Y: 395
 					Width: 110
 					Height: 25
 					Font: Regular
 		Button@START_BRIEFING_VIDEO_BUTTON:
-			X: 20
+			X: 40
 			Y: PARENT_BOTTOM - 45
 			Width: 130
 			Height: 25
 			Text: Watch Briefing
 			Font: Bold
 		Button@STOP_BRIEFING_VIDEO_BUTTON:
-			X: 20
+			X: 40
 			Y: PARENT_BOTTOM - 45
 			Width: 130
 			Height: 25
 			Text: Stop Briefing
 			Font: Bold
 		Button@START_INFO_VIDEO_BUTTON:
-			X: 160
+			X: 180
 			Y: PARENT_BOTTOM - 45
 			Width: 130
 			Height: 25
 			Text: Watch Info Video
 			Font: Bold
 		Button@STOP_INFO_VIDEO_BUTTON:
-			X: 160
+			X: 180
 			Y: PARENT_BOTTOM - 45
 			Width: 130
 			Height: 25
 			Text: Stop Info Video
 			Font: Bold
 		Button@STARTGAME_BUTTON:
-			X: PARENT_RIGHT - 140 - 130
-			Y: PARENT_BOTTOM - 45
+			X: PARENT_RIGHT - WIDTH - 150
+			Y: PARENT_BOTTOM - HEIGHT - 16
 			Width: 120
-			Height: 25
+			Height: 29
 			Text: Play
-			Font: Bold
+			Font: Medium
+			Key: return
 		Button@BACK_BUTTON:
-			X: PARENT_RIGHT - 140
-			Y: PARENT_BOTTOM - 45
+			X: PARENT_RIGHT - WIDTH - 20
+			Y: PARENT_BOTTOM - HEIGHT - 16
 			Width: 120
-			Height: 25
+			Height: 29
 			Text: Back
-			Font: Bold
+			Font: Medium
 			Key: escape
 		Background@MISSION_BIN:
-			X: 20
-			Y: 50
+			X: 40
+			Y: 60
 			Width: 642
 			Height: 377
 			Background: dialog3
@@ -149,7 +153,6 @@ Background@MISSIONBROWSER_PANEL:
 					Y: 1
 					Width: 640
 					Height: 375
-
 Background@FULLSCREEN_PLAYER:
 	Width: WINDOW_RIGHT
 	Height: WINDOW_BOTTOM

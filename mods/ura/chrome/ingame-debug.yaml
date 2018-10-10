@@ -10,6 +10,7 @@ Container@DEBUG_PANEL:
 			Text: Debug Options
 			Align: Center
 			Width: PARENT_RIGHT
+			Shadow: true
 		Checkbox@INSTANT_BUILD:
 			X: 45
 			Y: 45
@@ -86,6 +87,7 @@ Container@DEBUG_PANEL:
 			Text: Visualizations
 			Align: Center
 			Width: PARENT_RIGHT
+			Shadow: true
 		Checkbox@SHOW_UNIT_PATHS:
 			X: 45
 			Y: 275

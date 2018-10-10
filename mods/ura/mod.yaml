@@ -201,6 +201,9 @@ Fonts:
 	Small:
 		Font: ura|fonts/palanquin-medium.ttf
 		Size:14
+	SmallBold:
+		Font: ura|fonts/palanquin-bold.ttf
+		Size:14
 	Tiny:
 		Font: ura|fonts/palanquin-medium.ttf
 		Size:12

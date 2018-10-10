@@ -4,37 +4,39 @@ Background@ASSETBROWSER_PANEL:
 	X: (WINDOW_RIGHT - WIDTH) / 2
 	Y: (WINDOW_BOTTOM - HEIGHT) / 2
 	Width: 700
-	Height: 500
+	Height: 580
 	Children:
 		LogicTicker@ANIMATION_TICKER:
 		ColorPreviewManager@COLOR_MANAGER:
 		Label@ASSETBROWSER_TITLE:
-			Y: 20
+			Y: 18
 			Width: PARENT_RIGHT
 			Height: 25
-			Font: Bold
+			Font: MediumBold
 			Align: Center
 			Text: Asset Browser
+			Shadow: true
 		Label@SOURCE_SELECTOR_DESC:
 			X: 20
-			Y: 35
+			Y: 55
 			Width: 160
 			Height: 25
-			Font: TinyBold
+			Font: SmallBold
 			Align: Center
 			Text: Select asset source
+			Shadow: true
 		DropDownButton@SOURCE_SELECTOR:
 			X: 20
-			Y: 60
+			Y: 80
 			Width: 160
 			Height: 25
 			Font: Bold
 			Text: Folders
 		ScrollPanel@ASSET_LIST:
 			X: 20
-			Y: 90
+			Y: 110
 			Width: 160
-			Height: 275
+			Height: 325
 			CollapseHiddenChildren: True
 			Children:
 				ScrollItem@ASSET_TEMPLATE:
@@ -50,21 +52,22 @@ Background@ASSETBROWSER_PANEL:
 							Height: 25
 		Label@FILENAME_DESC:
 			X: 20
-			Y: 370
+			Y: 440
 			Width: 160
 			Height: 25
-			Font: TinyBold
+			Font: SmallBold
 			Align: Center
 			Text: Filter by name
+			Shadow: true
 		TextField@FILENAME_INPUT:
 			X: 20
-			Y: 395
+			Y: 465
 			Width: 160
 			Height: 25
 			Type: Filename
 		Label@PALETTE_DESC:
 			X: PARENT_RIGHT - WIDTH - 270
-			Y: 60
+			Y: 80
 			Width: 150
 			Height: 25
 			Font: Bold
@@ -72,13 +75,13 @@ Background@ASSETBROWSER_PANEL:
 			Text: Palette:
 		DropDownButton@PALETTE_SELECTOR:
 			X: PARENT_RIGHT - WIDTH - 110
-			Y: 60
+			Y: 80
 			Width: 150
 			Height: 25
 			Font: Bold
 		DropDownButton@COLOR:
 			X: PARENT_RIGHT - WIDTH - 20
-			Y: 60
+			Y: 80
 			Width: 80
 			Height: 25
 			Children:
@@ -89,9 +92,9 @@ Background@ASSETBROWSER_PANEL:
 					Height: PARENT_BOTTOM - 12
 		Background@SPRITE_BG:
 			X: 190
-			Y: 90
+			Y: 110
 			Width: 490
-			Height: 330
+			Height: 380
 			Background: dialog3
 			Children:
 				Sprite@SPRITE:
@@ -110,7 +113,7 @@ Background@ASSETBROWSER_PANEL:
 					Text: Error displaying file. See assetbrowser.log for details.
 		Container@FRAME_SELECTOR:
 			X: 190
-			Y: 425
+			Y: 497
 			Children:
 				Button@BUTTON_PREV:
 					X: 0
@@ -197,9 +200,10 @@ Background@ASSETBROWSER_PANEL:
 					Align: Left
 		Button@CLOSE_BUTTON:
 			Key: escape
-			X: PARENT_RIGHT - 180
-			Y: PARENT_BOTTOM - 45
-			Width: 160
-			Height: 25
-			Font: Bold
+			X: PARENT_RIGHT - 160
+			Y: PARENT_BOTTOM - 43
+			Width: 140
+			Height: 29
 			Text: Close
+			Font: Medium
+			Shadow: true
