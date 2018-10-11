@@ -31,10 +31,10 @@ SCUD.AI:
 
 MaverickAG.AI:
 	Inherits: MaverickAG
-	InvalidTargets: Wall, Infantry
+	InvalidTargets: Wall, Infantry, Stealth
 	Warhead@1Dam: SpreadDamage
 
 HellfireAG.AI:
 	Inherits: HellfireAG
-	InvalidTargets: Wall, Infantry
+	InvalidTargets: Wall, Infantry, Stealth
 	Warhead@1Dam: SpreadDamage

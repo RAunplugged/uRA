@@ -86,6 +86,8 @@ HARV:
 	Selectable:
 		Priority: 7
 		DecorationBounds: 42,42
+	Targetable:
+		TargetTypes: Ground, Repair, Vehicle, Heavy
 	Explodes:
 		Weapon: OreExplosion
 	SelectionDecorations:
@@ -180,6 +182,8 @@ TRUK:
 		TurnSpeed: 7
 	Selectable:
 		Class: 1tnk
+	Targetable:
+		TargetTypes: Ground, Repair, Vehicle, Heavy
 	AttackTurreted:
 	WithMuzzleOverlay:
 	WithSpriteTurret:
@@ -266,6 +270,8 @@ TRUK:
 	Selectable:
 		DecorationBounds: 28,28
 		Class: 2tnk
+	Targetable:
+		TargetTypes: Ground, Repair, Vehicle, Heavy
 	SelectionDecorations:
 	AttackTurreted:
 	WithMuzzleOverlay:
@@ -379,6 +385,8 @@ TRUK:
 	WithSpriteTurret:
 	Selectable:
 		DecorationBounds: 28,28
+	Targetable:
+		TargetTypes: Ground, Repair, Vehicle, Heavy
 	SelectionDecorations:
 	SpawnActorOnDeath:
 		Actor: 3TNK.Husk
@@ -460,6 +468,8 @@ TRUK:
 	SelectionDecorations:
 	Selectable:
 		DecorationBounds: 44,38,0,-4
+	Targetable:
+		TargetTypes: Ground, Repair, Vehicle, Heavy
 	ProducibleWithLevel:
 		Prerequisites: warfactory.upgraded, radardome.upgraded
 
@@ -855,6 +865,8 @@ APC:
 		Range: 1c512
 	AttackFrontal:
 	WithMuzzleOverlay:
+	Targetable:
+		TargetTypes: Ground, Repair, Vehicle, Heavy
 	ProducibleWithLevel:
 		Prerequisites: warfactory.upgraded
 
@@ -893,6 +905,8 @@ MNLY:
 	RenderDetectionCircle:
 	Selectable:
 		Priority: 5
+	Targetable:
+		TargetTypes: Ground, Repair, Vehicle, Heavy
 	Explodes:
 		Weapon: ATMine
 	RenderSprites:
@@ -1029,6 +1043,8 @@ MGG:
 	GrantConditionOnDeploy:
 		DeployedCondition: deployed
 	RenderShroudCircle:
+	Targetable:
+		TargetTypes: Ground, Repair, Vehicle, Heavy
 	WithIdleOverlay@SPINNER:
 		Offset: -299,0,171
 		Sequence: spinner
@@ -1075,6 +1091,8 @@ MRJ:
 		Range: 18c0
 		Color: 0000FF80
 	RenderJammerCircle:
+	Targetable:
+		TargetTypes: Ground, Repair, Vehicle, Heavy
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
 		Offset: -256,0,256
@@ -1237,6 +1255,8 @@ TTNK:
 	AttackTurreted:
 	Selectable:
 		DecorationBounds: 30,30
+	Targetable:
+		TargetTypes: Ground, MADTank, Repair, Vehicle, Stealth
 	SelectionDecorations:
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
@@ -1275,12 +1295,12 @@ QTNK:
 		ChargeDelay: 192
 	KillsSelf:
 		RequiresCondition: invulnerability
-	Targetable:
-		TargetTypes: Ground, MADTank, Repair, Vehicle
 	Chronoshiftable:
 		RequiresCondition: !deployed
 	Selectable:
 		DecorationBounds: 44,38,0,-4
+	Targetable:
+		TargetTypes: Ground, MADTank, Repair, Vehicle, Heavy
 	SelectionDecorations:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.upgraded, radardome.upgraded

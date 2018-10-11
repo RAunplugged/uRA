@@ -336,6 +336,8 @@ SPY:
 	-Guard:
 	Selectable:
 		Class: Spy
+	Targetable:
+		TargetTypes: Ground, Infantry, Disguise, Stealth
 	Voiced:
 		VoiceSet: SpyVoice
 	-WithInfantryBody:
@@ -506,6 +508,8 @@ HIJACKER:
 	Passenger:
 		PipType: Blue
 	-TakeCover:
+	Targetable:
+		TargetTypes: Ground, Infantry, Disguise, Stealth
 	Voiced:
 		VoiceSet: ThiefVoice
 	WithInfantryBody:
@@ -770,6 +774,8 @@ SNIPER:
 	AutoTargetPriority@DEFAULT:
 		ValidTargets: Infantry
 	AttackFrontal:
+	Targetable:
+		TargetTypes: Ground, Infantry, Disguise, Stealth
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
 		RequiresCondition: !parachute

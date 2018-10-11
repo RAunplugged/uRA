@@ -53,10 +53,11 @@ CRATE:
 		NoBaseSelectionShares: 120
 		Units: mcv
 		Prerequisites: techlevel.medium
-	GiveUnitCrateAction@harvester:
+	GiveUnitCrateAction@harvester.9000:
 		SelectionShares: 20
 		Units: harv
 		Prerequisites: techlevel.infonly
+		TimeDelay: 9000
 	GiveUnitCrateAction@jeep:
 		SelectionShares: 5
 		Units: jeep
