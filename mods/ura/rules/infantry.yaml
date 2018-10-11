@@ -328,7 +328,7 @@ SPY:
 		Voice: Move
 	AutoTarget:
 		InitialStance: HoldFire
-		InitialStanceAI: HoldFire
+		InitialStanceAI: Defend
 		ScanRadius: 6
 	AttackMove:
 		Voice: Move

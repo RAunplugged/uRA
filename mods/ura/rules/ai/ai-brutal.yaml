@@ -268,7 +268,7 @@ DOG.Brutal:
 		Cost: 120
 	Buildable:
 		BuildPaletteOrder: 9002
-		Prerequisites: ~kenn.brutal, ~techlevel.infonly, ~infantry.ai
+		Prerequisites: kenn.brutal, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: dog
 	-MapEditorData:
@@ -655,4 +655,97 @@ WEAP.Brutal.Extra2:
 		BuildDurationModifier: 100
 	RenderSprites:
 		Image: weap
+	-MapEditorData:
+
+# Passive units for purpose of detecting spies
+
+DOG.Guard.Brutal:
+	Inherits: DOG
+	Tooltip:
+		Name: Guard Dog
+		GenericName: Guard Dog
+	Valued:
+		Cost: 120
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~kenn.brutal, mslo.brutal, ~techlevel.infonly, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 650
+		MaxMoveDelay: 1000
+	RenderSprites:
+		Image: dog
+	-MapEditorData:
+DOG.Guard.Brutal.Extra:
+	Inherits: DOG
+	Tooltip:
+		Name: Guard Dog
+		GenericName: Guard Dog
+	Valued:
+		Cost: 120
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~kenn.brutal, barracks.brutal.extra, ~techlevel.infonly, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 650
+		MaxMoveDelay: 1000
+	RenderSprites:
+		Image: dog
+	-MapEditorData:
+SPY.Guard.Brutal:
+	Inherits: SPY
+	Valued:
+		Cost: 240
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~!infantry.england, mslo.brutal, ~tent.brutal, ~techlevel.medium, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 650
+		MaxMoveDelay: 1000
+	RenderSprites:
+		Image: spy
+	-MapEditorData:
+SPY.Guard.Brutal.Extra:
+	Inherits: SPY
+	Valued:
+		Cost: 240
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~!infantry.england, barracks.brutal.extra, ~tent.brutal, ~techlevel.medium, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 650
+		MaxMoveDelay: 1000
+	RenderSprites:
+		Image: spy
+	-MapEditorData:
+SPY.England.Guard.Brutal:
+	Inherits: SPY
+	Valued:
+		Cost: 240
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~infantry.england, mslo.brutal, ~tent.brutal, ~techlevel.medium, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 650
+		MaxMoveDelay: 1000
+	RenderSprites:
+		Image: spy
+	-MapEditorData:
+SPY.England.Guard.Brutal.Extra:
+	Inherits: SPY
+	Valued:
+		Cost: 240
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~infantry.england, barracks.brutal.extra, ~tent.brutal, ~techlevel.medium, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 650
+		MaxMoveDelay: 1000
+	RenderSprites:
+		Image: spy
 	-MapEditorData:

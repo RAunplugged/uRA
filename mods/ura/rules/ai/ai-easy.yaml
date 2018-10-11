@@ -268,7 +268,7 @@ DOG.Easy:
 		Cost: 240
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: ~kenn.easy, ~techlevel.infonly, ~infantry.ai
+		Prerequisites: kenn.easy, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: dog
 	-MapEditorData:
@@ -641,4 +641,73 @@ WEAP.Easy.Extra:
 		Prerequisites: proc.easy.extra, mslo.easy, fix.easy, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
+	-MapEditorData:
+
+# Passive units for purpose of detecting spies
+
+DOG.Guard.Easy:
+	Inherits: DOG
+	Tooltip:
+		Name: Guard Dog
+		GenericName: Guard Dog
+	Valued:
+		Cost: 240
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~kenn.easy, mslo.easy, ~techlevel.infonly, ~infantry.ai
+	RenderSprites:
+		Image: dog
+	-MapEditorData:
+DOG.Guard.Easy.Extra:
+	Inherits: DOG
+	Tooltip:
+		Name: Guard Dog
+		GenericName: Guard Dog
+	Valued:
+		Cost: 240
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~kenn.easy, barracks.easy.extra, ~techlevel.infonly, ~infantry.ai
+	RenderSprites:
+		Image: dog
+	-MapEditorData:
+SPY.Guard.Easy:
+	Inherits: SPY
+	Valued:
+		Cost: 480
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~!infantry.england, mslo.easy, ~tent.easy, ~techlevel.medium, ~infantry.ai
+	RenderSprites:
+		Image: spy
+	-MapEditorData:
+SPY.Guard.Easy.Extra:
+	Inherits: SPY
+	Valued:
+		Cost: 480
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~!infantry.england, barracks.easy.extra, ~tent.easy, ~techlevel.medium, ~infantry.ai
+	RenderSprites:
+		Image: spy
+	-MapEditorData:
+SPY.England.Guard.Easy:
+	Inherits: SPY
+	Valued:
+		Cost: 480
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~infantry.england, mslo.easy, ~tent.easy, ~techlevel.medium, ~infantry.ai
+	RenderSprites:
+		Image: spy
+	-MapEditorData:
+SPY.England.Guard.Easy.Extra:
+	Inherits: SPY
+	Valued:
+		Cost: 480
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~infantry.england, barracks.easy.extra, ~tent.easy, ~techlevel.medium, ~infantry.ai
+	RenderSprites:
+		Image: spy
 	-MapEditorData:

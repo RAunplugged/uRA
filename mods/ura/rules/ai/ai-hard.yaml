@@ -289,7 +289,7 @@ DOG.Hard:
 		Cost: 160
 	Buildable:
 		BuildPaletteOrder: 9001
-		Prerequisites: ~kenn.hard, ~techlevel.infonly, ~infantry.ai
+		Prerequisites: kenn.hard, ~techlevel.infonly, ~infantry.ai
 	RenderSprites:
 		Image: dog
 	-MapEditorData:
@@ -726,7 +726,7 @@ WEAP.Hard.Extra:
 		Cost: 1600
 	Buildable:
 		BuildPaletteOrder: 9200
-		Prerequisites: proc.hard.extra, mslo.hard, fix.hard, !weap.brutal.extra2, ~techlevel.low, ~structures.ai
+		Prerequisites: proc.hard.extra, mslo.hard, fix.hard, !weap.hard.extra2, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
 	-MapEditorData:
@@ -740,4 +740,97 @@ WEAP.Hard.Extra2:
 		BuildDurationModifier: 100
 	RenderSprites:
 		Image: weap
+	-MapEditorData:
+
+# Passive units for purpose of detecting spies
+
+DOG.Guard.Hard:
+	Inherits: DOG
+	Tooltip:
+		Name: Guard Dog
+		GenericName: Guard Dog
+	Valued:
+		Cost: 160
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~kenn.hard, mslo.hard, ~techlevel.infonly, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 650
+		MaxMoveDelay: 1000
+	RenderSprites:
+		Image: dog
+	-MapEditorData:
+DOG.Guard.Hard.Extra:
+	Inherits: DOG
+	Tooltip:
+		Name: Guard Dog
+		GenericName: Guard Dog
+	Valued:
+		Cost: 160
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~kenn.hard, barracks.hard.extra, ~techlevel.infonly, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 650
+		MaxMoveDelay: 1000
+	RenderSprites:
+		Image: dog
+	-MapEditorData:
+SPY.Guard.Hard:
+	Inherits: SPY
+	Valued:
+		Cost: 320
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~!infantry.england, mslo.hard, ~tent.hard, ~techlevel.medium, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 650
+		MaxMoveDelay: 1000
+	RenderSprites:
+		Image: spy
+	-MapEditorData:
+SPY.Guard.Hard.Extra:
+	Inherits: SPY
+	Valued:
+		Cost: 320
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~!infantry.england, barracks.hard.extra, ~tent.hard, ~techlevel.medium, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 650
+		MaxMoveDelay: 1000
+	RenderSprites:
+		Image: spy
+	-MapEditorData:
+SPY.England.Guard.Hard:
+	Inherits: SPY
+	Valued:
+		Cost: 320
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~infantry.england, mslo.hard, ~tent.hard, ~techlevel.medium, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 650
+		MaxMoveDelay: 1000
+	RenderSprites:
+		Image: spy
+	-MapEditorData:
+SPY.England.Guard.Hard.Extra:
+	Inherits: SPY
+	Valued:
+		Cost: 320
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~infantry.england, barracks.hard.extra, ~tent.hard, ~techlevel.medium, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 650
+		MaxMoveDelay: 1000
+	RenderSprites:
+		Image: spy
 	-MapEditorData:

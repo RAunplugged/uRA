@@ -207,3 +207,84 @@ WEAP.Normal.Extra:
 	RenderSprites:
 		Image: weap
 	-MapEditorData:
+
+# Passive units for purpose of detecting spies
+
+DOG.Guard.Normal:
+	Inherits: DOG
+	Tooltip:
+		Name: Guard Dog
+		GenericName: Guard Dog
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~kenn, mslo, ~techlevel.infonly, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 375
+		MaxMoveDelay: 600
+	RenderSprites:
+		Image: dog
+	-MapEditorData:
+DOG.Guard.Normal.Extra:
+	Inherits: DOG
+	Tooltip:
+		Name: Guard Dog
+		GenericName: Guard Dog
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~kenn, barracks.normal.extra, ~techlevel.infonly, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 375
+		MaxMoveDelay: 600
+	RenderSprites:
+		Image: dog
+	-MapEditorData:
+SPY.Guard.Normal:
+	Inherits: SPY
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~!infantry.england, mslo, ~tent, ~techlevel.medium, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 375
+		MaxMoveDelay: 600
+	RenderSprites:
+		Image: spy
+	-MapEditorData:
+SPY.Guard.Normal.Extra:
+	Inherits: SPY
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~!infantry.england, barracks.normal.extra, ~tent, ~techlevel.medium, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 375
+		MaxMoveDelay: 600
+	RenderSprites:
+		Image: spy
+	-MapEditorData:
+SPY.England.Guard.Normal:
+	Inherits: SPY
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~infantry.england, mslo, ~tent, ~techlevel.medium, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 375
+		MaxMoveDelay: 600
+	RenderSprites:
+		Image: spy
+	-MapEditorData:
+SPY.England.Guard.Normal.Extra:
+	Inherits: SPY
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: ~infantry.england, barracks.normal.extra, ~tent, ~techlevel.medium, ~infantry.ai
+	Wanders:
+		WanderMoveRadius: 3
+		MinMoveDelay: 375
+		MaxMoveDelay: 600
+	RenderSprites:
+		Image: spy
+	-MapEditorData:

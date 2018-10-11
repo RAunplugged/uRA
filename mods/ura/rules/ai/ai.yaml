@@ -42,7 +42,7 @@ Player:
 			Silo: silo.easy
 		UnitsCommonNames:
 			Mcv: mcv,mcv.easy
-			ExcludeFromSquads: harv.easy,mcv.easy
+			ExcludeFromSquads: harv.easy,mcv.easy,dog.guard.easy,dog.guard.easy.extra,spy.guard.easy,spy.guard.easy.extra,spy.england.guard.easy,spy.england.guard.easy.extra
 		BuildingFractions:
 			proc.easy: 30%
 			proc.easy.extra: 7%
@@ -90,10 +90,16 @@ Player:
 			stek.easy: 1
 		UnitsToBuild:
 			dog.easy: 15%
+			dog.guard.easy: 7%
+			dog.guard.easy.extra: 7%
 			e1.easy: 65%
 			e2.easy: 15%
 			e3.easy: 30%
 			e4.easy: 25%
+			spy.guard.easy: 7%
+			spy.guard.easy.extra: 7%
+			spy.england.guard.easy: 7%
+			spy.england.guard.easy.extra: 7%
 			e7.easy: 0.1%
 			e9.easy: 15%
 			e10.easy: 15%
@@ -120,6 +126,12 @@ Player:
 			mig.easy: 25%
 		UnitLimits:
 			dog.easy: 4
+			dog.guard.easy: 1
+			dog.guard.easy.extra: 1
+			spy.guard.easy: 1
+			spy.guard.easy.extra: 1
+			spy.england.guard.easy: 1
+			spy.england.guard.easy.extra: 1
 			e9.easy: 5
 			e10.easy: 5
 			sniper.easy: 2
@@ -231,7 +243,7 @@ Player:
 			Silo: silo
 		UnitsCommonNames:
 			Mcv: mcv,mcv.normal
-			ExcludeFromSquads: harv,harv.normal,mcv.normal
+			ExcludeFromSquads: harv,harv.normal,mcv.normal,dog.guard.normal,dog.guard.normal.extra,spy.guard.normal,spy.guard.normal.extra,spy.england.guard.normal,spy.england.guard.normal.extra
 		BuildingFractions:
 			proc.normal: 30%
 			proc.normal.extra: 7%
@@ -279,10 +291,16 @@ Player:
 			stek: 1
 		UnitsToBuild:
 			dog: 15%
+			dog.guard.normal: 7%
+			dog.guard.normal.extra: 7%
 			e1: 65%
 			e2: 15%
 			e3: 30%
 			e4: 25%
+			spy.guard.normal: 7%
+			spy.guard.normal.extra: 7%
+			spy.england.guard.normal: 7%
+			spy.england.guard.normal.extra: 7%
 			e7.normal: 0.1%
 			e9.normal: 15%
 			e10.normal: 15%
@@ -309,6 +327,12 @@ Player:
 			mig.normal: 25%
 		UnitLimits:
 			dog: 4
+			dog.guard.normal: 1
+			dog.guard.normal.extra: 1
+			spy.guard.normal: 1
+			spy.guard.normal.extra: 1
+			spy.england.guard.normal: 1
+			spy.england.guard.normal.extra: 1
 			e9.normal: 5
 			e10.normal: 5
 			sniper.normal: 2
@@ -425,7 +449,7 @@ Player:
 			Silo: silo.hard
 		UnitsCommonNames:
 			Mcv: mcv,mcv.hard
-			ExcludeFromSquads: harv.hard,mcv.hard
+			ExcludeFromSquads: harv.hard,mcv.hard,dog.guard.hard,dog.guard.hard.extra,spy.guard.hard,spy.guard.hard.extra,spy.england.guard.hard,spy.england.guard.hard.extra
 		BuildingFractions:
 			proc.hard: 30%
 			proc.hard.extra: 7%
@@ -475,10 +499,16 @@ Player:
 			stek.hard: 1
 		UnitsToBuild:
 			dog.hard: 15%
+			dog.guard.hard: 7%
+			dog.guard.hard.extra: 7%
 			e1.hard: 65%
 			e2.hard: 15%
 			e3.hard: 30%
 			e4.hard: 20%
+			spy.guard.hard: 7%
+			spy.guard.hard.extra: 7%
+			spy.england.guard.hard: 7%
+			spy.england.guard.hard.extra: 7%
 			e7.hard: 0.1%
 			e9.hard: 15%
 			e10.hard: 15%
@@ -505,6 +535,12 @@ Player:
 			mig.hard: 25%
 		UnitLimits:
 			dog.hard: 6
+			dog.guard.hard: 1
+			dog.guard.hard.extra: 1
+			spy.guard.hard: 1
+			spy.guard.hard.extra: 1
+			spy.england.guard.hard: 1
+			spy.england.guard.hard.extra: 1
 			e9.hard: 5
 			e10.hard: 5
 			sniper.hard: 2
@@ -621,7 +657,7 @@ Player:
 			Silo: silo.brutal
 		UnitsCommonNames:
 			Mcv: mcv,mcv.brutal
-			ExcludeFromSquads: harv.brutal,mcv.brutal
+			ExcludeFromSquads: harv.brutal,mcv.brutal,dog.guard.brutal,dog.guard.brutal.extra,spy.guard.brutal,spy.guard.brutal.extra,spy.england.guard.brutal,spy.england.guard.brutal.extra
 		BuildingFractions:
 			proc.brutal: 30%
 			proc.brutal.extra: 7%
@@ -671,10 +707,16 @@ Player:
 			stek.brutal: 1
 		UnitsToBuild:
 			dog.brutal: 15%
+			dog.guard.brutal: 7%
+			dog.guard.brutal.extra: 7%
 			e1.brutal: 65%
 			e2.brutal: 15%
 			e3.brutal: 30%
 			e4.brutal: 20%
+			spy.guard.brutal: 7%
+			spy.guard.brutal.extra: 7%
+			spy.england.guard.brutal: 7%
+			spy.england.guard.brutal.extra: 7%
 			e7.brutal: 0.1%
 			e9.brutal: 15%
 			e10.brutal: 15%
@@ -701,6 +743,12 @@ Player:
 			mig.brutal: 25%
 		UnitLimits:
 			dog.brutal: 6
+			dog.guard.brutal: 1
+			dog.guard.brutal.extra: 1
+			spy.guard.brutal: 1
+			spy.guard.brutal.extra: 1
+			spy.england.guard.brutal: 1
+			spy.england.guard.brutal.extra: 1
 			e9.brutal: 5
 			e10.brutal: 5
 			sniper.brutal: 2
