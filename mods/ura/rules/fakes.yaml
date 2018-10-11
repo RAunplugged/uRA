@@ -247,7 +247,6 @@ FIXF:
 	Building:
 		Footprint: _=_ xxx _=_
 		Dimensions: 3,3
-
 	WithBuildingBib:
 		HasMinibib: Yes
 	HitShape:
