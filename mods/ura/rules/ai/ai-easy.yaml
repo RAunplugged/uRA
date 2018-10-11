@@ -375,7 +375,7 @@ MCV.Easy:
 		Cost: 2400
 	Buildable:
 		BuildPaletteOrder: 9000
-		Prerequisites: fix.easy, ~techlevel.medium, ~vehicles.ai
+		Prerequisites: fix.easy, dome.easy, !proc.easy.extra2, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
 	-MapEditorData:
@@ -387,7 +387,7 @@ HARV.Easy:
 		BuildPaletteOrder: 9003
 		Prerequisites: proc.easy, ~techlevel.infonly, ~vehicles.ai
 	Harvester:
-		SearchFromOrderRadius: 30
+		SearchFromOrderRadius: 40
 	RenderSprites:
 		Image: harv
 	-MapEditorData:
@@ -577,3 +577,68 @@ MIG.Easy:
 		Image: mig
 	-MapEditorData:
 
+# Aditional Easy AI Structures unlocked at late tech.
+
+PROC.Easy.Extra:
+	Inherits: PROC
+	Valued:
+		Cost: 1120
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, mslo.easy, fix.easy, ~techlevel.infonly, ~structures.ai
+	FreeActor:
+		Actor: HARV.easy
+	RenderSprites:
+		Image: proc
+	-MapEditorData:
+PROC.Easy.Extra2:
+	Inherits: PROC
+	Valued:
+		Cost: 1120
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, weap.easy.extra, ~techlevel.infonly, ~structures.ai
+		BuildDurationModifier: 100
+	FreeActor:
+		Actor: HARV.easy
+	RenderSprites:
+		Image: proc
+	-MapEditorData:
+TENT.Easy.Extra:
+	Inherits: TENT
+	Valued:
+		Cost: 400
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks.easy
+	ProvidesPrerequisite@barracks.extra:
+		Prerequisite: barracks.easy.extra
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, proc.easy.extra2, mslo.easy, fix.easy, ~structures.allies, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: tent
+	-MapEditorData:
+BARR.Easy.Extra:
+	Inherits: BARR
+	Valued:
+		Cost: 400
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks.easy
+	ProvidesPrerequisite@barracks.extra:
+		Prerequisite: barracks.easy.extra
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, proc.easy.extra2, mslo.easy, fix.easy, ~structures.soviet, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: barr
+	-MapEditorData:
+WEAP.Easy.Extra:
+	Inherits: WEAP
+	Valued:
+		Cost: 1600
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: proc.easy.extra, mslo.easy, fix.easy, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: weap
+	-MapEditorData:

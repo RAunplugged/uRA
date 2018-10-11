@@ -1,5 +1,18 @@
 # Normal AI
 
+# Structures
+
+PROC.Normal:
+	Inherits: PROC
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: anypower, ~techlevel.infonly, ~structures.ai
+	FreeActor:
+		Actor: HARV.Normal
+	RenderSprites:
+		Image: proc
+	-MapEditorData:
+
 # Defensive Structures
 
 AGUN.Normal:
@@ -67,13 +80,21 @@ SNIPER.Normal:
 
 # Vehicles
 
+MCV.Normal:
+	Inherits: MCV
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: fix, dome, !proc.normal.extra2, ~techlevel.medium, ~vehicles.ai
+	RenderSprites:
+		Image: mcv
+	-MapEditorData:
 HARV.Normal:
 	Inherits: HARV
 	Buildable:
 		BuildPaletteOrder: 9045
-		Prerequisites: proc, ~techlevel.infonly, ~vehicles.ai
+		Prerequisites: proc.normal, ~techlevel.infonly, ~vehicles.ai
 	Harvester:
-		SearchFromOrderRadius: 30
+		SearchFromOrderRadius: 40
 	RenderSprites:
 		Image: harv
 	-MapEditorData:
@@ -119,4 +140,70 @@ MIG.Normal:
 		Prerequisites: afld, stek, ~techlevel.high, ~aircraft.ai
 	RenderSprites:
 		Image: mig
+	-MapEditorData:
+
+# Aditional Normal AI Structures unlocked at late tech.
+
+PROC.Normal.Extra:
+	Inherits: PROC
+	Valued:
+		Cost: 1120
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, mslo, fix, ~techlevel.infonly, ~structures.ai
+	FreeActor:
+		Actor: HARV.Normal
+	RenderSprites:
+		Image: proc
+	-MapEditorData:
+PROC.Normal.Extra2:
+	Inherits: PROC
+	Valued:
+		Cost: 1120
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, weap.normal.extra, ~techlevel.infonly, ~structures.ai
+		BuildDurationModifier: 100
+	FreeActor:
+		Actor: HARV.Normal
+	RenderSprites:
+		Image: proc
+	-MapEditorData:
+TENT.Normal.Extra:
+	Inherits: TENT
+	Valued:
+		Cost: 400
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks
+	ProvidesPrerequisite@barracks.extra:
+		Prerequisite: barracks.normal.extra
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, proc.normal.extra2, mslo, fix, ~structures.allies, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: tent
+	-MapEditorData:
+BARR.Normal.Extra:
+	Inherits: BARR
+	Valued:
+		Cost: 400
+	ProvidesPrerequisite@barracks:
+		Prerequisite: barracks
+	ProvidesPrerequisite@barracks.extra:
+		Prerequisite: barracks.normal.extra
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: anypower, proc.normal.extra2, mslo, fix, ~structures.soviet, ~techlevel.infonly, ~structures.ai
+	RenderSprites:
+		Image: barr
+	-MapEditorData:
+WEAP.Normal.Extra:
+	Inherits: WEAP
+	Valued:
+		Cost: 1600
+	Buildable:
+		BuildPaletteOrder: 9200
+		Prerequisites: proc.normal.extra, mslo, fix, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: weap
 	-MapEditorData:

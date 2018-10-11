@@ -395,7 +395,7 @@ MCV.Hard:
 		Cost: 1600
 	Buildable:
 		BuildPaletteOrder: 9001
-		Prerequisites: fix.hard, dome.hard, !weap.hard.extra2, ~techlevel.medium, ~vehicles.ai
+		Prerequisites: fix.hard, dome.hard, !proc.hard.extra2, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
 	-MapEditorData:
@@ -726,7 +726,7 @@ WEAP.Hard.Extra:
 		Cost: 1600
 	Buildable:
 		BuildPaletteOrder: 9200
-		Prerequisites: proc.hard.extra, mslo.hard, fix.hard, ~techlevel.low, ~structures.ai
+		Prerequisites: proc.hard.extra, mslo.hard, fix.hard, !weap.brutal.extra2, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
 	-MapEditorData:

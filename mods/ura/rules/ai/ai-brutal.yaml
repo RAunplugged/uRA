@@ -374,7 +374,7 @@ MCV.Brutal:
 		Cost: 1200
 	Buildable:
 		BuildPaletteOrder: 9002
-		Prerequisites: fix.brutal, dome.brutal, !weap.brutal.extra2, ~techlevel.medium, ~vehicles.ai
+		Prerequisites: fix.brutal, dome.brutal, !proc.brutal.extra2, ~techlevel.medium, ~vehicles.ai
 	RenderSprites:
 		Image: mcv
 	-MapEditorData:

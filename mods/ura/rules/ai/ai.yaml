@@ -22,6 +22,9 @@ Player:
 		StructureProductionResumeDelay: 500
 		CheckForNewBasesDelay: 500
 
+		RushAttackScanRadius: 18
+		ProtectUnitScanRadius: 18
+		RallyPointScanRadius: 10
 		DangerScanRadius: 14
 		AttackScanRadius: 14
 		ProtectionScanRadius: 10
@@ -31,21 +34,26 @@ Player:
 
 		BuildingCommonNames:
 			ConstructionYard: fact
-			Refinery: proc.easy
+			Refinery: proc.easy,proc.easy.extra,proc.easy.extra2
 			Power: powr.easy,apwr.easy
-			Barracks: barr.easy,tent.easy
-			VehiclesFactory: weap.easy
-			Production: barr.easy,tent.easy,weap.easy,afld.easy,hpad.easy
+			Barracks: barr.easy,barr.easy.extra,tent.easy,tent.easy.extra
+			VehiclesFactory: weap.easy,weap.easy.extra
+			Production: barr.easy,barr.easy.extra,tent.easy,tent.easy.extra,weap.easy,weap.easy.extra,afld.easy,hpad.easy
 			Silo: silo.easy
 		UnitsCommonNames:
-			Mcv: mcv, mcv.easy
+			Mcv: mcv,mcv.easy
 			ExcludeFromSquads: harv.easy,mcv.easy
 		BuildingFractions:
 			proc.easy: 30%
+			proc.easy.extra: 7%
+			proc.easy.extra2: 7%
 			kenn.easy: 0.5%
 			tent.easy: 10%
+			tent.easy.extra: 10%
 			barr.easy: 10%
+			barr.easy.extra: 10%
 			weap.easy: 5%
+			weap.easy.extra: 7%
 			fix.easy: 0.1%
 			dome.easy: 7%
 			hpad.easy: 10%
@@ -63,11 +71,16 @@ Player:
 			gap.easy: 7%
 			mslo.easy: 1%
 		BuildingLimits:
-			proc.easy: 4
+			proc.easy: 3
+			proc.easy.extra: 1
+			proc.easy.extra2: 2
 			kenn.easy: 1
 			tent.easy: 2
+			tent.easy.extra: 1
 			barr.easy: 2
+			barr.easy.extra: 1
 			weap.easy: 1
+			weap.easy.extra: 1
 			fix.easy: 1
 			dome.easy: 1
 			hpad.easy: 2
@@ -81,11 +94,12 @@ Player:
 			e2.easy: 15%
 			e3.easy: 30%
 			e4.easy: 25%
-			# e7.easy: 0.1%
+			e7.easy: 0.1%
 			e9.easy: 15%
 			e10.easy: 15%
 			sniper.easy: 15%
 			shok.easy: 30%
+			mcv.easy: 0.1%
 			harv.easy: 15%
 			jeep.easy: 20%
 			ftrk.easy: 30%
@@ -109,6 +123,7 @@ Player:
 			e9.easy: 5
 			e10.easy: 5
 			sniper.easy: 2
+			mcv.easy: 1
 			harv.easy: 8
 			jeep.easy: 3
 			ftrk.easy: 4
@@ -208,21 +223,26 @@ Player:
 
 		BuildingCommonNames:
 			ConstructionYard: fact
-			Refinery: proc
+			Refinery: proc.normal,proc.normal.extra,proc.normal.extra2
 			Power: powr,apwr
-			Barracks: barr,tent
-			VehiclesFactory: weap
-			Production: barr,tent,weap,afld,hpad
+			Barracks: barr,barr.normal.extra,tent,tent.normal.extra
+			VehiclesFactory: weap,weap.normal.extra
+			Production: barr,barr.normal.extra,tent,tent.normal.extra,weap,weap.normal.extra,afld,hpad
 			Silo: silo
 		UnitsCommonNames:
-			Mcv: mcv
-			ExcludeFromSquads: harv
+			Mcv: mcv,mcv.normal
+			ExcludeFromSquads: harv,harv.normal,mcv.normal
 		BuildingFractions:
-			proc: 30%
+			proc.normal: 30%
+			proc.normal.extra: 7%
+			proc.normal.extra2: 7%
 			kenn: 0.5%
 			tent: 10%
+			tent.normal.extra: 10%
 			barr: 10%
+			barr.normal.extra: 10%
 			weap: 5%
+			weap.normal.extra: 7%
 			fix: 1%
 			dome: 7%
 			hpad: 10%
@@ -240,11 +260,16 @@ Player:
 			gap.normal: 3%
 			mslo: 1%
 		BuildingLimits:
-			proc: 4
+			proc.normal: 3
+			proc.normal.extra: 1
+			proc.normal.extra2: 2
 			kenn: 1
 			tent: 2
+			tent.normal.extra: 1
 			barr: 2
+			barr.normal.extra: 1
 			weap: 1
+			weap.normal.extra: 1
 			fix: 1
 			dome: 1
 			hpad: 2
@@ -258,12 +283,13 @@ Player:
 			e2: 15%
 			e3: 30%
 			e4: 25%
-			# e7.normal: 0.1%
+			e7.normal: 0.1%
 			e9.normal: 15%
 			e10.normal: 15%
 			sniper.normal: 15%
 			shok: 30%
-			harv: 15%
+			mcv.normal: 0.1%
+			harv.normal: 15%
 			jeep: 20%
 			ftrk: 30%
 			apc: 20%
@@ -286,6 +312,7 @@ Player:
 			e9.normal: 5
 			e10.normal: 5
 			sniper.normal: 2
+			mcv.normal: 1
 			harv.normal: 8
 			jeep: 3
 			ftrk: 4

@@ -54,10 +54,10 @@ Vulcan.AI:
 
 ChainGun.Yak.AI:
 	Inherits: ChainGun.Yak
-	InvalidTargets: Wall, Defense, Heavy, Stealth
+	InvalidTargets: Wall, Defense, Heavy, Stealth, Air
 	Warhead@1Dam: SpreadDamage
 
 ChainGun.AI:
 	Inherits: ChainGun
-	InvalidTargets: Wall, Defense, Heavy, Stealth
+	InvalidTargets: Wall, Defense, Heavy, Stealth, Air
 	Warhead@1Dam: SpreadDamage
