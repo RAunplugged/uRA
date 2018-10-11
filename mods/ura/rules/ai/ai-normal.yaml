@@ -12,6 +12,52 @@ PROC.Normal:
 	RenderSprites:
 		Image: proc
 	-MapEditorData:
+WEAP.Normal:
+	Inherits: WEAP
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: proc.normal, barracks, ~techlevel.low, ~structures.ai
+	RenderSprites:
+		Image: weap
+	-MapEditorData:
+FIX.Normal:
+	Inherits: FIX
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: weap.normal, barracks, !fix.normal, ~techlevel.medium, ~structures.ai
+	RenderSprites:
+		Image: fix
+	-MapEditorData:
+DOME.Normal:
+	Inherits: DOME
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: proc.normal, barracks, !dome.normal, ~techlevel.medium, ~structures.ai
+	ParatroopersPower@paratroopers:
+		Prerequisites: dome.normal, ~structures.england
+	RenderSprites:
+		Image: dome
+	-MapEditorData:
+ATEK.Normal:
+	Inherits: ATEK
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: weap.normal, dome.normal, !atek.normal, ~structures.allies, ~techlevel.high, ~structures.ai
+	BaseProvider:
+		Range: 16c0
+	RenderSprites:
+		Image: atek
+	-MapEditorData:
+STEK.Normal:
+	Inherits: STEK
+	Buildable:
+		BuildPaletteOrder: 9300
+		Prerequisites: weap.normal, dome.normal, !stek.normal, ~structures.soviet, ~techlevel.high, ~structures.ai
+	BaseProvider:
+		Range: 16c0
+	RenderSprites:
+		Image: stek
+	-MapEditorData:
 
 # Defensive Structures
 

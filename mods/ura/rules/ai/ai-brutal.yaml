@@ -74,7 +74,7 @@ FIX.Brutal:
 		Cost: 720
 	Buildable:
 		BuildPaletteOrder: 9020
-		Prerequisites: weap.brutal, barracks.brutal, ~techlevel.medium, ~structures.ai
+		Prerequisites: weap.brutal, barracks.brutal, !fix.brutal, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
 	-MapEditorData:
@@ -84,7 +84,7 @@ DOME.Brutal:
 		Cost: 960
 	Buildable:
 		BuildPaletteOrder: 9023
-		Prerequisites: proc.brutal, barracks.brutal, ~techlevel.medium, ~structures.ai
+		Prerequisites: proc.brutal, barracks.brutal, !dome.brutal, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.brutal, ~structures.england
 	RenderSprites:
@@ -138,7 +138,7 @@ ATEK.Brutal:
 		Cost: 900
 	Buildable:
 		BuildPaletteOrder: 9038
-		Prerequisites: weap.brutal, dome.brutal, ~structures.allies, ~techlevel.high, ~structures.ai
+		Prerequisites: weap.brutal, dome.brutal, !atek.brutal, ~structures.allies, ~techlevel.high, ~structures.ai
 	BaseProvider:
 		Range: 16c0
 	RenderSprites:
@@ -150,7 +150,7 @@ STEK.Brutal:
 		Cost: 900
 	Buildable:
 		BuildPaletteOrder: 9041
-		Prerequisites: weap.brutal, dome.brutal, ~structures.soviet, ~techlevel.high, ~structures.ai
+		Prerequisites: weap.brutal, dome.brutal, !stek.brutal, ~structures.soviet, ~techlevel.high, ~structures.ai
 	BaseProvider:
 		Range: 16c0
 	RenderSprites:

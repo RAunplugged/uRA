@@ -74,7 +74,7 @@ FIX.Hard:
 		Cost: 960
 	Buildable:
 		BuildPaletteOrder: 9019
-		Prerequisites: weap.hard, barracks.hard, ~techlevel.medium, ~structures.ai
+		Prerequisites: weap.hard, barracks.hard, !fix.hard, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
 	-MapEditorData:
@@ -104,7 +104,7 @@ DOME.Hard:
 		Cost: 1280
 	Buildable:
 		BuildPaletteOrder: 9022
-		Prerequisites: proc.hard, barracks.hard, ~techlevel.medium, ~structures.ai
+		Prerequisites: proc.hard, barracks.hard, !dome.hard, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.hard, ~structures.england
 	RenderSprites:
@@ -152,14 +152,13 @@ AFLD.Ukraine.Hard:
 	RenderSprites:
 		Image: afld
 	-MapEditorData:
-
 ATEK.Hard:
 	Inherits: ATEK
 	Valued:
 		Cost: 1200
 	Buildable:
 		BuildPaletteOrder: 9037
-		Prerequisites: weap.hard, dome.hard, ~structures.allies, ~techlevel.high, ~structures.ai
+		Prerequisites: weap.hard, dome.hard, !atek.hard, ~structures.allies, ~techlevel.high, ~structures.ai
 	BaseProvider:
 		Range: 16c0
 	RenderSprites:
@@ -171,7 +170,7 @@ STEK.Hard:
 		Cost: 1200
 	Buildable:
 		BuildPaletteOrder: 9040
-		Prerequisites: weap.hard, dome.hard, ~structures.soviet, ~techlevel.high, ~structures.ai
+		Prerequisites: weap.hard, dome.hard, !stek.hard, ~structures.soviet, ~techlevel.high, ~structures.ai
 	BaseProvider:
 		Range: 16c0
 	RenderSprites:

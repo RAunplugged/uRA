@@ -64,7 +64,7 @@ WEAP.Easy:
 		Cost: 2400
 	Buildable:
 		BuildPaletteOrder: 9015
-		Prerequisites: proc.easy, ~techlevel.low, ~structures.ai
+		Prerequisites: proc.easy, barracks.easy, ~techlevel.low, ~structures.ai
 	RenderSprites:
 		Image: weap
 	-MapEditorData:
@@ -74,7 +74,7 @@ FIX.Easy:
 		Cost: 1440
 	Buildable:
 		BuildPaletteOrder: 9018
-		Prerequisites: weap.easy, ~techlevel.medium, ~structures.ai
+		Prerequisites: weap.easy, !fix.easy, ~techlevel.medium, ~structures.ai
 	RenderSprites:
 		Image: fix
 	-MapEditorData:
@@ -84,7 +84,7 @@ DOME.Easy:
 		Cost: 1920
 	Buildable:
 		BuildPaletteOrder: 9021
-		Prerequisites: proc.easy, ~techlevel.medium, ~structures.ai
+		Prerequisites: proc.easy, barracks.easy, !dome.easy, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.easy, ~structures.england
 	RenderSprites:
@@ -138,7 +138,7 @@ ATEK.Easy:
 		Cost: 1800
 	Buildable:
 		BuildPaletteOrder: 9036
-		Prerequisites: weap.easy, dome.easy, ~structures.allies, ~techlevel.high, ~structures.ai
+		Prerequisites: weap.easy, dome.easy, !atek.easy, ~structures.allies, ~techlevel.high, ~structures.ai
 	BaseProvider:
 		Range: 16c0
 	RenderSprites:
@@ -150,7 +150,7 @@ STEK.Easy:
 		Cost: 1800
 	Buildable:
 		BuildPaletteOrder: 9039
-		Prerequisites: weap.easy, dome.easy, ~structures.soviet, ~techlevel.high, ~structures.ai
+		Prerequisites: weap.easy, dome.easy, !stek.easy, ~structures.soviet, ~techlevel.high, ~structures.ai
 	BaseProvider:
 		Range: 16c0
 	RenderSprites:

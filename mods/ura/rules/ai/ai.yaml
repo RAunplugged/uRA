@@ -238,8 +238,8 @@ Player:
 			Refinery: proc.normal,proc.normal.extra,proc.normal.extra2
 			Power: powr,apwr
 			Barracks: barr,barr.normal.extra,tent,tent.normal.extra
-			VehiclesFactory: weap,weap.normal.extra
-			Production: barr,barr.normal.extra,tent,tent.normal.extra,weap,weap.normal.extra,afld,hpad
+			VehiclesFactory: weap.normal,weap.normal.extra
+			Production: barr,barr.normal.extra,tent,tent.normal.extra,weap.normal,weap.normal.extra,afld,hpad
 			Silo: silo
 		UnitsCommonNames:
 			Mcv: mcv,mcv.normal
@@ -253,15 +253,15 @@ Player:
 			tent.normal.extra: 10%
 			barr: 10%
 			barr.normal.extra: 10%
-			weap: 5%
+			weap.normal: 5%
 			weap.normal.extra: 7%
-			fix: 1%
-			dome: 7%
+			fix.normal: 1%
+			dome.normal: 7%
 			hpad: 10%
 			afld: 10%
 			afld.ukraine: 10%
-			atek: 1%
-			stek: 1%
+			atek.normal: 1%
+			stek.normal: 1%
 			pbox: 5%
 			hbox: 5%
 			gun: 5%
@@ -280,15 +280,15 @@ Player:
 			tent.normal.extra: 1
 			barr: 2
 			barr.normal.extra: 1
-			weap: 1
+			weap.normal: 1
 			weap.normal.extra: 1
-			fix: 1
-			dome: 1
+			fix.normal: 1
+			dome.normal: 1
 			hpad: 2
 			afld: 2
 			afld.ukraine: 2
-			atek: 1
-			stek: 1
+			atek.normal: 1
+			stek.normal: 1
 		UnitsToBuild:
 			dog: 15%
 			dog.guard.normal: 7%
