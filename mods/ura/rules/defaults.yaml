@@ -162,19 +162,19 @@
 
 ^InfantryExperienceHospitalOverrides:
 	WithDecoration@RANK-1:
-		BlinkInterval: 32
+		BlinkInterval: 24
 		BlinkPatterns:
 			hospitalheal: On, Off
 	WithDecoration@RANK-2:
-		BlinkInterval: 32
+		BlinkInterval: 24
 		BlinkPatterns:
 			hospitalheal: On, Off
 	WithDecoration@RANK-3:
-		BlinkInterval: 32
+		BlinkInterval: 24
 		BlinkPatterns:
 			hospitalheal: On, Off
 	WithDecoration@RANK-ELITE:
-		BlinkInterval: 32
+		BlinkInterval: 24
 		BlinkPatterns:
 			hospitalheal: On, Off
 
@@ -188,24 +188,6 @@
 		Condition: invulnerability
 	ExternalCondition@INVULNERABILITY:
 		Condition: invulnerability
-
-^InfantryExperienceHospitalOverrides:
-	WithDecoration@RANK-1:
-		BlinkInterval: 32
-		BlinkPatterns:
-			hospitalheal: On, Off
-	WithDecoration@RANK-2:
-		BlinkInterval: 32
-		BlinkPatterns:
-			hospitalheal: On, Off
-	WithDecoration@RANK-3:
-		BlinkInterval: 32
-		BlinkPatterns:
-			hospitalheal: On, Off
-	WithDecoration@RANK-ELITE:
-		BlinkInterval: 32
-		BlinkPatterns:
-			hospitalheal: On, Off
 
 ^DisableOnLowPower:
 	WithColoredOverlay@IDISABLE:
@@ -350,7 +332,7 @@
 		Sequence: medic
 		ReferencePoint: Bottom, Right
 		RequiresCondition: hospitalheal
-		BlinkInterval: 32
+		BlinkInterval: 24
 		BlinkPattern: Off, On
 	SelectionDecorations:
 	HitShape:
