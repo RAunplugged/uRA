@@ -224,7 +224,6 @@ DOMF:
 	RenderSprites:
 		Image: DOME
 
-
 FIXF:
 	Inherits: ^FakeBuilding
 	Tooltip:
