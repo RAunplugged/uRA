@@ -88,7 +88,8 @@ Container@MAP_PREVIEW:
 			Height: PARENT_BOTTOM
 			Children:
 				Background@MAP_BG:
-					Width: PARENT_RIGHT
+					X: 21
+					Width: 183
 					Height: 183
 					Background: dialog3
 					Children:
@@ -99,10 +100,10 @@ Container@MAP_PREVIEW:
 							Height: 181
 							TooltipContainer: TOOLTIP_CONTAINER
 				LabelWithTooltip@MAP_TITLE:
-					Y: 183
+					Y: 181
 					Width: PARENT_RIGHT
 					Height: 25
-					Font: Bold
+					Font: MediumBold
 					Shadow: true
 					Align: Center
 					TooltipContainer: TOOLTIP_CONTAINER
@@ -119,22 +120,23 @@ Container@MAP_PREVIEW:
 					Y: 211
 					Width: PARENT_RIGHT
 					Height: 25
-					Font: Tiny
+					Font: Regular
 					Shadow: true
 					Align: Center
 				Button@MAP_INSTALL:
+					X: PARENT_RIGHT - WIDTH - 25
 					Y: 245
-					Width: PARENT_RIGHT
+					Width: 174
 					Height: 29
 					Font: Medium
-					Shadow: true
 					Text: Install Map
 		Container@MAP_PROGRESS:
 			Width: PARENT_RIGHT
 			Height: PARENT_BOTTOM
 			Children:
 				Background@MAP_BG:
-					Width: PARENT_RIGHT
+					X: 21
+					Width: 183
 					Height: 183
 					Background: dialog3
 					Children:
@@ -145,10 +147,10 @@ Container@MAP_PREVIEW:
 							Height: 181
 							TooltipContainer: TOOLTIP_CONTAINER
 				LabelWithTooltip@MAP_TITLE:
-					Y: 183
+					Y: 181
 					Width: PARENT_RIGHT
 					Height: 25
-					Font: Bold
+					Font: MediumBold
 					Shadow: true
 					Align: Center
 					TooltipContainer: TOOLTIP_CONTAINER

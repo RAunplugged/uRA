@@ -86,7 +86,7 @@ Background@SERVER_LOBBY:
 			Height: 219
 		Button@CHANGEMAP_BUTTON:
 			X: PARENT_RIGHT - WIDTH - 57
-			Y: 351
+			Y: 353
 			Width: 174
 			Height: 27
 			Text: Change Map
