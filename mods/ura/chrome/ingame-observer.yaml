@@ -1,8 +1,8 @@
 Container@OBSERVER_WIDGETS:
 	Children:
 		SupportPowerTimer@SUPPORT_POWER_TIMER:
-			X: 10
-			Y: 10
+			X: WINDOW_RIGHT - 400
+			Y: 13
 			Order: Descending
 		Image@SIDEBAR_BACKGROUND_TOP:
 			X: WINDOW_RIGHT - 250
