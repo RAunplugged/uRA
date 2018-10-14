@@ -41,7 +41,7 @@ Container@OBSERVER_WIDGETS:
 					Children:
 						LogicKeyListener@OBSERVER_KEY_LISTENER:
 						MenuButton@OBSERVER_STATS_BUTTON:
-							Key: F6
+							Key: Backspace
 							MenuContainer: INGAME_OBSERVERSTATS_BG
 							HideIngameUI: false
 							Pause: false
@@ -134,7 +134,6 @@ Container@OBSERVER_WIDGETS:
 			ImageCollection: sidebar-observer
 			ImageName: replay-bottom
 			ClickThrough: false
-			Visible: false
 			Children:
 				Button@BUTTON_PAUSE:
 					X: 9
