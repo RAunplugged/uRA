@@ -25,7 +25,7 @@ Container@INGAME_OBSERVERSTATS_BG:
 				Background@GRAPH_BG:
 					Y: 35
 					ClickThrough: true
-					Background: dialogTransparentNoBorder
+					Background: dialogTransparentNoBorderOverride
 					Width: PARENT_RIGHT
 					Height: 25
 					Children:
@@ -286,6 +286,13 @@ Container@INGAME_OBSERVERSTATS_BG:
 							Width: PARENT_RIGHT
 							Height: PARENT_BOTTOM
 							Children:
+								Background@BASIC_STATS_HEADERS:
+									X: 4
+									Y: 32
+									ClickThrough: true
+									Background: dialogTransparentNoBorderObs
+									Width: 923
+									Height: 203
 								Label@EARNED_THIS_MIN_HEADER:
 									X: 0
 									Y: 0
@@ -302,8 +309,7 @@ Container@INGAME_OBSERVERSTATS_BG:
 					Height: PARENT_BOTTOM - 60
 					TopBottomSpacing: 5
 					ItemSpacing: 2
-					ScrollbarWidth: 24
-					Background: dialogTransparentNoBorder
+					Background: dialogTransparentNoBorderOverride
 					Children:
 						ScrollItem@BASIC_PLAYER_TEMPLATE:
 							X: 0
