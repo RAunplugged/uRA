@@ -596,7 +596,7 @@ scrollbar: buttons.png
 	up_pressed: 132,140,16,16
 
 # Used for tooltips and the video player
-dialogTransparentNoBorder: dialog3.png
+dialogTransparentNoBorder: dialog.png
 	background: 517,392,54,54
 	border-t: 517,387,54,0
 	border-b: 517,446,54,0
