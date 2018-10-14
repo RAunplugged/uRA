@@ -191,7 +191,7 @@ Fonts:
 		Size:16
 	Medium:
 		Font: ura|fonts/palanquin-medium.ttf
-		Size:19
+		Size:18
 	MediumBold:
 		Font: ura|fonts/palanquin-bold.ttf
 		Size:20
