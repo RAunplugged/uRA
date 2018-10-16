@@ -112,6 +112,9 @@ pips:
 	tag-primary:
 		Start: 2
 		Offset: 0, 2
+	tag-upgraded: pipupgraded
+		Start: 0
+		Offset: 0, 12
 	pip-empty: pips2
 	pip-green: pips2
 		Start: 1
@@ -508,6 +511,8 @@ icon:
 	sniperdrop: sniperdropicon
 	spydrop: spydropicon
 	inteldrop: inteldropicon
+	grenlauncherdrop: grenlaunchicon
+	mgunnerdrop: mgicon
 
 quee:
 	idle:

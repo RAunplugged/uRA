@@ -656,11 +656,11 @@ E9:
 	Valued:
 		Cost: 300
 	Health:
-		HP: 50
+		HP: 40
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		Prerequisites: ~infantry.france, ~barracks.upgraded, ~techcenter.upgraded
+		Prerequisites: ~infantry.france, ~barracks.upgraded, ~radardome.upgraded, ~techcenter.upgraded
 		BuildPaletteOrder: 400
 		Description: Infantry armed with long range grenade launcher.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
@@ -702,7 +702,7 @@ E10:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		Prerequisites: ~infantry.germany, ~barracks.upgraded, ~techcenter.upgraded
+		Prerequisites: ~infantry.germany, ~barracks.upgraded, ~radardome.upgraded, ~techcenter.upgraded
 		BuildPaletteOrder: 401
 		Description: Infantry equiped with a rapid firing Machine Gun.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:

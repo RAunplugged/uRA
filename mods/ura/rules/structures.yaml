@@ -319,6 +319,16 @@ TENT:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
+	WithDecoration@upgraded:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-upgraded
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: upgraded
+	GrantConditionOnPrerequisite:
+		Condition: upgraded
+		Prerequisites: barracks.upgraded
 	ProvidesPrerequisite@barracks:
 		Prerequisite: barracks
 	ProvidesPrerequisite@allies:
@@ -414,6 +424,16 @@ BARR:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
+	WithDecoration@upgraded:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-upgraded
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: upgraded
+	GrantConditionOnPrerequisite:
+		Condition: upgraded
+		Prerequisites: barracks.upgraded
 	ProvidesPrerequisite:
 		Prerequisite: barracks
 	ProvidesPrerequisite@soviet:
@@ -497,6 +517,16 @@ WEAP:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
+	WithDecoration@upgraded:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-upgraded
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: upgraded
+	GrantConditionOnPrerequisite:
+		Condition: upgraded
+		Prerequisites: warfactory.upgraded
 	ProvidesPrerequisite@allies:
 		Factions: allies, england, france, germany
 		Prerequisite: vehicles.allies
@@ -603,6 +633,16 @@ FIX:
 	SelectionDecorations:
 	RallyPoint:
 	WithResupplyAnimation:
+	WithDecoration@upgraded:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-upgraded
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: upgraded
+	GrantConditionOnPrerequisite:
+		Condition: upgraded
+		Prerequisites: servicedepot.upgraded
 	ProvidesPrerequisite@buildingname:
 	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: fix
@@ -939,18 +979,66 @@ DOME:
 	Targetable:
 		TargetTypes: Ground, Structure, C4, DetonateAttack, SpyInfiltrate
 	SupportPowerChargeBar:
+	WithDecoration@upgraded:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-upgraded
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: upgraded
+	GrantConditionOnPrerequisite:
+		Condition: upgraded
+		Prerequisites: radardome.upgraded
 	ProvidesPrerequisite@buildingname:
 	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: dome
-	ParatroopersPower@paratroopers:
+	ParatroopersPower@intelligence:
 		PauseOnCondition: disabled
-		OrderName: AlliedParatroopers
+		OrderName: InterlligenceParatroopers
 		Prerequisites: dome, ~structures.england
 		Icon: inteldrop
 		ChargeInterval: 6000
 		Description: Intel Drop
 		LongDesc: A Badger drops a high ranked Spy\nand Sniper anywhere on the map.
-		DropItems: SPY.England.rank2, SNIPER
+		DropItems: SPY.England.rank2,SNIPER
+		ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
+		SelectTargetSpeechNotification: SelectTarget
+		AllowImpassableCells: false
+		QuantizedFacings: 8
+		CameraActor: camera.paradrop
+		DisplayBeacon: true
+		BeaconPoster: pinficon
+		ArrowSequence: arrow
+		ClockSequence: clock
+		CircleSequence: circles
+	ParatroopersPower@france:
+		PauseOnCondition: disabled
+		OrderName: FrenchParatroopers
+		Prerequisites: dome, ~structures.france, ~radardome.upgraded
+		Icon: grenlauncherdrop
+		ChargeInterval: 6000
+		Description: Gren Launcher Drop
+		LongDesc: A Badger drops a squad of Grenade\nLaunchers anywhere on the map.
+		DropItems: E9,E9,E9,E9
+		ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
+		SelectTargetSpeechNotification: SelectTarget
+		AllowImpassableCells: false
+		QuantizedFacings: 8
+		CameraActor: camera.paradrop
+		DisplayBeacon: true
+		BeaconPoster: pinficon
+		ArrowSequence: arrow
+		ClockSequence: clock
+		CircleSequence: circles
+	ParatroopersPower@germany:
+		PauseOnCondition: disabled
+		OrderName: GermanParatroopers
+		Prerequisites: dome, ~structures.germany, ~radardome.upgraded
+		Icon: mgunnerdrop
+		ChargeInterval: 6000
+		Description: Machine Gunner Drop
+		LongDesc: A Badger drops a squad of Machine\nGunners anywhere on the map.
+		DropItems: E10,E10,E10,E10
 		ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
 		SelectTargetSpeechNotification: SelectTarget
 		AllowImpassableCells: false
@@ -1064,6 +1152,16 @@ HPAD:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
+	WithDecoration@upgraded:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-upgraded
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: upgraded
+	GrantConditionOnPrerequisite:
+		Condition: upgraded
+		Prerequisites: aircraft.upgraded
 	WithResupplyAnimation:
 	ProvidesPrerequisite@allies:
 		Factions: allies, england, france, germany
@@ -1217,6 +1315,16 @@ AFLD:
 		ArrowSequence: arrow
 		ClockSequence: clock
 		CircleSequence: circles
+	WithDecoration@upgraded:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-upgraded
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: upgraded
+	GrantConditionOnPrerequisite:
+		Condition: upgraded
+		Prerequisites: aircraft.upgraded
 	ProvidesPrerequisite@soviet:
 		Factions: soviet, russia, ukraine
 		Prerequisite: aircraft.soviet
@@ -1302,7 +1410,17 @@ ATEK:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	SupportPowerChargeBar:
-	ProvidesPrerequisite:
+	WithDecoration@upgraded:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-upgraded
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: upgraded
+	GrantConditionOnPrerequisite:
+		Condition: upgraded
+		Prerequisites: techcenter.upgraded
+	ProvidesPrerequisite@ai:
 		Prerequisite: techcenter
 	ProvidesPrerequisite@buildingname:
 	ProvidesPrerequisite@inheritedbotstructure:
@@ -1345,8 +1463,18 @@ STEK:
 		Bounds: 72,48
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
-	ProvidesPrerequisite:
+	ProvidesPrerequisite@ai:
 		Prerequisite: techcenter
+	WithDecoration@upgraded:
+		RequiresSelection: true
+		Image: pips
+		Sequence: tag-upgraded
+		ReferencePoint: Top
+		ZOffset: 256
+		RequiresCondition: upgraded
+	GrantConditionOnPrerequisite:
+		Condition: upgraded
+		Prerequisites: techcenter.upgraded
 	ProvidesPrerequisite@buildingname:
 	ProvidesPrerequisite@inheritedbotstructure:
 		Prerequisite: stek
