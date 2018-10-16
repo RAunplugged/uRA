@@ -35,6 +35,7 @@ DOME.Normal:
 		Prerequisites: proc.normal, barracks, !dome.normal, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.normal, ~structures.england
+		DropItems: SNIPER, SNIPER
 	RenderSprites:
 		Image: dome
 	-MapEditorData:

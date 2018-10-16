@@ -946,11 +946,11 @@ DOME:
 		PauseOnCondition: disabled
 		OrderName: AlliedParatroopers
 		Prerequisites: dome, ~structures.england
-		Icon: sniperdrop
+		Icon: inteldrop
 		ChargeInterval: 6000
-		Description: Sniper Drop
-		LongDesc: A Badger drops a 2-man sniper team\nanywhere on the map.
-		DropItems: SNIPER, SNIPER
+		Description: Intel Drop
+		LongDesc: A Badger drops a high ranked Spy\nand Sniper anywhere on the map.
+		DropItems: SPY.England.rank2, SNIPER
 		ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
 		SelectTargetSpeechNotification: SelectTarget
 		AllowImpassableCells: false
@@ -1285,7 +1285,7 @@ ATEK:
 		Prerequisites: weap, dome, ~structures.allies, ~techlevel.high
 		Description: Provides Allied advanced technologies.\n  Special Ability: GPS Satellite
 	InfiltrateForSupportPower:
-		Proxy: alliestechcenter.upgraded
+		Proxy: techcenter.upgraded
 		Types: SpyInfiltrate
 	RevealsShroud:
 		Range: 10c0
@@ -1327,7 +1327,7 @@ STEK:
 		Prerequisites: weap, dome, ~structures.soviet, ~techlevel.high
 		Description: Provides Soviet advanced technologies.
 	InfiltrateForSupportPower:
-		Proxy: soviettechcenter.upgraded
+		Proxy: techcenter.upgraded
 		Types: SpyInfiltrate
 	RevealsShroud:
 		Range: 7c576

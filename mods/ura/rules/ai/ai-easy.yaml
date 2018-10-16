@@ -87,6 +87,7 @@ DOME.Easy:
 		Prerequisites: proc.easy, barracks.easy, !dome.easy, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.easy, ~structures.england
+		DropItems: SNIPER, SNIPER
 	RenderSprites:
 		Image: dome
 	-MapEditorData:

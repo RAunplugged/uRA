@@ -87,6 +87,7 @@ DOME.Brutal:
 		Prerequisites: proc.brutal, barracks.brutal, !dome.brutal, ~techlevel.medium, ~structures.ai
 	ParatroopersPower@paratroopers:
 		Prerequisites: dome.brutal, ~structures.england
+		DropItems: SNIPER, SNIPER
 	RenderSprites:
 		Image: dome
 	-MapEditorData:
