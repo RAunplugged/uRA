@@ -1217,6 +1217,8 @@ e9:
 		Start: 64
 		Length: 16
 		Facings: 8
+	parachute:
+		Start: 505
 	idle1:
 		Start: 384
 		Length: 14
@@ -1314,6 +1316,8 @@ e10:
 		Start: 192
 		Length: 8
 		Facings: 8
+	parachute:
+		Start: 377
 	idle1:
 		Start: 256
 		Length: 16

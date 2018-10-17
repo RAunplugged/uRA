@@ -686,6 +686,10 @@ E9:
 		ProneOffset: 160,0,-288
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
+		RequiresCondition: !parachute
+	WithInfantryBody@PARACHUTE:
+		StandSequences: parachute
+		RequiresCondition: parachute
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
 
@@ -721,6 +725,10 @@ E10:
 	AttackFrontal:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
+		RequiresCondition: !parachute
+	WithInfantryBody@PARACHUTE:
+		StandSequences: parachute
+		RequiresCondition: parachute
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
 
