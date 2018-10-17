@@ -203,10 +203,10 @@ Background@REPLAYBROWSER_PANEL:
 			Height: PARENT_BOTTOM - 250 - 133
 			Children:
 				Label@DURATION:
-					Y: 20
+					Y: 22
 					Width: PARENT_RIGHT
 					Height: 15
-					Font: Tiny
+					Font: TinyBold
 					Align: Center
 					Shadow: true
 				ScrollPanel@PLAYER_LIST:
