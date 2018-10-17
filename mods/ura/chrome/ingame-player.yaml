@@ -9,7 +9,7 @@ Container@PLAYER_WIDGETS:
 			Y: 10
 			Children:
 				SupportPowers@SUPPORT_PALETTE:
-					IconSize: 62, 46
+					IconSize: 66, 50
 					IconSpriteOffset: -1, -1
 					TooltipContainer: TOOLTIP_CONTAINER
 					ReadyText: READY
@@ -20,13 +20,13 @@ Container@PLAYER_WIDGETS:
 					Children:
 						Image@ICON_TEMPLATE:
 							Logic: AddFactionSuffixLogic
-							X: 0 - 2
-							Y: 0 - 2
-							Width: 62
-							Height: 46
+							X: 0 - 1
+							Y: 0 - 1
+							Width: 66
+							Height: 52
 							IgnoreMouseOver: true
 							ImageCollection: sidebar
-							ImageName: background-supportoverlay
+							ImageName: background-supportoverlay2
 		SupportPowerTimer@SUPPORT_POWER_TIMER:
 			X: 80
 			Y: 10

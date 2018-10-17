@@ -3,6 +3,7 @@ sidebar-allies: chrome.png
 	background-iconrow: 0,457,238,47
 	background-bottom: 0,504,238,8
 	background-supportoverlay: 0,75,64,48
+	background-supportoverlay2: 892,75,66,50
 
 sidebar-button-allies: chrome.png
 	background: 59,31,22,22
@@ -107,6 +108,7 @@ sidebar-soviet: chrome.png
 	background-iconrow: 274,457,238,47
 	background-bottom: 274,504,238,8
 	background-supportoverlay: 64,75,64,48
+	background-supportoverlay2: 958,75,66,50
 
 sidebar-button-soviet: chrome.png
 	background: 3,31,22,22
