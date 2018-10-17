@@ -409,12 +409,13 @@ Container@PLAYER_WIDGETS:
 							Skippable: false
 				Label@GAME_TIMER:
 					Logic: GameTimerLogic
-					X: 3
-					Y: 263
+					X: 12
+					Y: 262
 					Width: PARENT_RIGHT
 					Height: 22
 					Align: Center
-					Font: TinyBold
+					Font: Bold
+					Shadow: true
 				LabelWithTooltip@CASH:
 					Logic: IngameCashCounterLogic
 					X: 35
@@ -423,6 +424,7 @@ Container@PLAYER_WIDGETS:
 					Height: 22
 					Font: Bold
 					Text: {0}
+					Shadow: true
 					TooltipContainer: TOOLTIP_CONTAINER
 					TooltipTemplate: SIMPLE_TOOLTIP
 				LabelWithTooltip@POWER:
@@ -434,6 +436,7 @@ Container@PLAYER_WIDGETS:
 					Align: Right
 					Font: Bold
 					Text: {0}
+					Shadow: true
 					TooltipContainer: TOOLTIP_CONTAINER
 					TooltipTemplate: SIMPLE_TOOLTIP
 					Children:
