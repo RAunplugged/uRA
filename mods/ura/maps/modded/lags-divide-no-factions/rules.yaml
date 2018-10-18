@@ -150,3 +150,9 @@ PDOF:
 MSLF:
 	Buildable:
 		Prerequisites: ~techlevel.unrestricted
+E9:
+	Buildable:
+		Prerequisites: dome, tent, ~techlevel.medium
+E10:
+	Buildable:
+		Prerequisites: dome, tent, ~techlevel.medium
