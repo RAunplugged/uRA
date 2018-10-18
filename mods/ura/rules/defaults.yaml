@@ -1014,8 +1014,6 @@
 		RequireTilesets: DESERT
 		Categories: Decoration
 
-
-
 ^Crate:
 	Inherits@1: ^SpriteActor
 	Tooltip:
