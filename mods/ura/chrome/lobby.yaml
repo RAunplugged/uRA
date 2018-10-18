@@ -115,13 +115,13 @@ Background@SERVER_LOBBY:
 									VAlign: Top
 									Shadow: True
 								Label@NAME:
-									X: 45
+									X: 52
 									Width: 50
 									Height: 15
 									VAlign: Top
 									Shadow: True
 								Label@TEXT:
-									X: 55
+									X: 62
 									Width: PARENT_RIGHT - 60
 									Height: 15
 									WordWrap: true

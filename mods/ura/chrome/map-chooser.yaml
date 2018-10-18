@@ -79,7 +79,7 @@ Background@MAPCHOOSER_PANEL:
 					IgnoreMouseInput: true
 				Label@TITLE:
 					X: 4
-					Y: PARENT_BOTTOM - 53
+					Y: PARENT_BOTTOM - 55
 					Width: PARENT_RIGHT - 8
 					Font: Bold
 					Shadow: true
@@ -87,23 +87,22 @@ Background@MAPCHOOSER_PANEL:
 				Label@DETAILS:
 					Width: PARENT_RIGHT - 8
 					X: 4
-					Y: PARENT_BOTTOM - 37
+					Y: PARENT_BOTTOM - 26
 					Align: Center
 					Font: TinyBold
 					Shadow: true
 				Label@AUTHOR:
 					Width: PARENT_RIGHT - 8
 					X: 4
-					Y: PARENT_BOTTOM - 25
+					Y: PARENT_BOTTOM - 40
 					Align: Center
 					Font: TinyBold
-					Shadow: true
 				Label@SIZE:
 					Width: PARENT_RIGHT - 8
 					X: 4
-					Y: PARENT_BOTTOM - 13
+					Y: PARENT_BOTTOM - 12
 					Align: Center
-					Font: TinyBold
+					Font: Tiny
 					Shadow: true
 		Label@FILTER_DESC:
 			X: PARENT_RIGHT - 467

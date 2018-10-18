@@ -4,11 +4,12 @@ Container@LOBBY_PLAYER_BIN:
 	Children:
 		Container@LABEL_CONTAINER:
 			X: 5
-			Y: 0 - 25
+			Y: 0 - 26
 			Width: PARENT_RIGHT
 			Height: PARENT_BOTTOM
 			Children:
 				Label@LABEL_LOBBY_NAME:
+					X: 0 - 18
 					Width: 118
 					Height: 25
 					Text: Name
@@ -32,7 +33,7 @@ Container@LOBBY_PLAYER_BIN:
 					Align: Center
 					Font: Bold
 				Label@LABEL_LOBBY_TEAM:
-					X: 415
+					X: 420
 					Width: 52
 					Height: 25
 					Text: Team
@@ -40,7 +41,7 @@ Container@LOBBY_PLAYER_BIN:
 					Align: Center
 					Font: Bold
 				Label@LABEL_LOBBY_SPAWN:
-					X: 482
+					X: 484
 					Width: 48
 					Height: 25
 					Text: Spawn
@@ -48,7 +49,7 @@ Container@LOBBY_PLAYER_BIN:
 					Align: Center
 					Font: Bold
 				Label@LABEL_LOBBY_STATUS:
-					X: 552
+					X: 555
 					Width: 20
 					Height: 25
 					Text: Ready
