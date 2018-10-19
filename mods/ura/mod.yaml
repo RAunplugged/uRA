@@ -184,31 +184,31 @@ Fonts:
 		Font: ura|fonts/ZoodRangmah.ttf
 		Size:48
 	Regular:
-		Font: ura|fonts/palanquin-num-medium.ttf
+		Font: ura|fonts/Palanquin-num-medium.ttf
 		Size:16
 	Bold:
-		Font: ura|fonts/palanquin-num-bold.ttf
+		Font: ura|fonts/Palanquin-num-bold.ttf
 		Size:16
 	Medium:
-		Font: ura|fonts/palanquin-num-medium.ttf
+		Font: ura|fonts/Palanquin-num-medium.ttf
 		Size:18
 	MediumBold:
-		Font: ura|fonts/palanquin-num-bold.ttf
+		Font: ura|fonts/Palanquin-num-bold.ttf
 		Size:20
 	BigBold:
-		Font: ura|fonts/palanquin-num-bold.ttf
+		Font: ura|fonts/Palanquin-num-bold.ttf
 		Size:26
 	Small:
-		Font: ura|fonts/palanquin-num-medium.ttf
+		Font: ura|fonts/Palanquin-num-medium.ttf
 		Size:14
 	SmallBold:
-		Font: ura|fonts/palanquin-num-bold.ttf
+		Font: ura|fonts/Palanquin-num-bold.ttf
 		Size:14
 	Tiny:
-		Font: ura|fonts/palanquin-num-medium.ttf
+		Font: ura|fonts/Palanquin-num-medium.ttf
 		Size:12
 	TinyBold:
-		Font: ura|fonts/palanquin-num-bold.ttf
+		Font: ura|fonts/Palanquin-num-bold.ttf
 		Size:12
 
 Missions:
