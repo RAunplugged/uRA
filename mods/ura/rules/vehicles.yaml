@@ -133,7 +133,7 @@ TRUK:
 
 1TNK:
 	Inherits: ^TrackedVehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@GAINSEXPERIENCE: ^GainsDoubleExperience
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Tooltip:
 		Name: Light Tank
@@ -220,7 +220,7 @@ TRUK:
 
 2TNK:
 	Inherits: ^TrackedVehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@GAINSEXPERIENCE: ^GainsDoubleExperience
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Tooltip:
 		Name: Medium Tank
@@ -333,7 +333,7 @@ TRUK:
 
 3TNK:
 	Inherits: ^TrackedVehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@GAINSEXPERIENCE: ^GainsDoubleExperience
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Tooltip:
 		Name: Heavy Tank
@@ -397,7 +397,7 @@ TRUK:
 
 4TNK:
 	Inherits: ^TrackedVehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@GAINSEXPERIENCE: ^GainsDoubleExperience
 	Inherits@AUTOTARGET: ^AutoTargetAll
 	Tooltip:
 		Name: Mammoth Tank
@@ -820,7 +820,7 @@ FTRK:
 
 APC:
 	Inherits: ^TrackedVehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@GAINSEXPERIENCE: ^GainsDoubleExperience
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Tooltip:
 		Name: Armored Personnel Carrier
@@ -1101,7 +1101,7 @@ MRJ:
 
 CTNK:
 	Inherits: ^Vehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@GAINSEXPERIENCE: ^GainsDoubleExperience
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Tooltip:
 		Name: Chrono Tank
@@ -1148,7 +1148,7 @@ CTNK:
 
 STNK:
 	Inherits: ^Vehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@GAINSEXPERIENCE: ^GainsDoubleExperience
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Tooltip:
 		Name: Phase Transport
@@ -1214,7 +1214,7 @@ STNK:
 
 TTNK:
 	Inherits: ^TrackedVehicle
-	Inherits@GAINSEXPERIENCE: ^GainsExperience
+	Inherits@GAINSEXPERIENCE: ^GainsDoubleExperience
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Tooltip:
 		Name: Tesla Tank

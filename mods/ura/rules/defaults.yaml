@@ -70,52 +70,52 @@
 	GrantCondition@RANK-ELITE:
 		RequiresCondition: rank-veteran >= 4
 		Condition: rank-elite
-	DamageMultiplier@RANK-1:
-		RequiresCondition: rank-veteran == 1
-		Modifier: 95
 	DamageMultiplier@RANK-2:
 		RequiresCondition: rank-veteran == 2
-		Modifier: 90
+		Modifier: 80
 	DamageMultiplier@RANK-3:
 		RequiresCondition: rank-veteran == 3
-		Modifier: 80
+		Modifier: 70
 	DamageMultiplier@RANK-ELITE:
 		RequiresCondition: rank-elite
-		Modifier: 70
+		Modifier: 60
 	FirepowerMultiplier@RANK-1:
 		RequiresCondition: rank-veteran == 1
-		Modifier: 105
+		Modifier: 110
 	FirepowerMultiplier@RANK-2:
 		RequiresCondition: rank-veteran == 2
-		Modifier: 110
+		Modifier: 120
 	FirepowerMultiplier@RANK-3:
 		RequiresCondition: rank-veteran == 3
-		Modifier: 120
+		Modifier: 130
 	FirepowerMultiplier@RANK-ELITE:
 		RequiresCondition: rank-elite
-		Modifier: 130
+		Modifier: 140
 	SpeedMultiplier@RANK-3:
 		RequiresCondition: rank-veteran == 3
 		Modifier: 115
 	SpeedMultiplier@RANK-ELITE:
 		RequiresCondition: rank-elite
 		Modifier: 130
-	ReloadDelayMultiplier@RANK-1:
-		RequiresCondition: rank-veteran == 1
-		Modifier: 95
-	ReloadDelayMultiplier@RANK-2:
-		RequiresCondition: rank-veteran == 2
-		Modifier: 90
-	ReloadDelayMultiplier@RANK-3:
-		RequiresCondition: rank-veteran == 3
-		Modifier: 80
 	ReloadDelayMultiplier@RANK-ELITE:
 		RequiresCondition: rank-elite
-		Modifier: 70
-	SelfHealing@RANK-3:
+		Modifier: 80
+	RangeMultiplier@RANK-3:
+		RequiresCondition: rank-veteran == 3
+		Modifier: 115
+	RangeMultiplier@RANK-ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 115
+	SelfHealing@RANK-2:
 		PercentageStep: 5
 		Delay: 75
 		HealIfBelow: 50
+		DamageCooldown: 150
+		RequiresCondition: rank-veteran == 2
+	SelfHealing@RANK-3:
+		PercentageStep: 5
+		Delay: 75
+		HealIfBelow: 75
 		DamageCooldown: 150
 		RequiresCondition: rank-veteran == 3
 	SelfHealing@ELITE:
@@ -131,6 +131,7 @@
 		ReferencePoint: Bottom, Right
 		RequiresCondition: rank-veteran == 1
 		ZOffset: 256
+		ValidStances: Ally, Enemy, Neutral
 	WithDecoration@RANK-2:
 		Image: rank
 		Sequence: rank-veteran-2
@@ -138,6 +139,7 @@
 		ReferencePoint: Bottom, Right
 		RequiresCondition: rank-veteran == 2
 		ZOffset: 256
+		ValidStances: Ally, Enemy, Neutral
 	WithDecoration@RANK-3:
 		Image: rank
 		Sequence: rank-veteran-3
@@ -145,6 +147,7 @@
 		ReferencePoint: Bottom, Right
 		RequiresCondition: rank-veteran == 3
 		ZOffset: 256
+		ValidStances: Ally, Enemy, Neutral
 	WithDecoration@RANK-ELITE:
 		Image: rank
 		Sequence: rank-elite
@@ -152,6 +155,105 @@
 		ReferencePoint: Bottom, Right
 		RequiresCondition: rank-elite
 		ZOffset: 256
+		ValidStances: Ally, Enemy, Neutral
+
+^GainsDoubleExperience:
+	GainsExperience:
+		LevelUpNotification: LevelUp
+		Conditions:
+			100: rank-veteran
+			200: rank-veteran
+			400: rank-veteran
+			800: rank-veteran
+	GrantCondition@RANK-ELITE:
+		RequiresCondition: rank-veteran >= 4
+		Condition: rank-elite
+	DamageMultiplier@RANK-2:
+		RequiresCondition: rank-veteran == 2
+		Modifier: 80
+	DamageMultiplier@RANK-3:
+		RequiresCondition: rank-veteran == 3
+		Modifier: 70
+	DamageMultiplier@RANK-ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 60
+	FirepowerMultiplier@RANK-1:
+		RequiresCondition: rank-veteran == 1
+		Modifier: 110
+	FirepowerMultiplier@RANK-2:
+		RequiresCondition: rank-veteran == 2
+		Modifier: 120
+	FirepowerMultiplier@RANK-3:
+		RequiresCondition: rank-veteran == 3
+		Modifier: 130
+	FirepowerMultiplier@RANK-ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 140
+	SpeedMultiplier@RANK-3:
+		RequiresCondition: rank-veteran == 3
+		Modifier: 115
+	SpeedMultiplier@RANK-ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 130
+	ReloadDelayMultiplier@RANK-ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 80
+	RangeMultiplier@RANK-3:
+		RequiresCondition: rank-veteran == 3
+		Modifier: 115
+	RangeMultiplier@RANK-ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 115
+	SelfHealing@RANK-2:
+		PercentageStep: 5
+		Delay: 75
+		HealIfBelow: 50
+		DamageCooldown: 150
+		RequiresCondition: rank-veteran == 2
+	SelfHealing@RANK-3:
+		PercentageStep: 5
+		Delay: 75
+		HealIfBelow: 75
+		DamageCooldown: 150
+		RequiresCondition: rank-veteran == 3
+	SelfHealing@ELITE:
+		PercentageStep: 5
+		Delay: 75
+		HealIfBelow: 100
+		DamageCooldown: 150
+		RequiresCondition: rank-elite
+	WithDecoration@RANK-1:
+		Image: rank
+		Sequence: rank-veteran-1
+		Palette: effect
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-veteran == 1
+		ZOffset: 256
+		ValidStances: Ally, Enemy, Neutral
+	WithDecoration@RANK-2:
+		Image: rank
+		Sequence: rank-veteran-2
+		Palette: effect
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-veteran == 2
+		ZOffset: 256
+		ValidStances: Ally, Enemy, Neutral
+	WithDecoration@RANK-3:
+		Image: rank
+		Sequence: rank-veteran-3
+		Palette: effect
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-veteran == 3
+		ZOffset: 256
+		ValidStances: Ally, Enemy, Neutral
+	WithDecoration@RANK-ELITE:
+		Image: rank
+		Sequence: rank-elite
+		Palette: effect
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-elite
+		ZOffset: 256
+		ValidStances: Ally, Enemy, Neutral
 
 ^GlobalBounty:
 	GrantConditionOnPrerequisite@GLOBALBOUNTY:
@@ -618,7 +720,7 @@
 
 ^Ship:
 	Inherits@1: ^ExistsInWorld
-	Inherits@2: ^GainsExperience
+	Inherits@2: ^GainsDoubleExperience
 	Inherits@3: ^IronCurtainable
 	Inherits@4: ^SpriteActor
 	Inherits@bounty: ^GlobalBounty
