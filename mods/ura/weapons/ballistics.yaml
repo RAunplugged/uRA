@@ -60,7 +60,10 @@
 		Speed: 1024
 	Warhead@1Dam: SpreadDamage
 		Versus:
+			None: 50
+			Light: 100
 			Heavy: 180
+			Concrete: 100
 
 105mm:
 	Inherits: ^Cannon
