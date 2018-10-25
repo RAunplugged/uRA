@@ -762,7 +762,7 @@ FTRK:
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
 	Inherits@AUTOTARGET: ^AutoTargetAll
 	Tooltip:
-		Name: Flack Track
+		Name: Flak Track
 	Valued:
 		Cost: 600
 	Health:
