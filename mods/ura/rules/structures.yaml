@@ -25,8 +25,9 @@ FACT:
 		Amount: 0
 	BaseProvider:
 		Range: 16c0
+		PauseOnCondition: being-captured
 	Production:
-		Produces: Building,Defense
+		Produces: Building, Defense
 	ProductionBar@Building:
 		ProductionType: Building
 	ProductionBar@Defense:
@@ -42,6 +43,7 @@ FACT:
 		Offset: 1,1
 		Facing: 96
 		RequiresCondition: factundeploy
+		PauseOnCondition: being-captured
 	RevealsShroud:
 		Range: 6c256
 		RevealGeneratedShroud: False
@@ -55,7 +57,10 @@ FACT:
 		LocalCenterOffset: 0,-512,0
 	BaseBuilding:
 	WithBuildingBib:
+	WithMakeAnimation:
+		Condition: build-incomplete
 	WithBuildingPlacedAnimation:
+		RequiresCondition: !build-incomplete
 	HitShape:
 		TargetableOffsets: 1273,939,0, -980,-640,0, -980,640,0
 		Type: Rectangle
@@ -177,6 +182,8 @@ PROC:
 		Dimensions: 3,4
 		LocalCenterOffset: 0,-512,0
 	WithBuildingBib:
+	WithMakeAnimation:
+		Condition: build-incomplete
 	Refinery:
 		DockAngle: 64
 		DockOffset: 1,2
@@ -203,6 +210,7 @@ PROC:
 	SelectionDecorations:
 	WithIdleOverlay@TOP:
 		Sequence: idle-top
+		RequiresCondition: !build-incomplete
 	WithDeathAnimation:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
@@ -246,10 +254,12 @@ KENN:
 		SpawnOffset: -280,400,0
 		ExitCell: 0,1
 		ProductionTypes: Dog, Infantry
+		RequiresCondition: !being-captured
 	Exit@2:
 		SpawnOffset: -280,400,0
 		ExitCell: -1,0
 		ProductionTypes: Dog, Infantry
+		RequiresCondition: !being-captured
 	ProductionBar:
 	WithDecoration@primary:
 		RequiresSelection: true
@@ -306,10 +316,12 @@ TENT:
 		SpawnOffset: -42,810,0
 		ExitCell: 1,2
 		ProductionTypes: Soldier, Infantry
+		RequiresCondition: !being-captured
 	Exit@2:
 		SpawnOffset: -725,640,0
 		ExitCell: 0,2
 		ProductionTypes: Soldier, Infantry
+		RequiresCondition: !being-captured
 	RallyPoint:
 	ProductionBar:
 	WithDecoration@primary:
@@ -411,10 +423,12 @@ BARR:
 		SpawnOffset: -170,810,0
 		ExitCell: 1,2
 		ProductionTypes: Soldier, Infantry
+		RequiresCondition: !being-captured
 	Exit@2:
 		SpawnOffset: -725,640,0
 		ExitCell: 0,2
 		ProductionTypes: Soldier, Infantry
+		RequiresCondition: !being-captured
 	RallyPoint:
 	ProductionBar:
 	WithDecoration@primary:
@@ -501,13 +515,17 @@ WEAP:
 		Dimensions: 3,3
 		LocalCenterOffset: 0,-512,0
 	WithBuildingBib:
+	WithMakeAnimation:
+		Condition: build-incomplete
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	WithProductionDoorOverlay:
 		Sequence: build-top
+		RequiresCondition: !build-incomplete
 	Exit@1:
 		SpawnOffset: 213,-128,0
 		ExitCell: 1,2
+		RequiresCondition: !being-captured
 	RallyPoint:
 	ProductionBar:
 	WithDecoration@primary:
@@ -621,6 +639,10 @@ FIX:
 		Dimensions: 3,3
 	WithBuildingBib:
 		HasMinibib: Yes
+	WithMakeAnimation:
+		Condition: build-incomplete
+	WithResupplyAnimation:
+		RequiresCondition: !build-incomplete
 	HitShape:
 		TargetableOffsets: 840,0,0, 598,-640,0, 598,640,0, -1060,0,0, -768,-640,0, -768,640,0
 		Type: Polygon
@@ -632,7 +654,6 @@ FIX:
 		TargetTypes: Ground, Structure, C4, DetonateAttack, SpyInfiltrate
 	SelectionDecorations:
 	RallyPoint:
-	WithResupplyAnimation:
 	WithDecoration@upgraded:
 		RequiresSelection: true
 		Image: pips
@@ -709,21 +730,25 @@ SYRD:
 		Facing: 160
 		ExitCell: 0,2
 		ProductionTypes: Ship, Boat
+		RequiresCondition: !being-captured
 	Exit@2:
 		SpawnOffset: 1024,1024,0
 		Facing: 224
 		ExitCell: 2,2
 		ProductionTypes: Ship, Boat
+		RequiresCondition: !being-captured
 	Exit@3:
 		SpawnOffset: -1024,-1024,0
 		Facing: 96
 		ExitCell: 0,0
 		ProductionTypes: Ship, Boat
+		RequiresCondition: !being-captured
 	Exit@4:
 		SpawnOffset: 1024,-1024,0
 		Facing: 32
 		ExitCell: 2,0
 		ProductionTypes: Ship, Boat
+		RequiresCondition: !being-captured
 	RallyPoint:
 	ProductionBar:
 	WithDecoration@primary:
@@ -833,41 +858,49 @@ SPEN:
 		Facing: 96
 		ExitCell: -1,2
 		ProductionTypes: Submarine
+		RequiresCondition: !being-captured
 	Exit@2:
 		SpawnOffset: 0,-213,0
 		Facing: 160
 		ExitCell: 3,2
 		ProductionTypes: Submarine
+		RequiresCondition: !being-captured
 	Exit@3:
 		SpawnOffset: 0,0,0
 		Facing: 32
 		ExitCell: 0,0
 		ProductionTypes: Submarine
+		RequiresCondition: !being-captured
 	Exit@4:
 		SpawnOffset: 0,0,0
 		Facing: 224
 		ExitCell: 2,0
 		ProductionTypes: Submarine
+		RequiresCondition: !being-captured
 	Exit@b1:
 		SpawnOffset: -1024,1024,0
 		Facing: 160
 		ExitCell: 0,2
 		ProductionTypes: Ship
+		RequiresCondition: !being-captured
 	Exit@b2:
 		SpawnOffset: 1024,1024,0
 		Facing: 224
 		ExitCell: 2,2
 		ProductionTypes: Ship
+		RequiresCondition: !being-captured
 	Exit@b3:
 		SpawnOffset: -1024,-1024,0
 		Facing: 96
 		ExitCell: 0,0
 		ProductionTypes: Ship
+		RequiresCondition: !being-captured
 	Exit@b4:
 		SpawnOffset: 1024,-1024,0
 		Facing: 32
 		ExitCell: 2,0
 		ProductionTypes: Ship
+		RequiresCondition: !being-captured
 	RallyPoint:
 	ProductionBar:
 	WithDecoration@primary:
@@ -1143,6 +1176,7 @@ HPAD:
 		ExitCell: 0,0
 		MoveIntoWorld: false
 		Facing: 224
+		RequiresCondition: !being-captured
 	RallyPoint:
 	ProductionBar:
 	WithDecoration@primary:
@@ -1162,7 +1196,10 @@ HPAD:
 	GrantConditionOnPrerequisite:
 		Condition: upgraded
 		Prerequisites: aircraft.upgraded
+	WithMakeAnimation:
+		Condition: build-incomplete
 	WithResupplyAnimation:
+		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@allies:
 		Factions: allies, england, france, germany
 		Prerequisite: aircraft.allies
@@ -1249,6 +1286,7 @@ AFLD:
 		ExitCell: 1,1
 		Facing: 192
 		MoveIntoWorld: false
+		RequiresCondition: !being-captured
 	RallyPoint:
 	ProductionBar:
 	SupportPowerChargeBar:
@@ -1259,7 +1297,10 @@ AFLD:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
+	WithMakeAnimation:
+		Condition: build-incomplete
 	WithResupplyAnimation:
+		RequiresCondition: !build-incomplete
 	AirstrikePower@spyplane:
 		OrderName: SovietSpyPlane
 		Prerequisites: aircraft.soviet
@@ -1994,6 +2035,8 @@ SILO:
 	-MustBeDestroyed:
 	WithBuildingBib:
 		HasMinibib: Yes
+	WithMakeAnimation:
+		Condition: build-incomplete
 	Selectable:
 		Bounds: 24,24
 	Explodes:
@@ -2003,6 +2046,7 @@ SILO:
 		Range: 4c0
 	-SpawnActorsOnSell:
 	WithSiloAnimation:
+		RequiresCondition: !build-incomplete
 
 # Superpowers
 
@@ -2187,7 +2231,6 @@ MSLO:
 		Range: 5c256
 		RequiresCondition: !disabled
 	SupportPowerChargeBar:
-	WithNukeLaunchAnimation:
 	AnnounceOnBuild:
 	Voiced:
 		VoiceSet: MissileSiloVoice
@@ -2218,6 +2261,10 @@ MSLO:
 		ArrowSequence: arrow
 		ClockSequence: clock
 		CircleSequence: circles
+	WithNukeLaunchAnimation:
+		RequiresCondition: !build-incomplete
+	WithMakeAnimation:
+		Condition: build-incomplete
 
 # Misc
 

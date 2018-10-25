@@ -602,9 +602,9 @@
 	DrawLineToTarget:
 	Guardable:
 	Chronoshiftable:
+	CaptureManager:
 	Capturable:
 		Types: vehicle
-		CaptureThreshold: 100
 		CancelActivity: True
 	CaptureNotification:
 		Notification: UnitStolen
@@ -823,10 +823,15 @@
 		PlayerExperience: 25
 		RepairingNotification: Repairing
 	EngineerRepairable:
-	ExternalCapturable:
-	ExternalCapturableBar:
+	CaptureManager:
+		BeingCapturedCondition: being-captured
+	Capturable:
+		Types: building
+	CapturableProgressBar:
+	CapturableProgressBlink:
 	AcceptsDeliveredCash:
 	Sellable:
+		RequiresCondition: !being-captured
 		SellSounds: cashturn.aud
 	SpawnActorsOnSell:
 		ActorTypes: e1,e1,e1,tecn,tecn
@@ -1232,9 +1237,9 @@
 		TargetTypes: Ground, Husk, NoAutoTarget
 		RequiresForceFire: true
 	Chronoshiftable:
+	CaptureManager:
 	Capturable:
 		Types: husk
-		CaptureThreshold: 100
 		ValidStances: Enemy, Neutral, Ally
 	TransformOnCapture:
 		ForceHealthPercentage: 25

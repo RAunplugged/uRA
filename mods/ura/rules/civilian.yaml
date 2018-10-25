@@ -101,8 +101,11 @@ BIO:
 	InfiltrateForSupportPower:
 		Proxy: biolab.upgraded
 		Types: SpyInfiltrate
-	ExternalCapturable:
-	ExternalCapturableBar:
+	CaptureManager:
+	Capturable:
+		Types: building
+	CapturableProgressBar:
+	CapturableProgressBlink:
 	EngineerRepairable:
 	OwnerLostAction:
 		Action: ChangeOwner
@@ -140,8 +143,11 @@ HOSP:
 		Bounds: 48,48
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
-	ExternalCapturable:
-	ExternalCapturableBar:
+	CaptureManager:
+	Capturable:
+		Types: building
+	CapturableProgressBar:
+	CapturableProgressBlink:
 	EngineerRepairable:
 	OwnerLostAction:
 		Action: ChangeOwner
@@ -201,8 +207,11 @@ MISS:
 		Bounds: 72,48
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
-	ExternalCapturable:
-	ExternalCapturableBar:
+	CaptureManager:
+	Capturable:
+		Types: building
+	CapturableProgressBar:
+	CapturableProgressBlink:
 	EngineerRepairable:
 	OwnerLostAction:
 		Action: ChangeOwner
@@ -266,9 +275,11 @@ FCOM:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
-	ExternalCapturable:
-		CaptureCompleteTime: 30
-	ExternalCapturableBar:
+	CaptureManager:
+	Capturable:
+		Types: building
+	CapturableProgressBar:
+	CapturableProgressBlink:
 	EngineerRepairable:
 	OwnerLostAction:
 		Action: ChangeOwner
@@ -309,8 +320,11 @@ OILB:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, NoAutoTarget
 	Explodes:
 		Weapon: BarrelExplode
-	ExternalCapturable:
-	ExternalCapturableBar:
+	CaptureManager:
+	Capturable:
+		Types: building
+	CapturableProgressBar:
+	CapturableProgressBlink:
 	EngineerRepairable:
 	OwnerLostAction:
 		Action: ChangeOwner
@@ -324,8 +338,11 @@ V01:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	ExternalCapturable:
-	ExternalCapturableBar:
+	CaptureManager:
+	Capturable:
+		Types: building
+	CapturableProgressBar:
+	CapturableProgressBlink:
 	EngineerRepairable:
 	OwnerLostAction:
 		Action: ChangeOwner
@@ -576,8 +593,11 @@ V25:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	ExternalCapturable:
-	ExternalCapturableBar:
+	CaptureManager:
+	Capturable:
+		Types: building
+	CapturableProgressBar:
+	CapturableProgressBlink:
 	EngineerRepairable:
 	OwnerLostAction:
 		Action: ChangeOwner

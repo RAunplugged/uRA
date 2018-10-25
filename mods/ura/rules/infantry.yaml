@@ -278,9 +278,23 @@ E6:
 		PipType: Yellow
 	EngineerRepair:
 	RepairsBridges:
-	ExternalCaptures:
+	CaptureManager:
+	GrantConditionOnPrerequisite@GLOBALREUSABLEENGINEER:
+		Condition: global-reusable-engineers
+		Prerequisites: global-reusable-engineers
+	Captures:
+		RequiresCondition: !global-reusable-engineers
 		CaptureTypes: building
 		PlayerExperience: 25
+		CaptureDelay: 200
+	Captures@REUSABLE:
+		RequiresCondition: global-reusable-engineers
+		CaptureTypes: building
+		PlayerExperience: 25
+		CaptureDelay: 375
+		ConsumedByCapture: False
+		EnterCursor: ability
+		EnterBlockedCursor: move-blocked
 	WithInfantryBody:
 		RequiresCondition: !parachute
 	WithInfantryBody@PARACHUTE:
@@ -448,6 +462,7 @@ MECH:
 		OutsideRangeCursor: repair
 		TargetStances: Ally
 		ForceTargetStances: None
+	CaptureManager:
 	Captures:
 		CaptureTypes: husk
 		PlayerExperience: 25
@@ -500,6 +515,7 @@ HIJACKER:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
 	-MustBeDestroyed:
+	CaptureManager:
 	Captures:
 		CaptureTypes: vehicle
 		PlayerExperience: 50

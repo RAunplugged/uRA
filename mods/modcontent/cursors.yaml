@@ -1,7 +1,4 @@
-﻿Palettes:
-	cursor: cursor.pal
-
-Cursors:
+﻿Cursors:
 	cursor.shp: cursor
 		default:
 			Start:0
