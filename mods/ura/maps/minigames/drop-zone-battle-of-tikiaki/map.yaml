@@ -1,21 +1,12 @@
 MapFormat: 11
-
-RequiresMod: ra
-
+RequiresMod: ura
 Title: Drop Zone - Battle of Tikiaki
-
 Author: Knivesron
-
 Tileset: TEMPERAT
-
 MapSize: 64,64
-
 Bounds: 16,16,32,32
-
 Visibility: Lobby
-
 Categories: Minigame
-
 Players:
 	PlayerReference@Neutral:
 		Name: Neutral
@@ -24,53 +15,52 @@ Players:
 		Faction: allies
 	PlayerReference@Multi0:
 		Name: Multi0
-		Playable: True
 		AllowBots: False
+		Playable: True
 		LockFaction: True
 		Faction: soviet
 	PlayerReference@Multi1:
 		Name: Multi1
-		Playable: True
 		AllowBots: False
+		Playable: True
 		LockFaction: True
 		Faction: soviet
 	PlayerReference@Multi2:
 		Name: Multi2
-		Playable: True
 		AllowBots: False
+		Playable: True
 		LockFaction: True
 		Faction: soviet
 	PlayerReference@Multi3:
 		Name: Multi3
-		Playable: True
 		AllowBots: False
+		Playable: True
 		LockFaction: True
 		Faction: soviet
 	PlayerReference@Multi4:
 		Name: Multi4
-		Playable: True
 		AllowBots: False
+		Playable: True
 		LockFaction: True
 		Faction: soviet
 	PlayerReference@Multi5:
 		Name: Multi5
-		Playable: True
 		AllowBots: False
+		Playable: True
 		LockFaction: True
 		Faction: soviet
 	PlayerReference@Multi6:
 		Name: Multi6
-		Playable: True
 		AllowBots: False
+		Playable: True
 		LockFaction: True
 		Faction: soviet
 	PlayerReference@Multi7:
 		Name: Multi7
-		Playable: True
 		AllowBots: False
+		Playable: True
 		LockFaction: True
 		Faction: soviet
-
 Actors:
 	Actor0: apc
 		Location: 28,28
@@ -261,7 +251,5 @@ Actors:
 	Actor61: t05
 		Location: 41,17
 		Owner: Neutral
-
 Rules: rules.yaml
-
 Weapons: weapons.yaml
