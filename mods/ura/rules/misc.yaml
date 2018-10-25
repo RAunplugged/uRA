@@ -367,6 +367,8 @@ MINE:
 	AppearsOnRadar:
 	RadarColorFromTerrain:
 		Terrain: Ore
+	RenderOnMapPreview:
+		Terrain: Ore
 	Interactable:
 	RenderSprites:
 		Palette: terrain
@@ -385,6 +387,8 @@ GMINE:
 	HiddenUnderShroud:
 	AppearsOnRadar:
 	RadarColorFromTerrain:
+		Terrain: Gems
+	RenderOnMapPreview:
 		Terrain: Gems
 	Interactable:
 	RenderSprites:

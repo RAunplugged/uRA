@@ -837,6 +837,7 @@
 		ActorTypes: e1,e1,e1,tecn,tecn
 	GpsDot:
 		String: Structure
+	RenderOnMapPreview:
 	Huntable:
 	OwnerLostAction:
 		Action: Kill
@@ -897,6 +898,7 @@
 		Types: wall
 	FrozenUnderFog:
 	FrozenUnderFogUpdatedByGps:
+	RenderOnMapPreview:
 	Interactable:
 		Bounds: 24,24
 	Crushable:
@@ -1069,6 +1071,8 @@
 		MaximumDamageState: Dead
 	RenderSprites:
 		Palette: terrain
+	RenderOnMapPreview:
+		Terrain: Tree
 	WithSpriteBody:
 	ScriptTriggers:
 	MapEditorData:

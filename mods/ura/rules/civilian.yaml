@@ -94,6 +94,7 @@ BIO:
 		Range: 4c0
 	GpsDot:
 		String: Biohazard
+	RenderOnMapPreview:
 	Selectable:
 		Bounds: 48,48
 	Targetable:
@@ -138,6 +139,7 @@ HOSP:
 		Range: 4c0
 	GpsDot:
 		String: Hospital
+	RenderOnMapPreview:
 	Selectable:
 		Priority: 0
 		Bounds: 48,48
@@ -198,6 +200,7 @@ MISS:
 		Range: 5c256
 	GpsDot:
 		String: Communications
+	RenderOnMapPreview:
 	GrantConditionOnDeploy:
 		DeployedCondition: deployed
 		DeploySound: bleep9.aud
@@ -258,6 +261,7 @@ FCOM:
 		Range: 5c256
 	GpsDot:
 		String: Forward
+	RenderOnMapPreview:
 	Selectable:
 		Bounds: 48,48
 	Targetable:
@@ -313,6 +317,7 @@ OILB:
 		Range: 4c0
 	GpsDot:
 		String: Oil
+	RenderOnMapPreview:
 	Selectable:
 		Priority: 0
 		Bounds: 48,48
