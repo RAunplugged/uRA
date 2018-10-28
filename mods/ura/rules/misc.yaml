@@ -159,6 +159,7 @@ CRATE:
 		Range: 1c512
 		Duration: 750
 		TimeDelay: 9000
+	AppearsOnRadar:
 
 MONEYCRATE:
 	Inherits: ^Crate
