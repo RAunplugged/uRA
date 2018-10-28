@@ -1,21 +1,12 @@
 MapFormat: 11
-
-RequiresMod: ra
-
+RequiresMod: ura
 Title: Fort Lonestar
-
 Author: Nuke'm Bro, abcdefg30
-
 Tileset: TEMPERAT
-
 MapSize: 96,96
-
 Bounds: 8,8,48,48
-
 Visibility: Lobby
-
 Categories: Minigame
-
 Players:
 	PlayerReference@Neutral:
 		Name: Neutral
@@ -25,47 +16,46 @@ Players:
 	PlayerReference@Multi0:
 		Name: Multi0
 		Playable: True
-		LockTeam: True
-		Team: 1
 		LockFaction: True
 		Faction: allies
+		LockTeam: True
+		Team: 1
 		Allies: Multi1, Multi2, Multi3
 		Enemies: Soviets
 	PlayerReference@Multi1:
 		Name: Multi1
 		Playable: True
-		LockTeam: True
-		Team: 1
 		LockFaction: True
 		Faction: allies
+		LockTeam: True
+		Team: 1
 		Allies: Multi0, Multi2, Multi3
 		Enemies: Soviets
 	PlayerReference@Multi2:
 		Name: Multi2
 		Playable: True
-		LockTeam: True
-		Team: 1
 		LockFaction: True
 		Faction: allies
+		LockTeam: True
+		Team: 1
 		Allies: Multi0, Multi1, Multi3
 		Enemies: Soviets
 	PlayerReference@Multi3:
 		Name: Multi3
 		Playable: True
-		LockTeam: True
-		Team: 1
 		LockFaction: True
 		Faction: allies
+		LockTeam: True
+		Team: 1
 		Allies: Multi0, Multi1, Multi2
 		Enemies: Soviets
 	PlayerReference@Soviets:
 		Name: Soviets
 		Faction: soviet
+		Color: FF0101
 		LockTeam: True
 		Team: 2
-		Color: FF0101
 		Enemies: Multi0, Multi1, Multi2, Multi3
-
 Actors:
 	Actor76: t11
 		Location: 47,27
@@ -460,9 +450,6 @@ Actors:
 	Patrol4: waypoint
 		Location: 46,32
 		Owner: Neutral
-
 Rules: rules.yaml
-
 Weapons: weapons.yaml
-
 Music: music.yaml

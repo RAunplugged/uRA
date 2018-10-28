@@ -402,5 +402,4 @@ Actors:
 	Actor162: mpspawn
 		Owner: Neutral
 		Location: 87,41
-
 Rules: rules.yaml
