@@ -837,6 +837,7 @@
 		ActorTypes: e1,e1,e1,tecn,tecn
 	GpsDot:
 		String: Structure
+	AppearsOnMapPreview:
 	Huntable:
 	OwnerLostAction:
 		Action: Kill
@@ -897,6 +898,8 @@
 		Types: wall
 	FrozenUnderFog:
 	FrozenUnderFogUpdatedByGps:
+	AppearsOnMapPreview:
+		Terrain: Tree
 	Interactable:
 		Bounds: 24,24
 	Crushable:
@@ -1048,6 +1051,8 @@
 	HiddenUnderShroud:
 	AppearsOnRadar:
 	RadarColorFromTerrain:
+		Terrain: Tree
+	AppearsOnMapPreview:
 		Terrain: Tree
 	Interactable:
 	Targetable:
