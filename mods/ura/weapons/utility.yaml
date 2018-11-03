@@ -1,0 +1,53 @@
+Heal:
+	ReloadDelay: 80
+	Range: 4c0
+	ValidTargets: Infantry
+	Projectile: Bullet
+		Speed: 1c682
+	Warhead@1Dam: SpreadDamage
+		Spread: 213
+		Damage: -50
+		ValidStances: Ally
+		ValidTargets: Infantry
+		DebugOverlayColor: 00FF00
+	Report: heal2.aud
+
+Heal.IFV:
+	Inherits: Heal
+	Range: 5c384
+	Warhead@1Dam: SpreadDamage
+		Damage: -15
+		Spread: 1704
+		Falloff: 1000, 368, 135, 50, 18, 7, 0
+
+Heal.Priest:
+	Inherits: Heal
+	ReloadDelay: 160
+	Range: 12c0
+	Warhead@1Dam: SpreadDamage
+		Damage: -75
+		Spread: 462
+
+Repair:
+	Inherits: Heal
+	ValidTargets: Repair
+	Warhead@1Dam: SpreadDamage
+		Damage: -20
+		ValidTargets: Repair
+	Report: fixit1.aud
+
+Repair.IFV:
+	Inherits: Repair
+	Range: 5c384
+	Warhead@1Dam: SpreadDamage
+		Damage: -40
+
+Hover:
+	ReloadDelay: 100
+	Range: 0c0
+	ValidTargets: Ground, Water
+	Projectile: Bullet
+		Speed: 1c0
+	Warhead@1Dam: SpreadDamage
+		Damage: 0
+		ValidTargets: Ground, Water

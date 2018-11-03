@@ -141,6 +141,7 @@ Weapons:
 	ura|weapons/other.yaml
 	ura|weapons/smallcaliber.yaml
 	ura|weapons/superweapons.yaml
+	ura|weapons/utility.yaml
 	ura|weapons/ai/ai-ballistics.yaml
 	ura|weapons/ai/ai-missiles.yaml
 	ura|weapons/ai/ai-other.yaml
