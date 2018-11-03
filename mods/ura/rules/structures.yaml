@@ -1822,7 +1822,7 @@ AGUN:
 	AttackTurreted:
 		PauseOnCondition: disabled
 	Turreted:
-		TurnSpeed: 15
+		TurnSpeed: 13
 		InitialFacing: 224
 	RenderRangeCircle:
 		RangeCircleType: aa
