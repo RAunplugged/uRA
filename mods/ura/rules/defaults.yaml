@@ -157,6 +157,104 @@
 		ZOffset: 256
 		ValidStances: Ally, Enemy, Neutral
 
+^GainsExtraExperience:
+	GainsExperience:
+		LevelUpNotification: LevelUp
+		Conditions:
+			150: rank-veteran
+			300: rank-veteran
+			600: rank-veteran
+			1200: rank-veteran
+	GrantCondition@RANK-ELITE:
+		RequiresCondition: rank-veteran >= 4
+		Condition: rank-elite
+	DamageMultiplier@RANK-2:
+		RequiresCondition: rank-veteran == 2
+		Modifier: 80
+	DamageMultiplier@RANK-3:
+		RequiresCondition: rank-veteran == 3
+		Modifier: 70
+	DamageMultiplier@RANK-ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 60
+	FirepowerMultiplier@RANK-1:
+		RequiresCondition: rank-veteran == 1
+		Modifier: 110
+	FirepowerMultiplier@RANK-2:
+		RequiresCondition: rank-veteran == 2
+		Modifier: 120
+	FirepowerMultiplier@RANK-3:
+		RequiresCondition: rank-veteran == 3
+		Modifier: 130
+	FirepowerMultiplier@RANK-ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 140
+	SpeedMultiplier@RANK-3:
+		RequiresCondition: rank-veteran == 3
+		Modifier: 115
+	SpeedMultiplier@RANK-ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 130
+	ReloadDelayMultiplier@RANK-ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 80
+	RangeMultiplier@RANK-3:
+		RequiresCondition: rank-veteran == 3
+		Modifier: 115
+	RangeMultiplier@RANK-ELITE:
+		RequiresCondition: rank-elite
+		Modifier: 115
+	SelfHealing@RANK-2:
+		PercentageStep: 5
+		Delay: 75
+		HealIfBelow: 50
+		DamageCooldown: 150
+		RequiresCondition: rank-veteran == 2
+	SelfHealing@RANK-3:
+		PercentageStep: 5
+		Delay: 75
+		HealIfBelow: 75
+		DamageCooldown: 150
+		RequiresCondition: rank-veteran == 3
+	SelfHealing@ELITE:
+		PercentageStep: 5
+		Delay: 75
+		HealIfBelow: 100
+		DamageCooldown: 150
+		RequiresCondition: rank-elite
+	WithDecoration@RANK-1:
+		Image: rank
+		Sequence: rank-veteran-1
+		Palette: effect
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-veteran == 1
+		ZOffset: 256
+		ValidStances: Ally, Enemy, Neutral
+	WithDecoration@RANK-2:
+		Image: rank
+		Sequence: rank-veteran-2
+		Palette: effect
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-veteran == 2
+		ZOffset: 256
+		ValidStances: Ally, Enemy, Neutral
+	WithDecoration@RANK-3:
+		Image: rank
+		Sequence: rank-veteran-3
+		Palette: effect
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-veteran == 3
+		ZOffset: 256
+		ValidStances: Ally, Enemy, Neutral
+	WithDecoration@RANK-ELITE:
+		Image: rank
+		Sequence: rank-elite
+		Palette: effect
+		ReferencePoint: Bottom, Right
+		RequiresCondition: rank-elite
+		ZOffset: 256
+		ValidStances: Ally, Enemy, Neutral
+
 ^GainsDoubleExperience:
 	GainsExperience:
 		LevelUpNotification: LevelUp
@@ -696,7 +794,7 @@
 
 ^Plane:
 	Inherits: ^NeutralPlane
-	Inherits@2: ^GainsExperience
+	Inherits@2: ^GainsExtraExperience
 
 ^Helicopter:
 	Inherits: ^Plane
