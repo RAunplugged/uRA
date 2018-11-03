@@ -304,8 +304,6 @@ TRUK:
 		Name: German Medium Tank
 	Valued:
 		Cost: 1050
-	Health:
-		HP: 500
 	Armament:
 		Weapon: 90mm.Germany
 		RequiresCondition: !botowner
