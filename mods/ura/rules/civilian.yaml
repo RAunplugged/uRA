@@ -115,6 +115,7 @@ BIO:
 	GpsDot:
 		String: Biohazard
 	ProvidesPrerequisite@buildingname:
+	AppearsOnMapPreview:
 
 HOSP:
 	Inherits: ^TechBuilding
@@ -155,6 +156,7 @@ HOSP:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
 	ProvidesPrerequisite@buildingname:
+	AppearsOnMapPreview:
 
 MISS:
 	Inherits: ^TechBuilding
@@ -219,6 +221,7 @@ MISS:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
 	ProvidesPrerequisite@buildingname:
+	AppearsOnMapPreview:
 
 FCOM:
 	Inherits: ^TechBuilding
@@ -285,6 +288,7 @@ FCOM:
 	OwnerLostAction:
 		Action: ChangeOwner
 	ProvidesPrerequisite@buildingname:
+	AppearsOnMapPreview:
 
 OILB:
 	Inherits: ^TechBuilding
@@ -329,6 +333,7 @@ OILB:
 	EngineerRepairable:
 	OwnerLostAction:
 		Action: ChangeOwner
+	AppearsOnMapPreview:
 
 # Decoration structures
 
@@ -830,6 +835,8 @@ BR2:
 	FreeActor:
 		Actor: bridgehut
 		SpawnOffset: 1,1
+	AppearsOnMapPreview:
+		Terrain: Tree
 
 BR3:
 	Inherits: ^Bridge
@@ -844,6 +851,8 @@ BR3:
 		DestroyedPlusBothTemplate: 246
 		NorthOffset: 2,0
 		SouthOffset: 0,1
+	AppearsOnMapPreview:
+		Terrain: Tree
 
 BRIDGE1:
 	Inherits: ^Bridge
