@@ -322,7 +322,6 @@ MIG:
 		BuildDurationModifier: 50
 		Description: Fast Air- and Ground-Attack Plane.\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry
 	Aircraft:
-		RearmBuildings: afld, afld.ukraine
 		CruiseAltitude: 2560
 		InitialFacing: 192
 		TurnSpeed: 4
