@@ -1037,7 +1037,7 @@ MGG:
 		Range: 5c384
 	CreatesShroud:
 		Range: 8c0
-		RequiresCondition: deployed
+		RequiresCondition: !deployed
 	GrantConditionOnDeploy:
 		DeployedCondition: deployed
 	RenderShroudCircle:
@@ -1046,7 +1046,7 @@ MGG:
 	WithIdleOverlay@SPINNER:
 		Offset: -299,0,171
 		Sequence: spinner
-		PauseOnCondition: !deployed
+		PauseOnCondition: deployed
 	SpawnActorOnDeath:
 		Actor: MGG.Husk
 		OwnerType: InternalName
