@@ -423,6 +423,11 @@ MEDI:
 		OutsideRangeCursor: heal
 		TargetStances: Ally
 		ForceTargetStances: None
+	SelfHealing:
+		Step: 5
+		Delay: 100
+		HealIfBelow: 75
+		DamageCooldown: 125
 	Passenger:
 		PipType: Blue
 	AutoTarget:
