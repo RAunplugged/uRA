@@ -515,7 +515,7 @@ HIJACKER:
 		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
 		CloakTypes: Cloak, Hijacker
 		IsPlayerPalette: true
-		RequiresCondition: !cloak-force-disabled
+		PauseOnCondition: cloak-force-disabled
 	GrantConditionOnDamageState@UNCLOAK:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical
@@ -663,7 +663,8 @@ E7:
 		RequiresCondition: !swimming
 	Voiced:
 		VoiceSet: TanyaVoice
-	AnnounceOnBuild:
+	VoiceAnnouncement:
+		Voice: Build
 	AnnounceOnKill:
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded, radardome.upgraded
@@ -787,7 +788,7 @@ SNIPER:
 		UncloakSound:
 		UncloakOn: Attack, Unload, Infiltrate, Demolish, Move
 		IsPlayerPalette: true
-		RequiresCondition: !cloak-force-disabled
+		PauseOnCondition: cloak-force-disabled
 	GrantConditionOnDamageState@UNCLOAK:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical

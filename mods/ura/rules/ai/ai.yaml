@@ -1,4 +1,5 @@
 Player:
+	BotOrderManager:
 
 	# All bots have specific cost/production modifiers related to their difficulty level:
 	# Easy (-20%), Normal, Hard (+20%), Brutal (+40%), Naval and Naval-Hard (+20%).
@@ -7,9 +8,14 @@ Player:
 
 	# Easy AI | Vanilla Mode | -20% Cost/Production penalty
 
+	HarvesterBotModule:
+		RequiresCondition: enable-easy-ai || enable-normal-ai || enable-hard-ai || enable-brutal-ai || enable-naval-ai || enable-naval-hard-ai
+
 	HackyAI@EasyAI:
 		Name: Easy AI
 		Type: easy
+
+		Condition: enable-easy-ai
 
 		SquadSize: 30
 		SquadSizeRandomBonus: 40
@@ -212,6 +218,8 @@ Player:
 		Name: Normal AI
 		Type: normal
 
+		Condition: enable-normal-ai
+
 		SquadSize: 30
 		SquadSizeRandomBonus: 40
 		MinimumExcessPower: 80
@@ -412,6 +420,8 @@ Player:
 	HackyAI@HardAI:
 		Name: Hard AI
 		Type: hard
+
+		Condition: enable-hard-ai
 
 		SquadSize: 15
 		SquadSizeRandomBonus: 40
@@ -621,6 +631,8 @@ Player:
 		Name: Brutal AI
 		Type: brutal
 
+		Condition: enable-brutal-ai
+
 		SquadSize: 15
 		SquadSizeRandomBonus: 40
 		MinimumExcessPower: 80
@@ -829,6 +841,8 @@ Player:
 		Name: Naval AI
 		Type: naval
 
+		Condition: enable-naval-ai
+
 		SquadSize: 1
 		SquadSizeRandomBonus: 3
 		MinimumExcessPower: 120
@@ -984,6 +998,8 @@ Player:
 	HackyAI@NavalHardAI:
 		Name: Naval AI (Hard)
 		Type: navalHard
+
+		Condition: enable-naval-hard-ai
 
 		SquadSize: 1
 		SquadSizeRandomBonus: 3

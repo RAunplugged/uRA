@@ -181,8 +181,6 @@ WEAF:
 		Dimensions: 3,3
 		LocalCenterOffset: 0,-512,0
 	WithBuildingBib:
-	WithMakeAnimation:
-		Condition: build-incomplete
 	Selectable:
 		Bounds: 72,48
 	RenderSprites:

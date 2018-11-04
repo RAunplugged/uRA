@@ -154,7 +154,7 @@ CRATE:
 	GrantExternalConditionCrateAction@invuln:
 		SelectionShares: 15
 		Effect: invuln
-		Notification: ironcur9.aud
+		Sound: ironcur9.aud
 		Condition: invulnerability
 		Range: 1c512
 		Duration: 750
@@ -176,7 +176,7 @@ HEALCRATE:
 	Tooltip:
 		Name: Heal Crate
 	HealUnitsCrateAction:
-		Notification: heal2.aud
+		Sound: heal2.aud
 		SelectionShares: 1
 		Effect: heal
 

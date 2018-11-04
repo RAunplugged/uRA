@@ -42,8 +42,8 @@ FACT:
 		IntoActor: mcv
 		Offset: 1,1
 		Facing: 96
-		RequiresCondition: factundeploy
-		PauseOnCondition: being-captured
+		RequiresCondition: factundeploy && !build-incomplete
+		PauseOnCondition: being-captured || being-demolished
 	RevealsShroud:
 		Range: 6c256
 		RevealGeneratedShroud: False
@@ -57,8 +57,6 @@ FACT:
 		LocalCenterOffset: 0,-512,0
 	BaseBuilding:
 	WithBuildingBib:
-	WithMakeAnimation:
-		Condition: build-incomplete
 	WithBuildingPlacedAnimation:
 		RequiresCondition: !build-incomplete
 	HitShape:
@@ -182,8 +180,6 @@ PROC:
 		Dimensions: 3,4
 		LocalCenterOffset: 0,-512,0
 	WithBuildingBib:
-	WithMakeAnimation:
-		Condition: build-incomplete
 	Refinery:
 		DockAngle: 64
 		DockOffset: 1,2
@@ -261,6 +257,7 @@ KENN:
 		ProductionTypes: Dog, Infantry
 		RequiresCondition: !being-captured
 	ProductionBar:
+		ProductionType: Infantry
 	WithDecoration@primary:
 		RequiresSelection: true
 		Image: pips
@@ -324,6 +321,7 @@ TENT:
 		RequiresCondition: !being-captured
 	RallyPoint:
 	ProductionBar:
+		ProductionType: Infantry
 	WithDecoration@primary:
 		RequiresSelection: true
 		Image: pips
@@ -431,6 +429,7 @@ BARR:
 		RequiresCondition: !being-captured
 	RallyPoint:
 	ProductionBar:
+		ProductionType: Infantry
 	WithDecoration@primary:
 		RequiresSelection: true
 		Image: pips
@@ -515,8 +514,6 @@ WEAP:
 		Dimensions: 3,3
 		LocalCenterOffset: 0,-512,0
 	WithBuildingBib:
-	WithMakeAnimation:
-		Condition: build-incomplete
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
 	WithProductionDoorOverlay:
@@ -528,6 +525,7 @@ WEAP:
 		RequiresCondition: !being-captured
 	RallyPoint:
 	ProductionBar:
+		ProductionType: Vehicle
 	WithDecoration@primary:
 		RequiresSelection: true
 		Image: pips
@@ -639,8 +637,6 @@ FIX:
 		Dimensions: 3,3
 	WithBuildingBib:
 		HasMinibib: Yes
-	WithMakeAnimation:
-		Condition: build-incomplete
 	WithResupplyAnimation:
 		RequiresCondition: !build-incomplete
 	HitShape:
@@ -751,6 +747,7 @@ SYRD:
 		RequiresCondition: !being-captured
 	RallyPoint:
 	ProductionBar:
+		ProductionType: Ship
 	WithDecoration@primary:
 		RequiresSelection: true
 		Image: pips
@@ -903,6 +900,7 @@ SPEN:
 		RequiresCondition: !being-captured
 	RallyPoint:
 	ProductionBar:
+		ProductionType: Ship
 	WithDecoration@primary:
 		RequiresSelection: true
 		Image: pips
@@ -1179,6 +1177,7 @@ HPAD:
 		RequiresCondition: !being-captured
 	RallyPoint:
 	ProductionBar:
+		ProductionType: Aircraft
 	WithDecoration@primary:
 		RequiresSelection: true
 		Image: pips
@@ -1196,8 +1195,6 @@ HPAD:
 	GrantConditionOnPrerequisite:
 		Condition: upgraded
 		Prerequisites: aircraft.upgraded
-	WithMakeAnimation:
-		Condition: build-incomplete
 	WithResupplyAnimation:
 		RequiresCondition: !build-incomplete
 	ProvidesPrerequisite@allies:
@@ -1289,6 +1286,7 @@ AFLD:
 		RequiresCondition: !being-captured
 	RallyPoint:
 	ProductionBar:
+		ProductionType: Aircraft
 	SupportPowerChargeBar:
 	WithDecoration@primary:
 		RequiresSelection: true
@@ -1297,8 +1295,6 @@ AFLD:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: primary
-	WithMakeAnimation:
-		Condition: build-incomplete
 	WithResupplyAnimation:
 		RequiresCondition: !build-incomplete
 	AirstrikePower@spyplane:
@@ -1569,6 +1565,7 @@ PBOX:
 		PortOffsets: 384,0,128, 224,-341,128, -224,-341,128, -384,0,128, -224,341,128, 224,341,128
 		PortYaws: 0, 176, 341, 512, 682, 853
 		PortCones: 88, 88, 88, 88, 88, 88
+		RequiresCondition: !build-incomplete
 	-SpawnActorsOnSell:
 
 HBOX:
@@ -1601,7 +1598,7 @@ HBOX:
 		InitialDelay: 125
 		CloakDelay: 60
 		IsPlayerPalette: true
-		RequiresCondition: !cloak-force-disabled
+		PauseOnCondition: cloak-force-disabled
 	-MustBeDestroyed:
 	DetectCloaked:
 		Range: 5c256
@@ -1622,6 +1619,7 @@ HBOX:
 		PortOffsets: 384,0,128, 224,-341,128, -224,-341,128, -384,0,128, -224,341,128, 224,341,128
 		PortYaws: 0, 176, 341, 512, 682, 853
 		PortCones: 88, 88, 88, 88, 88, 88
+		RequiresCondition: !build-incomplete
 	-SpawnActorsOnSell:
 	GrantConditionOnDamageState@UNCLOAK:
 		Condition: cloak-force-disabled
@@ -1670,6 +1668,7 @@ GUN:
 		TurnSpeed: 12
 		InitialFacing: 56
 	AttackTurreted:
+		RequiresCondition: !build-incomplete
 	DetectCloaked:
 		Range: 5c256
 	BodyOrientation:
@@ -1719,6 +1718,7 @@ FTUR:
 		TurnSpeed: 255
 		Offset: 0,0,112
 	AttackTurreted:
+		RequiresCondition: !build-incomplete
 	DetectCloaked:
 		Range: 5c384
 	-QuantizeFacingsFromSequence:
@@ -1774,6 +1774,7 @@ TSLA:
 		RequiresCondition: botowner
 	AttackTesla:
 		PauseOnCondition: disabled
+		RequiresCondition: !build-incomplete
 		ChargeAudio: tslachg2.aud
 		MaxCharges: 3
 		ReloadDelay: 120
@@ -1821,6 +1822,7 @@ AGUN:
 		MuzzleSequence: muzzle
 	AttackTurreted:
 		PauseOnCondition: disabled
+		RequiresCondition: !build-incomplete
 	Turreted:
 		TurnSpeed: 13
 		InitialFacing: 224
@@ -1874,6 +1876,7 @@ SAM:
 		MuzzleSequence: muzzle
 	AttackTurreted:
 		PauseOnCondition: disabled
+		RequiresCondition: !build-incomplete
 	Turreted:
 		TurnSpeed: 30
 		InitialFacing: 0
@@ -2035,8 +2038,6 @@ SILO:
 	-MustBeDestroyed:
 	WithBuildingBib:
 		HasMinibib: Yes
-	WithMakeAnimation:
-		Condition: build-incomplete
 	Selectable:
 		Bounds: 24,24
 	Explodes:
@@ -2231,7 +2232,8 @@ MSLO:
 		Range: 5c256
 		RequiresCondition: !disabled
 	SupportPowerChargeBar:
-	AnnounceOnBuild:
+	VoiceAnnouncement:
+		Voice: Build
 	Voiced:
 		VoiceSet: MissileSiloVoice
 	ProvidesPrerequisite@buildingname:
@@ -2263,8 +2265,6 @@ MSLO:
 		CircleSequence: circles
 	WithNukeLaunchAnimation:
 		RequiresCondition: !build-incomplete
-	WithMakeAnimation:
-		Condition: build-incomplete
 
 # Misc
 

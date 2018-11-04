@@ -743,8 +743,9 @@
 	ProximityCaptor:
 		Types: Plane
 	Aircraft:
-		RepairBuildings: afld, afld.ukraine, afld.brutal, afld.ukraine.brutal, afld.hard, afld.ukraine.hard, afld.easy, afld.ukraine.easy
 		AirborneCondition: airborne
+	Repairable:
+		RepairBuildings: afld, afld.ukraine, afld.brutal, afld.ukraine.brutal, afld.hard, afld.ukraine.hard, afld.easy, afld.ukraine.easy
 	AttackMove:
 	Guard:
 	EjectOnDeath:
@@ -802,11 +803,13 @@
 		GenericName: Helicopter
 	Aircraft:
 		CanHover: True
-		RepairBuildings: hpad, hpad.brutal, hpad.hard, hpad.easy
 		CruisingCondition: cruising
 		WaitDistanceFromResupplyBase: 4c0
 		TakeOffOnResupply: true
 		VTOL: true
+		InitialFacing: 224
+	Repairable:
+		RepairBuildings: hpad, hpad.brutal, hpad.hard, hpad.easy
 	Hovers@CRUISING:
 		RequiresCondition: cruising
 	GpsDot:
@@ -929,13 +932,15 @@
 	CapturableProgressBlink:
 	AcceptsDeliveredCash:
 	Sellable:
-		RequiresCondition: !being-captured
+		RequiresCondition: !build-incomplete && !being-captured && !being-demolished
 		SellSounds: cashturn.aud
 	SpawnActorsOnSell:
 		ActorTypes: e1,e1,e1,tecn,tecn
 	GpsDot:
 		String: Structure
 	Huntable:
+	Demolishable:
+		Condition: being-demolished
 	OwnerLostAction:
 		Action: Kill
 	WithBuildingRepairDecoration:
@@ -945,6 +950,7 @@
 		Palette: player
 		IsPlayerPalette: True
 	WithMakeAnimation:
+		Condition: build-incomplete
 
 ^ScienceBuilding:
 	Inherits: ^Building

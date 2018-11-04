@@ -518,18 +518,17 @@ TNKD:
 		Queue: Vehicle
 		BuildPaletteOrder: 150
 		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~servicedepot.upgraded
+		Description: Anti-Tank Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft, Buildings
 	Valued:
 		Cost: 1050
 	Tooltip:
 		Name: Tank Destroyer
-		Description: Anti-Tank Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft, Buildings
 	Health:
 		HP: 450
 	Armor:
 		Type: Heavy
 	Mobile:
 		Speed: 80
-		Crushes: wall, mine, crate, infantry
 	RevealsShroud:
 		Range: 7c576
 	Armament:
@@ -542,7 +541,6 @@ TNKD:
 	SpawnActorOnDeath:
 		Actor: TNKD.Husk
 	SelectionDecorations:
-		VisualBounds: 28,28
 	ProducibleWithLevel:
 		Prerequisites: warfactory.upgraded
 
@@ -929,6 +927,8 @@ MNLY:
 		Range: 5c384
 	Minelayer:
 		Mine: MINV
+	Rearmable:
+		RearmActors: fix
 	MineImmune:
 	AmmoPool:
 		Ammo: 5
@@ -1219,7 +1219,7 @@ STNK:
 		CloakSound: appear1.aud
 		UncloakSound: appear1.aud
 		IsPlayerPalette: true
-		RequiresCondition: !cloak-force-disabled
+		PauseOnCondition: cloak-force-disabled
 	GrantConditionOnDamageState@UNCLOAK:
 		Condition: cloak-force-disabled
 		ValidDamageStates: Critical

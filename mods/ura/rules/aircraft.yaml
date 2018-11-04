@@ -14,7 +14,6 @@ TRAN:
 		Prerequisites: ~hpad, ~techlevel.medium
 		Description: Fast Infantry Transport Helicopter.\n  Unarmed
 	Aircraft:
-		InitialFacing: 224
 		TurnSpeed: 5
 		Speed: 136
 		LandableTerrainTypes: Clear,Rough,Road,Ore,Beach,Gems
@@ -30,7 +29,7 @@ TRAN:
 		Weapon: Hover
 	AmmoPool:
 		Ammo: 0
-	AttackHeli:
+	AttackAircraft:
 		FacingTolerance: 20
 	AutoTarget:
 		InitialStance: HoldFire
@@ -79,11 +78,11 @@ HIND:
 		Prerequisites: ~hpad, ~techlevel.medium
 		Description: Helicopter gunship armed\nwith dual chainguns.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Aircraft:
-		RearmBuildings: hpad
 		LandWhenIdle: false
-		InitialFacing: 224
 		TurnSpeed: 4
 		Speed: 112
+	Rearmable:
+		RearmActors: hpad
 	RevealsShroud:
 		Range: 12c0
 		Type: GroundPosition
@@ -125,7 +124,7 @@ HIND:
 		PipCount: 6
 		ReloadDelay: 8
 		AmmoCondition: ammo
-	AttackHeli:
+	AttackAircraft:
 		FacingTolerance: 20
 	AutoTarget:
 		InitialStance: HoldFire
@@ -164,12 +163,12 @@ HELI:
 		BuildDurationModifier: 50
 		Description: Helicopter gunship armed\nwith multi-purpose missiles.\n  Strong vs Buildings, Vehicles, Aircraft\n  Weak vs Infantry
 	Aircraft:
-		RearmBuildings: hpad
 		LandWhenIdle: false
-		InitialFacing: 224
 		TurnSpeed: 5
 		Speed: 160
 		IdealSeparation: 1c512
+	Rearmable:
+		RearmActors: hpad
 	RevealsShroud:
 		Range: 14c0
 		Type: GroundPosition
@@ -197,7 +196,7 @@ HELI:
 	AmmoPool:
 		Ammo: 8
 		AmmoCondition: ammo
-	AttackHeli:
+	AttackAircraft:
 		FacingTolerance: 20
 	AutoTarget:
 		InitialStance: HoldFire
@@ -236,13 +235,14 @@ YAK:
 		Prerequisites: ~afld, ~techlevel.medium
 		Description: Attack Plane armed with\ndual machine guns.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Aircraft:
-		RearmBuildings: afld, afld.ukraine
 		CruiseAltitude: 2560
 		InitialFacing: 192
 		TurnSpeed: 4
 		Speed: 178
 		RepulsionSpeed: 40
 		MaximumPitch: 56
+	Rearmable:
+		RearmActors: afld, afld.ukraine
 	FlyCircleOnIdle:
 	RevealsShroud:
 		Range: 13c0
@@ -285,7 +285,7 @@ YAK:
 		PipCount: 6
 		ReloadDelay: 11
 		AmmoCondition: ammo
-	AttackPlane:
+	AttackAircraft:
 		FacingTolerance: 20
 	AutoTarget:
 		InitialStance: HoldFire
@@ -329,6 +329,8 @@ MIG:
 		Speed: 235
 		RepulsionSpeed: 40
 		MaximumPitch: 56
+	Rearmable:
+		RearmActors: afld, afld.ukraine
 	FlyCircleOnIdle:
 	RevealsShroud:
 		Range: 15c0
@@ -359,7 +361,7 @@ MIG:
 		Ammo: 6
 		ReloadDelay: 85
 		AmmoCondition: ammo
-	AttackPlane:
+	AttackAircraft:
 		FacingTolerance: 20
 	AutoTarget:
 		InitialStance: HoldFire
