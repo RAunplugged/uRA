@@ -532,9 +532,6 @@ HIND.Easy:
 	Buildable:
 		BuildPaletteOrder: 9000
 		Prerequisites: hpad.easy, ~techlevel.medium, ~aircraft.ai
-	Aircraft:
-		RearmBuildings: hpad.easy
-		RepairBuildings: hpad.easy
 	RenderSprites:
 		Image: hind
 	-MapEditorData:
@@ -545,9 +542,6 @@ HELI.Easy:
 	Buildable:
 		BuildPaletteOrder: 9003
 		Prerequisites: hpad.easy, atek.easy, ~techlevel.high, ~aircraft.ai
-	Aircraft:
-		RearmBuildings: hpad.easy
-		RepairBuildings: hpad.easy
 	RenderSprites:
 		Image: heli
 	-MapEditorData:
@@ -558,9 +552,6 @@ YAK.Easy:
 	Buildable:
 		BuildPaletteOrder: 9006
 		Prerequisites: afld.easy, ~techlevel.medium, ~aircraft.ai
-	Aircraft:
-		RearmBuildings: afld.easy, afld.ukraine.easy
-		RepairBuildings: afld.easy, afld.ukraine.easy
 	RenderSprites:
 		Image: yak
 	-MapEditorData:
@@ -571,9 +562,6 @@ MIG.Easy:
 	Buildable:
 		BuildPaletteOrder: 9009
 		Prerequisites: afld.easy, stek.easy, ~techlevel.high, ~aircraft.ai
-	Aircraft:
-		RearmBuildings: afld.easy, afld.ukraine.easy
-		RepairBuildings: afld.easy, afld.ukraine.easy
 	RenderSprites:
 		Image: mig
 	-MapEditorData:

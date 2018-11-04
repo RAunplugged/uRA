@@ -82,7 +82,7 @@ HIND:
 		TurnSpeed: 4
 		Speed: 112
 	Rearmable:
-		RearmActors: hpad
+		RearmActors: hpad, hpad.easy, hpad.hard, hpad.brutal
 	RevealsShroud:
 		Range: 12c0
 		Type: GroundPosition
@@ -168,7 +168,7 @@ HELI:
 		Speed: 160
 		IdealSeparation: 1c512
 	Rearmable:
-		RearmActors: hpad
+		RearmActors: hpad, hpad.easy, hpad.hard, hpad.brutal
 	RevealsShroud:
 		Range: 14c0
 		Type: GroundPosition
@@ -242,7 +242,7 @@ YAK:
 		RepulsionSpeed: 40
 		MaximumPitch: 56
 	Rearmable:
-		RearmActors: afld, afld.ukraine
+		RearmActors: afld, afld.ukraine, afld.easy, afld.ukraine.easy, afld.hard, afld.ukraine.hard, afld.brutal, afld.ukraine.brutal
 	FlyCircleOnIdle:
 	RevealsShroud:
 		Range: 13c0
@@ -330,7 +330,7 @@ MIG:
 		RepulsionSpeed: 40
 		MaximumPitch: 56
 	Rearmable:
-		RearmActors: afld, afld.ukraine
+		RearmActors: afld, afld.ukraine, afld.easy, afld.ukraine.easy, afld.hard, afld.ukraine.hard, afld.brutal, afld.ukraine.brutal
 	FlyCircleOnIdle:
 	RevealsShroud:
 		Range: 15c0

@@ -531,9 +531,6 @@ HIND.Brutal:
 	Buildable:
 		BuildPaletteOrder: 9002
 		Prerequisites: hpad.brutal, ~techlevel.medium, ~aircraft.ai
-	Aircraft:
-		RearmBuildings: hpad.brutal
-		RepairBuildings: hpad.brutal
 	RenderSprites:
 		Image: hind
 	-MapEditorData:
@@ -544,9 +541,6 @@ HELI.Brutal:
 	Buildable:
 		BuildPaletteOrder: 9005
 		Prerequisites: hpad.brutal, atek.brutal, ~techlevel.high, ~aircraft.ai
-	Aircraft:
-		RearmBuildings: hpad.brutal
-		RepairBuildings: hpad.brutal
 	AutoTargetPriority:
 		InvalidTargets: ^infantry
 	RenderSprites:
@@ -559,9 +553,6 @@ YAK.Brutal:
 	Buildable:
 		BuildPaletteOrder: 9008
 		Prerequisites: afld.brutal, ~techlevel.medium, ~aircraft.ai
-	Aircraft:
-		RearmBuildings: afld.brutal, afld.ukraine.brutal
-		RepairBuildings: afld.brutal, afld.ukraine.brutal
 	RenderSprites:
 		Image: yak
 	-MapEditorData:
@@ -572,9 +563,6 @@ MIG.Brutal:
 	Buildable:
 		BuildPaletteOrder: 9011
 		Prerequisites: afld.brutal, stek.brutal, ~techlevel.high, ~aircraft.ai
-	Aircraft:
-		RearmBuildings: afld.brutal, afld.ukraine.brutal
-		RepairBuildings: afld.brutal, afld.ukraine.brutal
 	AutoTargetPriority:
 		InvalidTargets: ^infantry
 	RenderSprites:
