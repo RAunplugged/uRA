@@ -670,13 +670,13 @@ E9:
 	Tooltip:
 		Name: Grenade Launcher
 	Valued:
-		Cost: 300
+		Cost: 400
 	Health:
 		HP: 40
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		Prerequisites: ~infantry.france, ~barracks.upgraded, ~radardome.upgraded, ~techcenter.upgraded
+		Prerequisites: ~infantry.france, ~barracks.upgraded
 		BuildPaletteOrder: 400
 		Description: Infantry armed with long range grenade launcher.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
@@ -707,7 +707,7 @@ E9:
 		StandSequences: parachute
 		RequiresCondition: parachute
 	ProducibleWithLevel:
-		Prerequisites: techlevel.infonly
+		Prerequisites: techlevel.infonly, ~radardome.upgraded
 
 # Modified version of the Machine Gunner by Kiraye
 E10:
@@ -722,7 +722,7 @@ E10:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		Prerequisites: ~infantry.germany, ~barracks.upgraded, ~radardome.upgraded, ~techcenter.upgraded
+		Prerequisites: ~infantry.germany, ~barracks.upgraded
 		BuildPaletteOrder: 401
 		Description: Infantry equiped with a rapid firing Machine Gun.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
@@ -746,7 +746,7 @@ E10:
 		StandSequences: parachute
 		RequiresCondition: parachute
 	ProducibleWithLevel:
-		Prerequisites: techlevel.infonly
+		Prerequisites: techlevel.infonly, ~radardome.upgraded
 
 SNIPER:
 	Inherits: ^Soldier
@@ -762,7 +762,7 @@ SNIPER:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 500
-		Prerequisites: ~infantry.england, ~barracks.upgraded, ~techcenter.upgraded
+		Prerequisites: ~infantry.england, ~barracks.upgraded
 		Description: Elite sniper infantry unit.\nCan detect cloaked units.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	RevealsShroud:
 		Range: 9c256
@@ -807,7 +807,7 @@ SNIPER:
 		StandSequences: parachute
 		RequiresCondition: parachute
 	ProducibleWithLevel:
-		Prerequisites: techlevel.infonly
+		Prerequisites: techlevel.infonly, ~radardome.upgraded
 
 EINSTEIN:
 	Inherits: ^CivInfantry
