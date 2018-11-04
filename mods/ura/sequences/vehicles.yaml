@@ -237,6 +237,18 @@ hhusk2:
 		UseClassicFacingFudge: True
 		ZOffset: -512
 
+tnkd:
+	idle:
+		Facings: 32
+	muzzle: gunfire2
+		Length: 5
+	icon: tnkdicon
+
+tnkd.husk:
+	idle: tnkd
+		Facings: 32
+		ZOffset: -512
+
 v2rl:
 	idle:
 		Facings: 32

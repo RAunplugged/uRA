@@ -108,6 +108,15 @@
 	RenderSprites:
 		Image: 4tnk.destroyed
 
+TNKD.Husk:
+	Inherits: ^Husk
+	Tooltip:
+		Name: Husk (Tank Destroyer)
+	TransformOnCapture:
+		IntoActor: tnkd
+	RenderSprites:
+		Image: tnkd.husk
+
 HARV.FullHusk:
 	Inherits: ^Husk
 	Tooltip:

@@ -98,6 +98,34 @@ TurretGun:
 			Wood: 50
 	Report: turret1.aud
 
+SABOT:
+	ReloadDelay: 100
+	Range: 6c512
+	Report: tnkd_fire.aud
+	Projectile: Bullet
+		Speed: 853
+		Image: 120MM
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 100
+		Versus:
+			None: 1
+			Wood: 10
+			Light: 240
+			Heavy: 200
+			Concrete: 3
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3EffGround: CreateEffect
+		Explosions: small_explosion
+		ImpactSounds: kaboom12.aud
+		InvalidTargets: Water
+	Warhead@4EffWater: CreateEffect
+		Explosions: small_splash
+		ImpactSounds: splash9.aud
+		ValidTargets: Water
+
 ^Artillery:
 	Inherits: ^Cannon
 	ReloadDelay: 85

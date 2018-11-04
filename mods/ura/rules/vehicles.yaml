@@ -510,6 +510,42 @@ TRUK:
 	RenderSprites:
 		Image: 4tnk.kv-8
 
+# Modified Tank Destroyed by Noose
+TNKD:
+	Inherits: ^TrackedVehicle
+	Inherits@GAINSEXPERIENCE: ^GainsDoubleExperience
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 120
+		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, servicedepot.upgraded
+	Valued:
+		Cost: 1050
+	Tooltip:
+		Name: Tank Destroyer
+		Description: Anti-Tank Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft, Buildings
+	Health:
+		HP: 450
+	Armor:
+		Type: Heavy
+	Mobile:
+		Speed: 80
+		Crushes: wall, mine, crate, infantry
+	RevealsShroud:
+		Range: 7c576
+	Armament:
+		Weapon: SABOT
+		LocalOffset: 720,0,80
+		MuzzleSequence: muzzle
+	AttackFrontal:
+	WithMuzzleOverlay:
+	AutoTarget:
+	SpawnActorOnDeath:
+		Actor: TNKD.Husk
+	SelectionDecorations:
+		VisualBounds: 28,28
+	ProducibleWithLevel:
+		Prerequisites: warfactory.upgraded
+
 JEEP:
 	Inherits: ^Vehicle
 	Inherits@GAINSEXPERIENCE: ^GainsExperience
