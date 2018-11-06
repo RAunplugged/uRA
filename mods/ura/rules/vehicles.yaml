@@ -414,6 +414,7 @@ TRUK:
 	Mobile:
 		Speed: 50
 		Locomotor: heavytracked
+		TurnSpeed: 4
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 160
@@ -510,17 +511,18 @@ TRUK:
 	RenderSprites:
 		Image: 4tnk.kv-8
 
-# Modified Tank Destroyed by Noose
+# Modified Tank Destroyed by Nooze
 TNKD:
 	Inherits: ^TrackedVehicle
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Inherits@GAINSEXPERIENCE: ^GainsDoubleExperience
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 150
+		BuildPaletteOrder: 160
 		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~servicedepot.upgraded
 		Description: Anti-Tank Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft, Buildings
 	Valued:
-		Cost: 1050
+		Cost: 1350
 	Tooltip:
 		Name: Tank Destroyer
 	Health:
@@ -528,7 +530,8 @@ TNKD:
 	Armor:
 		Type: Heavy
 	Mobile:
-		Speed: 80
+		Speed: 71
+		TurnSpeed: 3
 	RevealsShroud:
 		Range: 7c576
 	Armament:
@@ -537,7 +540,6 @@ TNKD:
 		MuzzleSequence: muzzle
 	AttackFrontal:
 	WithMuzzleOverlay:
-	AutoTarget:
 	SpawnActorOnDeath:
 		Actor: TNKD.Husk
 	SelectionDecorations:
