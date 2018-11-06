@@ -414,6 +414,7 @@ TRUK:
 	Mobile:
 		Speed: 50
 		Locomotor: heavytracked
+		TurnSpeed: 4
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 160
@@ -510,34 +511,47 @@ TRUK:
 	RenderSprites:
 		Image: 4tnk.kv-8
 
-# Modified Tank Destroyed by Noose
+# Modified Tank Destroyed by Nooze
 TNKD:
 	Inherits: ^TrackedVehicle
+	Inherits@AUTOTARGET: ^AutoTargetGround
 	Inherits@GAINSEXPERIENCE: ^GainsDoubleExperience
-	Buildable:
-		Queue: Vehicle
-		BuildPaletteOrder: 150
-		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~servicedepot.upgraded
-		Description: Anti-Tank Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft, Buildings
-	Valued:
-		Cost: 1050
 	Tooltip:
 		Name: Tank Destroyer
+	Valued:
+		Cost: 1350
 	Health:
 		HP: 450
 	Armor:
 		Type: Heavy
 	Mobile:
-		Speed: 80
+		Speed: 71
+		TurnSpeed: 3
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 160
+		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~servicedepot.upgraded
+		Description: Anti-Tank Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft, Buildings
 	RevealsShroud:
 		Range: 7c576
+		RevealGeneratedShroud: False
+	RevealsShroud@GAPGEN:
+		Range: 5c384
+	RevealOnDeath:
+		Duration: 80
+		Radius: 2c512
+	DetectCloaked:
+		Range: 1c512
 	Armament:
 		Weapon: SABOT
 		LocalOffset: 720,0,80
 		MuzzleSequence: muzzle
 	AttackFrontal:
 	WithMuzzleOverlay:
-	AutoTarget:
+	Selectable:
+		DecorationBounds: 28,28
+	Targetable:
+		TargetTypes: Ground, Repair, Vehicle, Heavy
 	SpawnActorOnDeath:
 		Actor: TNKD.Husk
 	SelectionDecorations:
