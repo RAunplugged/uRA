@@ -126,7 +126,7 @@
 		Name: Germany
 		InternalName: germany
 		Side: Allies
-		Description: Germany: Technology\nSpecial Ability: Advanced Chronoshift\nSpecial Unit: Chrono Tank\nSpecial Unit: German Medium Tank
+		Description: Germany: Technology\nSpecial Ability: Advanced Chronoshift\nSpecial Unit: German Medium Tank\nSpecial Unit: Tank Destroyer
 	Faction@4:
 		Name: Soviet
 		InternalName: soviet

@@ -521,7 +521,7 @@ TNKD:
 	Valued:
 		Cost: 1350
 	Health:
-		HP: 450
+		HP: 400
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -529,8 +529,8 @@ TNKD:
 		TurnSpeed: 3
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 160
-		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~servicedepot.upgraded
+		BuildPaletteOrder: 170
+		Prerequisites: atek, fix, ~vehicles.germany, ~techlevel.high
 		Description: Anti-Tank Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft, Buildings
 	RevealsShroud:
 		Range: 7c576
@@ -1069,14 +1069,14 @@ MGG:
 	Valued:
 		Cost: 1050
 	Health:
-		HP: 220
+		HP: 250
 	Armor:
 		Type: Heavy
 	Mobile:
 		Speed: 99
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 150
+		BuildPaletteOrder: 160
 		Prerequisites: dome, ~vehicles.france, ~techlevel.medium
 		BuildDurationModifier: 50
 		Description: Regenerates the shroud nearby, \nobscuring the area.\n  Unarmed
@@ -1112,7 +1112,7 @@ MRJ:
 	Valued:
 		Cost: 1050
 	Health:
-		HP: 220
+		HP: 250
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -1166,7 +1166,7 @@ CTNK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 150
-		Prerequisites: atek, ~vehicles.germany, ~techlevel.high
+		Prerequisites: atek, ~vehicles.allies, ~techlevel.high
 		BuildDurationModifier: 50
 		Description: Armed with anti-ground missiles.\nTeleports to areas within range.\n  Strong vs Vehicles, Buildings\n  Weak vs Infantry, Aircraft\n  Special ability: Can teleport
 	RevealsShroud:
@@ -1203,9 +1203,9 @@ STNK:
 	Valued:
 		Cost: 1350
 	Health:
-		HP: 300
+		HP: 250
 	Armor:
-		Type: Light
+		Type: Heavy
 	Mobile:
 		Speed: 142
 		Locomotor: heavywheeled

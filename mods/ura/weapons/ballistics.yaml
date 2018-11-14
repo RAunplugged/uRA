@@ -112,9 +112,8 @@ SABOT:
 		Versus:
 			None: 10
 			Wood: 30
-			Light: 240
+			Light: 200
 			Heavy: 200
-			Concrete: 3
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Smu: LeaveSmudge
 		SmudgeType: Crater
