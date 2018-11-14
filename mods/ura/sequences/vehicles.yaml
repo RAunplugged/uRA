@@ -240,6 +240,7 @@ hhusk2:
 tnkd:
 	idle:
 		Facings: 32
+		UseClassicFacingFudge: True
 	muzzle: gunfire2
 		Length: 5
 	icon: tnkdicon
