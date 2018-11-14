@@ -27,7 +27,7 @@ https://github.com/RAunplugged/OpenRA/commit/9407722bf22db52f3544b548f42a4e62861
 Latest updates:
 
 OpenRAModSDK commit tag: 8a1f1a9 - 8a1f1a9706057cb8872a784cbe8fc0b915778554
-OpenRA Engine commit tag: d653614 - d653614e7550564ca41ff94bbddf2bb29d85265d
+OpenRA Engine commit tag: cd82382 - cd82382f6803c13a92a498b0cd53e999d2356ad1 - Nov 11
 
 
 

@@ -9,13 +9,30 @@ Player:
 	# Easy AI | Vanilla Mode | -20% Cost/Production penalty
 
 	HarvesterBotModule:
-		RequiresCondition: enable-easy-ai || enable-normal-ai || enable-hard-ai || enable-brutal-ai || enable-naval-ai || enable-naval-hard-ai
+		RequiresCondition: enable-easy-ai || enable-normal-ai || enable-hard-ai || enable-brutal-ai || enable-naval-ai || enable-navalhard-ai
+
+	GrantConditionOnBotOwner@easy:
+		Condition: enable-easy-ai
+		Bots: easy
+	GrantConditionOnBotOwner@normal:
+		Condition: enable-normal-ai
+		Bots: normal
+	GrantConditionOnBotOwner@hard:
+		Condition: enable-hard-ai
+		Bots: hard
+	GrantConditionOnBotOwner@brutal:
+		Condition: enable-brutal-ai
+		Bots: brutal
+	GrantConditionOnBotOwner@naval:
+		Condition: enable-naval-ai
+		Bots: naval
+	GrantConditionOnBotOwner@navalhard:
+		Condition: enable-navalhard-ai
+		Bots: navalHard
 
 	HackyAI@EasyAI:
 		Name: Easy AI
 		Type: easy
-
-		Condition: enable-easy-ai
 
 		SquadSize: 30
 		SquadSizeRandomBonus: 40
@@ -218,8 +235,6 @@ Player:
 		Name: Normal AI
 		Type: normal
 
-		Condition: enable-normal-ai
-
 		SquadSize: 30
 		SquadSizeRandomBonus: 40
 		MinimumExcessPower: 80
@@ -421,8 +436,6 @@ Player:
 		Name: Hard AI
 		Type: hard
 
-		Condition: enable-hard-ai
-
 		SquadSize: 15
 		SquadSizeRandomBonus: 40
 		MinimumExcessPower: 80
@@ -446,7 +459,6 @@ Player:
 		ProtectionScanRadius: 10
 
 		RestrictMCVDeploymentFallbackToBase: False
-		HarvesterEnemyAvoidanceRadius: 10c0
 		MaxResourceCellsToCheck: 8
 
 		BuildingCommonNames:
@@ -631,8 +643,6 @@ Player:
 		Name: Brutal AI
 		Type: brutal
 
-		Condition: enable-brutal-ai
-
 		SquadSize: 15
 		SquadSizeRandomBonus: 40
 		MinimumExcessPower: 80
@@ -656,7 +666,6 @@ Player:
 		ProtectionScanRadius: 10
 
 		RestrictMCVDeploymentFallbackToBase: False
-		HarvesterEnemyAvoidanceRadius: 10c0
 		MaxResourceCellsToCheck: 8
 
 		BuildingCommonNames:
@@ -841,8 +850,6 @@ Player:
 		Name: Naval AI
 		Type: naval
 
-		Condition: enable-naval-ai
-
 		SquadSize: 1
 		SquadSizeRandomBonus: 3
 		MinimumExcessPower: 120
@@ -998,8 +1005,6 @@ Player:
 	HackyAI@NavalHardAI:
 		Name: Naval AI (Hard)
 		Type: navalHard
-
-		Condition: enable-naval-hard-ai
 
 		SquadSize: 1
 		SquadSizeRandomBonus: 3
