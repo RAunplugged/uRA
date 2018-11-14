@@ -598,6 +598,7 @@ JEEP:
 	#	RequiresCondition: ifv-medic
 	Selectable:
 		Class: jeep
+	RenderDetectionCircle:
 	WithMuzzleOverlay:
 	WithSpriteTurret:
 		RequiresCondition: !ifv-medic && !ifv-mechanic && ifv-dog
@@ -633,7 +634,6 @@ JEEP:
 	GrantCondition@civfallback:
 		RequiresCondition: loaded && !ifv-rifle && !ifv-grenadier && !ifv-rocket && !ifv-flame && !ifv-engineer && !ifv-spy && !ifv-tanya && !ifv-medic && !ifv-mechanic && !ifv-hijacker && !ifv-tesla && !ifv-sniper && !ifv-mgunner && !ifv-grenlauncher && !ifv-dog && !ifv-technician
 		Condition: ifv-civilian
-	RenderDetectionCircle:
 	Armament:
 		Weapon: M60mg
 		MuzzleSequence: muzzle
@@ -664,6 +664,10 @@ JEEP:
 	Tooltip@default:
 		Name: Ranger
 		RequiresCondition: ifv-engineer || ifv-hijacker
+	DetectCloaked@engineer:
+		CloakTypes: Mine
+		RequiresCondition: ifv-engineer
+		Range: 5c384
 	Tooltip@rifleman:
 		Name: Assault Ranger
 		RequiresCondition: ifv-rifle
@@ -707,6 +711,7 @@ JEEP:
 	DetectCloaked@spyorhijackerordog:
 		CloakTypes: Cloak, Hijacker
 		RequiresCondition: ifv-spy || ifv-dog
+		Range: 7c576
 	Tooltip@dogorspy:
 		Name: Detection Ranger
 		RequiresCondition: ifv-spy || ifv-dog
@@ -948,7 +953,7 @@ MNLY:
 		Ammo: 5
 		RearmSound: minelay1.aud
 	DetectCloaked:
-		Range: 5c0
+		Range: 5c384
 		CloakTypes: Mine
 	RenderDetectionCircle:
 	Selectable:
@@ -1249,7 +1254,7 @@ STNK:
 		LocalOffset: 192,0,176
 		RequiresCondition: botowner
 	DetectCloaked:
-		Range: 6c0
+		Range: 7c576
 	Turreted:
 		TurnSpeed: 5
 	AttackTurreted:

@@ -987,7 +987,7 @@ DOME:
 		Range: 5c256
 		RequiresCondition: !disabled
 	DetectCloaked:
-		Range: 5c256
+		Range: 7c576
 		RequiresCondition: !disabled
 	GrantConditionOnDeploy:
 		DeployedCondition: deployed
@@ -1552,7 +1552,7 @@ PBOX:
 		QuantizedFacings: 8
 	-QuantizeFacingsFromSequence:
 	DetectCloaked:
-		Range: 5c256
+		Range: 5c384
 	RenderRangeCircle:
 		FallbackRange: 6c0
 	Cargo:
@@ -1601,7 +1601,7 @@ HBOX:
 		PauseOnCondition: cloak-force-disabled
 	-MustBeDestroyed:
 	DetectCloaked:
-		Range: 5c256
+		Range: 5c384
 	RenderRangeCircle:
 		FallbackRange: 6c0
 	Turreted:
@@ -1670,7 +1670,7 @@ GUN:
 	AttackTurreted:
 		RequiresCondition: !build-incomplete
 	DetectCloaked:
-		Range: 5c256
+		Range: 5c384
 	BodyOrientation:
 		UseClassicFacingFudge: True
 	-WithSpriteBody:
@@ -1780,7 +1780,7 @@ TSLA:
 		ReloadDelay: 120
 	WithTeslaChargeAnimation:
 	DetectCloaked:
-		Range: 5c256
+		Range: 5c384
 		RequiresCondition: !disabled
 	ProvidesPrerequisite@buildingname:
 	ProvidesPrerequisite@inheritedbotstructure:
