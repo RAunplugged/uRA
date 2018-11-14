@@ -950,6 +950,7 @@
 		IsPlayerPalette: True
 	WithMakeAnimation:
 		Condition: build-incomplete
+	AppearsOnMapPreview:
 
 ^ScienceBuilding:
 	Inherits: ^Building
@@ -1017,6 +1018,8 @@
 	WithWallSpriteBody:
 	MapEditorData:
 		Categories: Wall
+	AppearsOnMapPreview:
+		Terrain: Tree
 
 ^FakeBuilding:
 	Inherits: ^Building
@@ -1177,6 +1180,8 @@
 	MapEditorData:
 		ExcludeTilesets: INTERIOR
 		Categories: Tree
+	AppearsOnMapPreview:
+		Terrain: Tree
 
 ^Bridge:
 	Inherits@shape: ^1x1Shape

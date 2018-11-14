@@ -159,6 +159,7 @@ CRATE:
 		Range: 1c512
 		Duration: 750
 		TimeDelay: 9000
+	AppearsOnRadar:
 
 MONEYCRATE:
 	Inherits: ^Crate
@@ -374,6 +375,8 @@ MINE:
 	SeedsResource:
 	MapEditorData:
 		Categories: Resource spawn
+	AppearsOnMapPreview:
+		Terrain: Ore
 
 GMINE:
 	Inherits@1: ^SpriteActor
@@ -394,6 +397,8 @@ GMINE:
 		ResourceType: Gems
 	MapEditorData:
 		Categories: Resource spawn
+	AppearsOnMapPreview:
+		Terrain: Gems
 
 RAILMINE:
 	Inherits@1: ^SpriteActor
