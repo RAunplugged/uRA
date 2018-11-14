@@ -780,6 +780,8 @@ BARL:
 	-SoundOnDamageTransition:
 	MapEditorData:
 		Categories: Decoration
+	AppearsOnMapPreview:
+		Terrain: Tree
 
 BRL3:
 	Inherits: ^TechBuilding
@@ -804,6 +806,8 @@ BRL3:
 	-SoundOnDamageTransition:
 	MapEditorData:
 		Categories: Decoration
+	AppearsOnMapPreview:
+		Terrain: Tree
 
 AMMOBOX1:
 	Inherits: ^AmmoBox
@@ -835,8 +839,6 @@ BR2:
 	FreeActor:
 		Actor: bridgehut
 		SpawnOffset: 1,1
-	AppearsOnMapPreview:
-		Terrain: Tree
 
 BR3:
 	Inherits: ^Bridge
@@ -851,8 +853,6 @@ BR3:
 		DestroyedPlusBothTemplate: 246
 		NorthOffset: 2,0
 		SouthOffset: 0,1
-	AppearsOnMapPreview:
-		Terrain: Tree
 
 BRIDGE1:
 	Inherits: ^Bridge
