@@ -115,6 +115,7 @@ BIO:
 	GpsDot:
 		String: Biohazard
 	ProvidesPrerequisite@buildingname:
+	AppearsOnMapPreview:
 
 HOSP:
 	Inherits: ^TechBuilding
@@ -155,6 +156,7 @@ HOSP:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
 	ProvidesPrerequisite@buildingname:
+	AppearsOnMapPreview:
 
 MISS:
 	Inherits: ^TechBuilding
@@ -219,6 +221,7 @@ MISS:
 		DeathSequence: dead
 		UseDeathTypeSuffix: false
 	ProvidesPrerequisite@buildingname:
+	AppearsOnMapPreview:
 
 FCOM:
 	Inherits: ^TechBuilding
@@ -285,6 +288,7 @@ FCOM:
 	OwnerLostAction:
 		Action: ChangeOwner
 	ProvidesPrerequisite@buildingname:
+	AppearsOnMapPreview:
 
 OILB:
 	Inherits: ^TechBuilding
@@ -329,6 +333,7 @@ OILB:
 	EngineerRepairable:
 	OwnerLostAction:
 		Action: ChangeOwner
+	AppearsOnMapPreview:
 
 # Decoration structures
 
@@ -775,6 +780,8 @@ BARL:
 	-SoundOnDamageTransition:
 	MapEditorData:
 		Categories: Decoration
+	AppearsOnMapPreview:
+		Terrain: Tree
 
 BRL3:
 	Inherits: ^TechBuilding
@@ -799,6 +806,8 @@ BRL3:
 	-SoundOnDamageTransition:
 	MapEditorData:
 		Categories: Decoration
+	AppearsOnMapPreview:
+		Terrain: Tree
 
 AMMOBOX1:
 	Inherits: ^AmmoBox
