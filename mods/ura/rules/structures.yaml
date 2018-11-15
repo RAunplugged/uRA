@@ -1027,11 +1027,11 @@ DOME:
 		PauseOnCondition: disabled
 		OrderName: InterlligenceParatroopers
 		Prerequisites: dome, ~structures.england
-		Icon: spydrop
-		ChargeInterval: 6000
+		Icon: inteldrop
+		ChargeInterval: 7500
 		Description: Intel Drop
-		LongDesc: A Badger drops a high ranked Spy\nand Sniper anywhere on the map.
-		DropItems: SPY.England.rank2,SPY.England.rank2
+		LongDesc: A Badger drops two high ranked spies\nand Sniper anywhere on the map.
+		DropItems: SPY.England.rank2,SPY.England.rank2,Sniper
 		ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
 		SelectTargetSpeechNotification: SelectTarget
 		AllowImpassableCells: false

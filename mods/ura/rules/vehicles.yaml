@@ -1233,8 +1233,8 @@ STNK:
 		PipCount: 4
 		LoadingCondition: notmobile
 	Cloak:
-		InitialDelay: 125
-		CloakDelay: 175
+		InitialDelay: 70
+		CloakDelay: 140
 		CloakSound: appear1.aud
 		UncloakSound: appear1.aud
 		IsPlayerPalette: true
