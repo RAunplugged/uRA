@@ -35,6 +35,7 @@ E2.Brutal.Player:
 	AttackSuicides:
 	Explodes:
 		Weapon: Explosion.Kamikaze
+		EmptyWeapon: Explosion.Kamikaze
 	TakeCover:
 		ProneOffset: 256,64,-331
 	WithInfantryBody:
