@@ -1031,7 +1031,7 @@ DOME:
 		ChargeInterval: 7500
 		Description: Intel Drop
 		LongDesc: A Badger drops two high ranked spies\nand Sniper anywhere on the map.
-		DropItems: SPY.England.rank2,SPY.England.rank2,Sniper
+		DropItems: SPY.England.rank2,SPY.England.rank2,SNIPER.Rank1
 		ReinforcementsArrivedSpeechNotification: ReinforcementsArrived
 		SelectTargetSpeechNotification: SelectTarget
 		AllowImpassableCells: false

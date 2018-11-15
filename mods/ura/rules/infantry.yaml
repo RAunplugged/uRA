@@ -815,6 +815,14 @@ SNIPER:
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly, ~radardome.upgraded
 
+SNIPER.Rank1:
+	Inherits: SNIPER
+	-Buildable:
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+	RenderSprites:
+		Image: SNIPER
+
 EINSTEIN:
 	Inherits: ^CivInfantry
 	Tooltip:
