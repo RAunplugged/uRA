@@ -1220,7 +1220,7 @@ STNK:
 		BuildPaletteOrder: 200
 		Prerequisites: atek, ~vehicles.england, ~techlevel.high
 		BuildDurationModifier: 50
-		Description: Lightly armored infantry transport which\ncan cloak. Armed with anti-ground missiles.\nCan detect cloaked units.\n  Strong vs Light armor\n  Weak vs Infantry, Tanks, Aircraft
+		Description: Armored infantry transport which\ncan cloak. Armed with anti-ground missiles.\nCan detect cloaked units.\n  Strong vs Light armor\n  Weak vs Infantry, Tanks, Aircraft
 	-MustBeDestroyed:
 	RevealsShroud:
 		Range: 9c256
