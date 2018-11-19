@@ -1,0 +1,54 @@
+# Infiltration Tech Tree
+
+barracks.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+	ProvidesPrerequisite@MEDIUMDOME:
+		RequiresPrerequisites: radardome.upgraded
+		Prerequisite: mediumdome.upgraded
+
+warfactory.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+	ProvidesPrerequisite@MEDIUMFIX:
+		RequiresPrerequisites: servicedepot.upgraded
+		Prerequisite: mediumfix.upgraded
+	ProvidesPrerequisite@HIGHFIX:
+		RequiresPrerequisites: servicedepot.upgraded, techcenter.upgraded
+		Prerequisite: highfix.upgraded
+
+aircraft.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+
+servicedepot.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+	ProvidesPrerequisite@MEDIUMFIX:
+		RequiresPrerequisites: warfactory.upgraded
+		Prerequisite: mediumfix.upgraded
+	ProvidesPrerequisite@HIGHIES:
+		RequiresPrerequisites: warfactory.upgraded, techcenter.upgraded
+		Prerequisite: highfix.upgraded
+
+radardome.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+	ProvidesPrerequisite@MEDIUMDOME:
+		RequiresPrerequisites: barracks.upgraded
+		Prerequisite: mediumdome.upgraded
+
+techcenter.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+	ProvidesPrerequisite@HIGHIES:
+		RequiresPrerequisites: warfactory.upgraded, servicedepot.upgraded
+		Prerequisite: highfix.upgraded
+
+soviettechcenter.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
+
+biolab.upgraded:
+	AlwaysVisible:
+	ProvidesPrerequisite:
