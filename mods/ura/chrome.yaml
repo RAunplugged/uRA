@@ -1,7 +1,7 @@
 sidebar-allies: chrome.png
 	background-top: 0,167,238,290
 	background-iconrow: 0,457,238,47
-	background-bottom: 0,504,238,8
+	background-bottom: 750,426,238,34
 	background-supportoverlay: 0,75,64,48
 	background-supportoverlay2: 892,75,66,50
 
@@ -106,7 +106,7 @@ command-button-allies-highlighted-disabled: chrome.png
 sidebar-soviet: chrome.png
 	background-top: 274,167,238,290
 	background-iconrow: 274,457,238,47
-	background-bottom: 274,504,238,8
+	background-bottom: 750,460,238,34
 	background-supportoverlay: 64,75,64,48
 	background-supportoverlay2: 958,75,66,50
 
@@ -238,6 +238,9 @@ production-icons: chrome.png
 	ship: 496,48,16,16
 	ship-disabled: 496,64,16,16
 	ship-alert: 496,80,16,16
+	upgrade: 323,0,16,16
+	upgrade-disabled: 323,16,16,16
+	upgrade-alert: 323,32,16,16
 
 order-icons: chrome.png
 	options: 480,0,16,16

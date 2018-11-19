@@ -69,6 +69,19 @@ Player:
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
 		SpeedUp: True
+	ClassicProductionQueue@Upgrade:
+		Type: Upgrade
+		LowPowerModifier: 300
+		BuildDurationModifier: 250
+		ReadyAudio: UnitReady
+		BlockedAudio: NoBuild
+		LimitedAudio: BuildingInProgress
+		QueuedAudio: Building
+		#ReadyAudio: NewOptions
+		#BlockedAudio: NoRoom
+		#QueuedAudio: Upgrading
+		OnHoldAudio: OnHold
+		CancelledAudio: Cancelled
 	PlaceBuilding:
 		NewOptionsNotification: NewOptions
 		CannotPlaceNotification: BuildingCannotPlaceAudio

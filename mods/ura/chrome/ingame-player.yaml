@@ -591,9 +591,25 @@ Container@PLAYER_WIDGETS:
 									X: 6
 									Y: 6
 									ImageCollection: production-icons
-						Button@SCROLL_UP_BUTTON:
+						ProductionTypeButton@UPGRADE:
 							Logic: AddFactionSuffixLogic
 							Y: 186
+							Width: 28
+							Height: 28
+							VisualHeight: 0
+							Background: sidebar-button
+							TooltipText: Upgrades
+							TooltipContainer: TOOLTIP_CONTAINER
+							ProductionGroup: Upgrade
+							Key: ProductionTypeUpgrade
+							Children:
+								Image@ICON:
+									X: 6
+									Y: 6
+									ImageCollection: production-icons
+						Button@SCROLL_UP_BUTTON:
+							Logic: AddFactionSuffixLogic
+							Y: 217
 							Width: 28
 							Height: 22
 							VisualHeight: 0
@@ -609,7 +625,7 @@ Container@PLAYER_WIDGETS:
 							Key: PAGEUP
 						Button@SCROLL_DOWN_BUTTON:
 							Logic: AddFactionSuffixLogic
-							Y: 211
+							Y: 242
 							Width: 28
 							Height: 22
 							VisualHeight: 0
