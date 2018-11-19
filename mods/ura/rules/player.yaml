@@ -82,39 +82,7 @@ Player:
 	PowerManager:
 		SpeechNotification: LowPower
 	AllyRepair:
-	PlayerResources:
-		InsufficientFundsNotification: InsufficientFunds
-		CashTickUpNotification: CashTickUp
-		CashTickDownNotification: CashTickDown
-	DeveloperMode:
-		CheckboxDisplayOrder: 9
 	GpsWatcher:
-	Shroud:
-		ExploredMapCheckboxEnabled: true
-		FogCheckboxDisplayOrder: 3
-	LobbyPrerequisiteCheckbox@GLOBALBOUNTY:
-		ID: bounty
-		Label: Kill Bounties
-		Description: Players receive cash bonuses when killing enemy units
-		Enabled: True
-		DisplayOrder: 8
-		Prerequisites: global-bounty
-		Visible: False
-	LobbyPrerequisiteCheckbox@GLOBALFACTUNDEPLOY:
-		ID: factundeploy
-		Label: Redeployable MCVs
-		Description: Allow undeploying Construction Yard.
-		Enabled: True
-		DisplayOrder: 7
-		Prerequisites: global-factundeploy
-	LobbyPrerequisiteCheckbox@REUSABLEENGINEERS:
-		ID: reusable-engineers
-		Label: Reusable Engineers
-		Description: Engineers remain on the battlefield after capturing a structure
-		Enabled: True
-		DisplayOrder: 9
-		Prerequisites: global-reusable-engineers
-		Visible: False
 	FrozenActorLayer:
 	BaseAttackNotifier:
 	PlayerStatistics:

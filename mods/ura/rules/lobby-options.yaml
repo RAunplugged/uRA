@@ -1,0 +1,121 @@
+Player:
+	Shroud:
+		ExploredMapCheckboxEnabled: true
+		FogCheckboxDisplayOrder: 3
+	DeveloperMode:
+		CheckboxDisplayOrder: 9
+	LobbyPrerequisiteCheckbox@GLOBALBOUNTY:
+		ID: bounty
+		Label: Kill Bounties
+		Description: Players receive cash bonuses when killing enemy units
+		Enabled: True
+		DisplayOrder: 8
+		Prerequisites: global-bounty
+		Visible: False
+	LobbyPrerequisiteCheckbox@GLOBALFACTUNDEPLOY:
+		ID: factundeploy
+		Label: Redeployable MCVs
+		Description: Allow undeploying Construction Yard.
+		Enabled: True
+		DisplayOrder: 7
+		Prerequisites: global-factundeploy
+	LobbyPrerequisiteCheckbox@REUSABLEENGINEERS:
+		ID: reusable-engineers
+		Label: Reusable Engineers
+		Description: Engineers remain on the battlefield after capturing a structure
+		Enabled: True
+		DisplayOrder: 9
+		Prerequisites: global-reusable-engineers
+		Visible: False
+	PlayerResources:
+		InsufficientFundsNotification: InsufficientFunds
+		CashTickUpNotification: CashTickUp
+		CashTickDownNotification: CashTickDown
+		SelectableCash: 2500, 5000, 7500, 10000, 20000
+
+World:
+	CrateSpawner:
+		DeliveryAircraft: badr
+		QuantizedFacings: 16
+		Minimum: 1
+		Maximum: 3
+		SpawnInterval: 3000
+		WaterChance: 20
+		InitialSpawnDelay: 1500
+		CheckboxDisplayOrder: 1
+		CheckboxEnabled: True
+	MapBuildRadius:
+		AllyBuildRadiusCheckboxDisplayOrder: 4
+		BuildRadiusCheckboxDisplayOrder: 5
+	MapOptions:
+		ShortGameCheckboxDisplayOrder: 2
+		TechLevelDropdownDisplayOrder: 2
+		GameSpeedDropdownDisplayOrder: 3
+	MPStartLocations:
+		SeparateTeamSpawnsCheckboxDisplayOrder: 6
+		SeparateTeamSpawnsCheckboxVisible: true
+		SeparateTeamSpawnsCheckboxEnabled: true
+	SpawnMPUnits:
+		DropdownDisplayOrder: 1
+
+	MPStartUnits@mcvonly:
+		Class: none
+		ClassName: MCV Only
+		Factions: allies, england, france, germany, soviet, russia, ukraine
+		BaseActor: mcv
+	MPStartUnits@infantryallies:
+		Class: infantry
+		ClassName: Infantry
+		Factions: allies, england, france, germany
+		BaseActor: mcv
+		SupportActors: e1,e1,e1,e3,medi
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@infantrysoviet:
+		Class: infantry
+		ClassName: Infantry
+		Factions: soviet, russia, ukraine
+		BaseActor: mcv
+		SupportActors: e1,e1,e1,e1,e2,e3
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@lightallies:
+		Class: light
+		ClassName: Light Support
+		Factions: allies, england, france, germany
+		BaseActor: mcv
+		SupportActors: e1,e1,e1,e1,e3,e3,medi,jeep,1tnk
+		InnerSupportRadius: 4
+		OuterSupportRadius: 6
+	MPStartUnits@lightsoviet:
+		Class: light
+		ClassName: Light Support
+		Factions: soviet, russia, ukraine
+		BaseActor: mcv
+		SupportActors: e1,e1,e1,e2,e2,e3,e3,apc,dog,ftrk
+		InnerSupportRadius: 4
+		OuterSupportRadius: 6
+	MPStartUnits@heavyallies:
+		Class: heavy
+		ClassName: Heavy Support
+		Factions: allies, england, france
+		BaseActor: mcv
+		SupportActors: e1,e1,e1,e1,e1,e1,e3,e3,e3,medi,mech,jeep,1tnk,2tnk,2tnk,2tnk
+		InnerSupportRadius: 4
+		OuterSupportRadius: 6
+	MPStartUnits@heavygermany:
+		Class: heavy
+		ClassName: Heavy Support
+		Factions: germany
+		BaseActor: mcv
+		SupportActors: e1,e1,e1,e1,e1,e1,e3,e3,e3,medi,mech,jeep,1tnk,1tnk,2tnk.ger,2tnk.ger
+		InnerSupportRadius: 4
+		OuterSupportRadius: 6
+	MPStartUnits@heavysoviet:
+		Class: heavy
+		ClassName: Heavy Support
+		Factions: soviet, russia, ukraine
+		BaseActor: mcv
+		SupportActors: e1,e1,e1,e1,e1,e1,e4,e4,e3,e3,e3,dog,apc,ftrk,3tnk,3tnk
+		InnerSupportRadius: 4
+		OuterSupportRadius: 6

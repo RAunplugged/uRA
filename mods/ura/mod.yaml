@@ -59,6 +59,7 @@ Rules:
 	ura|rules/fakes.yaml
 	ura|rules/husks.yaml
 	ura|rules/infantry.yaml
+	ura|rules/lobby-options.yaml
 	ura|rules/palettes.yaml
 	ura|rules/player.yaml
 	ura|rules/ships.yaml
