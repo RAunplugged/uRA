@@ -1,0 +1,105 @@
+# Infantry
+
+E1.Rank1:
+	Inherits: E1
+	-Buildable:
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+	RenderSprites:
+		Image: E1
+
+E3.Rank1:
+	Inherits: E3
+	-Buildable:
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+	RenderSprites:
+		Image: E3
+
+SPY.England.rank2:
+	Inherits: SPY.England
+	Buildable:
+		Prerequisites: ~infantry.england, dome, ~tent, ~mediumdome.upgraded
+	RenderSprites:
+		Image: spy.england.rank2
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.medium
+		InitialLevels: 2
+
+SNIPER.Rank1:
+	Inherits: SNIPER
+	-Buildable:
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+	RenderSprites:
+		Image: SNIPER
+
+# Vehicles
+
+1TNK.rank2:
+	Inherits: 1TNK
+	Buildable:
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~mediumfix.upgraded, ~!highfix.upgraded
+	RenderSprites:
+		Image: 1tnk.rank2
+	SpawnActorOnDeath:
+		Actor: 1TNK.rank2.Husk
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.low
+		InitialLevels: 2
+
+1TNK.rank3:
+	Inherits: 1TNK
+	Buildable:
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~highfix.upgraded
+	RenderSprites:
+		Image: 1tnk.rank3
+	SpawnActorOnDeath:
+		Actor: 1TNK.rank3.Husk
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.low
+		InitialLevels: 3
+
+2TNK.rank2:
+	Inherits: 2TNK
+	Buildable:
+		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~highfix.upgraded
+	RenderSprites:
+		Image: 2tnk.rank2
+	SpawnActorOnDeath:
+		Actor: 2TNK.rank2.Husk
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.medium
+		InitialLevels: 2
+
+2TNK.Ger.rank2:
+	Inherits: 2TNK.Ger
+	Buildable:
+		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~highfix.upgraded
+	RenderSprites:
+		Image: 2tnk.ger.rank2
+	SpawnActorOnDeath:
+		Actor: 2TNK.Ger.rank2.Husk
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.medium
+		InitialLevels: 2
+
+JEEP.2rank:
+	Inherits: JEEP
+	Buildable:
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~mediumfix.upgraded, ~!highfix.upgraded
+	RenderSprites:
+		Image: jeep.2rank
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.low
+		InitialLevels: 2
+
+JEEP.3rank:
+	Inherits: JEEP
+	Buildable:
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~highfix.upgraded
+	RenderSprites:
+		Image: jeep.3rank
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.low
+		InitialLevels: 3

@@ -194,30 +194,6 @@ TRUK:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.upgraded
 
-1TNK.rank2:
-	Inherits: 1TNK
-	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~mediumfix.upgraded, ~!highfix.upgraded
-	RenderSprites:
-		Image: 1tnk.rank2
-	SpawnActorOnDeath:
-		Actor: 1TNK.rank2.Husk
-	ProducibleWithLevel:
-		Prerequisites: ~techlevel.low
-		InitialLevels: 2
-
-1TNK.rank3:
-	Inherits: 1TNK
-	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~highfix.upgraded
-	RenderSprites:
-		Image: 1tnk.rank3
-	SpawnActorOnDeath:
-		Actor: 1TNK.rank3.Husk
-	ProducibleWithLevel:
-		Prerequisites: ~techlevel.low
-		InitialLevels: 3
-
 2TNK:
 	Inherits: ^TrackedVehicle
 	Inherits@GAINSEXPERIENCE: ^GainsDoubleExperience
@@ -283,18 +259,6 @@ TRUK:
 	ProducibleWithLevel:
 		Prerequisites: warfactory.upgraded, servicedepot.upgraded
 
-2TNK.rank2:
-	Inherits: 2TNK
-	Buildable:
-		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~highfix.upgraded
-	RenderSprites:
-		Image: 2tnk.rank2
-	SpawnActorOnDeath:
-		Actor: 2TNK.rank2.Husk
-	ProducibleWithLevel:
-		Prerequisites: ~techlevel.medium
-		InitialLevels: 2
-
 2TNK.Ger:
 	Inherits: 2TNK
 	Buildable:
@@ -316,18 +280,6 @@ TRUK:
 		Image: 2tnk.ger
 	SpawnActorOnDeath:
 		Actor: 2TNK.Ger.Husk
-
-2TNK.Ger.rank2:
-	Inherits: 2TNK.Ger
-	Buildable:
-		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~highfix.upgraded
-	RenderSprites:
-		Image: 2tnk.ger.rank2
-	SpawnActorOnDeath:
-		Actor: 2TNK.Ger.rank2.Husk
-	ProducibleWithLevel:
-		Prerequisites: ~techlevel.medium
-		InitialLevels: 2
 
 3TNK:
 	Inherits: ^TrackedVehicle
@@ -787,26 +739,6 @@ JEEP:
 		ValidTargets: Infantry
 		InvalidTargets: NoAutoTarget
 		RequiresCondition: ifv-sniper || ifv-tanya
-
-JEEP.2rank:
-	Inherits: JEEP
-	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~mediumfix.upgraded, ~!highfix.upgraded
-	RenderSprites:
-		Image: jeep.2rank
-	ProducibleWithLevel:
-		Prerequisites: ~techlevel.low
-		InitialLevels: 2
-
-JEEP.3rank:
-	Inherits: JEEP
-	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~highfix.upgraded
-	RenderSprites:
-		Image: jeep.3rank
-	ProducibleWithLevel:
-		Prerequisites: ~techlevel.low
-		InitialLevels: 3
 
 FTRK:
 	Inherits: ^Vehicle

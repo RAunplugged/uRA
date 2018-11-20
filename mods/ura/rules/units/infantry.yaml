@@ -99,14 +99,6 @@ E1:
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded
 
-E1.Rank1:
-	Inherits: E1
-	-Buildable:
-	ProducibleWithLevel:
-		Prerequisites: techlevel.infonly
-	RenderSprites:
-		Image: E1
-
 E2:
 	Inherits: ^Soldier
 	Inherits@AUTOTARGET: ^AutoTargetGround
@@ -206,14 +198,6 @@ E3:
 		RequiresCondition: parachute
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded
-
-E3.Rank1:
-	Inherits: E3
-	-Buildable:
-	ProducibleWithLevel:
-		Prerequisites: techlevel.infonly
-	RenderSprites:
-		Image: E3
 
 E4:
 	Inherits: ^Soldier
@@ -390,16 +374,6 @@ SPY.England:
 		Image: spy.england
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
-
-SPY.England.rank2:
-	Inherits: SPY.England
-	Buildable:
-		Prerequisites: ~infantry.england, dome, ~tent, ~mediumdome.upgraded
-	RenderSprites:
-		Image: spy.england.rank2
-	ProducibleWithLevel:
-		Prerequisites: ~techlevel.medium
-		InitialLevels: 2
 
 MEDI:
 	Inherits: ^Soldier
@@ -814,14 +788,6 @@ SNIPER:
 		RequiresCondition: parachute
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly, ~radardome.upgraded
-
-SNIPER.Rank1:
-	Inherits: SNIPER
-	-Buildable:
-	ProducibleWithLevel:
-		Prerequisites: techlevel.infonly
-	RenderSprites:
-		Image: SNIPER
 
 EINSTEIN:
 	Inherits: ^CivInfantry

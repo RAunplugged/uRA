@@ -52,19 +52,20 @@ Rules:
 	ura|rules/ai/ai-easy.yaml
 	ura|rules/ai/ai-unknown.yaml
 	ura|rules/ai/player-bonuses-ai.yaml
-	ura|rules/aircraft.yaml
+	ura|rules/units/aircraft.yaml
+	ura|rules/units/infantry.yaml
+	ura|rules/units/ships.yaml
+	ura|rules/units/vehicles.yaml
+	ura|rules/units/veterancy.yaml
 	ura|rules/civilian.yaml
 	ura|rules/decoration.yaml
 	ura|rules/defaults.yaml
 	ura|rules/fakes.yaml
 	ura|rules/husks.yaml
-	ura|rules/infantry.yaml
 	ura|rules/palettes.yaml
 	ura|rules/player.yaml
-	ura|rules/ships.yaml
 	ura|rules/structures.yaml
 	ura|rules/upgrades.yaml
-	ura|rules/vehicles.yaml
 	ura|rules/world.yaml
 
 Sequences:
