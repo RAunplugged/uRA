@@ -28,7 +28,7 @@ upgrade.infrank2:
 		Name: Infantry Veterancy II
 	Buildable:
 		BuildPaletteOrder: 20
-		Prerequisites: ~barracks, dome, ~techlevel.medium, upgrade.infrank1, ~!upgrade.infrank2, ~!barracks.upgraded2
+		Prerequisites: ~barracks, techcenter, ~techlevel.medium, upgrade.infrank1, ~!upgrade.infrank2, ~!barracks.upgraded2
 		Queue: Upgrade
 		Description: Enables Veterancy II\ninfantry production.
 	Valued:

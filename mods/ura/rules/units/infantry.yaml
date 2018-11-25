@@ -114,7 +114,7 @@ E2:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 40
-		Prerequisites: ~barr, ~techlevel.infonly
+		Prerequisites: ~barr, ~techlevel.infonly, ~!barracks.upgraded2
 		Description: Infantry armed with grenades.\n  Strong vs Buildings, Infantry\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
 		Weapon: Grenade
@@ -212,7 +212,7 @@ E4:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 70
-		Prerequisites: ~barr, ftur, ~techlevel.low
+		Prerequisites: ~barr, ftur, ~techlevel.low, ~!barracks.upgraded2
 		Description: Advanced anti-structure unit.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
 		Weapon: Flamer
@@ -524,7 +524,7 @@ SHOK:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 130
-		Prerequisites: ~barr, stek, tsla, ~infantry.russia, ~techlevel.high
+		Prerequisites: ~barr, stek, tsla, ~infantry.russia, ~techlevel.high, ~!barracks.upgraded2
 		Description: Elite infantry with portable Tesla coils.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	RevealsShroud:
 		Range: 6c512
@@ -584,7 +584,7 @@ E7:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 120
-		Prerequisites: ~tent, atek, ~techlevel.high
+		Prerequisites: ~tent, atek, ~techlevel.high, ~!barracks.upgraded2
 		BuildLimit: 1
 		Description: Elite commando infantry. Armed with\ndual pistols and C4.\nCan detect cloaked units.\nCan swim.\nMaximum 1 can be trained.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft\n  Special Ability: Destroy Building with C4
 	RevealsShroud:
@@ -637,7 +637,7 @@ E7:
 		Voice: Build
 	AnnounceOnKill:
 	ProducibleWithLevel:
-		Prerequisites: techcenter.upgraded
+		Prerequisites: barracks.upgraded
 
 # Modified version of the Grenade Launcher by Kiraye
 E9:
@@ -652,7 +652,7 @@ E9:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		Prerequisites: ~infantry.france, ~barracks.upgraded
+		Prerequisites: ~infantry.france, ~barracks.upgraded, ~!barracks.upgraded2
 		BuildPaletteOrder: 400
 		Description: Infantry armed with long range grenade launcher.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
@@ -698,7 +698,7 @@ E10:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		Prerequisites: ~infantry.germany, ~barracks.upgraded
+		Prerequisites: ~infantry.germany, ~barracks.upgraded, ~!barracks.upgraded2
 		BuildPaletteOrder: 401
 		Description: Infantry equiped with a rapid firing Machine Gun.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
@@ -738,7 +738,7 @@ SNIPER:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 500
-		Prerequisites: ~infantry.england, ~barracks.upgraded
+		Prerequisites: ~infantry.england, ~barracks.upgraded, ~!barracks.upgraded2
 		Description: Elite sniper infantry unit.\nCan detect cloaked units.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	RevealsShroud:
 		Range: 9c256
@@ -890,7 +890,6 @@ Zombie:
 		VoiceSet: AntVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded, biolab.upgraded
-		InitialLevels: 4
 
 Ant:
 	Inherits: ^Infantry
@@ -935,4 +934,3 @@ Ant:
 		VoiceSet: AntVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded, biolab.upgraded
-		InitialLevels: 4

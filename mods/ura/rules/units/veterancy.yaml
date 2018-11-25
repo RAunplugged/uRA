@@ -18,6 +18,16 @@ E1.Rank2:
 	RenderSprites:
 		Image: E1.Rank2
 
+E2.Rank2:
+	Inherits: E2
+	Buildable:
+		Prerequisites: ~barr, ~techlevel.infonly, ~barracks.upgraded2
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 2
+	RenderSprites:
+		Image: E2.Rank2
+
 E3.Rank1:
 	Inherits: E3
 	-Buildable:
@@ -36,6 +46,36 @@ E3.Rank2:
 	RenderSprites:
 		Image: E3.Rank2
 
+E4.Rank2:
+	Inherits: E4
+	Buildable:
+		Prerequisites:  ~barr, ftur, ~techlevel.low, ~barracks.upgraded2
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 2
+	RenderSprites:
+		Image: E4.Rank2
+
+SHOK.Rank2:
+	Inherits: SHOK
+	Buildable:
+		Prerequisites:  ~barr, stek, tsla, ~infantry.russia, ~techlevel.high, ~barracks.upgraded2
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 2
+	RenderSprites:
+		Image: SHOK.Rank2
+
+E7.Rank2:
+	Inherits: E7
+	Buildable:
+		Prerequisites:  ~tent, atek, ~techlevel.high, ~barracks.upgraded2
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 2
+	RenderSprites:
+		Image: E7.Rank2
+
 SPY.England.rank2:
 	Inherits: SPY.England
 	Buildable:
@@ -46,6 +86,26 @@ SPY.England.rank2:
 		Prerequisites: ~techlevel.medium
 		InitialLevels: 2
 
+E9.Rank2:
+	Inherits: E9
+	Buildable:
+		Prerequisites:  ~infantry.france, ~barracks.upgraded, ~barracks.upgraded2
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 2
+	RenderSprites:
+		Image: E9.Rank2
+
+E10.Rank2:
+	Inherits: E10
+	Buildable:
+		Prerequisites:  ~infantry.germany, ~barracks.upgraded, ~barracks.upgraded2
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 2
+	RenderSprites:
+		Image: E10.Rank2
+
 SNIPER.Rank1:
 	Inherits: SNIPER
 	-Buildable:
@@ -53,6 +113,16 @@ SNIPER.Rank1:
 		Prerequisites: techlevel.infonly
 	RenderSprites:
 		Image: SNIPER
+
+SNIPER.Rank2:
+	Inherits: SNIPER
+	Buildable:
+		Prerequisites:  ~infantry.england, ~barracks.upgraded, ~barracks.upgraded2
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 2
+	RenderSprites:
+		Image: SNIPER.Rank2
 
 # Vehicles
 

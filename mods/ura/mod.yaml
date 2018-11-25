@@ -69,20 +69,22 @@ Rules:
 	ura|rules/world.yaml
 
 Sequences:
-	ura|sequences/ships.yaml
-	ura|sequences/vehicles.yaml
-	ura|sequences/structures.yaml
-	ura|sequences/infantry.yaml
 	ura|sequences/aircraft.yaml
-	ura|sequences/misc.yaml
 	ura|sequences/decorations.yaml
+	ura|sequences/infantry.yaml
+	ura|sequences/misc.yaml
+	ura|sequences/ships.yaml
+	ura|sequences/structures.yaml
 	ura|sequences/upgrades.yaml
+	ura|sequences/vehicles.yaml
+	ura|sequences/veterancy.yaml
 
 TileSets:
-	ura|tilesets/snow.yaml
-	ura|tilesets/interior.yaml
-	ura|tilesets/temperat.yaml
 	ura|tilesets/desert.yaml
+	ura|tilesets/interior.yaml
+	ura|tilesets/snow.yaml
+	ura|tilesets/temperat.yaml
+
 
 Cursors:
 	ura|cursors.yaml
@@ -95,6 +97,13 @@ Assemblies:
 	common|OpenRA.Mods.Cnc.dll
 
 ChromeLayout:
+	ura|chrome/assetbrowser.yaml
+	ura|chrome/color-picker.yaml
+	ura|chrome/confirmation-dialogs.yaml
+	ura|chrome/connection.yaml
+	ura|chrome/credits.yaml
+	ura|chrome/dropdowns.yaml
+	ura|chrome/editor.yaml
 	ura|chrome/ingame.yaml
 	ura|chrome/ingame-chat.yaml
 	ura|chrome/ingame-fmvplayer.yaml
@@ -110,9 +119,6 @@ ChromeLayout:
 	ura|chrome/ingame-perf.yaml
 	ura|chrome/ingame-debug.yaml
 	ura|chrome/ingame-infochat.yaml
-	ura|chrome/mainmenu.yaml
-	ura|chrome/settings.yaml
-	ura|chrome/credits.yaml
 	ura|chrome/lobby.yaml
 	ura|chrome/lobby-mappreview.yaml
 	ura|chrome/lobby-players.yaml
@@ -120,35 +126,31 @@ ChromeLayout:
 	ura|chrome/lobby-music.yaml
 	ura|chrome/lobby-servers.yaml
 	ura|chrome/lobby-kickdialogs.yaml
-	ura|chrome/color-picker.yaml
+	ura|chrome/mainmenu.yaml
 	ura|chrome/map-chooser.yaml
+	ura|chrome/missionbrowser.yaml
 	ura|chrome/multiplayer-browser.yaml
 	ura|chrome/multiplayer-browserpanels.yaml
 	ura|chrome/multiplayer-createserver.yaml
 	ura|chrome/multiplayer-directconnect.yaml
-	ura|chrome/connection.yaml
-	ura|chrome/replaybrowser.yaml
-	ura|chrome/dropdowns.yaml
 	ura|chrome/musicplayer.yaml
-	ura|chrome/tooltips.yaml
-	ura|chrome/assetbrowser.yaml
-	ura|chrome/missionbrowser.yaml
-	ura|chrome/confirmation-dialogs.yaml
-	ura|chrome/editor.yaml
 	ura|chrome/playerprofile.yaml
+	ura|chrome/replaybrowser.yaml
+	ura|chrome/settings.yaml
+	ura|chrome/tooltips.yaml
 
 Weapons:
-	ura|weapons/explosions.yaml
+	ura|weapons/ai/ai-ballistics.yaml
+	ura|weapons/ai/ai-missiles.yaml
+	ura|weapons/ai/ai-other.yaml
+	ura|weapons/ai/ai-smallcaliber.yaml
 	ura|weapons/ballistics.yaml
+	ura|weapons/explosions.yaml
 	ura|weapons/missiles.yaml
 	ura|weapons/other.yaml
 	ura|weapons/smallcaliber.yaml
 	ura|weapons/superweapons.yaml
 	ura|weapons/utility.yaml
-	ura|weapons/ai/ai-ballistics.yaml
-	ura|weapons/ai/ai-missiles.yaml
-	ura|weapons/ai/ai-other.yaml
-	ura|weapons/ai/ai-smallcaliber.yaml
 
 Voices:
 	ura|audio/voices.yaml
