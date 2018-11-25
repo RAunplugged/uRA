@@ -8,6 +8,16 @@ E1.Rank1:
 	RenderSprites:
 		Image: E1
 
+E1.Rank2:
+	Inherits: E1
+	Buildable:
+		Prerequisites: ~barracks, ~techlevel.infonly, ~barracks.upgraded2
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 2
+	RenderSprites:
+		Image: E1.Rank2
+
 E3.Rank1:
 	Inherits: E3
 	-Buildable:
@@ -16,10 +26,20 @@ E3.Rank1:
 	RenderSprites:
 		Image: E3
 
+E3.Rank2:
+	Inherits: E3
+	Buildable:
+		Prerequisites: ~barracks, ~techlevel.infonly, ~barracks.upgraded2
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 2
+	RenderSprites:
+		Image: E3.Rank2
+
 SPY.England.rank2:
 	Inherits: SPY.England
 	Buildable:
-		Prerequisites: ~infantry.england, dome, ~tent, ~mediumdome.upgraded
+		Prerequisites: ~infantry.england, dome, ~tent, ~radardome.upgraded
 	RenderSprites:
 		Image: spy.england.rank2
 	ProducibleWithLevel:

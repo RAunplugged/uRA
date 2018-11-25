@@ -66,7 +66,7 @@ E1:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 10
-		Prerequisites: ~barracks, ~techlevel.infonly
+		Prerequisites: ~barracks, ~techlevel.infonly, ~!barracks.upgraded2
 		Description: General-purpose infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
 		Weapon: M1Carbine
@@ -162,7 +162,7 @@ E3:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 30
-		Prerequisites: ~barracks, ~techlevel.infonly
+		Prerequisites: ~barracks, ~techlevel.infonly, ~!barracks.upgraded2
 		Description: Anti-tank/Anti-aircraft infantry.\n  Strong vs Vehicles, Aircraft\n  Weak vs Infantry
 	Armament@PRIMARY:
 		Weapon: RedEye
@@ -244,7 +244,7 @@ E4:
 		StandSequences: parachute
 		RequiresCondition: parachute
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded, radardome.upgraded
+		Prerequisites: barracks.upgraded
 
 E6:
 	Inherits: ^Soldier
@@ -351,7 +351,7 @@ SPY:
 		ZOffset: 256
 		RequiresCondition: disguise
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded, radardome.upgraded
+		Prerequisites: radardome.upgraded
 
 SPY.England:
 	Inherits: SPY
@@ -360,7 +360,7 @@ SPY.England:
 	Health:
 		HP: 50
 	Buildable:
-		Prerequisites: ~infantry.england, dome, ~tent, ~!mediumdome.upgraded
+		Prerequisites: ~infantry.england, dome, ~tent, ~!radardome.upgraded
 	RevealsShroud:
 		Range: 8c0
 		RevealGeneratedShroud: False
@@ -414,8 +414,6 @@ MEDI:
 		DefaultAttackSequence: heal
 	Voiced:
 		VoiceSet: MedicVoice
-	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded
 
 MECH:
 	Inherits: ^Soldier
@@ -459,8 +457,6 @@ MECH:
 		StandSequences: stand
 	Voiced:
 		VoiceSet: MechanicVoice
-	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded
 
 HIJACKER:
 	Inherits: ^Soldier
@@ -568,7 +564,7 @@ SHOK:
 		StandSequences: parachute
 		RequiresCondition: parachute
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded, radardome.upgraded
+		Prerequisites: barracks.upgraded
 
 #Tanya Swim properties and sequences by SirCake
 E7:
@@ -641,7 +637,7 @@ E7:
 		Voice: Build
 	AnnounceOnKill:
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded, radardome.upgraded
+		Prerequisites: techcenter.upgraded
 
 # Modified version of the Grenade Launcher by Kiraye
 E9:
@@ -687,7 +683,7 @@ E9:
 		StandSequences: parachute
 		RequiresCondition: parachute
 	ProducibleWithLevel:
-		Prerequisites: techlevel.infonly, ~radardome.upgraded
+		Prerequisites: techlevel.infonly
 
 # Modified version of the Machine Gunner by Kiraye
 E10:
@@ -726,7 +722,7 @@ E10:
 		StandSequences: parachute
 		RequiresCondition: parachute
 	ProducibleWithLevel:
-		Prerequisites: techlevel.infonly, ~radardome.upgraded
+		Prerequisites: techlevel.infonly
 
 SNIPER:
 	Inherits: ^Soldier
@@ -787,7 +783,7 @@ SNIPER:
 		StandSequences: parachute
 		RequiresCondition: parachute
 	ProducibleWithLevel:
-		Prerequisites: techlevel.infonly, ~radardome.upgraded
+		Prerequisites: techlevel.infonly
 
 EINSTEIN:
 	Inherits: ^CivInfantry
@@ -894,6 +890,7 @@ Zombie:
 		VoiceSet: AntVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded, biolab.upgraded
+		InitialLevels: 4
 
 Ant:
 	Inherits: ^Infantry
@@ -938,3 +935,4 @@ Ant:
 		VoiceSet: AntVoice
 	ProducibleWithLevel:
 		Prerequisites: barracks.upgraded, biolab.upgraded
+		InitialLevels: 4

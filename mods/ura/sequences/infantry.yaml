@@ -82,6 +82,90 @@ e1:
 		Facings: 8
 	icon: e1icon
 
+e1.rank2:
+	stand:
+		Facings: 8
+	stand2:
+		Start: 8
+		Facings: 8
+	run:
+		Start: 16
+		Length: 6
+		Facings: 8
+		Tick: 100
+	shoot:
+		Start: 64
+		Length: 8
+		Facings: 8
+	prone-stand:
+		Start: 144
+		Stride: 4
+		Facings: 8
+	prone-stand2:
+		Start: 144
+		Stride: 4
+		Facings: 8
+	prone-run:
+		Start: 144
+		Length: 4
+		Facings: 8
+		Tick: 100
+	liedown:
+		Start: 128
+		Length: 2
+		Facings: 8
+	standup:
+		Start: 176
+		Length: 2
+		Facings: 8
+	prone-shoot:
+		Start: 192
+		Length: 8
+		Facings: 8
+	parachute:
+		Start: 377
+	idle1:
+		Start: 256
+		Length: 16
+		Tick: 120
+	idle2:
+		Start: 272
+		Length: 16
+		Tick: 120
+	die1:
+		Start: 288
+		Length: 8
+	die2:
+		Start: 296
+		Length: 8
+	die3:
+		Start: 304
+		Length: 8
+	die4:
+		Start: 312
+		Length: 12
+	die5:
+		Start: 324
+		Length: 18
+	die6: electro
+		Length: *
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			INTERIOR: TEMPERAT
+	die-crushed: corpse1
+		Length: *
+		Tick: 1600
+		ZOffset: -511
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			INTERIOR: TEMPERAT
+	garrison-muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: e1.rank2icon
+
 sniper:
 	stand:
 		Facings: 8
@@ -239,6 +323,79 @@ e3:
 		Length: 10
 		Facings: 8
 	icon: e3icon
+
+e3.rank2:
+	stand:
+		Facings: 8
+	stand2:
+		Start: 8
+		Facings: 8
+	run:
+		Start: 16
+		Length: 6
+		Facings: 8
+		Tick: 120
+	shoot:
+		Start: 64
+		Length: 8
+		Facings: 8
+	parachute:
+		Start: 393
+	idle1:
+		Start: 272
+		Length: 14
+		Tick: 120
+	idle2:
+		Start: 287
+		Length: 16
+		Tick: 120
+	die1:
+		Start: 304
+		Length: 8
+	die2:
+		Start: 312
+		Length: 8
+	die3:
+		Start: 320
+		Length: 8
+	die4:
+		Start: 328
+		Length: 12
+	die5:
+		Start: 340
+		Length: 18
+	die6: electro
+		Length: *
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			INTERIOR: TEMPERAT
+	die-crushed: corpse1
+		Length: 6
+		Tick: 1600
+		ZOffset: -511
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			INTERIOR: TEMPERAT
+	prone-stand:
+		Start: 144
+		Stride: 4
+		Facings: 8
+	prone-stand2:
+		Start: 144
+		Stride: 4
+		Facings: 8
+	prone-run:
+		Start: 144
+		Length: 4
+		Facings: 8
+		Tick: 120
+	prone-shoot:
+		Start: 192
+		Length: 10
+		Facings: 8
+	icon: e3.rank2icon
 
 e6:
 	stand:

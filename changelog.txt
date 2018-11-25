@@ -17,6 +17,8 @@ https://github.com/OpenRA/OpenRA/commit/91097078da479c83a004e9604cdf4b5b3f71c1ba
 4* Add FlyCircleOnIdle trait:
 https://github.com/OpenRA/OpenRA/commit/ca5c83a4f73cafb6f760da5c4eddf9c0f3093c83
 https://github.com/RAunplugged/OpenRA/commit/bb25ddbae1669152a8651888d3a08c4216a89585
+* Add map selector refresh button:
+https://github.com/OpenRA/OpenRA/pull/13009/commits/b91b023291ebff8af2b64cfbc60e3b8d22e0c52c
 5* Alter lobby dropdown heights:
 https://github.com/RAunplugged/OpenRA/commit/7a58ed9a610a495055ecf77fcf057e3721f918c4
 https://github.com/RAunplugged/OpenRA/commit/9e8da77364956f6da3914aadf568017633010a4a

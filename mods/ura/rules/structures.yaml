@@ -27,7 +27,7 @@ FACT:
 		Range: 16c0
 		PauseOnCondition: being-captured
 	Production:
-		Produces: Building, Defense
+		Produces: Building, Defense, Upgrade
 	ProductionBar@Building:
 		ProductionType: Building
 	ProductionBar@Defense:
@@ -44,6 +44,7 @@ FACT:
 		Facing: 96
 		RequiresCondition: factundeploy && !build-incomplete
 		PauseOnCondition: being-captured || being-demolished
+	Exit:
 	RevealsShroud:
 		Range: 6c256
 		RevealGeneratedShroud: False

@@ -76,6 +76,7 @@ Sequences:
 	ura|sequences/aircraft.yaml
 	ura|sequences/misc.yaml
 	ura|sequences/decorations.yaml
+	ura|sequences/upgrades.yaml
 
 TileSets:
 	ura|tilesets/snow.yaml

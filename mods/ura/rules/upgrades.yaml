@@ -1,8 +1,51 @@
+^UpgradeActor:
+	AlwaysVisible:
+	Interactable:
+	ScriptTriggers:
+	ProvidesPrerequisite@upgradename:
+
+# Upgrades
+
+upgrade.infrank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Infantry Veterancy I
+	Buildable:
+		BuildPaletteOrder: 10
+		Prerequisites: ~barracks, ~techlevel.infonly, ~!upgrade.infrank1, ~!barracks.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\ninfantry production.
+	Valued:
+		Cost: 1000
+	RenderSprites:
+		Image: infspeed1
+	ProvidesPrerequisite@default:
+		Prerequisite: barracks.upgraded
+
+upgrade.infrank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Infantry Veterancy II
+	Buildable:
+		BuildPaletteOrder: 20
+		Prerequisites: ~barracks, dome, ~techlevel.medium, upgrade.infrank1, ~!upgrade.infrank2, ~!barracks.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy II\ninfantry production.
+	Valued:
+		Cost: 1500
+	RenderSprites:
+		Image: infspeed2
+	ProvidesPrerequisite@default:
+		Prerequisite: barracks.upgraded2
+
 # Infiltration Tech Tree
 
 barracks.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
+	ProvidesPrerequisite@secondupgrade:
+		RequiresPrerequisites: barracks.upgraded, techcenter.upgraded
+		Prerequisite: barracks.upgraded2
 	ProvidesPrerequisite@MEDIUMDOME:
 		RequiresPrerequisites: radardome.upgraded
 		Prerequisite: mediumdome.upgraded
