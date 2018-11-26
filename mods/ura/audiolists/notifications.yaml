@@ -107,6 +107,8 @@ Speech:
 		UnitSold: unitsld1
 		UnitSpeedUpgraded: unitspd1
 		UnitStolen: unitsto
+		UnitUpgraded: unitupgraded
+		UpgradeInProgress: upgradeinprogress
 		WarningOneMinuteRemaining: 1minr
 		WarningTwoMinutesRemaining: 2minr
 		WarningThreeMinutesRemaining: 3minr

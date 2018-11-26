@@ -31,7 +31,11 @@ Packages:
 	~hires1.mix
 	~desert.mix
 	ura|bits
-	ura|bits/desert
+	ura|bits/audio
+	ura|bits/tiles/desert
+	ura|bits/tiles/interior
+	ura|bits/tiles/snow
+	ura|bits/tiles/temperate
 	ura|uibits
 
 MapFolders:
@@ -153,13 +157,13 @@ Weapons:
 	ura|weapons/utility.yaml
 
 Voices:
-	ura|audio/voices.yaml
+	ura|audiolists/voices.yaml
 
 Notifications:
-	ura|audio/notifications.yaml
+	ura|audiolists/notifications.yaml
 
 Music:
-	ura|audio/music.yaml
+	ura|audiolists/music.yaml
 
 Translations:
 	ura|languages/english.yaml

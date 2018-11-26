@@ -73,10 +73,10 @@ Player:
 		Type: Upgrade
 		LowPowerModifier: 300
 		BuildDurationModifier: 250
-		ReadyAudio: UnitReady
+		ReadyAudio: UnitUpgraded
 		BlockedAudio: NoBuild
 		LimitedAudio: BuildingInProgress
-		QueuedAudio: Building
+		QueuedAudio: UpgradeInProgress
 		#ReadyAudio: NewOptions
 		#BlockedAudio: NoRoom
 		#QueuedAudio: Upgrading
