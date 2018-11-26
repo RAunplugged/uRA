@@ -15,8 +15,9 @@ upgrade.inf.rank1:
 		Prerequisites: ~barracks, ~techlevel.infonly, ~!upgrade.inf.rank1, ~!barracks.upgraded
 		Queue: Upgrade
 		Description: Enables Veterancy I\ninfantry production.
+		BuildLimit: 1
 	Valued:
-		Cost: 1000
+		Cost: 1500
 	RenderSprites:
 		Image: infspeed1
 	ProvidesPrerequisite@default:
@@ -31,8 +32,9 @@ upgrade.inf.rank2:
 		Prerequisites: ~barracks, techcenter, ~techlevel.high, ~barracks.upgraded, ~!upgrade.inf.rank2, ~!barracks.upgraded2
 		Queue: Upgrade
 		Description: Enables Veterancy II\ninfantry production.
+		BuildLimit: 1
 	Valued:
-		Cost: 1500
+		Cost: 2000
 	RenderSprites:
 		Image: infspeed2
 	ProvidesPrerequisite@default:
@@ -47,6 +49,7 @@ upgrade.2tnk.rank1:
 		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~!tank.upgraded
 		Queue: Upgrade
 		Description: Enables Veterancy I\nMedium Tank production.
+		BuildLimit: 1
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -63,6 +66,7 @@ upgrade.2tnk.rank2:
 		Prerequisites: fix, techcenter, ~vehicles.allies, ~!vehicles.germany, ~techlevel.high, ~tank.upgraded, ~!tank.upgraded2
 		Queue: Upgrade
 		Description: Enables Veterancy II\nMedium Tank production.
+		BuildLimit: 1
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -79,6 +83,7 @@ upgrade.2tnk.ger.rank1:
 		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~!tank.upgraded
 		Queue: Upgrade
 		Description: Enables Veterancy I\nGerman Medium Tank production.
+		BuildLimit: 1
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -95,6 +100,7 @@ upgrade.2tnk.ger.rank2:
 		Prerequisites: fix, techcenter, ~vehicles.germany, ~techlevel.high, ~tank.upgraded, ~!tank.upgraded2
 		Queue: Upgrade
 		Description: Enables Veterancy II\nGerman Medium Tank production.
+		BuildLimit: 1
 	Valued:
 		Cost: 1000
 	RenderSprites:
@@ -111,6 +117,7 @@ upgrade.3tnk.rank1:
 		Prerequisites: fix, ~vehicles.soviet, ~techlevel.medium, ~!tank.upgraded
 		Queue: Upgrade
 		Description: Enables Veterancy I\nHeavy Tank production.
+		BuildLimit: 1
 	Valued:
 		Cost: 750
 	RenderSprites:
@@ -127,6 +134,7 @@ upgrade.3tnk.rank2:
 		Prerequisites: fix, techcenter, ~vehicles.soviet, ~techlevel.high, ~tank.upgraded, ~!tank.upgraded2
 		Queue: Upgrade
 		Description: Enables Veterancy II\nHeavy Tank production.
+		BuildLimit: 1
 	Valued:
 		Cost: 1000
 	RenderSprites:
