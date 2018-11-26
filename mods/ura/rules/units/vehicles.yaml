@@ -212,7 +212,7 @@ TRUK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
-		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~!highfix.upgraded
+		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~!tank.upgraded2
 		Description: Allied Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	RevealsShroud:
 		Range: 7c576
@@ -257,12 +257,12 @@ TRUK:
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded, servicedepot.upgraded
+		Prerequisites: tank.upgraded
 
 2TNK.Ger:
 	Inherits: 2TNK
 	Buildable:
-		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~!highfix.upgraded
+		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~!tank.upgraded2
 		Description: German Main Battle Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	Tooltip:
 		Name: German Medium Tank
@@ -299,7 +299,7 @@ TRUK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 70
-		Prerequisites: fix, ~vehicles.soviet, ~techlevel.medium
+		Prerequisites: fix, ~vehicles.soviet, ~techlevel.medium, ~!tank.upgraded2
 		Description: Soviet Main Battle Tank, with dual cannons\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft
 	RevealsShroud:
 		Range: 7c576
@@ -508,7 +508,7 @@ TNKD:
 		Actor: TNKD.Husk
 	SelectionDecorations:
 	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded
+		Prerequisites: tank.upgraded
 
 JEEP:
 	Inherits: ^Vehicle
@@ -896,8 +896,6 @@ MNLY:
 		Weapon: ATMine
 	RenderSprites:
 		Image: MNLY
-	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded, servicedepot.upgraded
 
 ARTY:
 	Inherits: ^TrackedVehicle
@@ -1038,8 +1036,6 @@ MGG:
 		Actor: MGG.Husk
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
-	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded, radardome.upgraded
 
 MRJ:
 	Inherits: ^Vehicle
@@ -1081,8 +1077,6 @@ MRJ:
 	WithIdleOverlay@SPINNER:
 		Sequence: spinner
 		Offset: -256,0,256
-	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded, radardome.upgraded
 
 CTNK:
 	Inherits: ^Vehicle

@@ -86,6 +86,17 @@
 	RenderSprites:
 		Image: 3tnk.destroyed
 
+3TNK.rank2.Husk:
+	Inherits: ^Husk
+	Tooltip:
+		Name: Husk (Heavy Tank)
+	ThrowsParticle@turret:
+		Anim: turret
+	TransformOnCapture:
+		IntoActor: 3tnk.rank2
+	RenderSprites:
+		Image: 3tnk.destroyed
+
 4TNK.Husk:
 	Inherits: ^Husk
 	Tooltip:

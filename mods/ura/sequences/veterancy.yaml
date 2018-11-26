@@ -1,4 +1,4 @@
-# infantry
+# Infantry
 
 e1.rank2:
 	stand:
@@ -870,3 +870,97 @@ sniper.rank2:
 		Stride: 6
 		Facings: 8
 	icon: sniper.rank2icon
+
+# Vehicles
+
+1tnk.rank2:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: gunfire2
+		Length: 2
+	icon: 1tnk.rank2icon
+		UseTilesetExtension: false
+
+1tnk.rank3:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: gunfire2
+		Length: 2
+	icon: 1tnk.rank3icon
+		UseTilesetExtension: false
+
+2tnk.rank2:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: gunfire2
+		Length: 5
+	icon: 2tnk.rank2icon
+		UseTilesetExtension: false
+
+2tnk.ger.rank2:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: gunfire2
+		Length: 5
+	icon: 2tnk.ger.rank2icon
+		UseTilesetExtension: false
+
+3tnk.rank2:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: gunfire2
+		Length: 5
+	icon: 3tnk.rank2icon
+
+jeep.2rank:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: jeep.2rankicon
+		UseTilesetExtension: false
+
+jeep.3rank:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: jeep.3rankicon
+		UseTilesetExtension: false

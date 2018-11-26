@@ -129,47 +129,59 @@ SNIPER.Rank2:
 1TNK.rank2:
 	Inherits: 1TNK
 	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~mediumfix.upgraded, ~!highfix.upgraded
+		Prerequisites: ~vehicles.allies, ~techlevel.medium, ~mediumfix.upgraded, ~!highfix.upgraded
 	RenderSprites:
 		Image: 1tnk.rank2
 	SpawnActorOnDeath:
 		Actor: 1TNK.rank2.Husk
 	ProducibleWithLevel:
-		Prerequisites: ~techlevel.low
+		Prerequisites: ~techlevel.medium
 		InitialLevels: 2
 
 1TNK.rank3:
 	Inherits: 1TNK
 	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~highfix.upgraded
+		Prerequisites: ~vehicles.allies, ~techlevel.high, ~highfix.upgraded
 	RenderSprites:
 		Image: 1tnk.rank3
 	SpawnActorOnDeath:
 		Actor: 1TNK.rank3.Husk
 	ProducibleWithLevel:
-		Prerequisites: ~techlevel.low
+		Prerequisites: ~techlevel.high
 		InitialLevels: 3
 
 2TNK.rank2:
 	Inherits: 2TNK
 	Buildable:
-		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~highfix.upgraded
+		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.high, ~tank.upgraded2
 	RenderSprites:
 		Image: 2tnk.rank2
 	SpawnActorOnDeath:
 		Actor: 2TNK.rank2.Husk
 	ProducibleWithLevel:
-		Prerequisites: ~techlevel.medium
+		Prerequisites: ~techlevel.high
 		InitialLevels: 2
 
 2TNK.Ger.rank2:
 	Inherits: 2TNK.Ger
 	Buildable:
-		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~highfix.upgraded
+		Prerequisites: fix, ~vehicles.germany, ~techlevel.high, ~tank.upgraded2
 	RenderSprites:
 		Image: 2tnk.ger.rank2
 	SpawnActorOnDeath:
 		Actor: 2TNK.Ger.rank2.Husk
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 2
+
+3TNK.rank2:
+	Inherits: 3TNK
+	Buildable:
+		Prerequisites: fix, ~vehicles.soviet, ~techlevel.high, ~tank.upgraded2
+	RenderSprites:
+		Image: 3tnk.rank2
+	SpawnActorOnDeath:
+		Actor: 3TNK.rank2.Husk
 	ProducibleWithLevel:
 		Prerequisites: ~techlevel.medium
 		InitialLevels: 2

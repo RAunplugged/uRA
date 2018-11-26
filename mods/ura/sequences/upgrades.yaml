@@ -1,4 +1,12 @@
+# Production Icons
+
 infspeed1:
-	icon: infspeed1
+	icon: infspeed1icon
 infspeed2:
-	icon: infspeed2
+	icon: infspeed2icon
+2tnk.rank1:
+	icon: 2tnk.rank1icon
+2tnk.ger.rank1:
+	icon: 2tnk.ger.rank1icon
+3tnk.rank1:
+	icon: 3tnk.rank1icon

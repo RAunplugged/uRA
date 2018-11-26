@@ -6,13 +6,13 @@
 
 # Upgrades
 
-upgrade.infrank1:
+upgrade.inf.rank1:
 	Inherits: ^UpgradeActor
 	Tooltip:
 		Name: Infantry Veterancy I
 	Buildable:
 		BuildPaletteOrder: 10
-		Prerequisites: ~barracks, ~techlevel.infonly, ~!upgrade.infrank1, ~!barracks.upgraded
+		Prerequisites: ~barracks, ~techlevel.infonly, ~!upgrade.inf.rank1, ~!barracks.upgraded
 		Queue: Upgrade
 		Description: Enables Veterancy I\ninfantry production.
 	Valued:
@@ -22,13 +22,13 @@ upgrade.infrank1:
 	ProvidesPrerequisite@default:
 		Prerequisite: barracks.upgraded
 
-upgrade.infrank2:
+upgrade.inf.rank2:
 	Inherits: ^UpgradeActor
 	Tooltip:
 		Name: Infantry Veterancy II
 	Buildable:
 		BuildPaletteOrder: 20
-		Prerequisites: ~barracks, techcenter, ~techlevel.medium, upgrade.infrank1, ~!upgrade.infrank2, ~!barracks.upgraded2
+		Prerequisites: ~barracks, techcenter, ~techlevel.high, ~barracks.upgraded, ~!upgrade.inf.rank2, ~!barracks.upgraded2
 		Queue: Upgrade
 		Description: Enables Veterancy II\ninfantry production.
 	Valued:
@@ -38,13 +38,109 @@ upgrade.infrank2:
 	ProvidesPrerequisite@default:
 		Prerequisite: barracks.upgraded2
 
+upgrade.2tnk.rank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Medium Tank Veterancy I
+	Buildable:
+		BuildPaletteOrder: 30
+		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~!tank.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\nMedium Tank production.
+	Valued:
+		Cost: 750
+	RenderSprites:
+		Image: 2tnk.rank1
+	ProvidesPrerequisite@default:
+		Prerequisite: tank.upgraded
+
+upgrade.2tnk.rank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Medium Tank Veterancy II
+	Buildable:
+		BuildPaletteOrder: 30
+		Prerequisites: fix, techcenter, ~vehicles.allies, ~!vehicles.germany, ~techlevel.high, ~tank.upgraded, ~!tank.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy II\nMedium Tank production.
+	Valued:
+		Cost: 1000
+	RenderSprites:
+		Image: 2tnk.rank2
+	ProvidesPrerequisite@default:
+		Prerequisite: tank.upgraded2
+
+upgrade.2tnk.ger.rank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: German Medium Tank Veterancy I
+	Buildable:
+		BuildPaletteOrder: 30
+		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~!tank.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\nGerman Medium Tank production.
+	Valued:
+		Cost: 750
+	RenderSprites:
+		Image: 2tnk.ger.rank1
+	ProvidesPrerequisite@default:
+		Prerequisite: tank.upgraded
+
+upgrade.2tnk.ger.rank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: German Medium Tank Veterancy II
+	Buildable:
+		BuildPaletteOrder: 30
+		Prerequisites: fix, techcenter, ~vehicles.germany, ~techlevel.high, ~tank.upgraded, ~!tank.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy II\nGerman Medium Tank production.
+	Valued:
+		Cost: 1000
+	RenderSprites:
+		Image: 2tnk.ger.rank2
+	ProvidesPrerequisite@default:
+		Prerequisite: tank.upgraded2
+
+upgrade.3tnk.rank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Heavy Tank Veterancy I
+	Buildable:
+		BuildPaletteOrder: 30
+		Prerequisites: fix, ~vehicles.soviet, ~techlevel.medium, ~!tank.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\nHeavy Tank production.
+	Valued:
+		Cost: 750
+	RenderSprites:
+		Image: 3tnk.rank1
+	ProvidesPrerequisite@default:
+		Prerequisite: tank.upgraded
+
+upgrade.3tnk.rank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Heavy Tank Veterancy II
+	Buildable:
+		BuildPaletteOrder: 30
+		Prerequisites: fix, techcenter, ~vehicles.soviet, ~techlevel.high, ~tank.upgraded, ~!tank.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy II\nHeavy Tank production.
+	Valued:
+		Cost: 1000
+	RenderSprites:
+		Image: 3tnk.rank2
+	ProvidesPrerequisite@default:
+		Prerequisite: tank.upgraded2
+
 # Infiltration Tech Tree
 
 barracks.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
-	ProvidesPrerequisite@secondupgrade:
-		RequiresPrerequisites: barracks.upgraded, techcenter.upgraded
+	ProvidesPrerequisite@barracksupgrade2:
+		RequiresPrerequisites: techcenter.upgraded
 		Prerequisite: barracks.upgraded2
 	ProvidesPrerequisite@MEDIUMDOME:
 		RequiresPrerequisites: radardome.upgraded
@@ -67,6 +163,11 @@ aircraft.upgraded:
 servicedepot.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
+	ProvidesPrerequisite@tankupgrade:
+		Prerequisite: tank.upgraded
+	ProvidesPrerequisite@tankupgrade2:
+		RequiresPrerequisites: techcenter.upgraded
+		Prerequisite: tank.upgraded2
 	ProvidesPrerequisite@MEDIUMFIX:
 		RequiresPrerequisites: warfactory.upgraded
 		Prerequisite: mediumfix.upgraded
@@ -84,6 +185,12 @@ radardome.upgraded:
 techcenter.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
+	ProvidesPrerequisite@barracksupgrade2:
+		RequiresPrerequisites: barracks.upgraded
+		Prerequisite: barracks.upgraded2
+	ProvidesPrerequisite@tankupgrade2:
+		RequiresPrerequisites: servicedepot.upgraded
+		Prerequisite: tank.upgraded2
 	ProvidesPrerequisite@HIGHIES:
 		RequiresPrerequisites: warfactory.upgraded, servicedepot.upgraded
 		Prerequisite: highfix.upgraded

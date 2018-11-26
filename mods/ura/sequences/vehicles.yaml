@@ -78,32 +78,6 @@ hhusk2:
 		Length: 2
 	icon: 1tnkicon
 
-1tnk.rank2:
-	idle:
-		Facings: 32
-		UseClassicFacingFudge: True
-	turret:
-		Start: 32
-		Facings: 32
-		UseClassicFacingFudge: True
-	muzzle: gunfire2
-		Length: 2
-	icon: 1tnk.rank2icon
-		UseTilesetExtension: false
-
-1tnk.rank3:
-	idle:
-		Facings: 32
-		UseClassicFacingFudge: True
-	turret:
-		Start: 32
-		Facings: 32
-		UseClassicFacingFudge: True
-	muzzle: gunfire2
-		Length: 2
-	icon: 1tnk.rank3icon
-		UseTilesetExtension: false
-
 1tnk.destroyed:
 	idle: 1tnk
 		Facings: 32
@@ -127,19 +101,6 @@ hhusk2:
 		Length: 5
 	icon: 2tnkicon
 
-2tnk.rank2:
-	idle:
-		Facings: 32
-		UseClassicFacingFudge: True
-	turret:
-		Start: 32
-		Facings: 32
-		UseClassicFacingFudge: True
-	muzzle: gunfire2
-		Length: 5
-	icon: 2tnk.rank2icon
-		UseTilesetExtension: false
-
 2tnk.ger:
 	idle:
 		Facings: 32
@@ -151,19 +112,6 @@ hhusk2:
 	muzzle: gunfire2
 		Length: 5
 	icon: 2tnk.gericon
-		UseTilesetExtension: false
-
-2tnk.ger.rank2:
-	idle:
-		Facings: 32
-		UseClassicFacingFudge: True
-	turret:
-		Start: 32
-		Facings: 32
-		UseClassicFacingFudge: True
-	muzzle: gunfire2
-		Length: 5
-	icon: 2tnk.ger.rank2icon
 		UseTilesetExtension: false
 
 2tnk.destroyed:
@@ -280,34 +228,6 @@ jeep:
 		Length: 6
 		Facings: 8
 	icon: jeepicon
-
-jeep.2rank:
-	idle:
-		Facings: 32
-		UseClassicFacingFudge: True
-	turret:
-		Start: 32
-		Facings: 32
-		UseClassicFacingFudge: True
-	muzzle: minigun
-		Length: 6
-		Facings: 8
-	icon: jeep.2rankicon
-		UseTilesetExtension: false
-
-jeep.3rank:
-	idle:
-		Facings: 32
-		UseClassicFacingFudge: True
-	turret:
-		Start: 32
-		Facings: 32
-		UseClassicFacingFudge: True
-	muzzle: minigun
-		Length: 6
-		Facings: 8
-	icon: jeep.3rankicon
-		UseTilesetExtension: false
 
 apc:
 	idle:

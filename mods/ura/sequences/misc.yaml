@@ -511,8 +511,8 @@ icon:
 	sniperdrop: sniperdropicon
 	spydrop: spydropicon
 	inteldrop: inteldropicon
-	grenlauncherdrop: grenlaunchicon
-	mgunnerdrop: mgicon
+	grenlauncherdrop: e9icon
+	mgunnerdrop: e10icon
 
 quee:
 	idle:
