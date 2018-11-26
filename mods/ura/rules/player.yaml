@@ -75,11 +75,8 @@ Player:
 		BuildDurationModifier: 250
 		ReadyAudio: UnitUpgraded
 		BlockedAudio: NoBuild
-		LimitedAudio: BuildingInProgress
+		#LimitedAudio: BuildingInProgress
 		QueuedAudio: UpgradeInProgress
-		#ReadyAudio: NewOptions
-		#BlockedAudio: NoRoom
-		#QueuedAudio: Upgrading
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
 	PlaceBuilding:
