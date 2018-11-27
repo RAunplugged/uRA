@@ -65,8 +65,8 @@
 		Conditions:
 			200: rank-veteran
 			400: rank-veteran
-			800: rank-veteran
-			1600: rank-veteran
+			1200: rank-veteran
+			2000: rank-veteran
 	GrantCondition@RANK-ELITE:
 		RequiresCondition: rank-veteran >= 4
 		Condition: rank-elite
@@ -163,8 +163,8 @@
 		Conditions:
 			150: rank-veteran
 			300: rank-veteran
-			600: rank-veteran
-			1200: rank-veteran
+			900: rank-veteran
+			1500: rank-veteran
 	GrantCondition@RANK-ELITE:
 		RequiresCondition: rank-veteran >= 4
 		Condition: rank-elite
@@ -204,16 +204,10 @@
 	RangeMultiplier@RANK-ELITE:
 		RequiresCondition: rank-elite
 		Modifier: 115
-	SelfHealing@RANK-2:
-		PercentageStep: 5
-		Delay: 75
-		HealIfBelow: 50
-		DamageCooldown: 150
-		RequiresCondition: rank-veteran == 2
 	SelfHealing@RANK-3:
 		PercentageStep: 5
 		Delay: 75
-		HealIfBelow: 75
+		HealIfBelow: 50
 		DamageCooldown: 150
 		RequiresCondition: rank-veteran == 3
 	SelfHealing@ELITE:
@@ -261,8 +255,8 @@
 		Conditions:
 			100: rank-veteran
 			200: rank-veteran
-			400: rank-veteran
-			800: rank-veteran
+			600: rank-veteran
+			1000: rank-veteran
 	GrantCondition@RANK-ELITE:
 		RequiresCondition: rank-veteran >= 4
 		Condition: rank-elite

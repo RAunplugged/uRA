@@ -335,6 +335,7 @@ TRUK:
 	WithSpriteTurret:
 	Selectable:
 		DecorationBounds: 28,28
+		Class: 3tnk
 	Targetable:
 		TargetTypes: Ground, Repair, Vehicle, Heavy
 	SelectionDecorations:
@@ -482,7 +483,7 @@ TNKD:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 170
-		Prerequisites: atek, fix, ~vehicles.germany, ~techlevel.high
+		Prerequisites: ~upgrade.tnkd.unlock
 		Description: Anti-Tank Tank.\n  Strong vs Vehicles\n  Weak vs Infantry, Aircraft, Buildings
 	RevealsShroud:
 		Range: 7c576
@@ -916,7 +917,7 @@ ARTY:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
-		Prerequisites: dome, ~vehicles.allies, ~techlevel.medium
+		Prerequisites: dome, ~vehicles.allies, ~techlevel.medium, ~!ranged.upgraded2
 		Description: Long-range artillery.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	RevealsShroud:
 		Range: 5c384
@@ -933,6 +934,8 @@ ARTY:
 		LocalOffset: 624,0,208
 		MuzzleSequence: muzzle
 		RequiresCondition: botowner
+	Selectable:
+		Class: arty
 	Crushable:
 		CrushClasses: vehicles
 	Explodes:
@@ -942,7 +945,7 @@ ARTY:
 	AttackFrontal:
 	WithMuzzleOverlay:
 	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded, radardome.upgraded
+		Prerequisites: ranged.upgraded
 
 V2RL:
 	Inherits: ^Vehicle
@@ -961,7 +964,7 @@ V2RL:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 80
-		Prerequisites: dome, ~vehicles.soviet, ~techlevel.medium
+		Prerequisites: dome, ~vehicles.soviet, ~techlevel.medium, ~!ranged.upgraded2
 		Description: Long-range rocket artillery.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	RevealsShroud:
 		Range: 5c384
@@ -982,6 +985,7 @@ V2RL:
 		ScanRadius: 12
 	Selectable:
 		DecorationBounds: 28,28
+		Class: v2rl
 	Explodes:
 		Weapon: V2Explode
 	SelectionDecorations:
@@ -994,7 +998,7 @@ V2RL:
 		Sequence: empty-idle
 		Name: reloading
 	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded, radardome.upgraded
+		Prerequisites: ranged.upgraded
 
 MGG:
 	Inherits: ^Vehicle

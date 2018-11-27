@@ -964,3 +964,21 @@ jeep.3rank:
 		Facings: 8
 	icon: jeep.3rankicon
 		UseTilesetExtension: false
+
+arty.rank2:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: gunfire2
+		Length: 5
+	icon: arty.rank2icon
+
+v2rl.rank2:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	empty-idle:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+	icon: v2rl.rank2icon

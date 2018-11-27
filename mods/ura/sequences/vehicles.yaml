@@ -198,6 +198,14 @@ tnkd.husk:
 		Facings: 32
 		ZOffset: -512
 
+arty:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: gunfire2
+		Length: 5
+	icon: artyicon
+
 v2rl:
 	idle:
 		Facings: 32
@@ -207,14 +215,6 @@ v2rl:
 		Facings: 32
 		UseClassicFacingFudge: True
 	icon: v2rlicon
-
-arty:
-	idle:
-		Facings: 32
-		UseClassicFacingFudge: True
-	muzzle: gunfire2
-		Length: 5
-	icon: artyicon
 
 jeep:
 	idle:

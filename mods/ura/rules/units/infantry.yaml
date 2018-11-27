@@ -652,8 +652,8 @@ E9:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		Prerequisites: ~infantry.france, ~barracks.upgraded, ~!barracks.upgraded2
-		BuildPaletteOrder: 400
+		Prerequisites: ~upgrade.e9.unlock, ~!barracks.upgraded2
+		BuildPaletteOrder: 130
 		Description: Infantry armed with long range grenade launcher.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
 		Weapon: GrenLauncher
@@ -698,8 +698,8 @@ E10:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		Prerequisites: ~infantry.germany, ~barracks.upgraded, ~!barracks.upgraded2
-		BuildPaletteOrder: 401
+		Prerequisites: ~upgrade.e10.unlock, ~!barracks.upgraded2
+		BuildPaletteOrder: 130
 		Description: Infantry equiped with a rapid firing Machine Gun.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	Armament@PRIMARY:
 		Weapon: M60mg.Inf
@@ -737,8 +737,8 @@ SNIPER:
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
-		BuildPaletteOrder: 500
-		Prerequisites: ~infantry.england, ~barracks.upgraded, ~!barracks.upgraded2
+		BuildPaletteOrder: 130
+		Prerequisites: ~upgrade.sniper.unlock, ~!barracks.upgraded2
 		Description: Elite sniper infantry unit.\nCan detect cloaked units.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	RevealsShroud:
 		Range: 9c256

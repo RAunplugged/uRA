@@ -1,23 +1,94 @@
+# Categories:
+
+# Inheritance
+# Unit Unlocks
+# Unit Upgrades
+# Infiltration Tech Tree
+
+# Inheritance
+
 ^UpgradeActor:
 	AlwaysVisible:
 	Interactable:
 	ScriptTriggers:
 	ProvidesPrerequisite@upgradename:
 
-# Upgrades
+# Unit Unlocks
+
+upgrade.tnkd.unlock:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Unlock Tank Destroyer
+	Valued:
+		Cost: 750
+	Buildable:
+		BuildPaletteOrder: 40
+		Prerequisites: fix, ~vehicles.germany, ~techlevel.high, ~!upgrade.tnkd.unlock
+		Queue: Upgrade
+		Description: Enables Veterancy I\ninfantry production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: tnkd
+
+upgrade.e9.unlock:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Unlock Grenade Launcher
+	Valued:
+		Cost: 750
+	Buildable:
+		BuildPaletteOrder: 40
+		Prerequisites: dome, ~tent, ~infantry.france, ~!upgrade.e9.unlock
+		Queue: Upgrade
+		Description: Unlocks production of\nthe Grenade Launcher.
+		BuildLimit: 1
+	RenderSprites:
+		Image: e9
+
+upgrade.e10.unlock:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Unlock Machine Gunner
+	Valued:
+		Cost: 750
+	Buildable:
+		BuildPaletteOrder: 40
+		Prerequisites: dome, ~tent, ~infantry.germany, ~!upgrade.e10.unlock
+		Queue: Upgrade
+		Description: Unlocks production of\nthe Machine Gunner.
+		BuildLimit: 1
+	RenderSprites:
+		Image: e10
+
+upgrade.sniper.unlock:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Unlock British Sniper
+	Valued:
+		Cost: 750
+	Buildable:
+		BuildPaletteOrder: 40
+		Prerequisites: dome, ~tent, ~infantry.england, ~!upgrade.sniper.unlock
+		Queue: Upgrade
+		Description: Unlocks production of\nthe British Sniper.
+		BuildLimit: 1
+	RenderSprites:
+		Image: sniper
+
+# Unit Upgrades
 
 upgrade.inf.rank1:
 	Inherits: ^UpgradeActor
 	Tooltip:
 		Name: Infantry Veterancy I
+	Valued:
+		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 10
 		Prerequisites: ~barracks, ~techlevel.infonly, ~!upgrade.inf.rank1, ~!barracks.upgraded
 		Queue: Upgrade
 		Description: Enables Veterancy I\ninfantry production.
 		BuildLimit: 1
-	Valued:
-		Cost: 1500
 	RenderSprites:
 		Image: infspeed1
 	ProvidesPrerequisite@default:
@@ -27,14 +98,14 @@ upgrade.inf.rank2:
 	Inherits: ^UpgradeActor
 	Tooltip:
 		Name: Infantry Veterancy II
+	Valued:
+		Cost: 1500
 	Buildable:
 		BuildPaletteOrder: 20
 		Prerequisites: ~barracks, techcenter, ~techlevel.high, ~barracks.upgraded, ~!upgrade.inf.rank2, ~!barracks.upgraded2
 		Queue: Upgrade
 		Description: Enables Veterancy II\ninfantry production.
 		BuildLimit: 1
-	Valued:
-		Cost: 2000
 	RenderSprites:
 		Image: infspeed2
 	ProvidesPrerequisite@default:
@@ -44,14 +115,14 @@ upgrade.2tnk.rank1:
 	Inherits: ^UpgradeActor
 	Tooltip:
 		Name: Medium Tank Veterancy I
+	Valued:
+		Cost: 750
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: fix, ~vehicles.allies, ~!vehicles.germany, ~techlevel.medium, ~!tank.upgraded
 		Queue: Upgrade
 		Description: Enables Veterancy I\nMedium Tank production.
 		BuildLimit: 1
-	Valued:
-		Cost: 750
 	RenderSprites:
 		Image: 2tnk.rank1
 	ProvidesPrerequisite@default:
@@ -61,14 +132,14 @@ upgrade.2tnk.rank2:
 	Inherits: ^UpgradeActor
 	Tooltip:
 		Name: Medium Tank Veterancy II
+	Valued:
+		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: fix, techcenter, ~vehicles.allies, ~!vehicles.germany, ~techlevel.high, ~tank.upgraded, ~!tank.upgraded2
 		Queue: Upgrade
 		Description: Enables Veterancy II\nMedium Tank production.
 		BuildLimit: 1
-	Valued:
-		Cost: 1000
 	RenderSprites:
 		Image: 2tnk.rank2
 	ProvidesPrerequisite@default:
@@ -78,14 +149,14 @@ upgrade.2tnk.ger.rank1:
 	Inherits: ^UpgradeActor
 	Tooltip:
 		Name: German Medium Tank Veterancy I
+	Valued:
+		Cost: 750
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: fix, ~vehicles.germany, ~techlevel.medium, ~!tank.upgraded
 		Queue: Upgrade
 		Description: Enables Veterancy I\nGerman Medium Tank production.
 		BuildLimit: 1
-	Valued:
-		Cost: 750
 	RenderSprites:
 		Image: 2tnk.ger.rank1
 	ProvidesPrerequisite@default:
@@ -95,14 +166,14 @@ upgrade.2tnk.ger.rank2:
 	Inherits: ^UpgradeActor
 	Tooltip:
 		Name: German Medium Tank Veterancy II
+	Valued:
+		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: fix, techcenter, ~vehicles.germany, ~techlevel.high, ~tank.upgraded, ~!tank.upgraded2
 		Queue: Upgrade
 		Description: Enables Veterancy II\nGerman Medium Tank production.
 		BuildLimit: 1
-	Valued:
-		Cost: 1000
 	RenderSprites:
 		Image: 2tnk.ger.rank2
 	ProvidesPrerequisite@default:
@@ -112,14 +183,14 @@ upgrade.3tnk.rank1:
 	Inherits: ^UpgradeActor
 	Tooltip:
 		Name: Heavy Tank Veterancy I
+	Valued:
+		Cost: 750
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: fix, ~vehicles.soviet, ~techlevel.medium, ~!tank.upgraded
 		Queue: Upgrade
 		Description: Enables Veterancy I\nHeavy Tank production.
 		BuildLimit: 1
-	Valued:
-		Cost: 750
 	RenderSprites:
 		Image: 3tnk.rank1
 	ProvidesPrerequisite@default:
@@ -129,18 +200,86 @@ upgrade.3tnk.rank2:
 	Inherits: ^UpgradeActor
 	Tooltip:
 		Name: Heavy Tank Veterancy II
+	Valued:
+		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 30
 		Prerequisites: fix, techcenter, ~vehicles.soviet, ~techlevel.high, ~tank.upgraded, ~!tank.upgraded2
 		Queue: Upgrade
 		Description: Enables Veterancy II\nHeavy Tank production.
 		BuildLimit: 1
-	Valued:
-		Cost: 1000
 	RenderSprites:
 		Image: 3tnk.rank2
 	ProvidesPrerequisite@default:
 		Prerequisite: tank.upgraded2
+
+upgrade.arty.rank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Artillery Veterancy I
+	Valued:
+		Cost: 750
+	Buildable:
+		BuildPaletteOrder: 50
+		Prerequisites: dome, ~vehicles.allies, ~techlevel.medium, ~!ranged.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\nArtillery production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: arty.rank1
+	ProvidesPrerequisite@default:
+		Prerequisite: ranged.upgraded
+
+upgrade.arty.rank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Artillery Veterancy II
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 50
+		Prerequisites: dome, techcenter, ~vehicles.allies, ~techlevel.medium, ~ranged.upgraded, ~!ranged.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy II\nArtillery production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: arty.rank2
+	ProvidesPrerequisite@default:
+		Prerequisite: ranged.upgraded2
+
+upgrade.v2rl.rank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: V2 Veterancy I
+	Valued:
+		Cost: 750
+	Buildable:
+		BuildPaletteOrder: 50
+		Prerequisites: dome, ~vehicles.soviet, ~techlevel.medium, ~!ranged.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\nV2 production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: v2rl.rank1
+	ProvidesPrerequisite@default:
+		Prerequisite: ranged.upgraded
+
+upgrade.v2rl.rank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: V2 Veterancy II
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 50
+		Prerequisites: dome, techcenter, ~vehicles.soviet, ~techlevel.medium, ~ranged.upgraded, ~!ranged.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy I\nV2 production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: v2rl.rank2
+	ProvidesPrerequisite@default:
+		Prerequisite: ranged.upgraded2
 
 # Infiltration Tech Tree
 
@@ -186,6 +325,11 @@ servicedepot.upgraded:
 radardome.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
+	ProvidesPrerequisite@rangedupgrade:
+		Prerequisite: ranged.upgraded
+	ProvidesPrerequisite@rangedupgrade2:
+		RequiresPrerequisites: techcenter.upgraded
+		Prerequisite: ranged.upgraded2
 	ProvidesPrerequisite@MEDIUMDOME:
 		RequiresPrerequisites: barracks.upgraded
 		Prerequisite: mediumdome.upgraded
@@ -199,6 +343,9 @@ techcenter.upgraded:
 	ProvidesPrerequisite@tankupgrade2:
 		RequiresPrerequisites: servicedepot.upgraded
 		Prerequisite: tank.upgraded2
+	ProvidesPrerequisite@rangedupgrade2:
+		RequiresPrerequisites: radardome.upgraded
+		Prerequisite: ranged.upgraded2
 	ProvidesPrerequisite@HIGHIES:
 		RequiresPrerequisites: warfactory.upgraded, servicedepot.upgraded
 		Prerequisite: highfix.upgraded

@@ -89,7 +89,7 @@ SPY.England.rank2:
 E9.Rank2:
 	Inherits: E9
 	Buildable:
-		Prerequisites:  ~infantry.france, ~barracks.upgraded, ~barracks.upgraded2
+		Prerequisites:  ~upgrade.e9.unlock, ~barracks.upgraded2
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
 		InitialLevels: 2
@@ -99,7 +99,7 @@ E9.Rank2:
 E10.Rank2:
 	Inherits: E10
 	Buildable:
-		Prerequisites:  ~infantry.germany, ~barracks.upgraded, ~barracks.upgraded2
+		Prerequisites:  ~upgrade.e10.unlock, ~barracks.upgraded2
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
 		InitialLevels: 2
@@ -117,7 +117,7 @@ SNIPER.Rank1:
 SNIPER.Rank2:
 	Inherits: SNIPER
 	Buildable:
-		Prerequisites:  ~infantry.england, ~barracks.upgraded, ~barracks.upgraded2
+		Prerequisites:  ~upgrade.sniper.unlock, ~barracks.upgraded2
 	ProducibleWithLevel:
 		Prerequisites: techlevel.infonly
 		InitialLevels: 2
@@ -205,3 +205,23 @@ JEEP.3rank:
 	ProducibleWithLevel:
 		Prerequisites: ~techlevel.low
 		InitialLevels: 3
+
+ARTY.rank2:
+	Inherits: ARTY
+	Buildable:
+		Prerequisites: dome, ~vehicles.allies, ~techlevel.high, ~ranged.upgraded2
+	RenderSprites:
+		Image: arty.rank2
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 2
+
+V2RL.rank2:
+	Inherits: V2RL
+	Buildable:
+		Prerequisites: dome, ~vehicles.soviet, ~techlevel.high, ~ranged.upgraded2
+	RenderSprites:
+		Image: v2rl.rank2
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 2
