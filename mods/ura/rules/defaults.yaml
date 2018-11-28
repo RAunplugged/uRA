@@ -739,7 +739,7 @@
 	Aircraft:
 		AirborneCondition: airborne
 	Repairable:
-		RepairBuildings: afld, afld.ukraine, afld.brutal, afld.ukraine.brutal, afld.hard, afld.ukraine.hard, afld.easy, afld.ukraine.easy
+		RepairBuildings: afld, afld.ukraine, afld.brutal, afld.ukraine.brutal, afld.hard, afld.ukraine.hard, afld.easy, afld.ukraine.easy, fix
 	AttackMove:
 	Guard:
 	EjectOnDeath:
@@ -803,7 +803,7 @@
 		VTOL: true
 		InitialFacing: 224
 	Repairable:
-		RepairBuildings: hpad, hpad.brutal, hpad.hard, hpad.easy
+		RepairBuildings: hpad, hpad.brutal, hpad.hard, hpad.easy, fix
 	Hovers@CRUISING:
 		RequiresCondition: cruising
 	GpsDot:

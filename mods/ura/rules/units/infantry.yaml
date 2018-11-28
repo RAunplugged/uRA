@@ -383,6 +383,8 @@ MEDI:
 		Cost: 200
 	Health:
 		HP: 60
+	Mobile:
+		Speed: 50
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
@@ -425,6 +427,7 @@ MECH:
 		HP: 80
 	Mobile:
 		Voice: Move
+		Speed: 50
 	Buildable:
 		Queue: Infantry
 		BuildAtProductionType: Soldier

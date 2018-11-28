@@ -52,7 +52,7 @@
 	Inherits: ^Cannon
 	Warhead@1Dam: SpreadDamage
 		Versus:
-			Heavy: 140
+			Heavy: 130
 
 90mm.Germany:
 	Inherits: 90mm
@@ -62,7 +62,7 @@
 		Versus:
 			None: 40
 			Light: 100
-			Heavy: 180
+			Heavy: 170
 			Concrete: 100
 
 105mm:

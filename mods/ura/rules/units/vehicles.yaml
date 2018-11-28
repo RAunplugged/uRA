@@ -430,8 +430,6 @@ TRUK:
 	Inherits: 4TNK
 	Tooltip:
 		Name: Mammoth KV-8
-	Health:
-		HP: 900
 	Mobile:
 		Speed: 63
 	Buildable:
@@ -1013,6 +1011,7 @@ MGG:
 		Type: Heavy
 	Mobile:
 		Speed: 99
+		Locomotor: tracked
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 160
@@ -1054,6 +1053,7 @@ MRJ:
 		Type: Heavy
 	Mobile:
 		Speed: 99
+		Locomotor: tracked
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 140
