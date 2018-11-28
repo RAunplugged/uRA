@@ -1,8 +1,8 @@
 # Production Icons (rank1 upgrades are defined here, given they don't need unit duplicates)
 
-infspeed1:
+inf.rank1:
 	icon: inf.rank1icon
-infspeed2:
+inf.rank2:
 	icon: inf.rank2icon
 2tnk.rank1:
 	icon: 2tnk.rank1icon
@@ -14,3 +14,15 @@ arty.rank1:
 	icon: arty.rank1icon
 v2rl.rank1:
 	icon: v2rl.rank1icon
+alight.rank1:
+	icon: alight.rank1icon
+alight.rank2:
+	icon: alight.rank2icon
+alight.rank3:
+	icon: alight.rank3icon
+slight.rank1:
+	icon: slight.rank1icon
+slight.rank2:
+	icon: slight.rank2icon
+slight.rank3:
+	icon: slight.rank3icon

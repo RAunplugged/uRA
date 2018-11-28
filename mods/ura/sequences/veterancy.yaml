@@ -937,7 +937,7 @@ sniper.rank2:
 		Length: 5
 	icon: 3tnk.rank2icon
 
-jeep.2rank:
+jeep.rank2:
 	idle:
 		Facings: 32
 		UseClassicFacingFudge: True
@@ -948,10 +948,10 @@ jeep.2rank:
 	muzzle: minigun
 		Length: 6
 		Facings: 8
-	icon: jeep.2rankicon
+	icon: jeep.rank2icon
 		UseTilesetExtension: false
 
-jeep.3rank:
+jeep.rank3:
 	idle:
 		Facings: 32
 		UseClassicFacingFudge: True
@@ -962,8 +962,60 @@ jeep.3rank:
 	muzzle: minigun
 		Length: 6
 		Facings: 8
-	icon: jeep.3rankicon
+	icon: jeep.rank3icon
 		UseTilesetExtension: false
+
+ftrk.rank2:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: gunfire2
+		Length: 2
+	icon: ftrk.rank2icon
+
+ftrk.rank3:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: gunfire2
+		Length: 2
+	icon: ftrk.rank3icon
+
+apc.rank2:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	open:
+		Start: 32
+		Length: 3
+	unload:
+		Start: 32
+	icon: apc.rank2icon
+
+apc.rank3:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	open:
+		Start: 32
+		Length: 3
+	unload:
+		Start: 32
+	icon: apc.rank3icon
 
 arty.rank2:
 	idle:

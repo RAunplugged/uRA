@@ -134,6 +134,8 @@ E2:
 		FireDelay: 15
 		RequiresCondition: botowner
 	AttackFrontal:
+	Selectable:
+		Class: E2
 	TakeCover:
 		ProneOffset: 256,64,-331
 	Explodes:
@@ -230,6 +232,8 @@ E4:
 		LocalOffset: 700,0,500
 		FireDelay: 8
 		RequiresCondition: botowner
+	Selectable:
+		Class: E4
 	AttackFrontal:
 	TakeCover:
 		ProneOffset: 160,0,-288
@@ -510,7 +514,7 @@ HIJACKER:
 		IdleSequences: idle
 		StandSequences: stand
 	ProducibleWithLevel:
-		Prerequisites: barracks.upgraded
+		Prerequisites: radardome.upgraded
 
 SHOK:
 	Inherits: ^Soldier
@@ -548,6 +552,8 @@ SHOK:
 		Weapon: PortaTesla.AI
 		LocalOffset: 427,0,341
 		RequiresCondition: botowner
+	Selectable:
+		Class: SHOK
 	Passenger:
 		Voice: Move
 	AttackMove:
@@ -611,6 +617,8 @@ E7:
 	Passenger:
 		PipType: Red
 		Voice: Move
+	Selectable:
+		Class: E7
 	AttackFrontal:
 	Guard:
 		Voice: Move
@@ -672,6 +680,8 @@ E9:
 		Weapon: GrenLauncher.AI
 		LocalOffset: 700,0,500
 		RequiresCondition: botowner
+	Selectable:
+		Class: E9
 	AttackFrontal:
 	Explodes:
 		Weapon: UnitExplodeSmall
@@ -717,6 +727,8 @@ E10:
 	Armament@PRIMARY.BOT:
 		Weapon: M60mg.Inf.AI
 		RequiresCondition: botowner
+	Selectable:
+		Class: E10
 	AttackFrontal:
 	WithInfantryBody:
 		DefaultAttackSequence: shoot
@@ -754,6 +766,8 @@ SNIPER:
 		Name: garrisoned
 		Weapon: Sniper
 		MuzzleSequence: garrison-muzzle
+	Selectable:
+		Class: SNIPER
 	Cloak:
 		InitialDelay: 250
 		CloakDelay: 150

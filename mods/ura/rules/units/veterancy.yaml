@@ -56,16 +56,6 @@ E4.Rank2:
 	RenderSprites:
 		Image: E4.Rank2
 
-SHOK.Rank2:
-	Inherits: SHOK
-	Buildable:
-		Prerequisites:  ~barr, stek, tsla, ~infantry.russia, ~techlevel.high, ~barracks.upgraded2
-	ProducibleWithLevel:
-		Prerequisites: techlevel.infonly
-		InitialLevels: 2
-	RenderSprites:
-		Image: SHOK.Rank2
-
 E7.Rank2:
 	Inherits: E7
 	Buildable:
@@ -85,6 +75,16 @@ SPY.England.rank2:
 	ProducibleWithLevel:
 		Prerequisites: ~techlevel.medium
 		InitialLevels: 2
+
+SHOK.Rank2:
+	Inherits: SHOK
+	Buildable:
+		Prerequisites:  ~barr, stek, tsla, ~infantry.russia, ~techlevel.high, ~barracks.upgraded2
+	ProducibleWithLevel:
+		Prerequisites: techlevel.infonly
+		InitialLevels: 2
+	RenderSprites:
+		Image: SHOK.Rank2
 
 E9.Rank2:
 	Inherits: E9
@@ -129,7 +129,7 @@ SNIPER.Rank2:
 1TNK.rank2:
 	Inherits: 1TNK
 	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.medium, ~mediumfix.upgraded, ~!highfix.upgraded
+		Prerequisites: ~vehicles.allies, ~techlevel.medium, ~light.upgraded2, ~!light.upgraded3
 	RenderSprites:
 		Image: 1tnk.rank2
 	SpawnActorOnDeath:
@@ -141,7 +141,7 @@ SNIPER.Rank2:
 1TNK.rank3:
 	Inherits: 1TNK
 	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.high, ~highfix.upgraded
+		Prerequisites: ~vehicles.allies, ~techlevel.high, ~light.upgraded3
 	RenderSprites:
 		Image: 1tnk.rank3
 	SpawnActorOnDeath:
@@ -183,27 +183,67 @@ SNIPER.Rank2:
 	SpawnActorOnDeath:
 		Actor: 3TNK.rank2.Husk
 	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 2
+
+JEEP.rank2:
+	Inherits: JEEP
+	Buildable:
+		Prerequisites: ~vehicles.allies, ~techlevel.medium, ~light.upgraded2, ~!light.upgraded3
+	RenderSprites:
+		Image: jeep.rank3
+	ProducibleWithLevel:
 		Prerequisites: ~techlevel.medium
 		InitialLevels: 2
 
-JEEP.2rank:
+JEEP.rank3:
 	Inherits: JEEP
 	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~mediumfix.upgraded, ~!highfix.upgraded
+		Prerequisites: ~vehicles.allies, ~techlevel.high, ~light.upgraded3
 	RenderSprites:
-		Image: jeep.2rank
+		Image: jeep.rank3
 	ProducibleWithLevel:
-		Prerequisites: ~techlevel.low
+		Prerequisites: ~techlevel.high
+		InitialLevels: 3
+
+FTRK.rank2:
+	Inherits: FTRK
+	Buildable:
+		Prerequisites: ~vehicles.soviet, ~techlevel.medium, ~light.upgraded2, ~!light.upgraded3
+	RenderSprites:
+		Image: ftrk.rank2
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.medium
 		InitialLevels: 2
 
-JEEP.3rank:
-	Inherits: JEEP
+FTRK.rank3:
+	Inherits: FTRK
 	Buildable:
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~highfix.upgraded
+		Prerequisites: ~vehicles.soviet, ~techlevel.high, ~light.upgraded3
 	RenderSprites:
-		Image: jeep.3rank
+		Image: ftrk.rank3
 	ProducibleWithLevel:
-		Prerequisites: ~techlevel.low
+		Prerequisites: ~techlevel.high
+		InitialLevels: 3
+
+APC.rank2:
+	Inherits: APC
+	Buildable:
+		Prerequisites: ~vehicles.soviet, ~techlevel.medium, ~light.upgraded2, ~!light.upgraded3
+	RenderSprites:
+		Image: apc.rank2
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.medium
+		InitialLevels: 2
+
+APC.rank3:
+	Inherits: APC
+	Buildable:
+		Prerequisites: ~vehicles.soviet, ~techlevel.high, ~light.upgraded3
+	RenderSprites:
+		Image: apc.rank3
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
 		InitialLevels: 3
 
 ARTY.rank2:

@@ -149,7 +149,7 @@ TRUK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~!mediumfix.upgraded, ~!highfix.upgraded
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~!light.upgraded2, ~!light.upgraded3
 		Description: Fast tank, good for scouting.\n  Strong vs Light armor\n  Weak vs Infantry, Tanks, Aircraft
 	RevealsShroud:
 		Range: 7c576
@@ -192,7 +192,7 @@ TRUK:
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded
+		Prerequisites: light.upgraded
 
 2TNK:
 	Inherits: ^TrackedVehicle
@@ -530,7 +530,7 @@ JEEP:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
-		Prerequisites: ~vehicles.allies, ~techlevel.low, ~!mediumfix.upgraded, ~!highfix.upgraded
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~!light.upgraded2, ~!light.upgraded3
 		Description: Fast scout & anti-infantry vehicle.\nCan carry one infantry.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
 	RevealsShroud:
 		Range: 9c256
@@ -554,7 +554,7 @@ JEEP:
 	WithSpriteTurret:
 		RequiresCondition: !ifv-medic && !ifv-mechanic && ifv-dog
 	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded
+		Prerequisites: light.upgraded
 	Cargo:
 		Types: Infantry
 		MaxWeight: 1
@@ -757,7 +757,7 @@ FTRK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
-		Prerequisites: ~vehicles.soviet, ~techlevel.low
+		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~!light.upgraded2, ~!light.upgraded3
 		Description: Mobile unit with mounted Flak cannon.\n  Strong vs Infantry, Light armor, Aircraft\n  Weak vs Tanks
 	RevealsShroud:
 		Range: 7c576
@@ -784,6 +784,8 @@ FTRK:
 		LocalOffset: 512,0,192
 		MuzzleSequence: muzzle
 		RequiresCondition: botowner
+	Selectable:
+		Class: ftrk
 	Turreted:
 		TurnSpeed: 10
 		Offset: -298,0,298
@@ -798,7 +800,7 @@ FTRK:
 		DecorationBounds: 28,28
 	SelectionDecorations:
 	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded
+		Prerequisites: light.upgraded
 
 APC:
 	Inherits: ^TrackedVehicle
@@ -818,7 +820,7 @@ APC:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: ~vehicles.soviet, ~techlevel.low
+		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~!light.upgraded2, ~!light.upgraded3
 		Description: Tough infantry transport.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	RevealsShroud:
 		Range: 6c512
@@ -843,6 +845,8 @@ APC:
 		LocalOffset: 85,0,171
 		MuzzleSequence: muzzle
 		RequiresCondition: botowner
+	Selectable:
+		Class: apc
 	DetectCloaked:
 		Range: 1c512
 	AttackFrontal:
@@ -850,7 +854,7 @@ APC:
 	Targetable:
 		TargetTypes: Ground, Repair, Vehicle, Heavy
 	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded
+		Prerequisites: light.upgraded
 
 MNLY:
 	Inherits: ^TrackedVehicle

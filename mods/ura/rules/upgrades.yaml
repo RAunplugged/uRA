@@ -20,7 +20,7 @@ upgrade.tnkd.unlock:
 	Tooltip:
 		Name: Unlock Tank Destroyer
 	Valued:
-		Cost: 750
+		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: fix, ~vehicles.germany, ~techlevel.high, ~!upgrade.tnkd.unlock
@@ -90,7 +90,7 @@ upgrade.inf.rank1:
 		Description: Enables Veterancy I\ninfantry production.
 		BuildLimit: 1
 	RenderSprites:
-		Image: infspeed1
+		Image: inf.rank1
 	ProvidesPrerequisite@default:
 		Prerequisite: barracks.upgraded
 
@@ -101,15 +101,117 @@ upgrade.inf.rank2:
 	Valued:
 		Cost: 1500
 	Buildable:
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 10
 		Prerequisites: ~barracks, techcenter, ~techlevel.high, ~barracks.upgraded, ~!upgrade.inf.rank2, ~!barracks.upgraded2
 		Queue: Upgrade
 		Description: Enables Veterancy II\ninfantry production.
 		BuildLimit: 1
 	RenderSprites:
-		Image: infspeed2
+		Image: inf.rank2
 	ProvidesPrerequisite@default:
 		Prerequisite: barracks.upgraded2
+
+upgrade.alight.rank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Light Vehicles Veterancy I
+	Valued:
+		Cost: 500
+	Buildable:
+		BuildPaletteOrder: 20
+		Prerequisites: ~vehicles.allies, ~techlevel.low, ~!light.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\nRanger and Light Tank\n production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: alight.rank1
+	ProvidesPrerequisite@default:
+		Prerequisite: light.upgraded
+
+upgrade.alight.rank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Light Vehicles Veterancy II
+	Valued:
+		Cost: 750
+	Buildable:
+		BuildPaletteOrder: 20
+		Prerequisites: fix, ~vehicles.allies, ~techlevel.medium, ~light.upgraded, ~!light.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy II\nRanger and Light Tank\n production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: alight.rank2
+	ProvidesPrerequisite@default:
+		Prerequisite: light.upgraded2
+
+upgrade.alight.rank3:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Light Vehicles Veterancy III
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 20
+		Prerequisites: fix, techcenter, ~vehicles.allies, ~techlevel.high, ~light.upgraded2, ~!light.upgraded3
+		Queue: Upgrade
+		Description: Enables Veterancy III\nRanger and Light Tank\n production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: alight.rank3
+	ProvidesPrerequisite@default:
+		Prerequisite: light.upgraded3
+
+upgrade.slight.rank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Light Vehicles Veterancy I
+	Valued:
+		Cost: 500
+	Buildable:
+		BuildPaletteOrder: 20
+		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~!light.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\nFlack Track and APC\n production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: slight.rank1
+	ProvidesPrerequisite@default:
+		Prerequisite: light.upgraded
+
+upgrade.slight.rank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Light Vehicles Veterancy II
+	Valued:
+		Cost: 750
+	Buildable:
+		BuildPaletteOrder: 20
+		Prerequisites: fix, ~vehicles.soviet, ~techlevel.medium, ~light.upgraded, ~!light.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy II\nFlak Track and APC\n production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: slight.rank2
+	ProvidesPrerequisite@default:
+		Prerequisite: light.upgraded2
+
+upgrade.slight.rank3:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Light Vehicles Veterancy III
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 20
+		Prerequisites: fix, techcenter, ~vehicles.soviet, ~techlevel.high, ~light.upgraded2, ~!light.upgraded3
+		Queue: Upgrade
+		Description: Enables Veterancy III\nFlak Track and APC\n production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: slight.rank3
+	ProvidesPrerequisite@default:
+		Prerequisite: light.upgraded3
 
 upgrade.2tnk.rank1:
 	Inherits: ^UpgradeActor
@@ -296,6 +398,14 @@ barracks.upgraded:
 warfactory.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
+	ProvidesPrerequisite@lightvehicleupgrade:
+		Prerequisite: light.upgraded
+	ProvidesPrerequisite@lightvehicleupgrade2:
+		RequiresPrerequisites: servicedepot.upgraded
+		Prerequisite: light.upgraded2
+	ProvidesPrerequisite@lightvehicleupgrade3:
+		RequiresPrerequisites: servicedepot.upgraded, techcenter.upgraded
+		Prerequisite: light.upgraded3
 	ProvidesPrerequisite@MEDIUMFIX:
 		RequiresPrerequisites: servicedepot.upgraded
 		Prerequisite: mediumfix.upgraded
@@ -310,6 +420,12 @@ aircraft.upgraded:
 servicedepot.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
+	ProvidesPrerequisite@lightvehicleupgrade2:
+		RequiresPrerequisites: warfactory.upgraded
+		Prerequisite: light.upgraded2
+	ProvidesPrerequisite@lightvehicleupgrade3:
+		RequiresPrerequisites: warfactory.upgraded, techcenter.upgraded
+		Prerequisite: light.upgraded3
 	ProvidesPrerequisite@tankupgrade:
 		Prerequisite: tank.upgraded
 	ProvidesPrerequisite@tankupgrade2:
@@ -340,6 +456,9 @@ techcenter.upgraded:
 	ProvidesPrerequisite@barracksupgrade2:
 		RequiresPrerequisites: barracks.upgraded
 		Prerequisite: barracks.upgraded2
+	ProvidesPrerequisite@lightvehicleupgrade3:
+		RequiresPrerequisites: warfactory.upgraded, servicedepot.upgraded
+		Prerequisite: light.upgraded3
 	ProvidesPrerequisite@tankupgrade2:
 		RequiresPrerequisites: servicedepot.upgraded
 		Prerequisite: tank.upgraded2
