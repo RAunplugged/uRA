@@ -784,8 +784,6 @@ FTRK:
 		LocalOffset: 512,0,192
 		MuzzleSequence: muzzle
 		RequiresCondition: botowner
-	Selectable:
-		Class: ftrk
 	Turreted:
 		TurnSpeed: 10
 		Offset: -298,0,298
@@ -798,6 +796,7 @@ FTRK:
 	WithSpriteTurret:
 	Selectable:
 		DecorationBounds: 28,28
+		Class: ftrk
 	SelectionDecorations:
 	ProducibleWithLevel:
 		Prerequisites: light.upgraded
