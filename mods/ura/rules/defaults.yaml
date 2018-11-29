@@ -1060,6 +1060,9 @@
 	MapEditorData:
 		Categories: Tech building
 
+^CaptureBuilding:
+	Inherits: ^TechBuilding
+
 ^AmmoBox:
 	Inherits: ^TechBuilding
 	Tooltip:

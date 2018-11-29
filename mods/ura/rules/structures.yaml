@@ -2275,7 +2275,7 @@ MSLO:
 # Neutral structures (capturable)
 
 OILB:
-	Inherits: ^TechBuilding
+	Inherits: ^CaptureBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Oil Derrick
@@ -2319,7 +2319,7 @@ OILB:
 		Action: ChangeOwner
 
 HOSP:
-	Inherits: ^TechBuilding
+	Inherits: ^CaptureBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Hospital
@@ -2359,7 +2359,7 @@ HOSP:
 	ProvidesPrerequisite@buildingname:
 
 MISS:
-	Inherits: ^TechBuilding
+	Inherits: ^CaptureBuilding
 	Inherits@IDISABLE: ^DisableOnLowPowerOrPowerDownMute
 	Inherits@shape: ^3x2Shape
 	Tooltip:
@@ -2423,7 +2423,7 @@ MISS:
 	ProvidesPrerequisite@buildingname:
 
 FCOM:
-	Inherits: ^TechBuilding
+	Inherits: ^CaptureBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Forward Command
@@ -2489,7 +2489,7 @@ FCOM:
 	ProvidesPrerequisite@buildingname:
 
 BIO:
-	Inherits: ^TechBuilding
+	Inherits: ^CaptureBuilding
 	Inherits@shape: ^2x2Shape
 	Tooltip:
 		Name: Biological Lab
