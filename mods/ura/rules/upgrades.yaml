@@ -82,7 +82,7 @@ upgrade.inf.rank1:
 	Tooltip:
 		Name: Infantry Veterancy I
 	Valued:
-		Cost: 1000
+		Cost: 1500
 	Buildable:
 		BuildPaletteOrder: 10
 		Prerequisites: ~barracks, ~techlevel.infonly, ~!upgrade.inf.rank1, ~!barracks.upgraded
@@ -99,7 +99,7 @@ upgrade.inf.rank2:
 	Tooltip:
 		Name: Infantry Veterancy II
 	Valued:
-		Cost: 1500
+		Cost: 2000
 	Buildable:
 		BuildPaletteOrder: 10
 		Prerequisites: barracks, techcenter, ~techlevel.high, ~barracks.upgraded, ~!upgrade.inf.rank2, ~!barracks.upgraded2
