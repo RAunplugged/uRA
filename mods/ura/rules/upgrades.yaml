@@ -102,7 +102,7 @@ upgrade.inf.rank2:
 		Cost: 1500
 	Buildable:
 		BuildPaletteOrder: 10
-		Prerequisites: ~barracks, techcenter, ~techlevel.high, ~barracks.upgraded, ~!upgrade.inf.rank2, ~!barracks.upgraded2
+		Prerequisites: barracks, techcenter, ~techlevel.high, ~barracks.upgraded, ~!upgrade.inf.rank2, ~!barracks.upgraded2
 		Queue: Upgrade
 		Description: Enables Veterancy II\ninfantry production.
 		BuildLimit: 1
