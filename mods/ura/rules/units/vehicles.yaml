@@ -1095,9 +1095,9 @@ CTNK:
 	Valued:
 		Cost: 1350
 	Health:
-		HP: 450
+		HP: 300
 	Armor:
-		Type: Light
+		Type: Heavy
 	Mobile:
 		Speed: 113
 		Locomotor: heavywheeled
