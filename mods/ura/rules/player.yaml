@@ -18,6 +18,7 @@ Player:
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
 		SpeedUp: True
+		SpectatorUIOrder: 1
 	ClassicProductionQueue@Defense:
 		Type: Defense
 		LowPowerModifier: 300
@@ -28,6 +29,7 @@ Player:
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
 		SpeedUp: True
+		SpectatorUIOrder: 2
 	ClassicProductionQueue@Vehicle:
 		Type: Vehicle
 		LowPowerModifier: 300
@@ -79,6 +81,7 @@ Player:
 		QueuedAudio: UpgradeInProgress
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
+		SpectatorUIOrder: 0
 	PlaceBuilding:
 		NewOptionsNotification: NewOptions
 		CannotPlaceNotification: BuildingCannotPlaceAudio
