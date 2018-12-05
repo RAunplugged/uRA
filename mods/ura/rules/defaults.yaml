@@ -106,16 +106,10 @@
 	RangeMultiplier@RANK-ELITE:
 		RequiresCondition: rank-elite
 		Modifier: 115
-	SelfHealing@RANK-2:
-		PercentageStep: 5
-		Delay: 75
-		HealIfBelow: 50
-		DamageCooldown: 150
-		RequiresCondition: rank-veteran == 2
 	SelfHealing@RANK-3:
 		PercentageStep: 5
 		Delay: 75
-		HealIfBelow: 75
+		HealIfBelow: 50
 		DamageCooldown: 150
 		RequiresCondition: rank-veteran == 3
 	SelfHealing@ELITE:

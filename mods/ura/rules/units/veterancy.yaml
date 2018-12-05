@@ -191,7 +191,7 @@ JEEP.rank2:
 	Buildable:
 		Prerequisites: ~vehicles.allies, ~techlevel.medium, ~light.upgraded2, ~!light.upgraded3
 	RenderSprites:
-		Image: jeep.rank3
+		Image: jeep.rank2
 	ProducibleWithLevel:
 		Prerequisites: ~techlevel.medium
 		InitialLevels: 2

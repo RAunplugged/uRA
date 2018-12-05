@@ -344,7 +344,7 @@ TRUK:
 		OwnerType: InternalName
 		EffectiveOwnerFromOwner: true
 	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded, servicedepot.upgraded
+		Prerequisites: tank.upgraded
 
 4TNK:
 	Inherits: ^TrackedVehicle
