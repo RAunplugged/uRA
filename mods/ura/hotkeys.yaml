@@ -22,7 +22,7 @@ ProductionTypeNaval: I
 	Description: Naval Tab 
 	Types: Production
 
-ProductionTypeUpgrade: R
+ProductionTypeUpgrade: O
 	Description: Upgrade Tab
 	Types: Production
 
