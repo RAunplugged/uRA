@@ -75,7 +75,7 @@ HIND:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 20
-		Prerequisites: ~hpad, ~techlevel.medium
+		Prerequisites: ~hpad, ~techlevel.medium, ~!air1.upgraded2
 		Description: Helicopter gunship armed\nwith dual chainguns.\n  Strong vs Infantry, Light armor\n  Weak vs Tanks, Aircraft
 	Aircraft:
 		LandWhenIdle: false
@@ -144,7 +144,7 @@ HIND:
 	SpawnActorOnDeath:
 		Actor: HIND.Husk
 	ProducibleWithLevel:
-		Prerequisites: aircraft.upgraded
+		Prerequisites: air1.upgraded
 
 HELI:
 	Inherits: ^Helicopter
@@ -303,7 +303,7 @@ YAK:
 	SpawnActorOnDeath:
 		Actor: YAK.Husk
 	ProducibleWithLevel:
-		Prerequisites: aircraft.upgraded
+		Prerequisites: air1.upgraded
 
 MIG:
 	Inherits: ^Plane

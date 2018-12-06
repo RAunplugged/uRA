@@ -145,3 +145,8 @@ MissileSiloVoice:
 	Voices:
 		Select: 
 		Build: buzzy1
+
+GPSVoice:
+	Voices:
+		Select: 
+		Build: toney7

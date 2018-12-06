@@ -1,5 +1,14 @@
 # Production Icons (rank1 upgrades are defined here, given they don't need unit duplicates)
 
+tnkd.unlock:
+	icon: tnkd.unlockicon
+e9.unlock:
+	icon: e9.unlockicon
+e10.unlock:
+	icon: e10.unlockicon
+sniper.unlock:
+	icon: sniper.unlockicon
+
 inf.rank1:
 	icon: inf.rank1icon
 inf.rank2:
@@ -26,3 +35,7 @@ slight.rank2:
 	icon: slight.rank2icon
 slight.rank3:
 	icon: slight.rank3icon
+hind.rank1:
+	icon: hind.rank1icon
+yak.rank1:
+	icon: yak.rank1icon

@@ -28,7 +28,7 @@ upgrade.tnkd.unlock:
 		Description: Enables Veterancy I\ninfantry production.
 		BuildLimit: 1
 	RenderSprites:
-		Image: tnkd
+		Image: tnkd.unlock
 
 upgrade.e9.unlock:
 	Inherits: ^UpgradeActor
@@ -43,7 +43,7 @@ upgrade.e9.unlock:
 		Description: Unlocks production of\nthe Grenade Launcher.
 		BuildLimit: 1
 	RenderSprites:
-		Image: e9
+		Image: e9.unlock
 
 upgrade.e10.unlock:
 	Inherits: ^UpgradeActor
@@ -58,7 +58,7 @@ upgrade.e10.unlock:
 		Description: Unlocks production of\nthe Machine Gunner.
 		BuildLimit: 1
 	RenderSprites:
-		Image: e10
+		Image: e10.unlock
 
 upgrade.sniper.unlock:
 	Inherits: ^UpgradeActor
@@ -73,7 +73,7 @@ upgrade.sniper.unlock:
 		Description: Unlocks production of\nthe British Sniper.
 		BuildLimit: 1
 	RenderSprites:
-		Image: sniper
+		Image: sniper.unlock
 
 # Unit Upgrades
 
@@ -376,12 +376,80 @@ upgrade.v2rl.rank2:
 		BuildPaletteOrder: 50
 		Prerequisites: dome, techcenter, ~vehicles.soviet, ~techlevel.medium, ~ranged.upgraded, ~!ranged.upgraded2
 		Queue: Upgrade
-		Description: Enables Veterancy I\nV2 production.
+		Description: Enables Veterancy II\nV2 production.
 		BuildLimit: 1
 	RenderSprites:
 		Image: v2rl.rank2
 	ProvidesPrerequisite@default:
 		Prerequisite: ranged.upgraded2
+
+upgrade.hind.rank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Hind Veterancy I
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 70
+		Prerequisites: hpad, ~aircraft.allies, ~techlevel.medium, ~!air1.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\nHind production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: hind.rank1
+	ProvidesPrerequisite@default:
+		Prerequisite: air1.upgraded
+
+upgrade.hind.rank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Hind Veterancy II
+	Valued:
+		Cost: 1500
+	Buildable:
+		BuildPaletteOrder: 70
+		Prerequisites: hpad, techcenter, ~aircraft.allies, ~techlevel.high, ~air1.upgraded, ~!air1.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy II\nHind production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: hind.rank2
+	ProvidesPrerequisite@default:
+		Prerequisite: air1.upgraded2
+
+upgrade.yak.rank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Yak Veterancy I
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 70
+		Prerequisites: afld, ~aircraft.soviet, ~techlevel.medium, ~!air1.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\nYak production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: yak.rank1
+	ProvidesPrerequisite@default:
+		Prerequisite: air1.upgraded
+
+upgrade.yak.rank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Yak Veterancy II
+	Valued:
+		Cost: 1500
+	Buildable:
+		BuildPaletteOrder: 70
+		Prerequisites: afld, techcenter, ~aircraft.soviet, ~techlevel.high, ~air1.upgraded, ~!air1.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy II\nYak production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: yak.rank2
+	ProvidesPrerequisite@default:
+		Prerequisite: air1.upgraded2
 
 # Infiltration Tech Tree
 
@@ -416,15 +484,20 @@ warfactory.upgraded:
 aircraft.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
+	ProvidesPrerequisite@air1upgrade:
+		Prerequisite: air1.upgraded
+	ProvidesPrerequisite@air1upgrade2:
+		RequiresPrerequisites: techcenter.upgraded
+		Prerequisite: air1.upgraded2
 
 servicedepot.upgraded:
 	AlwaysVisible:
 	ProvidesPrerequisite:
 	ProvidesPrerequisite@lightvehicleupgrade2:
-		RequiresPrerequisites: warfactory.upgraded
+		RequiresPrerequisites: light.upgraded
 		Prerequisite: light.upgraded2
 	ProvidesPrerequisite@lightvehicleupgrade3:
-		RequiresPrerequisites: warfactory.upgraded, techcenter.upgraded
+		RequiresPrerequisites: light.upgraded, techcenter.upgraded
 		Prerequisite: light.upgraded3
 	ProvidesPrerequisite@tankupgrade:
 		Prerequisite: tank.upgraded
@@ -457,15 +530,18 @@ techcenter.upgraded:
 		RequiresPrerequisites: barracks.upgraded
 		Prerequisite: barracks.upgraded2
 	ProvidesPrerequisite@lightvehicleupgrade3:
-		RequiresPrerequisites: warfactory.upgraded, servicedepot.upgraded
+		RequiresPrerequisites: light.upgraded2
 		Prerequisite: light.upgraded3
 	ProvidesPrerequisite@tankupgrade2:
-		RequiresPrerequisites: servicedepot.upgraded
+		RequiresPrerequisites: tank.upgraded
 		Prerequisite: tank.upgraded2
 	ProvidesPrerequisite@rangedupgrade2:
-		RequiresPrerequisites: radardome.upgraded
+		RequiresPrerequisites: ranged.upgraded
 		Prerequisite: ranged.upgraded2
-	ProvidesPrerequisite@HIGHIES:
+	ProvidesPrerequisite@air1upgrade2:
+		RequiresPrerequisites: air1.upgraded
+		Prerequisite: air1.upgraded2
+	ProvidesPrerequisite@HIGHFIX:
 		RequiresPrerequisites: warfactory.upgraded, servicedepot.upgraded
 		Prerequisite: highfix.upgraded
 

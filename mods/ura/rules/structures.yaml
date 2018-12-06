@@ -1456,6 +1456,10 @@ ATEK:
 		ReferencePoint: Top
 		ZOffset: 256
 		RequiresCondition: upgraded
+	VoiceAnnouncement:
+		Voice: Build
+	Voiced:
+		VoiceSet: GPSVoice
 	GrantConditionOnPrerequisite:
 		Condition: upgraded
 		Prerequisites: techcenter.upgraded

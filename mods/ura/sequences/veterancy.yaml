@@ -1034,3 +1034,27 @@ v2rl.rank2:
 		Facings: 32
 		UseClassicFacingFudge: True
 	icon: v2rl.rank2icon
+
+ # Aircraft
+
+yak.rank2:
+	idle:
+		Facings: 16
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: yak.rank2icon
+
+hind.rank2:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	rotor: lrotorlg
+		Length: 4
+	slow-rotor: lrotorlg
+		Start: 4
+		Length: 8
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	icon: hind.rank2icon

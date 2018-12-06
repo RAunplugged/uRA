@@ -265,3 +265,25 @@ V2RL.rank2:
 	ProducibleWithLevel:
 		Prerequisites: ~techlevel.high
 		InitialLevels: 2
+
+# Aircraft
+
+HIND.rank2:
+	Inherits: HIND
+	Buildable:
+		Prerequisites: ~hpad, ~techlevel.high, ~air1.upgraded2
+	RenderSprites:
+		Image: hind.rank2
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 2
+
+YAK.rank2:
+	Inherits: YAK
+	Buildable:
+		Prerequisites: ~afld, ~techlevel.high, ~air1.upgraded2
+	RenderSprites:
+		Image: yak.rank2
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 2
