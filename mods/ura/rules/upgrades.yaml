@@ -2,7 +2,10 @@
 
 # Inheritance
 # Unit Unlocks
-# Unit Upgrades
+# Unit Upgrades - infantry
+# Unit Upgrades - vehicles
+# Unit Upgrades - aircraft
+# Unit Upgrades - ships
 # Infiltration Tech Tree
 
 # Inheritance
@@ -75,7 +78,7 @@ upgrade.sniper.unlock:
 	RenderSprites:
 		Image: sniper.unlock
 
-# Unit Upgrades
+# Unit Upgrades - infantry
 
 upgrade.inf.rank1:
 	Inherits: ^UpgradeActor
@@ -110,6 +113,8 @@ upgrade.inf.rank2:
 		Image: inf.rank2
 	ProvidesPrerequisite@default:
 		Prerequisite: barracks.upgraded2
+
+# Unit Upgrades - vehicles
 
 upgrade.alight.rank1:
 	Inherits: ^UpgradeActor
@@ -383,6 +388,8 @@ upgrade.v2rl.rank2:
 	ProvidesPrerequisite@default:
 		Prerequisite: ranged.upgraded2
 
+# Unit Upgrades - aircraft
+
 upgrade.hind.rank1:
 	Inherits: ^UpgradeActor
 	Tooltip:
@@ -451,6 +458,110 @@ upgrade.yak.rank2:
 	ProvidesPrerequisite@default:
 		Prerequisite: air1.upgraded2
 
+upgrade.heli.rank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Longbow Veterancy I
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 80
+		Prerequisites: hpad, techcenter, ~aircraft.allies, ~techlevel.high, ~!air2.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\nLongbow production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: heli.rank1
+	ProvidesPrerequisite@default:
+		Prerequisite: air2.upgraded
+
+upgrade.heli.rank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Longbow Veterancy II
+	Valued:
+		Cost: 1500
+	Buildable:
+		BuildPaletteOrder: 80
+		Prerequisites: hpad, techcenter, ~aircraft.allies, ~techlevel.high, ~air2.upgraded, ~!air2.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy II\nLongbow production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: heli.rank2
+	ProvidesPrerequisite@default:
+		Prerequisite: air2.upgraded2
+
+upgrade.heli.rank3:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Longbow Veterancy III
+	Valued:
+		Cost: 2000
+	Buildable:
+		BuildPaletteOrder: 80
+		Prerequisites: hpad, techcenter, ~aircraft.allies, ~techlevel.high, ~air2.upgraded2, ~!air2.upgraded3
+		Queue: Upgrade
+		Description: Enables Veterancy III\nLongbow production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: heli.rank3
+	ProvidesPrerequisite@default:
+		Prerequisite: air2.upgraded3
+
+upgrade.mig.rank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: MiG Veterancy I
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 80
+		Prerequisites: afld, techcenter, ~aircraft.soviet, ~techlevel.high, ~!air2.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\nMiG production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: mig.rank1
+	ProvidesPrerequisite@default:
+		Prerequisite: air2.upgraded
+
+upgrade.mig.rank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: MiG Veterancy II
+	Valued:
+		Cost: 1500
+	Buildable:
+		BuildPaletteOrder: 80
+		Prerequisites: afld, techcenter, ~aircraft.soviet, ~techlevel.high, ~air2.upgraded, ~!air2.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy II\nMiG production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: mig.rank2
+	ProvidesPrerequisite@default:
+		Prerequisite: air2.upgraded2
+
+upgrade.mig.rank3:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: MiG Veterancy III
+	Valued:
+		Cost: 2000
+	Buildable:
+		BuildPaletteOrder: 80
+		Prerequisites: afld, techcenter, ~aircraft.soviet, ~techlevel.high, ~air2.upgraded2, ~!air2.upgraded3
+		Queue: Upgrade
+		Description: Enables Veterancy III\nMiG production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: mig.rank3
+	ProvidesPrerequisite@default:
+		Prerequisite: air2.upgraded3
+
+# Unit Upgrades - ships
+
 # Infiltration Tech Tree
 
 barracks.upgraded:
@@ -489,6 +600,11 @@ aircraft.upgraded:
 	ProvidesPrerequisite@air1upgrade2:
 		RequiresPrerequisites: techcenter.upgraded
 		Prerequisite: air1.upgraded2
+	ProvidesPrerequisite@air2upgrade:
+		Prerequisite: air2.upgraded
+	ProvidesPrerequisite@air2upgrade2:
+		RequiresPrerequisites: techcenter.upgraded
+		Prerequisite: air2.upgraded2
 
 servicedepot.upgraded:
 	AlwaysVisible:
@@ -541,6 +657,9 @@ techcenter.upgraded:
 	ProvidesPrerequisite@air1upgrade2:
 		RequiresPrerequisites: air1.upgraded
 		Prerequisite: air1.upgraded2
+	ProvidesPrerequisite@air2upgrade2:
+		RequiresPrerequisites: air2.upgraded
+		Prerequisite: air2.upgraded2
 	ProvidesPrerequisite@HIGHFIX:
 		RequiresPrerequisites: warfactory.upgraded, servicedepot.upgraded
 		Prerequisite: highfix.upgraded

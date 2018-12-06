@@ -287,3 +287,43 @@ YAK.rank2:
 	ProducibleWithLevel:
 		Prerequisites: ~techlevel.high
 		InitialLevels: 2
+
+HELI.rank2:
+	Inherits: HELI
+	Buildable:
+		Prerequisites: ~hpad, techcenter, ~techlevel.high, ~air2.upgraded2, ~!air2.upgraded3
+	RenderSprites:
+		Image: heli.rank2
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 2
+
+HELI.rank3:
+	Inherits: HELI
+	Buildable:
+		Prerequisites: ~hpad, techcenter, ~techlevel.high, ~air2.upgraded3
+	RenderSprites:
+		Image: heli.rank3
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 3
+
+MIG.rank2:
+	Inherits: MIG
+	Buildable:
+		Prerequisites: ~afld, techcenter, ~techlevel.high, ~air2.upgraded2, ~!air2.upgraded3
+	RenderSprites:
+		Image: mig.rank2
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 2
+
+MIG.rank3:
+	Inherits: MIG
+	Buildable:
+		Prerequisites: ~afld, techcenter, ~techlevel.high, ~air2.upgraded3
+	RenderSprites:
+		Image: mig.rank3
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 3

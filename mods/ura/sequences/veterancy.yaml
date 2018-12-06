@@ -1058,3 +1058,35 @@ hind.rank2:
 		Length: 6
 		Facings: 8
 	icon: hind.rank2icon
+
+heli.rank2:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	rotor: lrotor
+		Length: 4
+	slow-rotor: lrotor
+		Start: 4
+		Length: 8
+	icon: heli.rank2icon
+
+heli.rank3:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	rotor: lrotor
+		Length: 4
+	slow-rotor: lrotor
+		Start: 4
+		Length: 8
+	icon: heli.rank3icon
+
+mig.rank2:
+	idle:
+		Facings: 16
+	icon: mig.rank2icon
+
+mig.rank3:
+	idle:
+		Facings: 16
+	icon: mig.rank3icon

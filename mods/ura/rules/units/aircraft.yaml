@@ -159,7 +159,7 @@ HELI:
 		Queue: Aircraft
 		BuildAtProductionType: Helicopter
 		BuildPaletteOrder: 40
-		Prerequisites: ~hpad, atek, ~techlevel.high
+		Prerequisites: ~hpad, atek, ~techlevel.high, ~!air2.upgraded2, ~!air2.upgraded3
 		BuildDurationModifier: 50
 		Description: Helicopter gunship armed\nwith multi-purpose missiles.\n  Strong vs Buildings, Vehicles, Aircraft\n  Weak vs Infantry
 	Aircraft:
@@ -217,7 +217,7 @@ HELI:
 	SpawnActorOnDeath:
 		Actor: HELI.Husk
 	ProducibleWithLevel:
-		Prerequisites: aircraft.upgraded, radardome.upgraded
+		Prerequisites: air2.upgraded
 
 YAK:
 	Inherits: ^Plane
@@ -318,7 +318,7 @@ MIG:
 		Queue: Aircraft
 		BuildAtProductionType: Plane
 		BuildPaletteOrder: 50
-		Prerequisites: ~afld, stek, ~techlevel.high
+		Prerequisites: ~afld, stek, ~techlevel.high, ~!air2.upgraded2, ~!air2.upgraded3
 		BuildDurationModifier: 50
 		Description: Fast Air- and Ground-Attack Plane.\n  Strong vs Buildings, Vehicles\n  Weak vs Infantry
 	Aircraft:
@@ -380,7 +380,7 @@ MIG:
 	SpawnActorOnDeath:
 		Actor: MIG.Husk
 	ProducibleWithLevel:
-		Prerequisites: aircraft.upgraded, radardome.upgraded
+		Prerequisites: air2.upgraded
 
 BADR:
 	Inherits: ^NeutralPlane

@@ -39,3 +39,7 @@ hind.rank1:
 	icon: hind.rank1icon
 yak.rank1:
 	icon: yak.rank1icon
+heli.rank1:
+	icon: heli.rank1icon
+mig.rank1:
+	icon: mig.rank1icon
