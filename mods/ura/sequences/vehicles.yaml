@@ -196,6 +196,7 @@ tnkd:
 tnkd.husk:
 	idle: tnkd
 		Facings: 32
+		UseClassicFacingFudge: True
 		ZOffset: -512
 
 arty:

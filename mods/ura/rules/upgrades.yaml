@@ -345,7 +345,7 @@ upgrade.arty.rank2:
 		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 50
-		Prerequisites: dome, techcenter, ~vehicles.allies, ~techlevel.medium, ~ranged.upgraded, ~!ranged.upgraded2
+		Prerequisites: dome, techcenter, ~vehicles.allies, ~techlevel.high, ~ranged.upgraded, ~!ranged.upgraded2
 		Queue: Upgrade
 		Description: Enables Veterancy II\nArtillery production.
 		BuildLimit: 1
@@ -379,7 +379,7 @@ upgrade.v2rl.rank2:
 		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 50
-		Prerequisites: dome, techcenter, ~vehicles.soviet, ~techlevel.medium, ~ranged.upgraded, ~!ranged.upgraded2
+		Prerequisites: dome, techcenter, ~vehicles.soviet, ~techlevel.high, ~ranged.upgraded, ~!ranged.upgraded2
 		Queue: Upgrade
 		Description: Enables Veterancy II\nV2 production.
 		BuildLimit: 1
