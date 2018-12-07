@@ -3,7 +3,6 @@ Player:
 
 	# All bots have specific cost/production modifiers related to their difficulty level:
 	# Easy (-20%), Normal, Hard (+20%), Brutal (+40%), Naval and Naval-Hard (+20%).
-	# All bots are granted +25% Aircraft Cost/Production boost on top of their specific modifier.
 	# related files: ai-easy.yaml, ai-normal.yaml, ai-hard.yaml, ai-brutal.yaml, ai-naval-hard.yaml
 
 	# Easy AI | Vanilla Mode | -20% Cost/Production penalty
