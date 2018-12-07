@@ -523,12 +523,12 @@ STNK.Easy:
 		Image: stnk
 	-MapEditorData:
 
-# Aircraft | +25% Cost/Production boost on top of bot specific Cost/Production modifier
+# Aircraft
 
 HIND.Easy:
 	Inherits: HIND
 	Valued:
-		Cost: 1215
+		Cost: 1620
 	Buildable:
 		BuildPaletteOrder: 9000
 		Prerequisites: hpad.easy, ~techlevel.medium, ~aircraft.ai
@@ -538,7 +538,7 @@ HIND.Easy:
 HELI.Easy:
 	Inherits: HELI
 	Valued:
-		Cost: 1800
+		Cost: 2400
 	Buildable:
 		BuildPaletteOrder: 9003
 		Prerequisites: hpad.easy, atek.easy, ~techlevel.high, ~aircraft.ai
@@ -548,7 +548,7 @@ HELI.Easy:
 YAK.Easy:
 	Inherits: YAK
 	Valued:
-		Cost: 1215
+		Cost: 1620
 	Buildable:
 		BuildPaletteOrder: 9006
 		Prerequisites: afld.easy, ~techlevel.medium, ~aircraft.ai
@@ -558,7 +558,7 @@ YAK.Easy:
 MIG.Easy:
 	Inherits: MIG
 	Valued:
-		Cost: 1800
+		Cost: 2400
 	Buildable:
 		BuildPaletteOrder: 9009
 		Prerequisites: afld.easy, stek.easy, ~techlevel.high, ~aircraft.ai

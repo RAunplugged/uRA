@@ -522,12 +522,12 @@ STNK.Brutal:
 		Image: stnk
 	-MapEditorData:
 
-# Aircraft | +25% Cost/Production boost on top of bot specific Cost/Production modifier
+# Aircraft
 
 HIND.Brutal:
 	Inherits: HIND
 	Valued:
-		Cost: 610
+		Cost: 810
 	Buildable:
 		BuildPaletteOrder: 9002
 		Prerequisites: hpad.brutal, ~techlevel.medium, ~aircraft.ai
@@ -537,7 +537,7 @@ HIND.Brutal:
 HELI.Brutal:
 	Inherits: HELI
 	Valued:
-		Cost: 900
+		Cost: 1200
 	Buildable:
 		BuildPaletteOrder: 9005
 		Prerequisites: hpad.brutal, atek.brutal, ~techlevel.high, ~aircraft.ai
@@ -549,7 +549,7 @@ HELI.Brutal:
 YAK.Brutal:
 	Inherits: YAK
 	Valued:
-		Cost: 610
+		Cost: 810
 	Buildable:
 		BuildPaletteOrder: 9008
 		Prerequisites: afld.brutal, ~techlevel.medium, ~aircraft.ai
@@ -559,7 +559,7 @@ YAK.Brutal:
 MIG.Brutal:
 	Inherits: MIG
 	Valued:
-		Cost: 900
+		Cost: 1200
 	Buildable:
 		BuildPaletteOrder: 9011
 		Prerequisites: afld.brutal, stek.brutal, ~techlevel.high, ~aircraft.ai
