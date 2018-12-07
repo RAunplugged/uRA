@@ -518,6 +518,8 @@ BARL:
 	-SoundOnDamageTransition:
 	MapEditorData:
 		Categories: Decoration
+	AppearsOnMapPreview:
+		Terrain: Tree
 
 BRL3:
 	Inherits: ^TechBuilding
@@ -542,6 +544,8 @@ BRL3:
 	-SoundOnDamageTransition:
 	MapEditorData:
 		Categories: Decoration
+	AppearsOnMapPreview:
+		Terrain: Tree
 
 AMMOBOX1:
 	Inherits: ^AmmoBox

@@ -938,6 +938,7 @@
 		IsPlayerPalette: True
 	WithMakeAnimation:
 		Condition: build-incomplete
+	AppearsOnMapPreview:
 
 ^ScienceBuilding:
 	Inherits: ^Building
@@ -1005,6 +1006,8 @@
 	WithWallSpriteBody:
 	MapEditorData:
 		Categories: Wall
+	AppearsOnMapPreview:
+		Terrain: Tree
 
 ^FakeBuilding:
 	Inherits: ^Building
@@ -1056,6 +1059,7 @@
 
 ^CaptureBuilding:
 	Inherits: ^TechBuilding
+	AppearsOnMapPreview:
 
 ^AmmoBox:
 	Inherits: ^TechBuilding
@@ -1168,6 +1172,8 @@
 	MapEditorData:
 		ExcludeTilesets: INTERIOR
 		Categories: Tree
+	AppearsOnMapPreview:
+		Terrain: Tree
 
 ^Bridge:
 	Inherits@shape: ^1x1Shape
@@ -1249,6 +1255,8 @@
 	ConditionManager:
 	MapEditorData:
 		Categories: System
+	AppearsOnMapPreview:
+		Color: FFFFFF
 
 ^Mine:
 	Inherits: ^SpriteActor
