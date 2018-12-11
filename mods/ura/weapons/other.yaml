@@ -103,7 +103,7 @@ KVFlame:
 		Image: fb3
 		TrailImage: fb4
 	Warhead@1Dam: SpreadDamage
-		Damage: 8
+		Damage: 9
 		Versus:
 			None: 100
 			Wood: 100
