@@ -64,6 +64,7 @@ Rules:
 	ura|rules/civilian.yaml
 	ura|rules/decoration.yaml
 	ura|rules/defaults.yaml
+	ura|rules/experience.yaml
 	ura|rules/fakes.yaml
 	ura|rules/husks.yaml
 	ura|rules/palettes.yaml
