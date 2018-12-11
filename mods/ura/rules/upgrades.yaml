@@ -23,7 +23,7 @@ upgrade.tnkd.unlock:
 	Tooltip:
 		Name: Unlock Tank Destroyer
 	Valued:
-		Cost: 1000
+		Cost: 750
 	Buildable:
 		BuildPaletteOrder: 40
 		Prerequisites: fix, ~vehicles.germany, ~techlevel.high, ~!upgrade.tnkd.unlock
