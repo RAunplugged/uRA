@@ -1279,6 +1279,8 @@ QTNK:
 	MadTank:
 		DeployedCondition: deployed
 		ChargeDelay: 192
+	WithRangeCircle:
+		Range: 20c0
 	KillsSelf:
 		RequiresCondition: invulnerability
 	Chronoshiftable:
