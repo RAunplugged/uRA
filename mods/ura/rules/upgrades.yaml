@@ -560,6 +560,23 @@ upgrade.mig.rank3:
 	ProvidesPrerequisite@default:
 		Prerequisite: air2.upgraded3
 
+upgrade.parabomb.speed:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Parabomb Badger Speed
+	Valued:
+		Cost: 750
+	Buildable:
+		BuildPaletteOrder: 100
+		Prerequisites: afld, techcenter, ~aircraft.soviet, ~techlevel.high, ~!parabombs.upgraded
+		Queue: Upgrade
+		Description: Enables +15% Speed on\nParabomb badgers.
+		BuildLimit: 1
+	RenderSprites:
+		Image: parabomb.speed
+	ProvidesPrerequisite@default:
+		Prerequisite: parabombs.upgraded
+
 # Unit Upgrades - ships
 
 # Infiltration Tech Tree

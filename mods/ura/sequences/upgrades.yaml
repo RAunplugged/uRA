@@ -53,3 +53,5 @@ heli.rank1:
 	icon: heli.rank1icon
 mig.rank1:
 	icon: mig.rank1icon
+parabomb.speed:
+	icon: pbmb.speedicon
