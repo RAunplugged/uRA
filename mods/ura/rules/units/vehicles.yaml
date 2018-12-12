@@ -1111,6 +1111,16 @@ CTNK:
 		HP: 450
 	Armor:
 		Type: Light
+		RequiresCondition: !upgraded
+	Armor@UPGRADE:
+		Type: Heavy
+		RequiresCondition: upgraded
+	DamageMultiplier:
+		Modifier: 150
+		RequiresCondition: upgraded
+	GrantConditionOnPrerequisite:
+		Condition: upgraded
+		Prerequisites: ctnk.armor.upgraded
 	Mobile:
 		Speed: 113
 		Locomotor: heavywheeled

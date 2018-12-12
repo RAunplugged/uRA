@@ -607,7 +607,7 @@ upgrade.tnkd.accuracy:
 		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 100
-		Prerequisites: atek, ~vehicles.germany, ~techlevel.high, ~upgrade.tnkd.unlock
+		Prerequisites: atek, ~vehicles.germany, ~techlevel.high, ~upgrade.tnkd.unlock, ~!tnkd.accuracy.upgraded
 		Queue: Upgrade
 		Description: Reduces 50% inaccuracy on\nTank Destroyers.
 		BuildLimit: 1
@@ -615,6 +615,23 @@ upgrade.tnkd.accuracy:
 		Image: tnkd.accuracy
 	ProvidesPrerequisite@default:
 		Prerequisite: tnkd.accuracy.upgraded
+
+upgrade.ctnk.armor:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Chrono Tank Heavy Armor
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 100
+		Prerequisites: atek, ~vehicles.allies, ~techlevel.high, ~!ctnk.armor.upgraded
+		Queue: Upgrade
+		Description: Replaces Chrono Tanks'\nLight armor with Heavy armor.
+		BuildLimit: 1
+	RenderSprites:
+		Image: ctnk.armor
+	ProvidesPrerequisite@default:
+		Prerequisite: ctnk.armor.upgraded
 
 upgrade.stnk.speed:
 	Inherits: ^UpgradeActor
@@ -624,7 +641,7 @@ upgrade.stnk.speed:
 		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 100
-		Prerequisites: atek, ~vehicles.england, ~techlevel.high, ~stnk.upgraded
+		Prerequisites: atek, ~vehicles.england, ~techlevel.high, ~!stnk.upgraded
 		Queue: Upgrade
 		Description: Increases +15% speed on\nPhase Transports.
 		BuildLimit: 1

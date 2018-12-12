@@ -50,6 +50,8 @@ stnk.speed:
 	icon: stnk.speedicon
 tnkd.accuracy:
 	icon: tnkd.accuracyicon
+ctnk.armor:
+	icon: ctnk.armoricon
 
 # Aircraft
 
