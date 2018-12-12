@@ -126,7 +126,7 @@ upgrade.alight.rank1:
 		BuildPaletteOrder: 20
 		Prerequisites: ~vehicles.allies, ~techlevel.low, ~!light.upgraded
 		Queue: Upgrade
-		Description: Enables Veterancy I\nRanger and Light Tank\n production.
+		Description: Enables Veterancy I\nRanger and Light Tank production.
 		BuildLimit: 1
 	RenderSprites:
 		Image: alight.rank1
@@ -143,7 +143,7 @@ upgrade.alight.rank2:
 		BuildPaletteOrder: 20
 		Prerequisites: fix, ~vehicles.allies, ~techlevel.medium, ~light.upgraded, ~!light.upgraded2
 		Queue: Upgrade
-		Description: Enables Veterancy II\nRanger and Light Tank\n production.
+		Description: Enables Veterancy II\nRanger and Light Tank production.
 		BuildLimit: 1
 	RenderSprites:
 		Image: alight.rank2
@@ -160,7 +160,7 @@ upgrade.alight.rank3:
 		BuildPaletteOrder: 20
 		Prerequisites: fix, techcenter, ~vehicles.allies, ~techlevel.high, ~light.upgraded2, ~!light.upgraded3
 		Queue: Upgrade
-		Description: Enables Veterancy III\nRanger and Light Tank\n production.
+		Description: Enables Veterancy III\nRanger and Light Tank production.
 		BuildLimit: 1
 	RenderSprites:
 		Image: alight.rank3
@@ -177,7 +177,7 @@ upgrade.slight.rank1:
 		BuildPaletteOrder: 20
 		Prerequisites: ~vehicles.soviet, ~techlevel.low, ~!light.upgraded
 		Queue: Upgrade
-		Description: Enables Veterancy I\nFlack Track and APC\n production.
+		Description: Enables Veterancy I\nFlack Track and APC production.
 		BuildLimit: 1
 	RenderSprites:
 		Image: slight.rank1
@@ -194,7 +194,7 @@ upgrade.slight.rank2:
 		BuildPaletteOrder: 20
 		Prerequisites: fix, ~vehicles.soviet, ~techlevel.medium, ~light.upgraded, ~!light.upgraded2
 		Queue: Upgrade
-		Description: Enables Veterancy II\nFlak Track and APC\n production.
+		Description: Enables Veterancy II\nFlak Track and APC production.
 		BuildLimit: 1
 	RenderSprites:
 		Image: slight.rank2
@@ -211,7 +211,7 @@ upgrade.slight.rank3:
 		BuildPaletteOrder: 20
 		Prerequisites: fix, techcenter, ~vehicles.soviet, ~techlevel.high, ~light.upgraded2, ~!light.upgraded3
 		Queue: Upgrade
-		Description: Enables Veterancy III\nFlak Track and APC\n production.
+		Description: Enables Veterancy III\nFlak Track and APC production.
 		BuildLimit: 1
 	RenderSprites:
 		Image: slight.rank3
@@ -387,6 +387,40 @@ upgrade.v2rl.rank2:
 		Image: v2rl.rank2
 	ProvidesPrerequisite@default:
 		Prerequisite: ranged.upgraded2
+
+upgrade.shightank.rank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: High Tech Vehicle Veterancy I
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 100
+		Prerequisites: fix, stek, ~vehicles.soviet, ~techlevel.high, ~!shightank.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\nHigh Tech Tank production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: shightank.rank1
+	ProvidesPrerequisite@default:
+		Prerequisite: shightank.upgraded
+
+upgrade.shightank.rank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: High Tech Vehicle Veterancy II
+	Valued:
+		Cost: 1500
+	Buildable:
+		BuildPaletteOrder: 100
+		Prerequisites: fix, stek, ~vehicles.soviet, ~techlevel.high, ~shightank.upgraded, ~!shightank.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy II\nHigh Tech Tank production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: shightank.rank2
+	ProvidesPrerequisite@default:
+		Prerequisite: shightank.upgraded2
 
 # Unit Upgrades - aircraft
 

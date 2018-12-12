@@ -42,6 +42,10 @@ slight.rank2:
 	icon: slight.rank2icon
 slight.rank3:
 	icon: slight.rank3icon
+shightank.rank1:
+	icon: shightank.rank1icon
+shightank.rank2:
+	icon: shightank.rank2icon
 
 # Aircraft
 

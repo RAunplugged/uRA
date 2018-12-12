@@ -186,6 +186,30 @@ SNIPER.Rank2:
 		Prerequisites: ~techlevel.high
 		InitialLevels: 2
 
+4TNK.rank2:
+	Inherits: 4TNK
+	Buildable:
+		Prerequisites: fix, stek, ~vehicles.soviet, ~techlevel.high, ~shightank.upgraded2
+	RenderSprites:
+		Image: 4tnk.rank2
+	SpawnActorOnDeath:
+		Actor: 4TNK.rank2.Husk
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 2
+
+4TNK.KV-8.rank2:
+	Inherits: 4TNK.KV-8
+	Buildable:
+		Prerequisites: fix, stek, ~vehicles.ukraine, ~techlevel.high, ~shightank.upgraded2
+	RenderSprites:
+		Image: 4tnk.rank2
+	SpawnActorOnDeath:
+		Actor: 4TNK.kv-8.rank2.Husk
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 2
+
 JEEP.rank2:
 	Inherits: JEEP
 	Buildable:
@@ -262,6 +286,16 @@ V2RL.rank2:
 		Prerequisites: dome, ~vehicles.soviet, ~techlevel.high, ~ranged.upgraded2
 	RenderSprites:
 		Image: v2rl.rank2
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 2
+
+TTNK.rank2:
+	Inherits: TTNK
+	Buildable:
+		Prerequisites: fix, stek, ~vehicles.russia, ~techlevel.high, ~shightank.upgraded2
+	RenderSprites:
+		Image: ttnk.rank2
 	ProducibleWithLevel:
 		Prerequisites: ~techlevel.high
 		InitialLevels: 2

@@ -119,6 +119,28 @@
 	RenderSprites:
 		Image: 4tnk.destroyed
 
+4TNK.rank2.Husk:
+	Inherits: ^Husk
+	Tooltip:
+		Name: Husk (Mammoth Tank)
+	ThrowsParticle@turret:
+		Anim: turret
+	TransformOnCapture:
+		IntoActor: 4tnk.rank2
+	RenderSprites:
+		Image: 4tnk.destroyed
+
+4TNK.KV-8.rank2.Husk:
+	Inherits: ^Husk
+	Tooltip:
+		Name: Husk (Mammoth KV-8)
+	ThrowsParticle@turret:
+		Anim: turret
+	TransformOnCapture:
+		IntoActor: 4tnk.kv-8.rank2
+	RenderSprites:
+		Image: 4tnk.destroyed
+
 TNKD.Husk:
 	Inherits: ^Husk
 	Tooltip:

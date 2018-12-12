@@ -531,7 +531,7 @@ SHOK:
 		Queue: Infantry
 		BuildAtProductionType: Soldier
 		BuildPaletteOrder: 130
-		Prerequisites: ~barr, stek, tsla, ~infantry.russia, ~techlevel.high, ~!barracks.upgraded2
+		Prerequisites: ~barr, stek, ~infantry.russia, ~techlevel.high, ~!barracks.upgraded2
 		Description: Elite infantry with portable Tesla coils.\n  Strong vs Infantry, Vehicles\n  Weak vs Aircraft
 	RevealsShroud:
 		Range: 6c512
