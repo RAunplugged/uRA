@@ -46,6 +46,8 @@ shightank.rank1:
 	icon: shightank.rank1icon
 shightank.rank2:
 	icon: shightank.rank2icon
+stnk.speed:
+	icon: stnk.speedicon
 
 # Aircraft
 

@@ -422,6 +422,23 @@ upgrade.shightank.rank2:
 	ProvidesPrerequisite@default:
 		Prerequisite: shightank.upgraded2
 
+upgrade.stnk.speed:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Phase Transport Speed
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 100
+		Prerequisites: fix, atek, ~vehicles.england, ~techlevel.high, ~stnk.upgraded
+		Queue: Upgrade
+		Description: Increases +15% speed on\nPhase Transports.
+		BuildLimit: 1
+	RenderSprites:
+		Image: stnk.speed
+	ProvidesPrerequisite@default:
+		Prerequisite: stnk.upgraded
+
 # Unit Upgrades - aircraft
 
 upgrade.hind.rank1:
@@ -602,9 +619,9 @@ upgrade.parabomb.speed:
 		Cost: 750
 	Buildable:
 		BuildPaletteOrder: 100
-		Prerequisites: afld, techcenter, ~aircraft.soviet, ~techlevel.high, ~!parabombs.upgraded
+		Prerequisites: afld, stek, ~aircraft.soviet, ~techlevel.high, ~!parabombs.upgraded
 		Queue: Upgrade
-		Description: Enables +15% Speed on\nParabomb badgers.
+		Description: Enables +15% Speed on\nParabomb Badgers.
 		BuildLimit: 1
 	RenderSprites:
 		Image: parabomb.speed

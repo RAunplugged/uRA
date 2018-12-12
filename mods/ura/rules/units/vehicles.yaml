@@ -28,6 +28,8 @@ MCV:
 		RevealGeneratedShroud: False
 	RevealsShroud@GAPGEN:
 		Range: 5c384
+	DetectCloaked:
+		Range: 1c512
 	RevealOnDeath:
 		Duration: 80
 		Radius: 2c512
@@ -81,6 +83,8 @@ HARV:
 	RevealOnDeath:
 		Duration: 80
 		Radius: 2c512
+	DetectCloaked:
+		Range: 1c512
 	GpsDot:
 		String: Harvester
 	Selectable:
@@ -1138,6 +1142,10 @@ STNK:
 	Inherits@AUTOTARGET: ^AutoTargetGround
 	Tooltip:
 		Name: Phase Transport
+		RequiresCondition: !upgraded
+	Tooltip@UPGRADED:
+		Name: Speedy Phase Transport
+		RequiresCondition: upgraded
 	Valued:
 		Cost: 1350
 	Health:
@@ -1148,6 +1156,12 @@ STNK:
 		Speed: 142
 		Locomotor: heavywheeled
 		RequiresCondition: !notmobile
+	SpeedMultiplier:
+		Modifier: 115
+		RequiresCondition: upgraded
+	GrantConditionOnPrerequisite:
+		Condition: upgraded
+		Prerequisites: stnk.upgraded
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 200
