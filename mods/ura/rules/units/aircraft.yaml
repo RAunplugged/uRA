@@ -423,7 +423,6 @@ BADR:
 
 BADR.Bomber:
 	Inherits: ^NeutralPlane
-	Inherits@GAINSEXPERIENCE: ^GainsParabombExperience
 	Tooltip:
 		Name: Badger
 	Health:
@@ -440,6 +439,12 @@ BADR.Bomber:
 		Weapon: ParaBomb
 	AmmoPool:
 		Ammo: 7
+	SpeedMultiplier@UPGRADE:
+		RequiresCondition: upgraded
+		Modifier: 115
+	GrantConditionOnPrerequisite:
+		Condition: upgraded
+		Prerequisites: parabombs.upgraded
 	AttackBomber:
 	SelectionDecorations:
 		RenderSelectionBars: False
@@ -462,8 +467,6 @@ BADR.Bomber:
 		Actor: BADR.Husk
 	RenderSprites:
 		Image: badr
-	ProducibleWithLevel:
-		Prerequisites: parabombs.upgraded
 
 U2:
 	Inherits: ^NeutralPlane

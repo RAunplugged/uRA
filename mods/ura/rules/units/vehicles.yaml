@@ -501,6 +501,15 @@ TNKD:
 		Weapon: SABOT
 		LocalOffset: 720,0,80
 		MuzzleSequence: muzzle
+		RequiresCondition: !upgraded
+	Armament@UPGRADE:
+		Weapon: SABOT.Accuracy
+		LocalOffset: 720,0,80
+		MuzzleSequence: muzzle
+		RequiresCondition: upgraded
+	GrantConditionOnPrerequisite:
+		Condition: upgraded
+		Prerequisites: tnkd.accuracy.upgraded
 	AttackFrontal:
 	WithMuzzleOverlay:
 	Selectable:

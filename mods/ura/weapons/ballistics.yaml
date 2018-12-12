@@ -126,6 +126,11 @@ SABOT:
 		ImpactSounds: splash9.aud
 		ValidTargets: Water
 
+SABOT.Accuracy:
+	Inherits: SABOT
+	Projectile: Bullet
+		Inaccuracy: 0c512
+
 ^Artillery:
 	Inherits: ^Cannon
 	ReloadDelay: 85

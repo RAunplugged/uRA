@@ -48,6 +48,8 @@ shightank.rank2:
 	icon: shightank.rank2icon
 stnk.speed:
 	icon: stnk.speedicon
+tnkd.accuracy:
+	icon: tnkd.accuracyicon
 
 # Aircraft
 

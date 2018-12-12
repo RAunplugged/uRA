@@ -1,11 +1,12 @@
 # Categories:
 
 # Inheritance
-# Unit Unlocks
+# Unlock
 # Unit Upgrades - infantry
 # Unit Upgrades - vehicles
 # Unit Upgrades - aircraft
 # Unit Upgrades - ships
+# Unit Specific Upgrades
 # Infiltration Tech Tree
 
 # Inheritance
@@ -16,7 +17,7 @@
 	ScriptTriggers:
 	ProvidesPrerequisite@upgradename:
 
-# Unit Unlocks
+# Unlock
 
 upgrade.tnkd.unlock:
 	Inherits: ^UpgradeActor
@@ -422,23 +423,6 @@ upgrade.shightank.rank2:
 	ProvidesPrerequisite@default:
 		Prerequisite: shightank.upgraded2
 
-upgrade.stnk.speed:
-	Inherits: ^UpgradeActor
-	Tooltip:
-		Name: Phase Transport Speed
-	Valued:
-		Cost: 1000
-	Buildable:
-		BuildPaletteOrder: 100
-		Prerequisites: fix, atek, ~vehicles.england, ~techlevel.high, ~stnk.upgraded
-		Queue: Upgrade
-		Description: Increases +15% speed on\nPhase Transports.
-		BuildLimit: 1
-	RenderSprites:
-		Image: stnk.speed
-	ProvidesPrerequisite@default:
-		Prerequisite: stnk.upgraded
-
 # Unit Upgrades - aircraft
 
 upgrade.hind.rank1:
@@ -611,12 +595,50 @@ upgrade.mig.rank3:
 	ProvidesPrerequisite@default:
 		Prerequisite: air2.upgraded3
 
+# Unit Upgrades - ships
+
+# Unit Specific Upgrades
+
+upgrade.tnkd.accuracy:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Tank Destroyer Accuracy
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 100
+		Prerequisites: atek, ~vehicles.germany, ~techlevel.high, ~upgrade.tnkd.unlock
+		Queue: Upgrade
+		Description: Reduces 50% inaccuracy on\nTank Destroyers.
+		BuildLimit: 1
+	RenderSprites:
+		Image: tnkd.accuracy
+	ProvidesPrerequisite@default:
+		Prerequisite: tnkd.accuracy.upgraded
+
+upgrade.stnk.speed:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Phase Transport Speed
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 100
+		Prerequisites: atek, ~vehicles.england, ~techlevel.high, ~stnk.upgraded
+		Queue: Upgrade
+		Description: Increases +15% speed on\nPhase Transports.
+		BuildLimit: 1
+	RenderSprites:
+		Image: stnk.speed
+	ProvidesPrerequisite@default:
+		Prerequisite: stnk.upgraded
+
 upgrade.parabomb.speed:
 	Inherits: ^UpgradeActor
 	Tooltip:
 		Name: Parabomb Badger Speed
 	Valued:
-		Cost: 750
+		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 100
 		Prerequisites: afld, stek, ~aircraft.soviet, ~techlevel.high, ~!parabombs.upgraded
@@ -627,8 +649,6 @@ upgrade.parabomb.speed:
 		Image: parabomb.speed
 	ProvidesPrerequisite@default:
 		Prerequisite: parabombs.upgraded
-
-# Unit Upgrades - ships
 
 # Infiltration Tech Tree
 

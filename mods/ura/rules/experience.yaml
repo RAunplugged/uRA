@@ -297,30 +297,3 @@
 		RequiresCondition: rank-elite
 		ZOffset: 256
 		ValidStances: Ally, Enemy, Neutral
-
-# Specific Units
-
-^GainsParabombExperience:
-	GainsExperience:
-		LevelUpNotification: LevelUp
-		Conditions:
-			150: rank-veteran
-			300: rank-veteran
-			900: rank-veteran
-			1500: rank-veteran
-	GrantCondition@RANK-ELITE:
-		RequiresCondition: rank-veteran >= 4
-		Condition: rank-elite
-	# Speed
-	SpeedMultiplier@RANK-1:
-		RequiresCondition: rank-veteran == 1
-		Modifier: 115
-	# Decorations
-	WithDecoration@RANK-1:
-		Image: rank
-		Sequence: rank-veteran-1
-		Palette: effect
-		ReferencePoint: Bottom, Right
-		RequiresCondition: rank-veteran == 1
-		ZOffset: 256
-		ValidStances: Ally, Enemy, Neutral
