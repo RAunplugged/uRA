@@ -65,3 +65,10 @@ mig.rank1:
 	icon: mig.rank1icon
 parabomb.speed:
 	icon: pbmb.speedicon
+
+# Ships
+
+dd.rank1:
+	icon: dd.rank1icon
+ss.rank1:
+	icon: ss.rank1icon

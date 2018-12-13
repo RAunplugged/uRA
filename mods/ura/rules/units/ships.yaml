@@ -109,7 +109,7 @@ DD:
 		Queue: Ship
 		BuildAtProductionType: Boat
 		BuildPaletteOrder: 40
-		Prerequisites: ~syrd, dome, ~techlevel.medium
+		Prerequisites: ~syrd, dome, ~techlevel.medium, ~!dd.upgraded2
 		Description: Fast multi-role ship.\nCan detect submarines.\n  Strong vs Naval units, Vehicles, Aircraft\n  Weak vs Infantry
 	RevealsShroud:
 		Range: 10c0
@@ -149,6 +149,8 @@ DD:
 	WithSpriteTurret:
 	Selectable:
 		DecorationBounds: 38,38
+	ProducibleWithLevel:
+		Prerequisites: ss.upgraded
 
 CA:
 	Inherits: ^Ship
@@ -250,7 +252,7 @@ SS:
 		Queue: Ship
 		BuildAtProductionType: Submarine
 		BuildPaletteOrder: 30
-		Prerequisites: ~spen, ~techlevel.low
+		Prerequisites: ~spen, ~techlevel.low, ~!ss.upgraded2
 		Description: Submerged anti-ship unit\narmed with torpedoes.\nCan detect other submarines.\n  Strong vs Naval units\n  Weak vs Ground units, Aircraft\n  Special Ability: Submerge
 	RevealsShroud:
 		Range: 10c0
@@ -298,6 +300,8 @@ SS:
 		Weapon: UnitExplodeSubmarine
 		EmptyWeapon: UnitExplodeSubmarine
 	SelectionDecorations:
+	ProducibleWithLevel:
+		Prerequisites: ss.upgraded
 
 MSUB:
 	Inherits: ^Ship

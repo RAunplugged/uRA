@@ -597,6 +597,74 @@ upgrade.mig.rank3:
 
 # Unit Upgrades - ships
 
+upgrade.dd.rank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Destroyer Veterancy I
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 110
+		Prerequisites: syrd, ~radar, ~techlevel.medium, ~!dd.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\nDestroyer production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: dd.rank1
+	ProvidesPrerequisite@default:
+		Prerequisite: dd.upgraded
+
+upgrade.dd.rank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Destroyer Veterancy II
+	Valued:
+		Cost: 1500
+	Buildable:
+		BuildPaletteOrder: 110
+		Prerequisites: syrd, ~techcenter, ~techlevel.high, ~dd.upgraded, ~!dd.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy II\nDestroyer production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: dd.rank2
+	ProvidesPrerequisite@default:
+		Prerequisite: dd.upgraded2
+
+upgrade.ss.rank1:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Destroyer Veterancy I
+	Valued:
+		Cost: 1000
+	Buildable:
+		BuildPaletteOrder: 110
+		Prerequisites: spen, ~radar, ~techlevel.medium, ~!ss.upgraded
+		Queue: Upgrade
+		Description: Enables Veterancy I\nSubmarine production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: ss.rank1
+	ProvidesPrerequisite@default:
+		Prerequisite: ss.upgraded
+
+upgrade.ss.rank2:
+	Inherits: ^UpgradeActor
+	Tooltip:
+		Name: Destroyer Veterancy II
+	Valued:
+		Cost: 1500
+	Buildable:
+		BuildPaletteOrder: 110
+		Prerequisites: spen, ~techcenter, ~techlevel.high, ~ss.upgraded, ~!ss.upgraded2
+		Queue: Upgrade
+		Description: Enables Veterancy II\nSubmarine production.
+		BuildLimit: 1
+	RenderSprites:
+		Image: ss.rank2
+	ProvidesPrerequisite@default:
+		Prerequisite: ss.upgraded2
+
 # Unit Specific Upgrades
 
 upgrade.tnkd.accuracy:

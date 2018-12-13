@@ -520,7 +520,7 @@ TNKD:
 		Actor: TNKD.Husk
 	SelectionDecorations:
 	ProducibleWithLevel:
-		Prerequisites: tank.upgraded
+		Prerequisites: techcenter.upgraded
 
 JEEP:
 	Inherits: ^Vehicle
@@ -1153,7 +1153,7 @@ CTNK:
 		DecorationBounds: 30,30
 	SelectionDecorations:
 	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded, radardome.upgraded
+		Prerequisites: techcenter.upgraded
 
 STNK:
 	Inherits: ^Vehicle
@@ -1229,7 +1229,7 @@ STNK:
 		InitialStanceAI: ReturnFire
 	WithSpriteTurret:
 	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded, radardome.upgraded
+		Prerequisites: techcenter.upgraded
 
 TTNK:
 	Inherits: ^TrackedVehicle
@@ -1323,8 +1323,6 @@ QTNK:
 	Targetable:
 		TargetTypes: Ground, MADTank, Repair, Vehicle, Heavy
 	SelectionDecorations:
-	ProducibleWithLevel:
-		Prerequisites: warfactory.upgraded, radardome.upgraded
 
 DTRK:
 	Inherits: ^Vehicle

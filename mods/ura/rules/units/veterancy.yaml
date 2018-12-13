@@ -361,3 +361,25 @@ MIG.rank3:
 	ProducibleWithLevel:
 		Prerequisites: ~techlevel.high
 		InitialLevels: 3
+
+# Ships
+
+DD.rank2:
+	Inherits: DD
+	Buildable:
+		Prerequisites: ~syrd, dome, ~techlevel.high, ~dd.upgraded2
+	RenderSprites:
+		Image: dd.rank2
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 2
+	
+SS.rank2:
+	Inherits: SS
+	Buildable:
+		Prerequisites: ~spen, dome, ~techlevel.high, ~ss.upgraded2
+	RenderSprites:
+		Image: ss.rank2
+	ProducibleWithLevel:
+		Prerequisites: ~techlevel.high
+		InitialLevels: 2

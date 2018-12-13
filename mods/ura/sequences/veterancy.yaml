@@ -1124,3 +1124,17 @@ mig.rank3:
 	idle:
 		Facings: 16
 	icon: mig.rank3icon
+
+# Ships
+
+dd.rank2:
+	idle:
+		Facings: 16
+	turret: ssam
+		Facings: 32
+	icon: dd.rank2icon
+
+ss.rank2:
+	idle:
+		Facings: 16
+	icon: ss.rank2icon
