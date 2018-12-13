@@ -82,6 +82,8 @@ Player:
 		OnHoldAudio: OnHold
 		CancelledAudio: Cancelled
 		SpectatorUIOrder: 0
+		SpeedUp: True
+		BuildTimeSpeedReduction: 100
 	PlaceBuilding:
 		NewOptionsNotification: NewOptions
 		CannotPlaceNotification: BuildingCannotPlaceAudio

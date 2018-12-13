@@ -726,7 +726,7 @@ upgrade.parabomb.speed:
 		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 100
-		Prerequisites: afld, stek, ~aircraft.soviet, ~techlevel.high, ~!parabombs.upgraded
+		Prerequisites: afld, stek, ~aircraft.ukraine, ~techlevel.high, ~!parabombs.upgraded
 		Queue: Upgrade
 		Description: Enables +15% Speed on\nParabomb Badgers.
 		BuildLimit: 1
