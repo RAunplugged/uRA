@@ -374,6 +374,8 @@ MINE:
 	SeedsResource:
 	MapEditorData:
 		Categories: Resource spawn
+	AppearsOnMapPreview:
+		Terrain: Ore
 
 GMINE:
 	Inherits@1: ^SpriteActor
@@ -394,6 +396,8 @@ GMINE:
 		ResourceType: Gems
 	MapEditorData:
 		Categories: Resource spawn
+	AppearsOnMapPreview:
+		Terrain: Gems
 
 RAILMINE:
 	Inherits@1: ^SpriteActor
