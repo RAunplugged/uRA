@@ -605,7 +605,7 @@ upgrade.dd.rank1:
 		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 110
-		Prerequisites: syrd, ~radar, ~techlevel.medium, ~!dd.upgraded
+		Prerequisites: syrd, ~dome, ~techlevel.medium, ~!dd.upgraded
 		Queue: Upgrade
 		Description: Enables Veterancy I\nDestroyer production.
 		BuildLimit: 1
@@ -639,7 +639,7 @@ upgrade.ss.rank1:
 		Cost: 1000
 	Buildable:
 		BuildPaletteOrder: 110
-		Prerequisites: spen, ~radar, ~techlevel.medium, ~!ss.upgraded
+		Prerequisites: spen, ~dome, ~techlevel.medium, ~!ss.upgraded
 		Queue: Upgrade
 		Description: Enables Veterancy I\nSubmarine production.
 		BuildLimit: 1
